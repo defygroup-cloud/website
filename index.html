@@ -197,7 +197,7 @@ function startGame(){
   cv=document.getElementById("gc");cx=cv.getContext("2d");
   W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;
   var ps=Math.max(3,Math.min(5,Math.floor(W/200)));
-  pl={x:W/2,y:H-90,w:16*ps,h:14*ps,s:ps,cd:0};
+  pl={x:W/2,y:H-240,w:16*ps,h:14*ps,s:ps,cd:0};
   bul=[];crt=[];par=[];scr=0;stm=0;gameOn=true;umx=false;mx=null;done={};
   document.getElementById("sc").textContent="0";
   document.getElementById("st").textContent=EL.length;
@@ -274,9 +274,4 @@ function tick(){
   cx.strokeStyle="#1a1a2e";cx.lineWidth=1;cx.beginPath();cx.moveTo(0,H-40);cx.lineTo(W,H-40);cx.stroke();
   var dst=[],di;for(di=0;di<EL.length;di++){if(done[di])dst.push(di);}
   if(dst.length>0){var ph=dst.length*18+16;cx.fillStyle="rgba(5,5,16,0.85)";cx.fillRect(8,H-48-ph,240,ph+4);cx.strokeStyle="rgba(204,0,0,0.25)";cx.lineWidth=1;cx.strokeRect(8,H-48-ph,240,ph+4);cx.font="700 9px 'Press Start 2P',monospace";cx.textAlign="left";
-    for(di=0;di<dst.length;di++){var yp=H-40-ph+12+di*18;cx.fillStyle="#cc0000";cx.fillText("\u2713",18,yp);cx.fillStyle="#ff8888";cx.fillText(EL[dst[di]],36,yp);}}
-  requestAnimationFrame(tick);
-}
-</script>
-</body>
-</html>
+    for(di=0;di<dst.length;di++){var yp=H-40-ph+12+di*18;cx.fillStyle="
