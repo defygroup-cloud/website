@@ -60,7 +60,7 @@ footer p{color:#555;font-size:12px;margin-top:8px}
 #ghud .gl{font-family:'Press Start 2P',monospace;font-size:12px;color:#cc0000}
 #ghud .gs{font-family:'Press Start 2P',monospace;font-size:10px;color:#fff}
 #ghud .gh{font-family:'Press Start 2P',monospace;font-size:7px;color:#555}
-#gbk{position:fixed;bottom:16px;right:20px;z-index:100;background:rgba(5,5,16,0.85);border:1px solid #333;color:#555;padding:8px 18px;font-family:'Press Start 2P',monospace;font-size:7px;cursor:pointer}
+#gbk{position:fixed;bottom:190px;right:20px;z-index:100;background:rgba(5,5,16,0.85);border:1px solid #333;color:#fff;padding:8px 18px;font-family:'Press Start 2P',monospace;font-size:7px;cursor:pointer}
 #gbk:hover{border-color:#cc0000;color:#cc0000}
 #win{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:300;background:#050510;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:48px}
 #win h2{font-family:'Press Start 2P',monospace;font-size:28px;color:#cc0000;margin-bottom:16px}
@@ -85,7 +85,6 @@ footer p{color:#555;font-size:12px;margin-top:8px}
 <img class="logo-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0idXVpZC1lMWVlM2Y5NC0xODdkLTQzZjctOTU3NC0xYzkwZTZiNjUwZDAiIGRhdGEtbmFtZT0iTGF5ZXIgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAyMy41NSIgaGVpZ2h0PSI0NDEuNTQiIHZpZXdCb3g9IjAgMCAxMDIzLjU1IDQ0MS41NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC51dWlkLTBkZGFiODk3LTBmYTQtNGJkNy1iMWJkLTY2ZGFmNjM2Y2M4YiB7CiAgICAgICAgZmlsbDogI2QzMDAwMDsKICAgICAgfQoKICAgICAgLnV1aWQtZmU3NGJlODctODc1Mi00ZWI5LWIzMjctZjViOWIwZDc5M2VjIHsKICAgICAgICBmaWxsOiAjZmZmZmZmOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0idXVpZC1mZTc0YmU4Ny04NzUyLTRlYjktYjMyNy1mNWI5YjBkNzkzZWMiIGQ9Ik0xMzYuODIsMzIuOGMxMDQuODgsMCwxOTIuOTMsNDAuNTcsMTkyLjkzLDE1NS4zOHMtODUuMDMsMTU3LjU0LTE5My4zNywxNTcuNTRIMHYtNi45MWMzNy41NS01LjE4LDQyLjczLTExLjY1LDQyLjczLTU2LjExVjk1LjgxYzAtNDQuNDYtNS4xOC01MC45My00Mi43My01Ni4xMXYtNi45MWgxMzYuODJaTTEzNS41MywzMzAuMTljNzkuNDIsMCwxMTAuMDYtNDUuNzUsMTEwLjA2LTE0MlMyMTMuMjIsNDguMzQsMTM0LjY3LDQ4LjM0aC0xNS45N3YyODEuODVoMTYuODNaIi8+CiAgPHBhdGggY2xhc3M9InV1aWQtZmU3NGJlODctODc1Mi00ZWI5LWIzMjctZjViOWIwZDc5M2VjIiBkPSJNMzQyLjIxLDIzOC4yNWMwLTcyLjk0LDUyLjIzLTEyOC42MiwxMTQuMzgtMTI4LjYyLDU2Ljk3LDAsOTUuODIsMzQuMSw5Ny45OCw5Mi4zN2gtMTUxLjVjMCwzLjQ1LS40Myw2LjkxLS40MywxMC4zNiwwLDU2Ljk3LDM1LjgyLDg4LjkxLDgyLjg3LDg4LjkxLDIyLjAxLDAsNDcuNDgtOC4yLDYxLjI5LTIyLjQ0bDUuMTgsNC4zMmMtMTYuODMsMjkuNzgtNTEuMzYsNjguMi0xMDIuNzMsNjguMi02Ny43NiwwLTEwNy4wNC00OS4yLTEwNy4wNC0xMTMuMDhaTTQwMy45MywxODQuNzNoODUuODljLS44Ni0zMy42Ny0xNC42Ny01Ni45Ny00MC4xNC01Ni45Ny0yNi43NiwwLTQyLjczLDIyLjAxLTQ1Ljc1LDU2Ljk3WiIvPgogIDxwYXRoIGNsYXNzPSJ1dWlkLWZlNzRiZTg3LTg3NTItNGViOS1iMzI3LWY1YjliMGQ3OTNlYyIgZD0iTTk4MC44MiwxMTMuNTJ2Ni40NmMtMjQuMTYsNi4wNS0yOS4zNCw5LjA3LTQxLDQwLjE1bC04MS4xNCwyMTMuMjJjLTE1LjU0LDQwLjU3LTI4LjQ5LDY4LjE5LTYzLjAxLDY4LjE5LTE5LjQzLDAtNDAuMTUtMTAuMzYtNDAuMTUtMzAuNjQsMC0xMy4zOCw5LjQ5LTI4LjA2LDI1LjAzLTI4LjA2LDYuMDUsMCw5LjQ5LDEuMywxNS45Nyw3Ljc3bDIyLjAyLDIyLjAyYzYuNDgtMTEuMjEsMTUuNTQtMjkuNzksMjEuNTctNDUuMzFsNi4wNS0xNS45OC05My4yMy0yMDIuNDJjLS4wMy0uMDUtLjA1LS4xMS0uMDgtLjE2LTMuOTctOC4zNS0xMi40LTEzLjY2LTIxLjY1LTEzLjY2aC03My4zMnYxNTEuOTNjMCw0My4xNiw1LjE4LDQ3LjkyLDQzLjU5LDUxLjh2Ni45aC0xNDIuODZ2LTYuOWMyOC45Mi0zLjg4LDI5LjM2LTguNjQsMjkuMzYtNTEuOHYtMTUxLjkzaC0zMy40MXYtMjEuNTdoMzMuNDF2LTEuNzRjMC02Ni45LDU3LjM5LTExMS43OCwxMDcuOS0xMTEuNzgsMzQuNTIsMCw1NC44MiwyMC4yOCw1NC44Miw0MC4xMywwLDE4LjEzLTEyLjUyLDI4LjQ5LTI3LjYyLDI4LjQ5LTkuOTMsMC0xNy4yNi0yLjE1LTIzLjMxLTExLjIxbC0xNy4yNi0yNS4wNWMtNi4wNS04LjYyLTguMi0xMS42NC0xMy44Mi0xMS42NC0xNC4yNSwwLTQ5LjY0LDI0LjE2LTEyLjA4LDkyLjhoMTk5LjV2Ni40NmMtMjkuNzksNS4xOC0zMC42NSwxMy4zOS0yMi40NCwzNC4xbDQ2LjE4LDExNC44MSwzNC41Mi05NC4wOWMxNC4yNS0zOC40MSwxNy43LTQ3LjQ3LTEzLjgtNTQuODJ2LTYuNDZoODAuMjhaIi8+CiAgPHBvbHlnb24gY2xhc3M9InV1aWQtMGRkYWI4OTctMGZhNC00YmQ3LWIxYmQtNjZkYWY2MzZjYzhiIiBwb2ludHM9Ijk0Ny41OSAyNjkuNzYgOTE4LjY1IDM0NS43MiA5OTQuNjEgMzQ1LjcyIDEwMjMuNTUgMjY5Ljc2IDk0Ny41OSAyNjkuNzYiLz4KPC9zdmc+" alt="Defy">
 <p>AI-powered creative technology for agency partners. We arm agencies with intelligent tools that automate boring tasks, surface pitch winning insights, and free your team to do strategic work that actually matters<span class="sq-sm"></span></p>
 </div>
-
 <div class="sec">
 <div class="slabel">The Technology</div>
 <h2 class="stitle">Three tools<span class="sq-sm"></span> One transformed agency<span class="sq-sm"></span></h2>
@@ -96,7 +95,6 @@ footer p{color:#555;font-size:12px;margin-top:8px}
 <div class="tcard"><div class="bar"></div><div class="tt">Performance</div><h3>Defy Report<span class="sq-sm"></span></h3><p>Real-time dashboards and command centres that track campaign performance across every channel. No more end-of-month scrambles building PowerPoint reports. Live data, clear visualisation, automated alerts.</p></div>
 </div>
 </div>
-
 <div class="dark">
 <div class="slabel">The Process</div>
 <h2 class="stitle">From conversation to transformation<span class="sq-sm"></span></h2>
@@ -107,7 +105,6 @@ footer p{color:#555;font-size:12px;margin-top:8px}
 <div><div class="snum">04</div><h3>Partnership</h3><p>Become an official Defy Partner. Access the full technology suite for your agency and your clients. We grow together.</p></div>
 </div>
 </div>
-
 <div class="team">
 <div class="slabel">The Team</div>
 <h2 class="stitle">Built by people who have been in your shoes<span class="sq-sm"></span></h2>
@@ -126,12 +123,10 @@ footer p{color:#555;font-size:12px;margin-top:8px}
 </div>
 </div>
 </div>
-
 <div class="cta">
 <h2>Ready to defy expectations?<span class="sq-w"></span></h2>
 <a href="mailto:talktous@defygroup.ai">Start a Conversation</a>
 </div>
-
 <footer>
 <img class="logo-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0idXVpZC1lMWVlM2Y5NC0xODdkLTQzZjctOTU3NC0xYzkwZTZiNjUwZDAiIGRhdGEtbmFtZT0iTGF5ZXIgMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAyMy41NSIgaGVpZ2h0PSI0NDEuNTQiIHZpZXdCb3g9IjAgMCAxMDIzLjU1IDQ0MS41NCI+CiAgPGRlZnM+CiAgICA8c3R5bGU+CiAgICAgIC51dWlkLTBkZGFiODk3LTBmYTQtNGJkNy1iMWJkLTY2ZGFmNjM2Y2M4YiB7CiAgICAgICAgZmlsbDogI2QzMDAwMDsKICAgICAgfQoKICAgICAgLnV1aWQtZmU3NGJlODctODc1Mi00ZWI5LWIzMjctZjViOWIwZDc5M2VjIHsKICAgICAgICBmaWxsOiAjZmZmZmZmOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0idXVpZC1mZTc0YmU4Ny04NzUyLTRlYjktYjMyNy1mNWI5YjBkNzkzZWMiIGQ9Ik0xMzYuODIsMzIuOGMxMDQuODgsMCwxOTIuOTMsNDAuNTcsMTkyLjkzLDE1NS4zOHMtODUuMDMsMTU3LjU0LTE5My4zNywxNTcuNTRIMHYtNi45MWMzNy41NS01LjE4LDQyLjczLTExLjY1LDQyLjczLTU2LjExVjk1LjgxYzAtNDQuNDYtNS4xOC01MC45My00Mi43My01Ni4xMXYtNi45MWgxMzYuODJaTTEzNS41MywzMzAuMTljNzkuNDIsMCwxMTAuMDYtNDUuNzUsMTEwLjA2LTE0MlMyMTMuMjIsNDguMzQsMTM0LjY3LDQ4LjM0aC0xNS45N3YyODEuODVoMTYuODNaIi8+CiAgPHBhdGggY2xhc3M9InV1aWQtZmU3NGJlODctODc1Mi00ZWI5LWIzMjctZjViOWIwZDc5M2VjIiBkPSJNMzQyLjIxLDIzOC4yNWMwLTcyLjk0LDUyLjIzLTEyOC42MiwxMTQuMzgtMTI4LjYyLDU2Ljk3LDAsOTUuODIsMzQuMSw5Ny45OCw5Mi4zN2gtMTUxLjVjMCwzLjQ1LS40Myw2LjkxLS40MywxMC4zNiwwLDU2Ljk3LDM1LjgyLDg4LjkxLDgyLjg3LDg4LjkxLDIyLjAxLDAsNDcuNDgtOC4yLDYxLjI5LTIyLjQ0bDUuMTgsNC4zMmMtMTYuODMsMjkuNzgtNTEuMzYsNjguMi0xMDIuNzMsNjguMi02Ny43NiwwLTEwNy4wNC00OS4yLTEwNy4wNC0xMTMuMDhaTTQwMy45MywxODQuNzNoODUuODljLS44Ni0zMy42Ny0xNC42Ny01Ni45Ny00MC4xNC01Ni45Ny0yNi43NiwwLTQyLjczLDIyLjAxLTQ1Ljc1LDU2Ljk3WiIvPgogIDxwYXRoIGNsYXNzPSJ1dWlkLWZlNzRiZTg3LTg3NTItNGViOS1iMzI3LWY1YjliMGQ3OTNlYyIgZD0iTTk4MC44MiwxMTMuNTJ2Ni40NmMtMjQuMTYsNi4wNS0yOS4zNCw5LjA3LTQxLDQwLjE1bC04MS4xNCwyMTMuMjJjLTE1LjU0LDQwLjU3LTI4LjQ5LDY4LjE5LTYzLjAxLDY4LjE5LTE5LjQzLDAtNDAuMTUtMTAuMzYtNDAuMTUtMzAuNjQsMC0xMy4zOCw5LjQ5LTI4LjA2LDI1LjAzLTI4LjA2LDYuMDUsMCw5LjQ5LDEuMywxNS45Nyw3Ljc3bDIyLjAyLDIyLjAyYzYuNDgtMTEuMjEsMTUuNTQtMjkuNzksMjEuNTctNDUuMzFsNi4wNS0xNS45OC05My4yMy0yMDIuNDJjLS4wMy0uMDUtLjA1LS4xMS0uMDgtLjE2LTMuOTctOC4zNS0xMi40LTEzLjY2LTIxLjY1LTEzLjY2aC03My4zMnYxNTEuOTNjMCw0My4xNiw1LjE4LDQ3LjkyLDQzLjU5LDUxLjh2Ni45aC0xNDIuODZ2LTYuOWMyOC45Mi0zLjg4LDI5LjM2LTguNjQsMjkuMzYtNTEuOHYtMTUxLjkzaC0zMy40MXYtMjEuNTdoMzMuNDF2LTEuNzRjMC02Ni45LDU3LjM5LTExMS43OCwxMDcuOS0xMTEuNzgsMzQuNTIsMCw1NC44MiwyMC4yOCw1NC44Miw0MC4xMywwLDE4LjEzLTEyLjUyLDI4LjQ5LTI3LjYyLDI4LjQ5LTkuOTMsMC0xNy4yNi0yLjE1LTIzLjMxLTExLjIxbC0xNy4yNi0yNS4wNWMtNi4wNS04LjYyLTguMi0xMS42NC0xMy44Mi0xMS42NC0xNC4yNSwwLTQ5LjY0LDI0LjE2LTEyLjA4LDkyLjhoMTk5LjV2Ni40NmMtMjkuNzksNS4xOC0zMC42NSwxMy4zOS0yMi40NCwzNC4xbDQ2LjE4LDExNC44MSwzNC41Mi05NC4wOWMxNC4yNS0zOC40MSwxNy43LTQ3LjQ3LTEzLjgtNTQuODJ2LTYuNDZoODAuMjhaIi8+CiAgPHBvbHlnb24gY2xhc3M9InV1aWQtMGRkYWI4OTctMGZhNC00YmQ3LWIxYmQtNjZkYWY2MzZjYzhiIiBwb2ludHM9Ijk0Ny41OSAyNjkuNzYgOTE4LjY1IDM0NS43MiA5OTQuNjEgMzQ1LjcyIDEwMjMuNTUgMjY5Ljc2IDk0Ny41OSAyNjkuNzYiLz4KPC9zdmc+" alt="Defy">
 <p>2026 Defy Group Limited. All rights reserved.</p>
@@ -197,7 +192,7 @@ function startGame(){
   cv=document.getElementById("gc");cx=cv.getContext("2d");
   W=cv.width=window.innerWidth;H=cv.height=window.innerHeight;
   var ps=Math.max(3,Math.min(5,Math.floor(W/200)));
-  pl={x:W/2,y:H-240,w:16*ps,h:14*ps,s:ps,cd:0};
+  pl={x:W/2,y:H-190,w:16*ps,h:14*ps,s:ps,cd:0};
   bul=[];crt=[];par=[];scr=0;stm=0;gameOn=true;umx=false;mx=null;done={};
   document.getElementById("sc").textContent="0";
   document.getElementById("st").textContent=EL.length;
@@ -274,4 +269,9 @@ function tick(){
   cx.strokeStyle="#1a1a2e";cx.lineWidth=1;cx.beginPath();cx.moveTo(0,H-40);cx.lineTo(W,H-40);cx.stroke();
   var dst=[],di;for(di=0;di<EL.length;di++){if(done[di])dst.push(di);}
   if(dst.length>0){var ph=dst.length*18+16;cx.fillStyle="rgba(5,5,16,0.85)";cx.fillRect(8,H-48-ph,240,ph+4);cx.strokeStyle="rgba(204,0,0,0.25)";cx.lineWidth=1;cx.strokeRect(8,H-48-ph,240,ph+4);cx.font="700 9px 'Press Start 2P',monospace";cx.textAlign="left";
-    for(di=0;di<dst.length;di++){var yp=H-40-ph+12+di*18;cx.fillStyle="
+    for(di=0;di<dst.length;di++){var yp=H-40-ph+12+di*18;cx.fillStyle="#cc0000";cx.fillText("\u2713",18,yp);cx.fillStyle="#ff8888";cx.fillText(EL[dst[di]],36,yp);}}
+  requestAnimationFrame(tick);
+}
+</script>
+</body>
+</html>
