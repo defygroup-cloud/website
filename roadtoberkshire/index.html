@@ -226,12 +226,21 @@
   @media(max-width:760px){
     .wrap{padding:32px 12px 60px}
     .board-head{display:none}
-    .row{grid-template-columns:46px 1fr auto;gap:10px;row-gap:10px;padding:15px 16px}
-    .row .cells{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:7px;padding-top:2px}
+    .row{grid-template-columns:46px 1fr auto;column-gap:10px;row-gap:10px;padding:15px 16px;align-items:start}
+    .row .rank{grid-column:1;grid-row:1;align-self:center}
+    .row .who{grid-column:2 / -1;grid-row:1;align-self:center}
+    .row .cells{grid-column:1 / 3;grid-row:2;display:flex;flex-wrap:wrap;gap:7px;align-items:center;padding-top:2px}
+    .row .total{grid-column:3;grid-row:2;align-self:center}
     .total{font-size:1.5rem}
     .crest{padding:22px 26px 18px}
     .crest img{height:74px}
     .field-grid{grid-template-columns:1fr 1fr;gap:0 16px}
+    .tournament-info{grid-template-columns:1fr;gap:16px;margin-top:28px}
+    .section-head{margin:24px 4px 10px}
+    .section-head .sub{display:none}
+    .board.chasing .total{font-size:1.3rem}
+    .final-day .date{font-size:1.4rem;min-width:72px}
+    .info-card{padding:22px 20px 18px}
   }
   @media(min-width:761px){
     .row .cells{display:contents}
@@ -240,6 +249,80 @@
     .field-grid{grid-template-columns:1fr}
     .who .name{font-size:1.05rem}
   }
+  /* ---------- Section titles between boards ---------- */
+  .section-head{display:flex;align-items:center;gap:14px;margin:28px 4px 12px;
+    animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .section-head::before,.section-head::after{content:"";flex:1;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(239,230,211,.55),transparent)}
+  .section-head .label{font-family:'Cormorant Garamond';font-weight:600;
+    letter-spacing:.34em;text-transform:uppercase;color:#fff;font-size:.86rem;
+    text-shadow:0 2px 14px rgba(20,15,8,.7)}
+  .section-head .sub{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;
+    color:#efe6d3;font-size:.92rem;letter-spacing:.02em;margin-left:-4px;
+    text-shadow:0 1px 10px rgba(20,15,8,.7)}
+  .section-head.compact .label{font-size:.74rem;letter-spacing:.3em;color:#efe6d3}
+
+  /* Chasing board: subtle de-emphasis */
+  .board.chasing{background:rgba(251,248,241,.72);border-color:rgba(176,141,79,.28)}
+  .board.chasing .row{padding-top:11px;padding-bottom:11px}
+  .board.chasing .who .name{font-weight:500;color:var(--ink-soft)}
+  .board.chasing .total{color:var(--ink-soft);font-size:1.45rem}
+  .board.chasing .disc{background:rgba(255,255,255,.3)}
+
+  /* ---------- Tournament info: The Final + The Rules ---------- */
+  .tournament-info{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px;
+    animation:rise 1s .6s cubic-bezier(.2,.7,.2,1) both}
+  .info-card{background:var(--glass);backdrop-filter:blur(14px);
+    border:1px solid rgba(176,141,79,.4);border-radius:5px;
+    box-shadow:var(--shadow);padding:26px 26px 22px;color:var(--ink);
+    position:relative;overflow:hidden}
+  .info-card::before,.info-card::after{content:"";position:absolute;width:14px;height:14px;
+    border:1px solid var(--gold);opacity:.55}
+  .info-card::before{top:8px;left:8px;border-right:0;border-bottom:0}
+  .info-card::after{bottom:8px;right:8px;border-left:0;border-top:0}
+  .info-card h3{font-family:'Cormorant Garamond';font-weight:600;
+    letter-spacing:.32em;text-transform:uppercase;font-size:.82rem;
+    color:var(--gold-deep);text-align:center;margin-bottom:6px}
+  .info-card .head-rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 18px}
+  .info-card .head-rule span{flex:1;max-width:60px;height:1px;
+    background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+  .info-card .head-rule small{color:var(--gold-deep);font-family:'Cormorant Garamond';
+    font-style:italic;font-size:.78rem;letter-spacing:.02em}
+
+  /* The Final card body */
+  .final-day{display:flex;align-items:center;gap:16px;padding:12px 0;
+    border-bottom:1px solid rgba(221,209,187,.6)}
+  .final-day:last-of-type{border-bottom:0}
+  .final-day .date{font-family:'Cormorant Garamond';font-weight:700;font-size:1.55rem;
+    color:var(--ink);min-width:82px;line-height:1.05;text-align:center;
+    padding-right:14px;border-right:1px solid rgba(176,141,79,.4)}
+  .final-day .date small{display:block;font-size:.55rem;letter-spacing:.24em;
+    text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-top:4px}
+  .final-day .details{flex:1}
+  .final-day .course{font-family:'Cormorant Garamond';font-weight:600;font-size:1.18rem;
+    color:var(--ink);letter-spacing:.005em;line-height:1.2}
+  .final-day .tee{font-size:.94rem;color:var(--ink-soft);font-style:italic;margin-top:2px}
+  .overnight{background:rgba(176,141,79,.10);border:1px solid rgba(176,141,79,.28);
+    border-radius:3px;padding:12px 14px;margin:10px 0;text-align:center}
+  .overnight .ev{font-family:'Cormorant Garamond';font-weight:600;font-size:.62rem;
+    letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);
+    display:block;margin-bottom:6px}
+  .overnight .body{font-family:'Cormorant Garamond';font-style:italic;font-size:1.02rem;
+    color:var(--ink);line-height:1.45}
+  .overnight .body b{font-style:normal;font-weight:600}
+
+  /* The Rules card body */
+  .rules{list-style:none;counter-reset:rule;padding:0;margin:0}
+  .rules li{counter-increment:rule;position:relative;
+    padding:10px 0 10px 40px;border-bottom:1px solid rgba(221,209,187,.5);
+    font-size:1.04rem;line-height:1.45;color:var(--ink)}
+  .rules li:last-child{border-bottom:0}
+  .rules li::before{content:counter(rule);position:absolute;left:0;top:9px;
+    width:28px;height:28px;border-radius:50%;
+    background:linear-gradient(145deg,#f0e1b4,#e3c97f);border:1px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Cormorant Garamond';font-weight:700;font-size:.96rem;color:#3a2c0a}
+
   /* ---------- Live data refresh state ---------- */
   .refresh-row{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:14px;
     font-family:'Cormorant Garamond';font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:.7rem;color:#efe6d3;
@@ -299,7 +382,18 @@
       </div>
     </div>
 
+    <div class="section-head">
+      <span class="label">Current Leaders</span>
+      <span class="sub">Top 12 · qualify for the Berkshire Final</span>
+    </div>
     <main class="board" id="board"></main>
+
+    <section id="chasingSection" style="display:none">
+      <div class="section-head compact">
+        <span class="label">Chasing the Cut</span>
+      </div>
+      <main class="board chasing" id="boardChasing"></main>
+    </section>
 
     <details class="field" id="fieldWrap">
       <summary>
@@ -310,6 +404,44 @@
       </summary>
       <div class="field-grid" id="fieldGrid"></div>
     </details>
+
+    <aside class="tournament-info">
+      <div class="info-card">
+        <h3>The Final</h3>
+        <div class="head-rule"><span></span><small>Two rounds at the Berkshire</small><span></span></div>
+        <div class="final-day">
+          <div class="date">30 Sept<small>Round One</small></div>
+          <div class="details">
+            <div class="course">Berkshire Red</div>
+            <div class="tee">11:30 am tee</div>
+          </div>
+        </div>
+        <div class="overnight">
+          <span class="ev">That Evening</span>
+          <div class="body"><b>Royal Berkshire Hotel</b><br>Champions' Dinner at Bluebells</div>
+        </div>
+        <div class="final-day">
+          <div class="date">1 Oct<small>Round Two</small></div>
+          <div class="details">
+            <div class="course">Berkshire Blue</div>
+            <div class="tee">11:30 am tee</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>The Rules</h3>
+        <div class="head-rule"><span></span><small>Honour code of the Order</small><span></span></div>
+        <ol class="rules">
+          <li>Declare your round in the chat before you tee off.</li>
+          <li>White tees.</li>
+          <li>Play with at least one other player from this group.</li>
+          <li>Best 3 scores from 6 rounds.</li>
+          <li>Scores must be uploaded to MyEG.</li>
+          <li>Top 12 qualify for the Berkshire Final.</li>
+        </ol>
+      </div>
+    </aside>
 
     <p class="note">
       <b id="noteFormat">Best 3 of 6.</b> Each player's total is the sum of their three highest Stableford rounds; the counting rounds are ringed in gold. Players level on points are split by fewer rounds taken.
@@ -333,7 +465,7 @@
     One player per row. Leave score cells blank for unplayed rounds.
   =========================================================================*/
 
-  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQB1MX6J5ZJxrrBHn59KeokbRF9yJq-oI33KRMwiweDsgWZJ-o5x_HlkE3q0dS0ikwqQBQuZii7eqp8/pub?gid=1997585380&single=true&output=csv"; // ← paste your published CSV link here
+  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQB1MX6J5ZJxrrBHn59KeokbRF9yJq-oI33KRMwiweDsgWZJ-o5x_HlkE3q0dS0ikwqQBQuZii7eqp8/pub?gid=1997585380&single=true&output=csv";
 
   let CONFIG = {
     title:     "The Order of Merit",
@@ -394,6 +526,25 @@
     return out;
   }
 
+  function renderRows(players){
+    const head = `<div class="board-head">
+      <div class="rh">Pos</div><div>Player</div>
+      ${Array.from({length:CONFIG.totalRounds},(_,i)=>`<div class="rh">${i+1}</div>`).join("")}
+      <div class="total-h">Pts</div>
+    </div>`;
+    const rows = players.map((p,idx)=>{
+      const podium = p.rank<=3 ? `podium p${p.rank}` : "";
+      const laurel = p.rank===1 ? `<span class="laurel">Leader</span>` : "";
+      return `<div class="row ${podium}" style="--i:${idx}" data-name="${p.name.toLowerCase()}">
+        <div class="rank"><div class="disc">${p.rank}</div></div>
+        <div class="who"><span class="name">${p.name}</span>${laurel}</div>
+        <div class="cells">${cellsHTML(p)}</div>
+        <div class="total">${p.total}<small>${ordinal(p.rank)}</small></div>
+      </div>`;
+    }).join("");
+    return head + rows;
+  }
+
   function render(){
     document.getElementById("title").textContent = CONFIG.title;
     document.getElementById("subtitle").textContent = CONFIG.subtitle;
@@ -418,26 +569,22 @@
     buildStats(scored);
 
     const board = document.getElementById("board");
+    const chasingSec = document.getElementById("chasingSection");
+    const boardChasing = document.getElementById("boardChasing");
+
     if(scored.length===0){
       board.innerHTML = `<div class="empty-msg">No scores posted yet — the season awaits its first card.</div>`;
+      chasingSec.style.display = "none";
     } else {
-      const head = `<div class="board-head">
-        <div class="rh">Pos</div><div>Player</div>
-        ${Array.from({length:CONFIG.totalRounds},(_,i)=>`<div class="rh">${i+1}</div>`).join("")}
-        <div class="total-h">Pts</div>
-      </div>`;
-      const rows = scored.map((p,idx)=>{
-        const podium = p.rank<=3 ? `podium p${p.rank}` : "";
-        const laurel = p.rank===1 ? `<span class="laurel">Leader</span>` : "";
-        const dot = "";
-        return `<div class="row ${podium}" style="--i:${idx}" data-name="${p.name.toLowerCase()}">
-          <div class="rank"><div class="disc">${p.rank}</div></div>
-          <div class="who"><span class="name">${p.name}</span>${dot}${laurel}</div>
-          <div class="cells">${cellsHTML(p)}</div>
-          <div class="total">${p.total}<small>${ordinal(p.rank)}</small></div>
-        </div>`;
-      }).join("");
-      board.innerHTML = head + rows;
+      const leaders = scored.slice(0, 12);
+      const chasing = scored.slice(12);
+      board.innerHTML = renderRows(leaders);
+      if(chasing.length > 0){
+        boardChasing.innerHTML = renderRows(chasing);
+        chasingSec.style.display = "";
+      } else {
+        chasingSec.style.display = "none";
+      }
     }
 
     const grid = document.getElementById("fieldGrid");
@@ -519,6 +666,7 @@
       '</div>';
     document.getElementById("stats").innerHTML = "";
     document.getElementById("fieldWrap").style.display = "none";
+    document.getElementById("chasingSection").style.display = "none";
   }
 
   function showError(msg){
@@ -529,6 +677,7 @@
       '</div>';
     document.getElementById("stats").innerHTML = "";
     document.getElementById("fieldWrap").style.display = "none";
+    document.getElementById("chasingSection").style.display = "none";
   }
 
   async function loadScores(){
