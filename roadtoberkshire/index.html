@@ -235,12 +235,6 @@
     .crest{padding:22px 26px 18px}
     .crest img{height:74px}
     .field-grid{grid-template-columns:1fr 1fr;gap:0 16px}
-    .tournament-info{grid-template-columns:1fr;gap:16px;margin-top:28px}
-    .section-head{margin:24px 4px 10px}
-    .section-head .sub{display:none}
-    .board.chasing .total{font-size:1.3rem}
-    .final-day .date{font-size:1.4rem;min-width:72px}
-    .info-card{padding:22px 20px 18px}
   }
   @media(min-width:761px){
     .row .cells{display:contents}
@@ -322,6 +316,16 @@
     background:linear-gradient(145deg,#f0e1b4,#e3c97f);border:1px solid var(--gold);
     display:flex;align-items:center;justify-content:center;
     font-family:'Cormorant Garamond';font-weight:700;font-size:.96rem;color:#3a2c0a}
+
+  /* Stack the two info cards on mobile (Final on top, Rules below) */
+  @media(max-width:760px){
+    .tournament-info{grid-template-columns:1fr;gap:16px;margin-top:28px}
+    .section-head{margin:24px 4px 10px}
+    .section-head .sub{display:none}
+    .board.chasing .total{font-size:1.3rem}
+    .final-day .date{font-size:1.4rem;min-width:72px}
+    .info-card{padding:22px 20px 18px}
+  }
 
   /* ---------- Live data refresh state ---------- */
   .refresh-row{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:14px;
