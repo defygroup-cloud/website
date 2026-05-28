@@ -250,6 +250,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 .tp-dot.a{background:var(--azulejo);}
 .tp-dot.b{background:var(--terra);}
 .tp-dot.c{background:var(--olive);}
+.tp-dot.d{background:var(--saffron);}
 .tee-v{flex:0 0 auto;font-family:"Fraunces",serif;font-style:italic;font-weight:600;color:var(--muted);font-size:15px;}
 @media (max-width:560px){
   .tee-match{flex-direction:column;align-items:stretch;gap:7px;}
@@ -333,8 +334,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
 
     <!-- Prizes -->
     <div class="card prizes" style="margin-top:16px">
-      <div class="card-head"><h2>Prizes &amp; Buy-in</h2><div class="meta">Pot £1,040<small>£148.57 per player</small></div></div>
-      <p class="pr-intro">Aggregate Stableford across all six rounds decides the overall money. Each day also carries its own small prize, a nearest-the-pin and a longest-drive. Total pot is <b>£1,040</b> &mdash; that's <b>£148.57 each</b> across the seven of us (call it <b>£150</b> on the nose and we'll be a tenner to the good for the kitty).</p>
+      <div class="card-head"><h2>Prizes &amp; Buy-in</h2><div class="meta">Pot £1,040<small>£130 per player</small></div></div>
+      <p class="pr-intro">Aggregate Stableford across all six rounds decides the overall money. Each day also carries its own small prize, a nearest-the-pin and a longest-drive. Total pot is <b>£1,040</b> &mdash; that's exactly <b>£130 each</b> across the eight of us.</p>
       <div class="pr-row">
         <div class="pr-ic">🏆</div>
         <div class="pr-txt"><b>Overall &mdash; £500</b><span>1st £300 · 2nd £150 · 3rd £50, on total points across the six rounds (countback splits ties).</span></div>
@@ -352,7 +353,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
         <div class="pr-txt"><b>Longest Drive &mdash; £20 × 6 = £120</b><span>£20 each day on the designated hole.</span></div>
       </div>
       <div class="pr-total"><span>Total pot</span><b>£1,040</b></div>
-      <div class="pr-total buyin"><span>Buy-in per player (÷7)</span><b>£148.57</b></div>
+      <div class="pr-total buyin"><span>Buy-in per player (÷8)</span><b>£130.00</b></div>
     </div>
   </section>
 
@@ -395,7 +396,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
    The sheet must have two tabs named exactly:  Scores   and   Extras
    (sharing set to "Anyone with the link → Viewer").
    ========================================================================= */
-  const SHEET_SOURCE = "";   // e.g. "https://docs.google.com/spreadsheets/d/XXXXXXXX/edit"
+  const SHEET_SOURCE = "https://docs.google.com/spreadsheets/d/1wQ3BoFgOY9nuq5zDkVMJJrv-XbInWMICn_Hy75pzfpU/edit";   // your sheet
 
   /* ---- Tournament definition (rounds & courses) ---- */
   const ROUNDS = [
@@ -406,18 +407,18 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     { key:"r5", col:"R5", label:"Round 5", course:"La Reserva",      date:"15 Oct · PM" },
     { key:"r6", col:"R6", label:"Round 6", course:"Finca Cortesín",  date:"16 Oct" },
   ];
-  const PLAYERS = ["Dan Jacobs","Daniel Simmons","Ian Stewart","Lee Bould","Matt Jakeman","Phil Storey","Tom Wilde"];
+  const PLAYERS = ["Dan Jacobs","Daniel Simmons","Ian Stewart","Lee Bould","Matt Jakeman","Phil Storey","Tom Wilde","Ian Cassidy"];
 
-  /* ---- Tee-time rotation (mixed betterball; everyone partners over the week) ----
-     four = two betterball pairs (2 v 2 match) · threePair = pair in the 3-ball · bye = the +1
-     Times are indicative — edit TIMES below to your real tee sheet. */
+  /* ---- Tee-time rotation (two betterball fourballs per day; everyone partners/plays over the week) ----
+     g1 / g2 = a four-ball, each holding two betterball pairs (a 2 v 2 match).
+     Times are indicative — edit TEE_TIMES below to your real tee sheet. */
   const TEE_ROTATION = [
-    {four:[[1,6],[3,4]], threePair:[2,5], bye:0},
-    {four:[[0,6],[2,3]], threePair:[1,4], bye:5},
-    {four:[[0,5],[1,2]], threePair:[6,4], bye:3},
-    {four:[[5,3],[6,2]], threePair:[0,4], bye:1},
-    {four:[[4,2],[5,1]], threePair:[0,3], bye:6},
-    {four:[[3,1],[5,6]], threePair:[0,2], bye:4},
+    {g1:[[0,7],[1,6]], g2:[[2,5],[3,4]]},
+    {g1:[[6,7],[1,4]], g2:[[0,5],[2,3]]},
+    {g1:[[5,7],[1,2]], g2:[[6,4],[0,3]]},
+    {g1:[[4,7],[0,1]], g2:[[5,3],[6,2]]},
+    {g1:[[3,7],[5,1]], g2:[[4,2],[6,0]]},
+    {g1:[[2,7],[3,1]], g2:[[4,0],[5,6]]},
   ];
   const TEE_TIMES = ["10:00","10:10","10:20","10:30","10:40","10:50"]; // base time per day (edit me)
 
@@ -474,9 +475,10 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const rows=parseCSV(csv); if(!rows.length) return seedScores();
     const h=rows[0];
     const iN=headerIndex(h,["Name","Player"]);
-    const idx={};
+    const idx={}, cbIdx={};
     ["R1","R2","R3","R4","R5","R6"].forEach((c,k)=>{
       idx[c]=headerIndex(h,[c,"Round "+(k+1),"Round"+(k+1)]);
+      cbIdx[c]=headerIndex(h,[c+" CB",c+"CB",c+" Countback","R"+(k+1)+" cb"]);
     });
     const out=[];
     for(let r=1;r<rows.length;r++){
@@ -484,12 +486,16 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       const name=(iN>=0?cells[iN]:cells[0]||"").trim();
       if(!name) continue;
       const rec={name};
-      ["R1","R2","R3","R4","R5","R6"].forEach(c=>{ rec[c]= idx[c]>=0 ? toNum(cells[idx[c]]) : null; });
+      ["R1","R2","R3","R4","R5","R6"].forEach(c=>{
+        rec[c]   = idx[c]>=0   ? toNum(cells[idx[c]])   : null;
+        rec[c+"cb"] = cbIdx[c]>=0 ? toNum(cells[cbIdx[c]]) : null;
+      });
       out.push(rec);
     }
     return out.length?out:seedScores();
   }
-  function seedScores(){ return PLAYERS.map(n=>({name:n,R1:null,R2:null,R3:null,R4:null,R5:null,R6:null})); }
+  function seedScores(){ return PLAYERS.map(n=>({name:n,R1:null,R2:null,R3:null,R4:null,R5:null,R6:null,
+    R1cb:null,R2cb:null,R3cb:null,R4cb:null,R5cb:null,R6cb:null})); }
 
   function buildExtras(csv){
     const rows=parseCSV(csv); if(!rows.length) return [];
@@ -521,30 +527,53 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     return "o";
   }
 
-  /* ---------- totals / countback ---------- */
+  /* ---------- totals / countback (same mechanic as West Essex) ----------
+     Overall: countback runs on the latest round first (R6 → R5 → … → R1).
+     Per-day:  countback runs on that round's CB figure (e.g. back 9). */
   const COLS=["R1","R2","R3","R4","R5","R6"];
   function total(p){ return COLS.reduce((s,c)=>s+(p[c]||0),0); }
   function playedCount(p){ return COLS.filter(c=>p[c]!=null).length; }
-  function sortedRounds(p){ return COLS.map(c=>p[c]).filter(v=>v!=null).sort((a,b)=>b-a); }
-  // countback: compare best single round, then 2nd best, etc.
+
   function cbOverall(a,b){
-    const A=sortedRounds(a.item||a), B=sortedRounds(b.item||b);
-    const n=Math.max(A.length,B.length);
-    for(let i=0;i<n;i++){ const d=(B[i]||0)-(A[i]||0); if(d) return d; }
+    for(const k of ["R6cb","R5cb","R4cb","R3cb","R2cb","R1cb"]){
+      if(a[k]!=null && b[k]!=null && a[k]!==b[k]) return b[k]-a[k];
+    }
     return 0;
   }
+  function cbRound(cbKey){
+    return (a,b)=>{
+      const av=a[cbKey], bv=b[cbKey];
+      if(av!=null && bv!=null && av!==bv) return bv-av;
+      return 0;
+    };
+  }
 
-  /* ---------- generic ranker with ties + countback flag ---------- */
-  function rankList(items, scoreOf, cbCompare){
-    const arr=items.map(it=>({item:it,score:scoreOf(it)}));
-    arr.sort((a,b)=> b.score-a.score || (cbCompare?cbCompare(a,b):0) || String(a.item.name).localeCompare(String(b.item.name)));
-    let lastScore=null,lastRank=0;
-    return arr.map((e,i)=>{
-      let rank, cb=false;
-      if(e.score===lastScore){ rank=lastRank; if(cbCompare) cb=true; }
-      else { rank=i+1; lastRank=rank; lastScore=e.score; }
-      return {item:e.item, score:e.score, rank, cb};
+  /* Generic tie-aware ranker. getPts(item)->points; cbCmp(a,b)->ordering on tie.
+     Returns [{item, rank, cb}] where cb=true means this player won a tie on countback. */
+  function rankList(arr, getPts, cbCmp){
+    const sorted=[...arr].sort((a,b)=>{
+      const pd=getPts(b)-getPts(a); if(pd) return pd;
+      const cc=cbCmp?cbCmp(a,b):0;  if(cc) return cc;
+      return String(a.name||"").localeCompare(String(b.name||""));
     });
+    const out=[];
+    for(let i=0;i<sorted.length;i++){
+      let rank;
+      if(i===0){ rank=1; }
+      else{
+        const prev=sorted[i-1], cur=sorted[i];
+        const samePts=getPts(prev)===getPts(cur);
+        const split=cbCmp?cbCmp(prev,cur)!==0:false;
+        rank = (samePts && !split) ? out[i-1].rank : i+1;
+      }
+      out.push({item:sorted[i], rank, cb:false});
+    }
+    for(let i=0;i<sorted.length;i++){
+      for(let j=i+1;j<sorted.length;j++){
+        if(getPts(sorted[i])===getPts(sorted[j]) && out[i].rank<out[j].rank){ out[i].cb=true; break; }
+      }
+    }
+    return out;
   }
 
   /* ---------- Rendering ---------- */
@@ -575,19 +604,21 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
 
     // leader banner
     const banner=document.getElementById("banner");
-    if(ranked.length && ranked[0].score>0){
+    const topPts=ranked.length?ranked[0].item.tot:0;
+    if(ranked.length && topPts>0){
       const leaders=ranked.filter(r=>r.rank===1).map(r=>r.item.name);
       const who = leaders.length>1 ? leaders.join(" & ")+" share the lead" : `<b>${esc(leaders[0])}</b> leads`;
-      banner.innerHTML = `${who} on ${ranked[0].score} pts`;
+      banner.innerHTML = `${who} on ${topPts} pts`;
       banner.classList.add("show");
     } else { banner.classList.remove("show"); }
   }
 
   function renderRound(rd){
     const panel=document.getElementById("panel-"+rd.key);
-    const field=SCORES.filter(p=>p[rd.col]!=null).map(p=>({name:p.name,pts:p[rd.col],_all:p}));
-    const ranked=rankList(field, p=>p.pts, (a,b)=>cbOverall(a.item._all,b.item._all));
-    const ord=["1st","2nd","3rd","4th","5th","6th","7th"];
+    const cbKey=rd.col+"cb";
+    const field=SCORES.filter(p=>p[rd.col]!=null).map(p=>({name:p.name,pts:p[rd.col],[cbKey]:p[cbKey]}));
+    const ranked=rankList(field, p=>p.pts, cbRound(cbKey));
+    const ord=["1st","2nd","3rd","4th","5th","6th","7th","8th"];
     const standHTML = ranked.length
       ? ranked.map(r=>{
           const p=r.item;
@@ -637,22 +668,13 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const days = ROUNDS.map((rd,i)=>{
       const t=TEE_ROTATION[i];
       const base=TEE_TIMES[i]||"10:00";
-      const fourball=`
+      const ball=(grp,mins,dotA,dotB)=>`
         <div class="tee-group">
-          <div class="tee-head"><span class="tee-time">${stagger(base,0)}</span><span class="tee-fmt">Fourball · Betterball 2 v 2</span></div>
+          <div class="tee-head"><span class="tee-time">${stagger(base,mins)}</span><span class="tee-fmt">Fourball · Betterball 2 v 2</span></div>
           <div class="tee-match">
-            <div class="tee-pair"><span class="tp-dot a"></span>${nm(t.four[0][0])} &amp; ${nm(t.four[0][1])}</div>
+            <div class="tee-pair"><span class="tp-dot ${dotA}"></span>${nm(grp[0][0])} &amp; ${nm(grp[0][1])}</div>
             <div class="tee-v">v</div>
-            <div class="tee-pair"><span class="tp-dot b"></span>${nm(t.four[1][0])} &amp; ${nm(t.four[1][1])}</div>
-          </div>
-        </div>`;
-      const threeball=`
-        <div class="tee-group">
-          <div class="tee-head"><span class="tee-time">${stagger(base,10)}</span><span class="tee-fmt">Threeball · Pair + 1 (2 v 1 or individual)</span></div>
-          <div class="tee-match three">
-            <div class="tee-pair"><span class="tp-dot a"></span>${nm(t.threePair[0])} &amp; ${nm(t.threePair[1])}</div>
-            <div class="tee-v">+</div>
-            <div class="tee-pair solo"><span class="tp-dot c"></span>${nm(t.bye)}</div>
+            <div class="tee-pair"><span class="tp-dot ${dotB}"></span>${nm(grp[1][0])} &amp; ${nm(grp[1][1])}</div>
           </div>
         </div>`;
       return `
@@ -661,15 +683,15 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
             <h2 class="day-course">${rd.label} <span class="pin">${esc(rd.course)}</span></h2>
             <div class="meta">${esc(rd.date)}</div>
           </div>
-          ${fourball}
-          ${threeball}
+          ${ball(t.g1,0,"a","b")}
+          ${ball(t.g2,9,"c","d")}
         </div>`;
     }).join("");
 
     panel.innerHTML = `
       <div class="card tees-intro">
         <div class="card-head"><h2>Tee Times &amp; Pairings</h2></div>
-        <p class="pr-intro">Groups are mixed every day so that across the week <b>everyone partners and plays alongside everyone else</b>. Each four-ball is a betterball <b>2 v 2</b>; the three-ball plays as a betterball pair plus one (run it 2 v 1, or just individual Stableford). Side bets on these games are entirely <b>optional and separate</b> from the main pot. Tee times shown are indicative — adjust to the club's real sheet.</p>
+        <p class="pr-intro">Groups are mixed every day so that across the week <b>everyone partners and plays alongside everyone else</b>. Each four-ball is a betterball <b>2 v 2</b> match. Side bets on these games are entirely <b>optional and separate</b> from the main pot. Tee times shown are indicative — adjust to the club's real sheet.</p>
       </div>
       ${days}`;
   }
