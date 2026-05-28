@@ -259,15 +259,14 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
   .tee-match{flex-direction:column;align-items:stretch;gap:7px;}
   .tee-v{text-align:center;}
 }
-/* Desktop: let Tee Times spread across the page, two fourballs side-by-side.
-   Full-bleed centred on the viewport (not the narrow column). */
-@media (min-width:820px){
-  #panel-tees{
-    width:100vw;
-    margin-left:calc(50% - 50vw);
-    margin-right:calc(50% - 50vw);
-    padding-left:max(18px, calc(50vw - 540px));
-    padding-right:max(18px, calc(50vw - 540px));
+/* Desktop: widen the whole page, keep reading panels narrow & centred,
+   and let Tee Times use the full width with two fourballs side-by-side. */
+@media (min-width:880px){
+  .wrap{max-width:1060px;}
+  header,
+  #panel-overall, #panel-r1, #panel-r2, #panel-r3, #panel-r4, #panel-r5, #panel-r6, #panel-winnings, #setup,
+  .foot{
+    max-width:760px; margin-left:auto; margin-right:auto;
   }
   #panel-tees .tee-day-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
 }
