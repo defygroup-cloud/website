@@ -256,6 +256,30 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
   .tee-match{flex-direction:column;align-items:stretch;gap:7px;}
   .tee-v{text-align:center;}
 }
+/* Desktop: let Tee Times spread across the page, two fourballs side-by-side */
+@media (min-width:820px){
+  #panel-tees{position:relative;left:50%;transform:translateX(-50%);width:min(1080px,94vw);}
+  #panel-tees .tee-day-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
+}
+
+/* ---------- Winnings ---------- */
+.w-status{font-size:12.5px;font-weight:700;color:var(--terra-deep);background:rgba(224,162,63,.18);border:1px solid rgba(224,162,63,.4);border-radius:10px;padding:9px 13px;margin-bottom:14px;text-align:center;letter-spacing:.02em;}
+.w-status.final{color:var(--olive);background:rgba(85,140,86,.16);border-color:rgba(95,160,98,.45);}
+.w-head{display:grid;grid-template-columns:1fr 64px 56px 48px 52px 64px;gap:4px;padding:0 12px 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid rgba(160,67,42,.16);}
+.w-row{display:grid;grid-template-columns:1fr 64px 56px 48px 52px 64px;gap:4px;align-items:center;padding:11px 12px;border-bottom:1px solid rgba(160,67,42,.10);}
+.w-row:last-child{border-bottom:none;}
+.w-row.lead{background:linear-gradient(90deg, rgba(224,162,63,.2), transparent);border-radius:10px;}
+.w-name{font-weight:700;font-size:15px;color:var(--ink);}
+.w-detail{font-size:11px;font-weight:500;color:var(--muted);margin-top:3px;line-height:1.4;}
+.w-c{text-align:right;font-weight:700;font-size:14px;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
+.w-tot{font-family:"Fraunces",serif;font-weight:700;font-size:17px;color:var(--terra-deep);}
+@media (max-width:560px){
+  .w-head,.w-row{grid-template-columns:1fr 52px 44px 38px 42px 54px;gap:3px;padding-left:8px;padding-right:8px;}
+  .w-head{font-size:9px;}
+  .w-name{font-size:13.5px;}
+  .w-c{font-size:12.5px;}
+  .w-tot{font-size:15px;}
+}
 .setup{display:none;}
 .setup.show{display:block;}
 .card-body{font-size:14px;line-height:1.6;color:var(--ink-soft);}
@@ -310,6 +334,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     <button class="tab" data-view="r5">Round 5<span class="sub">La Reserva</span></button>
     <button class="tab" data-view="r6">Round 6<span class="sub">Finca Cortesín</span></button>
     <button class="tab" data-view="tees">Tee Times<span class="sub">Betterball</span></button>
+    <button class="tab" data-view="winnings">Winnings<span class="sub">Prize Money</span></button>
   </nav>
 
   <!-- OVERALL -->
@@ -365,6 +390,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   <section class="panel" id="panel-r5"></section>
   <section class="panel" id="panel-r6"></section>
   <section class="panel" id="panel-tees"></section>
+  <section class="panel" id="panel-winnings"></section>
 
   <!-- SETUP (shown only if sheet not configured) -->
   <section class="setup" id="setup">
@@ -683,8 +709,10 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
             <h2 class="day-course">${rd.label} <span class="pin">${esc(rd.course)}</span></h2>
             <div class="meta">${esc(rd.date)}</div>
           </div>
-          ${ball(t.g1,0,"a","b")}
-          ${ball(t.g2,9,"c","d")}
+          <div class="tee-day-grid">
+            ${ball(t.g1,0,"a","b")}
+            ${ball(t.g2,9,"c","d")}
+          </div>
         </div>`;
     }).join("");
 
@@ -696,10 +724,103 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       ${days}`;
   }
 
+  /* ---------- Winnings (prize money per player) ---------- */
+  const PRIZE = { overall:[300,150,50], day:50, ntp:20, drive:20 };
+  function resolvePlayer(name){
+    const t=String(name||"").trim(); if(!t) return "";
+    const tl=t.toLowerCase();
+    return PLAYERS.find(p=>p.toLowerCase()===tl) || t;
+  }
+  function fmtMoney(v){
+    if(!v) return "–";
+    return "£"+(Number.isInteger(v)?v:v.toFixed(2));
+  }
+  function computeWinnings(){
+    const W={};
+    const ensure=n=>{ if(!W[n]) W[n]={name:n,overall:0,day:0,ntp:0,drive:0,items:[]}; return W[n]; };
+    const add=(n,cat,amt,note)=>{ if(!n||!amt) return; const w=ensure(n); w[cat]+=amt; w.items.push({note,amt}); };
+
+    // Overall money — positions 1/2/3, ties split combined position money
+    const withTot=SCORES.map(p=>({...p,tot:total(p),played:playedCount(p)})).filter(p=>p.played>0);
+    const ranked=rankList(withTot,p=>p.tot,cbOverall);
+    const byRank={};
+    ranked.forEach(r=>{ (byRank[r.rank]=byRank[r.rank]||[]).push(r.item.name); });
+    Object.keys(byRank).map(Number).sort((a,b)=>a-b).forEach(rk=>{
+      const grp=byRank[rk]; let pool=0;
+      for(let pos=rk; pos<rk+grp.length; pos++) pool += (PRIZE.overall[pos-1]||0);
+      if(pool>0){ const each=pool/grp.length; const lbl=grp.length>1?"Overall (tied)":["1st","2nd","3rd"][rk-1]+" overall"; grp.forEach(n=>add(n,"overall",each,lbl+" "+fmtMoney(each))); }
+    });
+
+    // Daily winners — £50 each round (split on unsplit ties)
+    ROUNDS.forEach(rd=>{
+      const cbKey=rd.col+"cb";
+      const field=SCORES.filter(p=>p[rd.col]!=null).map(p=>({name:p.name,pts:p[rd.col],[cbKey]:p[cbKey]}));
+      if(!field.length) return;
+      const r=rankList(field,p=>p.pts,cbRound(cbKey));
+      const winners=r.filter(x=>x.rank===1).map(x=>x.item.name);
+      const each=PRIZE.day/winners.length;
+      winners.forEach(n=>add(n,"day",each,rd.course+" day prize "+fmtMoney(each)));
+    });
+
+    // Nearest pin & longest drive — £20 each from Extras
+    EXTRAS.forEach(x=>{
+      if(!x.winner) return;
+      const n=resolvePlayer(x.winner);
+      const rdLbl=(ROUNDS.find(r=>r.key===x.round)||{}).course||x.round;
+      if(x.type==="drive") add(n,"drive",PRIZE.drive,rdLbl+" longest drive £20");
+      else add(n,"ntp",PRIZE.ntp,rdLbl+" nearest pin £20");
+    });
+
+    Object.values(W).forEach(w=>w.total=w.overall+w.day+w.ntp+w.drive);
+    return W;
+  }
+
+  function renderWinnings(){
+    const panel=document.getElementById("panel-winnings");
+    const W=computeWinnings();
+    const roundsPlayed=ROUNDS.filter(rd=>SCORES.some(p=>p[rd.col]!=null)).length;
+    const honours=EXTRAS.filter(x=>x.winner).length;
+    const isFinal = roundsPlayed===6 && honours>=12;
+    const statusTxt = isFinal ? "Final results — all games complete" : `Provisional — ${roundsPlayed} of 6 rounds counted, updates as scores come in`;
+
+    // include every player even if £0, then any non-player honour winners
+    const rows=PLAYERS.map(n=>W[n]||{name:n,overall:0,day:0,ntp:0,drive:0,total:0,items:[]});
+    Object.values(W).forEach(w=>{ if(!PLAYERS.includes(w.name)) rows.push(w); });
+    rows.sort((a,b)=> b.total-a.total || a.name.localeCompare(b.name));
+    const paid=rows.reduce((s,r)=>s+r.total,0);
+
+    const cell=v=>`<div class="w-c">${fmtMoney(v)}</div>`;
+    const body=rows.map((r,i)=>{
+      const top=(r.total>0 && i===0)?" lead":"";
+      const detail=r.items.length?`<div class="w-detail">${r.items.map(it=>esc(it.note)).join(" · ")}</div>`:"";
+      return `<div class="w-row${top}">
+        <div class="w-name">${esc(r.name)}${detail}</div>
+        ${cell(r.overall)}${cell(r.day)}${cell(r.ntp)}${cell(r.drive)}
+        <div class="w-c w-tot">${fmtMoney(r.total)}</div>
+      </div>`;
+    }).join("");
+
+    panel.innerHTML = `
+      <div class="card">
+        <div class="card-head">
+          <h2>Prize Winnings</h2>
+          <div class="meta">Paid ${fmtMoney(paid)} / £1,040<small>${isFinal?"Final":"Provisional"}</small></div>
+        </div>
+        <div class="w-status ${isFinal?"final":""}">${statusTxt}</div>
+        <div class="w-head">
+          <div>Player</div><div class="w-c">Overall</div><div class="w-c">Daily</div>
+          <div class="w-c">Pin</div><div class="w-c">Drive</div><div class="w-c w-tot">Total</div>
+        </div>
+        ${body}
+      </div>
+      <div class="legend"><span>Overall 300 / 150 / 50</span><span>Daily £50</span><span>Nearest pin £20</span><span>Longest drive £20</span></div>`;
+  }
+
   function renderAll(){
     renderOverall();
     ROUNDS.forEach(renderRound);
     renderTees();
+    renderWinnings();
     document.getElementById("updated").textContent =
       lastUpdated ? "Updated "+lastUpdated : "Showing entered scores";
   }
