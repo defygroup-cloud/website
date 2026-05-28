@@ -143,9 +143,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   font-family:"Fraunces",serif;font-weight:700;font-size:19px;text-align:center;
   font-variant-numeric:tabular-nums;color:#fff;
 }
-.chip.g{background:#33cf72;border-color:#86f2ad;color:#06351c;}
-.chip.y{background:#f6cf3d;border-color:#ffe784;color:#4a3705;}
-.chip.o{background:#f59647;border-color:#ffc189;color:#4d2606;}
+.chip.g{background:rgba(51,207,114,.40);border-color:rgba(134,242,173,.7);color:#c8f7d8;}
+.chip.y{background:rgba(246,207,61,.40);border-color:rgba(255,231,132,.7);color:#f7e6a0;}
+.chip.r{background:rgba(231,80,63,.42);border-color:rgba(255,150,135,.7);color:#ffd0c7;}
 .chip.e{color:var(--muted);opacity:.4;}
 .cb-tag{
   display:inline-block;margin-left:6px;font-size:9px;font-weight:800;letter-spacing:.08em;
@@ -221,9 +221,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   font-size:11px;color:var(--muted);font-weight:600;
 }
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:middle;border:1px solid;}
-.legend i.g{background:#33cf72;border-color:#86f2ad;}
-.legend i.y{background:#f6cf3d;border-color:#ffe784;}
-.legend i.o{background:#f59647;border-color:#ffc189;}
+.legend i.g{background:rgba(51,207,114,.40);border-color:rgba(134,242,173,.7);}
+.legend i.y{background:rgba(246,207,61,.40);border-color:rgba(255,231,132,.7);}
+.legend i.r{background:rgba(231,80,63,.42);border-color:rgba(255,150,135,.7);}
 
 .note{text-align:center;margin-top:22px;font-size:11px;color:var(--muted);letter-spacing:.04em;opacity:.8;}
 
@@ -273,7 +273,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   <nav class="tabs" id="tabs">
     <button class="tab active" data-view="overall">Overall<span class="sub">Leaderboard</span></button>
     <button class="tab" data-view="r1">Round 1<span class="sub">Royal Zoute</span></button>
-    <button class="tab" data-view="r2">Round 2<span class="sub">Koksijde</span></button>
+    <button class="tab" data-view="r2">Round 2<span class="sub">Royal Ostend</span></button>
     <button class="tab" data-view="r3">Round 3<span class="sub">Oostburg</span></button>
   </nav>
 
@@ -291,9 +291,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
       <div id="overall-body"></div>
     </div>
     <div class="legend">
-      <span><i class="g"></i>36+</span>
-      <span><i class="y"></i>30–35</span>
-      <span><i class="o"></i>29 &amp; under</span>
+      <span><i class="g"></i>30+</span>
+      <span><i class="y"></i>20–29</span>
+      <span><i class="r"></i>19 &amp; under</span>
     </div>
   </section>
 
@@ -322,7 +322,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
     </button>
   </div>
 
-  <p class="note">Royal Zoute · Koksijde · Oostburg — Bruges, Belgium · June 2026</p>
+  <p class="note">Royal Zoute · Royal Ostend · Oostburg — Bruges, Belgium · June 2026</p>
 </div>
 
 <script>
@@ -337,7 +337,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   /* ---- Tournament definition (rounds & courses) ---- */
   const ROUNDS = [
     { key:"r1", col:"R1", label:"Round 1", course:"Royal Zoute" },
-    { key:"r2", col:"R2", label:"Round 2", course:"Koksijde"   },
+    { key:"r2", col:"R2", label:"Round 2", course:"Royal Ostend"},
     { key:"r3", col:"R3", label:"Round 3", course:"Oostburg"   },
   ];
 
@@ -442,9 +442,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   /* ---------- Colour tier (Stableford points) ---------- */
   function tier(n){
     if(n==null) return "e";
-    if(n>=36) return "g";
-    if(n>=30) return "y";
-    return "o";
+    if(n>=30) return "g";
+    if(n>=20) return "y";
+    return "r";
   }
 
   /* ---------- Rendering ---------- */
