@@ -143,10 +143,15 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   font-family:"Fraunces",serif;font-weight:700;font-size:19px;text-align:center;
   font-variant-numeric:tabular-nums;color:#fff;
 }
-.chip.g{background:var(--green-bg);border-color:var(--green-bd);color:#aef0c4;}
-.chip.y{background:var(--yellow-bg);border-color:var(--yellow-bd);color:#f4dd92;}
-.chip.o{background:var(--orange-bg);border-color:var(--orange-bd);color:#f3c79d;}
-.chip.e{color:var(--muted);opacity:.45;}
+.chip.g{background:#33cf72;border-color:#86f2ad;color:#06351c;}
+.chip.y{background:#f6cf3d;border-color:#ffe784;color:#4a3705;}
+.chip.o{background:#f59647;border-color:#ffc189;color:#4d2606;}
+.chip.e{color:var(--muted);opacity:.4;}
+.cb-tag{
+  display:inline-block;margin-left:6px;font-size:9px;font-weight:800;letter-spacing:.08em;
+  text-transform:uppercase;vertical-align:middle;padding:2px 5px;border-radius:5px;
+  background:rgba(224,191,103,.22);border:1px solid var(--gold);color:var(--gold-soft);
+}
 
 /* top three flourishes */
 .row.p1{background:linear-gradient(90deg,rgba(200,168,90,.16),transparent 60%);}
@@ -216,9 +221,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
   font-size:11px;color:var(--muted);font-weight:600;
 }
 .legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:middle;border:1px solid;}
-.legend i.g{background:var(--green-bg);border-color:var(--green-bd);}
-.legend i.y{background:var(--yellow-bg);border-color:var(--yellow-bd);}
-.legend i.o{background:var(--orange-bg);border-color:var(--orange-bd);}
+.legend i.g{background:#33cf72;border-color:#86f2ad;}
+.legend i.y{background:#f6cf3d;border-color:#ffe784;}
+.legend i.o{background:#f59647;border-color:#ffc189;}
 
 .note{text-align:center;margin-top:22px;font-size:11px;color:var(--muted);letter-spacing:.04em;opacity:.8;}
 
@@ -392,6 +397,10 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
     const i1=headerIndex(h,["R1","Round 1","Round1"]);
     const i2=headerIndex(h,["R2","Round 2","Round2"]);
     const i3=headerIndex(h,["R3","Round 3","Round3"]);
+    // optional countback columns (back-9 Stableford, or any agreed tiebreak figure)
+    const c1=headerIndex(h,["R1 CB","R1CB","R1 C/B","R1 Countback","R1cb"]);
+    const c2=headerIndex(h,["R2 CB","R2CB","R2 C/B","R2 Countback","R2cb"]);
+    const c3=headerIndex(h,["R3 CB","R3CB","R3 C/B","R3 Countback","R3cb"]);
     const out=[];
     for(let r=1;r<rows.length;r++){
       const cells=rows[r];
@@ -402,6 +411,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
         R1: i1>=0?toNum(cells[i1]):null,
         R2: i2>=0?toNum(cells[i2]):null,
         R3: i3>=0?toNum(cells[i3]):null,
+        R1cb: c1>=0?toNum(cells[c1]):null,
+        R2cb: c2>=0?toNum(cells[c2]):null,
+        R3cb: c3>=0?toNum(cells[c3]):null,
       });
     }
     return out;
@@ -443,48 +455,96 @@ h1 .it{font-style:italic;font-weight:500;color:var(--gold-soft);-webkit-text-fil
     return [p.R1,p.R2,p.R3].filter(v=>v!=null).length;
   }
 
+  /* ---------- Countback comparators ----------
+     Return <0 if a ranks ahead, >0 if b ranks ahead, 0 if indistinguishable.
+     Overall: countback runs on the latest round first (R3 → R2 → R1).
+     Per-day:  countback runs on that round's CB figure (e.g. back 9). */
+  function cbOverall(a,b){
+    for(const k of ["R3cb","R2cb","R1cb"]){
+      if(a[k]!=null && b[k]!=null && a[k]!==b[k]) return b[k]-a[k];
+    }
+    return 0;
+  }
+  function cbRound(cbKey){
+    return (a,b)=>{
+      const av=a[cbKey], bv=b[cbKey];
+      if(av!=null && bv!=null && av!==bv) return bv-av;
+      return 0;
+    };
+  }
+
+  /* Generic tie-aware ranker. getPts(item)->points; cbCmp(a,b)->ordering on tie.
+     Returns [{item, rank, cb}] where cb=true means this player won a tie on countback. */
+  function rankList(arr, getPts, cbCmp){
+    const sorted=[...arr].sort((a,b)=>{
+      const pd=getPts(b)-getPts(a); if(pd) return pd;
+      const cc=cbCmp(a,b);          if(cc) return cc;
+      return String(a.name||"").localeCompare(String(b.name||""));
+    });
+    const out=[];
+    for(let i=0;i<sorted.length;i++){
+      let rank;
+      if(i===0){ rank=1; }
+      else{
+        const prev=sorted[i-1], cur=sorted[i];
+        const samePts=getPts(prev)===getPts(cur);
+        const split=cbCmp(prev,cur)!==0;        // countback separated them
+        rank = (samePts && !split) ? out[i-1].rank : i+1;
+      }
+      out.push({item:sorted[i], rank, cb:false});
+    }
+    // flag anyone who shares points with a player ranked strictly below them
+    for(let i=0;i<sorted.length;i++){
+      for(let j=i+1;j<sorted.length;j++){
+        if(getPts(sorted[i])===getPts(sorted[j]) && out[i].rank<out[j].rank){ out[i].cb=true; break; }
+      }
+    }
+    return out;
+  }
+
   function renderOverall(){
     const body=document.getElementById("overall-body");
-    const ranked=SCORES.map(p=>({...p,tot:total(p),played:playedCount(p)}))
-      .sort((a,b)=> b.tot-a.tot || a.name.localeCompare(b.name));
-    // competition ranking with ties
-    let lastTot=null,lastRank=0;
-    body.innerHTML = ranked.map((p,idx)=>{
-      let rank;
-      if(p.played===0){ rank="–"; }
-      else if(p.tot===lastTot){ rank=lastRank; }
-      else { rank=idx+1; lastRank=rank; lastTot=p.tot; }
-      const cls = (typeof rank==="number" && rank<=3) ? " p"+rank : "";
-      const chip=(v)=>`<div class="chip ${tier(v)}">${v==null?"·":v}</div>`;
+    const withTot=SCORES.map(p=>({...p,tot:total(p),played:playedCount(p)}));
+    const played=withTot.filter(p=>p.played>0);
+    const unplayed=withTot.filter(p=>p.played===0).sort((a,b)=>a.name.localeCompare(b.name));
+    const ranked=rankList(played, p=>p.tot, cbOverall);
+
+    const chip=(v)=>`<div class="chip ${tier(v)}">${v==null?"·":v}</div>`;
+    const rowHTML=(p,rank,cb)=>{
+      const cls=(typeof rank==="number"&&rank<=3)?" p"+rank:"";
+      const tag=cb?`<span class="cb-tag" title="Won on countback">c/b</span>`:"";
       return `<div class="row${cls}">
         <div class="rank">${rank}</div>
-        <div class="name">${esc(p.name)}</div>
+        <div class="name">${esc(p.name)}${tag}</div>
         ${chip(p.R1)}${chip(p.R2)}${chip(p.R3)}
         <div class="total">${p.played?p.tot:"–"}</div>
       </div>`;
-    }).join("");
+    };
+    body.innerHTML =
+      ranked.map(r=>rowHTML(r.item,r.rank,r.cb)).join("") +
+      unplayed.map(p=>rowHTML(p,"–",false)).join("");
   }
 
   function renderRound(rd){
     const panel=document.getElementById("panel-"+rd.key);
-    // top 4 for this round
+    const cbKey=rd.col+"cb";   // e.g. "R1cb"
+    // top 4 for this round (with countback on ties)
     const field=SCORES
       .filter(p=>p[rd.col]!=null)
-      .map(p=>({name:p.name,pts:p[rd.col]}))
-      .sort((a,b)=> b.pts-a.pts || a.name.localeCompare(b.name));
-    let lastP=null,lastR=0;
-    const ranked=field.map((p,i)=>{
-      let r; if(p.pts===lastP){r=lastR;} else {r=i+1;lastR=r;lastP=p.pts;}
-      return {...p,r};
-    });
-    const top = ranked.filter(p=>p.r<=4);
+      .map(p=>({name:p.name,pts:p[rd.col],[cbKey]:p[cbKey]}));
+    const ranked=rankList(field, p=>p.pts, cbRound(cbKey));
+    const top=ranked.filter(r=>r.rank<=4);
     const ord=["1st","2nd","3rd","4th"];
     const topHTML = top.length
-      ? top.map(p=>`<div class="trow${p.r===1?" win":""}">
-            <div class="pos">${ord[p.r-1]||p.r+"th"}</div>
-            <div class="tname">${esc(p.name)}</div>
+      ? top.map(r=>{
+          const p=r.item;
+          const tag=r.cb?`<span class="cb-tag" title="Won on countback">c/b</span>`:"";
+          return `<div class="trow${r.rank===1?" win":""}">
+            <div class="pos">${ord[r.rank-1]||r.rank+"th"}</div>
+            <div class="tname">${esc(p.name)}${tag}</div>
             <div class="tpts">${p.pts}<span>pts</span></div>
-          </div>`).join("")
+          </div>`;
+        }).join("")
       : `<div class="trow"><div class="pos">—</div><div class="tname" style="color:var(--muted);font-weight:500;font-style:italic">No scores entered yet</div><div class="tpts">·</div></div>`;
 
     // nearest pin (up to 2)
