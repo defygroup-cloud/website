@@ -118,6 +118,9 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
   padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
 }
 .tabs::-webkit-scrollbar{display:none;}
+@media (min-width:680px){
+  .tabs{flex-wrap:wrap;justify-content:center;overflow:visible;}
+}
 .tab{
   flex:0 0 auto;cursor:pointer;border:1px solid rgba(251,245,233,.28);
   background:rgba(40,24,12,.34);backdrop-filter:blur(8px);
@@ -256,9 +259,16 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
   .tee-match{flex-direction:column;align-items:stretch;gap:7px;}
   .tee-v{text-align:center;}
 }
-/* Desktop: let Tee Times spread across the page, two fourballs side-by-side */
+/* Desktop: let Tee Times spread across the page, two fourballs side-by-side.
+   Full-bleed centred on the viewport (not the narrow column). */
 @media (min-width:820px){
-  #panel-tees{position:relative;left:50%;transform:translateX(-50%);width:min(1080px,94vw);}
+  #panel-tees{
+    width:100vw;
+    margin-left:calc(50% - 50vw);
+    margin-right:calc(50% - 50vw);
+    padding-left:max(18px, calc(50vw - 540px));
+    padding-right:max(18px, calc(50vw - 540px));
+  }
   #panel-tees .tee-day-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;}
 }
 
