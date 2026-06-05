@@ -154,6 +154,7 @@
   .rank .disc{
     width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;
     font-family:'Cormorant Garamond';font-weight:700;font-size:1.05rem;color:var(--ink);
+    font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1;
     border:1px solid var(--line);background:rgba(255,255,255,.4)}
   .p1 .disc{background:linear-gradient(145deg,#e7cf86,#c4a049);border-color:#b8923a;color:#3a2c0a;box-shadow:0 3px 10px -3px rgba(196,160,73,.8)}
   .p2 .disc{background:linear-gradient(145deg,#e3e6ea,#a7adb4);border-color:#9298a0;color:#33373c}
@@ -175,6 +176,7 @@
   .chip{
     width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;
     font-family:'EB Garamond',serif;font-size:.95rem;color:var(--ink-soft);
+    font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1;
     background:rgba(255,255,255,.35);border:1px solid var(--line)}
   /* score tiers: 36+ green · 30–35 yellow · ≤29 light orange */
   .chip.s-green{color:#234d22;font-weight:600;background:linear-gradient(145deg,#c2e2b2,#9aca84);border-color:#7cab66}
@@ -184,7 +186,9 @@
   .chip.count{box-shadow:0 0 0 2px rgba(148,114,51,.55);border-color:var(--gold-deep)}
   /* amber ring marks a round at an over-played course */
   .chip.repeat{outline:2px dashed #d68a3a;outline-offset:1px}
-  .clabel{font-size:.56rem;max-width:54px;text-align:center;line-height:1.15;color:#9a8d72;
+  /* unplayed round — dotted empty circle showing a round still to play */
+  .chip.empty{background:transparent;border:2px dotted rgba(148,114,51,.7)}
+  .clabel{font-size:.66rem;max-width:60px;text-align:center;line-height:1.15;color:#9a8d72;
     font-family:'Cormorant Garamond';font-weight:600;letter-spacing:.01em;
     overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
@@ -541,17 +545,20 @@
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
 
   function cellsHTML(p){
-    const played = [];
-    for(let i=0;i<CONFIG.totalRounds;i++){ if(isNum(p.rounds[i])) played.push(i); }
-    if(played.length === 0) return '<span class="no-rounds">—</span>';
-    return played.map(i=>{
+    let out = "";
+    for(let i=0;i<CONFIG.totalRounds;i++){
       const v = p.rounds[i];
-      const tier = v >= 36 ? "s-green" : (v >= 30 ? "s-yellow" : "s-orange");
-      const cls = "chip " + tier + (p.counting.has(i) ? " count" : "") + (p.repeatIdx.has(i) ? " repeat" : "");
-      const course = (p.courses[i] || "").trim();
-      const label = course ? esc(shortCourse(course)) : ("R"+(i+1));
-      return `<div class="cell"><div class="${cls}">${v}</div><div class="clabel" title="${esc(course)}">${label}</div></div>`;
-    }).join("");
+      if(isNum(v)){
+        const tier = v >= 36 ? "s-green" : (v >= 30 ? "s-yellow" : "s-orange");
+        const cls = "chip " + tier + (p.counting.has(i) ? " count" : "") + (p.repeatIdx.has(i) ? " repeat" : "");
+        const course = (p.courses[i] || "").trim();
+        const label = course ? esc(shortCourse(course)) : ("R"+(i+1));
+        out += `<div class="cell"><div class="${cls}">${v}</div><div class="clabel" title="${esc(course)}">${label}</div></div>`;
+      } else {
+        out += `<div class="cell"><div class="chip empty" title="Round still to play"></div><div class="clabel">&nbsp;</div></div>`;
+      }
+    }
+    return out;
   }
 
   function renderRows(players){
