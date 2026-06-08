@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>How Defy builds a deck — /defy-brand-deck & /defy-agency-deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#CC0000; --red-dark:#990000;
+    --black:#0A0A0A; --charcoal:#2D2D2D; --body:#555555; --mid:#777777;
+    --border:#E8E6E1; --warm:#F9F9F7; --cream:#F3F1EC; --white:#FFFFFF;
+    --d-card:#141414; --d-border:#2A2A2A; --d-body:#B4B4B4; --d-mid:#8A8A8A;
+    --serif:'Playfair Display','Didot',Georgia,serif;
+    --sans:'DM Sans','Inter',system-ui,sans-serif;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--charcoal);background:var(--warm);line-height:1.85;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+
+  /* ---------- type ---------- */
+  .eyebrow{font-family:var(--sans);font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:.4em;color:var(--red);margin-bottom:16px;line-height:1.6}
+  h1{font-family:var(--serif);font-weight:900;font-size:clamp(38px,5.6vw,72px);line-height:1.08;letter-spacing:-.5px;color:var(--black)}
+  h2{font-family:var(--serif);font-weight:800;font-size:clamp(28px,3.8vw,46px);line-height:1.14;letter-spacing:-.3px;color:var(--black)}
+  h3{font-family:var(--serif);font-weight:800;font-size:21px;line-height:1.25;color:var(--black)}
+  p.lead{font-family:var(--sans);font-size:clamp(16px,1.55vw,18px);line-height:1.8;color:var(--body);max-width:66ch}
+  .sq{display:inline-block;width:.5em;height:.5em;background:var(--red);vertical-align:baseline;margin-left:.06em}
+
+  /* ---------- wordmark ---------- */
+  .mark{font-family:var(--serif);font-weight:900;font-size:26px;letter-spacing:-.5px;line-height:1;color:var(--black);white-space:nowrap}
+  .mark .dot{display:inline-block;width:.27em;height:.27em;background:var(--red);margin-left:.05em;margin-bottom:.06em;vertical-align:baseline}
+  .mark.inv{color:var(--white)}
+
+  /* ---------- top bar ---------- */
+  header.topbar{position:sticky;top:0;z-index:50;background:var(--black);border-bottom:1px solid var(--d-border)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .topbar .tag{font-family:var(--sans);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--d-mid);font-weight:700}
+
+  /* ---------- hero (black plate) ---------- */
+  .hero{background:var(--black);color:#fff;padding:78px 0 84px}
+  .hero h1{color:#fff}
+  .hero p.lead{color:var(--d-body);margin-top:24px}
+  .hero .eyebrow{color:var(--red)}
+  .cmds{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+  .cmd-chip{display:inline-flex;align-items:center;gap:11px;border:1px solid #333;padding:11px 18px;color:#fff}
+  .cmd-chip .cm{font-family:var(--sans);font-weight:700;font-size:14px;letter-spacing:-.2px}
+  .cmd-chip .csq{width:8px;height:8px;background:var(--red);flex:0 0 auto}
+  .cmd-chip small{font-family:var(--sans);font-weight:500;color:var(--d-mid);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+
+  /* ---------- stat strip ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--warm)}
+  .stat{padding:34px 28px;border-left:1px solid var(--border)}
+  .stat:first-child{border-left:0}
+  .stat .num{font-family:var(--serif);font-weight:900;font-size:clamp(38px,4.6vw,56px);line-height:1;color:var(--black)}
+  .stat .lbl{font-family:var(--sans);text-transform:uppercase;letter-spacing:.28em;font-size:11px;color:var(--red);margin-top:16px;font-weight:700}
+  .stat .d{font-family:var(--sans);font-size:13.5px;line-height:1.65;color:var(--mid);margin-top:10px}
+
+  /* ---------- sections ---------- */
+  section{padding:72px 0}
+  .band-cream{background:var(--cream)}
+  .band-black{background:var(--black);color:#fff}
+  .section-head{max-width:74ch}
+  .section-head p{font-family:var(--sans);margin-top:16px;color:var(--body);font-size:16px;line-height:1.8;max-width:66ch}
+  .band-black .eyebrow{color:var(--red)}
+  .band-black h2{color:#fff}
+  .band-black .section-head p{color:var(--d-body)}
+
+  /* ---------- two deliverables ---------- */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px}
+  .deliv{background:var(--white);border:1px solid var(--border);border-left:3px solid var(--red);padding:34px}
+  .deliv .kind{font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.28em;font-size:10.5px;color:var(--red)}
+  .deliv .cmd{display:flex;align-items:center;gap:9px;margin-top:14px;font-family:var(--sans);font-weight:700;font-size:15.5px;color:var(--black);letter-spacing:-.2px}
+  .deliv .cmd .csq{width:8px;height:8px;background:var(--red);flex:0 0 auto}
+  .deliv h3{margin-top:14px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 4px}
+  .pill{font-family:var(--sans);font-size:12px;font-weight:500;color:var(--charcoal);background:var(--cream);border:1px solid var(--border);padding:6px 11px}
+  ul.dlist{list-style:none;margin-top:18px;display:grid;gap:13px}
+  ul.dlist li{position:relative;padding-left:22px;font-family:var(--sans);font-size:14.5px;line-height:1.65;color:var(--body)}
+  ul.dlist li:before{content:'';position:absolute;left:0;top:9px;width:8px;height:8px;background:var(--red)}
+  ul.dlist li b{color:var(--black);font-weight:700}
+
+  /* ---------- legend ---------- */
+  .legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:34px}
+  .leg{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-size:13px;color:var(--mid);border:1px solid var(--border);background:var(--white);padding:9px 14px}
+  .leg .lm{flex:0 0 auto;width:11px;height:11px;background:var(--red)}
+  .leg .lf{flex:0 0 auto;font-size:9.5px;font-weight:700;letter-spacing:.1em;border:1.5px solid var(--red);color:var(--red);padding:1px 6px}
+  .leg .lo{flex:0 0 auto;font-size:9.5px;font-weight:700;letter-spacing:.1em;border:1px dashed var(--mid);color:var(--mid);padding:1px 6px}
+
+  /* ---------- DIAGRAM ---------- */
+  .diagram{background:var(--white);border:1px solid var(--border);padding:38px 30px;margin-top:38px}
+  .phases{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
+  .phase{position:relative;display:flex;flex-direction:column}
+  .phase:not(:last-child):after{content:"→";position:absolute;right:-16px;top:26px;color:var(--red);font-weight:700;font-size:18px;z-index:2}
+  .phase-head{margin-bottom:18px}
+  .phase-badge{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:var(--black);color:#fff;font-family:var(--serif);font-weight:900;font-size:16px}
+  .phase-name{font-family:var(--serif);font-weight:800;color:var(--black);font-size:17px;margin-top:13px;line-height:1.15}
+  .phase-role{font-family:var(--sans);font-size:12.5px;line-height:1.5;color:var(--mid);margin-top:6px}
+  .phase-range{font-family:var(--sans);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:700;margin-top:11px}
+  .nodes{display:flex;flex-direction:column;gap:11px}
+  .node{background:var(--warm);border:1px solid var(--border);padding:13px 14px;position:relative}
+  .node.conn{border-left:3px solid var(--red)}
+  .node.opt{border-style:dashed;border-color:var(--mid)}
+  .node .nrow{display:flex;align-items:baseline;gap:9px}
+  .node .nnum{font-family:var(--sans);font-weight:700;color:var(--red);font-size:12px;flex:0 0 auto;font-variant-numeric:tabular-nums}
+  .node.opt .nnum{color:var(--mid)}
+  .node .ntitle{font-family:var(--sans);font-weight:700;color:var(--black);font-size:13px;line-height:1.25}
+  .node .ntags{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+  .ntag{display:inline-flex;align-items:center;gap:4px;font-family:var(--sans);font-size:9.5px;font-weight:700;letter-spacing:.04em;padding:2px 6px;line-height:1.5;background:var(--cream);border:1px solid var(--border);color:var(--charcoal)}
+  .ntag .ts{width:6px;height:6px;background:var(--red);flex:0 0 auto}
+  .ntag.fork{background:transparent;border:1.3px solid var(--red);color:var(--red)}
+  .ntag.opt{background:transparent;border:1px dashed var(--mid);color:var(--mid)}
+  .finish{margin-top:24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:22px}
+  .finish .arrow{color:var(--red);font-weight:700;font-size:17px}
+  .finish .out{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-weight:700;font-size:13.5px;color:#fff;background:var(--black);padding:9px 15px}
+  .finish .out .b{width:8px;height:8px;background:var(--red)}
+  .finish .lbl{font-family:var(--sans);font-size:12.5px;color:var(--mid)}
+
+  /* ---------- step cards ---------- */
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:42px}
+  .step{background:var(--white);border:1px solid var(--border);padding:28px}
+  .step.span2{grid-column:1 / -1}
+  .s-top{display:flex;align-items:flex-start;gap:16px}
+  .s-num{flex:0 0 auto;width:44px;height:44px;background:var(--black);color:#fff;font-family:var(--serif);font-weight:900;font-size:17px;display:inline-flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums}
+  .step.optional .s-num{background:var(--warm);border:1px dashed var(--mid);color:var(--mid)}
+  .s-title{font-family:var(--serif);font-weight:800;color:var(--black);font-size:19px;line-height:1.2}
+  .s-sub{font-family:var(--sans);font-size:11.5px;color:var(--mid);margin-top:4px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em;font-weight:500}
+  .s-sub b{color:var(--charcoal);font-weight:700}
+  .s-body{font-family:var(--sans);margin-top:16px;font-size:14.5px;color:var(--body);line-height:1.75}
+  .s-body em{font-style:italic;color:var(--charcoal)}
+  .s-body b{color:var(--black);font-weight:700}
+  .s-foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;align-items:center}
+  .tool{display:inline-flex;align-items:center;gap:5px;font-family:var(--sans);font-size:11px;font-weight:600;background:var(--cream);border:1px solid var(--border);padding:4px 9px;color:var(--charcoal)}
+  .tool .ts{width:6px;height:6px;background:var(--red);flex:0 0 auto}
+  .tool.none{color:var(--mid);background:var(--white)}
+  .out-tag{font-family:var(--sans);font-size:11px;font-weight:600;color:var(--black);background:var(--white);border:1px solid var(--border);padding:4px 9px}
+  .out-tag .o{color:var(--red);font-weight:700}
+  .kv{font-family:var(--sans);font-size:11.5px;color:var(--mid)}
+  .kv b{color:var(--black);font-weight:700}
+  .fork-flag{display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);border:1.3px solid var(--red);padding:3px 9px;margin-left:8px}
+  .fork-flag.opt{color:var(--mid);border-color:var(--mid)}
+  .forkbox{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--border)}
+  .fb{padding:15px 17px}
+  .fb.brief{background:var(--cream)}
+  .fb.pitch{background:var(--white);border-left:1px solid var(--border)}
+  .fb .fb-h{font-family:var(--sans);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+  .fb.brief .fb-h{color:var(--red)}
+  .fb.pitch .fb-h{color:var(--mid)}
+  .fb p{font-family:var(--sans);font-size:12.5px;color:var(--body);line-height:1.6}
+  .fb p b{color:var(--black);font-weight:700}
+
+  /* ---------- forks table ---------- */
+  .ftable{margin-top:42px;border:1px solid var(--border);background:var(--white)}
+  .ftable .row{display:grid;grid-template-columns:.85fr 1.45fr 1.45fr}
+  .ftable .row + .row{border-top:1px solid var(--border)}
+  .ftable .cell{padding:18px 20px;font-family:var(--sans);font-size:13.5px;line-height:1.65}
+  .ftable .row.head .cell{background:var(--black);color:#fff;font-weight:700;font-size:13px}
+  .ftable .row.head .cell .cm{font-family:var(--sans);font-weight:700}
+  .ftable .cell.lab{background:var(--cream);font-weight:700;color:var(--black);font-size:12.5px;text-transform:uppercase;letter-spacing:.06em}
+  .ftable .cell.brief{color:var(--body)}
+  .ftable .cell.pitch{color:var(--body);border-left:1px solid var(--border)}
+  .ftable .cell b{color:var(--black);font-weight:700}
+
+  /* ---------- engine room (black) ---------- */
+  .prod-lockup{display:inline-flex;align-items:center;margin-top:34px;font-family:var(--serif);font-weight:800;font-size:22px;color:#fff;letter-spacing:-.3px}
+  .prod-lockup .fn{font-family:var(--sans);font-weight:400;font-size:13px;color:var(--d-mid);margin-left:8px;letter-spacing:.18em;text-transform:uppercase}
+  .prod-lockup .psq{width:9px;height:9px;background:var(--red);margin-left:8px}
+  .prod-note{font-family:var(--sans);font-size:13.5px;color:var(--d-body);margin-top:12px;max-width:60ch;line-height:1.7}
+  .touch{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+  .tcard{background:var(--d-card);border:1px solid var(--d-border);border-left:3px solid var(--red);padding:20px}
+  .tcard .tname{display:flex;align-items:center;gap:7px;font-family:var(--sans);font-weight:700;color:#fff;font-size:14px;letter-spacing:-.1px}
+  .tcard .tname .ts{width:7px;height:7px;background:var(--red);flex:0 0 auto}
+  .tcard .twhere{font-family:var(--sans);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700;margin-top:11px}
+  .tcard .tdesc{font-family:var(--sans);font-size:12.5px;color:var(--d-body);margin-top:9px;line-height:1.6}
+  .precond{font-family:var(--sans);margin-top:32px;font-size:13.5px;color:var(--d-body);border-top:1px solid var(--d-border);padding-top:24px;max-width:74ch;line-height:1.75}
+  .precond b{color:#fff}
+  .precond code{font-family:var(--sans);color:#fff;font-weight:600}
+
+  /* ---------- tone callout ---------- */
+  .tone{margin-top:42px;background:var(--cream);border-left:3px solid var(--red);padding:34px 36px}
+  .tone h3{margin-bottom:4px}
+  .tone p{font-family:var(--sans);margin-top:14px;font-size:15px;color:var(--body);max-width:78ch;line-height:1.8}
+  .tone p b{color:var(--black);font-weight:700}
+
+  /* ---------- closing (black) ---------- */
+  .close{background:var(--black);color:#fff;padding:80px 0 70px}
+  .close .eyebrow{color:var(--red)}
+  .close h2{color:#fff}
+  .close p.lead{color:var(--d-body);margin-top:20px}
+  .close .note{margin-top:34px;background:var(--d-card);border:1px solid var(--d-border);border-left:3px solid var(--red);padding:26px 28px;display:flex;gap:16px;align-items:flex-start}
+  .close .note .nsq{flex:0 0 auto;width:14px;height:14px;background:var(--red);margin-top:6px}
+  .close .note p{font-family:var(--sans);font-size:14.5px;color:var(--d-body);line-height:1.75}
+  .close .note p b{color:#fff;font-weight:700}
+  .close .note code{font-family:var(--sans);color:#fff;font-weight:600}
+
+  /* ---------- footer ---------- */
+  footer.foot{background:var(--black);border-top:1px solid var(--d-border);padding:34px 0}
+  .foot .line{font-family:var(--sans);text-align:center;text-transform:uppercase;letter-spacing:.2em;font-size:11.5px;color:var(--mid);line-height:1.9}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0;transform:translateY(12px);animation:rise .7s cubic-bezier(.22,.61,.36,1) forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:920px){
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(3){border-left:0}
+    .two,.steps{grid-template-columns:1fr}
+    .phases{grid-template-columns:repeat(2,1fr);gap:26px}
+    .phase:not(:last-child):after{display:none}
+    .touch{grid-template-columns:1fr 1fr}
+    .ftable .row{grid-template-columns:1fr}
+    .ftable .row.head{display:none}
+    .ftable .cell.pitch{border-left:0;border-top:1px solid var(--border)}
+    .ftable .cell.lab:before{content:"FORK · "}
+  }
+  @media (max-width:560px){
+    .phases{grid-template-columns:1fr}
+    .touch{grid-template-columns:1fr}
+    .forkbox{grid-template-columns:1fr}
+    .fb.pitch{border-left:0;border-top:1px solid var(--border)}
+    .wrap{padding:0 22px}
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="wrap">
+    <div class="mark inv">Defy<span class="dot"></span></div>
+    <div class="tag">Deck-build pipeline</div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap reveal">
+    <div class="eyebrow">00 — How the deck gets built</div>
+    <h1>From a Defy Workspace<br>to a Finished, QA&#8209;Passed Deck<span class="sq"></span></h1>
+    <p class="lead">Two orchestrators — <strong style="color:#fff">/defy-brand-deck</strong> and <strong style="color:#fff">/defy-agency-deck</strong> — run the same evidence pipeline against the Defy connector. They listen to a category through Defy studies, turn the signal into insight chains, propositions and a dated calendar, then render and QA a slide deck. They share thirteen steps and split at only three forks. One becomes a rigorous cross&#8209;market briefing. The other a tight agency pitch.</p>
+    <div class="cmds">
+      <span class="cmd-chip"><span class="csq"></span><span class="cm">/defy-brand-deck</span><small>Briefing · ~32 slides</small></span>
+      <span class="cmd-chip"><span class="csq"></span><span class="cm">/defy-agency-deck</span><small>Pitch · ~16–20 slides</small></span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats reveal">
+  <div class="wrap" style="max-width:none;padding:0;display:contents">
+    <div class="stat"><div class="num">1</div><div class="lbl">Shared engine</div><div class="d">One pipeline drives both decks</div></div>
+    <div class="stat"><div class="num">13+1</div><div class="lbl">Steps</div><div class="d">A scope gate plus 13 build steps</div></div>
+    <div class="stat"><div class="num">11</div><div class="lbl">Connector tools</div><div class="d">Defy connector calls across a run</div></div>
+    <div class="stat"><div class="num">3</div><div class="lbl">Forks</div><div class="d">Where briefing and pitch diverge</div></div>
+  </div>
+</div>
+
+<!-- 01 — TWO DELIVERABLES -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">01 — The two deliverables</div>
+      <h2>Same Analysis. Two Different Decks.</h2>
+      <p>Both orchestrators compute the complete analysis. What changes is the presentation — who the deck is for, and what it has to do in the room.</p>
+    </div>
+
+    <div class="two">
+      <div class="deliv reveal">
+        <div class="kind">Cross-market briefing</div>
+        <div class="cmd"><span class="csq"></span>/defy-brand-deck</div>
+        <h3>The Rigour-and-Audience Deliverable</h3>
+        <div class="meta">
+          <span class="pill">Audience: the brand &amp; its market leaders</span>
+          <span class="pill">Posture: rigour + audience</span>
+          <span class="pill">~32 slides</span>
+        </div>
+        <ul class="dlist">
+          <li>Leads with the audience — personas first; tensions and propositions hang off them.</li>
+          <li>Shows the persona &rarr; tension &rarr; angle &rarr; proposition engine as <b>layers</b>. Coverage is the credibility argument.</li>
+          <li>Carries share-of-voice and engagement, prior-year-verified trends, a brand-permission beat and an integration beat.</li>
+          <li>Keeps every ID — a full audit trail back to the workspace.</li>
+        </ul>
+      </div>
+
+      <div class="deliv reveal" style="animation-delay:.06s">
+        <div class="kind">Agency pitch</div>
+        <div class="cmd"><span class="csq"></span>/defy-agency-deck</div>
+        <h3>The Persuasion-and-Activation Deliverable</h3>
+        <div class="meta">
+          <span class="pill">Audience: a client being sold an idea</span>
+          <span class="pill">Posture: persuasion + activation</span>
+          <span class="pill">~16–20 slides</span>
+        </div>
+        <ul class="dlist">
+          <li>Big idea on slide 1. One challenger throughline carries the whole deck.</li>
+          <li>Suppresses the machinery — persona names and theme IDs become sharp insight statements.</li>
+          <li>One clean share-of-voice visual. Not a dashboard.</li>
+          <li>A concrete creative or activation example per pillar the client can picture.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 — DIAGRAM -->
+<section class="band-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">02 — The pipeline, at a glance</div>
+      <h2>One Engine. Four Phases. Thirteen Steps.</h2>
+      <p>Read left to right. Within each phase the steps run top to bottom. Steps that call the Defy connector are marked with the red square; the three forks are where the briefing and the pitch diverge.</p>
+    </div>
+
+    <div class="legend reveal">
+      <span class="leg"><span class="lm"></span>Calls the Defy connector</span>
+      <span class="leg"><span class="lf">FORK</span>Briefing &ne; pitch here</span>
+      <span class="leg"><span class="lo">OPT</span>Optional / conditional step</span>
+    </div>
+
+    <div class="diagram reveal" style="animation-delay:.05s">
+      <div class="phases">
+
+        <!-- A -->
+        <div class="phase">
+          <div class="phase-head">
+            <span class="phase-badge">A</span>
+            <div class="phase-name">Ground the Run</div>
+            <div class="phase-role">Frame scope &amp; capture the real brand</div>
+            <div class="phase-range">Steps 00–02</div>
+          </div>
+          <div class="nodes">
+            <div class="node"><div class="nrow"><span class="nnum">00</span><span class="ntitle">Scope elicitation</span></div></div>
+            <div class="node"><div class="nrow"><span class="nnum">01</span><span class="ntitle">Brand extraction from web</span></div></div>
+            <div class="node"><div class="nrow"><span class="nnum">02</span><span class="ntitle">Interval splitting</span></div></div>
+          </div>
+        </div>
+
+        <!-- B -->
+        <div class="phase">
+          <div class="phase-head">
+            <span class="phase-badge">B</span>
+            <div class="phase-name">Listen via Defy</div>
+            <div class="phase-role">Study the category &amp; find the gaps</div>
+            <div class="phase-range">Steps 03–07</div>
+          </div>
+          <div class="nodes">
+            <div class="node conn"><div class="nrow"><span class="nnum">03</span><span class="ntitle">Trend studies — primary</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>studies-create</span></div></div>
+            <div class="node conn opt"><div class="nrow"><span class="nnum">03B</span><span class="ntitle">Creator-panel studies</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>studies-create</span><span class="ntag opt">optional</span></div></div>
+            <div class="node conn"><div class="nrow"><span class="nnum">04</span><span class="ntitle">Poll all studies</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>studies-get</span></div></div>
+            <div class="node conn"><div class="nrow"><span class="nnum">05</span><span class="ntitle">Trend analysis + prior-year</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>studies (prior-yr)</span></div></div>
+            <div class="node conn"><div class="nrow"><span class="nnum">06</span><span class="ntitle">Whitespace cohort studies</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>studies-create</span></div></div>
+            <div class="node"><div class="nrow"><span class="nnum">07</span><span class="ntitle">Whitespace analysis</span></div></div>
+          </div>
+        </div>
+
+        <!-- C -->
+        <div class="phase">
+          <div class="phase-head">
+            <span class="phase-badge">C</span>
+            <div class="phase-name">Build the Ideas</div>
+            <div class="phase-role">Turn signal into a plan you can run</div>
+            <div class="phase-range">Steps 08–11</div>
+          </div>
+          <div class="nodes">
+            <div class="node conn"><div class="nrow"><span class="nnum">08</span><span class="ntitle">Insight creation</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>characters · angles · story</span><span class="ntag fork">fork</span></div></div>
+            <div class="node conn"><div class="nrow"><span class="nnum">09</span><span class="ntitle">Product + propositions</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>products · propositions</span></div></div>
+            <div class="node conn"><div class="nrow"><span class="nnum">10</span><span class="ntitle">Moment generation</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>moments-create</span></div></div>
+            <div class="node"><div class="nrow"><span class="nnum">11</span><span class="ntitle">Content calendar build</span></div></div>
+          </div>
+        </div>
+
+        <!-- D -->
+        <div class="phase">
+          <div class="phase-head">
+            <span class="phase-badge">D</span>
+            <div class="phase-name">Render &amp; Assure</div>
+            <div class="phase-role">Build the slides &amp; pass the QA gate</div>
+            <div class="phase-range">Steps 12–13</div>
+          </div>
+          <div class="nodes">
+            <div class="node"><div class="nrow"><span class="nnum">12</span><span class="ntitle">Briefs + deck render</span></div><div class="ntags"><span class="ntag fork">fork</span></div></div>
+            <div class="node conn opt"><div class="nrow"><span class="nnum">12B</span><span class="ntitle">Creative expressions</span></div><div class="ntags"><span class="ntag"><span class="ts"></span>image-generate</span><span class="ntag opt">brief only</span></div></div>
+            <div class="node"><div class="nrow"><span class="nnum">13</span><span class="ntitle">QA gate — PASS / FAIL</span></div><div class="ntags"><span class="ntag fork">fork</span></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="finish">
+        <span class="lbl">QA&nbsp;PASS&nbsp;&rarr; deliverable:</span>
+        <span class="arrow">&rarr;</span>
+        <span class="out"><span class="b"></span>Brand briefing&nbsp;PPTX&nbsp;+&nbsp;PDF</span>
+        <span class="out"><span class="b"></span>Agency pitch&nbsp;PPTX&nbsp;+&nbsp;PDF</span>
+        <span class="lbl">FAIL &rarr; fix source · rebuild from Step 12 · re-QA until PASS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 — STEP BY STEP -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">03 — Step by step</div>
+      <h2>What Each Step Does.</h2>
+      <p>Every step writes its output to disk as JSON, so paths pass cleanly between steps and a run can resume if it is interrupted. The connector tool each step calls — and the file it leaves behind — are noted on every card.</p>
+    </div>
+
+    <div class="steps">
+
+      <!-- 00 -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">00</span>
+          <div><div class="s-title">Scope elicitation</div><div class="s-sub">skill · <b>scope-elicitation</b> — the Step-0 gate for both orchestrators</div></div>
+        </div>
+        <p class="s-body">Reads the request and asks <em>only</em> the questions the prompt cannot answer — never more. The default posture is full analysis on, expensive per-post outputs off, and names rather than IDs. The resulting <b>scope.json</b> drives every downstream step and is read again by the QA gate, so completeness is measured against what was actually agreed, not a guess.</p>
+        <div class="s-foot">
+          <span class="tool none">No connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> scope.json</span>
+        </div>
+      </div>
+
+      <!-- 01 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">01</span>
+          <div><div class="s-title">Brand extraction</div><div class="s-sub">skill · <b>brand-extraction-from-web</b></div></div>
+        </div>
+        <p class="s-body">Pulls the client's real palette, type hints, voice, factual claims — phone, email, addresses, calls to action — and product offerings straight from their live website. The deck then looks and sounds like them, not like a template.</p>
+        <div class="s-foot">
+          <span class="tool none">Web fetch — no connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> brand.json</span>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">02</span>
+          <div><div class="s-title">Interval splitting</div><div class="s-sub">orchestrator computation</div></div>
+        </div>
+        <p class="s-body">Splits the analysis window into N trend windows, sized so themes have time to stabilise — each window roughly three weeks or more. This defines the time-series the rest of the run is built on.</p>
+        <div class="s-foot">
+          <span class="tool none">No connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> trend_windows.json</span>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">03</span>
+          <div><div class="s-title">Trend studies — primary</div><div class="s-sub">Defy connector</div></div>
+        </div>
+        <p class="s-body">Fires one Defy study per window across the brand and competitor profiles, each generating a persona report and a tensions report. All studies fire in parallel and return a study ID at once — the work runs async.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:studies-create</span>
+          <span class="out-tag"><span class="o">&rarr;</span> studies_primary.json</span>
+        </div>
+      </div>
+
+      <!-- 03B -->
+      <div class="step optional reveal">
+        <div class="s-top">
+          <span class="s-num">03B</span>
+          <div><div class="s-title">Creator-panel studies <span class="fork-flag opt">optional</span></div><div class="s-sub">Defy connector · only if an influencer workspace is supplied</div></div>
+        </div>
+        <p class="s-body">Runs the same window cuts on a separate content-proxy workspace, plus one extra live 30-day study for topicality. This is a sample of content <em>made for</em> the target audience — never the audience itself.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:studies-create</span>
+          <span class="out-tag"><span class="o">&rarr;</span> studies_influencer.json</span>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">04</span>
+          <div><div class="s-title">Poll all studies</div><div class="s-sub">Defy connector</div></div>
+        </div>
+        <p class="s-body">Once the async studies have had time to finish — about 90 seconds — retrieves every study in a single batch call rather than polling them one at a time.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:studies-get</span>
+          <span class="out-tag"><span class="o">&rarr;</span> study results</span>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">05</span>
+          <div><div class="s-title">Trend analysis + prior-year verification</div><div class="s-sub">skill · <b>trend-analysis</b></div></div>
+        </div>
+        <p class="s-body">Aligns themes across windows — theme IDs differ between studies — builds a time-series matrix, and classifies each tension as <b>Rising, Falling, Sustained, Seasonal, Emerging</b> or decayed. Before any direction is shown as a trend, a <b>prior-year pass</b> re-runs the same windows one year earlier to prove the move is real and not a seasonal slope. Anything that cannot be verified is flagged honestly, never shown as a confident decline. Runs twice when a creator panel exists — brand cohort and creator cohort.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:studies-create / studies-get (prior-year windows)</span>
+          <span class="out-tag"><span class="o">&rarr;</span> trends_primary.json</span>
+          <span class="kv"><b>+</b> trends_influencer.json (if panel)</span>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">06</span>
+          <div><div class="s-title">Whitespace cohort studies</div><div class="s-sub">Defy connector</div></div>
+        </div>
+        <p class="s-body">Three snapshot studies over the last 90 days — brand voice, competitor coverage, and optionally the creator panel — so the analysis can compare who is publishing toward what right now.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:studies-create</span>
+          <span class="out-tag"><span class="o">&rarr;</span> cohort study IDs</span>
+        </div>
+      </div>
+
+      <!-- 07 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">07</span>
+          <div><div class="s-title">Whitespace analysis</div><div class="s-sub">skill · <b>whitespace-analysis</b></div></div>
+        </div>
+        <p class="s-body">Maps themes across the cohorts, computes each cohort's share-of-voice, and assigns every theme one of six verdicts: <b>Whitespace, Contested, Blocked, Audience-Left, Partial</b> or <b>Emerging</b>. Three cohorts give full coverage; two give partial.</p>
+        <div class="s-foot">
+          <span class="tool none">Analysis — no connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> whitespace.json</span>
+        </div>
+      </div>
+
+      <!-- 08 FORK -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">08</span>
+          <div><div class="s-title">Insight creation <span class="fork-flag">Fork 1</span></div><div class="s-sub">Defy connector · skill · <b>insight-creation-brand</b> / <b>insight-creation-agency</b></div></div>
+        </div>
+        <p class="s-body">For the top pillars — usually three, a mix of one whitespace, one claimable, one emerging — builds the creative DNA: a named character, a strategic angle, and a finished insight story. This is the first point the two decks diverge.</p>
+        <div class="forkbox">
+          <div class="fb brief"><div class="fb-h">/defy-brand-deck — briefing</div><p>Keeps the full persona &rarr; tension &rarr; angle &rarr; story chain <b>with IDs</b> and presents it as <b>layers</b> — one persona mapping to many tensions. The permutation engine is the credibility argument.</p></div>
+          <div class="fb pitch"><div class="fb-h">/defy-agency-deck — pitch</div><p>Collapses each chain into a single <b>pitchable insight statement</b>. Persona names and theme IDs are <b>suppressed</b> from the slide and survive only in the audit backup.</p></div>
+        </div>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:persona-create_characters</span>
+          <span class="tool"><span class="ts"></span>Defy:theme-generate_angles</span>
+          <span class="tool"><span class="ts"></span>Defy:story-create</span>
+          <span class="out-tag"><span class="o">&rarr;</span> insights.json</span>
+        </div>
+      </div>
+
+      <!-- 09 -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">09</span>
+          <div><div class="s-title">Product + propositions</div><div class="s-sub">Defy connector · skill · <b>proposition-creation</b></div></div>
+        </div>
+        <p class="s-body">Checks that a Defy product exists for the brand — creating one per product line from the brand's offerings if not — then generates propositions from the story IDs against the focus dimensions: product features, reason-to-believe, USP, promotion. Every proposition is later shown on the slide by its real name and insight tagline retrieved from the connector, never as a bare ID, and every proposition that was generated must reach the deck.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:products-list</span>
+          <span class="tool"><span class="ts"></span>Defy:product-create</span>
+          <span class="tool"><span class="ts"></span>Defy:propositions-create</span>
+          <span class="tool"><span class="ts"></span>Defy:propositions-list</span>
+          <span class="out-tag"><span class="o">&rarr;</span> propositions.json</span>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">10</span>
+          <div><div class="s-title">Moment generation</div><div class="s-sub">Defy connector · skill · <b>moment-generation</b></div></div>
+        </div>
+        <p class="s-body">Turns each persona-and-tension pair into calendar-anchored moments across moment types — life, seasonal, purchase, micro, search, emotional, vulnerable — surfacing the specific triggers when the brand can credibly enter the conversation. Supply is balanced against weeks times cadence.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:moments-create</span>
+          <span class="out-tag"><span class="o">&rarr;</span> moments.json</span>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="step reveal">
+        <div class="s-top">
+          <span class="s-num">11</span>
+          <div><div class="s-title">Content calendar build</div><div class="s-sub">skill · <b>content-calendar-build</b></div></div>
+        </div>
+        <p class="s-body">Lays the moments onto a dated posting schedule: cadence times the derived week count, pillar weighting taken from the whitespace verdicts, cultural anchors for the locale, and a lead post per period.</p>
+        <div class="s-foot">
+          <span class="tool none">Build script — no connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> calendar.json</span>
+        </div>
+      </div>
+
+      <!-- 12 FORK -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">12</span>
+          <div><div class="s-title">Briefs + deck render <span class="fork-flag">Fork 2</span></div><div class="s-sub">skill · <b>content-brief-brand</b> / <b>content-brief-agency</b> &rarr; data-driven PPTX build &rarr; PDF</div></div>
+        </div>
+        <p class="s-body">Writes a publishable brief for each calendar slot, then renders the deck with a brand-agnostic, data-driven builder that reads every figure from the JSONs — identity from brand.json, never hardcoded — and converts the result to PDF. This is where the two layouts part ways.</p>
+        <div class="forkbox">
+          <div class="fb brief"><div class="fb-h">/defy-brand-deck — briefing layout</div><p>~32 slides. Opens on the competitive landscape and audience, leads with personas, shows the engine as layers, carries share-of-voice and engagement, brand-permission and integration beats, and a full audit trail. Optionally adds a Creative-Library appendix (Step 12B).</p></div>
+          <div class="fb pitch"><div class="fb-h">/defy-agency-deck — pitch layout</div><p>~16–20 slides. Big idea on slide 1, one challenger throughline, one clean share-of-voice visual, an activation example per pillar. Methodology surfaces are cut.</p></div>
+        </div>
+        <div class="s-foot">
+          <span class="tool none">Render uses IDs already gathered — no new connector call</span>
+          <span class="out-tag"><span class="o">&rarr;</span> deck.pptx + deck.pdf</span>
+        </div>
+      </div>
+
+      <!-- 12B -->
+      <div class="step optional reveal">
+        <div class="s-top">
+          <span class="s-num">12B</span>
+          <div><div class="s-title">Creative expressions <span class="fork-flag opt">optional · brief only</span></div><div class="s-sub">Defy connector · skill · <b>creative-expressions</b></div></div>
+        </div>
+        <p class="s-body">If the creative-expressions skill is installed, renders each concept into an image and assembles a grouped Creative-Library appendix — one grid per pillar across TOFU, MOFU and BOFU. If the skill is absent the deck ships text-only: a fully supported fallback, not a degraded deck.</p>
+        <div class="s-foot">
+          <span class="tool"><span class="ts"></span>Defy:image-generate</span>
+          <span class="out-tag"><span class="o">&rarr;</span> expr/ PNGs + appendix</span>
+        </div>
+      </div>
+
+      <!-- 13 FORK -->
+      <div class="step span2 reveal">
+        <div class="s-top">
+          <span class="s-num">13</span>
+          <div><div class="s-title">QA gate — mandatory <span class="fork-flag">Fork 3</span></div><div class="s-sub">skill · <b>deck-qa-brand</b> / <b>deck-qa-agency</b></div></div>
+        </div>
+        <p class="s-body">The deck is <em>not</em> finished when the PDF renders. It is finished when QA passes. The variant QA skill verifies every figure against its source data, chart integrity, on-brand wordmark and category colour-coding, claim honesty, and completeness against the agreed scope — returning a <b>PASS</b> or <b>FAIL</b> with a defect list.</p>
+        <div class="forkbox">
+          <div class="fb brief"><div class="fb-h">deck-qa-brand — briefing checks</div><p>Personas lead, engine shown as layers, share-of-voice not raw counts, prior-year-verified trends, honest whitespace, and a full audit trail with IDs kept.</p></div>
+          <div class="fb pitch"><div class="fb-h">deck-qa-agency — pitch checks</div><p>Big idea on slide 1, no persona names or theme IDs on body slides, one clean share-of-voice visual, an activation example per pillar, and ~16–20 slide length.</p></div>
+        </div>
+        <div class="s-foot">
+          <span class="tool none">Verification — no connector call</span>
+          <span class="kv"><b>FAIL &rarr;</b> fix the source JSON or the builder, rebuild from Step 12, re-run the full checklist. No iteration cap.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 04 — THE THREE FORKS -->
+<section class="band-cream">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">04 — The three forks</div>
+      <h2>Exactly Where the Two Decks Part Ways.</h2>
+      <p>Everything else in the pipeline is identical. These three decisions turn the same evidence into either a briefing or a pitch.</p>
+    </div>
+
+    <div class="ftable reveal">
+      <div class="row head">
+        <div class="cell">Fork</div>
+        <div class="cell"><span class="cm">/defy-brand-deck</span> — briefing</div>
+        <div class="cell"><span class="cm">/defy-agency-deck</span> — pitch</div>
+      </div>
+      <div class="row">
+        <div class="cell lab">Step 08 · insight stance</div>
+        <div class="cell brief">Full persona &rarr; tension &rarr; angle &rarr; proposition chain shown as <b>layers</b>; IDs kept.</div>
+        <div class="cell pitch">Collapsed to one <b>pitchable insight statement</b>; persona names and theme IDs suppressed.</div>
+      </div>
+      <div class="row">
+        <div class="cell lab">Step 12 · render &amp; brief</div>
+        <div class="cell brief"><b>~32-slide briefing</b>: audience-led, engine as layers, SoV + engagement, audit trail, brand-permission + integration beats. Optionally adds a <b>Creative-Library appendix</b> (Step 12B).</div>
+        <div class="cell pitch"><b>~16–20-slide pitch</b>: big idea first, one throughline, one SoV visual, an activation example per pillar. No creative appendix.</div>
+      </div>
+      <div class="row">
+        <div class="cell lab">Step 13 · QA gate</div>
+        <div class="cell brief"><b>deck-qa-brand</b> — briefing checklist.</div>
+        <div class="cell pitch"><b>deck-qa-agency</b> — pitch checklist.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 — ENGINE ROOM -->
+<section class="band-black">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">05 — The engine room</div>
+      <h2>Every Defy Connector Touchpoint.</h2>
+      <p>The connector is what makes the deck evidence-based rather than asserted. Eleven tools are called across a run. Here is what each one does and where it fires.</p>
+    </div>
+
+    <div class="reveal" style="animation-delay:.04s">
+      <span class="prod-lockup">Defy<span class="fn">Research</span><span class="psq"></span></span>
+      <p class="prod-note">The connector is Defy's research and intelligence engine — the listening, classification and concept layer the orchestrators read from.</p>
+    </div>
+
+    <div class="touch reveal" style="animation-delay:.06s">
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:studies-create</div><div class="twhere">Steps 03 · 03B · 06 · 05</div><div class="tdesc">Spins up persona and tension studies per window and per cohort — the raw listening layer.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:studies-get</div><div class="twhere">Steps 04 · 05</div><div class="tdesc">Batch-retrieves finished async studies, including the prior-year verification windows.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:persona-create_characters</div><div class="twhere">Step 08</div><div class="tdesc">Turns a persona theme into a named, enriched character to anchor the creative.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:theme-generate_angles</div><div class="twhere">Step 08</div><div class="tdesc">Produces strategic angle candidates — psychological, sociological, economic, behavioural.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:story-create</div><div class="twhere">Step 08</div><div class="tdesc">Generates the core insight story that fuses persona, tension and angle.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:products-list</div><div class="twhere">Step 09</div><div class="tdesc">Checks whether a product already exists for the brand profile before creating one.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:product-create</div><div class="twhere">Step 09 · conditional</div><div class="tdesc">Creates a product per offering when none exists, so propositions have something to attach to.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:propositions-create</div><div class="twhere">Step 09</div><div class="tdesc">Generates propositions from story IDs against the focus dimensions — features, RTB, USP, promotion.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:propositions-list</div><div class="twhere">Step 09</div><div class="tdesc">Reads back each proposition's real name and tagline so the slide shows content, not an ID.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:moments-create</div><div class="twhere">Step 10</div><div class="tdesc">Produces calendar-anchored timing triggers for each persona-and-tension pair.</div></div>
+      <div class="tcard"><div class="tname"><span class="ts"></span>Defy:image-generate</div><div class="twhere">Step 12B · optional</div><div class="tdesc">Renders creative concepts into images for the Creative-Library appendix — briefing only.</div></div>
+    </div>
+
+    <p class="precond">Runs assume their preconditions already exist — a <b>workspace ID</b> and the <b>brand and competitor profile IDs</b>. Those come from Defy's discovery layer upstream of the orchestrator (<code>Defy:workspaces-list</code>, <code>Defy:profiles-list</code>, <code>Defy:concepts-search</code>, <code>Defy:posts-search</code>), which the <code>persona-tension-discovery</code> skill orchestrates when an engagement starts from scratch.</p>
+  </div>
+</section>
+
+<!-- 06 — HONEST BY DESIGN -->
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">06 — Honest by design</div>
+      <h2>The Connector Measures Content, Not People.</h2>
+    </div>
+    <div class="tone reveal">
+      <h3>Content supply — not audience demand.</h3>
+      <p>Defy classifies <b>what posts are about</b> and <b>who they were made for</b>. It does not observe the audience directly. So a deck speaks in terms of <b>content supply</b> — "content made for Foodies", "what creators publish toward this audience" — rather than audience demand, and a whitespace gap is a content-supply gap, not unmet demand. The one audience-side signal is <b>views and engagement volume</b>. Both QA gates fail any slide that overclaims. That discipline is exactly what makes the output safe to put in front of a client.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 07 — CLOSE -->
+<section class="close">
+  <div class="wrap reveal">
+    <div class="eyebrow">07 — What comes out</div>
+    <h2>A Deck You Can Defend, Line by Line<span class="sq"></span></h2>
+    <p class="lead">Every figure traces to an analysis JSON. Every claim traces to a Defy object. The deck survives the room. Same engine, two finishes — pick the one the audience needs.</p>
+    <div class="note">
+      <span class="nsq"></span>
+      <p><b>The QA gate is the contract.</b> Nothing is delivered, presented, or described as finished until <code>deck-qa-brand</code> or <code>deck-qa-agency</code> returns <b>PASS</b>. A FAIL sends the run back to fix the source data or the builder and rebuild — never to hand-patch a rendered slide — and the full checklist re-runs until it passes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="line">Defy Group Limited — Deck-Build Pipeline — /defy-brand-deck &amp; /defy-agency-deck — defy.co</div>
+  </div>
+</footer>
+
+</body>
+</html>
