@@ -289,6 +289,23 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
   .w-c{font-size:12.5px;}
   .w-tot{font-size:15px;}
 }
+/* ---------- Diagnostic box ---------- */
+.diag-box{
+  display:none;margin:18px auto 0;max-width:600px;
+  background:rgba(192,57,43,.95);color:var(--cream);
+  border:1px solid rgba(251,245,233,.3);border-radius:14px;
+  padding:14px 18px;font-size:13.5px;line-height:1.55;font-weight:500;
+  box-shadow:var(--shadow);
+}
+.diag-box b{font-weight:800;color:#fff;}
+.diag-box code{background:rgba(0,0,0,.22);color:#fff;padding:1px 6px;border-radius:4px;font-size:12.5px;}
+.diag-soft{
+  background:rgba(224,162,63,.16);border:1px solid rgba(224,162,63,.42);
+  color:var(--ink);border-radius:10px;padding:11px 14px;
+  font-size:13px;line-height:1.55;margin-bottom:12px;
+}
+.diag-soft b{color:var(--terra-deep);}
+
 .setup{display:none;}
 .setup.show{display:block;}
 .card-body{font-size:14px;line-height:1.6;color:var(--ink-soft);}
@@ -442,7 +459,9 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     { key:"r5", col:"R5", label:"Round 5", course:"La Reserva",      date:"15 Oct · PM" },
     { key:"r6", col:"R6", label:"Round 6", course:"Finca Cortesín",  date:"16 Oct" },
   ];
-  const PLAYERS = ["Dan Jacobs","Daniel Simmons","Ian Stewart","Lee Bould","Matt Jakeman","Phil Storey","Tom Wilde","Ian Cassidy"];
+  /* PLAYERS starts as a fallback but gets overwritten with the names from your sheet
+     as soon as scores load. Sheet order determines tee-rotation positions. */
+  let PLAYERS = ["Dan Jacobs","Daniel Simmons","Ian Stewart","Lee Bould","Matt Jakeman","Phil Storey","Tom Wilde","Ian Cassidy"];
 
   /* ---- Tee-time rotation (two betterball fourballs per day; everyone partners/plays over the week) ----
      g1 / g2 = a four-ball, each holding two betterball pairs (a 2 v 2 match).
@@ -466,7 +485,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   const SID = sheetId(SHEET_SOURCE);
   const gviz = (tab)=>`https://docs.google.com/spreadsheets/d/${SID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tab)}`;
 
-  const CACHE_KEY = "eligo.sanctuary.v1";
+  const CACHE_KEY = "eligo.sanctuary.v2";
   const TIMEOUT_MS = 15000;
 
   let SCORES = [];   // [{name, R1..R6}]
@@ -694,12 +713,15 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
 
   function renderTees(){
     const panel=document.getElementById("panel-tees");
-    const nm=i=>esc(PLAYERS[i]);
+    const nm=i => PLAYERS[i] ? esc(PLAYERS[i]) : `<span style="font-style:italic;color:var(--muted)">player ${i+1}</span>`;
     const stagger=(base,mins)=>{
       const [h,m]=base.split(":").map(Number);
       const d=new Date(2026,9,12,h,m+mins);
       return String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
     };
+    const fieldMismatch = PLAYERS.length !== 8
+      ? `<div class="diag-soft">The Tee Times schedule is calibrated for <b>8 players</b>; your sheet currently has <b>${PLAYERS.length}</b>. The rotation will still display, but the fair "everyone partners everyone" guarantee only holds with 8. Ask Claude to regenerate the schedule for your actual field size.</div>`
+      : "";
     const days = ROUNDS.map((rd,i)=>{
       const t=TEE_ROTATION[i];
       const base=TEE_TIMES[i]||"10:00";
@@ -728,6 +750,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     panel.innerHTML = `
       <div class="card tees-intro">
         <div class="card-head"><h2>Tee Times &amp; Pairings</h2></div>
+        ${fieldMismatch}
         <p class="pr-intro">Groups are mixed every day so that across the week <b>everyone partners and plays alongside everyone else</b>. Each four-ball is a betterball <b>2 v 2</b> match. Side bets on these games are entirely <b>optional and separate</b> from the main pot. Tee times shown are indicative — adjust to the club's real sheet.</p>
       </div>
       ${days}`;
@@ -792,9 +815,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const isFinal = roundsPlayed===6 && honours>=12;
     const statusTxt = isFinal ? "Final results — all games complete" : `Provisional — ${roundsPlayed} of 6 rounds counted, updates as scores come in`;
 
-    // include every player even if £0, then any non-player honour winners
+    // PLAYERS is now kept in sync with the loaded sheet, so no need for a "non-PLAYERS" fallback
     const rows=PLAYERS.map(n=>W[n]||{name:n,overall:0,day:0,ntp:0,drive:0,total:0,items:[]});
-    Object.values(W).forEach(w=>{ if(!PLAYERS.includes(w.name)) rows.push(w); });
     rows.sort((a,b)=> b.total-a.total || a.name.localeCompare(b.name));
     const paid=rows.reduce((s,r)=>s+r.total,0);
 
@@ -826,6 +848,10 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   }
 
   function renderAll(){
+    // Keep PLAYERS in sync with whatever names are actually in the loaded sheet,
+    // in sheet order. This drives the tee rotation positions and the Winnings rows.
+    if(SCORES && SCORES.length) PLAYERS = SCORES.map(p=>p.name);
+
     renderOverall();
     ROUNDS.forEach(renderRound);
     renderTees();
@@ -874,24 +900,75 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       return;
     }
 
+    const setStatus = (msg) => { document.getElementById("updated").textContent = msg; };
+
     try{
-      const [sRes,eRes]=await Promise.all([
-        fetchWithTimeout(gviz("Scores")),
-        fetchWithTimeout(gviz("Extras")).catch(()=>null)
-      ]);
-      const sText=await sRes.text();
-      SCORES=buildScores(sText);
-      if(eRes){ EXTRAS=buildExtras(await eRes.text()); }
+      const sRes = await fetchWithTimeout(gviz("Scores"));
+      if(!sRes.ok) throw new Error(`HTTP ${sRes.status}`);
+      const sText = await sRes.text();
+
+      // gviz returns HTML when sharing is wrong or the tab doesn't exist.
+      const firstLine = sText.split("\n",1)[0] || "";
+      if(sText.trim().startsWith("<") || sText.includes("<HTML>")){
+        showDiag("sharing");
+        throw new Error("Got HTML, not CSV — sharing or sign-in issue");
+      }
+      if(!/,/.test(firstLine) || !/name|player/i.test(firstLine)){
+        showDiag("tab");
+        throw new Error("Tab found but no Name column — wrong tab name?");
+      }
+      hideDiag();
+
+      SCORES = buildScores(sText);
+
+      // Extras is optional — don't fail the whole load if it's missing
+      try{
+        const eRes = await fetchWithTimeout(gviz("Extras"));
+        if(eRes.ok){
+          const eText = await eRes.text();
+          if(!eText.trim().startsWith("<")) EXTRAS = buildExtras(eText);
+        }
+      }catch(e){ /* extras tab missing is fine */ }
+
       lastUpdated=new Date().toLocaleString("en-GB",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
       localStorage.setItem(CACHE_KEY, JSON.stringify({scores:SCORES,extras:EXTRAS,when:lastUpdated}));
       renderAll();
     }catch(err){
+      console.error("Sheet load failed:", err);
       if(!hadCache){
-        document.getElementById("updated").textContent="Could not load yet — tap Refresh";
+        setStatus("Couldn't load sheet — see message above. Tap Refresh to retry.");
+      } else {
+        setStatus("Showing cached scores · refresh failed");
       }
     }finally{
       if(btn){btn.disabled=false;btn.classList.remove("spin");}
     }
+  }
+
+  function showDiag(kind){
+    let el = document.getElementById("diag");
+    if(!el){
+      el = document.createElement("div");
+      el.id = "diag";
+      el.className = "diag-box";
+      const wrap = document.querySelector(".wrap");
+      const banner = document.getElementById("banner");
+      wrap.insertBefore(el, banner.nextSibling);
+    }
+    const messages = {
+      sharing: `<b>Can't read the sheet — sharing isn't set right.</b><br>
+        Open the sheet, click <b>Share</b> (top right) → under <b>General access</b> set to
+        <b>Anyone with the link</b> with role <b>Viewer</b>. Then tap Refresh below.`,
+      tab: `<b>Found the sheet but not the right tab.</b><br>
+        The page needs a tab named exactly <code>Scores</code> (capital S, no spaces). Check the tab
+        name at the bottom of your sheet, rename it if needed, then tap Refresh.`
+    };
+    el.innerHTML = messages[kind] || "Sheet load failed.";
+    el.style.display = "block";
+  }
+  function hideDiag(){
+    const el = document.getElementById("diag");
+    if(el) el.style.display = "none";
   }
 
   loadAll();
