@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seven Afternoons in Messinia — Costa Navarino, August</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E2A3A;
+  --sea:#1C5D7A;
+  --paper:#F4F1E8;
+  --olive:#6F7D4D;
+  --sun:#E8A14A;
+  --line:rgba(14,42,58,.16);
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Karla',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Marcellus',serif;font-weight:400;line-height:1.15}
+a{color:var(--sea)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+
+/* HERO */
+.hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden;padding:72px 0 56px}
+.hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.38}
+.hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,42,58,.25),rgba(14,42,58,.78))}
+.hero .wrap{position:relative;z-index:2}
+.hero .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--sun);margin-bottom:18px}
+.hero h1{font-size:clamp(38px,8vw,68px);max-width:14ch}
+.hero p.lede{margin-top:20px;max-width:54ch;font-size:17px;color:rgba(244,241,232,.9)}
+.hero .ribbon{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px}
+.hero .ribbon span{font-family:var(--mono);font-size:12px;border:1px solid rgba(244,241,232,.4);border-radius:999px;padding:6px 13px;background:rgba(14,42,58,.35)}
+
+/* DAY NAV */
+nav.days{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line);overflow-x:auto;-webkit-overflow-scrolling:touch}
+nav.days .row{display:flex;gap:4px;padding:10px 16px;min-width:max-content}
+nav.days a{font-family:var(--mono);font-size:12px;text-decoration:none;color:var(--ink);padding:7px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+nav.days a:hover{border-color:var(--line)}
+nav.days a.golf{color:var(--olive)}
+
+/* SHAPE */
+.shape{padding:56px 0 8px}
+.shape h2{font-size:clamp(26px,5vw,36px);margin-bottom:8px}
+.shape p{max-width:62ch;color:rgba(14,42,58,.8)}
+.daybar{margin:28px 0 8px;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;font-family:var(--mono);font-size:11px;text-align:center}
+.daybar div{padding:12px 4px;flex:1;color:#fff}
+.daybar .g{background:var(--olive);flex:2.2}
+.daybar .l{background:var(--sun);color:var(--ink);flex:1.2}
+.daybar .p{background:var(--sea);flex:1.8}
+.daybar .o{background:var(--ink);flex:2.4}
+.daybar .d{background:#7A3B2E;flex:1.6}
+.daybar b{display:block;font-size:12px;letter-spacing:.06em}
+.barnote{font-size:13px;color:rgba(14,42,58,.6);font-family:var(--mono);margin-top:10px}
+
+/* DAY CARDS */
+section.day{padding:48px 0 8px}
+.daycard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.photo{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,var(--sea),var(--ink));display:flex;align-items:flex-end}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo .fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(244,241,232,.9);font-family:'Marcellus',serif;font-size:clamp(22px,5vw,34px);text-align:center;padding:0 24px;z-index:0}
+.photo .credit{position:relative;z-index:2;font-family:var(--mono);font-size:10px;color:rgba(255,255,255,.9);background:rgba(14,42,58,.6);padding:3px 10px;border-top-right-radius:8px}
+.daybody{padding:26px 26px 30px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:6px}
+.daybody h3{font-size:clamp(24px,5vw,32px);margin-bottom:4px}
+.meta{font-family:var(--mono);font-size:12px;color:rgba(14,42,58,.6);margin-bottom:18px}
+.timeline{border-left:2px solid var(--line);margin:8px 0 4px 6px;padding-left:0;list-style:none}
+.timeline li{position:relative;padding:0 0 18px 24px}
+.timeline li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--sea)}
+.timeline li.hl::before{background:var(--sun);border-color:var(--sun)}
+.timeline .t{font-family:var(--mono);font-size:12px;color:var(--sea);display:block}
+.timeline b{font-weight:700}
+.tip{margin-top:14px;background:rgba(232,161,74,.13);border-left:3px solid var(--sun);padding:12px 16px;border-radius:0 10px 10px 0;font-size:14px}
+.tip b{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;display:block;margin-bottom:3px;color:#9A6320}
+
+/* GOLF */
+#golf .daycard{background:var(--ink);color:var(--paper);border:none}
+#golf .daybody h3{color:var(--paper)}
+.courses{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:18px}
+.course{border:1px solid rgba(244,241,232,.25);border-radius:12px;padding:16px}
+.course h4{font-family:'Marcellus',serif;font-size:19px;margin-bottom:2px}
+.course .arch{font-family:var(--mono);font-size:11px;color:var(--sun);margin-bottom:8px;display:block}
+.course p{font-size:13.5px;color:rgba(244,241,232,.85)}
+
+/* MARKETS */
+#markets .daycard{border-left:6px solid var(--olive)}
+
+/* LISTS */
+.listgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:18px}
+.cardlet{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+.cardlet h4{font-family:'Marcellus',serif;font-size:18px}
+.cardlet .where{font-family:var(--mono);font-size:11px;color:var(--sea);display:block;margin-bottom:6px}
+.cardlet p{font-size:13.5px;color:rgba(14,42,58,.82)}
+
+/* CHECKLIST */
+.check{padding-top:8px}
+.check table{width:100%;border-collapse:collapse;margin-top:16px;font-size:14px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.check th{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-align:left;padding:12px 14px;background:var(--ink);color:var(--paper)}
+.check td{padding:11px 14px;border-top:1px solid var(--line);vertical-align:top}
+.check td.day{font-family:var(--mono);font-size:12px;color:var(--sea);white-space:nowrap}
+.check td .tick{color:var(--olive);font-weight:700}
+
+/* INTEL */
+.intel{padding:48px 0 80px}
+.intel ul{list-style:none;margin-top:16px}
+.intel li{padding:12px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;gap:14px}
+.intel li span.k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--sea);min-width:110px;padding-top:3px}
+.sectionhead{padding-top:56px}
+.sectionhead h2{font-size:clamp(26px,5vw,36px)}
+.sectionhead p{color:rgba(14,42,58,.75);max-width:60ch;margin-top:6px}
+footer{background:var(--ink);color:rgba(244,241,232,.7);padding:36px 0;font-family:var(--mono);font-size:12px;text-align:center}
+@media (max-width:560px){.daybar div{font-size:9px;padding:10px 2px}.daybody{padding:20px 18px 24px}}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="heroimg" alt="Panorama of Voidokilia bay" src="https://commons.wikimedia.org/wiki/Special:FilePath/Voidokilia-Beach-GMichalagas1.jpg?width=1600">
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="eyebrow">Costa Navarino · Messinia · August</div>
+    <h1>Seven Afternoons in Messinia</h1>
+    <p class="lede">Mornings are spoken for — first tee at 8, back by noon. This is the plan for everything after: where to swim, climb, wander, shop and eat once the scorecard is signed. Base camp: the W Costa Navarino, Navarino Waterfront.</p>
+    <div class="ribbon">
+      <span>7 nights</span><span>Golf 08:00–12:00 daily</span><span>Sunset ≈ 20:25</span><span>Sea 26°C</span>
+    </div>
+  </div>
+</header>
+
+<nav class="days" aria-label="Day navigation">
+  <div class="row">
+    <a href="#shape">The Shape</a>
+    <a href="#d1">D1 Arrive</a>
+    <a href="#d2">D2 Voidokilia</a>
+    <a href="#d3">D3 Pylos</a>
+    <a href="#d4">D4 Waterfalls</a>
+    <a href="#d5">D5 Methoni</a>
+    <a href="#d6">D6 On the Bay</a>
+    <a href="#d7">D7 Slow</a>
+    <a href="#golf" class="golf">⛳ Courses</a>
+    <a href="#markets">Markets</a>
+    <a href="#eat">Eat</a>
+    <a href="#check">Checklist</a>
+    <a href="#intel">Intel</a>
+  </div>
+</nav>
+
+<div class="shape wrap" id="shape">
+  <h2>The shape of every day</h2>
+  <p>August in the Peloponnese runs 30–34°C, and the trick is to never fight it. Golf takes the cool of the morning. The dead heat of 13:00–16:30 belongs to lunch, the pool and the beach. Then the light goes golden, the sites empty out, and that's when you go exploring — every outing below is timed for 17:00 onwards, ending at a table.</p>
+  <div class="daybar" role="img" aria-label="Daily rhythm: golf 8 to 12, lunch, pool, outing from 5pm, dinner from 8.30pm">
+    <div class="g"><b>08:00–12:00</b>Golf</div>
+    <div class="l"><b>12:30</b>Lunch</div>
+    <div class="p"><b>13:30–16:30</b>Pool / siesta</div>
+    <div class="o"><b>17:00–20:00</b>The outing</div>
+    <div class="d"><b>20:30 →</b>Dinner</div>
+  </div>
+  <p class="barnote">Golden-hour rule: nothing cultural before 17:00. Everything looks twice as good and feels ten degrees cooler.</p>
+</div>
+
+<!-- DAY 1 -->
+<section class="day wrap" id="d1">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Navarino Waterfront</div>
+      <img alt="Voidokilia and the Gialova lagoon — the coastline around the resort" src="https://commons.wikimedia.org/wiki/Special:FilePath/Voidokoilia%20-%20Gialova%20lagoon.jpg?width=1200">
+      <span class="credit">Navarino coastline · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day One</div>
+      <h3>Land, unpack, do nothing well</h3>
+      <div class="meta">0 km · Resort day</div>
+      <ul class="timeline">
+        <li><span class="t">12:30</span><b>Lunch at Parelia Beach Club</b> — the W's Greek beach restaurant, feet in sand, straight off the course.</li>
+        <li><span class="t">13:30</span><b>Pool and beach.</b> Claim loungers at the adults-only Sunset Bar pool early — it's the one that fills. The long sandy stretch in front of the W runs into Romanos Beach, the resort beach TripAdvisor rates top of the local list.</li>
+        <li class="hl"><span class="t">18:00</span><b>Navarino Agora</b> — the open-air marketplace next door: artisan craft shops, deli, gelato, outdoor cinema. Check what's screening this week.</li>
+        <li><span class="t">20:30</span><b>Dinner at Platia or The Cookery</b> at the W, then a nightcap at the W Lounge over the bay.</li>
+      </ul>
+      <div class="tip"><b>Do today</b>Confirm all seven 08:00 tee times with Caddie Master, book the Day 6 boat, reserve Barbouni and the Methoni and Gialova dinners, and check which day of your week is a Wednesday or Saturday — that's market day (see Markets below).</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 2 -->
+<section class="day wrap" id="d2">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Voidokilia</div>
+      <img alt="Voidokilia beach from above" src="https://commons.wikimedia.org/wiki/Special:FilePath/Voidokoilia%20from%20above.jpg?width=1200">
+      <span class="credit">Voidokilia · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Two</div>
+      <h3>Voidokilia &amp; the Old Castle</h3>
+      <div class="meta">~20 min drive · Swim + hike + sunset</div>
+      <ul class="timeline">
+        <li><span class="t">16:30</span><b>Drive to Voidokilia</b> — the perfect omega-shaped bay, regularly listed among the best beaches in the Mediterranean. Late afternoon means the day crowds are leaving and parking is sane. Divari (Golden) beach next to the lagoon is the quieter overflow option.</li>
+        <li><span class="t">17:00</span><b>Swim the lagoon-warm shallows.</b> No bars, no sunbeds, nothing — bring water and beach shoes. That's the point.</li>
+        <li class="hl"><span class="t">18:15</span><b>Climb to Nestor's Cave and Paleokastro</b> (Old Navarino Castle) from the south-west end of the beach — legend says Hermes hid Apollo's stolen oxen in the cave. The view back over the omega at golden hour is the photo of the week.</li>
+        <li><span class="t">20:30</span><b>Dinner in Gialova</b> on the way home — To Steki Tou Vergou for honest taverna tables on the sand, or Anama for modern Greek.</li>
+      </ul>
+      <div class="tip"><b>Pack</b>Trainers for the castle path, water, and cash — Voidokilia has zero facilities. The castle ruins are unfenced; you walk them at your own risk, which is half the charm.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 3 -->
+<section class="day wrap" id="d3">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Pylos</div>
+      <img alt="Pylos town and harbour" src="https://commons.wikimedia.org/wiki/Special:FilePath/%CE%A0%CF%8D%CE%BB%CE%BF%CF%82%20(Pylos)%20-%20Flickr%20-%20-ErWin.jpg?width=1200">
+      <span class="credit">Pylos · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Three</div>
+      <h3>Pylos town &amp; Niokastro</h3>
+      <div class="meta">~15 min drive · Castle + harbour evening</div>
+      <ul class="timeline">
+        <li><span class="t">17:00</span><b>Niokastro fortress</b> — the 16th-century fortress above the harbour, one of the best-preserved castles in Greece. One ticket covers the ramparts plus four museums inside, including the standout underwater-archaeology collection from the bay's shipwrecks. Go at five when the stone glows.</li>
+        <li class="hl"><span class="t">18:30</span><b>Wander down to the plateia</b> — Pylos's plane-tree square is the social heart of the bay. Gelato, a slow lap of the harbour, the Three Admirals monument to the 1827 Battle of Navarino in the middle.</li>
+        <li><span class="t">20:30</span><b>Dinner at Koukos Wine Restaurant</b> by the marina — modern Greek, serious local wine list. Katerina's Tavern is the budget-brilliant backup: pick your fish, grilled with oil and lemon.</li>
+      </ul>
+      <div class="tip"><b>Worth knowing</b>The bay you're looking at hosted the 1827 battle that effectively won Greek independence — three empires' fleets in one afternoon. Sets up Day 6 nicely.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 4 -->
+<section class="day wrap" id="d4">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Polylimnio</div>
+      <span class="credit">Polylimnio gorge</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Four</div>
+      <h3>Polylimnio waterfalls</h3>
+      <div class="meta">~35 min drive · Gorge swim</div>
+      <ul class="timeline">
+        <li><span class="t">16:00</span><b>Drive inland to Polylimnio</b> — "many lakes": a hidden gorge of cascading waterfalls and jade plunge pools near Kazarma, one of Messinia's best-kept secrets. The gorge is shaded, so it works in the afternoon when the beaches bake.</li>
+        <li class="hl"><span class="t">16:45</span><b>Hike the pools.</b> Fifteen minutes on a marked path to the first lakes; the brave continue to Kadi falls, the big one, and jump in. The water is cold in the best way.</li>
+        <li><span class="t">19:00</span><b>Back to the resort</b>, shower, sundowner at Between or the Sunset Bar.</li>
+        <li><span class="t">20:30</span><b>Dinner at Barbouni</b> at Navarino Dunes — the famous toes-in-the-sand seafood restaurant under the waving canopy. The hot table of the resort.</li>
+      </ul>
+      <div class="tip"><b>Pack</b>Sturdy sandals or trainers you can get wet, swimsuit on under clothes — no changing facilities. The path gets slippery near the falls.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 5 -->
+<section class="day wrap" id="d5">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Methoni</div>
+      <img alt="The medieval castle of Methoni" src="https://commons.wikimedia.org/wiki/Special:FilePath/%CE%A4%CE%BF%20%CE%BC%CE%B5%CF%83%CE%B1%CE%B9%CF%89%CE%BD%CE%B9%CE%BA%CF%8C%20%CE%BA%CE%AC%CF%83%CF%84%CF%81%CE%BF%20%CF%84%CE%B7%CF%82%20%CE%9C%CE%B5%CE%B8%CF%8E%CE%BD%CE%B7%CF%82%20-%20panoramio.jpg?width=1200">
+      <span class="credit">Methoni Castle · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Five</div>
+      <h3>Methoni's Venetian castle</h3>
+      <div class="meta">~30 min drive · Fortress + fishing-village dinner</div>
+      <ul class="timeline">
+        <li><span class="t">17:00</span><b>Methoni Castle</b> — TripAdvisor's top-rated sight in the whole area: a vast Venetian walled city on a promontory, entered over a 14-arch stone bridge. Late-afternoon light on the honey-coloured stone is unreal.</li>
+        <li class="hl"><span class="t">18:30</span><b>Walk out to the Bourtzi</b> — the octagonal sea-tower at the castle's tip, the postcard shot of the Peloponnese, with the island of Sapientza behind. Then a swim at Methoni beach right beneath the walls.</li>
+        <li><span class="t">20:30</span><b>Dinner in the village</b> — Nicos, the 25-year local-legend taverna (saganaki, daily specials inspected in the kitchen), or Modon on the square for standout fresh tuna and octopus.</li>
+      </ul>
+      <div class="tip"><b>Optional detour</b>Finikounda, a proper fishing village with a great beach, is 15 minutes further on if you want to stretch the evening.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 6 -->
+<section class="day wrap" id="d6">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Navarino Bay</div>
+      <img alt="1808 view of Navarino, its port and the island of Sphacteria" src="https://commons.wikimedia.org/wiki/Special:FilePath/Vue%20de%20la%20ville%20de%20Navarin%2C%20de%20son%20port%20et%20de%20l%27%C3%AEle%20de%20Sphacterie%20-%20Castellan%20Antoine-laurent%20-%201808.jpg?width=1200">
+      <span class="credit">Navarino Bay &amp; Sphacteria, 1808 · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Six</div>
+      <h3>On the water — Navarino Bay</h3>
+      <div class="meta">From Pylos or Gialova · Boat afternoon</div>
+      <ul class="timeline">
+        <li><span class="t">16:30</span><b>Private boat from Pylos harbour</b> (book via the W's Whatever/Whenever desk or a local operator). Cruise the bay: Sphacteria island — site of the famous Spartan surrender of 425 BC — sea caves, the Tsichli-Baba arch, and the waters where the allied fleet sank the Ottoman armada in 1827.</li>
+        <li class="hl"><span class="t">18:30</span><b>Drop anchor for a swim</b> off a beach you can only reach by water. Lower-key alternative: kayak or SUP on the Gialova lagoon — one of Europe's key wetlands, 258 bird species, chameleons in the dunes.</li>
+        <li><span class="t">20:30</span><b>Dinner on the Gialova waterfront</b> — Elia, right on the beachfront, as the last light goes over the bay you've just sailed.</li>
+      </ul>
+      <div class="tip"><b>Book early</b>This is the one outing that genuinely sells out in August. Sort it on Day 1 — sunset slots go first.</div>
+    </div>
+  </div>
+</section>
+
+<!-- DAY 7 -->
+<section class="day wrap" id="d7">
+  <div class="daycard">
+    <div class="photo">
+      <div class="fallback">Nestor's Palace</div>
+      <img alt="Panorama of the Palace of Nestor" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nestor%27s%20Palace%20panorama.jpg?width=1200">
+      <span class="credit">Palace of Nestor · Wikimedia Commons</span>
+    </div>
+    <div class="daybody">
+      <div class="kicker">Day Seven</div>
+      <h3>Slow finish — spa, palace, last supper</h3>
+      <div class="meta">Resort + one short detour</div>
+      <ul class="timeline">
+        <li><span class="t">13:30</span><b>Away Spa at the W</b> (or the award-winning Anazoe Spa at Navarino Dunes for the full olive-oil-ritual treatment). Book for two; earn the week's recovery.</li>
+        <li class="hl"><span class="t">17:30</span><b>Palace of Nestor</b> — 20 minutes away, the best-preserved Mycenaean palace in Greece, straight out of Homer: Telemachus came here looking for Odysseus, and the 3,200-year-old clay bathtub he was supposedly bathed in is still there. Under a smart canopy with raised walkways; 45 minutes is plenty, and it's a gentler outing than the castles.</li>
+        <li><span class="t">20:30</span><b>Farewell dinner</b> — back to whichever table won the week, or one you haven't tried: Flavors of the Peloponnese at the Westin for regional Messinian cooking, or a last bay-view session at the W Lounge.</li>
+      </ul>
+      <div class="tip"><b>Skip-it honesty</b>Ancient Messene and Olympia are both spectacular but 1.5–2 hrs each way — too much for a post-golf afternoon. Save them for the trip when mornings are free.</div>
+    </div>
+  </div>
+</section>
+
+<!-- GOLF -->
+<section class="day wrap" id="golf">
+  <div class="daycard">
+    <div class="daybody">
+      <div class="kicker" style="color:var(--sun)">The Morning Shift</div>
+      <h3>Four courses, seven tee times</h3>
+      <p style="color:rgba(244,241,232,.85);font-size:15px;margin-top:6px">Green fees include buggy and practice; shuttles run between hotels and courses every 20 minutes, and the Caddie Masters move and clean your clubs between venues overnight. The Bay is on your doorstep at the W; the others are 10–15 minutes.</p>
+      <div class="courses">
+        <div class="course"><h4>The Dunes</h4><span class="arch">Bernhard Langer · Greece's No.1</span><p>Links-style through olive groves to the sea. Big, devilish, undulating greens — the sternest test of the four. Play it twice.</p></div>
+        <div class="course"><h4>The Bay</h4><span class="arch">Robert Trent Jones Jr</span><p>The scenic one — holes along Navarino Bay itself, subtle bunkering, rewards strategy over power. Closest to the W.</p></div>
+        <div class="course"><h4>The Hills</h4><span class="arch">José María Olazábal</span><p>Hilltop drama inland with huge elevation change and panoramic Ionian views. Modern, bold, brilliant fun.</p></div>
+        <div class="course"><h4>Int'l Olympic Academy</h4><span class="arch">José María Olazábal</span><p>The Hills' sister course on the same ridge — slightly friendlier, equally spectacular. Ideal final-day round.</p></div>
+      </div>
+      <div class="tip" style="background:rgba(232,161,74,.16)"><b>Suggested rota</b>Bay → Dunes → Hills → Olympic Academy → Dunes → Bay → player's choice. Front-load the Dunes while you're fresh; it punishes tired swings.</div>
+    </div>
+  </div>
+</section>
+
+<!-- MARKETS -->
+<section class="day wrap" id="markets">
+  <div class="daycard">
+    <div class="daybody">
+      <div class="kicker" style="color:var(--olive)">Markets &amp; Local Produce</div>
+      <h3>The market question, answered honestly</h3>
+      <p style="font-size:15px;margin-top:6px;color:rgba(14,42,58,.85)">Pylos itself has no real market — the genuine article is <b>Kalamata's laiki agora: hundreds of stalls every Wednesday and Saturday morning</b>, next to the bus station east of the centre. Fruit, vegetables, fish, mountain honey, wild mushrooms, and the region's famous olives and oil at half shop prices. It's the best food market in the southern Peloponnese — and it's a morning event, which collides with your tee time.</p>
+      <ul class="timeline" style="margin-top:18px">
+        <li class="hl"><span class="t">The play</span><b>Sacrifice one round (or take a twilight 9 instead).</b> On whichever of your days is a Wednesday or Saturday, drive to Kalamata (~55 min), do the market 9:00–11:00 while it's alive, lunch in Kalamata's old town under the castle, and you're back poolside by 15:00. One market morning for six rounds of golf is a fair trade.</li>
+        <li><span class="t">No-sacrifice option</span><b>Roadside produce stalls</b> on the Kalamata–Pylos road between Messini and Rizomilos sell farm fruit and veg all day — pull over on any afternoon drive.</li>
+        <li><span class="t">Afternoon-friendly</span><b>Olive oil &amp; wine instead.</b> Book an afternoon Messinian olive-oil tasting or a session at Navarino Vineyards through the concierge — the producer-level experience without the early start. Pair with the deli at Navarino Agora for taking bottles home.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EAT -->
+<div class="wrap sectionhead" id="eat">
+  <h2>The eating list</h2>
+  <p>Resort tables plus the local heroes — book the starred ones the day you land.</p>
+  <div class="listgrid">
+    <div class="cardlet"><span class="where">Navarino Dunes ★</span><h4>Barbouni</h4><p>Toes-in-sand seafood under the famous waving canopy. The resort's signature meal.</p></div>
+    <div class="cardlet"><span class="where">W · Waterfront</span><h4>Parelia Beach Club</h4><p>Greek-inspired beach club — the default post-golf lunch.</p></div>
+    <div class="cardlet"><span class="where">Pylos marina ★</span><h4>Koukos</h4><p>Modern Greek with a serious Messinian wine list, right on the water.</p></div>
+    <div class="cardlet"><span class="where">Pylos</span><h4>Katerina's Tavern</h4><p>Pick-your-fish grill, best Greek salad around, a fraction of resort prices.</p></div>
+    <div class="cardlet"><span class="where">Gialova ★</span><h4>Elia / To Steki Tou Vergou</h4><p>Beachfront tables on Navarino Bay — refined at Elia, homestyle at Vergou.</p></div>
+    <div class="cardlet"><span class="where">Methoni ★</span><h4>Nicos / Modon</h4><p>Nicos: 25 years the village favourite. Modon: exceptional tuna on the square.</p></div>
+    <div class="cardlet"><span class="where">Westin</span><h4>Flavors of the Peloponnese</h4><p>Regional Messinian cooking — the local-heritage menu of the resort.</p></div>
+    <div class="cardlet"><span class="where">Kalamata</span><h4>Market-day lunch</h4><p>If you do the Wednesday/Saturday laiki, lunch in the old town below Kalamata Castle.</p></div>
+  </div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="wrap sectionhead check" id="check">
+  <h2>The must-do checklist</h2>
+  <p>Every top-rated sight and activity for the area (TripAdvisor's list for Pylos / Costa Navarino), mapped to a day so nothing slips.</p>
+  <table>
+    <tr><th>Must-do</th><th>Covered</th><th>When</th></tr>
+    <tr><td>Voidokilia Beach</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 2</td></tr>
+    <tr><td>Niokastro (New Castle of Pylos) + its 4 museums</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 3</td></tr>
+    <tr><td>Paleokastro (Old Navarino) &amp; Nestor's Cave</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 2</td></tr>
+    <tr><td>Methoni Castle &amp; Bourtzi — the area's No.1 sight</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 5</td></tr>
+    <tr><td>Polylimnio Waterfalls</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 4</td></tr>
+    <tr><td>Palace of Nestor</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 7</td></tr>
+    <tr><td>Gialova Lagoon (kayak / wildlife)</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 6</td></tr>
+    <tr><td>Navarino Bay &amp; Sphacteria boat trip</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 6</td></tr>
+    <tr><td>Romanos Beach</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 1 / any pool slot</td></tr>
+    <tr><td>The four golf courses</td><td class="day"><span class="tick">✓</span></td><td class="day">Every morning</td></tr>
+    <tr><td>Kalamata market &amp; old town</td><td class="day"><span class="tick">✓</span></td><td class="day">Your Wed or Sat</td></tr>
+    <tr><td>Pylos plateia &amp; harbour</td><td class="day"><span class="tick">✓</span></td><td class="day">Day 3</td></tr>
+    <tr><td>Ancient Messene / Olympia</td><td class="day">✗ skipped</td><td class="day">1.5–2 hrs each way — doesn't fit a post-golf afternoon</td></tr>
+  </table>
+</div>
+
+<!-- INTEL -->
+<div class="wrap intel" id="intel">
+  <div class="sectionhead" style="padding-top:40px">
+    <h2>August intel</h2>
+  </div>
+  <ul>
+    <li><span class="k">Heat</span><div>30–34°C daily, sea around 26°C. Outings start at 17:00 for a reason — honour the siesta.</div></li>
+    <li><span class="k">Light</span><div>Sunset ~20:25 early August, ~20:05 by month-end. Golden hour from about 19:15 — time castle visits to end in it.</div></li>
+    <li><span class="k">Wheels</span><div>Hire a car for the week. Resort shuttles cover the courses and Agora, but Voidokilia, Methoni, Polylimnio and Kalamata need your own keys. Roads are good and quiet.</div></li>
+    <li><span class="k">Site hours</span><div>Niokastro, Methoni Castle and Nestor's Palace typically run extended summer hours into the evening, but they shift year to year — confirm at the W concierge on arrival before locking in the 17:00 starts.</div></li>
+    <li><span class="k">Market days</span><div>Kalamata laiki: Wednesday and Saturday mornings only. Plan the one golf sacrifice accordingly.</div></li>
+    <li><span class="k">Cash</span><div>Cards work everywhere at the resort; village tavernas and market stalls prefer cash. An ATM sits on the Pylos square.</div></li>
+    <li><span class="k">Book now</span><div>Tee times (all 7), Barbouni, the Day 6 boat, and spa treatments. Everything else can flex.</div></li>
+  </ul>
+</div>
+
+<footer>Seven Afternoons in Messinia · built for one very good week</footer>
+
+<script>
+// Progressive enhancement: when opened in a full browser, try to upgrade any
+// missing card photo from Wikipedia's REST API (e.g. Polylimnio). Fails silently
+// in restricted previews — hardcoded Commons images above don't depend on this.
+const upgrades = [{sel:'#d4 .photo', titles:['Polylimnio']}];
+upgrades.forEach(async ({sel,titles})=>{
+  const el = document.querySelector(sel);
+  if(!el || el.querySelector('img')) return;
+  for (const t of titles){
+    try{
+      const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(t),{redirect:'follow'});
+      if(!r.ok) continue;
+      const j = await r.json();
+      const src = j.thumbnail ? j.thumbnail.source.replace(/\/\d+px-/, '/1100px-') : null;
+      if(!src) continue;
+      const img = new Image(); img.alt = t;
+      img.onload = ()=>{ el.prepend(img); };
+      img.src = src; return;
+    }catch(e){}
+  }
+});
+</script>
+</body>
+</html>
