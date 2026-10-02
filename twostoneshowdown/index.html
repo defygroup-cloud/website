@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Two Stone Showdown</title>
-<meta name="description" content="Ian vs Joe. 9 weeks. 2 stone each. Weigh-in every Monday.">
+<meta name="description" content="Ian vs Joe vs Sam. 9 weeks. 2 stone each. Weigh-in every Monday.">
 <meta name="theme-color" content="#0b0d12">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -61,6 +61,8 @@ h1 .vs-i{color:var(--ian)}h1 .vs-j{color:var(--joe)}
   border-radius:12px;padding:10px 14px;font-size:13px;font-weight:700;margin-bottom:16px}
 
 .players{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative;margin-bottom:16px}
+.players[data-n="3"]{grid-template-columns:repeat(3,1fr)}
+.players[data-n="4"]{grid-template-columns:repeat(2,1fr)}
 .vs{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
   width:46px;height:46px;border-radius:50%;background:var(--bg);border:2px solid var(--line);
   display:grid;place-items:center;font-family:Anton,sans-serif;font-size:17px;color:var(--mute)}
@@ -75,7 +77,8 @@ h1 .vs-i{color:var(--ian)}h1 .vs-j{color:var(--joe)}
 .crown{margin-left:auto;font-size:10px;font-weight:800;letter-spacing:.12em;color:#1a1300;
   background:var(--gold);padding:3px 8px;border-radius:999px}
 .big{display:flex;align-items:baseline;gap:8px;margin:14px 0 2px;position:relative}
-.big .num{font-family:Anton,sans-serif;font-size:clamp(46px,11vw,72px);line-height:.9;color:var(--c)}
+.big .num{font-family:Anton,sans-serif;font-size:clamp(42px,9vw,64px);line-height:.9;color:var(--c);white-space:nowrap}
+.big .num small{font-size:.45em;margin-left:2px;opacity:.85}
 .big .unit{font-weight:800;color:var(--mute);font-size:14px;text-transform:uppercase;letter-spacing:.06em}
 .alt{color:var(--mute);font-size:13px;font-weight:600;min-height:19px;position:relative}
 .bar{height:12px;border-radius:999px;background:rgba(255,255,255,.07);margin:14px 0 6px;overflow:hidden;position:relative}
@@ -128,6 +131,8 @@ footer a{color:var(--dim);text-decoration:none;padding:6px}
   .vs{width:36px;height:36px;font-size:14px}
   .chart-box{height:280px}
   .banner{padding:16px}
+  .players[data-n="3"]{grid-template-columns:1fr}
+  .players[data-n="3"] .player{padding:16px 18px}
 }
 </style>
 </head>
@@ -187,7 +192,8 @@ const CONFIG = {
   TARGET_LBS: 28,          // 2 stone
   PLAYERS: [
     { key: 'Ian', name: 'Ian Cassidy', colour: '#2f7bff' },
-    { key: 'Joe', name: 'Joe Moring',  colour: '#ff3b47' }
+    { key: 'Joe', name: 'Joe Moring',  colour: '#ff3b47' },
+    { key: 'Sam', name: 'Sam',         colour: '#2fd18b' }
   ]
 };
 /* ============================================================ */
@@ -216,6 +222,12 @@ function fmtLoss(lbs) {
   if (t < 14) return `${n1(t)}lb`;
   const st = Math.floor(t / 14), lb = t - st * 14;
   return lb ? `${st}st ${n1(lb)}lb` : `${st}st`;
+}
+
+function bigSt(lbs) {
+  const t = half(Math.max(0, lbs)), st = Math.floor(t / 14), lb = t - st * 14;
+  if (!st) return `${n1(lb)}<small>lb</small>`;
+  return `${st}<small>st</small>${lb ? ` ${n1(lb)}<small>lb</small>` : ''}`;
 }
 
 /* Accepts: 230 · 230lb · 16st 4 · 16st 4lb · 16 4 · 16.5 (stone) · 104.5kg */
@@ -296,7 +308,7 @@ function rowsFromCSV(text) {
 
 function demoRows() {
   const nowWeek = Math.max(4, Math.min(CONFIG.WEEKS, Math.floor((Date.now() - START) / WEEK_MS)));
-  const seeds = { Ian: [240, [3.5, 2, 3, 1, 2.5, 3, 0.5, 2.5, 3]], Joe: [229, [4.5, 1.5, 2, 2.5, -0.5, 3.5, 2, 3, 2.5]] };
+  const seeds = { Ian: [240, [3.5, 2, 3, 1, 2.5, 3, 0.5, 2.5, 3]], Joe: [229, [4.5, 1.5, 2, 2.5, -0.5, 3.5, 2, 3, 2.5]], Sam: [252, [5, 2.5, 1, 3, 2, 1.5, 3, 2, 2.5]] };
   const out = [];
   for (const p of CONFIG.PLAYERS) {
     const s = seeds[p.key] || [220, [2,2,2,2,2,2,2,2,2]];
@@ -312,10 +324,10 @@ function demoRows() {
 function buildModel(rs) {
   // players = config players + any extra names found in the sheet (never trust a hard-coded list alone)
   const players = CONFIG.PLAYERS.map(p => ({ ...p }));
-  const extraCols = ['#ffc94d', '#3ddc97', '#b48cff', '#ff8ad8'];
+  const extraCols = ['#ffc94d', '#b48cff', '#ff8ad8', '#4dd6ff'];
   const findP = n => players.find(p => p.key.toLowerCase() === n.toLowerCase() || p.name.toLowerCase() === n.toLowerCase()
     || p.name.toLowerCase().split(' ')[0] === n.toLowerCase().split(' ')[0]);
-  rs.forEach(r => { if (!findP(r.name)) players.push({ key: r.name, name: r.name, colour: extraCols[(players.length - 2) % extraCols.length] }); });
+  rs.forEach(r => { if (!findP(r.name)) players.push({ key: r.name, name: r.name, colour: extraCols[(players.length - CONFIG.PLAYERS.length) % extraCols.length] }); });
 
   players.forEach(p => {
     const series = Array(CONFIG.WEEKS + 1).fill(null), stamp = Array(CONFIG.WEEKS + 1).fill(-Infinity);
@@ -373,7 +385,7 @@ function render() {
   const { leader, ranked } = model;
   let b;
   if (!ranked.length) b = { c: '#ffc94d', ico: '⚖️', t: 'Weigh-in <em>Monday</em>', s: `Starting weights go in on ${fmtDate(START)}. No hiding from the scales.` };
-  else if (ranked.length < 2) b = { c: ranked[0].colour, ico: '⏳', t: `<em>${esc(ranked[0].name.split(' ')[0])}</em> is on the board`, s: 'Waiting for the other starting weight.' };
+  else if (ranked.length < 2) b = { c: ranked[0].colour, ico: '⏳', t: `<em>${esc(ranked[0].name.split(' ')[0])}</em> is on the board`, s: 'Waiting for the other starting weights.' };
   else if (!leader) b = { c: '#ffc94d', ico: '🤝', t: '<em>Dead level</em>', s: `Both down ${fmtLoss(ranked[0].lost)}. Everything to play for.` };
   else {
     const gap = leader.lost - ranked[1].lost, first = leader.name.split(' ')[0];
@@ -399,8 +411,8 @@ function render() {
     const has = p.lost != null;
     return `<article class="card player" style="--c:${p.colour}">
       <div class="p-head"><span class="dot"></span><h2>${esc(p.name)}</h2>${leader === p ? '<span class="crown">LEADING</span>' : ''}</div>
-      <div class="big"><span class="num">${has ? n1(Math.max(0, p.lost)) : '—'}</span><span class="unit">lb lost</span></div>
-      <div class="alt">${has && p.lost >= 14 ? '= ' + fmtLoss(p.lost) : has && p.lost < 0 ? `Up ${fmtLoss(p.lost)} 😬` : has ? '' : 'Awaiting first weigh-in'}</div>
+      <div class="big"><span class="num">${has ? bigSt(p.lost) : '—'}</span><span class="unit">lost</span></div>
+      <div class="alt">${has && p.lost < 0 ? `Up ${fmtLoss(p.lost)} 😬` : has ? '' : 'Awaiting first weigh-in'}</div>
       <div class="bar"><i style="width:${p.pct}%"></i></div>
       <div class="bar-l"><span>${Math.round(p.pct)}%</span><span>2 stone</span></div>
       <dl>
@@ -412,7 +424,7 @@ function render() {
       </dl>
     </article>`;
   }).join('') + (model.players.length === 2 ? '<div class="vs">VS</div>' : '');
-  $('players').style.gridTemplateColumns = model.players.length > 2 ? 'repeat(auto-fit,minmax(200px,1fr))' : '';
+  $('players').dataset.n = model.players.length;
 
   renderTable(t);
   renderChart();
@@ -427,7 +439,7 @@ function renderTable(t) {
     h += `<tr class="${future ? 'future' : ''} ${isNow ? 'now' : ''}"><td><span class="wk">${w === 0 ? 'START' : 'W' + w}</span><span class="dt">${fmtDate(d)}</span></td>`;
     P.forEach(p => {
       const v = p.series[w], c = p.weekly[w];
-      h += `<td>${v != null ? fmtSt(v) : '—'}${c != null ? `<span class="chg ${c >= 0 ? 'down' : 'up'}">${c >= 0 ? '−' : '+'}${n1(Math.abs(c))}</span>` : ''}</td>`;
+      h += `<td>${v != null ? fmtSt(v) : '—'}${c != null ? `<span class="chg ${c >= 0 ? 'down' : 'up'}">${c >= 0 ? '−' : '+'}${fmtLoss(c)}</span>` : ''}</td>`;
     });
     const contenders = P.filter(p => p.weekly[w] != null);
     let win = '—';
@@ -461,8 +473,8 @@ function renderChart() {
   }
   const grid = 'rgba(255,255,255,.06)', tick = '#8b93a3';
   const yLost = { min: Math.min(0, ...ds.flatMap(d => d.data).filter(v => v != null)), suggestedMax: CONFIG.TARGET_LBS + 2,
-    ticks: { color: tick, callback: v => v + 'lb', stepSize: 4 }, grid: { color: grid } };
-  const yWt = { ticks: { color: tick, callback: v => fmtSt(v).replace(' 0lb', '') }, grid: { color: grid } };
+    ticks: { color: tick, callback: v => v === 0 ? '0' : (v < 0 ? '+' : '') + fmtLoss(v), stepSize: 7 }, grid: { color: grid } };
+  const yWt = { ticks: { color: tick, callback: v => fmtSt(v).replace(' 0lb', ''), stepSize: 7 }, grid: { color: grid } };
   const cfg = {
     type: 'line', data: { labels, datasets: ds },
     options: {
