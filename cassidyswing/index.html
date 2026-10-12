@@ -157,14 +157,14 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 
 /* ---------- Overall leaderboard ---------- */
 .lb-head{
-  display:grid;grid-template-columns:34px 1fr repeat(6,28px) 48px;gap:5px;
+  display:grid;grid-template-columns:34px 1fr repeat(5,32px) 52px;gap:5px;
   padding:0 10px 8px;font-size:10.5px;font-weight:800;letter-spacing:.08em;
   text-transform:uppercase;color:var(--muted);border-bottom:1px solid rgba(160,67,42,.16);
 }
 .lb-head .r{text-align:center;}
 .lb-head .t{text-align:center;color:var(--terra-deep);}
 .row{
-  display:grid;grid-template-columns:34px 1fr repeat(6,28px) 48px;gap:5px;
+  display:grid;grid-template-columns:34px 1fr repeat(5,32px) 52px;gap:5px;
   align-items:center;padding:11px 10px;border-bottom:1px solid rgba(160,67,42,.10);
 }
 .row:last-child{border-bottom:none;}
@@ -179,6 +179,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 .chip.y{background:var(--yellow-bg);border-color:var(--yellow-bd);color:var(--yellow);}
 .chip.o{background:var(--clay-bg);border-color:var(--clay-bd);color:var(--clay);}
 .chip.e{background:rgba(120,100,80,.08);color:var(--muted);border-color:rgba(120,100,80,.14);}
+.chip.dropped{opacity:.42;text-decoration:line-through;}
 .row .total{font-family:"Fraunces",serif;font-weight:700;font-size:19px;text-align:center;color:var(--terra-deep);}
 
 /* podium tints */
@@ -264,7 +265,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 @media (min-width:880px){
   .wrap{max-width:1060px;}
   header,
-  #panel-overall, #panel-r1, #panel-r2, #panel-r3, #panel-r4, #panel-r5, #panel-r6, #panel-winnings, #setup,
+  #panel-overall, #panel-r1, #panel-r2, #panel-r3, #panel-r4, #panel-r5, #panel-winnings, #setup,
   .foot{
     max-width:760px; margin-left:auto; margin-right:auto;
   }
@@ -274,8 +275,8 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 /* ---------- Winnings ---------- */
 .w-status{font-size:12.5px;font-weight:700;color:var(--terra-deep);background:rgba(224,162,63,.18);border:1px solid rgba(224,162,63,.4);border-radius:10px;padding:9px 13px;margin-bottom:14px;text-align:center;letter-spacing:.02em;}
 .w-status.final{color:var(--olive);background:rgba(85,140,86,.16);border-color:rgba(95,160,98,.45);}
-.w-head{display:grid;grid-template-columns:1fr 64px 56px 48px 52px 64px;gap:4px;padding:0 12px 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid rgba(160,67,42,.16);}
-.w-row{display:grid;grid-template-columns:1fr 64px 56px 48px 52px 64px;gap:4px;align-items:center;padding:11px 12px;border-bottom:1px solid rgba(160,67,42,.10);}
+.w-head{display:grid;grid-template-columns:1fr 70px 60px 54px 70px;gap:5px;padding:0 12px 8px;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid rgba(160,67,42,.16);}
+.w-row{display:grid;grid-template-columns:1fr 70px 60px 54px 70px;gap:5px;align-items:center;padding:11px 12px;border-bottom:1px solid rgba(160,67,42,.10);}
 .w-row:last-child{border-bottom:none;}
 .w-row.lead{background:linear-gradient(90deg, rgba(224,162,63,.2), transparent);border-radius:10px;}
 .w-name{font-weight:700;font-size:15px;color:var(--ink);}
@@ -283,7 +284,7 @@ h1 .it{font-style:italic;font-weight:500;color:var(--saffron-soft);}
 .w-c{text-align:right;font-weight:700;font-size:14px;color:var(--ink-soft);font-variant-numeric:tabular-nums;}
 .w-tot{font-family:"Fraunces",serif;font-weight:700;font-size:17px;color:var(--terra-deep);}
 @media (max-width:560px){
-  .w-head,.w-row{grid-template-columns:1fr 52px 44px 38px 42px 54px;gap:3px;padding-left:8px;padding-right:8px;}
+  .w-head,.w-row{grid-template-columns:1fr 56px 48px 44px 58px;gap:3px;padding-left:8px;padding-right:8px;}
   .w-head{font-size:9px;}
   .w-name{font-size:13.5px;}
   .w-c{font-size:12.5px;}
@@ -325,7 +326,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
 .note{text-align:center;margin-top:22px;font-size:12px;color:rgba(251,245,233,.78);font-weight:600;letter-spacing:.04em;}
 
 @media (max-width:560px){
-  .lb-head,.row{grid-template-columns:28px 1fr repeat(6,22px) 40px;gap:3px;padding-left:8px;padding-right:8px;}
+  .lb-head,.row{grid-template-columns:28px 1fr repeat(5,26px) 44px;gap:3px;padding-left:8px;padding-right:8px;}
   .lb-head{font-size:9.5px;}
   .row .name{font-size:13.5px;}
   .row .chip{font-size:10.5px;padding:5px 0;}
@@ -345,8 +346,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     <div class="crest" role="img" aria-label="Eligo logo"></div>
     <div class="eyebrow">Eligo Presents</div>
     <h1>Winter<br><span class="it">Sanctuary</span></h1>
-    <div class="tagline"><span class="ln"></span>Six Rounds<span class="dot"></span>Stableford<span class="ln"></span></div>
-    <div class="subline">12&ndash;16 October 2026 · Sotogrande, Spain</div>
+    <div class="tagline"><span class="ln"></span>Five Rounds<span class="dot"></span>Stableford<span class="ln"></span></div>
+    <div class="subline">12, 13, 14, 15 &amp; 16 October 2026 · Sotogrande, Spain</div>
   </header>
 
   <div class="banner" id="banner"></div>
@@ -356,9 +357,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     <button class="tab" data-view="r1">Round 1<span class="sub">Zagaleta</span></button>
     <button class="tab" data-view="r2">Round 2<span class="sub">San Roque</span></button>
     <button class="tab" data-view="r3">Round 3<span class="sub">Sotogrande</span></button>
-    <button class="tab" data-view="r4">Round 4<span class="sub">La Hacienda</span></button>
-    <button class="tab" data-view="r5">Round 5<span class="sub">La Reserva</span></button>
-    <button class="tab" data-view="r6">Round 6<span class="sub">Finca Cortesín</span></button>
+    <button class="tab" data-view="r4">Round 4<span class="sub">La Reserva</span></button>
+    <button class="tab" data-view="r5">Round 5<span class="sub">Finca Cortesín</span></button>
     <button class="tab" data-view="tees">Tee Times<span class="sub">Betterball</span></button>
     <button class="tab" data-view="winnings">Winnings<span class="sub">Prize Money</span></button>
   </nav>
@@ -368,12 +368,12 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     <div class="card">
       <div class="card-head">
         <h2>Overall Standings</h2>
-        <div class="meta">Total Points<small>6 rounds · Stableford</small></div>
+        <div class="meta">Best 4 of 5<small>Lowest round dropped</small></div>
       </div>
       <div class="lb-head">
         <div class="r">#</div><div>Player</div>
         <div class="r">1</div><div class="r">2</div><div class="r">3</div>
-        <div class="r">4</div><div class="r">5</div><div class="r">6</div><div class="t">Tot</div>
+        <div class="r">4</div><div class="r">5</div><div class="t">Tot</div>
       </div>
       <div id="overall-body"></div>
     </div>
@@ -386,22 +386,18 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     <!-- Prizes -->
     <div class="card prizes" style="margin-top:16px">
       <div class="card-head"><h2>Prizes &amp; Buy-in</h2><div class="meta">Pot £1,040<small>£130 per player</small></div></div>
-      <p class="pr-intro">Aggregate Stableford across all six rounds decides the overall money. Each day also carries its own small prize, a nearest-the-pin and a longest-drive. Total pot is <b>£1,040</b> &mdash; that's exactly <b>£130 each</b> across the eight of us.</p>
+      <p class="pr-intro">Each player's best <b>4 of 5</b> round scores count toward the overall total — your lowest round gets dropped. Each day also carries its own daily prize and <b>two</b> nearest-the-pin shots (front 9 and back 9). Total pot is <b>£1,040</b> &mdash; that's exactly <b>£130 each</b> across the eight of us.</p>
       <div class="pr-row">
         <div class="pr-ic">🏆</div>
-        <div class="pr-txt"><b>Overall &mdash; £500</b><span>1st £300 · 2nd £150 · 3rd £50, on total points across the six rounds (countback splits ties).</span></div>
+        <div class="pr-txt"><b>Overall &mdash; £590</b><span>1st £350 · 2nd £170 · 3rd £70, on best 4 of 5 round totals (countback splits ties on the latest round first).</span></div>
       </div>
       <div class="pr-row">
         <div class="pr-ic">🥇</div>
-        <div class="pr-txt"><b>Daily Winner &mdash; £50 × 6 = £300</b><span>£50 to the best Stableford score on each individual day.</span></div>
+        <div class="pr-txt"><b>Daily Winner &mdash; £50 × 5 = £250</b><span>£50 to the best Stableford score on each individual day.</span></div>
       </div>
       <div class="pr-row">
         <div class="pr-ic">🎯</div>
-        <div class="pr-txt"><b>Nearest the Pin &mdash; £20 × 6 = £120</b><span>£20 each day on the designated par-3.</span></div>
-      </div>
-      <div class="pr-row">
-        <div class="pr-ic">🚀</div>
-        <div class="pr-txt"><b>Longest Drive &mdash; £20 × 6 = £120</b><span>£20 each day on the designated hole.</span></div>
+        <div class="pr-txt"><b>Nearest the Pin &mdash; £20 × 2 × 5 = £200</b><span>£20 on a front-9 par-3 and £20 on a back-9 par-3, each day.</span></div>
       </div>
       <div class="pr-total"><span>Total pot</span><b>£1,040</b></div>
       <div class="pr-total buyin"><span>Buy-in per player (÷8)</span><b>£130.00</b></div>
@@ -414,7 +410,6 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   <section class="panel" id="panel-r3"></section>
   <section class="panel" id="panel-r4"></section>
   <section class="panel" id="panel-r5"></section>
-  <section class="panel" id="panel-r6"></section>
   <section class="panel" id="panel-tees"></section>
   <section class="panel" id="panel-winnings"></section>
 
@@ -438,7 +433,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     </button>
   </div>
 
-  <p class="note">La Zagaleta · San Roque · Sotogrande · La Hacienda · La Reserva · Finca Cortesín</p>
+  <p class="note">La Zagaleta · San Roque · Sotogrande · La Reserva · Finca Cortesín</p>
 </div>
 
 <script>
@@ -455,9 +450,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     { key:"r1", col:"R1", label:"Round 1", course:"La Zagaleta",     date:"12 Oct" },
     { key:"r2", col:"R2", label:"Round 2", course:"San Roque",       date:"13 Oct" },
     { key:"r3", col:"R3", label:"Round 3", course:"Sotogrande",      date:"14 Oct" },
-    { key:"r4", col:"R4", label:"Round 4", course:"La Hacienda",     date:"15 Oct · AM" },
-    { key:"r5", col:"R5", label:"Round 5", course:"La Reserva",      date:"15 Oct · PM" },
-    { key:"r6", col:"R6", label:"Round 6", course:"Finca Cortesín",  date:"16 Oct" },
+    { key:"r4", col:"R4", label:"Round 4", course:"La Reserva",      date:"15 Oct" },
+    { key:"r5", col:"R5", label:"Round 5", course:"Finca Cortesín",  date:"16 Oct" },
   ];
   /* PLAYERS starts as a fallback but gets overwritten with the names from your sheet
      as soon as scores load. Sheet order determines tee-rotation positions. */
@@ -467,14 +461,13 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
      g1 / g2 = a four-ball, each holding two betterball pairs (a 2 v 2 match).
      Times are indicative — edit TEE_TIMES below to your real tee sheet. */
   const TEE_ROTATION = [
-    {g1:[[0,7],[1,6]], g2:[[2,5],[3,4]]},
-    {g1:[[6,7],[1,4]], g2:[[0,5],[2,3]]},
-    {g1:[[5,7],[1,2]], g2:[[6,4],[0,3]]},
-    {g1:[[4,7],[0,1]], g2:[[5,3],[6,2]]},
-    {g1:[[3,7],[5,1]], g2:[[4,2],[6,0]]},
-    {g1:[[2,7],[3,1]], g2:[[4,0],[5,6]]},
+    {g1:[[0,7],[1,6]], g2:[[2,5],[3,4]]},  // R1 Zagaleta
+    {g1:[[6,7],[2,3]], g2:[[0,5],[1,4]]},  // R2 San Roque
+    {g1:[[5,7],[6,4]], g2:[[0,3],[1,2]]},  // R3 Sotogrande
+    {g1:[[4,7],[5,3]], g2:[[6,2],[0,1]]},  // R4 La Reserva
+    {g1:[[3,7],[4,2]], g2:[[5,1],[6,0]]},  // R5 Finca Cortesín
   ];
-  const TEE_TIMES = ["10:00","10:10","10:20","10:30","10:40","10:50"]; // base time per day (edit me)
+  const TEE_TIMES = ["10:00","10:00","10:00","10:00","10:00"]; // base time per day (edit me)
 
   /* ---- derived endpoints (by tab name, no gid hunting needed) ---- */
   function sheetId(src){
@@ -485,7 +478,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   const SID = sheetId(SHEET_SOURCE);
   const gviz = (tab)=>`https://docs.google.com/spreadsheets/d/${SID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(tab)}`;
 
-  const CACHE_KEY = "eligo.sanctuary.v2";
+  const CACHE_KEY = "eligo.sanctuary.v3";
   const TIMEOUT_MS = 15000;
 
   let SCORES = [];   // [{name, R1..R6}]
@@ -530,7 +523,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const h=rows[0];
     const iN=headerIndex(h,["Name","Player"]);
     const idx={}, cbIdx={};
-    ["R1","R2","R3","R4","R5","R6"].forEach((c,k)=>{
+    ["R1","R2","R3","R4","R5"].forEach((c,k)=>{
       idx[c]=headerIndex(h,[c,"Round "+(k+1),"Round"+(k+1)]);
       cbIdx[c]=headerIndex(h,[c+" CB",c+"CB",c+" Countback","R"+(k+1)+" cb"]);
     });
@@ -540,7 +533,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       const name=(iN>=0?cells[iN]:cells[0]||"").trim();
       if(!name) continue;
       const rec={name};
-      ["R1","R2","R3","R4","R5","R6"].forEach(c=>{
+      ["R1","R2","R3","R4","R5"].forEach(c=>{
         rec[c]   = idx[c]>=0   ? toNum(cells[idx[c]])   : null;
         rec[c+"cb"] = cbIdx[c]>=0 ? toNum(cells[cbIdx[c]]) : null;
       });
@@ -548,8 +541,8 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     }
     return out.length?out:seedScores();
   }
-  function seedScores(){ return PLAYERS.map(n=>({name:n,R1:null,R2:null,R3:null,R4:null,R5:null,R6:null,
-    R1cb:null,R2cb:null,R3cb:null,R4cb:null,R5cb:null,R6cb:null})); }
+  function seedScores(){ return PLAYERS.map(n=>({name:n,R1:null,R2:null,R3:null,R4:null,R5:null,
+    R1cb:null,R2cb:null,R3cb:null,R4cb:null,R5cb:null})); }
 
   function buildExtras(csv){
     const rows=parseCSV(csv); if(!rows.length) return [];
@@ -565,11 +558,24 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       const typeRaw=(iT>=0?cells[iT]:"").trim().toLowerCase();
       const winner=(iW>=0?cells[iW]:"").trim();
       if(!roundRaw && !winner) continue;
-      const digit=(roundRaw.match(/[1-6]/)||[])[0];
+      const digit=(roundRaw.match(/[1-5]/)||[])[0];
       const key=digit?("r"+digit):"";
-      const type = /driv|long/.test(typeRaw) ? "drive" : "pin";
-      out.push({ round:key, type, hole:(iH>=0?cells[iH]:"").trim(), winner });
+      // Longest drive is no longer a prize — silently ignore any lingering drive entries.
+      if(/driv|long/.test(typeRaw)) continue;
+      // Two NTPs per round: front-9 and back-9. Type raw may say "Nearest Pin Front 9",
+      // "Nearest Pin Back 9", "NTP F9" / "NTP B9", or just "Nearest Pin" (treat as front 9 then back 9 by row order).
+      const half = /back|b9|back 9|back9|2nd|second/.test(typeRaw) ? "back"
+                 : /front|f9|front 9|front9|1st|first/.test(typeRaw) ? "front"
+                 : null;
+      out.push({ round:key, type:"pin", half, hole:(iH>=0?cells[iH]:"").trim(), winner });
     }
+    // For rows that didn't specify front/back, allocate within each round: first unlabelled → front, second → back.
+    const seen = {};
+    out.forEach(e=>{
+      if(e.type!=="pin" || e.half) return;
+      seen[e.round] = (seen[e.round]||0) + 1;
+      e.half = seen[e.round]===1 ? "front" : "back";
+    });
     return out;
   }
 
@@ -581,15 +587,32 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     return "o";
   }
 
-  /* ---------- totals / countback (same mechanic as West Essex) ----------
-     Overall: countback runs on the latest round first (R6 → R5 → … → R1).
-     Per-day:  countback runs on that round's CB figure (e.g. back 9). */
-  const COLS=["R1","R2","R3","R4","R5","R6"];
-  function total(p){ return COLS.reduce((s,c)=>s+(p[c]||0),0); }
+  /* ---------- totals / countback ----------
+     Overall: BEST 4 OF 5 counting rounds — each player's lowest round is dropped from their total.
+       Players with fewer than 5 rounds entered simply sum what they have.
+     Overall countback runs on the latest round first (R5 → R4 → … → R1).
+     Per-day countback runs on that round's CB figure (e.g. back 9). */
+  const COLS=["R1","R2","R3","R4","R5"];
+  const COUNT_BEST = 4;  // best 4 of 5
   function playedCount(p){ return COLS.filter(c=>p[c]!=null).length; }
 
+  // Sum of a player's points, dropping their lowest round once all 5 are in.
+  function total(p){
+    const vals = COLS.map(c=>p[c]).filter(v=>v!=null);
+    if(vals.length <= COUNT_BEST) return vals.reduce((s,v)=>s+v,0);
+    const sorted=[...vals].sort((a,b)=>b-a);
+    return sorted.slice(0,COUNT_BEST).reduce((s,v)=>s+v,0);
+  }
+  // Which round key (R1..R5) each player is dropping. Returns null until all 5 rounds entered.
+  function droppedRound(p){
+    if(playedCount(p) < COLS.length) return null;
+    let worstKey = COLS[0], worstVal = p[COLS[0]];
+    for(const k of COLS){ if(p[k] < worstVal){ worstVal = p[k]; worstKey = k; } }
+    return worstKey;
+  }
+
   function cbOverall(a,b){
-    for(const k of ["R6cb","R5cb","R4cb","R3cb","R2cb","R1cb"]){
+    for(const k of ["R5cb","R4cb","R3cb","R2cb","R1cb"]){
       if(a[k]!=null && b[k]!=null && a[k]!==b[k]) return b[k]-a[k];
     }
     return 0;
@@ -640,15 +663,21 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const unplayed=withTot.filter(p=>p.played===0).sort((a,b)=>a.name.localeCompare(b.name));
     const ranked=rankList(played, p=>p.tot, cbOverall);
 
-    const chip=(v)=>`<div class="chip ${tier(v)}">${v==null?"·":v}</div>`;
+    const chip=(v, dropped)=>{
+      const cls = dropped ? `chip ${tier(v)} dropped` : `chip ${tier(v)}`;
+      const title = dropped ? ' title="Dropped — lowest of 5 rounds"' : "";
+      return `<div class="${cls}"${title}>${v==null?"·":v}</div>`;
+    };
     const moneyTag=(rank)=> rank<=3 ? `<span class="prize-tag">£</span>` : "";
     const rowHTML=(p,rank,cb)=>{
       const cls=(typeof rank==="number"&&rank<=3)?" p"+rank:"";
       const tag=cb?`<span class="cb-tag" title="Won on countback">c/b</span>`:"";
+      const dropKey = droppedRound(p);  // null until all 5 in
+      const c = k => chip(p[k], k===dropKey);
       return `<div class="row${cls}">
         <div class="rank">${rank}</div>
         <div class="name">${esc(p.name)}${tag}${moneyTag(rank)}</div>
-        ${chip(p.R1)}${chip(p.R2)}${chip(p.R3)}${chip(p.R4)}${chip(p.R5)}${chip(p.R6)}
+        ${c("R1")}${c("R2")}${c("R3")}${c("R4")}${c("R5")}
         <div class="total">${p.played?p.tot:"–"}</div>
       </div>`;
     };
@@ -686,9 +715,9 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
         }).join("")
       : `<div class="trow"><div class="pos">—</div><div class="tname" style="color:var(--muted);font-weight:500;font-style:italic">No scores entered yet</div><div class="tpts">·</div></div>`;
 
-    const ex=EXTRAS.filter(x=>x.round===rd.key);
-    const pin=ex.find(x=>x.type==="pin");
-    const drive=ex.find(x=>x.type==="drive");
+    const ex=EXTRAS.filter(x=>x.round===rd.key && x.type==="pin");
+    const pinFront=ex.find(x=>x.half==="front");
+    const pinBack =ex.find(x=>x.half==="back");
     const exCard=(item,label,cls,fallbackLab)=>{
       const hole=item&&item.hole?`Hole ${esc(item.hole)}`:fallbackLab;
       const who=item&&item.winner?`<div class="who">${esc(item.winner)}</div>`:`<div class="who tbc">To be decided</div>`;
@@ -703,10 +732,10 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
         </div>
         <div class="section-label">Day Standings <span class="ln"></span></div>
         ${standHTML}
-        <div class="section-label">Daily Honours <span class="ln"></span></div>
+        <div class="section-label">Nearest the Pin <span class="ln"></span></div>
         <div class="np-grid">
-          ${exCard(pin,"Nearest the Pin","pin","Par 3")}
-          ${exCard(drive,"Longest Drive","drive","Designated hole")}
+          ${exCard(pinFront,"Nearest the Pin — Front 9","pin","Par 3, front 9")}
+          ${exCard(pinBack, "Nearest the Pin — Back 9", "pin","Par 3, back 9")}
         </div>
       </div>`;
   }
@@ -757,7 +786,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
   }
 
   /* ---------- Winnings (prize money per player) ---------- */
-  const PRIZE = { overall:[300,150,50], day:50, ntp:20, drive:20 };
+  const PRIZE = { overall:[350,170,70], day:50, ntp:20 };
   function resolvePlayer(name){
     const t=String(name||"").trim(); if(!t) return "";
     const tl=t.toLowerCase();
@@ -794,16 +823,16 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       winners.forEach(n=>add(n,"day",each,rd.course+" day prize "+fmtMoney(each)));
     });
 
-    // Nearest pin & longest drive — £20 each from Extras
+    // Two nearest-pin prizes per round (front + back 9) — £20 each from Extras
     EXTRAS.forEach(x=>{
-      if(!x.winner) return;
+      if(!x.winner || x.type!=="pin") return;
       const n=resolvePlayer(x.winner);
       const rdLbl=(ROUNDS.find(r=>r.key===x.round)||{}).course||x.round;
-      if(x.type==="drive") add(n,"drive",PRIZE.drive,rdLbl+" longest drive £20");
-      else add(n,"ntp",PRIZE.ntp,rdLbl+" nearest pin £20");
+      const halfLbl = x.half==="back" ? "back-9" : x.half==="front" ? "front-9" : "";
+      add(n,"ntp",PRIZE.ntp,`${rdLbl} ${halfLbl} NTP £20`);
     });
 
-    Object.values(W).forEach(w=>w.total=w.overall+w.day+w.ntp+w.drive);
+    Object.values(W).forEach(w=>w.total=w.overall+w.day+w.ntp);
     return W;
   }
 
@@ -811,12 +840,11 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
     const panel=document.getElementById("panel-winnings");
     const W=computeWinnings();
     const roundsPlayed=ROUNDS.filter(rd=>SCORES.some(p=>p[rd.col]!=null)).length;
-    const honours=EXTRAS.filter(x=>x.winner).length;
-    const isFinal = roundsPlayed===6 && honours>=12;
-    const statusTxt = isFinal ? "Final results — all games complete" : `Provisional — ${roundsPlayed} of 6 rounds counted, updates as scores come in`;
+    const honours=EXTRAS.filter(x=>x.winner && x.type==="pin").length;
+    const isFinal = roundsPlayed===5 && honours>=10;
+    const statusTxt = isFinal ? "Final results — all games complete" : `Provisional — ${roundsPlayed} of 5 rounds counted, updates as scores come in`;
 
-    // PLAYERS is now kept in sync with the loaded sheet, so no need for a "non-PLAYERS" fallback
-    const rows=PLAYERS.map(n=>W[n]||{name:n,overall:0,day:0,ntp:0,drive:0,total:0,items:[]});
+    const rows=PLAYERS.map(n=>W[n]||{name:n,overall:0,day:0,ntp:0,total:0,items:[]});
     rows.sort((a,b)=> b.total-a.total || a.name.localeCompare(b.name));
     const paid=rows.reduce((s,r)=>s+r.total,0);
 
@@ -826,7 +854,7 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
       const detail=r.items.length?`<div class="w-detail">${r.items.map(it=>esc(it.note)).join(" · ")}</div>`:"";
       return `<div class="w-row${top}">
         <div class="w-name">${esc(r.name)}${detail}</div>
-        ${cell(r.overall)}${cell(r.day)}${cell(r.ntp)}${cell(r.drive)}
+        ${cell(r.overall)}${cell(r.day)}${cell(r.ntp)}
         <div class="w-c w-tot">${fmtMoney(r.total)}</div>
       </div>`;
     }).join("");
@@ -840,11 +868,11 @@ code{background:rgba(160,67,42,.1);padding:2px 6px;border-radius:5px;font-size:1
         <div class="w-status ${isFinal?"final":""}">${statusTxt}</div>
         <div class="w-head">
           <div>Player</div><div class="w-c">Overall</div><div class="w-c">Daily</div>
-          <div class="w-c">Pin</div><div class="w-c">Drive</div><div class="w-c w-tot">Total</div>
+          <div class="w-c">Pin</div><div class="w-c w-tot">Total</div>
         </div>
         ${body}
       </div>
-      <div class="legend"><span>Overall 300 / 150 / 50</span><span>Daily £50</span><span>Nearest pin £20</span><span>Longest drive £20</span></div>`;
+      <div class="legend"><span>Overall 350 / 170 / 70</span><span>Daily £50</span><span>Nearest pin £20 × 2/day</span></div>`;
   }
 
   function renderAll(){
