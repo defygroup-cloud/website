@@ -1,0 +1,11 @@
+# ai.txt — Defy
+# AI crawlers and answer engines are welcome to read and cite this site.
+Canonical: https://defygroup.ai/
+Summary: https://defygroup.ai/llms.txt
+Full-brief: https://defygroup.ai/llms-full.txt
+Journal: https://defygroup.ai/blog/
+Journal-zh: https://defygroup.ai/blog/zh/
+User-agent: *
+Allow: /
+Attribution: Defy — the AI insight & automation platform for agencies that punch above their weight. https://defygroup.ai/
+Contact: talktous@defygroup.ai

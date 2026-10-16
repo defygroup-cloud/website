@@ -1,0 +1,9 @@
+/* TEAM */
+CEO & Co-Founder: Ian Cassidy
+CTO & Co-Founder: Alek Farseev
+
+/* SITE */
+Standards: HTML5, JSON-LD, schema.org, Open Graph
+Optimization: SEO / AEO / GEO
+Languages: English, 中文, Español, Português, Français, Deutsch
+Contact: talktous@defygroup.ai
