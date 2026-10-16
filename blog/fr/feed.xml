@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Le journal Defy</title>
+<link>https://defygroup.ai/blog/fr/</link>
+<description>Des notes de terrain sur l'économie des agences, l'adoption de l'IA et le métier de l'insight, pour les agences indépendantes et les équipes internes.</description>
+<language>fr</language>
+<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/fr/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Recentrer l'offre de son agence : quel service arrêter, et quand ?</title>
+<link>https://defygroup.ai/blog/fr/arreter-service-agence-donnee/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/arreter-service-agence-donnee/</guid>
+<description>Recentrer l'offre de son agence : les signaux de fin de vie d'un service, une méthode en six étapes et les données à regarder avant de décider quoi arrêter.</description>
+<category>Économie des agences</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>Mesurer l'engagement multiplateforme : en finir avec les tableurs en agence</title>
+<link>https://defygroup.ai/blog/fr/mesurer-engagement-multi-plateformes/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/mesurer-engagement-multi-plateformes/</guid>
+<description>Mesurer l'engagement multiplateforme de façon fiable : définitions communes, indicateurs normalisés, exemple sportif et critères pour choisir vos outils.</description>
+<category>Insight &amp; stratégie</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>Syndrome de l'imposteur en agence : retrouver confiance à l'ère de l'IA</title>
+<link>https://defygroup.ai/blog/fr/syndrome-imposteur-agence-ia/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/syndrome-imposteur-agence-ia/</guid>
+<description>Syndrome de l'imposteur en agence : pourquoi l'IA nourrit le doute, surtout chez les juniors, et comment bâtir une confiance fondée sur la preuve.</description>
+<category>Talents &amp; culture</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>Études sans répondants : les personas synthétiques, promesse ou mirage ?</title>
+<link>https://defygroup.ai/blog/fr/etudes-sans-repondants-humains/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/etudes-sans-repondants-humains/</guid>
+<description>Personas synthétiques et études sans répondants : ce qu'elles valent pour vos insights générationnels, leurs limites et comment les ancrer dans le réel.</description>
+<category>Insight &amp; stratégie</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>Agences média et IA : ce que la nouvelle ère change pour les indépendantes</title>
+<link>https://defygroup.ai/blog/fr/agences-media-nouvelle-ere-ia/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/agences-media-nouvelle-ere-ia/</guid>
+<description>Agences média et IA : l'exécution se compresse, la valeur remonte vers le conseil. Ce qui change pour les agences indépendantes, et par où commencer.</description>
+<category>Types d'agences</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>Rémunération des agences : comment prouver votre valeur avec la donnée sociale</title>
+<link>https://defygroup.ai/blog/fr/remuneration-agences-preuve-valeur/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/fr/remuneration-agences-preuve-valeur/</guid>
+<description>L'AACC veut sortir la rémunération des agences du temps passé. Comment faire de la donnée sociale une preuve de valeur traçable, étape par étape.</description>
+<category>Économie des agences</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>证明媒介投放 ROI：MMM 与客户要看的证据 | Defy</title>
+<meta name="description" content="平台 ROAS 已难以说服客户。代理商如何用营销组合模型（MMM）、对照实验和“结果为何变化”的证据，向客户证明媒介投放 ROI。">
+<link rel="canonical" href="https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="证明媒介投放 ROI, 媒介投放 ROI 怎么衡量, 代理商营销组合模型, MMM 与归因的区别, Google Meridian MMM, 增量测试">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/proving-media-roi-agencies-mmm/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/proving-media-roi-agencies-mmm/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/">
+<meta property="og:title" content="如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据">
+<meta property="og:description" content="平台 ROAS 已难以说服客户。代理商如何用营销组合模型（MMM）、对照实验和“结果为何变化”的证据，向客户证明媒介投放 ROI。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d03-zh-hans.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="创意效果">
+<meta property="article:tag" content="媒介 ROI">
+<meta property="article:tag" content="营销组合模型">
+<meta property="article:tag" content="效果衡量">
+<meta property="article:tag" content="归因">
+<meta property="article:tag" content="营销效果">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据">
+<meta name="twitter:description" content="平台 ROAS 已难以说服客户。代理商如何用营销组合模型（MMM）、对照实验和“结果为何变化”的证据，向客户证明媒介投放 ROI。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d03-zh-hans.jpg">
+<meta name="twitter:image:alt" content="如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&family=DM+Sans:wght@400;500;700&display=swap&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/#article","url":"https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/","mainEntityOfPage":"https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/","headline":"如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据","alternativeHeadline":"证明媒介投放 ROI：MMM 与客户要看的证据","description":"平台 ROAS 已难以说服客户。代理商如何用营销组合模型（MMM）、对照实验和“结果为何变化”的证据，向客户证明媒介投放 ROI。","abstract":"证明媒介 ROI 要靠多层证据，而不是一张 ROAS 截图。用营销组合模型展示各渠道的增量贡献和饱和点，至少用一次对照测试加以验证，再用真实的受众和竞品证据解释结果为什么变化。最后把结论呈现为对现有预算的重新分配——这比申请追加预算更容易获得客户批准。","image":["https://defygroup.ai/assets/blog/og/d03-zh-hans.jpg","https://defygroup.ai/assets/blog/hero/d03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"Defy 编辑部","url":"https://defygroup.ai/blog/zh/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"创意效果","keywords":"证明媒介投放 ROI, 媒介投放 ROI 怎么衡量, 代理商营销组合模型, MMM 与归因的区别, Google Meridian MMM, 增量测试","wordCount":1939,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/zh/#blog","name":"Defy — Defy 洞察"},"about":[{"@type":"Thing","name":"媒介 ROI"},{"@type":"Thing","name":"营销组合模型"},{"@type":"Thing","name":"效果衡量"},{"@type":"Thing","name":"归因"},{"@type":"Thing","name":"营销效果"}],"citation":[{"@type":"CreativeWork","name":"Faces and TRKKN use Meridian MMM to unlock 8.5% incremental revenue uplift","url":"https://campaignme.com/faces-and-trkkn-use-meridian-mmm-to-unlock-8-5-incremental-revenue-uplift/","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Campaign Middle East"}},{"@type":"CreativeWork","name":"Global campaigns deliver fewer commercial outcomes, research reveals","url":"https://www.campaignlive.co.uk/article/global-campaigns-deliver-fewer-commercial-outcomes-research-reveals/4shx0x6pv7ya7ypsck61w0yjnj","datePublished":"2026-09-25","publisher":{"@type":"Organization","name":"Campaign UK"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/proving-media-roi-agencies-mmm/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"营销组合模型用大白话怎么解释？","acceptedAnswer":{"@type":"Answer","text":"营销组合模型是一种统计方法：它观察一段时间内所有渠道（包括线下）的营销投入和业务结果，估算每个渠道在基础销量之外贡献了多少，还能显示某个渠道追加投入从哪里开始不再回本。由于它基于汇总数据，并不依赖追踪单个用户。"}},{"@type":"Question","name":"营销组合模型只适合大品牌吗？","acceptedAnswer":{"@type":"Answer","text":"现在不是了，但它确实需要数据和技能。Google 的 Meridian 等开源模型省去了授权费用，但你仍需要按渠道整理、口径一致的投入与结果历史数据（Faces 的模型用了三年），以及能做数据工程、能解读结果的人。在那个案例里，数据工程、模型搭建和部署都由代理商 TRKKN 主导。"}},{"@type":"Question","name":"MMM 和归因有什么不同？","acceptedAnswer":{"@type":"Answer","text":"归因是把单次转化的功劳分配给用户接触过的各个触点，往往把大部分功劳给最后一次点击。MMM 则自上而下地基于汇总的投入和销售数据，估算每个渠道的增量贡献，包括归因难以覆盖的渠道，比如线下媒体。归因适合日常优化，MMM 更适合决定预算怎么分。"}},{"@type":"Question","name":"媒介组合模型应该多久更新一次？","acceptedAnswer":{"@type":"Answer","text":"把它当作一个持续运转的框架，而不是年度报告。Faces 与 TRKKN 的模型就是按“新数据进来即重新评估 ROI”来设计的。对大多数代理商来说，合理的节奏是每季度更新一次，遇到新增渠道、价格调整或大型 campaign 等重大变化时再加跑一次，确保建议不建立在过时数据之上。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"洞察","item":"https://defygroup.ai/blog/zh/"},{"@type":"ListItem","position":3,"name":"如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据","item":"https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="dh">
+  <div class="wrap dh-in">
+    <a class="dh-logo" href="/#main" aria-label="Defy — 首页"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+    <nav class="dh-nav" aria-label="Primary">
+      <a href="/#main">首页</a>
+      <a href="/#platform">平台</a>
+      <a href="/#clients">客户</a>
+      <a href="/#team">团队</a>
+      <a href="/blog/zh/" class="on">洞察</a>
+    </nav>
+    <div class="dh-r">
+      <a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">登录</a>
+      <a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">联系我们</a>
+      <button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">首页</a><span>/</span><a href="/blog/zh/">洞察</a><span>/</span><span>创意效果</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">创意效果</div>
+    <h1 itemprop="headline">如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据<span class="sq"></span></h1>
+    <p class="dek" itemprop="description">营销组合模型重新走红，是因为客户想要最终点击之外的证据。本文梳理代理商证明媒介 ROI 所需的证据体系，以及 MMM 给不了的那一块。</p>
+    <div class="a-meta">
+      <span><b>Defy 编辑部</b></span>
+      <span>发布于 <time datetime="2026-10-16T07:21:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+      <span>7 分钟阅读</span>
+      <span class="langs">其他语言版本: <a href="/blog/proving-media-roi-agencies-mmm/" hreflang="en" lang="en">English</a><span class="cur">中文</span></span>
+    </div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d03-768.webp 768w, /assets/blog/hero/d03-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d03.jpg" alt="黑白照片：实验台上一排玻璃烧杯，一只手把水从一个满溢的烧杯倒进一个半空的烧杯，被注水的烧杯下垫着一个小红方块。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="qbox answer-box" aria-label="这篇文章回答的问题">
+        <div class="eyebrow">这篇文章回答的问题</div>
+        <p class="q">“我怎样才能向客户证明，他们的媒介投放真的在带来业务结果？”</p>
+        <p class="ans"><b>简短回答</b>证明媒介 ROI 要靠多层证据，而不是一张 ROAS 截图。用营销组合模型展示各渠道的增量贡献和饱和点，至少用一次对照测试加以验证，再用真实的受众和竞品证据解释结果为什么变化。最后把结论呈现为对现有预算的重新分配——这比申请追加预算更容易获得客户批准。</p>
+      </section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>客户越来越不信任平台自报的 ROAS 和最终点击归因，因为卖媒体的平台同时也在衡量媒体效果。</li><li>据 Campaign Middle East 报道，TRKKN 用 Meridian 模型分析了 Faces 三年、11 个渠道的数据，预测仅靠重新分配现有预算就能带来 8.5% 的增量收入提升。</li><li>营销组合模型能显示哪些渠道带来增量收入、投入在哪里开始饱和，但解释不了结果为什么变化。</li><li>可信的媒介 ROI 故事，要把 MMM、至少一次对照实验，以及关于创意、竞品和受众讨论的可追溯证据结合起来。</li><li>把 ROI 结论呈现为现有预算的重新分配，比申请追加投入更容易获得客户批准。</li></ul></section>
+      <div class="prose" itemprop="articleBody"><p>怎样向客户证明他们的媒介预算在起作用？别再拿 ROAS 截图开场。客户如今信任的证明由三部分组成：一个显示各渠道在基线之上带来多少增量的模型，一次验证它的实验，以及解释数字为何变化的证据。营销组合模型（MMM）之所以重新走红，是因为它把第一部分做得很好。</p>
+<p>最新的例证来自海湾地区。<a href="https://campaignme.com/faces-and-trkkn-use-meridian-mmm-to-unlock-8-5-incremental-revenue-uplift/" rel="noopener" target="_blank">Campaign Middle East</a> 报道，效果营销代理商 TRKKN 使用 Google 开源的 Meridian 营销组合模型，分析了美妆零售商 Faces 三年的数据。模型覆盖 11 个渠道，预测仅仅通过重新分配现有预算，就能带来 8.5% 的增量收入提升，ROI 提高 10.8 个百分点。</p>
+<h2 id="s1">营销组合模型为什么又回来了？</h2>
+<p>因为其他办法已经说服不了任何人。平台看板报告的是它们自认为带来的转化，卖媒体的平台同时也在衡量媒体效果。最终点击归因把功劳记在最后一个触点上，这会美化搜索和重定向，同时让最初创造需求的投放挨饿。</p>
+<p>MMM 走的是另一条路。它观察一段时间内所有渠道（包括线下）的投入与销售，估算每个渠道在基线之外贡献了多少。它不需要追踪单个用户。有了 Meridian 这样的开源方案，门槛变成了数据工程和专业能力，而不是一笔高昂的授权费。</p>
+<p>Faces 数字营销总监 Harry Lonergan 对 Campaign Middle East 说：“Meridian 帮助我们跳出了只看最终点击表现的局面。”这正是大多数客户都希望自己能说出口的一句话。</p>
+<h2 id="s2">Faces 与 TRKKN 的案例到底说明了什么？</h2>
+<p>细节值得细读，因为它本身就是一份模板。TRKKN 在 Faces 现有的 Google Cloud 环境里，主导了数据工程、模型搭建和部署。模型涵盖了 2023 年至 2025 年沙特阿拉伯的线上、线下营销和收入数据。</p>
+<p>有三项产出最关键。第一，它显示了哪些渠道在带来增量收入，识别出 19% 的收入由 campaign 驱动。第二，它估算了每个渠道的响应曲线和饱和曲线，指出追加投入会在哪里出现收益递减。第三，它模拟了多种预算方案，8.5% 这个数字正是由此而来。在这次分析中，Performance Max 是表现最强的渠道。</p>
+<p>注意代理商没有开口要什么：更多的钱。建议是把已有的钱挪个地方。而且这是一个持续运行的框架，会随着新数据进来重新评估 ROI，而不是一份一次性报告。正如 TRKKN 董事总经理 Vimal Badiani 所说：“关键在于给营销人证据和信心，让他们做出更好的决策。”</p>
+<h2 id="s3">客户需要哪些证据才会相信媒介 ROI？</h2>
+<p>单靠任何一种方法都不够。每一层证据回答不同的问题，也各有短板。</p>
+<div class="tw"><table>
+<thead><tr><th>证据层</th><th>回答的问题</th><th>常用方法</th><th>短板</th></tr></thead>
+<tbody>
+<tr><td>平台自报 ROAS</td><td>按平台自己的口径，这个渠道效率如何？</td><td>广告后台报表</td><td>自己给自己打分；忽略增量</td></tr>
+<tr><td>营销组合模型</td><td>每个渠道在基线之上带来了多少？</td><td>基于多年投入与销售数据的统计模型</td><td>只解释“是什么”，不解释“为什么”；需要口径一致的数据</td></tr>
+<tr><td>增量测试</td><td>提升是这个渠道造成的吗？</td><td>地域对照、转化提升研究</td><td>慢；通常一次只能测一个渠道</td></tr>
+<tr><td>饱和曲线</td><td>追加投入从哪里开始不再回本？</td><td>MMM 的输出结果</td><td>好坏取决于背后的模型</td></tr>
+<tr><td>受众与竞品证据</td><td>结果为什么变化？</td><td>社交聆听、竞品广告分析</td><td>若不能追溯到真实数据，就只是零散个案</td></tr>
+</tbody>
+</table></div>
+<p>大多数代理商只拿出第一行，然后听天由命。守得住预算的代理商，五行全都拿得出来。</p>
+<h2 id="s4">媒介预算为什么总是花错地方？</h2>
+<p>经济学家给这种现象起了个名字：市场失灵。买卖双方信息充分时，市场能很好地配置资源；信息缺失或只掌握在一方手里时，钱就会流向错误的地方，并且停在那里。</p>
+<p>媒介购买是教科书式的案例。客户看不到平台看到的东西。代理商看到的比客户多，但其收入往往至少部分与花出去的钱挂钩。平台则为自己的表现出具报告。每个人都在基于不完整的信息理性行事，结果是预算堆进最终点击数据好看的渠道，创造需求的渠道却在挨饿。Faces 仅靠挪动已有预算就预计能获得 8.5% 的提升，这在实质上衡量的正是这种错配。</p>
+<p>解决办法不是更多数据，而是共同的清晰认知。在商业世界里，清晰带来连接：当客户和代理商看着同一份证据、读出同样的结论，对话就会从为投入辩护，转向决定下一步投向哪里。</p>
+<h2 id="s5">如何讲出客户愿意相信的媒介 ROI 故事？</h2>
+<ol>
+<li><strong>约定业务结果和基线。</strong>收入、新客或毛利，再加上对“如果完全不做营销会怎样”的诚实判断。</li>
+<li><strong>整理口径一致的历史数据。</strong>按渠道分列的投入和结果，线上线下都要，外加定价、促销和季节性因素。Faces 用的是 11 个渠道、三年的数据。</li>
+<li><strong>跑模型。</strong>使用 Meridian 这类开源 MMM，或找专业合作伙伴。要的是分渠道贡献和饱和曲线，而不是一个笼统的 ROI 数字。</li>
+<li><strong>用一次实验验证一个结论。</strong>对模型认为投入过度的渠道做地域对照测试，是你能做的最有说服力的测试。</li>
+<li><strong>解释“为什么”。</strong>把每个渠道的结论与当时真实发生的事对应起来：投放了什么创意、竞品推出了什么、受众讨论如何转向。</li>
+<li><strong>提出重新分配，而不是追加申请。</strong>展示挪动现有预算的方案，以及它预计带来的结果。</li>
+<li><strong>让模型保持运转。</strong>随着新数据进来反复重跑，让 ROI 成为一场持续的对话，而不是一年一度的争吵。</li>
+</ol>
+<h2 id="s6">创意和本地语境在媒介 ROI 中处于什么位置？</h2>
+<p>MMM 告诉你哪个渠道起了作用，却很少告诉你信息本身做了什么，而这个缺口很要紧。<a href="https://www.campaignlive.co.uk/article/global-campaigns-deliver-fewer-commercial-outcomes-research-reveals/4shx0x6pv7ya7ypsck61w0yjnj" rel="noopener" target="_blank">Campaign</a> 报道了 Publicis London、System1 和 Effie 的一项新研究，比较了全球统一的 campaign 与本地市场作品，发现全球 campaign 带来的商业成果更少。如果信息与市场的契合度对结果影响如此之大，只从渠道角度给出的解释就只回答了一半。</p>
+<p>这正是大多数 ROI 汇报缺失的另一半。模型说付费社媒在第三季度超额完成，客户接下来一定会问：为什么？是创意的功劳？是某个竞品沉寂了？还是受众讨论的话题变了？Defy Monitor 的回答方式，是把每一条 AI 结论追溯到背后真实发布的帖子，策略从受众和竞品实际发布的内容中反推出来，而不是来自问卷调查。它与你的效果衡量并行，而不是取而代之，是 <a href="/#platform">Defy 平台</a>的一部分。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>在商业世界里，清晰带来连接。</blockquote><p>市场失灵理论认为，信息不完整或不对称时，资源就会错配。媒介预算会不断流向平台报告得最漂亮的地方，直到客户和代理商共享清晰的证据，看清真正驱动收入的是什么。</p></aside>
+      <section class="prop" aria-label="Defy 如何帮助您">
+        <div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy 如何帮助您<span class="sq"></span></h2></div>
+        <div class="pb prose"><p>营销组合模型告诉你什么在变化。Defy 帮你用客户能核查的证据解释为什么。</p>
+<ul>
+<li><strong>可追溯的结论：</strong>Defy Monitor 中的每一条 AI 结论都能追溯到背后真实发布的帖子。面对“社媒为什么超额完成？”，你能拿出证据，而不只是下断言。</li>
+<li><strong>策略来自真实内容，而非问卷：</strong>看清在模型覆盖的同一时期里，竞品投了什么、受众在说什么。</li>
+<li><strong>投放前为创意打分：</strong>在花媒体预算之前就知道创意是否可能奏效，预测经过真实广告表现的验证。</li>
+</ul>
+<p>在下一次模型更新时同步用起来，把“为什么”和“是什么”带进同一场会议。</p></div>
+        <div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E5%A6%82%E4%BD%95%E5%90%91%E5%AE%A2%E6%88%B7%E8%AF%81%E6%98%8E%E5%AA%92%E4%BB%8B%E6%8A%95%E6%94%BE%20ROI%EF%BC%9AMMM%20%E5%9B%9E%E5%BD%92%EF%BC%8C%E8%AF%A5%E6%8B%BF%E5%87%BA%E4%BB%80%E4%B9%88%E8%AF%81%E6%8D%AE" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D03'})}catch(e){}">开始对话</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D03'})}catch(e){}">登录 Defy</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>营销组合模型用大白话怎么解释？</summary><p>营销组合模型是一种统计方法：它观察一段时间内所有渠道（包括线下）的营销投入和业务结果，估算每个渠道在基础销量之外贡献了多少，还能显示某个渠道追加投入从哪里开始不再回本。由于它基于汇总数据，并不依赖追踪单个用户。</p></details><details><summary>营销组合模型只适合大品牌吗？</summary><p>现在不是了，但它确实需要数据和技能。Google 的 Meridian 等开源模型省去了授权费用，但你仍需要按渠道整理、口径一致的投入与结果历史数据（Faces 的模型用了三年），以及能做数据工程、能解读结果的人。在那个案例里，数据工程、模型搭建和部署都由代理商 TRKKN 主导。</p></details><details><summary>MMM 和归因有什么不同？</summary><p>归因是把单次转化的功劳分配给用户接触过的各个触点，往往把大部分功劳给最后一次点击。MMM 则自上而下地基于汇总的投入和销售数据，估算每个渠道的增量贡献，包括归因难以覆盖的渠道，比如线下媒体。归因适合日常优化，MMM 更适合决定预算怎么分。</p></details><details><summary>媒介组合模型应该多久更新一次？</summary><p>把它当作一个持续运转的框架，而不是年度报告。Faces 与 TRKKN 的模型就是按“新数据进来即重新评估 ROI”来设计的。对大多数代理商来说，合理的节奏是每季度更新一次，遇到新增渠道、价格调整或大型 campaign 等重大变化时再加跑一次，确保建议不建立在过时数据之上。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://campaignme.com/faces-and-trkkn-use-meridian-mmm-to-unlock-8-5-incremental-revenue-uplift/" rel="noopener" target="_blank">Faces and TRKKN use Meridian MMM to unlock 8.5% incremental revenue uplift</a> — Campaign Middle East, 2026-10-15</li><li><a href="https://www.campaignlive.co.uk/article/global-campaigns-deliver-fewer-commercial-outcomes-research-reveals/4shx0x6pv7ya7ypsck61w0yjnj" rel="noopener" target="_blank">Global campaigns deliver fewer commercial outcomes, research reveals</a> — Campaign UK, 2026-09-25</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇文章，是因为“怎样证明我的媒介投放真的有效？”是每逢预算审查时策略人员都会问的问题；而海湾地区一个新的营销组合模型案例，为如何回答它提供了具体、及时的范例。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">营销组合模型为什么又回来了？</a><a href="#s2">Faces 与 TRKKN 的案例到底说明了什么？</a><a href="#s3">客户需要哪些证据才会相信媒介 ROI？</a><a href="#s4">媒介预算为什么总是花错地方？</a><a href="#s5">如何讲出客户愿意相信的媒介 ROI 故事？</a><a href="#s6">创意和本地语境在媒介 ROI 中处于什么位置？</a></nav>
+      <div class="side-cta"><h4>Defy</h4><p>准备好以小博大了吗？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">登录 Defy</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>更多洞察<span class="sq"></span></h2>
+  <div class="grid"><a class="card" href="/blog/zh/engagement-metrics-clients-value/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d39-768.webp"><img src="/assets/blog/hero/d39.jpg" alt="黑白照片：双手在一堆闪亮的锡箔彩屑中挑出几枚硬币，放进一只红色方形小碟。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">创意效果</div><h3>客户真正看重的社交媒体互动指标，和只是好看的数字</h3><p>点赞不能当饭吃。结合一个真实的营销组合模型案例，看看如何把互动指标和业务结果挂上钩。</p><div class="meta"><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/b2b-content-marketing-that-engages/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d37-768.webp"><img src="/assets/blog/hero/d37.jpg" alt="黑白静物照片：决策者的办公桌上放着压在红色方卡上的怀表、一摞硬币、一杯满满的水、一本笔记本和一件西装外套。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">创意效果</div><h3>不让人犯困的 B2B 内容营销：如何打动采购决策者</h3><p>Stagwell 与 ServiceNow 的合作说明 B2B 预算很大。为什么枯燥的内容代价高昂，以及如何做出让采购者觉得值得的内容。</p><div class="meta"><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/brand-differentiation-ai-without-sounding-generic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d33-768.webp"><img src="/assets/blog/hero/d33.jpg" alt="黑白航拍照片：海滩一侧挤满了数百把一模一样的白色遮阳伞，宽阔空旷的沙滩上只孤零零地铺着一条红色方形毛巾。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">创意效果</div><h3>用 AI 做品牌差异化：怎样不和竞品说一样的话</h3><p>AI 可以让所有品牌听起来一个样，也可以帮一个品牌脱颖而出。区别在于你拿它做什么：写文案，还是绘制品类地图。</p><div class="meta"><span>6 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-o" href="/blog/zh/">← 返回洞察首页</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+  <h2>准备好以小博大了吗？</h2>
+  <p>来看看大型广告集团秘而不宣的智能体系。不推销——只聊聊。</p>
+  <div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">登录 Defy</a></div>
+</section>
+<footer class="df">
+  <div class="wrap">
+    <div class="df-grid">
+      <div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+      <div><h4>Defy</h4><a href="/#main">首页</a><a href="/#platform">平台</a><a href="/#clients">客户</a><a href="/#team">团队</a></div>
+      <div><h4>洞察</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
+      <div><h4>联系</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">登录</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+    </div>
+    <div class="df-bot"><span>© 2026 Defy Group Limited. 保留所有权利。</span><span>defygroup.ai</span></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>广告冷启动：没有用户数据也能个性化 | Defy</title>
+<meta name="description" content="如何解决广告的冷启动难题：没有第三方数据，也能用基于公开内容构建的用户画像，向新用户投放个性化信息。附方法对比和六步实施法。">
+<link rel="canonical" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="广告冷启动个性化, 无第三方数据个性化, 社交聆听用户画像, 新用户个性化广告, 无 Cookie 个性化, 合成受众">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="冷启动难题：缺少用户数据时如何做个性化广告">
+<meta property="og:description" content="如何解决广告的冷启动难题：没有第三方数据，也能用基于公开内容构建的用户画像，向新用户投放个性化信息。附方法对比和六步实施法。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-zh-hans.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="冷启动难题：缺少用户数据时如何做个性化广告">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="洞察与策略">
+<meta property="article:tag" content="个性化">
+<meta property="article:tag" content="冷启动">
+<meta property="article:tag" content="用户画像">
+<meta property="article:tag" content="数据隐私">
+<meta property="article:tag" content="合成受众">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="冷启动难题：缺少用户数据时如何做个性化广告">
+<meta name="twitter:description" content="如何解决广告的冷启动难题：没有第三方数据，也能用基于公开内容构建的用户画像，向新用户投放个性化信息。附方法对比和六步实施法。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-zh-hans.jpg">
+<meta name="twitter:image:alt" content="冷启动难题：缺少用户数据时如何做个性化广告">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&family=DM+Sans:wght@400;500;700&display=swap&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/","headline":"冷启动难题：缺少用户数据时如何做个性化广告","alternativeHeadline":"广告冷启动：没有用户数据也能个性化","description":"如何解决广告的冷启动难题：没有第三方数据，也能用基于公开内容构建的用户画像，向新用户投放个性化信息。附方法对比和六步实施法。","abstract":"先在用户画像层面做个性化，而不是针对个人。分析品类中的公开讨论、评论、评价和创作者内容，把它们提炼成有明确动机和痛点的用户画像，再通过落地页、搜索词或投放环境等初始信号把新用户归入对应画像。每一次互动之后，自有的第一方数据都会逐步取代最初的假设。","image":["https://defygroup.ai/assets/blog/og/d49-zh-hans.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"Defy 编辑部","url":"https://defygroup.ai/blog/zh/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"洞察与策略","keywords":"广告冷启动个性化, 无第三方数据个性化, 社交聆听用户画像, 新用户个性化广告, 无 Cookie 个性化, 合成受众","wordCount":1885,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/zh/#blog","name":"Defy — Defy 洞察"},"about":[{"@type":"Thing","name":"个性化"},{"@type":"Thing","name":"冷启动"},{"@type":"Thing","name":"用户画像"},{"@type":"Thing","name":"数据隐私"},{"@type":"Thing","name":"合成受众"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/de/cold-start-personalisierung-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"广告中的冷启动是什么意思？","acceptedAnswer":{"@type":"Answer","text":"冷启动指的是一个学习型系统还没有关于新用户、新产品或新市场的行为数据。这时个性化只能退回到泛泛的信息。在广告领域，它主要涉及新客户、新品上市和进入新市场，恰恰都是第一印象最重要的场景。"}},{"@type":"Question","name":"没有第三方 Cookie 还能做个性化吗？","acceptedAnswer":{"@type":"Answer","text":"能。情境信号、来自问答测试或注册引导的零方数据、自有的第一方数据，以及基于公开内容的用户画像，都能在不依赖外购 Cookie 档案的情况下实现个性化。区别在于：起步时针对的是有共同动机的群体，而不是个人，再随着每一次互动逐步细化。"}},{"@type":"Question","name":"合成受众和基于公开内容的用户画像有什么区别？","acceptedAnswer":{"@type":"Answer","text":"合成受众是模拟反应的 AI 模型，通常基于调研、统计和样本组数据。基于公开内容的用户画像，则是对评论、评价和创作者视频等真实表达的提炼。前者适合快速模拟，后者能为动机和语言提供可核查的证据。两种方法可以结合使用。"}},{"@type":"Question","name":"起步阶段需要多少个用户画像？","acceptedAnswer":{"@type":"Answer","text":"起步阶段通常三到五个界限清晰的用户画像就够了。画像越多听起来越精准，但在积累足够的学习数据之前，就会把预算和创意投入分散到太多版本上。关键是画像之间在动机和信息上真正有区别，而不只是年龄或居住地不同。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"洞察","item":"https://defygroup.ai/blog/zh/"},{"@type":"ListItem","position":3,"name":"冷启动难题：缺少用户数据时如何做个性化广告","item":"https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="dh">
+  <div class="wrap dh-in">
+    <a class="dh-logo" href="/#main" aria-label="Defy — 首页"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+    <nav class="dh-nav" aria-label="Primary">
+      <a href="/#main">首页</a>
+      <a href="/#platform">平台</a>
+      <a href="/#clients">客户</a>
+      <a href="/#team">团队</a>
+      <a href="/blog/zh/" class="on">洞察</a>
+    </nav>
+    <div class="dh-r">
+      <a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">登录</a>
+      <a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">联系我们</a>
+      <button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">首页</a><span>/</span><a href="/blog/zh/">洞察</a><span>/</span><span>洞察与策略</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">洞察与策略</div>
+    <h1 itemprop="headline">冷启动难题：缺少用户数据时如何做个性化广告<span class="sq"></span></h1>
+    <p class="dek" itemprop="description">新用户、没有历史数据、授权也不多：代理商如何用基于真实公开讨论构建的用户画像破解冷启动难题，而不是依赖外购人群包。</p>
+    <div class="a-meta">
+      <span><b>Defy 编辑部</b></span>
+      <span>发布于 <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+      <span>5 分钟阅读</span>
+      <span class="langs">其他语言版本: <a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><span class="cur">中文</span><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a></span>
+    </div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="黑白照片：鞋匠的双手从一排木制鞋楦中取下一只挂着红色小标签的鞋楦，门口投进新顾客的影子，地上留着一个淡淡的粉笔脚印。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="qbox answer-box" aria-label="这篇文章回答的问题">
+        <div class="eyebrow">这篇文章回答的问题</div>
+        <p class="q">“我对新用户还一无所知，要怎么给他们做个性化广告？”</p>
+        <p class="ans"><b>简短回答</b>先在用户画像层面做个性化，而不是针对个人。分析品类中的公开讨论、评论、评价和创作者内容，把它们提炼成有明确动机和痛点的用户画像，再通过落地页、搜索词或投放环境等初始信号把新用户归入对应画像。每一次互动之后，自有的第一方数据都会逐步取代最初的假设。</p>
+      </section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>冷启动与其说是数据量的问题，不如说是理解的问题：缺的是一个关于新用户想要什么的合理初始假设。</li><li>基于公开内容构建的用户画像能在群体层面提供这样的初始假设，既不需要个人档案，也不需要外购第三方人群包。</li><li>据 Digiday 报道，合成受众正在进入日常策划工作，但其质量取决于底层数据。</li><li>好的冷启动策略会把画像假设、情境信号和有意识的探索结合起来，并随着每一次互动不断学习。</li></ul></section>
+      <div class="prose" itemprop="articleBody"><p>对一无所知的人，怎么做个性化广告？老实说：在个人层面根本做不到。但你完全可以去理解那些对某个品类感兴趣的人，再根据少量信号把新用户归入合适的用户画像。这就是一套可行的冷启动策略的核心。</p>
+<p>行业在寻找传统受众数据的替代方案上下了多大力气，美国营销媒体 <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a> 的最新报道可见一斑：合成受众正从实验走进日常的策划和策略工作。Aveeno Body 借助 Vurvey 的合成研究，把一份策略简报的耗时从约 30 天缩短到 3 天。Goodway Group 则在媒介策划中使用 Arima 的“合成人口”，覆盖美国、英国和德国的消费者。</p>
+
+<h2 id="s1">广告中的冷启动问题是什么？</h2>
+<p>这个概念来自推荐系统领域。一个从行为中学习的系统，需要行为数据才能学习，而新用户还没有任何行为。于是系统只能展示平均水平的东西：畅销品、泛泛的信息，以及那种对所有人都有点用、却打动不了任何人的广告。</p>
+<p>在广告领域，这个问题更加突出。多款浏览器默认屏蔽第三方 Cookie，同意弹窗在德国早已是家常便饭，而且并不是人人都会点“全部接受”。传统的出路，也就是外购人群包，在数据保护法律上的风险越来越大，而且本来就很难说明一个人为什么购买。在深受 GDPR（德语称 DSGVO）影响的 DACH 地区（德国、奥地利、瑞士），“我们直接买点数据补上”已经算不上策略了。</p>
+
+<h2 id="s2">为什么更多数据解决不了问题</h2>
+<p>数据质量研究对此有一个冷静的说法：数据好不好，取决于它是否适合用途。光是准确还不够，数据必须相关、及时，并且适合回答具体的问题。专业文献称之为“适用性”（fitness for use）。</p>
+<p>像“女性，25 至 34 岁，兴趣：美妆”这样的外购人群包，描述得很精确。可面对“是什么促使这个人尝试我们的产品？”这个问题，它几乎毫无价值。它描述的是特征，而不是动机。互动源于理解，而不是数字。</p>
+<p>对冷启动来说，这意味着关键资源不是单个用户的历史，而是一幅关于品类中动机、担忧和语言的可靠图景。而这幅图景，完全可以从公开内容中获得。</p>
+
+<h2 id="s3">如何从公开内容中构建用户画像？</h2>
+<p>人们在公开场合讲了大量关于自己为什么买、为什么不买的话：在品牌帖子下的评论里，在商品评价里，在创作者视频里，在论坛帖子里。这些内容可以被收集起来，按话题和痛点聚类，再提炼成用户画像，用的是真实引语，而不是凭空编写的人物小传。</p>
+<p>与工作坊里产出的传统用户画像相比，区别在于：它基于人们真正说过的话，而不是团队对他们的猜测。Digiday 介绍了一种相近的做法：Limitless Labs 为品牌 Sacheu 分析了其创作者生态中数以千计的 TikTok 和 Instagram 视频，用来构建用户画像。</p>
+<p>对德国市场尤其重要的一点是：这类用户画像在规律和群体层面工作，选择第一条信息并不需要任何单个用户的档案。当然，你的具体方案在法律上是否合规，仍需由你的数据保护顾问来评估。</p>
+
+<h2 id="s4">应对冷启动有哪些方法？</h2>
+<div class="tw"><table>
+<thead><tr><th>方法</th><th>数据基础</th><th>优势</th><th>劣势</th></tr></thead>
+<tbody>
+<tr><td>外购第三方人群包</td><td>外部档案、Cookie</td><td>随取随用</td><td>对动机所知甚少，数据保护风险高</td></tr>
+<tr><td>情境定向</td><td>投放环境、时间、地点、设备</td><td>不需要个人数据</td><td>很难说明购买动机</td></tr>
+<tr><td>零方数据</td><td>问答测试或注册引导中的回答</td><td>直接，且基于用户同意</td><td>只来自愿意参与的人；给转化漏斗增加阻力</td></tr>
+<tr><td>合成受众</td><td>基于调研、统计和样本组数据的模型</td><td>快速模拟反应</td><td>容易趋向平均；质量取决于输入数据</td></tr>
+<tr><td>基于公开内容的用户画像</td><td>评论、评价、创作者内容、竞品广告</td><td>品类中真实的动机和语言</td><td>需要信号才能把单个用户归类</td></tr>
+</tbody>
+</table></div>
+<p>没有哪种方法能单独解决问题。实践中，基于公开内容的用户画像提供假设，情境信号负责归类，第一方数据负责验证。</p>
+
+<h2 id="s5">如何用六个步骤落地冷启动个性化？</h2>
+<ol>
+<li><strong>收集品类讨论。</strong>收集过去几个月的评论、评价、创作者内容和竞品广告，不只是关于品牌本身，而是覆盖整个品类。</li>
+<li><strong>构建用户画像和痛点。</strong>按动机和担忧给内容聚类。起步阶段，三到五个界限清晰的用户画像就足够了。</li>
+<li><strong>为每个画像提出一个假设。</strong>什么信息、什么钩子、什么优惠最合适？为每个画像至少开发一个专属的创意版本。</li>
+<li><strong>确定归类信号。</strong>落地页、搜索词、投放环境、流量来源、最初几次点击：明确哪个信号指向哪个画像。</li>
+<li><strong>带着探索去投放。</strong>预留一部分流量，投放与推测画像不匹配的版本。这样系统才会持续学习，而不是只验证自己的假设。</li>
+<li><strong>回传第一方数据。</strong>每一次互动都会让归类更精准。定期更新用户画像，因为讨论本身在不断变化。</li>
+</ol>
+
+<h2 id="s6">合成受众对冷启动有多大用处？</h2>
+<p>有一定用处，前提是了解它的局限。在 Digiday 的报道中，连业内人士自己都提出了保留意见：Vurvey CEO Chad Reynolds 表示，大语言模型给出的是钟形曲线的顶端，也就是最常见的答案。TransUnion 的 Julie Clark 提醒，要提防基于劣质输入数据的用户画像。Code &amp; Theory 的 Stef Hoffman 则一语中的：这些结果能为判断提供参考，但不能取代判断。</p>
+<p>公开内容的价值恰恰在这里。它们不是模拟，而是证据。如果某个用户画像声称你所在品类的人最怕买错，你就应该能看到这个结论来自哪些帖子。一个无法追溯来源的用户画像，只是一种断言。</p>
+<p>Defy Monitor 走的就是这条路：自动把受众内容聚类为用户画像和痛点，基于真实讨论而不是人口统计特征来做策划。它是 <a href="/#platform">Defy 平台</a>的组成部分，这个平台让独立代理商拥有与大型网络代理商斥巨资打造的同等分析能力。</p>
+
+<h2 id="s7">怎么判断你的冷启动策略是否奏效？</h2>
+<p>把基于画像的版本与一个通用版本的对照组做比较。最有说服力的是新用户的早期指标：与第一条广告的互动、首次访问的深度、到首次转化所用的时间。如果画像版本没有领先，这不算失败，而是一个提示：要么画像不对，要么归类信号太弱。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>互动源于理解，而不是数字。</blockquote><p>数据质量研究以“是否适合用途”来衡量数据。对于触达新用户来说，来自公开讨论的真实动机，往往比精确却缺少动机的人群包数据更合适。</p></aside>
+      <section class="prop" aria-label="Defy 如何帮助您">
+        <div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy 如何帮助您<span class="sq"></span></h2></div>
+        <div class="pb prose"><p>Defy Monitor 自动把你所在品类的受众内容聚类为用户画像和痛点。你基于真实讨论而不是人口统计特征来做策划，得到的正是冷启动时缺少的那些初始假设。</p><ul><li>用户画像包含动机、担忧和语言，均提炼自公开发布的内容。</li><li>每一个 AI 结论都能对照背后的真实帖子进行核查。</li><li>针对每个画像的创意，可以在媒介投放之前评估点击潜力。</li><li>通过 Defy MCP，直接在 Claude 中查询用户画像和痛点。</li></ul><p>从一个品类开始，把你过去的假设和目标受众真正在说的话对照一下。</p></div>
+        <div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E5%86%B7%E5%90%AF%E5%8A%A8%E9%9A%BE%E9%A2%98%EF%BC%9A%E7%BC%BA%E5%B0%91%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%97%B6%E5%A6%82%E4%BD%95%E5%81%9A%E4%B8%AA%E6%80%A7%E5%8C%96%E5%B9%BF%E5%91%8A" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">开始对话</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">登录 Defy</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>广告中的冷启动是什么意思？</summary><p>冷启动指的是一个学习型系统还没有关于新用户、新产品或新市场的行为数据。这时个性化只能退回到泛泛的信息。在广告领域，它主要涉及新客户、新品上市和进入新市场，恰恰都是第一印象最重要的场景。</p></details><details><summary>没有第三方 Cookie 还能做个性化吗？</summary><p>能。情境信号、来自问答测试或注册引导的零方数据、自有的第一方数据，以及基于公开内容的用户画像，都能在不依赖外购 Cookie 档案的情况下实现个性化。区别在于：起步时针对的是有共同动机的群体，而不是个人，再随着每一次互动逐步细化。</p></details><details><summary>合成受众和基于公开内容的用户画像有什么区别？</summary><p>合成受众是模拟反应的 AI 模型，通常基于调研、统计和样本组数据。基于公开内容的用户画像，则是对评论、评价和创作者视频等真实表达的提炼。前者适合快速模拟，后者能为动机和语言提供可核查的证据。两种方法可以结合使用。</p></details><details><summary>起步阶段需要多少个用户画像？</summary><p>起步阶段通常三到五个界限清晰的用户画像就够了。画像越多听起来越精准，但在积累足够的学习数据之前，就会把预算和创意投入分散到太多版本上。关键是画像之间在动机和信息上真正有区别，而不只是年龄或居住地不同。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇文章，是因为“数据不足时如何向新用户做个性化触达”在技术导向的营销团队中反复出现，在重视数据保护的德国市场尤其如此。合成受众的最新热潮，让“该用什么数据做基础”这个问题更加紧迫。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">广告中的冷启动问题是什么？</a><a href="#s2">为什么更多数据解决不了问题</a><a href="#s3">如何从公开内容中构建用户画像？</a><a href="#s4">应对冷启动有哪些方法？</a><a href="#s5">如何用六个步骤落地冷启动个性化？</a><a href="#s6">合成受众对冷启动有多大用处？</a><a href="#s7">怎么判断你的冷启动策略是否奏效？</a></nav>
+      <div class="side-cta"><h4>Defy</h4><p>准备好以小博大了吗？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">登录 Defy</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>更多洞察<span class="sq"></span></h2>
+  <div class="grid"><a class="card" href="/blog/zh/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="黑白照片：雪后的公园里，人们背对镜头沿着踩出来的捷径穿过雪地，旁边铺好的小路空无一人，雪地上放着一个红色小方块。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">洞察与策略</div><h3>AI 改变消费者行为：代理商为何必须重建洞察体系</h3><p>当人们向聊天机器人提问、由算法策展信息流时，传统洞察方法正在过时。策略人员现在应该改变什么，以及哪些事 AI 替代不了。</p><div class="meta"><span>5 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="黑白照片：百货商店橱窗正在布置圣诞装饰，玻璃后是成箱的彩球和一棵光秃秃的圣诞树，前景中一个表盘的指针正逼近红色小方块标出的阈值。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">洞察与策略</div><h3>2026 圣诞季：社交聆听是代理商的预警系统</h3><p>等到一月才复盘，圣诞季早已结束。代理商如何用社交聆听及早识别购买情绪、价格压力和竞争对手的促销动作。</p><div class="meta"><span>5 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="黑白静物照：一叠方格打印纸上散放着各式不统一的量尺，一把长钢直尺横放其上，尺端有一个红色小标签。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">洞察与策略</div><h3>跨平台互动怎么衡量？代理商该告别手工拼表了</h3><p>每个平台都按自己的规则统计互动。本文提供方法、指标和选工具的标准，帮代理商做出可靠的跨平台互动衡量，不再手工拼表。</p><div class="meta"><span>5 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-o" href="/blog/zh/">← 返回洞察首页</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+  <h2>准备好以小博大了吗？</h2>
+  <p>来看看大型广告集团秘而不宣的智能体系。不推销——只聊聊。</p>
+  <div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">登录 Defy</a></div>
+</section>
+<footer class="df">
+  <div class="wrap">
+    <div class="df-grid">
+      <div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+      <div><h4>Defy</h4><a href="/#main">首页</a><a href="/#platform">平台</a><a href="/#clients">客户</a><a href="/#team">团队</a></div>
+      <div><h4>洞察</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
+      <div><h4>联系</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">登录</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+    </div>
+    <div class="df-bot"><span>© 2026 Defy Group Limited. 保留所有权利。</span><span>defygroup.ai</span></div>
+  </div>
+</footer>
+</body>
+</html>

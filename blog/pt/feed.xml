@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — O jornal da Defy</title>
+<link>https://defygroup.ai/blog/pt/</link>
+<description>Anotações sobre a economia das agências, a adoção de IA e o ofício do insight, escritas para agências independentes e times in-house.</description>
+<language>pt</language>
+<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/pt/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Métricas de engajamento que o cliente valoriza (e as que só enfeitam)</title>
+<link>https://defygroup.ai/blog/pt/metricas-engajamento-clientes/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/metricas-engajamento-clientes/</guid>
+<description>Quais métricas de engajamento o cliente valoriza? Veja como separar vaidade de resultado, comparar plataformas e montar um relatório que leva a decisões.</description>
+<category>Eficácia criativa</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>Black Friday para agências: automatize relatórios e ganhe tempo para otimizar</title>
+<link>https://defygroup.ai/blog/pt/black-friday-agencias-automacao/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/black-friday-agencias-automacao/</guid>
+<description>Faltam seis semanas para a Black Friday 2026. Um plano de Black Friday para agências automatizarem relatórios e alertas e liberarem o time para otimizar.</description>
+<category>Transformação com IA</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>Marketing de conteúdo B2B que não dá sono: como engajar quem decide a compra</title>
+<link>https://defygroup.ai/blog/pt/marketing-b2b-conteudo-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/marketing-b2b-conteudo-insights/</guid>
+<description>Marketing de conteúdo B2B não precisa ser chato. Veja como partir das tensões reais do comprador, testar conceitos antes da mídia e gerar leads qualificados.</description>
+<category>Eficácia criativa</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>IA e o fim do modelo de holding: lições para agências independentes</title>
+<link>https://defygroup.ai/blog/pt/ia-fim-modelo-holding-agencias-independentes/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/ia-fim-modelo-holding-agencias-independentes/</guid>
+<description>Cortes na WPP e a queda das fees mostram a IA remodelando as holdings. Veja o que muda e como usar IA para agências independentes ganharem terreno.</description>
+<category>Economia das agências</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>Consumo de mídia fragmentado: como entender a audiência além dos dashboards</title>
+<link>https://defygroup.ai/blog/pt/consumo-midia-fragmentado-dados-audiencia/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/consumo-midia-fragmentado-dados-audiencia/</guid>
+<description>O consumo de mídia fragmentado espalha dados por todos os canais. Veja como unificar dados de audiência em personas e tensões reais e planejar melhor.</description>
+<category>Insight e estratégia</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>Concorrência de agências: as novas regras premiam quem chega com evidência</title>
+<link>https://defygroup.ai/blog/pt/concorrencias-agencias-inteligencia-categoria/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/pt/concorrencias-agencias-inteligencia-categoria/</guid>
+<description>O guia Abracom/ABA para concorrência de agências ganhou 10 passos. Veja como usar comportamento do consumidor e dados de categoria para vencer com evidência.</description>
+<category>Novos negócios</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

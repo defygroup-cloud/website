@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI原生代理商：AI落地的五个层级 | Defy</title>
+<meta name="description" content="什么才是真正的 AI 原生代理商？本文拆解 AI 落地的五个层级，并解释为什么大多数代理商应该停在能解决自身瓶颈的那一级。">
+<link rel="canonical" href="https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="AI 原生代理商, AI 原生是什么意思, AI 应用成熟度模型, 代理商如何实现 AI 原生, 智能体 AI 代理商, 独立代理商 AI 战略">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/speed-is-not-progress-ai-native-agencies/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/speed-is-not-progress-ai-native-agencies/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/">
+<meta property="og:title" content="AI 原生代理商：速度不等于进步，五个层级才是">
+<meta property="og:description" content="什么才是真正的 AI 原生代理商？本文拆解 AI 落地的五个层级，并解释为什么大多数代理商应该停在能解决自身瓶颈的那一级。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d52-zh-hans.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI 原生代理商：速度不等于进步，五个层级才是">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="article:published_time" content="2026-10-16T13:04:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T13:04:00+08:00">
+<meta property="article:section" content="AI 转型">
+<meta property="article:tag" content="AI 原生">
+<meta property="article:tag" content="AI 落地">
+<meta property="article:tag" content="智能体">
+<meta property="article:tag" content="独立代理商">
+<meta property="article:tag" content="AI 战略">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 原生代理商：速度不等于进步，五个层级才是">
+<meta name="twitter:description" content="什么才是真正的 AI 原生代理商？本文拆解 AI 落地的五个层级，并解释为什么大多数代理商应该停在能解决自身瓶颈的那一级。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d52-zh-hans.jpg">
+<meta name="twitter:image:alt" content="AI 原生代理商：速度不等于进步，五个层级才是">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&family=DM+Sans:wght@400;500;700&display=swap&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/#article","url":"https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/","mainEntityOfPage":"https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/","headline":"AI 原生代理商：速度不等于进步，五个层级才是","alternativeHeadline":"AI原生代理商：AI落地的五个层级","description":"什么才是真正的 AI 原生代理商？本文拆解 AI 落地的五个层级，并解释为什么大多数代理商应该停在能解决自身瓶颈的那一级。","abstract":"AI 原生代理商，是把 AI 嵌进工作流本身，让一线专家无需打开聊天机器人也能受益。实现路径分为五个层级，从手动聊天提示，到多个智能体共享同一信息源。大多数代理商并不需要走到第五级。先定义终点、时间和资源，然后停在能解决瓶颈的那一级。","image":["https://defygroup.ai/assets/blog/og/d52-zh-hans.jpg","https://defygroup.ai/assets/blog/hero/d52.jpg","https://defygroup.ai/assets/blog/diagrams/d52-diagram.jpg"],"datePublished":"2026-10-16T13:04:00+08:00","dateModified":"2026-10-16T13:04:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"Defy 编辑部","url":"https://defygroup.ai/blog/zh/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AI 转型","keywords":"AI 原生代理商, AI 原生是什么意思, AI 应用成熟度模型, 代理商如何实现 AI 原生, 智能体 AI 代理商, 独立代理商 AI 战略","wordCount":2127,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/zh/#blog","name":"Defy — Defy 洞察"},"about":[{"@type":"Thing","name":"AI 原生"},{"@type":"Thing","name":"AI 落地"},{"@type":"Thing","name":"智能体"},{"@type":"Thing","name":"独立代理商"},{"@type":"Thing","name":"AI 战略"}],"citation":[{"@type":"CreativeWork","name":"How Liquid Death is building an AI-native marketing organization","url":"https://www.marketingdive.com/news/how-liquid-death-is-building-an-ai-native-marketing-organization/832345/","datePublished":"2026-10-07","publisher":{"@type":"Organization","name":"Marketing Dive"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/speed-is-not-progress-ai-native-agencies/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"AI 原生代理商，就是人人都用 ChatGPT 吗？","acceptedAnswer":{"@type":"Answer","text":"不完全是。如果每个人都开着聊天机器人，却仍然每天粘贴 brief、反复介绍客户，AI 只是在工作旁边，而不在工作之中。更有用的定义是：AI 嵌进工作流，一线专家无需登录单独的工具就能受益，就像免护照通关的机场闸口消除了排队。"}},{"@type":"Question","name":"要实现 AI 原生，必须招 AI 工程师吗？","acceptedAnswer":{"@type":"Answer","text":"只有在你打算自己搭建并维护系统时才需要。账号很便宜，但第三级及以上的真正落地需要工程投入，而工程师很贵。许多独立代理商更适合购买已经搭建好、有人维护的能力，让自己的团队专注于客户工作和专业判断。"}},{"@type":"Question","name":"轻智能体和真正的智能体有什么区别？","acceptedAnswer":{"@type":"Answer","text":"轻智能体指保存好的自定义提示词和项目，很有用，但每个人仍要手动驱动工具。真正的智能体则是嵌在系统里、已经建立好上下文的单个智能体，可以直接处理已接入的数据，不需要有人粘贴进去。这一跳通常需要工程能力、数据接入，以及明确的维护负责人。"}},{"@type":"Question","name":"怎么知道什么时候该停止往上爬？","acceptedAnswer":{"@type":"Answer","text":"当你想解决的瓶颈已经解决的时候。如果第二级的保存提示词和项目就能搞定，那就停下，转向下一个问题。继续往上爬只会增加需要搭建和维护的系统，却没有相应的收益。要对照起步时写下的终点线复盘，而不是对照竞争对手声称自己在做什么。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"洞察","item":"https://defygroup.ai/blog/zh/"},{"@type":"ListItem","position":3,"name":"AI 原生代理商：速度不等于进步，五个层级才是","item":"https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="dh">
+  <div class="wrap dh-in">
+    <a class="dh-logo" href="/#main" aria-label="Defy — 首页"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+    <nav class="dh-nav" aria-label="Primary">
+      <a href="/#main">首页</a>
+      <a href="/#platform">平台</a>
+      <a href="/#clients">客户</a>
+      <a href="/#team">团队</a>
+      <a href="/blog/zh/" class="on">洞察</a>
+    </nav>
+    <div class="dh-r">
+      <a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">登录</a>
+      <a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">联系我们</a>
+      <button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">首页</a><span>/</span><a href="/blog/zh/">洞察</a><span>/</span><span>AI 转型</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">AI 转型</div>
+    <h1 itemprop="headline">AI 原生代理商：速度不等于进步，五个层级才是<span class="sq"></span></h1>
+    <p class="dek" itemprop="description">没有终点线就抢着做 AI 原生，是兔子的打法。AI 落地的五个层级告诉代理商：哪里该往上爬，哪里该停下。</p>
+    <div class="a-meta">
+      <span><b>Defy 编辑部</b></span>
+      <span>发布于 <time datetime="2026-10-16T13:04:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+      <span>7 分钟阅读</span>
+      <span class="langs">其他语言版本: <a href="/blog/speed-is-not-progress-ai-native-agencies/" hreflang="en" lang="en">English</a><span class="cur">中文</span></span>
+    </div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d52-768.webp 768w, /assets/blog/hero/d52-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d52.jpg" alt="黑白照片：一只乌龟停在宽阔的石阶上，身旁放着一块红色小方砖，背景中一只野兔正飞奔而去。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="qbox answer-box" aria-label="这篇文章回答的问题">
+        <div class="eyebrow">这篇文章回答的问题</div>
+        <p class="q">“做一家 AI 原生代理商到底意味着什么？我们要多快才能做到？”</p>
+        <p class="ans"><b>简短回答</b>AI 原生代理商，是把 AI 嵌进工作流本身，让一线专家无需打开聊天机器人也能受益。实现路径分为五个层级，从手动聊天提示，到多个智能体共享同一信息源。大多数代理商并不需要走到第五级。先定义终点、时间和资源，然后停在能解决瓶颈的那一级。</p>
+      </section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>AI 原生代理商，是把 AI 嵌进工作流本身，让一线专家无需登录聊天机器人也能受益。</li><li>AI 落地的五个层级依次是：聊天式、轻智能体、真正的智能体、智能体团队，以及职能自主运转。</li><li>大多数代理商不需要走到第五级：如果第二级就能消除瓶颈，就停在那里，因为目标是进步而不是速度。</li><li>账号每人只需 20 到 100 美元，真正的落地却需要时间、资源和工程师，独立代理商需要一条不同于控股集团的路径。</li><li>据 Marketing Dive 报道，Liquid Death 在约三周内把 AI 操作系统迭代了 17 个版本，但每一步都对准一个写明的目标：内部两个人管理可观的预算。</li></ul></section>
+      <div class="prose" itemprop="articleBody"><p>做一家 AI 原生代理商意味着什么？要多快才能做到？AI 原生，意味着 AI 嵌进了工作流本身，一线专家不用多想就能受益。至于"要多快"，这个问题本身就问错了。真正有用的问题是：终点在哪里？要花多长时间？到达终点要付出什么代价？</p>
+<p>品牌方已经在设定自己的终点。据 <a href="https://www.marketingdive.com/news/how-liquid-death-is-building-an-ai-native-marketing-organization/832345/" rel="noopener" target="_blank">Marketing Dive</a> 报道，Liquid Death 正在一套与代理商 Power Digital Marketing 共同打造的 AI 操作系统上运行媒介和零售媒体优化。在大约三周内，这个品牌已经把 Power Digital 的操作系统 Omega 迭代了 17 个版本。目标说得很直白：只用"内部两个人"，管理"相当可观的预算"。</p>
+<p>三周 17 个版本，确实很快。但请看速度前面摆着什么：一个白纸黑字写下来的目的地——可观的预算，两个人。每一次迭代都可以拿它来衡量。大多数追逐"AI 原生"的代理商，只有速度，没有目的地。</p>
+
+<h2 id="s1">对代理商来说，"AI 原生"到底是什么意思？</h2>
+<p>不少代理商老板把它定义为"团队里人人都在用 ChatGPT"。本周在新加坡一场 AI 落地分享会上，一位代理公司创始人给出了更好的检验标准。他花了 18 个月，试图把自己约 20 人的公司变成 AI 原生。他说，真正的 AI 原生，就像在樟宜机场免护照通关：不排队，不填表，直接走过去。</p>
+<p>放到代理公司里，这意味着一线专家——策划、文案、客户负责人——根本不需要登录 ChatGPT。AI 应该已经在他们的工作流里了。</p>
+<p>按这个标准，一家人人都开着聊天机器人标签页的代理公司并不是 AI 原生，只是"AI 在旁边"。大家每天早上仍在复制、粘贴，对着一个空白对话框把客户重新介绍一遍。</p>
+
+<h2 id="s2">代理商为什么会把速度当成进步？</h2>
+<p>因为恐惧是真实的。每周都有新模型发布，信息流里每天都有独立创业者宣称自己替代了一个部门，原地不动就像在倒退。这位新加坡创始人形容自己当时的反应就是那只兔子：新模型、新工具、每人一个编程账号、每周五全部用来搭东西。缺的正是终点线。没有人定义过，他们到底在和什么赛跑。</p>
+<p>寓言里乌龟赢了，不是因为慢是美德，而是因为它每一步都很笃定。他给代理商的建议是：定义终点在哪里、需要多长时间到达、路上需要带上哪些资源。</p>
+<p>代理商感受到的压力比大多数行业都大。客户会问你在用 AI 做什么，新业务团队想在比稿时说点亮眼的东西。诱惑在于给出一个令人兴奋的答案，而不是一个有用的答案。</p>
+
+<h2 id="s3">AI 落地的五个层级是什么？</h2>
+<p>演讲中最有用的一页幻灯片是一段台阶。如图所示，它有五级，每往上一级，对上下文、人和工程能力的要求就更高。层级名称来自他的演讲，代理商案例是我们补充的。</p>
+<div class="tw"><table>
+<thead><tr><th>层级</th><th>具体表现</th><th>代理商案例</th></tr></thead>
+<tbody>
+<tr><td>1. 聊天式（Chat-based）</td><td>每次输入都靠手动打字或粘贴</td><td>策略人员把 brief 粘贴进聊天机器人，让它给出创意方向</td></tr>
+<tr><td>2. 轻智能体（Agent-lite）</td><td>保存好的自定义提示词和项目</td><td>公关团队为每个客户建一个项目，内含语气规范和标准文案</td></tr>
+<tr><td>3. 真正的智能体（True agentic）</td><td>系统中的单个智能体，已建立上下文</td><td>智能体根据已接入的平台数据起草每周媒介报告</td></tr>
+<tr><td>4. 智能体团队（The agent team）</td><td>智能体共享同一信息源并协同工作</td><td>监测智能体发现竞品上新，报告智能体把它写进客户周报</td></tr>
+<tr><td>5. 职能自主运转（The function runs itself）</td><td>人负责定方向、做审核、拍板判断</td><td>常规监测和报告端到端运行，团队负责审核和决策</td></tr>
+</tbody>
+</table></div>
+<p>从第二级跳到第三级，是代理商最容易卡住的地方。在这之下，AI 存在于个人习惯里；在这之上，AI 存在于你的系统里，这意味着必须有人去搭建、连接和维护。</p>
+
+<figure class="diagram"><picture><source type="image/webp" srcset="/assets/blog/diagrams/d52-diagram-1536.webp"><img src="/assets/blog/diagrams/d52-diagram.jpg" alt="AI 落地五个层级的台阶示意图：1 Chat-based（聊天式）、2 Agent-lite（轻智能体）、3 True agentic（真正的智能体）、4 The agent team（智能体团队）、5 The function runs itself（职能自主运转）。" width="1536" height="1024" loading="lazy"></picture><figcaption>AI 落地的五个层级：从聊天式提示到职能自主运转。框架分享自 2026 年 10 月新加坡的一场 AI 落地分享会。</figcaption></figure><h2 id="s4">每家代理商都需要走到第五级吗？</h2>
+<p>不需要，演讲对此态度非常明确：如果第二级就能解决你的瓶颈，那就停在第二级。目标是进步，不是速度。</p>
+<p>不同类型的代理商，答案差别很大。一家瓶颈在初稿的小型公关咨询公司，用好第二级可能就够了：为每个客户搭好项目，存好品牌语气。一家被跨平台报告淹没的媒介代理商，可能需要第三或第四级，因为它的瓶颈在于数据在系统之间流转。一家管理数百位达人的达人营销机构，可能需要多个智能体共享一份"谁在什么时候答应了什么"的记录。而一家瓶颈在 brief 的创意热店，在 brief 修好之前，可能根本不需要往上爬。</p>
+<p>爬过自己需要的层级不叫雄心，叫无缘无故地签下了一份维护合同。</p>
+
+<h2 id="s5">这种抢跑为什么反复出现？</h2>
+<p>社会变迁理论可以帮助解释。一个行业的变化，往往是技术、习惯和制度一起变动的结果。当技术跑得比周围的规范和结构更快，中间的空档就会被焦虑、模仿和捷径填满。人们采用某样东西，是因为别人都在用，而不是因为自己想清楚了要去哪里。</p>
+<p>在代理公司里，被牺牲的是诚信：作品的诚信、流程的诚信、对客户承诺的诚信。仓促上马的 AI 会产出没人核查却言之凿凿的内容，以及没人能维护的工作流。本文背后的洞察说得很简单：追求速度，不能以牺牲诚信为代价。</p>
+
+<h2 id="s6">真正落地 AI，代理商要付出什么成本？</h2>
+<p>账号比你担心的便宜，其他一切比你想象的贵。这位新加坡创始人估算，一个账号大约每人 20 到 100 美元，这是便宜的部分。他认为，真正的落地需要时间、资源和工程师，而工程师很贵。</p>
+<p>这正是独立代理商面对的不对称。控股集团已经在数据分析、AI 和情报体系上投入了数以百万计的资金。Liquid Death 则是和一家自带操作系统的代理商伙伴一起搭建了自己的系统。一家 20 人或 60 人的独立代理商，很难组建自己的 AI 团队，也不应该只为了跟上节奏而硬建一个。</p>
+<p>这正是 Defy 存在的原因：让独立代理商拥有与控股集团同等的数据分析和 AI 能力，却无需承担开发成本和维护负担。你可以在 <a href="/#platform">Defy 平台</a>上看到各部分如何组合。购买现成的能力，让你在瓶颈真正需要时再往上爬一级，而不是为一段可能永远用不上的台阶去招人。</p>
+
+<h2 id="s7">怎样为 AI 落地设定终点线？</h2>
+<p>像乌龟一样思考。在任何人开通新账号之前，先把这六个笃定的步骤写下来。</p>
+<ol>
+<li><strong>说出瓶颈。</strong>一个流程，一个卡住的地方。不是笼统的"AI 战略"。</li>
+<li><strong>用业务语言写下终点。</strong>"比稿调研两天完成，而不是五天"，而不是"在新业务中使用 AI"。</li>
+<li><strong>诚实地估算时间。</strong>把学习、测试以及团队适应期间的产出下滑都算进去。</li>
+<li><strong>列出所需资源。</strong>人员工时、工程支持、工具预算，以及之后由谁来维护。</li>
+<li><strong>选择能解决瓶颈的最低层级。</strong>如果第二级可能奏效，就先试第二级。不行再往上爬。</li>
+<li><strong>设定复盘日期。</strong>对照终点检查进展，然后有意识地选择：停下、调整或继续往上。</li>
+</ol></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>追求速度，不能以牺牲诚信为代价。</blockquote><p>社会变迁理论指出，当技术跑得比周围的习惯和结构更快，人们会靠模仿来采用新东西。对代理商而言，这意味着没人核查、没人维护的仓促 AI；一条明确的终点线能把严谨找回来。</p></aside>
+      <section class="prop" aria-label="Defy 如何帮助您">
+        <div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy 如何帮助您<span class="sq"></span></h2></div>
+        <div class="pb prose"><p>Defy 让独立代理商拥有控股集团花数百万打造的数据分析与 AI 能力，却无需承担开发成本和维护负担。</p><ul><li><strong>Defy Monitor</strong> 为你服务的每个客户和品类提供实时的竞品、受众与社交对话洞察。</li><li><strong>Defy MCP</strong> 让团队在 Claude 里直接追问这些数据，像和同事对话一样，专家和答案之间不再隔着一个新仪表盘。</li><li><strong>Defy Agents</strong> 以智能体工作流承接重复性交付，适用于瓶颈确实需要第三级及以上能力的时候。</li></ul><p>先确定你的终点线，再来和我们聊聊通往那里的最短路径。</p></div>
+        <div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=AI%20%E5%8E%9F%E7%94%9F%E4%BB%A3%E7%90%86%E5%95%86%EF%BC%9A%E9%80%9F%E5%BA%A6%E4%B8%8D%E7%AD%89%E4%BA%8E%E8%BF%9B%E6%AD%A5%EF%BC%8C%E4%BA%94%E4%B8%AA%E5%B1%82%E7%BA%A7%E6%89%8D%E6%98%AF" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D52'})}catch(e){}">开始对话</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D52'})}catch(e){}">登录 Defy</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>AI 原生代理商，就是人人都用 ChatGPT 吗？</summary><p>不完全是。如果每个人都开着聊天机器人，却仍然每天粘贴 brief、反复介绍客户，AI 只是在工作旁边，而不在工作之中。更有用的定义是：AI 嵌进工作流，一线专家无需登录单独的工具就能受益，就像免护照通关的机场闸口消除了排队。</p></details><details><summary>要实现 AI 原生，必须招 AI 工程师吗？</summary><p>只有在你打算自己搭建并维护系统时才需要。账号很便宜，但第三级及以上的真正落地需要工程投入，而工程师很贵。许多独立代理商更适合购买已经搭建好、有人维护的能力，让自己的团队专注于客户工作和专业判断。</p></details><details><summary>轻智能体和真正的智能体有什么区别？</summary><p>轻智能体指保存好的自定义提示词和项目，很有用，但每个人仍要手动驱动工具。真正的智能体则是嵌在系统里、已经建立好上下文的单个智能体，可以直接处理已接入的数据，不需要有人粘贴进去。这一跳通常需要工程能力、数据接入，以及明确的维护负责人。</p></details><details><summary>怎么知道什么时候该停止往上爬？</summary><p>当你想解决的瓶颈已经解决的时候。如果第二级的保存提示词和项目就能搞定，那就停下，转向下一个问题。继续往上爬只会增加需要搭建和维护的系统，却没有相应的收益。要对照起步时写下的终点线复盘，而不是对照竞争对手声称自己在做什么。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://www.marketingdive.com/news/how-liquid-death-is-building-an-ai-native-marketing-organization/832345/" rel="noopener" target="_blank">How Liquid Death is building an AI-native marketing organization</a> — Marketing Dive, 2026-10-07</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇文章，是因为代理商负责人一直在问最新的 AI 趋势对自己意味着什么，而一位新加坡创始人对 18 个月追逐“AI 原生”的复盘，给出了一个更有用的问题：终点线在哪里？</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">对代理商来说，&#34;AI 原生&#34;到底是什么意思？</a><a href="#s2">代理商为什么会把速度当成进步？</a><a href="#s3">AI 落地的五个层级是什么？</a><a href="#s4">每家代理商都需要走到第五级吗？</a><a href="#s5">这种抢跑为什么反复出现？</a><a href="#s6">真正落地 AI，代理商要付出什么成本？</a><a href="#s7">怎样为 AI 落地设定终点线？</a></nav>
+      <div class="side-cta"><h4>Defy</h4><p>准备好以小博大了吗？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">登录 Defy</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>更多洞察<span class="sq"></span></h2>
+  <div class="grid"><a class="card" href="/blog/zh/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="黑白照片：信号员背对镜头，手搭在一根带红色小牌的拉杆上，望向窗外分成数条岔道的铁轨。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 转型</div><h3>代理商该自动化什么？动手前先回答三个问题</h3><p>决定代理商该自动化什么的，是三个问题：决策复杂度、潜在损害和可衡量的结果。从速赢项目开始。</p><div class="meta"><span>7 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="黑白照片：一张橡木桌因一条桌腿较短而倾斜地立在水泥地上，桌上放着一杯水和一叠纸，短腿下方有一块红色小方砖。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 转型</div><h3>AI 就绪度评估：代理商最弱的一环决定成败</h3><p>代理商的 AI 就绪程度由最弱的维度决定，而不是最强的。一套四维度评估法，以及为什么再上一门 AI 课也很难补上短板。</p><div class="meta"><span>7 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="黑白照片：钟表匠的双手在一块红色小毡垫上组装精密的机械机芯，身后的架子上摆满一盒盒批量生产的机芯。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 转型</div><h3>代理商 AI 战略：平台会自动化的，别自己造</h3><p>平台正在自动化代理商过去招人来做的工作。Omnicom 的 AI 平台变动说明了自建的代价，代理商该把精力放在哪里？</p><div class="meta"><span>8 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-o" href="/blog/zh/">← 返回洞察首页</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+  <h2>准备好以小博大了吗？</h2>
+  <p>来看看大型广告集团秘而不宣的智能体系。不推销——只聊聊。</p>
+  <div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">开始对话</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">登录 Defy</a></div>
+</section>
+<footer class="df">
+  <div class="wrap">
+    <div class="df-grid">
+      <div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+      <div><h4>Defy</h4><a href="/#main">首页</a><a href="/#platform">平台</a><a href="/#clients">客户</a><a href="/#team">团队</a></div>
+      <div><h4>洞察</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
+      <div><h4>联系</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">登录</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+    </div>
+    <div class="df-bot"><span>© 2026 Defy Group Limited. 保留所有权利。</span><span>defygroup.ai</span></div>
+  </div>
+</footer>
+</body>
+</html>

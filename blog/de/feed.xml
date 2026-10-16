@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Das Defy Journal</title>
+<link>https://defygroup.ai/blog/de/</link>
+<description>Praxisnotizen zu Agenturökonomie, KI-Einführung und Insight-Handwerk – für unabhängige Agenturen und Inhouse-Teams.</description>
+<language>de</language>
+<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/de/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>KI und Konsumentenverhalten: Warum Agenturen ihre Insights neu aufbauen müssen</title>
+<link>https://defygroup.ai/blog/de/ki-konsumentenverhalten-agentur-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/de/ki-konsumentenverhalten-agentur-insights/</guid>
+<description>Wie KI das Konsumentenverhalten verändert und warum Agenturen ihre Insights neu aufbauen sollten: drei Verschiebungen, eine Datenfalle, ein 6-Schritte-Plan.</description>
+<category>Insight &amp; Strategie</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>Cold-Start-Problem: Werbung personalisieren, wenn Ihnen Nutzerdaten fehlen</title>
+<link>https://defygroup.ai/blog/de/cold-start-personalisierung-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/de/cold-start-personalisierung-personas/</guid>
+<description>Cold-Start-Problem in der Werbung lösen: Wie Sie neue Nutzer ohne Drittanbieterdaten personalisiert ansprechen – mit Personas aus öffentlichen Inhalten.</description>
+<category>Insight &amp; Strategie</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>Weihnachtsgeschäft 2026: Social Listening als Frühwarnsystem für Agenturen</title>
+<link>https://defygroup.ai/blog/de/weihnachtsgeschaeft-social-listening-agenturen/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/de/weihnachtsgeschaeft-social-listening-agenturen/</guid>
+<description>Social Listening im Weihnachtsgeschäft: Welche Signale Agenturen jetzt beobachten sollten, um Q4-Budgets zu schützen – mit Signal-Tabelle und 6-Schritte-Plan.</description>
+<category>Insight &amp; Strategie</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>KI-Tools für Agenturen: Mit MCP raus aus dem Tool-Wildwuchs</title>
+<link>https://defygroup.ai/blog/de/ki-tools-agentur-integration-mcp/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/de/ki-tools-agentur-integration-mcp/</guid>
+<description>KI-Tools für Agenturen richtig integrieren: warum Tool-Wildwuchs Zeit kostet, was MCP ändert und wie Sie in sechs Schritten einen schlanken KI-Stack aufbauen.</description>
+<category>KI-Transformation</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>Abrechnungsmodelle für Agenturen: KI fair bepreisen, statt Marge zu verschenken</title>
+<link>https://defygroup.ai/blog/de/agentur-abrechnungsmodelle-ki/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/de/agentur-abrechnungsmodelle-ki/</guid>
+<description>Abrechnungsmodelle für Agenturen im KI-Zeitalter: warum Sie Effizienzgewinne nicht verschenken sollten und welche Preismodelle Ihre Marge schützen.</description>
+<category>Agenturökonomie</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

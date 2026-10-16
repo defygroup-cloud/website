@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Defy 洞察</title>
+<link>https://defygroup.ai/blog/zh/</link>
+<description>关于代理商经济、AI 落地与洞察手艺的一线笔记——写给独立代理商、品牌内部团队，以及所有不想再被大集团碾压的人。</description>
+<language>zh-Hans</language>
+<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/zh/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>代理商该自动化什么？动手前先回答三个问题</title>
+<link>https://defygroup.ai/blog/zh/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/before-you-automate-three-questions-agencies/</guid>
+<description>自动化之前先问：决策有多复杂？糟糕的产出会造成多大损害？哪项可衡量的结果会改善？一份帮代理商判断哪些工作该自动化的指南。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 就绪度评估：代理商最弱的一环决定成败</title>
+<link>https://defygroup.ai/blog/zh/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-ai-readiness-four-dimensions/</guid>
+<description>语境、人、流程、平台：一套实用的代理商 AI 就绪度评估方法，帮你找出最弱的一环，并说明为什么光靠 AI 课程补不上这块短板。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商的 AI 阻力是标准问题，不是人的问题</title>
+<link>https://defygroup.ai/blog/zh/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-resistance-standards-not-people/</guid>
+<description>最得力的员工抵触的不是 AI，而是糟糕的产出。为什么代理商员工抵触 AI 其实暴露了质量缺口，以及如何在不加剧倦怠的前提下解决。</description>
+<category>人才与文化</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 战略：平台会自动化的，别自己造</title>
+<link>https://defygroup.ai/blog/zh/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta 和 Google 正在自动化定向、广告制作和广告系列搭建。更清醒的代理商 AI 战略：工具只买不造，在判断力就是产品的地方竞争。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 指标：客户买单的是结果，不是使用量</title>
+<link>https://defygroup.ai/blog/zh/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/measure-ai-results-not-usage-agencies/</guid>
+<description>AI 账号数、智能体数量、生成素材数都是虚荣指标。客户真正在意的代理商 AI 指标是单位产出成本、交付速度、错误率和利润影响。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商如何衡量 AI 投资回报：部署前先定义成功</title>
+<link>https://defygroup.ai/blog/zh/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/define-success-before-deploying-ai-agency/</guid>
+<description>基线、目标、测试、复盘：一套帮助代理商衡量 AI 投资回报的简单方法，把核查时间和 AI 拖累都算进去，看清自动化是否真的划算。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商闭环 AI：从十一个工具到一个共享层</title>
+<link>https://defygroup.ai/blog/zh/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>十一个工具、二十个负责人、没有任何共享？本文讲解代理商如何用记忆、技能、工作流和审批四个部分，搭建真正的闭环 AI 系统。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 角色分工：别再让 AI 成为每个人的工作</title>
+<link>https://defygroup.ai/blog/zh/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>代理公司不需要人人都会搭 AI。本文讲清构建者、使用者和审批者三种角色，如何在 AI 重塑行业时守住质量、职业发展和工作安全感。</description>
+<category>人才与文化</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 原生代理商：速度不等于进步，五个层级才是</title>
+<link>https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/speed-is-not-progress-ai-native-agencies/</guid>
+<description>什么才是真正的 AI 原生代理商？本文拆解 AI 落地的五个层级，并解释为什么大多数代理商应该停在能解决自身瓶颈的那一级。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 落地：先摸清真实工作流，再谈自动化</title>
+<link>https://defygroup.ai/blog/zh/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-bad-process-document-workflows-first/</guid>
+<description>把 AI 用在糟糕的流程上，只会得到更快的糟糕流程。本文教广告代理商先观察真实工作流、找到瓶颈，再一步步决定哪些环节值得自动化。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 改变消费者行为：代理商为何必须重建洞察体系</title>
+<link>https://defygroup.ai/blog/zh/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI 如何改变消费者搜索、发现与信任的方式，代理商又为何要重建洞察体系？本文拆解三大转变、一个数据陷阱，并给出一套六步行动计划。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>冷启动难题：缺少用户数据时如何做个性化广告</title>
+<link>https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/</guid>
+<description>如何解决广告的冷启动难题：没有第三方数据，也能用基于公开内容构建的用户画像，向新用户投放个性化信息。附方法对比和六步实施法。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>2026 圣诞季：社交聆听是代理商的预警系统</title>
+<link>https://defygroup.ai/blog/zh/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/christmas-2026-social-listening-early-warning/</guid>
+<description>圣诞购物季怎样用社交聆听提前预警？本文列出代理商现在就该监测的五类信号、一张信号对照表和六步行动计划，帮你守住第四季度预算。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 工具：用 MCP 告别工具泛滥</title>
+<link>https://defygroup.ai/blog/zh/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-tools-agencies-mcp-integration/</guid>
+<description>代理商如何正确整合 AI 工具：工具泛滥为什么浪费时间，MCP 改变了什么，以及如何用六个步骤搭建一套精简、可控的 AI 技术栈。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商计费模式：AI 如何合理定价，别白送利润</title>
+<link>https://defygroup.ai/blog/zh/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-pricing-models-fair-ai-pricing/</guid>
+<description>AI 时代的代理商计费模式：为什么不该把效率红利白白让出去，哪些定价模式能守住利润，以及如何向客户采购部门解释 AI 成本。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商业务聚焦：该砍掉哪项服务，何时砍？</title>
+<link>https://defygroup.ai/blog/zh/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/when-to-stop-an-agency-service/</guid>
+<description>代理商如何做业务聚焦、精简服务线？本文梳理一项服务走到尽头的五个信号、六步决策法，以及决定砍掉哪项服务之前必须看的市场数据。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>跨平台互动怎么衡量？代理商该告别手工拼表了</title>
+<link>https://defygroup.ai/blog/zh/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/measure-cross-platform-engagement-agencies/</guid>
+<description>每个平台统计互动的口径都不同。本文给出跨平台互动衡量的完整方法：统一定义、按平台标准化指标、体育内容示例，以及挑选工具的四条标准。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商里的冒名顶替综合征：AI 时代如何重拾自信</title>
+<link>https://defygroup.ai/blog/zh/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/imposter-syndrome-agencies-ai-era/</guid>
+<description>代理商里的冒名顶替综合征：为什么 AI 加深了自我怀疑，尤其是在职场新人中间，以及个人、团队和管理者如何建立基于证据的自信。</description>
+<category>人才与文化</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>无真人受访者的调研：合成用户画像是机会还是幻影？</title>
+<link>https://defygroup.ai/blog/zh/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/respondent-free-research-synthetic-personas/</guid>
+<description>合成用户画像和无真人受访者调研，对代际洞察到底有多大价值？本文讲清它的用处与局限，以及如何把每个结论锚定在真实观察到的行为上。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 对媒介代理商的影响：新时代下独立代理商该怎么做</title>
+<link>https://defygroup.ai/blog/zh/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/media-agencies-new-ai-era-independents/</guid>
+<description>AI 正在压缩媒介代理商的执行工作，价值向咨询端转移。这对独立代理商意味着什么、该从哪里入手、选什么工具，本文给出清晰路线。</description>
+<category>代理商类型</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商收费模式：如何用社交数据证明你的价值</title>
+<link>https://defygroup.ai/blog/zh/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-remuneration-social-data-proof-of-value/</guid>
+<description>法国广告代理商协会 AACC 希望让代理商摆脱按工时计费。本文分步讲解如何把社交数据变成可追溯的价值证明，为按价值收费争取筹码。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>客户真正看重的社交媒体互动指标，和只是好看的数字</title>
+<link>https://defygroup.ai/blog/zh/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/engagement-metrics-clients-value/</guid>
+<description>客户到底看重哪些社交媒体互动指标？本文教你区分虚荣指标与业务结果，正确地跨平台比较互动数据，并做出一份能推动预算决策的报表。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商黑五备战：自动化报表，把时间留给优化</title>
+<link>https://defygroup.ai/blog/zh/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/black-friday-agencies-automate-reporting/</guid>
+<description>距离2026年黑五只剩六周。这份代理商黑五备战计划，教你分步把报表和预警自动化，让团队从做表中脱身，把精力放在大促期间的投放优化上。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>不让人犯困的 B2B 内容营销：如何打动采购决策者</title>
+<link>https://defygroup.ai/blog/zh/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/b2b-content-marketing-that-engages/</guid>
+<description>B2B 内容营销不必枯燥。本文告诉你如何从采购决策者的真实张力出发，在投放媒体之前测试创意概念，并获取真正优质的销售线索。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 与控股集团模式的终结：给独立代理商的启示</title>
+<link>https://defygroup.ai/blog/zh/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-holding-company-model-independent-agencies/</guid>
+<description>WPP 持续裁员、代理费占比下滑，显示 AI 正在重塑广告控股集团。了解 AI 对广告代理商的影响，以及独立代理商如何借 AI 抢占地盘。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>媒体消费碎片化：跳出数据看板，读懂你的受众</title>
+<link>https://defygroup.ai/blog/zh/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/fragmented-media-consumption-audience-data/</guid>
+<description>媒体消费碎片化让受众数据散落在各个渠道。了解如何把这些受众数据整合成基于真实讨论的用户画像和张力，并据此做出更好的媒介策划。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>巴西代理商比稿新规：谁带着证据来，谁占上风</title>
+<link>https://defygroup.ai/blog/zh/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/brazil-agency-pitches-category-intelligence/</guid>
+<description>巴西 Abracom/ABA 代理商比稿指南更新为 10 个步骤。了解如何用消费者行为和品类数据，凭证据而不是观点赢下比稿。</description>
+<category>新业务与比稿</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>用 AI 做品牌差异化：怎样不和竞品说一样的话</title>
+<link>https://defygroup.ai/blog/zh/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>用 AI 做品牌差异化：先摸清整个品类在说什么，再找到无人占据的空白领地，并在投放媒体预算之前验证创意，让品牌不再千篇一律。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>广告公司职业倦怠：少一点重复劳动，多一点创意</title>
+<link>https://defygroup.ai/blog/zh/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-burnout-automate-repetitive-work/</guid>
+<description>广告公司职业倦怠从何而来？本文讲清如何把有意义的创意压力和消耗人的重复劳动分开、哪些工作可以自动化，并给出一套适合团队的五步减压法。</description>
+<category>人才与文化</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>关税下的营销策略：如何调整信息与预算</title>
+<link>https://defygroup.ai/blog/zh/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>关税对营销策略的影响：如何判断它对你所在品类的冲击，按市场调整信息、重新分配预算，而不是陷入停滞。附五力解读表和六步调整流程。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商社交聆听：为什么季度报告已经来得太晚</title>
+<link>https://defygroup.ai/blog/zh/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/continuous-social-listening-agencies/</guid>
+<description>代理商社交聆听指南：如何告别季度趋势报告，持续追踪每周都在变的消费趋势，把消费者的真实讨论变成每周决策。附六步实操方法和一张对比表。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 营销数据分析：让每条结论都经得起核验</title>
+<link>https://defygroup.ai/blog/zh/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-data-analysis-verifiable-conclusions/</guid>
+<description>代理商 AI 营销数据分析最佳实践：如何打破数据孤岛，交给客户经得起核验的结论。附七步实操方法，以及一张交付前逐项核对的清单。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>独立代理商与 AI：为何抱团整合，改变了什么</title>
+<link>https://defygroup.ai/blog/zh/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle 合并四家公司，Samy 在美国出手收购。AI 在独立代理商整合中扮演什么角色？本文给出三条路线对比和五步决策法，帮你选定方向。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>个性化广告如何不伤信任：写给代理商的指南</title>
+<link>https://defygroup.ai/blog/zh/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ad-personalisation-without-third-party-data/</guid>
+<description>面向女足等圈层受众的个性化广告指南：不依赖第三方数据，也不辜负社群的信任。附七步实操方法、对比表，以及投放前测试创意的思路。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 媒介策划：从人口统计走向消费者张力</title>
+<link>https://defygroup.ai/blog/zh/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/media-planning-real-personas-ai/</guid>
+<description>用 AI 做媒介策划，把人口统计标签换成真实的消费者张力：七步实操方法、一张两种规划方式的对比表，以及哪些判断不该交给 AI。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>新加坡媒体消费数据：广告集团收缩时该信什么</title>
+<link>https://defygroup.ai/blog/zh/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/apac-agencies-market-intelligence/</guid>
+<description>新加坡媒体消费数据去哪里找？每类数据来源分别适合回答什么问题？独立代理商又该如何在没有集团支持的情况下，搭建属于自己的市场情报？</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 如何冲击不同类型的广告代理商：从创意到达人</title>
+<link>https://defygroup.ai/blog/zh/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/how-ai-disrupts-each-agency-type/</guid>
+<description>AI 如何改变创意、媒介、CRM、公关和达人营销代理商：哪些任务最先被取代、什么在升值，以及每类代理商该测试哪些 AI 工具。</description>
+<category>代理商类型</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 内容创作最佳实践：代理商的内容质量框架</title>
+<link>https://defygroup.ai/blog/zh/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-content-quality-framework-agencies/</guid>
+<description>面向代理商的 AI 内容创作最佳实践：一套七道关卡的质量框架，守住品牌调性，把关键决策留在人手里，并在媒介投放前先做测试。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>有真实数据的 AI 营销案例，以及它们没说的部分</title>
+<link>https://defygroup.ai/blog/zh/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-driven-agency-case-studies/</guid>
+<description>经得起推敲的 AI 营销案例并不多。我们拆解几个有真实数据的案例（包括预测 8.5% 的增量收入），并告诉你如何判断其余的案例。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 原生营销组织：客户还会向代理商买什么</title>
+<link>https://defygroup.ai/blog/zh/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death 计划由两名内部员工加一套代理商打造的 AI 系统管理一笔可观预算。AI 原生营销组织究竟还需要代理商提供什么？</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商比稿策略：用 48 小时品类洞察冲刺赢下比稿</title>
+<link>https://defygroup.ai/blog/zh/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/win-agency-pitches-ai-category-insight/</guid>
+<description>一套实用的代理商比稿策略：用 48 小时梳理竞品广告、受众张力和无人占据的切入点，并解读 Publicis 绕过比稿、直接向 CEO 推销意味着什么。</description>
+<category>新业务与比稿</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>全球 campaign 表现不佳时，如何优化营销预算 ROI</title>
+<link>https://defygroup.ai/blog/zh/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/global-vs-local-campaign-budget/</guid>
+<description>优化营销预算 ROI，先解决创意与市场的匹配问题：解读全球与本地 campaign 效果的最新研究，附逐市场决策表和七个实操步骤。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 视频制作成本：单帧更便宜，预算为何没少？</title>
+<link>https://defygroup.ai/blog/zh/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/ai-video-production-agency-economics/</guid>
+<description>AI 降低的是每一帧视频的成本，而不是总预算。真正的节省在哪里、客户为何要得更多，以及代理商该如何为 AI 辅助视频定价。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>如何触达 Z 世代消费者：从社群出发，而不是出生年份</title>
+<link>https://defygroup.ai/blog/zh/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/gen-z-persona-clustering/</guid>
+<description>年龄段写不出 brief。代理商如何把真实讨论聚类成人群画像，真正触达 Z 世代消费者：一套七步方法，外加一个具体的比稿示例。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>零售媒体网络与代理商：预算究竟归谁？</title>
+<link>https://defygroup.ai/blog/zh/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/retail-media-agency-ownership/</guid>
+<description>零售媒体网络把媒介、电商、效果和达人代理商拉进了同一场争夺。这个渠道该由谁主导？独立代理商又该如何凭借品类情报拿下策略席位？</description>
+<category>代理商类型</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 会取代广告代理商吗？这笔账很少算得过来</title>
+<link>https://defygroup.ai/blog/zh/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/will-ai-replace-agencies/</guid>
+<description>AI 会取代广告代理商吗？算清 AI 加内部招聘的真实成本，看看哪些代理商工作该交给 AI，哪些仍然离不开人的判断与问责。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商整合还是多家并用？StarKist与ServiceNow启示</title>
+<link>https://defygroup.ai/blog/zh/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-consolidation-vs-roster/</guid>
+<description>广告代理商整合，还是保留专业代理商阵容？从 StarKist 转投 Tombras、Stagwell 拿下 ServiceNow 两笔交易，看代理商如何赢得大客户。</description>
+<category>新业务与比稿</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>独立代理商 vs 控股集团：数据战怎么打</title>
+<link>https://defygroup.ai/blog/zh/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/independent-agencies-vs-holding-company-data/</guid>
+<description>独立代理商 vs 控股集团：集团在数据上还领先在哪里，独立代理商如今能在哪些方面追平，以及一份补齐差距的 90 天行动计划。</description>
+<category>代理商类型</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>达人营销报告：为什么它成了代理商的新战场</title>
+<link>https://defygroup.ai/blog/zh/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/influencer-agency-reporting-automation/</guid>
+<description>如何做出能证明 ROI 的达人营销效果报告，哪怕投放涉及几十位纳米级达人？本文讲清该看的指标、信任信号，以及哪些环节应该自动化。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>受众研究工具：策划人员应该先自动化什么</title>
+<link>https://defygroup.ai/blog/zh/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/future-of-strategy-planners-automate/</guid>
+<description>策划人员应该先把哪些受众研究工作自动化？本文给出实用的任务排序、挑选受众研究工具的检查清单，以及哪些策略工作必须留给人来做。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 智能体广告：不怕失控，让人留在回路中</title>
+<link>https://defygroup.ai/blog/zh/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agentic-media-human-in-the-loop/</guid>
+<description>AI 智能体广告正在快速到来。代理商如何让人留在决策回路中？设定审批阈值，为每个智能体指定具名负责人，并由人掌控品牌信息与语气。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>合成受众正在走红：代理商如何确保它可信</title>
+<link>https://defygroup.ai/blog/zh/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/synthetic-audiences-agencies-validation/</guid>
+<description>合成受众正在走进代理商的日常策划。它在哪些场景可靠、在哪些场景会误导？本文给出用六个步骤验证每一条 AI 受众研究发现的实用方法。</description>
+<category>洞察与策略</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商冲刺模式：如何跑得快又不丢策略</title>
+<link>https://defygroup.ai/blog/zh/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-sprint-model-speed-strategy/</guid>
+<description>代理商冲刺模式卖的是速度。如何跑快速冲刺又不让策略走样？靠一条管一个季度的策略主线、每次开局都有新鲜证据，再把杂活交给自动化。</description>
+<category>代理商类型</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>创意预测试：如何终结创意与效果之争</title>
+<link>https://defygroup.ai/blog/zh/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/creativity-vs-performance-pre-testing/</guid>
+<description>创意预测试如何终结创意与效果之争？在媒介投放前为创意概念打分，让证据保护大胆的想法而不是扼杀它们，同时把最终决定权留给懂品牌的人。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 营销工具：要搭技术栈，不要列购物清单</title>
+<link>https://defygroup.ai/blog/zh/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-ai-stack-integration/</guid>
+<description>代理商如何挑选能与现有系统打通的 AI 营销工具？本文提供一份评估清单、一套七步搭建计划，以及与客户合同相关的实用建议。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>品牌差异化策略：找到你所在品类忽略的角度</title>
+<link>https://defygroup.ai/blog/zh/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/escape-creative-sameness-category-intelligence/</guid>
+<description>John Hegarty 爵士直言营销“重复、陈词滥调、无聊”。本文给出一套品牌差异化策略：绘制品类全景图，找到无人占据的角度。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>营销数据看板过载：代理商为何用提问取代登录</title>
+<link>https://defygroup.ai/blog/zh/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-dashboard-fatigue-ai-questions/</guid>
+<description>看板越来越多，洞察却越来越少？本文解析营销数据看板过载的成因，并给出可直接上手的六步方法，用以决策为导向的提问，取代一次又一次的登录。</description>
+<category>AI 转型</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>如何向客户证明媒介投放 ROI：MMM 回归，该拿出什么证据</title>
+<link>https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/proving-media-roi-agencies-mmm/</guid>
+<description>平台 ROAS 已难以说服客户。代理商如何用营销组合模型（MMM）、对照实验和“结果为何变化”的证据，向客户证明媒介投放 ROI。</description>
+<category>创意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商按效果付费：ROAS 和 CPA 之外该看哪些指标</title>
+<link>https://defygroup.ai/blog/zh/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>按工时计费已降至代理商薪酬模式的 17%。ROAS 和 CPA 之外，哪些指标适合作为按效果付费的依据？如何稳妥落地？本文逐一拆解。</description>
+<category>代理商经济</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 对代理商岗位的影响：怎样重建初级人才梯队</title>
+<link>https://defygroup.ai/blog/zh/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh/agency-entry-level-talent-ai/</guid>
+<description>AI 正在接手初级员工的大量工作，不少代理商悄悄停招应届生。数据怎么说？如何围绕判断力重新设计入门岗位？本文给出思路与步骤。</description>
+<category>人才与文化</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
