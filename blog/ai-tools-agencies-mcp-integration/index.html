@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI tools for agencies: integration, not sprawl | Defy</title>
+<meta name="description" content="AI tools for agencies, properly integrated: why tool sprawl wastes time, what MCP changes and how to build a lean AI stack in six steps.">
+<link rel="canonical" href="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="AI tools for agencies, AI tools for marketing agencies, integrating AI in an agency, Model Context Protocol marketing, agency AI stack, Claude for agencies">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/ki-tools-agentur-integration-mcp/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+<meta property="og:title" content="AI tools for agencies: how MCP gets you out of the tool sprawl">
+<meta property="og:description" content="AI tools for agencies, properly integrated: why tool sprawl wastes time, what MCP changes and how to build a lean AI stack in six steps.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d47-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI tools for agencies: how MCP gets you out of the tool sprawl">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-10-16T12:29:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:29:00+08:00">
+<meta property="article:section" content="AI transformation">
+<meta property="article:tag" content="AI tools">
+<meta property="article:tag" content="MCP">
+<meta property="article:tag" content="Agency workflows">
+<meta property="article:tag" content="Tech stack">
+<meta property="article:tag" content="AI governance">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI tools for agencies: how MCP gets you out of the tool sprawl">
+<meta name="twitter:description" content="AI tools for agencies, properly integrated: why tool sprawl wastes time, what MCP changes and how to build a lean AI stack in six steps.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d47-en.jpg">
+<meta name="twitter:image:alt" content="AI tools for agencies: how MCP gets you out of the tool sprawl">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/#article","url":"https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/","mainEntityOfPage":"https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/","headline":"AI tools for agencies: how MCP gets you out of the tool sprawl","alternativeHeadline":"AI tools for agencies: integration, not sprawl","description":"AI tools for agencies, properly integrated: why tool sprawl wastes time, what MCP changes and how to build a lean AI stack in six steps.","abstract":"Don't start with the tool; start with the workflows that eat the most time. Choose one central workspace, such as an AI assistant like Claude, and connect your data through open interfaces such as the Model Context Protocol (MCP) rather than adding a new dashboard for every task. What matters is integration, traceability and clear sign-off rules.","image":["https://defygroup.ai/assets/blog/og/d47-en.jpg","https://defygroup.ai/assets/blog/hero/d47.jpg"],"datePublished":"2026-10-16T12:29:00+08:00","dateModified":"2026-10-16T12:29:00+08:00","inLanguage":"en","author":{"@type":"Organization","name":"Defy Editorial","url":"https://defygroup.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AI transformation","keywords":"AI tools for agencies, AI tools for marketing agencies, integrating AI in an agency, Model Context Protocol marketing, agency AI stack, Claude for agencies","wordCount":1073,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/#blog","name":"Defy — The Defy Journal"},"about":[{"@type":"Thing","name":"AI tools"},{"@type":"Thing","name":"MCP"},{"@type":"Thing","name":"Agency workflows"},{"@type":"Thing","name":"Tech stack"},{"@type":"Thing","name":"AI governance"}],"citation":[{"@type":"CreativeWork","name":"As agencies push agentic media future, execs work to ward off client rogue fears","url":"https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/","datePublished":"2026-10-08","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/de/ki-tools-agentur-integration-mcp/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"What is the Model Context Protocol (MCP)?","acceptedAnswer":{"@type":"Answer","text":"MCP is an open standard that lets AI assistants such as Claude access external data sources and tools. Instead of exporting data and pasting it into a chat window, the assistant queries the source directly. For agencies, that means fewer dashboards, less copy and paste, and answers based on current data."}},{"@type":"Question","name":"How many AI tools does an agency need?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed number, but there is a rule of thumb: as few as possible, as deeply integrated as necessary. One central workspace, connected data sources for competitors, audiences and performance, plus automation for recurring delivery work, cover most needs. Every additional tool should measurably improve a workflow, not just add a feature."}},{"@type":"Question","name":"How do we prevent shadow AI in the agency?","acceptedAnswer":{"@type":"Answer","text":"Bans alone don't achieve much, because people switch to personal tools when the official ones fall short. It is better to offer an approved interface that genuinely helps, set clear rules for client data and ask regularly which tools are in use. Provide good tools and the workarounds become unnecessary."}},{"@type":"Question","name":"Will AI agents replace media planners and strategists?","acceptedAnswer":{"@type":"Answer","text":"Not on current evidence. Even the big agency groups that, according to Digiday, are developing agents for planning and buying stress human oversight and approval thresholds. Agents take on repeatable tasks such as reporting or monitoring; judgement, prioritisation and accountability to the client stay with the team."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"Journal","item":"https://defygroup.ai/blog/"},{"@type":"ListItem","position":3,"name":"AI tools for agencies: how MCP gets you out of the tool sprawl","item":"https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">On this page</a>
+<header class="dh">
+  <div class="wrap dh-in">
+    <a class="dh-logo" href="/#main" aria-label="Defy — Main"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+    <nav class="dh-nav" aria-label="Primary">
+      <a href="/#main">Main</a>
+      <a href="/#platform">Platform</a>
+      <a href="/#clients">Clients</a>
+      <a href="/#team">Team</a>
+      <a href="/blog/" class="on">Journal</a>
+    </nav>
+    <div class="dh-r">
+      <a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">Log in</a>
+      <a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">Talk to us</a>
+      <button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">Home</a><span>/</span><a href="/blog/">Journal</a><span>/</span><span>AI transformation</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">AI transformation</div>
+    <h1 itemprop="headline">AI tools for agencies: how MCP gets you out of the tool sprawl<span class="sq"></span></h1>
+    <p class="dek" itemprop="description">Ten AI subscriptions, nothing joined up: why agencies with more tools often achieve less – and how the Model Context Protocol brings data to where your team already works.</p>
+    <div class="a-meta">
+      <span><b>Defy Editorial</b></span>
+      <span>Published <time datetime="2026-10-16T12:29:00+08:00" itemprop="datePublished">16 October 2026</time></span>
+      <span>7 min read</span>
+      <span class="langs">Also available in: <span class="cur">English</span><a href="/blog/zh/ai-tools-agencies-mcp-integration/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/blog/de/ki-tools-agentur-integration-mcp/" hreflang="de" lang="de">Deutsch</a></span>
+    </div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d47-768.webp 768w, /assets/blog/hero/d47-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d47.jpg" alt="Black-and-white photo of an office desk with a drawer overflowing with tangled chargers and adapters on one side and, on the other, a single tidy connector hub with a small red button linked to a closed laptop." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="qbox answer-box" aria-label="The question behind this article">
+        <div class="eyebrow">The question behind this article</div>
+        <p class="q">“Which AI tools should my agency use – and how do I integrate them without ending up in tool chaos?”</p>
+        <p class="ans"><b>Short answer</b>Don&#39;t start with the tool; start with the workflows that eat the most time. Choose one central workspace, such as an AI assistant like Claude, and connect your data through open interfaces such as the Model Context Protocol (MCP) rather than adding a new dashboard for every task. What matters is integration, traceability and clear sign-off rules.</p>
+      </section>
+      <section class="kt takeaways"><h2>Key takeaways</h2><ul><li>More AI tools don&#39;t mean more output: without integration you get data silos, duplicated work and knowledge that lives with individual people.</li><li>The Model Context Protocol (MCP) is an open standard that lets AI assistants access data sources and tools directly – without yet another dashboard.</li><li>The big agency groups are selling their AI agents on governance and human accountability; independent agencies should spell out control just as clearly.</li><li>The right order is: workflow, data source, interface, rules – and only then the tool.</li></ul></section>
+      <div class="prose" itemprop="articleBody"><p>Which AI tools does an agency need? Fewer than most people think – but better connected. The bottleneck is rarely a missing tool; it is missing integration. The data sits in five systems, every team has its favourite chatbot, and at the end of it someone pastes screenshots into a deck.</p>
+<p>The big agency groups, meanwhile, are betting on connection over variety. According to <a href="https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/" rel="noopener" target="_blank">Digiday</a>, Dentsu's media agency Carat is developing an agent for planning, buying and optimisation in the upfronts with NBCUniversal, FreeWheel and AI company Newton. Tinuiti has launched an MCP server for its Bliss Point measurement solution, opening up its measurement layer to AI agents and bringing audience, creative, media and measurement data under one roof. And WPP Media stresses that ‘governance and human accountability are central to agentic media buying’.</p>
+
+<h2 id="why-do-more-ai-tools-often-deliver-less">Why do more AI tools often deliver less?</h2>
+<p>Because every new tool creates a new island. The social listening tool knows the conversations but not the media data. The chatbot writes brilliantly but knows nothing about the client. The reporting tool has numbers but no context. A human makes the connection between them all – by copy and paste.</p>
+<p>Then come the hidden costs. Overlapping licences. Onboarding for every dashboard. Shadow AI: personal accounts through which client data travels without anyone having approved it. And knowledge that depends on the one person who knows which prompt works in which tool.</p>
+<p>For agencies in Germany, whose clients look hard at data protection and data sovereignty, this sprawl isn't just inefficient. It is a risk that gets exposed in the next pitch questionnaire.</p>
+
+<h2 id="why-the-whole-is-more-than-the-sum-of-the-tools">Why the whole is more than the sum of the tools</h2>
+<p>Systems theory offers a simple explanation: a system is more than the sum of its parts, because its performance comes from the relationships between them. An orchestra of brilliant soloists without a shared score doesn't sound like a symphony – it sounds like tuning up.</p>
+<p>Applied to an agency's tech stack, that means the quality of any individual AI tool says little about the performance of the whole. What matters is whether data, tools and people talk to one another. Tools alone can't compose a masterpiece; harmony is born from their unison.</p>
+<p>That is why the problem usually lies not in the technology but in the architecture. People buy the instruments and forget the score.</p>
+
+<h2 id="what-is-mcp-and-why-does-it-matter-to-agencies">What is MCP – and why does it matter to agencies?</h2>
+<p>MCP stands for Model Context Protocol. It is an open standard that lets AI assistants such as Claude access external data sources and tools. Think of it as a universal socket: instead of building a separate integration or dashboard for every data source, the assistant talks to all of them through a single interface.</p>
+<p>For agencies, that changes the logic. Until now, integration meant exporting data, loading it into a tool and copying the result back out. With MCP, the data stays where it is, and the team asks its questions where it already works. ‘Which messages has the competition been running since the start of October?’ becomes a question in the chat, not a ticket to the insight team.</p>
+<p>That is exactly how Defy MCP works: teams query competitor, audience and conversation data directly in Claude – like asking a colleague, with no new dashboard to learn. Tinuiti opening up its measurement data to AI agents the same way shows the direction of travel: data is no longer locked away in dashboards but made queryable.</p>
+
+<h2 id="tool-sprawl-or-integrated-stack-the-comparison">Tool sprawl or integrated stack: the comparison</h2>
+<div class="tw"><table>
+<thead><tr><th>Dimension</th><th>Tool sprawl</th><th>Integrated stack with MCP</th></tr></thead>
+<tbody>
+<tr><td>Data access</td><td>Exports, copy and paste, screenshots</td><td>The assistant queries the source directly</td></tr>
+<tr><td>Learning curve</td><td>One dashboard per tool</td><td>One interface, questions in natural language</td></tr>
+<tr><td>Traceability</td><td>Results with no visible origin</td><td>Answers can be traced back to the source</td></tr>
+<tr><td>Governance</td><td>Personal accounts, unclear approvals</td><td>Central permissions and clear sign-off rules</td></tr>
+<tr><td>Team knowledge</td><td>Lives with individuals</td><td>Reusable prompts and workflows</td></tr>
+<tr><td>Cost</td><td>Overlapping licences</td><td>Fewer tools, used more deeply</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-do-you-integrate-ai-tools-in-six-steps">How do you integrate AI tools in six steps?</h2>
+<ol>
+<li><strong>Take an inventory.</strong> Who uses which AI tools, for what, with which data? Ask explicitly about personal accounts – without blame, or you won't get an honest answer.</li>
+<li><strong>Pick three time sinks.</strong> Typical candidates are competitor audits, monthly reports and pitch research. Record how long they take today.</li>
+<li><strong>Choose one interface.</strong> Decide where your team works with AI. Every additional interface needs a good reason.</li>
+<li><strong>Connect data rather than copying it.</strong> Check which data sources can be queried directly via MCP or another interface. Anything that only works by export goes on the list for later.</li>
+<li><strong>Set the rules before roll-out.</strong> Decide which outputs a human checks before they go to the client, who signs off spend and which client data may go into which systems. Your data protection officer belongs at that table.</li>
+<li><strong>Pilot, measure, clear out.</strong> Test for six weeks with one client, compare against the times from step 2 – and cancel the tools nobody misses.</li>
+</ol>
+
+<h2 id="what-can-independent-agencies-learn-from-the-holding-compani">What can independent agencies learn from the holding companies?</h2>
+<p>What is striking about Digiday's reporting is less the technology than the tone. The agency groups are selling their agents on control: according to Digiday, WPP Media requires explicit controls, approval thresholds and accountable human oversight for financial and activation decisions. At Dentsu, the line is that everything still requires human oversight.</p>
+<p>That is a lesson for independents. Clients hesitate less because of the technology than because they fear losing control. If you can explain who checks which output, where a claim comes from and where the data sits, you earn trust – whatever your size.</p>
+<p>The difference: holding companies build their stacks with big development budgets. Independent agencies have to combine more cleverly. A platform that brings data, querying and automation together – such as <a href="/#platform">the Defy platform</a> – is one way to reach a comparable level without an in-house data science team.</p>
+
+<h2 id="what-should-you-ask-every-ai-vendor">What should you ask every AI vendor?</h2>
+<ul>
+<li>Can your data be queried via MCP or another open interface – or only in your own dashboard?</li>
+<li>Can I trace every claim the system makes back to its source?</li>
+<li>Where is the data stored, who has access, and what happens to our prompts?</li>
+<li>Which workflow does the tool actually replace – and which existing tool can I cancel as a result?</li>
+</ul>
+<p>If you don't get an answer to that last question, you are not buying a tool – just another instrument without a score.</p></div>
+      <aside class="insight" aria-label="The insight"><div class="eyebrow">The insight</div><blockquote>Tools alone can&#39;t compose a masterpiece; harmony is born from their unison.</blockquote><p>Systems theory says a system&#39;s performance comes from the relationships between its parts. For agencies, that means the best individual tool matters less than how well data, tools and people are connected.</p></aside>
+      <section class="prop" aria-label="How Defy helps">
+        <div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>How Defy helps<span class="sq"></span></h2></div>
+        <div class="pb prose"><p>Defy MCP brings the data from Defy Monitor – competitors, audiences and conversations in your clients' categories – straight into Claude. Your team queries it like a colleague instead of learning yet another dashboard.</p><ul><li>One interface instead of ten: questions in natural language, where your team already works with AI.</li><li>Traceable: every AI conclusion can be checked against the real posts behind it.</li><li>Extendable: Defy Agents take on recurring delivery work such as reporting and monitoring.</li></ul><p>Start with the workflow that costs your team the most time today, and see how much of it a question in the chat can handle.</p></div>
+        <div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=AI%20tools%20for%20agencies%3A%20how%20MCP%20gets%20you%20out%20of%20the%20tool%20sprawl" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D47'})}catch(e){}">Start a conversation</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D47'})}catch(e){}">Log in to Defy</a></div>
+      </section>
+      <section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><details open><summary>What is the Model Context Protocol (MCP)?</summary><p>MCP is an open standard that lets AI assistants such as Claude access external data sources and tools. Instead of exporting data and pasting it into a chat window, the assistant queries the source directly. For agencies, that means fewer dashboards, less copy and paste, and answers based on current data.</p></details><details><summary>How many AI tools does an agency need?</summary><p>There is no fixed number, but there is a rule of thumb: as few as possible, as deeply integrated as necessary. One central workspace, connected data sources for competitors, audiences and performance, plus automation for recurring delivery work, cover most needs. Every additional tool should measurably improve a workflow, not just add a feature.</p></details><details><summary>How do we prevent shadow AI in the agency?</summary><p>Bans alone don&#39;t achieve much, because people switch to personal tools when the official ones fall short. It is better to offer an approved interface that genuinely helps, set clear rules for client data and ask regularly which tools are in use. Provide good tools and the workarounds become unnecessary.</p></details><details><summary>Will AI agents replace media planners and strategists?</summary><p>Not on current evidence. Even the big agency groups that, according to Digiday, are developing agents for planning and buying stress human oversight and approval thresholds. Agents take on repeatable tasks such as reporting or monitoring; judgement, prioritisation and accountability to the client stay with the team.</p></details></section>
+      <section class="srcs"><h2>Sources</h2><ol><li><a href="https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/" rel="noopener" target="_blank">As agencies push agentic media future, execs work to ward off client rogue fears</a> — Digiday, 2026-10-08</li></ol></section>
+      <p class="note"><b>Why we wrote this</b>We wrote this because, for many agencies, the hunt for the right AI tools has become more part of the problem than the solution. The latest agent announcements from the big agency groups show that integration and control are starting to matter more than the number of tools.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="On this page"><h4>On this page</h4><a href="#why-do-more-ai-tools-often-deliver-less">Why do more AI tools often deliver less?</a><a href="#why-the-whole-is-more-than-the-sum-of-the-tools">Why the whole is more than the sum of the tools</a><a href="#what-is-mcp-and-why-does-it-matter-to-agencies">What is MCP – and why does it matter to agencies?</a><a href="#tool-sprawl-or-integrated-stack-the-comparison">Tool sprawl or integrated stack: the comparison</a><a href="#how-do-you-integrate-ai-tools-in-six-steps">How do you integrate AI tools in six steps?</a><a href="#what-can-independent-agencies-learn-from-the-holding-compani">What can independent agencies learn from the holding companies?</a><a href="#what-should-you-ask-every-ai-vendor">What should you ask every AI vendor?</a></nav>
+      <div class="side-cta"><h4>Defy</h4><p>Ready to punch above your weight?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">Start a conversation</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Log in to Defy</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>More from the journal<span class="sq"></span></h2>
+  <div class="grid"><a class="card" href="/blog/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="Black-and-white photo of a signalman seen from behind resting his hand on one lever marked with a small red plate, looking out at railway tracks that split into several branches." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI transformation</div><h3>What to automate in an agency: three questions to answer first</h3><p>Three questions decide what an agency should automate: decision complexity, potential damage and measurable outcome. Start with the quick wins.</p><div class="meta"><span>8 min read</span></div></div></a><a class="card" href="/blog/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="Black-and-white photo of an oak table tilting on a concrete floor because one leg is shorter, a glass of water and a stack of papers on top and a small red tile beneath the short leg." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI transformation</div><h3>AI readiness assessment for agencies: why your weakest dimension decides</h3><p>Your agency&#39;s AI readiness is set by its weakest dimension, not its strongest. A four-part assessment, and why another AI course rarely fixes the gap.</p><div class="meta"><span>8 min read</span></div></div></a><a class="card" href="/blog/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="Black-and-white photo of a watchmaker&#39;s hands assembling a delicate mechanical movement on a small red felt pad, with boxes of mass-produced movements on the shelves behind." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI transformation</div><h3>Agency AI strategy: don&#39;t build what Meta and Google will automate</h3><p>The platforms are automating what agencies once hired people for. Omnicom&#39;s AI platform shake-up shows the cost of building. Here&#39;s where to compete instead.</p><div class="meta"><span>9 min read</span></div></div></a></div>
+  <a class="btn btn-o" href="/blog/">← Back to the journal</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+  <h2>Ready to punch above your weight?</h2>
+  <p>See the intelligence stack the big networks guard so closely. No pitch — just a conversation.</p>
+  <div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">Start a conversation</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Log in to Defy</a></div>
+</section>
+<footer class="df">
+  <div class="wrap">
+    <div class="df-grid">
+      <div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+      <div><h4>Defy</h4><a href="/#main">Main</a><a href="/#platform">Platform</a><a href="/#clients">Clients</a><a href="/#team">Team</a></div>
+      <div><h4>Journal</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
+      <div><h4>Contact</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Log in</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+    </div>
+    <div class="df-bot"><span>© 2026 Defy Group Limited. All rights reserved.</span><span>defygroup.ai</span></div>
+  </div>
+</footer>
+</body>
+</html>

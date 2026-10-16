@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold-start problem: personalisation without user data | Defy</title>
+<meta name="description" content="Solving the cold-start problem in advertising: how to personalise for new users without third-party data, using personas built from public content.">
+<link rel="canonical" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="cold-start problem personalisation, personalisation without third-party data, personas from social listening, personalise ads for new users, cookieless personalisation, synthetic audiences">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="The cold-start problem: how to personalise ads when you have no user data">
+<meta property="og:description" content="Solving the cold-start problem in advertising: how to personalise for new users without third-party data, using personas built from public content.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The cold-start problem: how to personalise ads when you have no user data">
+<meta property="og:locale" content="en_GB">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="Insight &amp; strategy">
+<meta property="article:tag" content="Personalisation">
+<meta property="article:tag" content="Cold start">
+<meta property="article:tag" content="Personas">
+<meta property="article:tag" content="Data privacy">
+<meta property="article:tag" content="Synthetic audiences">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The cold-start problem: how to personalise ads when you have no user data">
+<meta name="twitter:description" content="Solving the cold-start problem in advertising: how to personalise for new users without third-party data, using personas built from public content.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-en.jpg">
+<meta name="twitter:image:alt" content="The cold-start problem: how to personalise ads when you have no user data">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/","headline":"The cold-start problem: how to personalise ads when you have no user data","alternativeHeadline":"Cold-start problem: personalisation without user data","description":"Solving the cold-start problem in advertising: how to personalise for new users without third-party data, using personas built from public content.","abstract":"To begin with, personalise at the level of personas, not people. Analyse your category's public conversations, comments, reviews and creator content, distil them into personas with clear motives and tensions, and match new users using early signals such as landing page, search term or context. With every interaction, your own first-party data replaces the starting assumptions.","image":["https://defygroup.ai/assets/blog/og/d49-en.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"en","author":{"@type":"Organization","name":"Defy Editorial","url":"https://defygroup.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Insight & strategy","keywords":"cold-start problem personalisation, personalisation without third-party data, personas from social listening, personalise ads for new users, cookieless personalisation, synthetic audiences","wordCount":1055,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/#blog","name":"Defy — The Defy Journal"},"about":[{"@type":"Thing","name":"Personalisation"},{"@type":"Thing","name":"Cold start"},{"@type":"Thing","name":"Personas"},{"@type":"Thing","name":"Data privacy"},{"@type":"Thing","name":"Synthetic audiences"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/de/cold-start-personalisierung-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"What does cold start mean in advertising?","acceptedAnswer":{"@type":"Answer","text":"Cold start describes the situation in which a learning system has no behavioural data yet on a new user, a new product or a new market. Personalisation then falls back on generic messages. In advertising, this mainly affects new customers, product launches and market entries – precisely the situations in which first impressions count."}},{"@type":"Question","name":"Can you personalise without third-party cookies?","acceptedAnswer":{"@type":"Answer","text":"Yes. Contextual signals, zero-party data from quizzes or onboarding, your own first-party data and personas built from public content all make personalisation possible without bought-in cookie profiles. The difference: at first you personalise for groups with shared motives rather than for individuals, and refine the targeting with every interaction."}},{"@type":"Question","name":"What's the difference between synthetic audiences and personas built from public content?","acceptedAnswer":{"@type":"Answer","text":"Synthetic audiences are AI models that simulate reactions, usually based on survey, statistical and panel data. Personas built from public content, by contrast, distil real statements such as comments, reviews and creator videos. One suits rapid simulation; the other provides verifiable evidence of motives and language. The two approaches can be combined."}},{"@type":"Question","name":"How many personas do I need to start with?","acceptedAnswer":{"@type":"Answer","text":"Three to five clearly distinct personas are usually enough to begin with. More personas sound more precise, but they spread budget and creative effort across too many variants before there is enough data to learn from. What matters is that the personas genuinely differ in motives and messages – not just in age or postcode."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"Journal","item":"https://defygroup.ai/blog/"},{"@type":"ListItem","position":3,"name":"The cold-start problem: how to personalise ads when you have no user data","item":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">On this page</a>
+<header class="dh">
+  <div class="wrap dh-in">
+    <a class="dh-logo" href="/#main" aria-label="Defy — Main"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+    <nav class="dh-nav" aria-label="Primary">
+      <a href="/#main">Main</a>
+      <a href="/#platform">Platform</a>
+      <a href="/#clients">Clients</a>
+      <a href="/#team">Team</a>
+      <a href="/blog/" class="on">Journal</a>
+    </nav>
+    <div class="dh-r">
+      <a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">Log in</a>
+      <a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">Talk to us</a>
+      <button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">Home</a><span>/</span><a href="/blog/">Journal</a><span>/</span><span>Insight &amp; strategy</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Insight &amp; strategy</div>
+    <h1 itemprop="headline">The cold-start problem: how to personalise ads when you have no user data<span class="sq"></span></h1>
+    <p class="dek" itemprop="description">New users, no history, few consents: how agencies solve the cold-start problem with personas built from real public conversations – instead of bought-in segments.</p>
+    <div class="a-meta">
+      <span><b>Defy Editorial</b></span>
+      <span>Published <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 October 2026</time></span>
+      <span>7 min read</span>
+      <span class="langs">Also available in: <span class="cur">English</span><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a></span>
+    </div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="Black-and-white photo of a cobbler&#39;s hands taking a wooden shoe last with a small red tag from a shelf of lasts, as a new customer&#39;s shadow falls through the doorway beside a faint chalk footprint." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="qbox answer-box" aria-label="The question behind this article">
+        <div class="eyebrow">The question behind this article</div>
+        <p class="q">“How do I personalise ads for new users when I don&#39;t have any data on them yet?”</p>
+        <p class="ans"><b>Short answer</b>To begin with, personalise at the level of personas, not people. Analyse your category&#39;s public conversations, comments, reviews and creator content, distil them into personas with clear motives and tensions, and match new users using early signals such as landing page, search term or context. With every interaction, your own first-party data replaces the starting assumptions.</p>
+      </section>
+      <section class="kt takeaways"><h2>Key takeaways</h2><ul><li>The cold-start problem is less about volume than about understanding: what is missing is a plausible starting assumption about what new users want.</li><li>Personas built from public content supply those starting assumptions at group level – without profiles of individuals and without bought-in third-party segments.</li><li>According to Digiday, synthetic audiences are moving into everyday planning, but their quality depends on the data they are built on.</li><li>Good cold-start strategies combine persona hypotheses, contextual signals and deliberate exploration – and learn with every interaction.</li></ul></section>
+      <div class="prose" itemprop="articleBody"><p>How do you personalise ads for people you know nothing about? The honest answer: at the individual level, you don't. But you can absolutely understand the people who are interested in a category, and match new users to a suitable persona from a handful of signals. That is the heart of a workable cold-start strategy.</p>
+<p>How hard the industry is hunting for alternatives to classic audience data shows in recent reporting from <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a>: synthetic audiences are moving from experiment into everyday planning and strategy work. Aveeno Body used Vurvey's synthetic research to cut the time needed for a strategy brief from around 30 days to three. Goodway Group uses Arima's ‘synthetic population’ of consumers from the US, the UK and Germany for media planning.</p>
+
+<h2 id="what-is-the-cold-start-problem-in-advertising">What is the cold-start problem in advertising?</h2>
+<p>The term comes from the world of recommender systems. A system that learns from behaviour needs behaviour to learn from – and a new user doesn't have any yet. So the system serves up the average: bestsellers, generic messages, the ad that works a little for everyone and properly for no one.</p>
+<p>In advertising, the problem gets worse. Several browsers block third-party cookies by default, consent banners are part of everyday life in Germany, and not everyone clicks ‘Accept all’. The classic way out, bought-in segments, has become trickier under data protection law and reveals little about why anyone buys anyway. In the GDPR-shaped DACH region (Germany, Austria and Switzerland), ‘we'll just buy in more data’ is no longer a strategy.</p>
+
+<h2 id="why-more-data-doesn-t-solve-the-problem">Why more data doesn't solve the problem</h2>
+<p>Data quality research has a sober formula for this: data is only as good as its fitness for purpose. Accuracy alone isn't enough; data has to be relevant, current and suited to the specific question. In the literature, this is known as ‘fitness for use’.</p>
+<p>A bought-in segment such as ‘women, 25 to 34, interested in beauty’ is precisely worded. For the question ‘What would make this person try our product?’ it is nonetheless almost worthless. It describes attributes, not motives. Engagement is born from understanding, not numbers.</p>
+<p>For the cold start, that means the crucial resource isn't the individual user's history but a robust picture of the motives, worries and language in the category. And that picture can be drawn from publicly available content.</p>
+
+<h2 id="how-are-personas-built-from-public-content">How are personas built from public content?</h2>
+<p>People say a surprising amount in public about why they buy – or don't: in comments under brand posts, in product reviews, in creator videos, in forum threads. This content can be collected, clustered by theme and tension and distilled into personas – with real quotes instead of invented profiles.</p>
+<p>The difference from the classic workshop persona: it is based on what people actually say, not on what a team assumes about them. Digiday describes a related approach: for the brand Sacheu, Limitless Labs analyses thousands of TikTok and Instagram videos from its creator ecosystem to build personas.</p>
+<p>Important for the German market: personas like these work at the level of patterns and groups. They don't need a profile of individual users to choose a first message. The legal assessment of your specific set-up still belongs with your data protection adviser.</p>
+
+<h2 id="what-approaches-are-there-to-the-cold-start">What approaches are there to the cold start?</h2>
+<div class="tw"><table>
+<thead><tr><th>Approach</th><th>Data basis</th><th>Strength</th><th>Weakness</th></tr></thead>
+<tbody>
+<tr><td>Bought-in third-party segments</td><td>External profiles, cookies</td><td>Quickly available</td><td>Little insight into motives; tricky under data protection law</td></tr>
+<tr><td>Contextual targeting</td><td>Environment, time, location, device</td><td>Works without personal data</td><td>Says little about motivations</td></tr>
+<tr><td>Zero-party data</td><td>Answers from quizzes or onboarding</td><td>Direct and consent-based</td><td>Only from those who take part; friction in the funnel</td></tr>
+<tr><td>Synthetic audiences</td><td>Models based on survey, statistical and panel data</td><td>Fast simulation of reactions</td><td>Pull towards the average; quality depends on the input data</td></tr>
+<tr><td>Personas from public content</td><td>Comments, reviews, creator content, competitor ads</td><td>The category's real motives and language</td><td>Needs signals to match individual users</td></tr>
+</tbody>
+</table></div>
+<p>No approach solves the problem alone. In practice, personas from public content supply the hypotheses, contextual signals the matching and first-party data the confirmation.</p>
+
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">How do you put cold-start personalisation into practice in six steps?</h2>
+<ol>
+<li><strong>Collect category conversations.</strong> Comments, reviews, creator content and competitor ads from recent months – not just about the brand, but about the whole category.</li>
+<li><strong>Build personas and tensions.</strong> Cluster the content by motive and worry. Three to five clearly distinct personas are enough to start with.</li>
+<li><strong>Write one hypothesis per persona.</strong> Which message, which hook, which offer fits? Develop at least one dedicated creative variant for each persona.</li>
+<li><strong>Define matching signals.</strong> Landing page, search term, context, campaign source, first clicks: decide which signal points to which persona.</li>
+<li><strong>Serve with exploration.</strong> Reserve part of delivery for variants that don't fit the assumed persona. That way the system keeps learning instead of merely confirming its own assumption.</li>
+<li><strong>Feed first-party data back in.</strong> Every interaction refines the matching. Update the personas regularly, because conversations change.</li>
+</ol>
+
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">How useful are synthetic audiences for the cold start?</h2>
+<p>Quite useful – if you know their limits. In Digiday's reporting, even those involved voice reservations: Vurvey CEO Chad Reynolds says large language models deliver the top of the bell curve, in other words the most common answer. Julie Clark of TransUnion warns about personas built on poor input data. And Stef Hoffman of Code &amp; Theory puts it neatly: the results inform judgement, but they don't replace it.</p>
+<p>This is exactly where public content earns its keep. It isn't a simulation; it is evidence. If a persona claims that people in your category mainly fear buying the wrong thing, you should be able to see the posts that claim comes from. A persona you can't trace back is just an assertion.</p>
+<p>Defy Monitor takes this route: audience content is clustered into personas and tensions automatically, and planning starts from real conversations rather than demographics. It is one building block of <a href="/#platform">the Defy platform</a>, which gives independent agencies the same analytical capability the big networks have spent heavily to build.</p>
+
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">How do you know your cold-start strategy is working?</h2>
+<p>Compare the persona-based variants with a generic control group. The most telling metrics are new users' early numbers: interaction with the first ad, depth of the first visit, time to first conversion. If the persona variants aren't ahead, that isn't failure but a clue: either the personas are off, or the matching signals are too weak.</p></div>
+      <aside class="insight" aria-label="The insight"><div class="eyebrow">The insight</div><blockquote>Engagement is born from understanding, not numbers.</blockquote><p>Data quality research judges data by its fitness for purpose. For reaching new users, real motives drawn from public conversations are often fitter for purpose than precise but motive-free segment data.</p></aside>
+      <section class="prop" aria-label="How Defy helps">
+        <div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>How Defy helps<span class="sq"></span></h2></div>
+        <div class="pb prose"><p>Defy Monitor clusters your category's audience content into personas and tensions automatically. You plan from real conversations rather than demographics – and get exactly the starting assumptions that are missing at cold start.</p><ul><li>Personas with motives, worries and language, derived from publicly published content.</li><li>Every AI conclusion can be checked against the real posts behind it.</li><li>Creative for each persona can be scored for clickability before media spend.</li><li>With Defy MCP, you can query personas and tensions directly in Claude.</li></ul><p>Start with one category and compare your existing assumptions with what your audience is actually saying.</p></div>
+        <div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=The%20cold-start%20problem%3A%20how%20to%20personalise%20ads%20when%20you%20have%20no%20user%20data" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">Start a conversation</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Log in to Defy</a></div>
+      </section>
+      <section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><details open><summary>What does cold start mean in advertising?</summary><p>Cold start describes the situation in which a learning system has no behavioural data yet on a new user, a new product or a new market. Personalisation then falls back on generic messages. In advertising, this mainly affects new customers, product launches and market entries – precisely the situations in which first impressions count.</p></details><details><summary>Can you personalise without third-party cookies?</summary><p>Yes. Contextual signals, zero-party data from quizzes or onboarding, your own first-party data and personas built from public content all make personalisation possible without bought-in cookie profiles. The difference: at first you personalise for groups with shared motives rather than for individuals, and refine the targeting with every interaction.</p></details><details><summary>What&#39;s the difference between synthetic audiences and personas built from public content?</summary><p>Synthetic audiences are AI models that simulate reactions, usually based on survey, statistical and panel data. Personas built from public content, by contrast, distil real statements such as comments, reviews and creator videos. One suits rapid simulation; the other provides verifiable evidence of motives and language. The two approaches can be combined.</p></details><details><summary>How many personas do I need to start with?</summary><p>Three to five clearly distinct personas are usually enough to begin with. More personas sound more precise, but they spread budget and creative effort across too many variants before there is enough data to learn from. What matters is that the personas genuinely differ in motives and messages – not just in age or postcode.</p></details></section>
+      <section class="srcs"><h2>Sources</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+      <p class="note"><b>Why we wrote this</b>We wrote this because the question of how to personalise for new users without enough data keeps coming up in technically minded marketing teams – nowhere more than in the privacy-conscious German market. The current surge in synthetic audiences makes the question of the right data foundation more pressing.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="On this page"><h4>On this page</h4><a href="#what-is-the-cold-start-problem-in-advertising">What is the cold-start problem in advertising?</a><a href="#why-more-data-doesn-t-solve-the-problem">Why more data doesn&#39;t solve the problem</a><a href="#how-are-personas-built-from-public-content">How are personas built from public content?</a><a href="#what-approaches-are-there-to-the-cold-start">What approaches are there to the cold start?</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">How do you put cold-start personalisation into practice in six steps?</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">How useful are synthetic audiences for the cold start?</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">How do you know your cold-start strategy is working?</a></nav>
+      <div class="side-cta"><h4>Defy</h4><p>Ready to punch above your weight?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">Start a conversation</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Log in to Defy</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>More from the journal<span class="sq"></span></h2>
+  <div class="grid"><a class="card" href="/blog/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="Black-and-white photo of people seen from behind walking across a snowy park on a trodden shortcut while the paved path curves away empty, a small red square lying in the snow." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; strategy</div><h3>AI and consumer behaviour: why agencies need to rebuild their insight work</h3><p>When people ask chatbots and algorithms curate their feeds, classic insight methods go stale. What strategists should do differently now – and what AI can&#39;t do for them.</p><div class="meta"><span>7 min read</span></div></div></a><a class="card" href="/blog/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="Black-and-white photo of a department-store window being dressed for Christmas, with boxes of baubles and a bare tree behind the glass and, in the foreground, a dial whose needle approaches a small red threshold mark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; strategy</div><h3>Christmas 2026: social listening as an early-warning system for agencies</h3><p>Analyse it in January and Christmas is already over. How agencies use social listening to spot buying mood, price pressure and competitor promotions early.</p><div class="meta"><span>7 min read</span></div></div></a><a class="card" href="/blog/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="Black-and-white still life of assorted mismatched measuring strips piled on a stack of grid-paper printouts, with one long steel straightedge laid across them and a small red tab at its end." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; strategy</div><h3>Measuring cross-platform engagement: time to retire the agency spreadsheet</h3><p>Every platform counts engagement its own way. The method, metrics and tool criteria for reliable cross-platform measurement – no stitched-together spreadsheet required.</p><div class="meta"><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-o" href="/blog/">← Back to the journal</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+  <h2>Ready to punch above your weight?</h2>
+  <p>See the intelligence stack the big networks guard so closely. No pitch — just a conversation.</p>
+  <div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">Start a conversation</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Log in to Defy</a></div>
+</section>
+<footer class="df">
+  <div class="wrap">
+    <div class="df-grid">
+      <div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+      <div><h4>Defy</h4><a href="/#main">Main</a><a href="/#platform">Platform</a><a href="/#clients">Clients</a><a href="/#team">Team</a></div>
+      <div><h4>Journal</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
+      <div><h4>Contact</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Log in</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+    </div>
+    <div class="df-bot"><span>© 2026 Defy Group Limited. All rights reserved.</span><span>defygroup.ai</span></div>
+  </div>
+</footer>
+</body>
+</html>
