@@ -189,24 +189,10 @@ img{height:auto}
 .faq-list summary::after{content:"+";color:var(--red);font-size:28px;line-height:1}
 .faq-list details[open] summary::after{content:"–"}
 .faq-list details p{margin-top:12px;font-size:16px;line-height:1.8;color:#555}
-.journal{background:var(--cream)}
-.j-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
-.j-card{background:var(--white);border:1px solid var(--border);text-decoration:none;display:flex;flex-direction:column;transition:all .3s}
-.j-card:hover{border-color:var(--black);transform:translateY(-3px)}
-.j-card img{width:100%;aspect-ratio:3/2;object-fit:cover;border-bottom:1px solid var(--border)}
-.j-card .tx{padding:22px 22px 26px}
-.j-card .cat{font-size:11px;color:var(--red);font-weight:700;letter-spacing:.3em;text-transform:uppercase}
-.j-card h3{font-family:'Playfair Display',serif;font-weight:800;font-size:21px;line-height:1.25;color:var(--black);margin:10px 0 8px}
-.j-card p{font-size:14.5px;color:#555;line-height:1.65}
-.j-more{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:34px}
-.j-more a.lk{font-size:13px;color:#555;text-decoration:none;border:1px solid var(--border);padding:6px 10px;background:#fff}
-.j-more a.lk:hover{border-color:var(--black)}
-.jbtn{display:inline-block;padding:15px 30px;background:var(--black);color:#fff;font-weight:700;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
-.jbtn:hover{background:var(--red)}
 .cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .cta a.o{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.55)}
 .cta a.o:hover{border-color:#fff;background:transparent}
-.fgrid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;text-align:left}
+.fgrid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:30px;text-align:left}
 .fgrid h4{color:#fff;font-size:11px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:14px}
 .fgrid a{display:block;color:#999;text-decoration:none;font-size:14px;margin-bottom:9px}.fgrid a:hover{color:#fff}
 .fgrid .about{color:#777;font-size:13.5px;line-height:1.7;max-width:34ch}
@@ -214,7 +200,7 @@ footer .fbot{max-width:1180px;margin:34px auto 0;padding-top:20px;border-top:1px
 @media(max-width:900px){
  .mh-in{padding:0 20px}.mh-nav{display:none;position:absolute;top:68px;left:0;right:0;background:#0a0a0a;flex-direction:column;gap:0;padding:6px 20px 16px;border-bottom:1px solid #222}
  .mh-nav.open{display:flex}.mh-nav a{padding:12px 0;border-bottom:1px solid #1a1a1a}.mmenu{display:block}.mh-r .mbtn.o,.mh-r .mbtn.g{display:none}
- .j-grid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}.answer-lead{padding:22px}
+ .fgrid{grid-template-columns:1fr 1fr}.answer-lead{padding:22px}
 }
 @media(max-width:560px){.fgrid{grid-template-columns:1fr}.mh-r .mbtn.r{padding:9px 12px;letter-spacing:.08em}}
 </style>
@@ -290,7 +276,7 @@ footer .fbot{max-width:1180px;margin:34px auto 0;padding-top:20px;border-top:1px
 <section id="team" class="sec team" style="max-width:none" aria-label="Who we are">
 <div style="max-width:1100px;margin:0 auto">
 <div class="eyebrow" style="text-align:center">Who we are</div>
-<h2 class="sec-h" style="text-align:center">Founded by agency folk who <span class="it">understand your business</span><span class="sq-sm"></span></h2>
+<h2 class="sec-h" style="text-align:center">Founded by agency folk who <span class="it">understand your business</span>, and an AI professor who <span class="it">builds what it needs next</span><span class="sq-sm"></span></h2>
 <div class="team-grid">
 <div class="tmc">
 <picture><source type="image/webp" srcset="/assets/img/founder-ian.webp"><img src="/assets/img/founder-ian.jpg" alt="Ian Cassidy, CEO and co-founder of Defy" width="600" height="600" loading="lazy"></picture>
@@ -322,19 +308,6 @@ footer .fbot{max-width:1180px;margin:34px auto 0;padding-top:20px;border-top:1px
 </div>
 </div>
 </section>
-<section id="journal" class="sec journal" style="max-width:none" aria-label="From the journal">
-<div style="max-width:1280px;margin:0 auto">
-<div class="eyebrow">The Defy Journal</div>
-<h2 class="sec-h">Notes for agencies that <span class="it">punch above their weight</span><span class="sq-sm"></span></h2>
-<p class="sec-lead">Field notes on agency economics, AI adoption and the craft of insight — in English and 中文, with selected pieces in Español, Português, Français and Deutsch.</p>
-<div class="j-grid">
-<a class="j-card" href="/blog/before-you-automate-three-questions-agencies/" onclick="try{gtag('event','blog_click',{location:'home_journal'})}catch(e){}"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="Black-and-white photo of a signalman seen from behind resting his hand on one lever marked with a small red plate, looking out at railway tracks that split into several branches." width="1536" height="1024" loading="lazy"></picture><div class="tx"><div class="cat">AI transformation</div><h3>What to automate in an agency: three questions to answer first</h3><p>Three questions decide what an agency should automate: decision complexity, potential damage and measurable outcome. Start with the quick wins.</p></div></a>
-<a class="j-card" href="/blog/agency-ai-readiness-four-dimensions/" onclick="try{gtag('event','blog_click',{location:'home_journal'})}catch(e){}"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="Black-and-white photo of an oak table tilting on a concrete floor because one leg is shorter, a glass of water and a stack of papers on top and a small red tile beneath the short leg." width="1536" height="1024" loading="lazy"></picture><div class="tx"><div class="cat">AI transformation</div><h3>AI readiness assessment for agencies: why your weakest dimension decides</h3><p>Your agency&#39;s AI readiness is set by its weakest dimension, not its strongest. A four-part assessment, and why another AI course rarely fixes the gap.</p></div></a>
-<a class="j-card" href="/blog/ai-resistance-standards-not-people/" onclick="try{gtag('event','blog_click',{location:'home_journal'})}catch(e){}"><picture><source type="image/webp" srcset="/assets/blog/hero/d58-768.webp"><img src="/assets/blog/hero/d58.jpg" alt="Black-and-white photo of a designer seen from behind drawing by hand late at night, a bin of rejected machine-printed drafts beside her and an unused machine under a dust sheet bearing a small red note." width="1536" height="1024" loading="lazy"></picture><div class="tx"><div class="cat">Talent &amp; culture</div><h3>AI resistance in agencies is a standards problem, not a people problem</h3><p>The people who push back on AI are often the ones with the highest standards. Make them approvers, not targets, and adoption stops feeding burnout.</p></div></a>
-</div>
-<div class="j-more"><a class="jbtn" href="/blog/">Read the journal</a><a class="lk" href="/blog/zh/" hreflang="zh-Hans" lang="zh-Hans">中文</a><a class="lk" href="/blog/es/" hreflang="es" lang="es">Español</a><a class="lk" href="/blog/pt/" hreflang="pt" lang="pt">Português</a><a class="lk" href="/blog/fr/" hreflang="fr" lang="fr">Français</a><a class="lk" href="/blog/de/" hreflang="de" lang="de">Deutsch</a></div>
-</div>
-</section>
 <section class="cta" aria-label="Contact">
 <h2>Ready to punch above your weight?<span class="sq" style="background:#fff"></span></h2>
 <p>Let us show you the same intelligence stack the big networks guard so closely. No pitch — just a conversation.</p>
@@ -345,7 +318,6 @@ footer .fbot{max-width:1180px;margin:34px auto 0;padding-top:20px;border-top:1px
 <div class="fgrid">
 <div><img class="logo-img" src="/assets/img/defy-logo-white.svg" alt="Defy" width="110" height="47"><p class="about">The insight &amp; automation platform for agencies that punch above their weight.</p></div>
 <div><h4>Defy</h4><a href="#main">Main</a><a href="#platform">Platform</a><a href="#clients">Clients</a><a href="#team">Team</a><a href="#faq">FAQ</a></div>
-<div><h4>Journal</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/zh/" hreflang="zh-Hans">中文</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt">Português</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a></div>
 <div><h4>Contact</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Log in</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
 </div>
 <div class="fbot"><p>&copy; 2026 Defy Group Limited. All rights reserved.</p><p>defygroup.ai</p></div>
