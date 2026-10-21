@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Defy 洞察</title>
+<link>https://defygroup.ai/blog/zh-hant/</link>
+<description>關於代理商經濟、AI 落地與洞察手藝的一線筆記——寫給獨立代理商、品牌內部團隊，以及所有不想再被大集團碾壓的人。</description>
+<language>zh-Hant</language>
+<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/zh-hant/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>代理商該自動化什麼？動手前先回答三個問題</title>
+<link>https://defygroup.ai/blog/zh-hant/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/before-you-automate-three-questions-agencies/</guid>
+<description>自動化之前先問：決策有多複雜？糟糕的產出會造成多大損害？哪項可衡量的結果會改善？一份幫代理商判斷哪些工作該自動化的指南。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 就緒度評估：代理商最弱的一環決定成敗</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-ai-readiness-four-dimensions/</guid>
+<description>語境、人、流程、平臺：一套實用的代理商 AI 就緒度評估方法，幫你找出最弱的一環，並說明為什麼光靠 AI 課程補不上這塊短板。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商的 AI 阻力是標準問題，不是人的問題</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-resistance-standards-not-people/</guid>
+<description>最得力的員工牴觸的不是 AI，而是糟糕的產出。為什麼代理商員工牴觸 AI 其實暴露了質量缺口，以及如何在不加劇倦怠的前提下解決。</description>
+<category>人才與文化</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 戰略：平臺會自動化的，別自己造</title>
+<link>https://defygroup.ai/blog/zh-hant/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta 和 Google 正在自動化定向、廣告製作和廣告系列搭建。更清醒的代理商 AI 戰略：工具只買不造，在判斷力就是產品的地方競爭。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 指標：客戶買單的是結果，不是使用量</title>
+<link>https://defygroup.ai/blog/zh-hant/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/measure-ai-results-not-usage-agencies/</guid>
+<description>AI 帳號數、智慧體數量、生成素材數都是虛榮指標。客戶真正在意的代理商 AI 指標是單位產出成本、交付速度、錯誤率和利潤影響。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商如何衡量 AI 投資回報：部署前先定義成功</title>
+<link>https://defygroup.ai/blog/zh-hant/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/define-success-before-deploying-ai-agency/</guid>
+<description>基線、目標、測試、覆盤：一套幫助代理商衡量 AI 投資回報的簡單方法，把核查時間和 AI 拖累都算進去，看清自動化是否真的划算。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商閉環 AI：從十一個工具到一個共享層</title>
+<link>https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>十一個工具、二十個負責人、沒有任何共享？本文講解代理商如何用記憶、技能、工作流和審批四個部分，搭建真正的閉環 AI 系統。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 角色分工：別再讓 AI 成為每個人的工作</title>
+<link>https://defygroup.ai/blog/zh-hant/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>代理公司不需要人人都會搭 AI。本文講清構建者、使用者和審批者三種角色，如何在 AI 重塑行業時守住質量、職業發展和工作安全感。</description>
+<category>人才與文化</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 原生代理商：速度不等於進步，五個層級才是</title>
+<link>https://defygroup.ai/blog/zh-hant/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/speed-is-not-progress-ai-native-agencies/</guid>
+<description>什麼才是真正的 AI 原生代理商？本文拆解 AI 落地的五個層級，並解釋為什麼大多數代理商應該停在能解決自身瓶頸的那一級。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 落地：先摸清真實工作流，再談自動化</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-bad-process-document-workflows-first/</guid>
+<description>把 AI 用在糟糕的流程上，只會得到更快的糟糕流程。本文教廣告代理商先觀察真實工作流、找到瓶頸，再一步步決定哪些環節值得自動化。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 改變消費者行為：代理商為何必須重建洞察體系</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI 如何改變消費者搜尋、發現與信任的方式，代理商又為何要重建洞察體系？本文拆解三大轉變、一個資料陷阱，並給出一套六步行動計劃。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>冷啟動難題：缺少使用者資料時如何做個性化廣告</title>
+<link>https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/</guid>
+<description>如何解決廣告的冷啟動難題：沒有第三方資料，也能用基於公開內容構建的使用者畫像，向新使用者投放個性化資訊。附方法對比和六步實施法。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>2026 聖誕季：社交聆聽是代理商的預警系統</title>
+<link>https://defygroup.ai/blog/zh-hant/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/christmas-2026-social-listening-early-warning/</guid>
+<description>聖誕購物季怎樣用社交聆聽提前預警？本文列出代理商現在就該監測的五類訊號、一張訊號對照表和六步行動計劃，幫你守住第四季度預算。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 工具：用 MCP 告別工具氾濫</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-tools-agencies-mcp-integration/</guid>
+<description>代理商如何正確整合 AI 工具：工具氾濫為什麼浪費時間，MCP 改變了什麼，以及如何用六個步驟搭建一套精簡、可控的 AI 技術棧。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商計費模式：AI 如何合理定價，別白送利潤</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-pricing-models-fair-ai-pricing/</guid>
+<description>AI 時代的代理商計費模式：為什麼不該把效率紅利白白讓出去，哪些定價模式能守住利潤，以及如何向客戶採購部門解釋 AI 成本。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商業務聚焦：該砍掉哪項服務，何時砍？</title>
+<link>https://defygroup.ai/blog/zh-hant/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/when-to-stop-an-agency-service/</guid>
+<description>代理商如何做業務聚焦、精簡服務線？本文梳理一項服務走到盡頭的五個訊號、六步決策法，以及決定砍掉哪項服務之前必須看的市場資料。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>跨平臺互動怎麼衡量？代理商該告別手工拼表了</title>
+<link>https://defygroup.ai/blog/zh-hant/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/measure-cross-platform-engagement-agencies/</guid>
+<description>每個平臺統計互動的口徑都不同。本文給出跨平臺互動衡量的完整方法：統一定義、按平臺標準化指標、體育內容示例，以及挑選工具的四條標準。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商裡的冒名頂替綜合徵：AI 時代如何重拾自信</title>
+<link>https://defygroup.ai/blog/zh-hant/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/imposter-syndrome-agencies-ai-era/</guid>
+<description>代理商裡的冒名頂替綜合徵：為什麼 AI 加深了自我懷疑，尤其是在職場新人中間，以及個人、團隊和管理者如何建立基於證據的自信。</description>
+<category>人才與文化</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>無真人受訪者的調研：合成使用者畫像是機會還是幻影？</title>
+<link>https://defygroup.ai/blog/zh-hant/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/respondent-free-research-synthetic-personas/</guid>
+<description>合成使用者畫像和無真人受訪者調研，對代際洞察到底有多大價值？本文講清它的用處與侷限，以及如何把每個結論錨定在真實觀察到的行為上。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 對媒介代理商的影響：新時代下獨立代理商該怎麼做</title>
+<link>https://defygroup.ai/blog/zh-hant/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/media-agencies-new-ai-era-independents/</guid>
+<description>AI 正在壓縮媒介代理商的執行工作，價值向諮詢端轉移。這對獨立代理商意味著什麼、該從哪裡入手、選什麼工具，本文給出清晰路線。</description>
+<category>代理商型別</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商收費模式：如何用社交資料證明你的價值</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-remuneration-social-data-proof-of-value/</guid>
+<description>法國廣告代理商協會 AACC 希望讓代理商擺脫按工時計費。本文分步講解如何把社交資料變成可追溯的價值證明，為按價值收費爭取籌碼。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>客戶真正看重的社交媒體互動指標，和只是好看的數字</title>
+<link>https://defygroup.ai/blog/zh-hant/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/engagement-metrics-clients-value/</guid>
+<description>客戶到底看重哪些社交媒體互動指標？本文教你區分虛榮指標與業務結果，正確地跨平臺比較互動資料，並做出一份能推動預算決策的報表。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商黑五備戰：自動化報表，把時間留給最佳化</title>
+<link>https://defygroup.ai/blog/zh-hant/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/black-friday-agencies-automate-reporting/</guid>
+<description>距離2026年黑五隻剩六週。這份代理商黑五備戰計劃，教你分步把報表和預警自動化，讓團隊從做表中脫身，把精力放在大促期間的投放最佳化上。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>不讓人犯困的 B2B 內容營銷：如何打動採購決策者</title>
+<link>https://defygroup.ai/blog/zh-hant/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/b2b-content-marketing-that-engages/</guid>
+<description>B2B 內容營銷不必枯燥。本文告訴你如何從採購決策者的真實張力出發，在投放媒體之前測試創意概念，並獲取真正優質的銷售線索。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 與控股集團模式的終結：給獨立代理商的啟示</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-holding-company-model-independent-agencies/</guid>
+<description>WPP 持續裁員、代理費佔比下滑，顯示 AI 正在重塑廣告控股集團。瞭解 AI 對廣告代理商的影響，以及獨立代理商如何借 AI 搶佔地盤。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>媒體消費碎片化：跳出資料看板，讀懂你的受眾</title>
+<link>https://defygroup.ai/blog/zh-hant/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/fragmented-media-consumption-audience-data/</guid>
+<description>媒體消費碎片化讓受眾資料散落在各個渠道。瞭解如何把這些受眾資料整合成基於真實討論的使用者畫像和張力，並據此做出更好的媒介策劃。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>巴西代理商比稿新規：誰帶著證據來，誰佔上風</title>
+<link>https://defygroup.ai/blog/zh-hant/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/brazil-agency-pitches-category-intelligence/</guid>
+<description>巴西 Abracom/ABA 代理商比稿指南更新為 10 個步驟。瞭解如何用消費者行為和品類資料，憑證據而不是觀點贏下比稿。</description>
+<category>新業務與比稿</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>用 AI 做品牌差異化：怎樣不和競品說一樣的話</title>
+<link>https://defygroup.ai/blog/zh-hant/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>用 AI 做品牌差異化：先摸清整個品類在說什麼，再找到無人佔據的空白領地，並在投放媒體預算之前驗證創意，讓品牌不再千篇一律。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>廣告公司職業倦怠：少一點重複勞動，多一點創意</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-burnout-automate-repetitive-work/</guid>
+<description>廣告公司職業倦怠從何而來？本文講清如何把有意義的創意壓力和消耗人的重複勞動分開、哪些工作可以自動化，並給出一套適合團隊的五步減壓法。</description>
+<category>人才與文化</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>關稅下的營銷策略：如何調整資訊與預算</title>
+<link>https://defygroup.ai/blog/zh-hant/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>關稅對營銷策略的影響：如何判斷它對你所在品類的衝擊，按市場調整資訊、重新分配預算，而不是陷入停滯。附五力解讀表和六步調整流程。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商社交聆聽：為什麼季度報告已經來得太晚</title>
+<link>https://defygroup.ai/blog/zh-hant/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/continuous-social-listening-agencies/</guid>
+<description>代理商社交聆聽指南：如何告別季度趨勢報告，持續追蹤每週都在變的消費趨勢，把消費者的真實討論變成每週決策。附六步實操方法和一張對比表。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 營銷資料分析：讓每條結論都經得起核驗</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-data-analysis-verifiable-conclusions/</guid>
+<description>代理商 AI 營銷資料分析最佳實踐：如何打破資料孤島，交給客戶經得起核驗的結論。附七步實操方法，以及一張交付前逐項核對的清單。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>獨立代理商與 AI：為何抱團整合，改變了什麼</title>
+<link>https://defygroup.ai/blog/zh-hant/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle 合併四家公司，Samy 在美國出手收購。AI 在獨立代理商整合中扮演什麼角色？本文給出三條路線對比和五步決策法，幫你選定方向。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>個性化廣告如何不傷信任：寫給代理商的指南</title>
+<link>https://defygroup.ai/blog/zh-hant/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ad-personalisation-without-third-party-data/</guid>
+<description>面向女足等圈層受眾的個性化廣告指南：不依賴第三方資料，也不辜負社群的信任。附七步實操方法、對比表，以及投放前測試創意的思路。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 媒介策劃：從人口統計走向消費者張力</title>
+<link>https://defygroup.ai/blog/zh-hant/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/media-planning-real-personas-ai/</guid>
+<description>用 AI 做媒介策劃，把人口統計標籤換成真實的消費者張力：七步實操方法、一張兩種規劃方式的對比表，以及哪些判斷不該交給 AI。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>新加坡媒體消費資料：廣告集團收縮時該信什麼</title>
+<link>https://defygroup.ai/blog/zh-hant/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/apac-agencies-market-intelligence/</guid>
+<description>新加坡媒體消費資料去哪裡找？每類資料來源分別適合回答什麼問題？獨立代理商又該如何在沒有集團支援的情況下，搭建屬於自己的市場情報？</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 如何衝擊不同型別的廣告代理商：從創意到達人</title>
+<link>https://defygroup.ai/blog/zh-hant/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/how-ai-disrupts-each-agency-type/</guid>
+<description>AI 如何改變創意、媒介、CRM、公關和達人營銷代理商：哪些任務最先被取代、什麼在升值，以及每類代理商該測試哪些 AI 工具。</description>
+<category>代理商型別</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 內容創作最佳實踐：代理商的內容質量框架</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-content-quality-framework-agencies/</guid>
+<description>面向代理商的 AI 內容創作最佳實踐：一套七道關卡的質量框架，守住品牌調性，把關鍵決策留在人手裡，並在媒介投放前先做測試。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>有真實資料的 AI 營銷案例，以及它們沒說的部分</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-driven-agency-case-studies/</guid>
+<description>經得起推敲的 AI 營銷案例並不多。我們拆解幾個有真實資料的案例（包括預測 8.5% 的增量收入），並告訴你如何判斷其餘的案例。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 原生營銷組織：客戶還會向代理商買什麼</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death 計劃由兩名內部員工加一套代理商打造的 AI 系統管理一筆可觀預算。AI 原生營銷組織究竟還需要代理商提供什麼？</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商比稿策略：用 48 小時品類洞察衝刺贏下比稿</title>
+<link>https://defygroup.ai/blog/zh-hant/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/win-agency-pitches-ai-category-insight/</guid>
+<description>一套實用的代理商比稿策略：用 48 小時梳理競品廣告、受眾張力和無人佔據的切入點，並解讀 Publicis 繞過比稿、直接向 CEO 推銷意味著什麼。</description>
+<category>新業務與比稿</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>全球 campaign 表現不佳時，如何最佳化營銷預算 ROI</title>
+<link>https://defygroup.ai/blog/zh-hant/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/global-vs-local-campaign-budget/</guid>
+<description>最佳化營銷預算 ROI，先解決創意與市場的匹配問題：解讀全球與本地 campaign 效果的最新研究，附逐市場決策表和七個實操步驟。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 影片製作成本：單幀更便宜，預算為何沒少？</title>
+<link>https://defygroup.ai/blog/zh-hant/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/ai-video-production-agency-economics/</guid>
+<description>AI 降低的是每一幀影片的成本，而不是總預算。真正的節省在哪裡、客戶為何要得更多，以及代理商該如何為 AI 輔助影片定價。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>如何觸達 Z 世代消費者：從社群出發，而不是出生年份</title>
+<link>https://defygroup.ai/blog/zh-hant/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/gen-z-persona-clustering/</guid>
+<description>年齡段寫不出 brief。代理商如何把真實討論聚類成人群畫像，真正觸達 Z 世代消費者：一套七步方法，外加一個具體的比稿示例。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>零售媒體網路與代理商：預算究竟歸誰？</title>
+<link>https://defygroup.ai/blog/zh-hant/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/retail-media-agency-ownership/</guid>
+<description>零售媒體網路把媒介、電商、效果和達人代理商拉進了同一場爭奪。這個渠道該由誰主導？獨立代理商又該如何憑藉品類情報拿下策略席位？</description>
+<category>代理商型別</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 會取代廣告代理商嗎？這筆帳很少算得過來</title>
+<link>https://defygroup.ai/blog/zh-hant/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/will-ai-replace-agencies/</guid>
+<description>AI 會取代廣告代理商嗎？算清 AI 加內部招聘的真實成本，看看哪些代理商工作該交給 AI，哪些仍然離不開人的判斷與問責。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商整合還是多家並用？StarKist與ServiceNow啟示</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-consolidation-vs-roster/</guid>
+<description>廣告代理商整合，還是保留專業代理商陣容？從 StarKist 轉投 Tombras、Stagwell 拿下 ServiceNow 兩筆交易，看代理商如何贏得大客戶。</description>
+<category>新業務與比稿</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>獨立代理商 vs 控股集團：資料戰怎麼打</title>
+<link>https://defygroup.ai/blog/zh-hant/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/independent-agencies-vs-holding-company-data/</guid>
+<description>獨立代理商 vs 控股集團：集團在資料上還領先在哪裡，獨立代理商如今能在哪些方面追平，以及一份補齊差距的 90 天行動計劃。</description>
+<category>代理商型別</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>達人營銷報告：為什麼它成了代理商的新戰場</title>
+<link>https://defygroup.ai/blog/zh-hant/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/influencer-agency-reporting-automation/</guid>
+<description>如何做出能證明 ROI 的達人營銷效果報告，哪怕投放涉及幾十位奈米級達人？本文講清該看的指標、信任訊號，以及哪些環節應該自動化。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>受眾研究工具：策劃人員應該先自動化什麼</title>
+<link>https://defygroup.ai/blog/zh-hant/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/future-of-strategy-planners-automate/</guid>
+<description>策劃人員應該先把哪些受眾研究工作自動化？本文給出實用的任務排序、挑選受眾研究工具的檢查清單，以及哪些策略工作必須留給人來做。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 智慧體廣告：不怕失控，讓人留在迴路中</title>
+<link>https://defygroup.ai/blog/zh-hant/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agentic-media-human-in-the-loop/</guid>
+<description>AI 智慧體廣告正在快速到來。代理商如何讓人留在決策迴路中？設定審批閾值，為每個智慧體指定具名負責人，並由人掌控品牌資訊與語氣。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>合成受眾正在走紅：代理商如何確保它可信</title>
+<link>https://defygroup.ai/blog/zh-hant/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/synthetic-audiences-agencies-validation/</guid>
+<description>合成受眾正在走進代理商的日常策劃。它在哪些場景可靠、在哪些場景會誤導？本文給出用六個步驟驗證每一條 AI 受眾研究發現的實用方法。</description>
+<category>洞察與策略</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商衝刺模式：如何跑得快又不丟策略</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-sprint-model-speed-strategy/</guid>
+<description>代理商衝刺模式賣的是速度。如何跑快速衝刺又不讓策略走樣？靠一條管一個季度的策略主線、每次開局都有新鮮證據，再把雜活交給自動化。</description>
+<category>代理商型別</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>創意預測試：如何終結創意與效果之爭</title>
+<link>https://defygroup.ai/blog/zh-hant/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/creativity-vs-performance-pre-testing/</guid>
+<description>創意預測試如何終結創意與效果之爭？在媒介投放前為創意概念打分，讓證據保護大膽的想法而不是扼殺它們，同時把最終決定權留給懂品牌的人。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商 AI 營銷工具：要搭技術棧，不要列購物清單</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-ai-stack-integration/</guid>
+<description>代理商如何挑選能與現有系統打通的 AI 營銷工具？本文提供一份評估清單、一套七步搭建計劃，以及與客戶合同相關的實用建議。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>品牌差異化策略：找到你所在品類忽略的角度</title>
+<link>https://defygroup.ai/blog/zh-hant/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/escape-creative-sameness-category-intelligence/</guid>
+<description>John Hegarty 爵士直言營銷“重複、陳詞濫調、無聊”。本文給出一套品牌差異化策略：繪製品類全景圖，找到無人佔據的角度。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>營銷資料看板過載：代理商為何用提問取代登入</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-dashboard-fatigue-ai-questions/</guid>
+<description>看板越來越多，洞察卻越來越少？本文解析營銷資料看板過載的成因，並給出可直接上手的六步方法，用以決策為導向的提問，取代一次又一次的登入。</description>
+<category>AI 轉型</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>如何向客戶證明媒介投放 ROI：MMM 迴歸，該拿出什麼證據</title>
+<link>https://defygroup.ai/blog/zh-hant/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/proving-media-roi-agencies-mmm/</guid>
+<description>平臺 ROAS 已難以說服客戶。代理商如何用營銷組合模型（MMM）、對照實驗和“結果為何變化”的證據，向客戶證明媒介投放 ROI。</description>
+<category>創意效果</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>代理商按效果付費：ROAS 和 CPA 之外該看哪些指標</title>
+<link>https://defygroup.ai/blog/zh-hant/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>按工時計費已降至代理商薪酬模式的 17%。ROAS 和 CPA 之外，哪些指標適合作為按效果付費的依據？如何穩妥落地？本文逐一拆解。</description>
+<category>代理商經濟</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 對代理商崗位的影響：怎樣重建初級人才梯隊</title>
+<link>https://defygroup.ai/blog/zh-hant/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/zh-hant/agency-entry-level-talent-ai/</guid>
+<description>AI 正在接手初級員工的大量工作，不少代理商悄悄停招應屆生。資料怎麼說？如何圍繞判斷力重新設計入門崗位？本文給出思路與步驟。</description>
+<category>人才與文化</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

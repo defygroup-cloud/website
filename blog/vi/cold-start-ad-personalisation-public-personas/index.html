@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold-start: cá nhân hóa khi không có dữ liệu người dùng | Defy</title>
+<meta name="description" content="Giải quyết vấn đề cold-start trong quảng cáo: cách cá nhân hóa cho người dùng mới mà không cần dữ liệu bên thứ ba, bằng persona xây từ nội dung công khai.">
+<link rel="canonical" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="vấn đề cold-start cá nhân hóa, cá nhân hóa không cần dữ liệu bên thứ ba, persona từ social listening, cá nhân hóa quảng cáo cho người dùng mới, cá nhân hóa không cookie, đối tượng tổng hợp">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng">
+<meta property="og:description" content="Giải quyết vấn đề cold-start trong quảng cáo: cách cá nhân hóa cho người dùng mới mà không cần dữ liệu bên thứ ba, bằng persona xây từ nội dung công khai.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-vi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="Insight &amp; chiến lược">
+<meta property="article:tag" content="Cá nhân hóa">
+<meta property="article:tag" content="Cold start">
+<meta property="article:tag" content="Persona">
+<meta property="article:tag" content="Quyền riêng tư dữ liệu">
+<meta property="article:tag" content="Khán giả tổng hợp">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng">
+<meta name="twitter:description" content="Giải quyết vấn đề cold-start trong quảng cáo: cách cá nhân hóa cho người dùng mới mà không cần dữ liệu bên thứ ba, bằng persona xây từ nội dung công khai.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-vi.jpg">
+<meta name="twitter:image:alt" content="Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Tạp chí Defy" href="/blog/vi/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Be+Vietnam+Pro:wght@400;500;700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/","headline":"Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng","alternativeHeadline":"Cold-start: cá nhân hóa khi không có dữ liệu người dùng","description":"Giải quyết vấn đề cold-start trong quảng cáo: cách cá nhân hóa cho người dùng mới mà không cần dữ liệu bên thứ ba, bằng persona xây từ nội dung công khai.","abstract":"Trước hết, hãy cá nhân hóa ở cấp độ persona, không phải cấp độ từng người. Phân tích các cuộc hội thoại công khai, bình luận, đánh giá và nội dung của creator trong ngành hàng của bạn, chắt lọc chúng thành những persona có động cơ và mâu thuẫn rõ ràng, rồi ghép người dùng mới vào persona dựa trên các tín hiệu ban đầu như trang đích, từ khóa tìm kiếm hay bối cảnh. Với mỗi tương tác, dữ liệu first-party của chính bạn sẽ thay thế các giả định xuất phát.","image":["https://defygroup.ai/assets/blog/og/d49-vi.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"vi","author":{"@type":"Organization","name":"Ban biên tập Defy","url":"https://defygroup.ai/blog/vi/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Insight & chiến lược","keywords":"vấn đề cold-start cá nhân hóa, cá nhân hóa không cần dữ liệu bên thứ ba, persona từ social listening, cá nhân hóa quảng cáo cho người dùng mới, cá nhân hóa không cookie, đối tượng tổng hợp","wordCount":1529,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/vi/#blog","name":"Defy — Tạp chí Defy"},"about":[{"@type":"Thing","name":"Cá nhân hóa"},{"@type":"Thing","name":"Cold start"},{"@type":"Thing","name":"Persona"},{"@type":"Thing","name":"Quyền riêng tư dữ liệu"},{"@type":"Thing","name":"Khán giả tổng hợp"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[{"@type":"Question","name":"Cold start trong quảng cáo nghĩa là gì?","acceptedAnswer":{"@type":"Answer","text":"Cold start mô tả tình huống một hệ thống học máy chưa có dữ liệu hành vi nào về một người dùng mới, một sản phẩm mới hay một thị trường mới. Khi đó, cá nhân hóa phải quay về các thông điệp chung chung. Trong quảng cáo, điều này chủ yếu ảnh hưởng đến khách hàng mới, các đợt ra mắt sản phẩm và việc thâm nhập thị trường – chính là những tình huống mà ấn tượng đầu tiên có sức nặng."}},{"@type":"Question","name":"Có thể cá nhân hóa mà không cần cookie bên thứ ba không?","acceptedAnswer":{"@type":"Answer","text":"Có. Tín hiệu theo ngữ cảnh, dữ liệu zero-party từ bài quiz hay quy trình onboarding, dữ liệu first-party của riêng bạn và persona xây từ nội dung công khai đều giúp cá nhân hóa mà không cần hồ sơ cookie mua ngoài. Điểm khác biệt: lúc đầu bạn cá nhân hóa cho các nhóm có chung động cơ chứ không phải cho từng cá nhân, rồi tinh chỉnh nhắm mục tiêu qua mỗi tương tác."}},{"@type":"Question","name":"Khác biệt giữa đối tượng tổng hợp (synthetic audience) và persona xây từ nội dung công khai là gì?","acceptedAnswer":{"@type":"Answer","text":"Đối tượng tổng hợp là các mô hình AI mô phỏng phản ứng, thường dựa trên dữ liệu khảo sát, thống kê và panel. Ngược lại, persona xây từ nội dung công khai chắt lọc các phát ngôn thật như bình luận, đánh giá và video của creator. Một bên phù hợp để mô phỏng nhanh; bên kia cung cấp bằng chứng kiểm chứng được về động cơ và ngôn ngữ. Hai cách tiếp cận này có thể kết hợp."}},{"@type":"Question","name":"Tôi cần bao nhiêu persona để bắt đầu?","acceptedAnswer":{"@type":"Answer","text":"Thường ba đến năm persona khác biệt rõ rệt là đủ để bắt đầu. Nhiều persona hơn nghe có vẻ chính xác hơn, nhưng chúng dàn trải ngân sách và công sức sáng tạo ra quá nhiều biến thể trước khi có đủ dữ liệu để học. Điều quan trọng là các persona thực sự khác nhau về động cơ và thông điệp – chứ không chỉ về độ tuổi hay mã bưu chính."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"Tạp chí","item":"https://defygroup.ai/blog/vi/"},{"@type":"ListItem","position":3,"name":"Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng","item":"https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Mục lục</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — Trang chính"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="Điều hướng chính">
+<a href="/#main">Chính</a>
+<a href="/#platform">Nền tảng</a>
+<a href="/#clients">Khách hàng</a>
+<a href="/#team">Đội ngũ</a>
+<a href="/blog/vi/" class="on">Tạp chí</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">Đăng nhập</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">Liên hệ với chúng tôi</a>
+<button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="Đường dẫn"><a href="/#main">Trang chủ</a><span>/</span><a href="/blog/vi/">Tạp chí</a><span>/</span><span>Insight &amp; chiến lược</span></nav>
+<header class="a-head">
+<div class="eyebrow">Insight &amp; chiến lược</div>
+<h1 itemprop="headline">Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng<span class="sq"></span></h1>
+<p class="dek" itemprop="description">Người dùng mới, không có lịch sử, ít sự đồng ý chia sẻ dữ liệu: cách agency giải quyết vấn đề cold-start bằng persona xây từ các cuộc hội thoại công khai có thật – thay vì các phân khúc mua ngoài.</p>
+<div class="a-meta">
+<span><b>Ban biên tập Defy</b></span>
+<span>Đăng ngày <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 tháng 10 năm 2026</time></span>
+<span>7 phút đọc</span>
+<span class="langs"><details class="lsw"><summary aria-label="Ngôn ngữ: Tiếng Việt"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Tiếng Việt</span></summary><div class="lsw-p"><div class="lsw-h">Cũng có bằng</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi" aria-current="true">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="Ảnh đen trắng đôi bàn tay người thợ đóng giày lấy một khuôn giày gỗ gắn thẻ đỏ nhỏ từ giá để khuôn, trong khi bóng một vị khách mới đổ qua ngưỡng cửa bên cạnh một dấu chân phấn mờ." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="Câu hỏi đằng sau bài viết này">
+<div class="eyebrow">Câu hỏi đằng sau bài viết này</div>
+<p class="q">“Làm thế nào để cá nhân hóa quảng cáo cho người dùng mới khi tôi chưa có dữ liệu gì về họ?”</p>
+<p class="ans"><b>Trả lời ngắn gọn</b>Trước hết, hãy cá nhân hóa ở cấp độ persona, không phải cấp độ từng người. Phân tích các cuộc hội thoại công khai, bình luận, đánh giá và nội dung của creator trong ngành hàng của bạn, chắt lọc chúng thành những persona có động cơ và mâu thuẫn rõ ràng, rồi ghép người dùng mới vào persona dựa trên các tín hiệu ban đầu như trang đích, từ khóa tìm kiếm hay bối cảnh. Với mỗi tương tác, dữ liệu first-party của chính bạn sẽ thay thế các giả định xuất phát.</p>
+</section>
+<section class="kt takeaways"><h2>Điểm chính cần nhớ</h2><ul><li>Vấn đề cold-start không phải về khối lượng dữ liệu mà về sự thấu hiểu: điều còn thiếu là một giả định xuất phát hợp lý về điều người dùng mới muốn.</li><li>Persona xây từ nội dung công khai cung cấp những giả định xuất phát đó ở cấp độ nhóm – không cần hồ sơ cá nhân và không cần phân khúc bên thứ ba mua ngoài.</li><li>Theo Digiday, đối tượng tổng hợp đang đi vào công việc lập kế hoạch hằng ngày, nhưng chất lượng của chúng phụ thuộc vào dữ liệu dùng để xây dựng.</li><li>Chiến lược cold-start tốt kết hợp giả thuyết persona, tín hiệu theo ngữ cảnh và việc chủ động thăm dò – và học hỏi qua từng tương tác.</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>Làm sao cá nhân hóa quảng cáo cho những người mà bạn chẳng biết gì? Câu trả lời thẳng thắn: ở cấp độ cá nhân thì không thể. Nhưng bạn hoàn toàn có thể hiểu những người quan tâm đến một ngành hàng, và ghép người dùng mới vào một persona phù hợp từ vài tín hiệu. Đó là cốt lõi của một chiến lược cold-start khả thi.</p>
+<p>Ngành này đang tìm kiếm giải pháp thay thế cho dữ liệu đối tượng truyền thống quyết liệt đến mức nào, thể hiện qua loạt bài gần đây của <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a>: đối tượng tổng hợp đang chuyển từ giai đoạn thử nghiệm sang công việc lập kế hoạch và chiến lược hằng ngày. Aveeno Body đã dùng nghiên cứu tổng hợp của Vurvey để rút thời gian cần cho một bản brief chiến lược từ khoảng 30 ngày xuống ba ngày. Goodway Group dùng “quần thể tổng hợp” của Arima gồm người tiêu dùng từ Mỹ, Anh và Đức để lập kế hoạch media.</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">Vấn đề cold-start trong quảng cáo là gì?</h2>
+<p>Thuật ngữ này đến từ thế giới các hệ thống gợi ý. Một hệ thống học từ hành vi thì cần có hành vi để học – mà người dùng mới thì chưa có. Vì vậy hệ thống đưa ra mức trung bình: sản phẩm bán chạy, thông điệp chung chung, mẫu quảng cáo hiệu quả đôi chút với tất cả và thực sự hiệu quả với không ai.</p>
+<p>Trong quảng cáo, vấn đề còn tệ hơn. Nhiều trình duyệt chặn cookie bên thứ ba theo mặc định, banner xin đồng ý là chuyện thường ngày ở Đức, và không phải ai cũng bấm “Chấp nhận tất cả”. Lối thoát kinh điển là các phân khúc mua ngoài thì đã trở nên rắc rối hơn về mặt pháp luật bảo vệ dữ liệu, mà dù sao cũng chẳng cho biết mấy vì sao ai đó mua hàng. Ở khu vực DACH (Đức, Áo và Thụy Sĩ) chịu sự chi phối của GDPR, “mua thêm dữ liệu là xong” không còn là một chiến lược.</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">Vì sao thêm dữ liệu không giải quyết được vấn đề</h2>
+<p>Nghiên cứu về chất lượng dữ liệu có một công thức tỉnh táo cho việc này: dữ liệu chỉ tốt ở mức độ phù hợp với mục đích sử dụng. Chỉ chính xác thôi chưa đủ; dữ liệu phải liên quan, cập nhật và phù hợp với câu hỏi cụ thể. Trong các tài liệu, điều này được gọi là “fitness for use”.</p>
+<p>Một phân khúc mua ngoài như “phụ nữ, 25 đến 34 tuổi, quan tâm đến làm đẹp” được diễn đạt rất chính xác. Nhưng với câu hỏi “Điều gì sẽ khiến người này dùng thử sản phẩm của chúng ta?” thì nó gần như vô giá trị. Nó mô tả thuộc tính, không phải động cơ. Sự gắn kết sinh ra từ thấu hiểu, không phải từ con số.</p>
+<p>Với cold start, điều đó có nghĩa là nguồn lực then chốt không phải lịch sử của từng người dùng mà là một bức tranh vững chắc về động cơ, mối lo và ngôn ngữ trong ngành hàng. Và bức tranh đó có thể vẽ nên từ nội dung công khai.</p>
+<h2 id="how-are-personas-built-from-public-content">Persona được xây từ nội dung công khai như thế nào?</h2>
+<p>Mọi người nói công khai khá nhiều về lý do họ mua – hoặc không mua: trong bình luận dưới bài đăng của thương hiệu, trong đánh giá sản phẩm, trong video của creator, trong các chủ đề diễn đàn. Nội dung này có thể được thu thập, phân cụm theo chủ đề và mâu thuẫn rồi chắt lọc thành persona – với những trích dẫn thật thay vì hồ sơ bịa ra.</p>
+<p>Khác biệt so với persona kiểu workshop truyền thống: nó dựa trên điều mọi người thực sự nói, chứ không phải điều một nhóm làm việc giả định về họ. Digiday mô tả một cách tiếp cận tương tự: với thương hiệu Sacheu, Limitless Labs phân tích hàng nghìn video TikTok và Instagram từ hệ sinh thái creator của mình để xây dựng persona.</p>
+<p>Quan trọng với thị trường Đức: những persona như vậy hoạt động ở cấp độ khuôn mẫu và nhóm. Chúng không cần hồ sơ của từng người dùng để chọn thông điệp đầu tiên. Việc đánh giá pháp lý đối với mô hình cụ thể của bạn vẫn thuộc về cố vấn bảo vệ dữ liệu của bạn.</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">Có những cách tiếp cận nào cho cold start?</h2>
+<div class="tw"><table>
+<thead><tr><th>Cách tiếp cận</th><th>Cơ sở dữ liệu</th><th>Điểm mạnh</th><th>Điểm yếu</th></tr></thead>
+<tbody>
+<tr><td>Phân khúc bên thứ ba mua ngoài</td><td>Hồ sơ bên ngoài, cookie</td><td>Có sẵn nhanh</td><td>Ít hiểu biết về động cơ; rắc rối về pháp luật bảo vệ dữ liệu</td></tr>
+<tr><td>Nhắm mục tiêu theo ngữ cảnh</td><td>Môi trường, thời gian, vị trí, thiết bị</td><td>Hoạt động mà không cần dữ liệu cá nhân</td><td>Nói rất ít về động lực</td></tr>
+<tr><td>Dữ liệu zero-party</td><td>Câu trả lời từ bài quiz hoặc onboarding</td><td>Trực tiếp và dựa trên sự đồng ý</td><td>Chỉ từ những người tham gia; gây ma sát trong phễu chuyển đổi</td></tr>
+<tr><td>Khán giả tổng hợp</td><td>Mô hình dựa trên dữ liệu khảo sát, thống kê và panel</td><td>Mô phỏng phản ứng nhanh chóng</td><td>Thiên về mức trung bình; chất lượng phụ thuộc vào dữ liệu đầu vào</td></tr>
+<tr><td>Persona từ nội dung công khai</td><td>Bình luận, đánh giá, nội dung creator, quảng cáo đối thủ</td><td>Động cơ và ngôn ngữ thực của ngành hàng</td><td>Cần có tín hiệu để ghép với từng người dùng</td></tr>
+</tbody>
+</table></div>
+<p>Không cách tiếp cận nào tự giải quyết được vấn đề. Trong thực tế, persona từ nội dung công khai cung cấp các giả thuyết, tín hiệu theo ngữ cảnh lo phần ghép nối và dữ liệu first-party đóng vai trò xác nhận.</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">Triển khai cá nhân hóa cho cold start qua sáu bước như thế nào?</h2>
+<ol>
+<li><strong>Thu thập các cuộc hội thoại trong ngành hàng.</strong> Bình luận, đánh giá, nội dung creator và quảng cáo đối thủ từ những tháng gần đây – không chỉ về thương hiệu mà về cả ngành hàng.</li>
+<li><strong>Xây persona và mâu thuẫn.</strong> Phân cụm nội dung theo động cơ và mối lo. Ba đến năm persona khác biệt rõ rệt là đủ để bắt đầu.</li>
+<li><strong>Viết một giả thuyết cho mỗi persona.</strong> Thông điệp nào, hook nào, ưu đãi nào phù hợp? Phát triển ít nhất một biến thể sáng tạo riêng cho từng persona.</li>
+<li><strong>Xác định tín hiệu ghép nối.</strong> Trang đích, từ khóa tìm kiếm, bối cảnh, nguồn chiến dịch, những lần click đầu tiên: quyết định tín hiệu nào trỏ đến persona nào.</li>
+<li><strong>Phân phối kèm thăm dò.</strong> Dành một phần lượng phân phối cho những biến thể không khớp với persona được giả định. Nhờ vậy hệ thống tiếp tục học thay vì chỉ xác nhận giả định của chính nó.</li>
+<li><strong>Đưa dữ liệu first-party quay lại.</strong> Mỗi tương tác tinh chỉnh việc ghép nối. Hãy cập nhật persona thường xuyên, vì các cuộc hội thoại luôn thay đổi.</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">Đối tượng tổng hợp hữu ích đến đâu cho cold start?</h2>
+<p>Khá hữu ích – nếu bạn biết giới hạn của chúng. Trong loạt bài của Digiday, ngay cả những người trong cuộc cũng bày tỏ dè dặt: Giám đốc điều hành Vurvey Chad Reynolds nói các mô hình ngôn ngữ lớn đưa ra phần đỉnh của đường cong hình chuông, nói cách khác là câu trả lời phổ biến nhất. Julie Clark của TransUnion cảnh báo về những persona xây trên dữ liệu đầu vào kém. Còn Stef Hoffman của Code &amp; Theory nói rất gọn: kết quả giúp định hướng phán đoán, nhưng không thay thế nó.</p>
+<p>Đây chính là chỗ nội dung công khai thể hiện giá trị. Nó không phải là mô phỏng; nó là bằng chứng. Nếu một persona khẳng định rằng người trong ngành hàng của bạn chủ yếu sợ mua nhầm, bạn phải xem được những bài đăng mà nhận định đó xuất phát. Một persona không truy vết được chỉ là một lời khẳng định.</p>
+<p>Defy Monitor đi theo hướng này: nội dung của đối tượng được tự động phân cụm thành persona và mâu thuẫn, và việc lập kế hoạch bắt đầu từ các cuộc hội thoại thật thay vì nhân khẩu học. Đây là một mảnh ghép của <a href="/#platform">nền tảng Defy</a>, nền tảng mang đến cho các agency độc lập năng lực phân tích tương đương những gì các network lớn đã chi rất nhiều để xây dựng.</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">Làm sao biết chiến lược cold-start của bạn có hiệu quả?</h2>
+<p>So sánh các biến thể dựa trên persona với một nhóm đối chứng chung chung. Các chỉ số đáng nói nhất là số liệu ban đầu của người dùng mới: tương tác với quảng cáo đầu tiên, độ sâu của lần truy cập đầu tiên, thời gian đến lần chuyển đổi đầu tiên. Nếu các biến thể persona không dẫn trước, đó không phải thất bại mà là một manh mối: hoặc persona chưa chuẩn, hoặc tín hiệu ghép nối quá yếu.</p></div>
+<aside class="insight" aria-label="Insight cốt lõi"><div class="eyebrow">Insight cốt lõi</div><blockquote>Tương tác sinh ra từ sự thấu hiểu, không phải từ những con số.</blockquote><p>Nghiên cứu chất lượng dữ liệu đánh giá dữ liệu theo mức độ phù hợp với mục đích. Để tiếp cận người dùng mới, những động cơ thật rút ra từ các cuộc hội thoại công khai thường phù hợp với mục đích hơn so với dữ liệu phân khúc chính xác nhưng thiếu động cơ.</p></aside>
+<section class="prop" aria-label="Defy giúp bạn như thế nào">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy giúp bạn như thế nào<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Monitor tự động phân cụm nội dung đối tượng trong ngành hàng của bạn thành persona và mâu thuẫn. Bạn lập kế hoạch từ các cuộc hội thoại thật thay vì nhân khẩu học – và có chính xác những giả định xuất phát vốn thiếu ở cold start.</p><ul><li>Persona với động cơ, mối lo và ngôn ngữ, được rút ra từ nội dung xuất bản công khai.</li><li>Mọi kết luận của AI đều có thể được đối chiếu với những bài đăng thực tế làm nền cho nó.</li><li>Sáng tạo cho từng persona có thể được chấm điểm khả năng thu hút click trước khi chi tiền media.</li><li>Với Defy MCP, bạn có thể truy vấn persona và mâu thuẫn trực tiếp trong Claude.</li></ul><p>Hãy bắt đầu với một ngành hàng và so sánh những giả định hiện có của bạn với điều đối tượng của bạn thực sự đang nói.</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=V%E1%BA%A5n%20%C4%91%E1%BB%81%20cold-start%3A%20c%C3%A1%20nh%C3%A2n%20h%C3%B3a%20qu%E1%BA%A3ng%20c%C3%A1o%20th%E1%BA%BF%20n%C3%A0o%20khi%20b%E1%BA%A1n%20kh%C3%B4ng%20c%C3%B3%20d%E1%BB%AF%20li%E1%BB%87u%20ng%C6%B0%E1%BB%9Di%20d%C3%B9ng" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">Bắt đầu trò chuyện</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Đăng nhập Defy</a></div>
+</section>
+<section class="faq" aria-label="Câu hỏi thường gặp"><h2>Câu hỏi thường gặp</h2><details open><summary>Cold start trong quảng cáo nghĩa là gì?</summary><p>Cold start mô tả tình huống một hệ thống học máy chưa có dữ liệu hành vi nào về một người dùng mới, một sản phẩm mới hay một thị trường mới. Khi đó, cá nhân hóa phải quay về các thông điệp chung chung. Trong quảng cáo, điều này chủ yếu ảnh hưởng đến khách hàng mới, các đợt ra mắt sản phẩm và việc thâm nhập thị trường – chính là những tình huống mà ấn tượng đầu tiên có sức nặng.</p></details><details><summary>Có thể cá nhân hóa mà không cần cookie bên thứ ba không?</summary><p>Có. Tín hiệu theo ngữ cảnh, dữ liệu zero-party từ bài quiz hay quy trình onboarding, dữ liệu first-party của riêng bạn và persona xây từ nội dung công khai đều giúp cá nhân hóa mà không cần hồ sơ cookie mua ngoài. Điểm khác biệt: lúc đầu bạn cá nhân hóa cho các nhóm có chung động cơ chứ không phải cho từng cá nhân, rồi tinh chỉnh nhắm mục tiêu qua mỗi tương tác.</p></details><details><summary>Khác biệt giữa đối tượng tổng hợp (synthetic audience) và persona xây từ nội dung công khai là gì?</summary><p>Đối tượng tổng hợp là các mô hình AI mô phỏng phản ứng, thường dựa trên dữ liệu khảo sát, thống kê và panel. Ngược lại, persona xây từ nội dung công khai chắt lọc các phát ngôn thật như bình luận, đánh giá và video của creator. Một bên phù hợp để mô phỏng nhanh; bên kia cung cấp bằng chứng kiểm chứng được về động cơ và ngôn ngữ. Hai cách tiếp cận này có thể kết hợp.</p></details><details><summary>Tôi cần bao nhiêu persona để bắt đầu?</summary><p>Thường ba đến năm persona khác biệt rõ rệt là đủ để bắt đầu. Nhiều persona hơn nghe có vẻ chính xác hơn, nhưng chúng dàn trải ngân sách và công sức sáng tạo ra quá nhiều biến thể trước khi có đủ dữ liệu để học. Điều quan trọng là các persona thực sự khác nhau về động cơ và thông điệp – chứ không chỉ về độ tuổi hay mã bưu chính.</p></details></section>
+<section class="srcs"><h2>Nguồn tham khảo</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>Vì sao chúng tôi viết bài này</b>Chúng tôi viết bài này vì câu hỏi làm thế nào cá nhân hóa cho người dùng mới khi chưa đủ dữ liệu cứ liên tục được đặt ra trong các đội marketing thiên về kỹ thuật – nơi đâu cũng vậy, nhưng nhiều nhất ở thị trường Đức vốn rất coi trọng quyền riêng tư. Làn sóng đối tượng tổng hợp hiện nay khiến câu hỏi về nền tảng dữ liệu phù hợp càng cấp thiết.</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="Mục lục"><h4>Mục lục</h4><a href="#what-is-the-cold-start-problem-in-advertising">Vấn đề cold-start trong quảng cáo là gì?</a><a href="#why-more-data-doesn-t-solve-the-problem">Vì sao thêm dữ liệu không giải quyết được vấn đề</a><a href="#how-are-personas-built-from-public-content">Persona được xây từ nội dung công khai như thế nào?</a><a href="#what-approaches-are-there-to-the-cold-start">Có những cách tiếp cận nào cho cold start?</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">Triển khai cá nhân hóa cho cold start qua sáu bước như thế nào?</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">Đối tượng tổng hợp hữu ích đến đâu cho cold start?</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">Làm sao biết chiến lược cold-start của bạn có hiệu quả?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>Sẵn sàng vươn xa hơn tầm vóc của mình?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">Bắt đầu trò chuyện</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Đăng nhập Defy</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>Đọc thêm từ Tạp chí<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/vi/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="Ảnh đen trắng những người đi bộ nhìn từ phía sau băng qua một công viên phủ tuyết theo lối tắt đã bị giẫm thành đường, trong khi con đường lát đá cong đi vắng tanh, một ô vuông đỏ nhỏ nằm trên tuyết." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; chiến lược</div><h3>AI và hành vi người tiêu dùng: vì sao agency cần xây lại công việc insight</h3><p>Khi mọi người hỏi chatbot và thuật toán tuyển chọn feed của họ, các phương pháp insight truyền thống trở nên lỗi thời. Chiến lược gia nên làm khác đi điều gì – và AI không thể làm gì thay họ.</p><div class="meta"><span>7 phút đọc</span></div></div></a><a class="card" href="/blog/vi/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="Ảnh đen trắng một cửa kính cửa hàng bách hóa đang được trang trí Giáng sinh, với những hộp quả châu và một cây thông trơ trụi sau lớp kính, còn ở tiền cảnh là một mặt đồng hồ có kim đang tiến gần vạch ngưỡng đỏ nhỏ." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; chiến lược</div><h3>Giáng sinh 2026: social listening như một hệ thống cảnh báo sớm cho agency</h3><p>Đợi đến tháng 1 mới phân tích thì Giáng sinh đã qua rồi. Cách agency dùng social listening để sớm nhận ra tâm lý mua sắm, áp lực giá và các chương trình khuyến mãi của đối thủ.</p><div class="meta"><span>7 phút đọc</span></div></div></a><a class="card" href="/blog/vi/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="Ảnh tĩnh đen trắng nhiều dải thước đo không đồng bộ chất chồng trên một xấp bản in giấy kẻ ô, với một thanh thước thép dài đặt vắt ngang và một nhãn đỏ nhỏ ở đầu thanh." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight &amp; chiến lược</div><h3>Đo lường tương tác đa nền tảng: đã đến lúc cho bảng tính của agency nghỉ hưu</h3><p>Mỗi nền tảng đếm tương tác theo cách riêng. Phương pháp, chỉ số và tiêu chí công cụ để đo lường đa nền tảng đáng tin cậy – không cần bảng tính ghép tay.</p><div class="meta"><span>7 phút đọc</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/vi/">← Quay lại Tạp chí</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Liên hệ">
+<h2>Sẵn sàng vươn xa hơn tầm vóc của mình?</h2>
+<p>Khám phá bộ công cụ phân tích mà các tập đoàn agency lớn luôn giữ kín. Không chào hàng — chỉ là một cuộc trò chuyện.</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">Bắt đầu trò chuyện</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Đăng nhập Defy</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>Nền tảng insight &amp; tự động hóa dành cho những agency vươn xa hơn tầm vóc của mình.</p></div>
+<div><h4>Defy</h4><a href="/#main">Chính</a><a href="/#platform">Nền tảng</a><a href="/#clients">Khách hàng</a><a href="/#team">Đội ngũ</a></div>
+<div class="df-langs"><h4>Tạp chí</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>Liên hệ</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Đăng nhập</a><a href="/llms.txt">llms.txt</a><a href="/blog/vi/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. Bảo lưu mọi quyền.</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>
