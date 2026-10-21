@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Jurnal Defy</title>
+<link>https://defygroup.ai/blog/id/</link>
+<description>Catatan lapangan tentang ekonomi agensi, adopsi AI, dan seni menggali insight — ditulis untuk agensi independen, tim in-house, dan siapa pun yang lelah kalah senjata dari jaringan agensi besar.</description>
+<language>id</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/id/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Apa yang perlu diotomasi di agensi: tiga pertanyaan yang dijawab lebih dulu</title>
+<link>https://defygroup.ai/blog/id/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/before-you-automate-three-questions-agencies/</guid>
+<description>Sebelum mengotomasi apa pun, tanyakan seberapa kompleks keputusannya, seberapa besar kerusakan akibat keluaran yang buruk, dan hasil terukur apa yang membaik. Panduan untuk agensi.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>Asesmen kesiapan AI untuk agensi: dimensi terlemah menentukan hasilnya</title>
+<link>https://defygroup.ai/blog/id/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-ai-readiness-four-dimensions/</guid>
+<description>Konteks, people, proses, platform: asesmen kesiapan AI praktis untuk agensi, dan mengapa kursus AI saja tak akan menambal mata rantai terlemah Anda.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>Resistensi AI di agensi adalah masalah standar, bukan masalah orang</title>
+<link>https://defygroup.ai/blog/id/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-resistance-standards-not-people/</guid>
+<description>Orang terbaik Anda tidak menolak AI, mereka menolak hasil yang buruk. Mengapa resistensi AI di agensi menandakan kesenjangan kualitas, dan cara memperbaikinya tanpa burnout.</description>
+<category>Talenta &amp; budaya</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategi AI agensi: jangan bangun apa yang akan diotomatisasi Meta dan Google</title>
+<link>https://defygroup.ai/blog/id/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta dan Google mengotomatisasi penargetan, pembuatan iklan, dan penyiapan kampanye. Strategi AI agensi yang tajam: beli alat, bersaing lewat penilaian.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>Metrik AI untuk agensi: mengapa klien membayar hasil, bukan penggunaan</title>
+<link>https://defygroup.ai/blog/id/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/measure-ai-results-not-usage-agencies/</guid>
+<description>Jumlah seat, agen, dan aset hanyalah vanity metric. Metrik AI yang dihargai klien agensi: biaya per output, kecepatan, tingkat error, dan profit.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>Cara mengukur ROI AI di agensi: tentukan keberhasilan sebelum diterapkan</title>
+<link>https://defygroup.ai/blog/id/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/define-success-before-deploying-ai-agency/</guid>
+<description>Baseline, target, uji, tinjau: cara sederhana bagi agensi untuk mengukur ROI AI, menghitung waktu pemeriksaan dan AI drag, dan mengetahui apakah otomatisasi benar-benar menguntungkan.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>AI closed-loop untuk agensi: dari sebelas alat ke satu lapisan bersama</title>
+<link>https://defygroup.ai/blog/id/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>Sebelas alat, dua puluh pemilik, tak ada yang dibagi? Cara agensi membangun sistem AI closed-loop dengan satu lapisan bersama: memori, skill, alur kerja, dan persetujuan.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>Peran AI di agensi: berhenti menjadikan AI tugas semua orang</title>
+<link>https://defygroup.ai/blog/id/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>Tidak semua orang di agensi Anda perlu membangun AI. Bagaimana builder, user, dan approver menjaga kualitas, karier, dan keamanan kerja saat AI membentuk ulang pekerjaan agensi.</description>
+<category>Talenta &amp; budaya</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>Agensi AI-native: kecepatan bukan kemajuan, dan 5 level yang benar-benar maju</title>
+<link>https://defygroup.ai/blog/id/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/speed-is-not-progress-ai-native-agencies/</guid>
+<description>Apa sebenarnya agensi AI-native, lima level adopsi AI, dan mengapa sebagian besar agensi sebaiknya berhenti di level yang menghilangkan hambatan mereka.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>Adopsi AI di agensi: dokumentasikan alur kerja yang sebenarnya sebelum mengotomatisasi</title>
+<link>https://defygroup.ai/blog/id/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-bad-process-document-workflows-first/</guid>
+<description>AI di atas proses yang buruk hanya mempercepat keburukan. Petakan alur kerja nyata, temukan hambatannya, baru putuskan apa yang perlu diotomatisasi.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI dan perilaku konsumen: mengapa agensi perlu membangun ulang kerja insight mereka</title>
+<link>https://defygroup.ai/blog/id/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>Cara AI mengubah perilaku konsumen dan mengapa agensi perlu membangun ulang kerja insight: tiga pergeseran, satu jebakan data, rencana enam langkah.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>Masalah cold-start: cara mempersonalisasi iklan saat Anda tak punya data pengguna</title>
+<link>https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/</guid>
+<description>Atasi masalah cold-start di periklanan: personalisasi untuk pengguna baru tanpa data pihak ketiga, memakai persona dari konten publik.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>Natal 2026: social listening sebagai sistem peringatan dini untuk agensi</title>
+<link>https://defygroup.ai/blog/id/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/christmas-2026-social-listening-early-warning/</guid>
+<description>Social listening untuk musim Natal: sinyal yang perlu dipantau agensi sekarang demi melindungi anggaran Q4, dengan tabel sinyal dan rencana 6 langkah.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>Alat AI untuk agensi: cara MCP mengeluarkan Anda dari penumpukan tool</title>
+<link>https://defygroup.ai/blog/id/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-tools-agencies-mcp-integration/</guid>
+<description>Alat AI untuk agensi: mengapa penumpukan tool membuang waktu, apa yang diubah MCP, dan cara membangun stack AI yang ramping dalam enam langkah.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>Model harga agensi untuk AI: pasang harga yang adil, jangan korbankan margin</title>
+<link>https://defygroup.ai/blog/id/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-pricing-models-fair-ai-pricing/</guid>
+<description>Model harga agensi di era AI: mengapa keuntungan efisiensi tidak boleh diserahkan begitu saja, dan struktur fee mana yang melindungi margin Anda.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>Mempersempit layanan agensi Anda: apa yang dihentikan, dan kapan</title>
+<link>https://defygroup.ai/blog/id/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/when-to-stop-an-agency-service/</guid>
+<description>Mempersempit layanan agensi: tanda sebuah layanan sudah usai, metode enam langkah, dan data yang dicek sebelum memutuskan apa yang dihentikan.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>Mengukur engagement lintas platform: saatnya pensiunkan spreadsheet agensi</title>
+<link>https://defygroup.ai/blog/id/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/measure-cross-platform-engagement-agencies/</guid>
+<description>Cara mengukur engagement lintas platform dengan andal: definisi bersama, metrik ternormalisasi, contoh olahraga, dan kriteria memilih tool Anda.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>Sindrom impostor di agensi: membangun kembali kepercayaan diri di era AI</title>
+<link>https://defygroup.ai/blog/id/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/imposter-syndrome-agencies-ai-era/</guid>
+<description>Sindrom impostor di agensi: mengapa AI memperkuat keraguan diri, terutama pada junior, dan cara membangun percaya diri berbasis bukti, bukan bualan.</description>
+<category>Talenta &amp; budaya</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>Riset tanpa responden: persona sintetis, janji atau fatamorgana?</title>
+<link>https://defygroup.ai/blog/id/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/respondent-free-research-synthetic-personas/</guid>
+<description>Persona sintetis dan riset tanpa responden: seberapa berharga untuk insight generasi, di mana kelemahannya, dan cara menambatkannya pada realitas.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>Agensi media dan AI: apa arti era baru bagi agensi independen</title>
+<link>https://defygroup.ai/blog/id/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/media-agencies-new-ai-era-independents/</guid>
+<description>Agensi media dan AI: eksekusi kian terkompresi dan nilai bergeser ke konsultasi. Apa yang berubah bagi agensi independen dan dari mana memulai.</description>
+<category>Jenis agensi</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>Remunerasi agensi: cara membuktikan nilai Anda dengan data sosial</title>
+<link>https://defygroup.ai/blog/id/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-remuneration-social-data-proof-of-value/</guid>
+<description>AACC Prancis ingin remunerasi agensi tak lagi sekadar waktu kerja. Cara mengubah data sosial menjadi bukti nilai yang dapat ditelusuri, langkah demi langkah.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>Metrik engagement yang dihargai klien (dan yang hanya pemanis)</title>
+<link>https://defygroup.ai/blog/id/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/engagement-metrics-clients-value/</guid>
+<description>Metrik engagement mana yang dihargai klien? Cara memisahkan vanity metric dari hasil, membandingkan platform, dan menyusun laporan yang berujung keputusan.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>Black Friday untuk agensi: otomatiskan pelaporan, dapatkan kembali waktu untuk optimasi</title>
+<link>https://defygroup.ai/blog/id/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/black-friday-agencies-automate-reporting/</guid>
+<description>Enam pekan menuju Black Friday 2026. Rencana Black Friday untuk agensi: otomatiskan pelaporan dan alert, lalu bebaskan tim untuk optimasi di masa puncak.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>Content marketing B2B yang tidak bikin para pengambil keputusan mengantuk</title>
+<link>https://defygroup.ai/blog/id/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/b2b-content-marketing-that-engages/</guid>
+<description>Content marketing B2B tak harus membosankan. Mulai dari ketegangan nyata pembeli, uji konsep sebelum belanja media, dan hasilkan lead berkualitas.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI dan berakhirnya model holding company: pelajaran bagi agensi independen</title>
+<link>https://defygroup.ai/blog/id/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-holding-company-model-independent-agencies/</guid>
+<description>PHK di WPP dan fee agensi yang menyusut menunjukkan AI sedang membentuk ulang holding company. Apa yang berubah, dan bagaimana AI membantu agensi independen maju.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>Konsumsi media terfragmentasi: memahami audiens di luar dashboard</title>
+<link>https://defygroup.ai/blog/id/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/fragmented-media-consumption-audience-data/</guid>
+<description>Konsumsi media terfragmentasi menyebar data ke semua kanal. Satukan data audiens menjadi persona dan ketegangan nyata untuk perencanaan yang lebih baik.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>Pitch agensi di Brasil: aturan baru menguntungkan yang membawa bukti</title>
+<link>https://defygroup.ai/blog/id/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/brazil-agency-pitches-category-intelligence/</guid>
+<description>Panduan pitch agensi Abracom/ABA Brasil kini punya 10 langkah. Cara memakai data perilaku konsumen dan kategori untuk memenangkan pitch dengan bukti.</description>
+<category>Bisnis baru</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>Diferensiasi merek dengan AI: cara agar tidak terdengar seperti pesaing</title>
+<link>https://defygroup.ai/blog/id/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>Diferensiasi merek dengan AI: petakan apa yang sudah dikatakan kategori Anda, temukan wilayah yang belum diklaim, dan uji ide sebelum belanja media.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>Burnout di agensi: kurangi tugas repetitif, lebih banyak waktu untuk kreativitas</title>
+<link>https://defygroup.ai/blog/id/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-burnout-automate-repetitive-work/</guid>
+<description>Burnout di agensi: cara memisahkan tekanan kreatif dari beban repetitif, tugas mana yang diotomatisasi, dan rencana lima langkah untuk tim Anda.</description>
+<category>Talenta &amp; budaya</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>Tarif impor dan strategi pemasaran: cara menyeimbangkan ulang pesan dan anggaran</title>
+<link>https://defygroup.ai/blog/id/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>Tarif impor dan strategi pemasaran: cara membaca dampaknya pada kategori Anda, menyusun ulang pesan per pasar, dan menggeser anggaran tanpa membeku.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>Social listening untuk agensi: mengapa laporan kuartalan sudah terlambat</title>
+<link>https://defygroup.ai/blog/id/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/continuous-social-listening-agencies/</guid>
+<description>Social listening untuk agensi: cara beralih dari laporan kuartalan ke pemantauan tren konsumen berkelanjutan dengan metode enam langkah yang praktis.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>Analisis data AI di pemasaran: kesimpulan yang bisa diverifikasi klien Anda</title>
+<link>https://defygroup.ai/blog/id/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-data-analysis-verifiable-conclusions/</guid>
+<description>Praktik terbaik analisis data AI di pemasaran: cara memecah silo dan memberi klien kesimpulan yang bisa diverifikasi, plus checklist.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>AI untuk agensi independen: mengapa mereka berkonsolidasi dan apa yang berubah</title>
+<link>https://defygroup.ai/blog/id/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle menyatukan empat firma dan SAMY membeli di AS. Peran AI dalam konsolidasi agensi independen, dan cara memilih jalur skala Anda sendiri.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>Iklan personal tanpa kehilangan kepercayaan: panduan untuk agensi</title>
+<link>https://defygroup.ai/blog/id/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ad-personalisation-without-third-party-data/</guid>
+<description>Panduan personalisasi iklan untuk audiens niche seperti penggemar sepak bola wanita, tanpa data pihak ketiga dan tanpa merusak kepercayaan komunitas.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>Perencanaan media AI: dari demografi ke tensi konsumen yang nyata</title>
+<link>https://defygroup.ai/blog/id/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/media-planning-real-personas-ai/</guid>
+<description>Gunakan perencanaan media AI untuk beralih dari demografi ke tensi nyata yang dirasakan audiens: metode tujuh langkah plus tabel perbandingan.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>Data konsumsi media di Singapura: mana yang layak dipercaya saat jaringan mengecil</title>
+<link>https://defygroup.ai/blog/id/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/apac-agencies-market-intelligence/</guid>
+<description>Di mana mencari data konsumsi media Singapura, sumber mana layak dipercaya, dan cara agensi independen membangun market intelligence tanpa jaringan.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>Bagaimana AI memengaruhi setiap jenis agensi pemasaran: dari kreatif hingga influencer</title>
+<link>https://defygroup.ai/blog/id/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/how-ai-disrupts-each-agency-type/</guid>
+<description>Dampak AI pada agensi kreatif, media, CRM, PR, dan influencer: tugas yang lebih dulu hilang, apa yang naik nilainya, dan alat AI yang layak diuji.</description>
+<category>Jenis agensi</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>Praktik terbaik pembuatan konten AI: kerangka kualitas untuk agensi</title>
+<link>https://defygroup.ai/blog/id/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-content-quality-framework-agencies/</guid>
+<description>Praktik terbaik konten AI untuk agensi: kerangka tujuh gerbang untuk menjaga brand voice, melibatkan manusia, dan menguji sebelum belanja media.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>Studi kasus pemasaran AI dengan angka nyata, dan apa yang tidak mereka ungkap</title>
+<link>https://defygroup.ai/blog/id/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-driven-agency-case-studies/</guid>
+<description>Sedikit studi kasus pemasaran AI yang tahan uji. Kami bahas yang punya angka nyata, termasuk proyeksi kenaikan 8,5%, dan cara menilai sisanya.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>Organisasi pemasaran AI-native: apa yang masih dibeli klien dari agensi</title>
+<link>https://defygroup.ai/blog/id/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death berencana mengelola anggaran besar dengan dua orang dan sistem AI buatan agensi. Apa kebutuhan organisasi pemasaran AI-native dari agensi?</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategi pitch agensi: menang dengan sprint insight kategori 48 jam</title>
+<link>https://defygroup.ai/blog/id/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/win-agency-pitches-ai-category-insight/</guid>
+<description>Strategi pitch agensi praktis: sprint 48 jam memetakan iklan kompetitor, ketegangan audiens, dan angle yang belum diklaim, plus arti CEO Publicis berjualan langsung.</description>
+<category>Bisnis baru</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>Cara mengoptimalkan ROI anggaran pemasaran saat kampanye global berkinerja kurang</title>
+<link>https://defygroup.ai/blog/id/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/global-vs-local-campaign-budget/</guid>
+<description>Optimalkan ROI anggaran pemasaran dengan memperbaiki kecocokan kreatif dulu: arti riset baru global vs lokal, tabel keputusan per pasar, dan tujuh langkah.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>Biaya produksi video AI: mengapa frame yang lebih murah tak mengecilkan anggaran</title>
+<link>https://defygroup.ai/blog/id/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/ai-video-production-agency-economics/</guid>
+<description>AI memangkas biaya tiap frame, bukan anggaran. Di mana penghematan sebenarnya, mengapa klien minta lebih banyak, dan cara menetapkan harga video berbantuan AI.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Cara menjangkau konsumen Gen Z: rencanakan dari komunitas, bukan tahun lahir</title>
+<link>https://defygroup.ai/blog/id/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/gen-z-persona-clustering/</guid>
+<description>Rentang usia tidak menghasilkan brief. Jangkau konsumen Gen Z dengan mengklasterkan percakapan nyata menjadi persona: metode tujuh langkah dan contoh.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>Retail media network dan agensi: siapa sebenarnya pemegang anggaran?</title>
+<link>https://defygroup.ai/blog/id/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/retail-media-agency-ownership/</guid>
+<description>Retail media network mempertemukan agensi media, commerce, performa, dan kreator dalam satu persaingan. Siapa yang harus memegang kanalnya, dan bagaimana agensi independen menang.</description>
+<category>Jenis agensi</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>Akankah AI menggantikan agensi pemasaran? Mengapa hitungannya jarang masuk akal</title>
+<link>https://defygroup.ai/blog/id/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/will-ai-replace-agencies/</guid>
+<description>Akankah AI menggantikan agensi pemasaran? Biaya nyata AI plus karyawan in-house, tugas agensi yang layak diambil AI, dan apa yang tetap butuh manusia.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>Konsolidasi agensi atau roster? Pelajaran dari StarKist dan ServiceNow</title>
+<link>https://defygroup.ai/blog/id/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-consolidation-vs-roster/</guid>
+<description>Satu agensi atau roster spesialis? Apa kata langkah StarKist ke Tombras dan kemenangan Stagwell atas ServiceNow soal cara meraih akun besar.</description>
+<category>Bisnis baru</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>Agensi independen vs holding company: cara agensi independen bersaing soal data</title>
+<link>https://defygroup.ai/blog/id/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/independent-agencies-vs-holding-company-data/</guid>
+<description>Agensi independen vs holding company: di mana jaringan masih unggul soal data, di mana independen kini setara, dan rencana 90 hari menutup celah.</description>
+<category>Jenis agensi</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>Pelaporan influencer marketing: mengapa kini jadi medan persaingan baru agensi</title>
+<link>https://defygroup.ai/blog/id/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/influencer-agency-reporting-automation/</guid>
+<description>Cara menyusun laporan influencer marketing yang membuktikan ROI, bahkan untuk puluhan nano-influencer: metrik, sinyal kepercayaan, dan otomatisasi.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>Alat riset audiens: apa yang harus diotomatiskan planner lebih dulu</title>
+<link>https://defygroup.ai/blog/id/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/future-of-strategy-planners-automate/</guid>
+<description>Alat riset audiens mana yang perlu diotomatiskan planner lebih dulu? Urutan tugas praktis, daftar periksa memilih alat, dan apa yang tetap butuh manusia.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>Periklanan AI agentik tanpa takut agen liar: jaga manusia tetap terlibat</title>
+<link>https://defygroup.ai/blog/id/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agentic-media-human-in-the-loop/</guid>
+<description>Periklanan AI agentik datang cepat. Cara agensi menjaga manusia tetap terlibat: ambang persetujuan, penanggung jawab jelas, kendali manusia atas pesan.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>Audiens sintetis makin populer. Begini cara agensi menjaganya tetap jujur</title>
+<link>https://defygroup.ai/blog/id/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/synthetic-audiences-agencies-validation/</guid>
+<description>Audiens sintetis mulai masuk ke perencanaan agensi sehari-hari. Pelajari kapan andal, kapan menyesatkan, dan enam langkah memvalidasi setiap temuan.</description>
+<category>Insight &amp; strategi</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>Model sprint agensi: cara bergerak cepat tanpa merusak strategi</title>
+<link>https://defygroup.ai/blog/id/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-sprint-model-speed-strategy/</guid>
+<description>Model sprint agensi menjual kecepatan. Cara menjalankannya tanpa merusak strategi: kerangka strategi kuartalan, bukti segar, dan otomatisasi tugas rutin.</description>
+<category>Jenis agensi</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>Pre-testing kreatif: cara mengakhiri perang kreativitas vs performa</title>
+<link>https://defygroup.ai/blog/id/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/creativity-vs-performance-pre-testing/</guid>
+<description>Akhiri perang kreativitas vs performa dengan pre-testing kreatif: beri skor konsep sebelum belanja media, lindungi ide berani, manusia tetap memutuskan.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>Alat pemasaran AI untuk agensi: bangun stack, bukan daftar belanja</title>
+<link>https://defygroup.ai/blog/id/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-ai-stack-integration/</guid>
+<description>Cara memilih alat pemasaran AI untuk agensi yang terintegrasi dengan sistem yang ada: daftar periksa evaluasi, rencana tujuh langkah, dan tips kontrak.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategi diferensiasi brand: menemukan sudut pandang yang diabaikan kategori Anda</title>
+<link>https://defygroup.ai/blog/id/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegarty menyebut pemasaran “repetitif, klise, membosankan”. Strategi diferensiasi brand: petakan kategori, temukan sudut pandang yang kosong.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>Dasbor pemasaran berlebihan: mengapa agensi mengganti login dengan pertanyaan</title>
+<link>https://defygroup.ai/blog/id/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-dashboard-fatigue-ai-questions/</guid>
+<description>Terlalu banyak dasbor, terlalu sedikit insight? Penyebab dasbor berlebihan dan enam langkah mengganti login dengan pertanyaan berbasis keputusan.</description>
+<category>Transformasi AI</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>Cara membuktikan ROI media kepada klien: mengapa MMM kembali dan apa yang perlu ditunjukkan</title>
+<link>https://defygroup.ai/blog/id/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/proving-media-roi-agencies-mmm/</guid>
+<description>ROAS platform tak lagi meyakinkan klien. Cara agensi membuktikan ROI media lewat marketing mix modelling, eksperimen, dan bukti penyebab hasil berubah.</description>
+<category>Efektivitas kreatif</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>Remunerasi agensi berbasis hasil: metrik di luar ROAS dan CPA</title>
+<link>https://defygroup.ai/blog/id/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>Bayaran agensi berbasis waktu kini tinggal 17% dari model. Metrik selain ROAS dan CPA untuk remunerasi berbasis hasil, dan cara menerapkannya.</description>
+<category>Ekonomi agensi</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>Dampak AI pada pekerjaan agensi: cara membangun ulang jenjang karier junior</title>
+<link>https://defygroup.ai/blog/id/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/id/agency-entry-level-talent-ai/</guid>
+<description>Agensi diam-diam berhenti merekrut lulusan baru karena AI mengambil alih tugas junior. Simak data dan cara menata ulang peran pemula berbasis penilaian.</description>
+<category>Talenta &amp; budaya</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
