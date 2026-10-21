@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cold start: personalizacja bez danych o użytkownikach | Defy</title>
+<meta name="description" content="Problem zimnego startu w reklamie: jak personalizować przekaz dla nowych użytkowników bez danych zewnętrznych, na personach z publicznych treści.">
+<link rel="canonical" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="problem zimnego startu personalizacja, personalizacja bez danych third-party, persony z social listeningu, personalizacja reklam dla nowych użytkowników, personalizacja bez cookies, syntetyczne grupy odbiorców">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach">
+<meta property="og:description" content="Problem zimnego startu w reklamie: jak personalizować przekaz dla nowych użytkowników bez danych zewnętrznych, na personach z publicznych treści.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-pl.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="Insight i strategia">
+<meta property="article:tag" content="Personalizacja">
+<meta property="article:tag" content="Zimny start">
+<meta property="article:tag" content="Persony">
+<meta property="article:tag" content="Prywatność danych">
+<meta property="article:tag" content="Syntetyczni odbiorcy">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach">
+<meta name="twitter:description" content="Problem zimnego startu w reklamie: jak personalizować przekaz dla nowych użytkowników bez danych zewnętrznych, na personach z publicznych treści.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-pl.jpg">
+<meta name="twitter:image:alt" content="Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/pl/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/","headline":"Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach","alternativeHeadline":"Cold start: personalizacja bez danych o użytkownikach","description":"Problem zimnego startu w reklamie: jak personalizować przekaz dla nowych użytkowników bez danych zewnętrznych, na personach z publicznych treści.","abstract":"Na początek personalizuj na poziomie person, a nie pojedynczych ludzi. Przeanalizuj publiczne rozmowy w swojej kategorii, komentarze, opinie i treści twórców, wyciągnij z nich persony z wyraźnymi motywami i napięciami, a nowych użytkowników dopasowuj na podstawie wczesnych sygnałów, takich jak strona docelowa, wyszukiwana fraza czy kontekst. Z każdą interakcją Twoje własne dane first-party zastępują początkowe założenia.","image":["https://defygroup.ai/assets/blog/og/d49-pl.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"pl","author":{"@type":"Organization","name":"Redakcja Defy","url":"https://defygroup.ai/blog/pl/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Insight i strategia","keywords":"problem zimnego startu personalizacja, personalizacja bez danych third-party, persony z social listeningu, personalizacja reklam dla nowych użytkowników, personalizacja bez cookies, syntetyczne grupy odbiorców","wordCount":966,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/pl/#blog","name":"Defy — Defy Journal"},"about":[{"@type":"Thing","name":"Personalizacja"},{"@type":"Thing","name":"Zimny start"},{"@type":"Thing","name":"Persony"},{"@type":"Thing","name":"Prywatność danych"},{"@type":"Thing","name":"Syntetyczni odbiorcy"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"pl","mainEntity":[{"@type":"Question","name":"Co oznacza zimny start w reklamie?","acceptedAnswer":{"@type":"Answer","text":"Zimny start (cold start) opisuje sytuację, w której system uczący się nie ma jeszcze danych behawioralnych o nowym użytkowniku, nowym produkcie lub nowym rynku. Personalizacja wraca wtedy do ogólnych przekazów. W reklamie dotyczy to głównie nowych klientów, premier produktów i wejść na rynek – czyli dokładnie tych sytuacji, w których liczy się pierwsze wrażenie."}},{"@type":"Question","name":"Czy można personalizować bez plików cookie stron trzecich?","acceptedAnswer":{"@type":"Answer","text":"Tak. Sygnały kontekstowe, dane zero-party z quizów lub onboardingu, własne dane first-party oraz persony zbudowane z publicznych treści umożliwiają personalizację bez kupowanych profili cookie. Różnica: na początku personalizujesz dla grup o wspólnych motywach, a nie dla jednostek, a targetowanie doprecyzowujesz z każdą interakcją."}},{"@type":"Question","name":"Czym różnią się syntetyczne grupy odbiorców od person zbudowanych z publicznych treści?","acceptedAnswer":{"@type":"Answer","text":"Syntetyczne grupy odbiorców to modele AI symulujące reakcje, zwykle oparte na danych z badań, statystyk i paneli. Persony zbudowane z publicznych treści z kolei wyciągają esencję z prawdziwych wypowiedzi, takich jak komentarze, opinie i filmy twórców. Jedno podejście nadaje się do szybkiej symulacji; drugie dostarcza weryfikowalnych dowodów na motywy i język. Oba podejścia można łączyć."}},{"@type":"Question","name":"Ile person potrzebuję na start?","acceptedAnswer":{"@type":"Answer","text":"Na początek zwykle wystarczą trzy do pięciu wyraźnie różnych person. Więcej person brzmi precyzyjniej, ale rozprasza budżet i wysiłek kreatywny na zbyt wiele wariantów, zanim będzie dość danych, by się uczyć. Ważne, by persony naprawdę różniły się motywami i przekazami – a nie tylko wiekiem czy kodem pocztowym."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://defygroup.ai/blog/pl/"},{"@type":"ListItem","position":3,"name":"Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach","item":"https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Na tej stronie</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — strona główna"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="Nawigacja główna">
+<a href="/#main">Główna</a>
+<a href="/#platform">Platforma</a>
+<a href="/#clients">Klienci</a>
+<a href="/#team">Zespół</a>
+<a href="/blog/pl/" class="on">Blog</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">Zaloguj się</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">Porozmawiajmy</a>
+<button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="Ścieżka nawigacji"><a href="/#main">Strona główna</a><span>/</span><a href="/blog/pl/">Blog</a><span>/</span><span>Insight i strategia</span></nav>
+<header class="a-head">
+<div class="eyebrow">Insight i strategia</div>
+<h1 itemprop="headline">Problem zimnego startu: jak personalizować reklamy, gdy nie masz danych o użytkownikach<span class="sq"></span></h1>
+<p class="dek" itemprop="description">Nowi użytkownicy, brak historii, mało zgód: jak agencje rozwiązują problem zimnego startu za pomocą person opartych na prawdziwych publicznych rozmowach – zamiast kupowanych segmentów.</p>
+<div class="a-meta">
+<span><b>Redakcja Defy</b></span>
+<span>Opublikowano <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 października 2026</time></span>
+<span>7 min czytania</span>
+<span class="langs"><details class="lsw"><summary aria-label="Język: Polski"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Polski</span></summary><div class="lsw-p"><div class="lsw-h">Dostępne również w językach</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl" aria-current="true">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="Czarno-białe zdjęcie dłoni szewca zdejmujących z półki z kopytami drewniane kopyto z małą czerwoną etykietą, podczas gdy cień nowego klienta pada przez próg obok ledwo widocznego śladu stopy narysowanego kredą." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="Pytanie, na które odpowiada ten artykuł">
+<div class="eyebrow">Pytanie, na które odpowiada ten artykuł</div>
+<p class="q">„Jak personalizować reklamy dla nowych użytkowników, skoro nie mam jeszcze żadnych danych na ich temat?”</p>
+<p class="ans"><b>Krótka odpowiedź</b>Na początek personalizuj na poziomie person, a nie pojedynczych ludzi. Przeanalizuj publiczne rozmowy w swojej kategorii, komentarze, opinie i treści twórców, wyciągnij z nich persony z wyraźnymi motywami i napięciami, a nowych użytkowników dopasowuj na podstawie wczesnych sygnałów, takich jak strona docelowa, wyszukiwana fraza czy kontekst. Z każdą interakcją Twoje własne dane first-party zastępują początkowe założenia.</p>
+</section>
+<section class="kt takeaways"><h2>Najważniejsze wnioski</h2><ul><li>Problem zimnego startu dotyczy mniej ilości danych, a bardziej zrozumienia: brakuje wiarygodnego założenia wyjściowego o tym, czego chcą nowi użytkownicy.</li><li>Persony zbudowane z publicznych treści dostarczają tych założeń wyjściowych na poziomie grup – bez profili jednostek i bez kupowanych segmentów third-party.</li><li>Według Digiday syntetyczne grupy odbiorców wchodzą do codziennego planowania, ale ich jakość zależy od danych, na których je zbudowano.</li><li>Dobre strategie zimnego startu łączą hipotezy person, sygnały kontekstowe i świadomą eksplorację – i uczą się z każdą interakcją.</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>Jak personalizować reklamy dla ludzi, o których nic nie wiesz? Szczera odpowiedź: na poziomie jednostki – nie da się. Ale można znakomicie zrozumieć ludzi zainteresowanych daną kategorią i na podstawie garści sygnałów dopasować nowych użytkowników do odpowiedniej persony. To sedno działającej strategii zimnego startu.</p>
+<p>Jak intensywnie branża szuka alternatyw dla klasycznych danych o odbiorcach, widać w niedawnych publikacjach <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a>: syntetyczne grupy odbiorców przechodzą z eksperymentu do codziennej pracy planistycznej i strategicznej. Aveeno Body dzięki syntetycznym badaniom Vurvey skróciło czas potrzebny na brief strategiczny z około 30 dni do trzech. Goodway Group korzysta w planowaniu mediów z „syntetycznej populacji” konsumentów z USA, Wielkiej Brytanii i Niemiec, którą oferuje Arima.</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">Czym jest problem zimnego startu w reklamie?</h2>
+<p>Pojęcie pochodzi ze świata systemów rekomendacji. System uczący się z zachowań potrzebuje zachowań, z których może się uczyć – a nowy użytkownik jeszcze ich nie ma. Dlatego system serwuje średnią: bestsellery, ogólne przekazy, reklamę, która trochę działa na wszystkich, a na nikogo naprawdę.</p>
+<p>W reklamie problem się zaostrza. Kilka przeglądarek domyślnie blokuje pliki cookie stron trzecich, banery zgód są w Niemczech codziennością, a nie każdy klika „Akceptuj wszystkie”. Klasyczne wyjście, czyli kupowane segmenty, stało się z punktu widzenia ochrony danych bardziej problematyczne i i tak niewiele mówi o tym, dlaczego ktokolwiek kupuje. W regionie DACH (Niemcy, Austria i Szwajcaria), ukształtowanym przez RODO, „dokupimy więcej danych” przestało być strategią.</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">Dlaczego więcej danych nie rozwiązuje problemu</h2>
+<p>Badania nad jakością danych mają na to trzeźwą formułę: dane są tak dobre, jak ich przydatność do celu. Sama dokładność nie wystarczy; dane muszą być istotne, aktualne i dopasowane do konkretnego pytania. W literaturze określa się to mianem „fitness for use”, czyli przydatności do zastosowania.</p>
+<p>Kupiony segment, taki jak „kobiety, 25–34 lata, zainteresowane beauty”, jest sformułowany precyzyjnie. A jednak na pytanie „Co skłoniłoby tę osobę do wypróbowania naszego produktu?” jest prawie bezwartościowy. Opisuje cechy, a nie motywy. Zaangażowanie rodzi się ze zrozumienia, nie z liczb.</p>
+<p>Dla zimnego startu oznacza to, że kluczowym zasobem nie jest historia pojedynczego użytkownika, lecz solidny obraz motywów, obaw i języka w kategorii. A ten obraz można zbudować z publicznie dostępnych treści.</p>
+<h2 id="how-are-personas-built-from-public-content">Jak buduje się persony z publicznych treści?</h2>
+<p>Ludzie publicznie mówią zaskakująco dużo o tym, dlaczego kupują – albo nie: w komentarzach pod postami marek, w opiniach o produktach, w filmach twórców, w wątkach na forach. Te treści można zebrać, pogrupować według tematów i napięć i przetworzyć w persony – z prawdziwymi cytatami zamiast zmyślonych profili.</p>
+<p>Różnica względem klasycznej persony z warsztatu: opiera się na tym, co ludzie naprawdę mówią, a nie na tym, co zespół o nich zakłada. Digiday opisuje pokrewne podejście: dla marki Sacheu firma Limitless Labs analizuje tysiące filmów z TikToka i Instagrama z ekosystemu jej twórców, by budować persony.</p>
+<p>Ważne dla rynku niemieckiego: takie persony działają na poziomie wzorców i grup. Nie potrzebują profilu pojedynczych użytkowników, by wybrać pierwszy przekaz. Prawnej oceny Twojego konkretnego rozwiązania nadal powinien dokonać Twój doradca ds. ochrony danych.</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">Jakie są podejścia do zimnego startu?</h2>
+<div class="tw"><table>
+<thead><tr><th>Podejście</th><th>Podstawa danych</th><th>Mocna strona</th><th>Słabość</th></tr></thead>
+<tbody>
+<tr><td>Kupowane segmenty third-party</td><td>Zewnętrzne profile, pliki cookie</td><td>Szybko dostępne</td><td>Mały wgląd w motywy; problematyczne z punktu widzenia ochrony danych</td></tr>
+<tr><td>Targetowanie kontekstowe</td><td>Otoczenie, czas, lokalizacja, urządzenie</td><td>Działa bez danych osobowych</td><td>Niewiele mówi o motywacjach</td></tr>
+<tr><td>Dane zero-party</td><td>Odpowiedzi z quizów lub onboardingu</td><td>Bezpośrednie i oparte na zgodzie</td><td>Tylko od tych, którzy biorą udział; tarcie w lejku</td></tr>
+<tr><td>Syntetyczni odbiorcy</td><td>Modele oparte na danych z badań, statystyk i paneli</td><td>Szybka symulacja reakcji</td><td>Ciążenie ku średniej; jakość zależy od danych wejściowych</td></tr>
+<tr><td>Persony z publicznych treści</td><td>Komentarze, opinie, treści twórców, reklamy konkurencji</td><td>Prawdziwe motywy i język kategorii</td><td>Wymaga sygnałów, by dopasować poszczególnych użytkowników</td></tr>
+</tbody>
+</table></div>
+<p>Żadne podejście nie rozwiązuje problemu samo. W praktyce persony z publicznych treści dostarczają hipotez, sygnały kontekstowe – dopasowania, a dane first-party – potwierdzenia.</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">Jak wdrożyć personalizację przy zimnym starcie w sześciu krokach?</h2>
+<ol>
+<li><strong>Zbierz rozmowy z kategorii.</strong> Komentarze, opinie, treści twórców i reklamy konkurencji z ostatnich miesięcy – nie tylko o marce, ale o całej kategorii.</li>
+<li><strong>Zbuduj persony i napięcia.</strong> Pogrupuj treści według motywów i obaw. Trzy do pięciu wyraźnie różnych person wystarczy na start.</li>
+<li><strong>Napisz jedną hipotezę na personę.</strong> Jaki przekaz, jaki hook, jaka oferta pasuje? Przygotuj co najmniej jeden dedykowany wariant kreacji dla każdej persony.</li>
+<li><strong>Zdefiniuj sygnały dopasowania.</strong> Strona docelowa, wyszukiwana fraza, kontekst, źródło kampanii, pierwsze kliknięcia: zdecyduj, który sygnał wskazuje na którą personę.</li>
+<li><strong>Serwuj z eksploracją.</strong> Zarezerwuj część emisji na warianty, które nie pasują do zakładanej persony. Dzięki temu system wciąż się uczy, zamiast tylko potwierdzać własne założenie.</li>
+<li><strong>Zasilaj danymi first-party.</strong> Każda interakcja doprecyzowuje dopasowanie. Regularnie aktualizuj persony, bo rozmowy się zmieniają.</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">Jak przydatne są syntetyczne grupy odbiorców przy zimnym starcie?</h2>
+<p>Całkiem przydatne – jeśli zna się ich granice. W relacji Digiday nawet osoby zaangażowane zgłaszają zastrzeżenia: Chad Reynolds, CEO Vurvey, mówi, że duże modele językowe dostarczają szczytu krzywej dzwonowej, czyli najczęstszej odpowiedzi. Julie Clark z TransUnion ostrzega przed personami zbudowanymi na słabych danych wejściowych. A Stef Hoffman z Code &amp; Theory ujmuje to trafnie: wyniki wspierają osąd, ale go nie zastępują.</p>
+<p>Właśnie tu publiczne treści pokazują swoją wartość. To nie symulacja; to dowód. Jeśli persona twierdzi, że ludzie w Twojej kategorii boją się przede wszystkim kupić nie to, co trzeba, powinieneś móc zobaczyć posty, z których to twierdzenie pochodzi. Persona, której nie da się prześledzić, to tylko twierdzenie.</p>
+<p>Defy Monitor idzie tą drogą: treści odbiorców są automatycznie grupowane w persony i napięcia, a planowanie zaczyna się od prawdziwych rozmów, nie od demografii. To jeden z elementów <a href="/#platform">platformy Defy</a>, która daje niezależnym agencjom tę samą zdolność analityczną, którą wielkie sieci budowały za ciężkie pieniądze.</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">Skąd wiesz, że Twoja strategia zimnego startu działa?</h2>
+<p>Porównaj warianty oparte na personach z ogólną grupą kontrolną. Najbardziej wymowne są wskaźniki z początku życia nowych użytkowników: interakcja z pierwszą reklamą, głębokość pierwszej wizyty, czas do pierwszej konwersji. Jeśli warianty oparte na personach nie wygrywają, to nie porażka, lecz wskazówka: albo persony są chybione, albo sygnały dopasowania zbyt słabe.</p></div>
+<aside class="insight" aria-label="Kluczowy insight"><div class="eyebrow">Kluczowy insight</div><blockquote>Zaangażowanie rodzi się ze zrozumienia, nie z liczb.</blockquote><p>Badania nad jakością danych oceniają dane według ich przydatności do celu. Do dotarcia do nowych użytkowników prawdziwe motywy wydobyte z publicznych rozmów są często lepiej dopasowane do celu niż precyzyjne, ale pozbawione motywów dane segmentowe.</p></aside>
+<section class="prop" aria-label="Jak pomaga Defy">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Jak pomaga Defy<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Monitor automatycznie grupuje treści odbiorców Twojej kategorii w persony i napięcia. Planujesz na podstawie prawdziwych rozmów, a nie demografii – i dostajesz dokładnie te założenia wyjściowe, których brakuje przy zimnym starcie.</p><ul><li>Persony z motywami, obawami i językiem, wyprowadzone z publicznie opublikowanych treści.</li><li>Każdy wniosek AI można zweryfikować na podstawie prawdziwych postów, z których wynika.</li><li>Kreacje dla każdej persony można ocenić pod kątem klikalności jeszcze przed wydatkami mediowymi.</li><li>Dzięki Defy MCP możesz odpytywać persony i napięcia bezpośrednio w Claude.</li></ul><p>Zacznij od jednej kategorii i porównaj swoje dotychczasowe założenia z tym, co Twoi odbiorcy naprawdę mówią.</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=Problem%20zimnego%20startu%3A%20jak%20personalizowa%C4%87%20reklamy%2C%20gdy%20nie%20masz%20danych%20o%20u%C5%BCytkownikach" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">Rozpocznij rozmowę</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Zaloguj się do Defy</a></div>
+</section>
+<section class="faq" aria-label="Najczęściej zadawane pytania"><h2>Najczęściej zadawane pytania</h2><details open><summary>Co oznacza zimny start w reklamie?</summary><p>Zimny start (cold start) opisuje sytuację, w której system uczący się nie ma jeszcze danych behawioralnych o nowym użytkowniku, nowym produkcie lub nowym rynku. Personalizacja wraca wtedy do ogólnych przekazów. W reklamie dotyczy to głównie nowych klientów, premier produktów i wejść na rynek – czyli dokładnie tych sytuacji, w których liczy się pierwsze wrażenie.</p></details><details><summary>Czy można personalizować bez plików cookie stron trzecich?</summary><p>Tak. Sygnały kontekstowe, dane zero-party z quizów lub onboardingu, własne dane first-party oraz persony zbudowane z publicznych treści umożliwiają personalizację bez kupowanych profili cookie. Różnica: na początku personalizujesz dla grup o wspólnych motywach, a nie dla jednostek, a targetowanie doprecyzowujesz z każdą interakcją.</p></details><details><summary>Czym różnią się syntetyczne grupy odbiorców od person zbudowanych z publicznych treści?</summary><p>Syntetyczne grupy odbiorców to modele AI symulujące reakcje, zwykle oparte na danych z badań, statystyk i paneli. Persony zbudowane z publicznych treści z kolei wyciągają esencję z prawdziwych wypowiedzi, takich jak komentarze, opinie i filmy twórców. Jedno podejście nadaje się do szybkiej symulacji; drugie dostarcza weryfikowalnych dowodów na motywy i język. Oba podejścia można łączyć.</p></details><details><summary>Ile person potrzebuję na start?</summary><p>Na początek zwykle wystarczą trzy do pięciu wyraźnie różnych person. Więcej person brzmi precyzyjniej, ale rozprasza budżet i wysiłek kreatywny na zbyt wiele wariantów, zanim będzie dość danych, by się uczyć. Ważne, by persony naprawdę różniły się motywami i przekazami – a nie tylko wiekiem czy kodem pocztowym.</p></details></section>
+<section class="srcs"><h2>Źródła</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>Dlaczego napisaliśmy ten tekst</b>Napisaliśmy ten tekst, bo pytanie, jak personalizować przekaz dla nowych użytkowników bez wystarczających danych, wraca w zespołach marketingowych o technicznym nastawieniu – najczęściej na rynku niemieckim, wyczulonym na prywatność. Obecny wysyp syntetycznych grup odbiorców sprawia, że kwestia właściwej podstawy danych staje się pilniejsza.</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="Na tej stronie"><h4>Na tej stronie</h4><a href="#what-is-the-cold-start-problem-in-advertising">Czym jest problem zimnego startu w reklamie?</a><a href="#why-more-data-doesn-t-solve-the-problem">Dlaczego więcej danych nie rozwiązuje problemu</a><a href="#how-are-personas-built-from-public-content">Jak buduje się persony z publicznych treści?</a><a href="#what-approaches-are-there-to-the-cold-start">Jakie są podejścia do zimnego startu?</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">Jak wdrożyć personalizację przy zimnym starcie w sześciu krokach?</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">Jak przydatne są syntetyczne grupy odbiorców przy zimnym starcie?</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">Skąd wiesz, że Twoja strategia zimnego startu działa?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>Chcesz walczyć w wyższej kategorii wagowej?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">Rozpocznij rozmowę</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Zaloguj się do Defy</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>Więcej na blogu<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/pl/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="Czarno-białe zdjęcie ludzi widzianych od tyłu, idących przez ośnieżony park wydeptaną na skróty ścieżką, podczas gdy utwardzona alejka pusto się zakręca, a na śniegu leży mały czerwony kwadrat." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight i strategia</div><h3>AI a zachowania konsumentów: dlaczego agencje muszą przebudować pracę z insightem</h3><p>Gdy ludzie pytają chatboty, a algorytmy kuratorują ich feedy, klasyczne metody pracy z insightem się starzeją. Co stratedzy powinni robić teraz inaczej – i czego AI za nich nie zrobi.</p><div class="meta"><span>7 min czytania</span></div></div></a><a class="card" href="/blog/pl/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="Czarno-białe zdjęcie wystawy domu towarowego przystrajanej na święta: za szybą stoją pudła z bombkami i goła choinka, a na pierwszym planie widać wskaźnik, którego wskazówka zbliża się do małego czerwonego znacznika progu." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight i strategia</div><h3>Boże Narodzenie 2026: social listening jako system wczesnego ostrzegania dla agencji</h3><p>Przeanalizujesz to w styczniu, a święta już się skończą. Jak agencje używają social listeningu, by wcześnie wychwycić nastroje zakupowe, presję cenową i promocje konkurencji.</p><div class="meta"><span>7 min czytania</span></div></div></a><a class="card" href="/blog/pl/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="Czarno-biała martwa natura z różnymi, niedopasowanymi paskami miarowymi leżącymi na stosie wydruków na papierze w kratkę; w poprzek leży jeden długi stalowy liniał z małą czerwoną zakładką na końcu." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight i strategia</div><h3>Pomiar zaangażowania cross-platform: czas pożegnać agencyjny arkusz kalkulacyjny</h3><p>Każda platforma liczy zaangażowanie po swojemu. Metoda, metryki i kryteria wyboru narzędzi do wiarygodnego pomiaru cross-platform – bez zszywanego ręcznie arkusza.</p><div class="meta"><span>7 min czytania</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/pl/">← Wróć do bloga</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Kontakt">
+<h2>Chcesz walczyć w wyższej kategorii wagowej?</h2>
+<p>Zobacz zaplecze analityczne, którego wielkie sieci agencyjne tak pilnie strzegą. Bez pitchowania — po prostu rozmowa.</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">Rozpocznij rozmowę</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Zaloguj się do Defy</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>Platforma do insightów i automatyzacji dla agencji, które walczą w wyższej kategorii wagowej.</p></div>
+<div><h4>Defy</h4><a href="/#main">Główna</a><a href="/#platform">Platforma</a><a href="/#clients">Klienci</a><a href="/#team">Zespół</a></div>
+<div class="df-langs"><h4>Blog</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>Kontakt</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Zaloguj się</a><a href="/llms.txt">llms.txt</a><a href="/blog/pl/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. Wszelkie prawa zastrzeżone.</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>
