@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エージェンシーのAI ROIの測り方：まず成功を定義する | Defy</title>
+<meta name="description" content="ベースライン、目標、テスト、レビュー。エージェンシーがAIのROIを測り、チェック時間とAIドラッグを数え、自動化が本当に元を取れているかを見極める簡単な方法。">
+<link rel="canonical" href="https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="エージェンシー AI ROI 測定, エージェンシーでAIのROIを測る方法, AIでエージェンシーの時間は節約できているか, レポート自動化 エージェンシー, AIの隠れたコスト, AIパイロットの成功基準">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/define-success-before-deploying-ai-agency/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/define-success-before-deploying-ai-agency/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/">
+<meta property="og:title" content="エージェンシーのAI ROIの測り方：導入前に成功を定義する">
+<meta property="og:description" content="ベースライン、目標、テスト、レビュー。エージェンシーがAIのROIを測り、チェック時間とAIドラッグを数え、自動化が本当に元を取れているかを見極める簡単な方法。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d55-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="エージェンシーのAI ROIの測り方：導入前に成功を定義する">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T13:25:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T13:25:00+08:00">
+<meta property="article:section" content="エージェンシー経営">
+<meta property="article:tag" content="AI ROI">
+<meta property="article:tag" content="エージェンシーのレポーティング">
+<meta property="article:tag" content="AIコスト">
+<meta property="article:tag" content="自動化">
+<meta property="article:tag" content="エージェンシーの収益性">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="エージェンシーのAI ROIの測り方：導入前に成功を定義する">
+<meta name="twitter:description" content="ベースライン、目標、テスト、レビュー。エージェンシーがAIのROIを測り、チェック時間とAIドラッグを数え、自動化が本当に元を取れているかを見極める簡単な方法。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d55-ja.jpg">
+<meta name="twitter:image:alt" content="エージェンシーのAI ROIの測り方：導入前に成功を定義する">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defyジャーナル" href="/blog/ja/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/#article","url":"https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/","mainEntityOfPage":"https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/","headline":"エージェンシーのAI ROIの測り方：導入前に成功を定義する","alternativeHeadline":"エージェンシーのAI ROIの測り方：まず成功を定義する","description":"ベースライン、目標、テスト、レビュー。エージェンシーがAIのROIを測り、チェック時間とAIドラッグを数え、自動化が本当に元を取れているかを見極める簡単な方法。","abstract":"何かを稼働させる前に、成功とは何かを決めておきましょう。まず、現在その仕事がどのくらいの成果を出しているかを測ります（ベースライン）。次に、変更を正当化できる改善幅を設定し（目標）、AIワークフローを従来のやり方と比較して実行し（テスト）、最後に、アウトプットのチェックと修正を含む全コストを数えます（レビュー）。AIのアウトプットの修正に、節約した時間が食われてしまうなら、何も得ていません。","image":["https://defygroup.ai/assets/blog/og/d55-ja.jpg","https://defygroup.ai/assets/blog/hero/d55.jpg","https://defygroup.ai/assets/blog/diagrams/d55-diagram.jpg"],"datePublished":"2026-10-16T13:25:00+08:00","dateModified":"2026-10-16T13:25:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"Defy編集部","url":"https://defygroup.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"エージェンシー経営","keywords":"エージェンシー AI ROI 測定, エージェンシーでAIのROIを測る方法, AIでエージェンシーの時間は節約できているか, レポート自動化 エージェンシー, AIの隠れたコスト, AIパイロットの成功基準","wordCount":1777,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/ja/#blog","name":"Defy — Defyジャーナル"},"about":[{"@type":"Thing","name":"AI ROI"},{"@type":"Thing","name":"エージェンシーのレポーティング"},{"@type":"Thing","name":"AIコスト"},{"@type":"Thing","name":"自動化"},{"@type":"Thing","name":"エージェンシーの収益性"}],"citation":[{"@type":"CreativeWork","name":"Abrechnungsmodelle: Das Märchen von der kostenlosen KI ist vorbei","url":"https://www.horizont.net/agenturen/kommentare/abrechnungsmodelle-das-maerchen-von-der-kostenlosen-ki-ist-vorbei-236118","datePublished":"2026-10-07","publisher":{"@type":"Organization","name":"Horizont"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/define-success-before-deploying-ai-agency/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"エージェンシーでAIを測るときの、良いベースラインとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"現在のプロセスを、関わるすべての人、すべての引き継ぎ、すべての修正ラウンドを数えながら、複数サイクルにわたって最初から最後まで計測します。時間だけでなく、ミスややり直しも記録しましょう。たまたま異例にスムーズだった1週間から作ったベースラインは従来のやり方を実際より良く見せ、推測から作ったものは新しいやり方を良く見せます。どちらでも、比較は意味をなさなくなります。"}},{"@type":"Question","name":"エージェンシーは、AIの計算コストをクライアントに別途請求すべきですか？","acceptedAnswer":{"@type":"Answer","text":"始めているところもあります。Horizontによると、MutaborはAIの計算コストを「M-Credit」と呼ぶ独立した項目として表示する予定で、その根拠は、プロフェッショナルなAIの仕事がかなりの計算能力を消費するというものです。別途請求するにせよ、料金に組み込むにせよ、最初の一歩は自社にかかるコストを把握することで、それは測定しなければ不可能です。"}},{"@type":"Question","name":"ROIにチェック時間を含めるには、どうすればよいですか？","acceptedAnswer":{"@type":"Answer","text":"追跡する活動として扱いましょう。AIのアウトプットをチェックする人に、レビュー、修正、再実行にかけた時間を、下書き作成とは別に記録してもらいます。シンガポールで共有された週次レポートの例では、ハルシネーションの修正に約4時間かかり、1時間を目標にしたワークフローの成果を帳消しにしました。この項目がなければ、節約は本物に見えて、実はそうではありません。"}},{"@type":"Question","name":"AIのパイロットは、いつ止めるべきですか？","acceptedAnswer":{"@type":"Answer","text":"入力、データ、指示の修正を試みたあとでも、事前に合意した目標に届かないときです。止めることは失敗ではなく、有効な結果です。AIが基準を満たせる仕事のために、予算と注意を解放できるからです。本当の間違いは、成功が何かを定義していなかったために、パイロットが漫然と続いてしまうことです。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"ジャーナル","item":"https://defygroup.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"エージェンシーのAI ROIの測り方：導入前に成功を定義する","item":"https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">このページの内容</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — メイン"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="メインナビゲーション">
+<a href="/#main">メイン</a>
+<a href="/#platform">プラットフォーム</a>
+<a href="/#clients">クライアント</a>
+<a href="/#team">チーム</a>
+<a href="/blog/ja/" class="on">ジャーナル</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">ログイン</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">ご相談はこちら</a>
+<button class="menu" aria-label="メニュー" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="パンくずリスト"><a href="/#main">ホーム</a><span>/</span><a href="/blog/ja/">ジャーナル</a><span>/</span><span>エージェンシー経営</span></nav>
+<header class="a-head">
+<div class="eyebrow">エージェンシー経営</div>
+<h1 itemprop="headline">エージェンシーのAI ROIの測り方：導入前に成功を定義する<span class="sq"></span></h1>
+<p class="dek" itemprop="description">数分でレポートを下書きするAIでも、修正に余分な4時間かかることがあります。エージェンシーがAI導入前に成功を定義し、全コストを数える方法を紹介します。</p>
+<div class="a-meta">
+<span><b>Defy編集部</b></span>
+<span>公開日 <time datetime="2026-10-16T13:25:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+<span>約7分で読めます</span>
+<span class="langs"><details class="lsw"><summary aria-label="言語: 日本語"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>日本語</span></summary><div class="lsw-p"><div class="lsw-h">他の言語で読む</div><a href="/blog/define-success-before-deploying-ai-agency/" hreflang="en" lang="en">English</a><a href="/blog/fr/define-success-before-deploying-ai-agency/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/define-success-before-deploying-ai-agency/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/define-success-before-deploying-ai-agency/" hreflang="es" lang="es">Español</a><a href="/blog/pt/define-success-before-deploying-ai-agency/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/define-success-before-deploying-ai-agency/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/define-success-before-deploying-ai-agency/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/define-success-before-deploying-ai-agency/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/define-success-before-deploying-ai-agency/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/define-success-before-deploying-ai-agency/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/define-success-before-deploying-ai-agency/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/blog/ko/define-success-before-deploying-ai-agency/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/define-success-before-deploying-ai-agency/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/define-success-before-deploying-ai-agency/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/define-success-before-deploying-ai-agency/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/define-success-before-deploying-ai-agency/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d55-768.webp 768w, /assets/blog/hero/d55-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d55.jpg" alt="デスクの上の2つの砂時計の白黒写真。小さな赤い正方形の印がついた左側は砂が落ち切り、右側はまだ落ち続けている。その横には、手作業で修正されるレポートの束がある。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="この記事が答える問い">
+<div class="eyebrow">この記事が答える問い</div>
+<p class="q">「AIが本当にエージェンシーの時間とお金を節約しているのか、特にレポーティングでどう判断すればよいでしょうか？」</p>
+<p class="ans"><b>結論</b>何かを稼働させる前に、成功とは何かを決めておきましょう。まず、現在その仕事がどのくらいの成果を出しているかを測ります（ベースライン）。次に、変更を正当化できる改善幅を設定し（目標）、AIワークフローを従来のやり方と比較して実行し（テスト）、最後に、アウトプットのチェックと修正を含む全コストを数えます（レビュー）。AIのアウトプットの修正に、節約した時間が食われてしまうなら、何も得ていません。</p>
+</section>
+<section class="kt takeaways"><h2>この記事のポイント</h2><ul><li>AIを導入する前に、成功を定義しましょう。ベースライン（今その仕事がどう成果を出しているか）、目標（何があれば正当化できるか）、テスト（従来のやり方との比較）、レビュー（全コストに見合ったか）です。</li><li>ある週次レポートの例では、1時間を目標にしたAIワークフローは安上がりに見えましたが、ハルシネーションの修正に約4時間かかり、正味の効果はゼロでした。</li><li>AIドラッグとは、最初から正しく仕事をした場合より、AIのアウトプットの編集に多くの時間を費やしてしまう状態のことです。</li><li>Horizontによると、MutaborはAIの計算コストを別建ての「M-Credit」として請求する予定で、AIの隠れたコストがエージェンシーの請求書に載り始めていることを示しています。</li><li>何を構築しても、継続的な投資と専任のリソースが必要になります。完成品ではなく、変化に備えて予算を組みましょう。</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>AIが本当にエージェンシーの時間とお金を節約しているかどうかは、どう判断すればよいのでしょうか。何かを稼働させる前に、成功とは何かを決めましょう。仕事の現状を測り、変更を正当化できる改善幅を設定し、AIワークフローを従来のやり方と比較してテストし、そのうえで、AIが生み出したものをチェックし修正するのにかかった時間を含む全コストをレビューします。</p>
+<p>全コストは、無視しにくくなっています。ドイツの業界紙<a href="https://www.horizont.net/agenturen/kommentare/abrechnungsmodelle-das-maerchen-von-der-kostenlosen-ki-ist-vorbei-236118" rel="noopener" target="_blank">Horizont</a>に寄せたゲスト論評で、エージェンシーMutaborの幹部2人は、「無料のAI」というおとぎ話は終わったと論じています。プロフェッショナルなAIの仕事は、多くのプロセスを飛躍的に加速させる一方で、かなりの計算能力を消費すると彼らは書いています。Mutaborは今後、クライアントへの提案書に、AIの計算コストを独立した項目として表示します。これを同社は「M-Credit」と呼んでいます。</p>
+<p>計算コストが無料でないなら、その周りの人間の時間も無料ではありません。今週シンガポールで開かれたAI導入セッションで、あるエージェンシー創業者が、その両方を数えるためのシンプルなフレームワークと、それがなぜ重要かを示す週次レポートの話を紹介しました。</p>
+<h2 id="why-is-ai-roi-so-hard-to-measure-in-agencies">なぜエージェンシーではAIのROIが測りにくいのでしょうか？</h2>
+<p>主な理由は、出発点を誰も書き留めていないことです。エージェンシーが自社のプロセスを計測することはまれです。月次レポートにどれくらいかかるかと尋ねても、返ってくるのは「1日くらい」「クライアントによる」、あるいは肩をすくめる仕草です。</p>
+<p>そこへAIが、一見明らかな節約とともに登場します。下書きは数分で出てきます。誰も計測しないのは、その後に起こることのすべてです。数字のチェック、コメンタリーの書き直し、誤った月を引用したグラフの修正、クライアントの背景の説明のやり直し。これらの時間は複数の人と複数の日に散らばっているため、コストとして表に出ることがありません。</p>
+<p>その結果、誰もが信じたがる物語だけが残り、それを裏付ける証拠も、否定する証拠もありません。</p>
+<h2 id="what-does-define-success-before-you-deploy-mean">「導入前に成功を定義する」とは、どういう意味ですか？</h2>
+<p>創業者のフレームワークは4つのステップからなり、図に示すとおり、順番に進みます。それぞれに、彼のスライドにあった問いが1つ付いています。</p>
+<div class="tw"><table>
+<thead><tr><th>ステップ</th><th>問い</th><th>何を測るか</th><th>週次のクライアントレポートに当てはめると</th></tr></thead>
+<tbody>
+<tr><td>1. ベースライン</td><td>今、その仕事はどう成果を出しているか？</td><td>1サイクルあたりの時間、関わる人、ミスとやり直し</td><td>現在のレポートを、数週間にわたって最初から最後まで計測する</td></tr>
+<tr><td>2. 目標</td><td>どんな改善があれば正当化できるか？</td><td>事前に合意した具体的な数値</td><td>1レポートあたり1時間、人がチェックする前提</td></tr>
+<tr><td>3. テスト</td><td>従来のやり方と比較する</td><td>同じ仕事を両方の方法で、同じ品質基準で</td><td>実際のレポートで、AIワークフローを手作業と並行して実行する</td></tr>
+<tr><td>4. レビュー</td><td>全コストに見合ったか？</td><td>チェックと修正を含むすべての時間に、ツールと計算のコストを加えたもの</td><td>下書きの時間だけでなく、編集の時間も数える</td></tr>
+</tbody>
+</table></div>
+<p>どれも高度なことではありません。それがポイントです。あまりに基本的なステップなので、導入を急ぐあまり、真っ先に省かれてしまうのです。</p>
+<figure class="diagram"><picture><source type="image/webp" srcset="/assets/blog/diagrams/d55-diagram-1536.webp"><img src="/assets/blog/diagrams/d55-diagram.jpg" alt="「導入前に成功を定義する」というタイトルで、ベースライン、目標、テスト、レビューの4つのステップが順に並ぶ図。" width="1536" height="1024" loading="lazy"></picture><figcaption>AI導入前に成功を定義する4つのステップ：ベースライン、目標、テスト、レビュー。2026年10月にシンガポールで開かれたAI導入セッションで共有されたフレームワーク。</figcaption></figure><h2 id="what-happened-when-one-agency-automated-its-weekly-report">あるエージェンシーが週次レポートを自動化したら、何が起きたのでしょうか？</h2>
+<p>創業者の例では、あるマーケティングエージェンシーが、週次レポートをAIに任せようとしました。目標は明確でした。人間がアウトプットをチェックする前提で、1時間まで短縮することです。机上では、AIワークフローは安上がりに見えました。</p>
+<p>そしてレビューが来ました。ハルシネーション、つまり自信満々に述べられた誤った数字の修正に、さらに約4時間かかっていました。正味の効果は、ゼロです。</p>
+<p>ベースラインと目標がなければ、そのエージェンシーはおそらく勝利宣言をしていたでしょう。下書きは速くなりました。ツールは見事でした。時間が単に執筆から修正へ移っただけだと示したのは、全コストのレビューでした。多くのエージェンシーでは、その修正が、数字がどうあるべきかを知るのは自分たちだけという理由で、より上級の人に回ってきます。</p>
+<h2 id="what-is-ai-drag-and-how-do-i-spot-it">AIドラッグとは何で、どう見つければよいですか？</h2>
+<p>AIドラッグとは創業者の用語で、AIが生み出したものの編集に、最初から正しく仕事をした場合より多くの時間を費やしてしまう時点を指します。多くのAIパイロットにかかる見えない税であり、それが自ら名乗り出ることはほとんどありません。次のようなサインに注意しましょう。</p>
+<ul>
+<li>下書きの時間は減る一方で、編集の時間がひそかに増えていく。</li>
+<li>以前は定型だったアウトプットのチェックに、上級者が駆り出される。</li>
+<li>同じ修正が毎週繰り返される。</li>
+<li>「重要な」クライアントについては、以前のやり方に戻ってしまう。</li>
+<li>ツールが何を節約するのかは誰にも言えず、何を生み出すのかしか言えない。</li>
+</ul>
+<p>2つ以上当てはまるなら、いったん止めてレビューのステップをやり直しましょう。AIドラッグは、AIをやめる理由ではありません。規模を広げる前に、ワークフロー、データ、指示を直す必要があるというサインです。</p>
+<h2 id="why-does-this-keep-happening">なぜこれは繰り返されるのか？</h2>
+<p>経済学者は、価格が真のコストを反映せず、資源が誤った場所に流れることを市場の失敗と呼びます。「無料」のAIは、エージェンシー内部での教科書的な例です。シートは安く、計算コストは見えず、チェック時間は誰の予算にも載っていません。何かが無料に見えると、人はそれを使いすぎ、使うべきでない場所にまで使ってしまいます。</p>
+<p>Horizontが説明するMutaborのM-Creditは、価格シグナルです。隠れたコストの1つを、クライアントに見えるようにします。エージェンシーも、社内で同じ規律が必要です。チェックと修正の時間をタイムシートに載せ、計算コストを数えましょう。そうすれば、効率は目に見えるものになり、この記事の背景にある洞察が成り立ちます。効率はイノベーションの母。本当の節約は、より良い仕事のための本当の時間を生み出します。</p>
+<h2 id="how-do-i-run-baseline-target-test-and-review-on-a-reporting">レポーティングのワークフローで、ベースライン、目標、テスト、レビューを実行するには、どうすればよいですか？</h2>
+<ol>
+<li><strong>繰り返し作成するレポートを1つ選ぶ。</strong>週次でも月次でも構いません。1つのクライアントで、フォーマットが安定しているものにします。</li>
+<li><strong>1か月間、時間を計測する。</strong>データの催促やミスの修正も含め、すべてのステップとすべての人を対象にします。これがベースラインです。</li>
+<li><strong>構築する前に目標に合意する。</strong>1レポートあたりの時間と許容できるエラー率を、アカウントリードとともに書き出します。</li>
+<li><strong>チェック担当者を指名する。</strong>品質に責任を持ち、チェックにかかる時間を記録する人を1人置きます。</li>
+<li><strong>両方のやり方を並行して実行する。</strong>複数サイクルにわたり、同じデータ、同じ品質基準で行います。</li>
+<li><strong>全コストをレビューする。</strong>下書き、チェック、修正、ツール料金、計算コストを、ベースラインと照らし合わせます。</li>
+<li><strong>判断する：拡大、修正、中止。</strong>目標を達成していれば展開します。AIドラッグが出ていれば、入力を直します。どちらもうまくいかなければ、止めて別の仕事を選びます。</li>
+</ol>
+<h2 id="what-should-agencies-budget-for-after-launch">ローンチ後、エージェンシーは何のために予算を確保すべきですか？</h2>
+<p>テストに合格しても、完成品ではありません。創業者の締めくくりの助言は、完成した約束ではなく、変化に向けて構築せよ、というものでした。何を構築しても、継続的な投資と専任のリソースが必要です。モデルは変わり、クライアントはKPIを変え、プラットフォームはデータを変えるからです。</p>
+<p>これは、自社で構築するか購入するかという判断に直結します。自前のレポート自動化を構築すれば、それが動き続ける限り保守も自社の責任です。たとえばDefy Agentsは、レポーティングやモニタリングなどの繰り返しの多い納品業務のためにエージェンティックなワークフローを実行し、保守の負担がチームにのしかかることはありません。グローバルなインフルエンサーエージェンシーのSAMYは、パフォーマンスレポートを効率化するためにこれらを導入し、3日かかっていた作業を1日に短縮しました。</p>
+<p>どの道を選ぶにせよ、まず4つのステップを実行しましょう。エージェント、モニタリング、データアクセスがどう組み合わさるかは<a href="/#platform">Defyプラットフォーム</a>でご覧いただけますが、ベースラインは自社で用意するしかありません。</p></div>
+<aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>効率こそ、イノベーションの母である。</blockquote><p>市場の失敗は、価格が真のコストを隠すときに起こります。「無料」のAIは計算コストとチェック時間を隠すため、エージェンシーは誤った場所で使いすぎてしまいます。全コストを測ることで価格シグナルが取り戻され、より良い仕事のための時間が生まれます。</p></aside>
+<section class="prop" aria-label="Defyができること">
+<div class="ph"><div class="eyebrow">Defy Monitor・Defy MCP・Defy Agents</div><h2>Defyができること<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Agentsは、ベースライン、目標、テスト、レビューの演習で浮かび上がりがちな、繰り返しの納品業務のために作られています。</p><ul><li><strong>繰り返しの納品業務を任せる：</strong>レポーティング、モニタリング、リサイズのためのエージェンティックなワークフローで、人は成果につながる仕事に集中できます。</li><li><strong>実践からの証拠：</strong>SAMYはDefy Agentsでパフォーマンスレポートを効率化し、3日かかっていた作業を1日に短縮しました。</li><li><strong>検証できるインサイト：</strong>エージェントがDefy Monitorのデータを使う場合、AIの結論はすべて、その根拠となる実際の投稿と照合できるため、レビューの時間は、出典探しではなく判断に使えます。</li></ul><p>レポートを1つ、1か月間計測してください。そのベースラインを持って私たちにご相談いただければ、それに照らしてテストできます。</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B7%E3%83%BC%E3%81%AEAI%20ROI%E3%81%AE%E6%B8%AC%E3%82%8A%E6%96%B9%EF%BC%9A%E5%B0%8E%E5%85%A5%E5%89%8D%E3%81%AB%E6%88%90%E5%8A%9F%E3%82%92%E5%AE%9A%E7%BE%A9%E3%81%99%E3%82%8B" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D55'})}catch(e){}">相談してみる</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D55'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>エージェンシーでAIを測るときの、良いベースラインとは何ですか？</summary><p>現在のプロセスを、関わるすべての人、すべての引き継ぎ、すべての修正ラウンドを数えながら、複数サイクルにわたって最初から最後まで計測します。時間だけでなく、ミスややり直しも記録しましょう。たまたま異例にスムーズだった1週間から作ったベースラインは従来のやり方を実際より良く見せ、推測から作ったものは新しいやり方を良く見せます。どちらでも、比較は意味をなさなくなります。</p></details><details><summary>エージェンシーは、AIの計算コストをクライアントに別途請求すべきですか？</summary><p>始めているところもあります。Horizontによると、MutaborはAIの計算コストを「M-Credit」と呼ぶ独立した項目として表示する予定で、その根拠は、プロフェッショナルなAIの仕事がかなりの計算能力を消費するというものです。別途請求するにせよ、料金に組み込むにせよ、最初の一歩は自社にかかるコストを把握することで、それは測定しなければ不可能です。</p></details><details><summary>ROIにチェック時間を含めるには、どうすればよいですか？</summary><p>追跡する活動として扱いましょう。AIのアウトプットをチェックする人に、レビュー、修正、再実行にかけた時間を、下書き作成とは別に記録してもらいます。シンガポールで共有された週次レポートの例では、ハルシネーションの修正に約4時間かかり、1時間を目標にしたワークフローの成果を帳消しにしました。この項目がなければ、節約は本物に見えて、実はそうではありません。</p></details><details><summary>AIのパイロットは、いつ止めるべきですか？</summary><p>入力、データ、指示の修正を試みたあとでも、事前に合意した目標に届かないときです。止めることは失敗ではなく、有効な結果です。AIが基準を満たせる仕事のために、予算と注意を解放できるからです。本当の間違いは、成功が何かを定義していなかったために、パイロットが漫然と続いてしまうことです。</p></details></section>
+<section class="srcs"><h2>出典</h2><ol><li><a href="https://www.horizont.net/agenturen/kommentare/abrechnungsmodelle-das-maerchen-von-der-kostenlosen-ki-ist-vorbei-236118" rel="noopener" target="_blank">Abrechnungsmodelle: Das Märchen von der kostenlosen KI ist vorbei</a> — Horizont, 2026-10-07</li></ol></section>
+<p class="note"><b>この記事を書いた理由</b>このコラムを書いたのは、「どうすればレポートを速く出せるか」が、エージェンシーがAIに最も任せたい雑務であり、「無料のAI」というおとぎ話は終わったとするHorizontの論評が、全コストを数えることを急務にしているからです。</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#why-is-ai-roi-so-hard-to-measure-in-agencies">なぜエージェンシーではAIのROIが測りにくいのでしょうか？</a><a href="#what-does-define-success-before-you-deploy-mean">「導入前に成功を定義する」とは、どういう意味ですか？</a><a href="#what-happened-when-one-agency-automated-its-weekly-report">あるエージェンシーが週次レポートを自動化したら、何が起きたのでしょうか？</a><a href="#what-is-ai-drag-and-how-do-i-spot-it">AIドラッグとは何で、どう見つければよいですか？</a><a href="#why-does-this-keep-happening">なぜこれは繰り返されるのか？</a><a href="#how-do-i-run-baseline-target-test-and-review-on-a-reporting">レポーティングのワークフローで、ベースライン、目標、テスト、レビューを実行するには、どうすればよいですか？</a><a href="#what-should-agencies-budget-for-after-launch">ローンチ後、エージェンシーは何のために予算を確保すべきですか？</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>規模の壁を越えて戦う準備はできていますか？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defyにログイン</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>ジャーナルの他の記事<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/ja/measure-ai-results-not-usage-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d56-768.webp"><img src="/assets/blog/hero/d56.jpg" alt="手前に使い終えた矢の大きな山と満杯の矢筒があり、弓の射手が遠くの藁の的に向かって歩いていく白黒写真。的の小さな赤い中心の近くには、数本の矢しか刺さっていない。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーのAI指標：クライアントが支払うのは利用ではなく成果</h3><p>クライアントは、AIを使ったかどうかを気にしません。仕事が良いかどうかを気にします。ブランドが時間への支払いから離れつつあるなか、重要になるAI指標を紹介します。</p><div class="meta"><span>約9分で読めます</span></div></div></a><a class="card" href="/blog/ja/agency-pricing-models-fair-ai-pricing/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d46-768.webp"><img src="/assets/blog/hero/d46.jpg" alt="白黒写真。夜遅くまで机で作業するデザイナーの背後で、壁の電力量計が回っている。ケーブルがコンピューターのタワーへ伸び、メーターの円盤には小さな赤いタブが付いている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>AI時代のエージェンシー料金モデル：適正に値付けし、利益率を手放さない</h3><p>AIでエージェンシーの仕事は速くなりますが、無料にはなりません。時間単価が圧力にさらされる理由、Mutabor の「M-Credit」が示すもの、そして時間ではなく価値が物を言うようにAIを値付けする方法。</p><div class="meta"><span>約8分で読めます</span></div></div></a><a class="card" href="/blog/ja/when-to-stop-an-agency-service/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d45-768.webp"><img src="/assets/blog/hero/d45.jpg" alt="白黒のクローズアップ写真。伸びすぎた盆栽を剪定ばさみで手入れする両手。テーブルには切り落とした枝が置かれ、これから切る枝には小さな赤い札が結ばれている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーのサービスを絞り込む：何を、いつやめるか</h3><p>提供サービスを絞り込むエージェンシーは、より速く成長します。やめるべきサービスの見極め方と、習慣ではなくデータで決める方法。</p><div class="meta"><span>約7分で読めます</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/ja/">← ジャーナル一覧に戻る</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="お問い合わせ">
+<h2>規模の壁を越えて戦う準備はできていますか？</h2>
+<p>大手エージェンシーネットワークが門外不出にしてきたインテリジェンス基盤をご覧ください。売り込みはしません。まずはお話ししましょう。</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>規模の壁を越えて戦うエージェンシーのための、インサイトと自動化のプラットフォーム。</p></div>
+<div><h4>Defy</h4><a href="/#main">メイン</a><a href="/#platform">プラットフォーム</a><a href="/#clients">クライアント</a><a href="/#team">チーム</a></div>
+<div class="df-langs"><h4>ジャーナル</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>お問い合わせ</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">ログイン</a><a href="/llms.txt">llms.txt</a><a href="/blog/ja/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited　無断転載・複製を禁じます。</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

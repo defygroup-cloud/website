@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>エージェンシー向けAIマーケティングツール：連携するスタックの作り方 | Defy</title>
+<meta name="description" content="既存システムと連携するエージェンシー向けAIマーケティングツールの選び方を解説。評価チェックリスト、7つの構築ステップ、契約上のポイントを紹介します。">
+<link rel="canonical" href="https://defygroup.ai/blog/ja/agency-ai-stack-integration/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="AIマーケティングツール 代理店向け, 広告代理店 AIツール, 代理店 AI導入, マーケティング自動化 代理店, マーテック 連携, AIツール 既存システム 連携">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/agency-ai-stack-integration/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/agency-ai-stack-integration/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ja/agency-ai-stack-integration/">
+<meta property="og:title" content="エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する">
+<meta property="og:description" content="既存システムと連携するエージェンシー向けAIマーケティングツールの選び方を解説。評価チェックリスト、7つの構築ステップ、契約上のポイントを紹介します。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d06-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T07:42:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:42:00+08:00">
+<meta property="article:section" content="AIトランスフォーメーション">
+<meta property="article:tag" content="AIツール">
+<meta property="article:tag" content="エージェンシー運営">
+<meta property="article:tag" content="マーテック">
+<meta property="article:tag" content="独立系エージェンシー">
+<meta property="article:tag" content="自動化">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する">
+<meta name="twitter:description" content="既存システムと連携するエージェンシー向けAIマーケティングツールの選び方を解説。評価チェックリスト、7つの構築ステップ、契約上のポイントを紹介します。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d06-ja.jpg">
+<meta name="twitter:image:alt" content="エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defyジャーナル" href="/blog/ja/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ja/agency-ai-stack-integration/#article","url":"https://defygroup.ai/blog/ja/agency-ai-stack-integration/","mainEntityOfPage":"https://defygroup.ai/blog/ja/agency-ai-stack-integration/","headline":"エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する","alternativeHeadline":"エージェンシー向けAIマーケティングツール：連携するスタックの作り方","description":"既存システムと連携するエージェンシー向けAIマーケティングツールの選び方を解説。評価チェックリスト、7つの構築ステップ、契約上のポイントを紹介します。","abstract":"AIマーケティングツールは、機能一覧ではなく連携のしやすさで選びましょう。まず最も工数を奪っているワークフローを2～3つ特定し、データが流れるべき経路を洗い出したうえで、唯一の信頼できる情報源を共有でき、結論の根拠を示せ、クライアント契約に明記できるツールを選びます。互いに連携しない気の利いたアプリを12個そろえるより、連携した3つのツールのほうが成果を上げます。","image":["https://defygroup.ai/assets/blog/og/d06-ja.jpg","https://defygroup.ai/assets/blog/hero/d06.jpg"],"datePublished":"2026-10-16T07:42:00+08:00","dateModified":"2026-10-16T07:42:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"Defy編集部","url":"https://defygroup.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AIトランスフォーメーション","keywords":"AIマーケティングツール 代理店向け, 広告代理店 AIツール, 代理店 AI導入, マーケティング自動化 代理店, マーテック 連携, AIツール 既存システム 連携","wordCount":1988,"timeRequired":"PT8M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/ja/#blog","name":"Defy — Defyジャーナル"},"about":[{"@type":"Thing","name":"AIツール"},{"@type":"Thing","name":"エージェンシー運営"},{"@type":"Thing","name":"マーテック"},{"@type":"Thing","name":"独立系エージェンシー"},{"@type":"Thing","name":"自動化"}],"citation":[{"@type":"CreativeWork","name":"AI reshapes agency economics, but their contracts are still scrambling to catch up","url":"https://digiday.com/marketing/ai-reshapes-agency-economics-but-their-contracts-are-still-scrambling-to-catch-up/","datePublished":"2026-09-10","publisher":{"@type":"Organization","name":"Digiday"}},{"@type":"CreativeWork","name":"Martech value gap poses threat to agency retention, Ingenuity Pulse report finds","url":"https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb","datePublished":"2026-09-24","publisher":{"@type":"Organization","name":"Campaign UK"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/agency-ai-stack-integration/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"エージェンシーにとってのAIマーケティングスタックとは？","acceptedAnswer":{"@type":"Answer","text":"エージェンシーのAIマーケティングスタックとは、クライアント、競合、オーディエンスのデータを収集し、それをインサイトに変え、納品業務を自動化するために連携したツール群のことです。重要なのは「連携」という言葉です。スタックは唯一の信頼できる情報源を共有し、手作業のエクスポートなしにツール間で作業を受け渡します。それぞれ別のログインと別のデータを持つバラバラのアプリの寄せ集めは、個々のアプリがどれほど優れていても、スタックとは呼べません。"}},{"@type":"Question","name":"エージェンシーにはAIツールがいくつ必要ですか？","acceptedAnswer":{"@type":"Answer","text":"多くのエージェンシーが現在抱えている数より少なくて済みます。ツールのカテゴリーではなく、ワークフローから考えましょう。必要なのは、クライアントやカテゴリーのデータを扱うインテリジェンス層、チームがそのデータに問いかけられるインターフェース、そして最も工数を奪っている2～3の納品業務を自動化する仕組みです。ツールを1つ増やすごとに保守すべき連携が増えるため、追加するツールはどれも、特定の雑務や手作業の受け渡しを1つ減らすものであるべきです。"}},{"@type":"Question","name":"AIツールを使う場合、クライアント契約を変更する必要がありますか？","acceptedAnswer":{"@type":"Answer","text":"少なくとも部分的には、おそらく必要です。Digidayによると、エージェンシーは既存の基本業務委託契約（MSA）を書き直すのではなく、AIに関する条項を追加して対応しています。多くの場合、そのきっかけはクライアントがエージェンシーのAIツールの利用権を求めたとき、AIに関する文言を求めたとき、あるいは新しいAIツールがそのプロジェクトで使われるときです。クライアントからは、データの利用、人間による監督、使用ツールの開示、成果物の所有権について質問されることが増えています。"}},{"@type":"Question","name":"小規模なエージェンシーは独自のAIツールを開発すべきですか？","acceptedAnswer":{"@type":"Answer","text":"ソフトウェア開発がビジネスモデルの一部である場合に限ります。独自ツールには、エンジニア、コネクター、そしてモデルやプラットフォームのAPIが変わるたびに続く保守が必要で、その負担はたいてい、本来クライアントワークのために採用された1～2人に降りかかります。多くの独立系エージェンシーにとっては、統合プラットフォームを導入し、自社の差別化につながるワークフローと判断力に労力を注ぐほうが、はるかに大きな成果を上げられます。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"ジャーナル","item":"https://defygroup.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する","item":"https://defygroup.ai/blog/ja/agency-ai-stack-integration/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">このページの内容</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — メイン"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="メインナビゲーション">
+<a href="/#main">メイン</a>
+<a href="/#platform">プラットフォーム</a>
+<a href="/#clients">クライアント</a>
+<a href="/#team">チーム</a>
+<a href="/blog/ja/" class="on">ジャーナル</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">ログイン</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">ご相談はこちら</a>
+<button class="menu" aria-label="メニュー" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="パンくずリスト"><a href="/#main">ホーム</a><span>/</span><a href="/blog/ja/">ジャーナル</a><span>/</span><span>AIトランスフォーメーション</span></nav>
+<header class="a-head">
+<div class="eyebrow">AIトランスフォーメーション</div>
+<h1 itemprop="headline">エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する<span class="sq"></span></h1>
+<p class="dek" itemprop="description">ほとんどのエージェンシーが持っているのは、AIスタックではなく、互いに連携しない気の利いたツールの山です。本当に重要な「連携」という観点から、AIマーケティングツールを見極める方法を解説します。</p>
+<div class="a-meta">
+<span><b>Defy編集部</b></span>
+<span>公開日 <time datetime="2026-10-16T07:42:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+<span>約8分で読めます</span>
+<span class="langs"><details class="lsw"><summary aria-label="言語: 日本語"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>日本語</span></summary><div class="lsw-p"><div class="lsw-h">他の言語で読む</div><a href="/blog/agency-ai-stack-integration/" hreflang="en" lang="en">English</a><a href="/blog/fr/agency-ai-stack-integration/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/agency-ai-stack-integration/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/agency-ai-stack-integration/" hreflang="es" lang="es">Español</a><a href="/blog/pt/agency-ai-stack-integration/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/agency-ai-stack-integration/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/agency-ai-stack-integration/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/agency-ai-stack-integration/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/agency-ai-stack-integration/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/agency-ai-stack-integration/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/agency-ai-stack-integration/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/blog/ko/agency-ai-stack-integration/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/agency-ai-stack-integration/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/agency-ai-stack-integration/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/agency-ai-stack-integration/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/agency-ai-stack-integration/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d06-768.webp 768w, /assets/blog/hero/d06-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d06.jpg" alt="作業台を真上から撮影したモノクロ写真。片側には接続されていないガジェットやケーブル、工具が絡み合い、もう片側には1本のベルトでつながれた3つの噛み合う歯車があり、中央の歯車には小さな赤い四角の印が付いている。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="この記事が答える問い">
+<div class="eyebrow">この記事が答える問い</div>
+<p class="q">「自社ではどのAIマーケティングツールを使うべきでしょうか？　また、既存のシステムと本当に連携させるにはどうすればよいでしょうか？」</p>
+<p class="ans"><b>結論</b>AIマーケティングツールは、機能一覧ではなく連携のしやすさで選びましょう。まず最も工数を奪っているワークフローを2～3つ特定し、データが流れるべき経路を洗い出したうえで、唯一の信頼できる情報源を共有でき、結論の根拠を示せ、クライアント契約に明記できるツールを選びます。互いに連携しない気の利いたアプリを12個そろえるより、連携した3つのツールのほうが成果を上げます。</p>
+</section>
+<section class="kt takeaways"><h2>この記事のポイント</h2><ul><li>エージェンシーのAIスタックの価値は、含まれるツールの数ではなく、ツール同士がどう連携しているかで決まります。</li><li>CampaignはIngenuity Pulseの調査を報じる中で、マーテック投資の成果に満足しているマーケターは3人に1人しかいないと伝えており、このギャップはエージェンシーとの関係を危うくしています。</li><li>Digidayによると、エージェンシーは既存の契約にAI関連の条項を一つずつ追加しています。多くの場合、そのきっかけはクライアントがツールへのアクセスを求めたとき、AIに関する文言を求めたとき、あるいは新しいAIツールがそのプロジェクトに関わるときです。</li><li>新たなツールを購入する前に、1つのワークフローを最初から最後まで書き出し、データが再入力されたり、エクスポートされたり、失われたりしている箇所をすべて洗い出しましょう。</li><li>スタック内のすべてのツールについて、何をするのか、どのデータに触れるのか、その結論をどう検証できるのかを、クライアントに説明できるようにしておくべきです。</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>エージェンシーはどのAIマーケティングツールを使うべきでしょうか？　まずは別の問いから始めましょう。既存の環境と連携し、クライアントが目で見て、検証し、対価を払える成果を生み出すのはどのツールか、という問いです。エージェンシーにとっては、連携こそが機能です。それ以外はすべてデモにすぎません。</p>
+<p>クライアントも同じような問いを投げかけています。<a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Campaign</a>はIngenuity Pulseの調査を報じる中で、マーテック投資の成果に満足しているマーケターは3人に1人にとどまると伝え、この価値のギャップをエージェンシーの契約継続に対する脅威と位置づけています。一方、<a href="https://digiday.com/marketing/ai-reshapes-agency-economics-but-their-contracts-are-still-scrambling-to-catch-up/" rel="noopener" target="_blank">Digiday</a>は、エージェンシーが既存の基本業務委託契約（MSA）にAI関連の条項を一つずつ継ぎ足していると報じています。Mile MarkerのCEOは同誌に「今はもう、既存のMSAにそのまま組み込んでいる段階です」と語っています。スタックも契約も、その場しのぎで継ぎ接ぎされているのです。</p>
+<h2 id="why-do-agencies-end-up-with-a-pile-of-ai-tools-instead-of-a">なぜエージェンシーは、スタックではなくAIツールの山を抱えてしまうのでしょうか？</h2>
+<p>どの購入も、その時点では理にかなっていたからです。従業員40人の独立系エージェンシーを想像してみてください。ストラテジー部門はピッチのためにソーシャルリスニングツールを導入しました。ソーシャルチームは別の広告ライブラリを使っています。全員がチャットボットのアカウントを持ち、それぞれ違う使い方をしています。誰かがレポーティング用のコネクターを追加し、スタジオは画像生成ツールを愛用し、プロジェクト管理ソフトには今や誰も押さないAIボタンが付いています。</p>
+<p>一つひとつのツールに問題はありません。しかし組み合わさると、エクスポートとコピー＆ペースト、そして5通りの「真実」が生まれます。月次レポートは今も毎月最終木曜日に手作業でまとめられ、競合調査は今も誰かが3月に作ったデッキの中に眠っています。</p>
+<p>大手ホールディングカンパニー系のネットワークは、データ・AIチームを雇ってすべてをつなぎ込むことでこの問題に対処しました。独立系エージェンシーにそうしたチームがあることはまれなため、つなぎ込みの作業は「テクノロジーに強い」誰かに回ってきます。たいていは、クライアント業務を目いっぱい抱えたうえでの追加作業です。</p>
+<h2 id="why-it-keeps-happening-a-systems-problem-not-a-tools-problem">なぜ繰り返されるのか：ツールの問題ではなく、システムの問題</h2>
+<p>システム理論は、最も分かりやすい説明を与えてくれます。システムの成果は、個々の部品そのものではなく、部品同士の関係から生まれます。互いの音が聞こえない優れたバイオリニストと優れたドラマーがいても、オーケストラにはなりません。生まれるのは雑音です。</p>
+<p>エージェンシーにおける「関係」とは、業務の受け渡しのことです。リスニングデータから戦略デッキへ、デッキからブリーフへ、ブリーフからクリエイティブへ、クリエイティブからメディアへ、メディアからレポートへ。誰かがスプレッドシートをエクスポートしなければ成り立たない受け渡しは、どれもインサイトが漏れ出し、時間が消えていく場所です。</p>
+<p>計算は容赦ありません。5つのツールの間には、10通りの接続がありえます。ツールが10個なら45通りです。気の利いた新しいアプリを追加しても、能力が1つ増えるわけではありません。誰かが管理しなければならない新たな受け渡しが、ひとまとまり増えるのです。大きなスタックが小さなスタックより遅く感じられることが多いのは、そのためです。</p>
+<h2 id="what-should-i-look-for-when-evaluating-ai-marketing-tools">AIマーケティングツールを評価する際は、何を確認すべきでしょうか？</h2>
+<p>各ツールは、機能一覧ではなく、自社のシステムの中でどう機能するかで判断しましょう。デモが契約に変わる前に確認しておくべき質問は、次のとおりです。</p>
+<div class="tw"><table>
+<thead><tr><th>基準</th><th>確認すべき質問</th><th>危険信号</th></tr></thead>
+<tbody>
+<tr><td>データの共有</td><td>既に保有しているデータを読み込み、書き込めるか？</td><td>「CSVをエクスポートしてアップロードするだけです」</td></tr>
+<tr><td>トレーサビリティ</td><td>AIが出したすべての結論について、その根拠を確認できるか？</td><td>根拠を示さない自信満々の回答</td></tr>
+<tr><td>クライアントのアクセス</td><td>クライアントにアカウントを付与し、そのデータを分離して管理できるか？</td><td>共有ログインで、権限設定がない</td></tr>
+<tr><td>契約への対応</td><td>何をするのか、どのデータに触れるのか、成果物の所有者は誰かを明記できるか？</td><td>データ利用や知的財産に関する曖昧な規約</td></tr>
+<tr><td>定着までのコスト</td><td>チームが普段使っている環境の中で使えるか？</td><td>全員が覚えなければならない、また新しいダッシュボード</td></tr>
+<tr><td>保守</td><td>プラットフォームがAPIを変更したとき、誰が修正するのか？</td><td>「御社の開発者で対応できますよ」</td></tr>
+<tr><td>ワークフローとの適合</td><td>具体的にどの雑務をなくしてくれるのか？</td><td>「何でもできるプラットフォーム」をうたっている</td></tr>
+</tbody>
+</table></div>
+<p>契約の項目は、以前よりも重要になっています。Digidayによると、クライアントは今や、人間による監督、補償、使用ツールの開示、AI生成物の所有権について契約条件を求めています。Reed SmithのパートナーであるKeri Bruce氏は「結局のところ、人々が求めているのは開示です。どのツールが使われているのかを知りたいのです」と述べています。クライアントに説明できないツールは、そのクライアントの案件で安心して使えるツールではありません。</p>
+<h2 id="how-do-i-build-an-ai-stack-that-works-with-my-existing-syste">既存のシステムと連携するAIスタックは、どう構築すればよいでしょうか？</h2>
+<p>ベンダーのリストを起点に考えるのではなく、ワークフローを起点に考えましょう。実践的な手順は次のとおりです。</p>
+<ol>
+<li><strong>最も負担の大きい2つのワークフローを選ぶ。</strong>月次レポート、競合調査、進捗確認ミーティング、手作業でのリサイズなどが、よくある候補です。ベースラインを把握するため、それらにかかる時間を1か月間記録しましょう。</li>
+<li><strong>データの経路を描く。</strong>1枚の紙に、データがどこから始まり、どのシステムを通り、誰かが手作業で別の場所にコピーしている箇所がどこかを、すべてたどります。そうした箇所こそが、連携すべきターゲットです。</li>
+<li><strong>軸となる基盤を1つ決める。</strong>クライアント、競合、オーディエンスのデータを置くインテリジェンス層を1つに決めます。他のツールは独自のコピーを持つのではなく、そこからデータを読み込むようにします。</li>
+<li><strong>AIは、人が普段仕事をしている場所に置く。</strong>別途ログインが必要なツールは、金曜日には誰も使わなくなっているでしょう。既に使っているツールの中からデータに問いかけられるアシスタントなら、定着します。</li>
+<li><strong>1つの雑務を、端から端まで自動化する。</strong>10個のタスクをそれぞれ1割ずつ削るより、手作業で苦労していた月次レポートを1本、人がチェックするだけの自動ドラフトに変えるほうが効果的です。</li>
+<li><strong>契約書類に明記する。</strong>Digidayが挙げた3つのきっかけをチェックリストとして使いましょう。クライアントが自社のAIツールの利用権を求めたとき、クライアントがAIに関する文言を求めたとき、新しいAIツールがそのプロジェクトで使われるときです。それぞれに対応する標準の補足条項を用意しておきます。</li>
+<li><strong>四半期ごとに何かを廃止する。</strong>すべてのツールは、自らが増やす連携に見合う価値を示さなければなりません。なくなっても誰も気づかないなら、停止しましょう。</li>
+</ol>
+<h2 id="should-independent-agencies-build-their-own-ai-stack-or-buy">独立系エージェンシーは、AIスタックを自社開発すべきでしょうか、それとも購入すべきでしょうか？</h2>
+<p>自社開発を進めるエージェンシーもあります。Digidayは、独自ツールを通じてソフトウェア企業型のモデルへと移行し、報酬の受け取り方が変わりつつあるエージェンシーの動きを伝えています。VMLのBrian Yamada氏は同誌に、業界がAIのコスト構造について合意するまでは、標準的な契約文言を作成するのは難しいだろうと語っています。</p>
+<p>ソフトウェアがビジネスモデルの一部であれば、自社開発は理にかなっています。しかし、多くの独立系エージェンシーにとってはそうではありません。独自のスタックには、エンジニア、プラットフォームがAPIを変えるたびに壊れるコネクター、そして壊れたときに対応する担当者が必要です。大手ホールディングカンパニー系のネットワークは、まさにこのために巨額の資金を投じてきました。社内でそれに対抗しようとする独立系エージェンシーは、たいてい壊れやすい模倣品と、疲れ果てたデジタル責任者を抱えることになります。</p>
+<p>統合プラットフォームを導入するのが近道です。<a href="/#platform">Defyプラットフォーム</a>は、まさにこのギャップを埋めるために作られました。大手ホールディングカンパニー系と同等の分析力とAI機能を、開発コストや保守の負担なしに提供します。どちらを選ぶにしても、上の表のテストを当てはめてみてください。決め手は賢さではなく、つながりです。</p>
+<h2 id="how-do-i-prove-the-stack-is-worth-it-to-clients">スタックの価値を、クライアントにどう証明すればよいでしょうか？</h2>
+<p>マーテックの成果に満足しているマーケターが3分の1しかいないのなら、ツールの価値を示せるエージェンシーは優位に立てます。価値を示すとは、活動量ではなく成果を報告することです。</p>
+<ul>
+<li><strong>取り戻した時間を示す。</strong>自動化によって月次レポートのたびに1日を節約できたなら、その1日を何に使ったのかを伝えましょう。より鋭い競合分析、テスト計画、より良いブリーフなどです。</li>
+<li><strong>根拠を示す。</strong>クライアントは、自分で検証できるAIの結論を信頼します。すべての発見を、その背後にある投稿、広告、データにリンクさせましょう。</li>
+<li><strong>意思決定を示す。</strong>最も強力な証拠は、スタックが浮かび上がらせた何かによって、クライアントがより速く、あるいはより自信を持って下した意思決定です。</li>
+</ul>
+<p>ツールはコストの一項目にすぎません。意思決定を変える、連携したシステムこそが、エージェンシーとの契約を続ける理由になります。</p></div>
+<aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>道具だけでは傑作は生まれない。調和は、それらが一つになるところから生まれる。</blockquote><p>システム理論によれば、システムの成果は部品同士の関係から生まれます。エージェンシーのAIスタックで言えば、個々のツールの機能よりも、ツール間の受け渡しのほうが重要だということです。</p></aside>
+<section class="prop" aria-label="Defyができること">
+<div class="ph"><div class="eyebrow">Defy Monitor・Defy MCP・Defy Agents</div><h2>Defyができること<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defyは、独立系エージェンシーに、大手ホールディングカンパニー系と同等の分析力とAI機能を、開発コストや保守の負担なしに提供します。単機能ツールをまた一つ増やすのではなく、一つにつながったスタックです。</p><ul><li><strong>Defy Monitor</strong>は、すべてのクライアントとカテゴリーについて、競合、オーディエンス、会話に関するリアルタイムのインテリジェンスを一か所にまとめます。</li><li><strong>Defy MCP</strong>を使えば、チームはClaudeの中でそのデータに問いかけられます。同僚に頼むようにプロンプトを入力するだけで、新しいダッシュボードを覚える必要はありません。</li><li><strong>Defy Agents</strong>が反復的な納品ワークフローを実行するので、スタッフは成果につながる仕事に時間を使えます。</li><li>AIが出したすべての結論を、その背後にある実際の投稿と照らし合わせて検証できるため、クライアントへの説明もしやすくなります。</li></ul><p>まずはチームの時間を最も奪っているワークフローを1つ洗い出し、連携したスタックでどれだけの負担を減らせるかを確かめてみてください。</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%82%B7%E3%83%BC%E5%90%91%E3%81%91AI%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%84%E3%83%BC%E3%83%AB%EF%BC%9A%E8%B2%B7%E3%81%84%E7%89%A9%E3%83%AA%E3%82%B9%E3%83%88%E3%81%A7%E3%81%AF%E3%81%AA%E3%81%8F%E3%80%8C%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF%E3%80%8D%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%99%E3%82%8B" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D06'})}catch(e){}">相談してみる</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D06'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>エージェンシーにとってのAIマーケティングスタックとは？</summary><p>エージェンシーのAIマーケティングスタックとは、クライアント、競合、オーディエンスのデータを収集し、それをインサイトに変え、納品業務を自動化するために連携したツール群のことです。重要なのは「連携」という言葉です。スタックは唯一の信頼できる情報源を共有し、手作業のエクスポートなしにツール間で作業を受け渡します。それぞれ別のログインと別のデータを持つバラバラのアプリの寄せ集めは、個々のアプリがどれほど優れていても、スタックとは呼べません。</p></details><details><summary>エージェンシーにはAIツールがいくつ必要ですか？</summary><p>多くのエージェンシーが現在抱えている数より少なくて済みます。ツールのカテゴリーではなく、ワークフローから考えましょう。必要なのは、クライアントやカテゴリーのデータを扱うインテリジェンス層、チームがそのデータに問いかけられるインターフェース、そして最も工数を奪っている2～3の納品業務を自動化する仕組みです。ツールを1つ増やすごとに保守すべき連携が増えるため、追加するツールはどれも、特定の雑務や手作業の受け渡しを1つ減らすものであるべきです。</p></details><details><summary>AIツールを使う場合、クライアント契約を変更する必要がありますか？</summary><p>少なくとも部分的には、おそらく必要です。Digidayによると、エージェンシーは既存の基本業務委託契約（MSA）を書き直すのではなく、AIに関する条項を追加して対応しています。多くの場合、そのきっかけはクライアントがエージェンシーのAIツールの利用権を求めたとき、AIに関する文言を求めたとき、あるいは新しいAIツールがそのプロジェクトで使われるときです。クライアントからは、データの利用、人間による監督、使用ツールの開示、成果物の所有権について質問されることが増えています。</p></details><details><summary>小規模なエージェンシーは独自のAIツールを開発すべきですか？</summary><p>ソフトウェア開発がビジネスモデルの一部である場合に限ります。独自ツールには、エンジニア、コネクター、そしてモデルやプラットフォームのAPIが変わるたびに続く保守が必要で、その負担はたいてい、本来クライアントワークのために採用された1～2人に降りかかります。多くの独立系エージェンシーにとっては、統合プラットフォームを導入し、自社の差別化につながるワークフローと判断力に労力を注ぐほうが、はるかに大きな成果を上げられます。</p></details></section>
+<section class="srcs"><h2>出典</h2><ol><li><a href="https://digiday.com/marketing/ai-reshapes-agency-economics-but-their-contracts-are-still-scrambling-to-catch-up/" rel="noopener" target="_blank">AI reshapes agency economics, but their contracts are still scrambling to catch up</a> — Digiday, 2026-09-10</li><li><a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Martech value gap poses threat to agency retention, Ingenuity Pulse report finds</a> — Campaign UK, 2026-09-24</li></ol></section>
+<p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、「どのAIツールなら既存の環境と本当に連携できるのか？」という問いが、エージェンシーのリーダーがテクノロジーを評価する際に最もよく尋ねる質問の一つであり、マーテックへの不満やAI関連の契約条項をめぐる9月の報道によって、その答えがいっそう急がれるものになっているからです。</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#why-do-agencies-end-up-with-a-pile-of-ai-tools-instead-of-a">なぜエージェンシーは、スタックではなくAIツールの山を抱えてしまうのでしょうか？</a><a href="#why-it-keeps-happening-a-systems-problem-not-a-tools-problem">なぜ繰り返されるのか：ツールの問題ではなく、システムの問題</a><a href="#what-should-i-look-for-when-evaluating-ai-marketing-tools">AIマーケティングツールを評価する際は、何を確認すべきでしょうか？</a><a href="#how-do-i-build-an-ai-stack-that-works-with-my-existing-syste">既存のシステムと連携するAIスタックは、どう構築すればよいでしょうか？</a><a href="#should-independent-agencies-build-their-own-ai-stack-or-buy">独立系エージェンシーは、AIスタックを自社開発すべきでしょうか、それとも購入すべきでしょうか？</a><a href="#how-do-i-prove-the-stack-is-worth-it-to-clients">スタックの価値を、クライアントにどう証明すればよいでしょうか？</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>規模の壁を越えて戦う準備はできていますか？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defyにログイン</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>ジャーナルの他の記事<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/ja/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="白黒写真。後ろ姿の信号手が、小さな赤いプレートの付いた1本のレバーに手を置き、いくつもの枝に分かれていく線路を見渡している。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーで何を自動化するか：最初に答えるべき3つの問い</h3><p>エージェンシーが何を自動化すべきかは、判断の複雑さ、潜在的なダメージ、測定可能な成果という3つの問いで決まります。まずはクイックウィンから始めましょう。</p><div class="meta"><span>約8分で読めます</span></div></div></a><a class="card" href="/blog/ja/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="白黒写真。コンクリートの床の上で、脚の1本が短いために傾いているオークのテーブル。天板にはグラスの水と書類の束が置かれ、短い脚の下には小さな赤いタイルが敷かれている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAI準備度診断：最も弱い軸が全体を決める</h3><p>エージェンシーのAI準備度は、最も強い軸ではなく、最も弱い軸で決まります。4つの軸による診断と、AI研修をもう1つ追加してもギャップが埋まりにくい理由を解説します。</p><div class="meta"><span>約8分で読めます</span></div></div></a><a class="card" href="/blog/ja/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="白黒写真。時計職人の手が、小さな赤いフェルトの台の上で繊細な機械式ムーブメントを組み立てている。背後の棚には、量産されたムーブメントの箱が並んでいる。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAI戦略：MetaやGoogleが自動化するものは作らない</h3><p>プラットフォームは、かつてエージェンシーが人を雇って行っていた業務を自動化しています。OmnicomのAIプラットフォーム再編は、自社開発のコストを物語っています。代わりに競うべき領域はここです。</p><div class="meta"><span>約9分で読めます</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/ja/">← ジャーナル一覧に戻る</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="お問い合わせ">
+<h2>規模の壁を越えて戦う準備はできていますか？</h2>
+<p>大手エージェンシーネットワークが門外不出にしてきたインテリジェンス基盤をご覧ください。売り込みはしません。まずはお話ししましょう。</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>規模の壁を越えて戦うエージェンシーのための、インサイトと自動化のプラットフォーム。</p></div>
+<div><h4>Defy</h4><a href="/#main">メイン</a><a href="/#platform">プラットフォーム</a><a href="/#clients">クライアント</a><a href="/#team">チーム</a></div>
+<div class="df-langs"><h4>ジャーナル</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>お問い合わせ</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">ログイン</a><a href="/llms.txt">llms.txt</a><a href="/blog/ja/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited　無断転載・複製を禁じます。</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

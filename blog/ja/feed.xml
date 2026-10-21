@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Defyジャーナル</title>
+<link>https://defygroup.ai/blog/ja/</link>
+<description>エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。</description>
+<language>ja</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/ja/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>エージェンシーで何を自動化するか：最初に答えるべき3つの問い</title>
+<link>https://defygroup.ai/blog/ja/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/before-you-automate-three-questions-agencies/</guid>
+<description>自動化を始める前に、判断の複雑さ、誤った出力が与えるダメージの大きさ、改善される測定可能な成果を確認しましょう。エージェンシー向けのガイドです。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI準備度診断：最も弱い軸が全体を決める</title>
+<link>https://defygroup.ai/blog/ja/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-ai-readiness-four-dimensions/</guid>
+<description>コンテキスト、人、プロセス、プラットフォーム。エージェンシー向けの実践的なAI準備度診断と、AI研修だけでは最も弱い部分が解消されない理由。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI抵抗は、人の問題ではなく基準の問題です</title>
+<link>https://defygroup.ai/blog/ja/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-resistance-standards-not-people/</guid>
+<description>優秀な人材が抵抗しているのはAIではなく、質の低いアウトプットです。エージェンシーのAI抵抗が示す品質ギャップと、燃え尽きを招かない解決法を解説します。</description>
+<category>人材と組織文化</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI戦略：MetaやGoogleが自動化するものは作らない</title>
+<link>https://defygroup.ai/blog/ja/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/dont-build-what-platforms-automate-agencies/</guid>
+<description>MetaとGoogleはターゲティング、広告制作、キャンペーン設定の自動化を進めています。より的確なエージェンシーのAI戦略とは、ツールは購入し、判断力が商品となる領域で競うことです。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI指標：クライアントが支払うのは利用ではなく成果</title>
+<link>https://defygroup.ai/blog/ja/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/measure-ai-results-not-usage-agencies/</guid>
+<description>シート数、エージェント数、生成アセット数は虚栄の数字です。クライアントが評価するエージェンシーのAI指標は、アウトプット単価、スピード、エラー率、利益です。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI ROIの測り方：導入前に成功を定義する</title>
+<link>https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/</guid>
+<description>ベースライン、目標、テスト、レビュー。エージェンシーがAIのROIを測り、チェック時間とAIドラッグを数え、自動化が本当に元を取れているかを見極める簡単な方法。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのクローズドループAI：11のツールから1つの共有レイヤーへ</title>
+<link>https://defygroup.ai/blog/ja/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>ツール11個、担当者20人、共有はゼロ？エージェンシーが、メモリ、スキル、ワークフロー、承認からなる共有レイヤーでクローズドループAIシステムを築く方法。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAIの役割：AIを全員の仕事にするのをやめよう</title>
+<link>https://defygroup.ai/blog/ja/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>エージェンシーの全員がAIを構築する必要はありません。AIが仕事を変えるなかで、ビルダー、ユーザー、承認者が品質、キャリア、雇用の安定をどう守るかを解説します。</description>
+<category>人材と組織文化</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>AIネイティブなエージェンシー：スピードは進歩ではない、進歩を示す5つのレベル</title>
+<link>https://defygroup.ai/blog/ja/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/speed-is-not-progress-ai-native-agencies/</guid>
+<description>AIネイティブなエージェンシーの本当の意味、AI導入の5つのレベル、そして多くのエージェンシーがボトルネックを解消できるレベルで止まるべき理由を解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAI導入：自動化の前に実際のワークフローを文書化する</title>
+<link>https://defygroup.ai/blog/ja/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-bad-process-document-workflows-first/</guid>
+<description>悪いプロセスにAIを乗せれば、速い悪いプロセスができるだけ。エージェンシーが実際のワークフローを描き出し、ボトルネックを見つけ、自動化はその後に決める方法。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AIと消費者行動：エージェンシーがインサイト業務を作り直すべき理由</title>
+<link>https://defygroup.ai/blog/ja/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AIは消費者行動をどう変えているのか、エージェンシーがインサイト業務を作り直すべき理由。三つの変化、一つのデータの罠、行動に移す6ステップ。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか</title>
+<link>https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/</guid>
+<description>広告のコールドスタート問題の解き方：サードパーティデータを使わず、公開コンテンツから作ったペルソナで新規ユーザーにパーソナライズする方法。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>クリスマス2026：エージェンシーのための早期警戒システムとしてのソーシャルリスニング</title>
+<link>https://defygroup.ai/blog/ja/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/christmas-2026-social-listening-early-warning/</guid>
+<description>クリスマス商戦のソーシャルリスニング：Q4予算を守るために今から注視すべきシグナルを、シグナル一覧表と6ステップの計画でご紹介します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのAIツール：MCPでツール乱立から抜け出す方法</title>
+<link>https://defygroup.ai/blog/ja/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-tools-agencies-mcp-integration/</guid>
+<description>エージェンシーのAIツールを正しく統合するために：ツール乱立が時間を奪う理由、MCPが変えること、6ステップで無駄のないAIスタックを築く方法。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>AI時代のエージェンシー料金モデル：適正に値付けし、利益率を手放さない</title>
+<link>https://defygroup.ai/blog/ja/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-pricing-models-fair-ai-pricing/</guid>
+<description>AI時代のエージェンシー料金モデル。効率化の成果を手放してはいけない理由と、利益率を守れる報酬体系を解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのサービスを絞り込む：何を、いつやめるか</title>
+<link>https://defygroup.ai/blog/ja/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/when-to-stop-an-agency-service/</guid>
+<description>エージェンシーのサービスを絞り込む際の判断材料。やめどきのサイン、6ステップの進め方、決める前に確認すべきデータを解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>クロスプラットフォームのエンゲージメント測定：エージェンシーの手作業スプレッドシートを卒業する時</title>
+<link>https://defygroup.ai/blog/ja/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/measure-cross-platform-engagement-agencies/</guid>
+<description>クロスプラットフォームのエンゲージメントを確実に測る方法を解説。共通の定義、正規化した指標、スポーツ事例、ツール選定の基準まで。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのインポスター症候群：AI時代に自信を取り戻すには</title>
+<link>https://defygroup.ai/blog/ja/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/imposter-syndrome-agencies-ai-era/</guid>
+<description>エージェンシーのインポスター症候群：AIが若手を中心に自己不信を強める理由と、虚勢ではなく検証可能な根拠に基づく自信の築き方。</description>
+<category>人材と組織文化</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>回答者なしのリサーチ：合成ペルソナは切り札か、幻か？</title>
+<link>https://defygroup.ai/blog/ja/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/respondent-free-research-synthetic-personas/</guid>
+<description>合成ペルソナと回答者なしのリサーチ：世代インサイトにおける価値と限界、そして現実に根ざす方法を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>メディアエージェンシーとAI：新時代が独立系にもたらすもの</title>
+<link>https://defygroup.ai/blog/ja/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/media-agencies-new-ai-era-independents/</guid>
+<description>メディアエージェンシーとAI：実行業務は圧縮され、価値は助言へと上流に移ります。独立系エージェンシーに起きる変化と、最初の一歩を解説します。</description>
+<category>エージェンシーの種類</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーの報酬：ソーシャルデータで自らの価値を証明する方法</title>
+<link>https://defygroup.ai/blog/ja/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-remuneration-social-data-proof-of-value/</guid>
+<description>フランスのAACCは、エージェンシーの報酬を工数ベースから脱却させようとしています。ソーシャルデータを追跡可能な価値の証拠に変える手順を、ステップごとに解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>クライアントが評価するエンゲージメント指標（と、見かけ倒しの指標）</title>
+<link>https://defygroup.ai/blog/ja/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/engagement-metrics-clients-value/</guid>
+<description>クライアントが本当に評価するエンゲージメント指標とは？ヴァニティメトリクスと成果の見分け方、プラットフォーム比較、意思決定につながるレポートの作り方を解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのブラックフライデー：レポートを自動化し、最適化の時間を取り戻す</title>
+<link>https://defygroup.ai/blog/ja/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/black-friday-agencies-automate-reporting/</guid>
+<description>2026年のブラックフライデーまであと6週間。レポートとアラートを自動化し、ピーク時にチームが最適化に集中できるようにする、エージェンシー向けの計画です。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>意思決定者を眠らせないB2Bコンテンツマーケティング</title>
+<link>https://defygroup.ai/blog/ja/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/b2b-content-marketing-that-engages/</guid>
+<description>B2Bコンテンツマーケティングは退屈である必要はありません。購買担当者の本当の葛藤から出発し、媒体費をかける前にコンセプトを検証して、質の高いリードを獲得する方法を解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AIとホールディングカンパニー型モデルの終わり：独立系エージェンシーが学べること</title>
+<link>https://defygroup.ai/blog/ja/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-holding-company-model-independent-agencies/</guid>
+<description>WPPの人員削減とエージェンシーフィーの縮小は、AIがホールディングカンパニーを再編していることを示しています。何が変わるのか、独立系エージェンシーがAIでどう優位に立てるのかを解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>メディア接触の細分化：ダッシュボードの先にあるオーディエンス理解</title>
+<link>https://defygroup.ai/blog/ja/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/fragmented-media-consumption-audience-data/</guid>
+<description>メディア接触が細分化すると、データはあらゆるチャネルに散らばります。オーディエンスデータを統合し、本物のペルソナと葛藤に落とし込んで、プランニングを改善する方法を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>ブラジルのエージェンシーピッチ：新ルールはエビデンスを持ち込む者に報いる</title>
+<link>https://defygroup.ai/blog/ja/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/brazil-agency-pitches-category-intelligence/</guid>
+<description>ブラジルのAbracom/ABAによるエージェンシーピッチのガイドが10ステップに。消費者行動とカテゴリーデータを使い、エビデンスでピッチに勝つ方法を解説します。</description>
+<category>新規開拓</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>AIによるブランド差別化：競合と同じ声にならないために</title>
+<link>https://defygroup.ai/blog/ja/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>AIによるブランド差別化の方法。カテゴリーがすでに語っていることを可視化し、誰も押さえていない領域を見つけ、メディア費を投じる前にアイデアを検証します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのバーンアウト：反復作業を減らし、創造性に使う時間を増やす</title>
+<link>https://defygroup.ai/blog/ja/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-burnout-automate-repetitive-work/</guid>
+<description>エージェンシーのバーンアウトを解説。創造的なプレッシャーと反復的な負荷の見分け方、自動化すべきタスク、チームで実践できる5ステップをご紹介します。</description>
+<category>人材と組織文化</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>関税とマーケティング戦略：メッセージと予算を組み直す方法</title>
+<link>https://defygroup.ai/blog/ja/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>関税とマーケティング戦略。カテゴリーへの影響の読み解き方、市場ごとのメッセージの見直し、予算を止めずにシフトする方法を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのソーシャルリスニング：四半期レポートではもう遅い理由</title>
+<link>https://defygroup.ai/blog/ja/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/continuous-social-listening-agencies/</guid>
+<description>エージェンシーのソーシャルリスニング。四半期レポートから継続的な消費者トレンドの把握へ移行するための、実践的な6ステップの方法を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>マーケティングのAIデータ分析：クライアントが検証できる結論を</title>
+<link>https://defygroup.ai/blog/ja/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-data-analysis-verifiable-conclusions/</guid>
+<description>マーケティングにおけるAIデータ分析のベストプラクティス。サイロを解消し、クライアントが検証できる結論を届けるための手順を、チェックリストとともに解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>独立系エージェンシーのAI活用：統合が進む理由と、変わること</title>
+<link>https://defygroup.ai/blog/ja/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungleが4社を統合し、SAMYが米国企業を買収。独立系エージェンシーの統合におけるAIの役割と、自社に合ったスケールの道を選ぶ方法を解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>信頼を失わないパーソナライズ広告：エージェンシー向けガイド</title>
+<link>https://defygroup.ai/blog/ja/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ad-personalisation-without-third-party-data/</guid>
+<description>女子サッカーファンのようなニッチなオーディエンス向けに、サードパーティデータに頼らず、コミュニティの信頼を損なわずに広告をパーソナライズするためのガイドです。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AIメディアプランニング:デモグラフィックから、消費者の本当の葛藤へ</title>
+<link>https://defygroup.ai/blog/ja/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/media-planning-real-personas-ai/</guid>
+<description>AIメディアプランニングで、デモグラフィックから、オーディエンスが実際に抱える葛藤へ。7ステップの進め方と、従来型との比較表で解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>シンガポールのメディア消費データ:ネットワークが縮小するなか、何を信頼すべきか</title>
+<link>https://defygroup.ai/blog/ja/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/apac-agencies-market-intelligence/</guid>
+<description>シンガポールのメディア消費データの探し方、情報源ごとに信頼できる用途、そしてネットワークに頼らず独立系エージェンシーが市場インテリジェンスを築く方法を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AIはマーケティングエージェンシーの種類ごとにどう影響するか:クリエイティブからインフルエンサーまで</title>
+<link>https://defygroup.ai/blog/ja/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/how-ai-disrupts-each-agency-type/</guid>
+<description>AIはクリエイティブ、メディア、CRM、PR、インフルエンサーの各エージェンシーをどう変えるのか。先に置き換わる業務、価値が高まる領域、タイプ別に試すべきAIツールを解説します。</description>
+<category>エージェンシーの種類</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>AIコンテンツ制作のベストプラクティス:エージェンシーのための品質フレームワーク</title>
+<link>https://defygroup.ai/blog/ja/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-content-quality-framework-agencies/</guid>
+<description>AIコンテンツ制作のベストプラクティスを、7つのゲートで整理。ブランドボイスを守り、重要な判断を人に残し、媒体費をかける前にテストするためのフレームワークです。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>数字で見るAIマーケティング事例と、そこで語られていないこと</title>
+<link>https://defygroup.ai/blog/ja/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-driven-agency-case-studies/</guid>
+<description>検証に耐えるAIマーケティング事例はごくわずかです。想定8.5%の売上増を含む、数字の裏付けがある事例を紹介し、それ以外を見極める方法も解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>AIネイティブなマーケティング組織：クライアントがいまもエージェンシーから買うもの</title>
+<link>https://defygroup.ai/blog/ja/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Deathは、2人の社員とエージェンシーが構築したAIシステムで多額の予算を運用する計画です。AIネイティブなマーケティング組織がエージェンシーに求めるものを解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのピッチ戦略：48時間のカテゴリーインサイト・スプリントで勝つ</title>
+<link>https://defygroup.ai/blog/ja/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/win-agency-pitches-ai-category-insight/</guid>
+<description>実践的なエージェンシーのピッチ戦略。競合広告、オーディエンスの葛藤、誰も押さえていない切り口を48時間で洗い出すスプリントと、PublicisのCEOによる直接営業が意味するものを解説します。</description>
+<category>新規開拓</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>グローバルキャンペーンが期待外れのとき、マーケティング予算のROIを最適化する方法</title>
+<link>https://defygroup.ai/blog/ja/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/global-vs-local-campaign-budget/</guid>
+<description>マーケティング予算のROIを最適化するには、まずクリエイティブの適合性を正すこと。グローバル対ローカルの最新調査が示すもの、市場別の判断表、7つのステップを解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>AI動画制作のコスト：フレームが安くなっても予算が減らない理由</title>
+<link>https://defygroup.ai/blog/ja/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/ai-video-production-agency-economics/</guid>
+<description>AIが下げるのは動画1フレームあたりのコストであって、予算ではありません。本当の削減ポイント、クライアントの要求が増える理由、AIを活用した動画の価格設定を解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Z世代に届く方法：生まれ年ではなくコミュニティから計画する</title>
+<link>https://defygroup.ai/blog/ja/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/gen-z-persona-clustering/</guid>
+<description>年齢区分だけではブリーフは書けません。実際の会話をペルソナにクラスタリングしてZ世代に届けるエージェンシーの方法を、7つのステップと具体例で解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>リテールメディアネットワークとエージェンシー：予算を握るのは本当は誰か</title>
+<link>https://defygroup.ai/blog/ja/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/retail-media-agency-ownership/</guid>
+<description>リテールメディアネットワークをめぐり、メディア、コマース、パフォーマンス、クリエイターの各エージェンシーが争っています。誰がこのチャネルを担うべきか、独立系がどう主導権を握るかを解説します。</description>
+<category>エージェンシーの種類</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AIはマーケティングエージェンシーに取って代わるのか？ 試算が合わない理由</title>
+<link>https://defygroup.ai/blog/ja/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/will-ai-replace-agencies/</guid>
+<description>AIはマーケティングエージェンシーに取って代わるのか？ AIと社内採用の本当のコスト、AIに任せるべきエージェンシー業務、そして今も人が欠かせない領域を解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシー統合か、ロスター制か：StarKistとServiceNowの事例が示すもの</title>
+<link>https://defygroup.ai/blog/ja/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-consolidation-vs-roster/</guid>
+<description>エージェンシーを1社に統合すべきか、専門エージェンシーのロスターを維持すべきか。StarKistのTombrasへの移行とStagwellのServiceNow獲得から、大型案件を勝ち取る方法を読み解きます。</description>
+<category>新規開拓</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>独立系エージェンシーとホールディングカンパニー：独立系はデータでどう戦うか</title>
+<link>https://defygroup.ai/blog/ja/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/independent-agencies-vs-holding-company-data/</guid>
+<description>独立系エージェンシーとホールディングカンパニー。ネットワーク系がいまもデータで優位な領域、独立系が肩を並べられるようになった領域、そして格差を埋める90日プランを解説します。</description>
+<category>エージェンシーの種類</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>インフルエンサーマーケティングのレポーティングが、エージェンシーの新たな主戦場になる理由</title>
+<link>https://defygroup.ai/blog/ja/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/influencer-agency-reporting-automation/</guid>
+<description>数十人のナノインフルエンサーを起用しても、ROIを証明できるインフルエンサーマーケティングのレポートとは。指標、信頼シグナル、自動化すべき範囲を解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>オーディエンスリサーチツール：プランナーがまず自動化すべきこと</title>
+<link>https://defygroup.ai/blog/ja/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/future-of-strategy-planners-automate/</guid>
+<description>プランナーはどのオーディエンスリサーチツールから自動化すべきか。実践的な優先順位、ツール選定のチェックリスト、人が担い続けるべき仕事を解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>暴走を恐れずに進めるエージェンティックAI広告：人間の関与を保つには</title>
+<link>https://defygroup.ai/blog/ja/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agentic-media-human-in-the-loop/</guid>
+<description>エージェンティックAI広告が急速に広がっています。承認のしきい値、責任者の明確化、メッセージの人間による管理など、エージェンシーが人間の関与を保つ方法を解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>合成オーディエンスが急速に普及。エージェンシーはその信頼性をどう保っているのか</title>
+<link>https://defygroup.ai/blog/ja/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/synthetic-audiences-agencies-validation/</guid>
+<description>合成オーディエンスが、エージェンシーの日常的なプランニングに浸透しつつあります。信頼できる場面と誤解を招く場面、そしてあらゆる発見を検証するための6つのステップを解説します。</description>
+<category>インサイトと戦略</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシーのスプリントモデル：戦略を崩さずにスピードを上げる方法</title>
+<link>https://defygroup.ai/blog/ja/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-sprint-model-speed-strategy/</guid>
+<description>エージェンシーのスプリントモデルの売りはスピードです。四半期単位の戦略の軸、最新のエビデンス、雑務の自動化によって、戦略を崩さずに高速なスプリントを回す方法を解説します。</description>
+<category>エージェンシーの種類</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>クリエイティブの事前テスト：「創造性かパフォーマンスか」の争いを終わらせる方法</title>
+<link>https://defygroup.ai/blog/ja/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/creativity-vs-performance-pre-testing/</guid>
+<description>クリエイティブの事前テストで「創造性かパフォーマンスか」の対立に終止符を。出稿前にコンセプトをスコアリングし、大胆なアイデアを守りながら、最終判断は人が下します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する</title>
+<link>https://defygroup.ai/blog/ja/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-ai-stack-integration/</guid>
+<description>既存システムと連携するエージェンシー向けAIマーケティングツールの選び方を解説。評価チェックリスト、7つの構築ステップ、契約上のポイントを紹介します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>ブランド差別化戦略：カテゴリーが見落としている切り口を見つける</title>
+<link>https://defygroup.ai/blog/ja/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegartyは、マーケティングを「繰り返しばかりで、陳腐で、退屈」だと評しています。カテゴリーを俯瞰し、誰も手にしていない切り口を見つけるためのブランド差別化戦略を解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>マーケティングのダッシュボード過多：エージェンシーがログインをやめて問いかけを始めた理由</title>
+<link>https://defygroup.ai/blog/ja/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-dashboard-fatigue-ai-questions/</guid>
+<description>ダッシュボードは多いのに、インサイトは少ない。そんな状況に陥っていませんか？マーケティングのダッシュボード過多が起きる理由と、ログインを意思決定起点の問いに置き換える6つのステップを解説します。</description>
+<category>AIトランスフォーメーション</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>クライアントにメディアROIを証明するには：MMMが再注目される理由と示すべきもの</title>
+<link>https://defygroup.ai/blog/ja/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/proving-media-roi-agencies-mmm/</guid>
+<description>プラットフォームのROASでは、もはやクライアントを納得させられません。マーケティング・ミックス・モデリング、実験、そして成果が動いた理由のエビデンスを使って、エージェンシーがメディアROIを証明する方法を解説します。</description>
+<category>クリエイティブ効果</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>成果報酬型のエージェンシー報酬：ROASとCPAを超える指標</title>
+<link>https://defygroup.ai/blog/ja/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>時間ベースのエージェンシー報酬は、報酬モデル全体の17%にまで減少しました。ROASやCPA以外に成果報酬型の報酬を左右すべき指標は何か、そしてその導入方法を解説します。</description>
+<category>エージェンシー経営</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>AIがエージェンシーの雇用に与える影響：若手のキャリアラダーをどう立て直すか</title>
+<link>https://defygroup.ai/blog/ja/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ja/agency-entry-level-talent-ai/</guid>
+<description>AIが若手の業務を吸収するなか、新卒採用をひそかに止めるエージェンシーが出てきています。データが示す実態と、判断力を軸にエントリーレベルの役割を再設計する方法を解説します。</description>
+<category>人材と組織文化</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
