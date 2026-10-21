@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — วารสาร Defy</title>
+<link>https://defygroup.ai/blog/th/</link>
+<description>บันทึกภาคสนามเรื่องเศรษฐศาสตร์เอเจนซี การนำ AI มาใช้ และศิลปะของการสร้างอินไซต์ สำหรับเอเจนซีอิสระ ทีมอินเฮาส์ และทุกคนที่เบื่อตกเป็นรองเครือเอเจนซียักษ์ใหญ่</description>
+<language>th</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/th/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>งานใดในเอเจนซีควรทำเป็นอัตโนมัติ: ตอบสามคำถามนี้ก่อน</title>
+<link>https://defygroup.ai/blog/th/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/before-you-automate-three-questions-agencies/</guid>
+<description>ก่อนทำอะไรให้เป็นอัตโนมัติ ให้ถามว่าการตัดสินใจซับซ้อนแค่ไหน ผลลัพธ์ที่ผิดพลาดสร้างความเสียหายได้มากเพียงใด และผลลัพธ์ที่วัดได้อะไรจะดีขึ้น คู่มือสำหรับเอเจนซี</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>ประเมินความพร้อมด้าน AI ของเอเจนซี: มิติที่อ่อนที่สุดคือตัวกำหนด</title>
+<link>https://defygroup.ai/blog/th/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-ai-readiness-four-dimensions/</guid>
+<description>บริบท ทีมงาน กระบวนการ แพลตฟอร์ม: แนวทางประเมินความพร้อมด้าน AI ของเอเจนซีที่นำไปใช้ได้จริง และเหตุใดคอร์ส AI เพียงอย่างเดียวจึงไม่อุดจุดอ่อนที่สุดของคุณ</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>การต่อต้าน AI ในเอเจนซีเป็นปัญหามาตรฐาน ไม่ใช่ปัญหาของคน</title>
+<link>https://defygroup.ai/blog/th/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-resistance-standards-not-people/</guid>
+<description>คนเก่งที่สุดของคุณไม่ได้ต่อต้าน AI แต่ต่อต้านผลงานที่แย่ เหตุใดการต่อต้าน AI ในเอเจนซีจึงบ่งชี้ช่องว่างด้านคุณภาพ และแก้ไขอย่างไรโดยไม่ทำให้หมดไฟ</description>
+<category>บุคลากรและวัฒนธรรมองค์กร</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>กลยุทธ์ AI ของเอเจนซี: อย่าสร้างสิ่งที่ Meta และ Google จะทำอัตโนมัติให้</title>
+<link>https://defygroup.ai/blog/th/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta และ Google ทำการกำหนดเป้าหมาย การสร้างโฆษณา และการตั้งค่าแคมเปญแบบอัตโนมัติแล้ว กลยุทธ์ AI ของเอเจนซีที่เฉียบคมกว่าคือซื้อเครื่องมือสำเร็จรูป และแข่งขันในงานที่วิจารณญาณคือตัวผลิตภัณฑ์</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>ตัวชี้วัด AI สำหรับเอเจนซี: ทำไมลูกค้าจ่ายเพื่อผลลัพธ์ ไม่ใช่การใช้งาน</title>
+<link>https://defygroup.ai/blog/th/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/measure-ai-results-not-usage-agencies/</guid>
+<description>จำนวนที่นั่งใช้งาน เอเจนต์ และแอสเซ็ตที่สร้างขึ้นเป็นเพียงตัวเลขสวยหรู ตัวชี้วัด AI ที่ลูกค้าให้คุณค่าคือ ต้นทุนต่อชิ้นงาน ความเร็ว อัตราข้อผิดพลาด และกำไร</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>วัด ROI ของ AI ในเอเจนซี: กำหนดความสำเร็จก่อนใช้งานจริง</title>
+<link>https://defygroup.ai/blog/th/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/define-success-before-deploying-ai-agency/</guid>
+<description>ฐานตั้งต้น เป้าหมาย ทดสอบ ทบทวน วิธีง่าย ๆ ให้เอเจนซีวัด ROI ของ AI นับเวลาตรวจงานและภาระ AI และรู้ว่าระบบอัตโนมัติคุ้มจริงหรือไม่</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>AI แบบวงจรปิดสำหรับเอเจนซี: จากเครื่องมือ 11 ตัวสู่เลเยอร์ร่วมเดียว</title>
+<link>https://defygroup.ai/blog/th/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>เครื่องมือสิบเอ็ดตัว เจ้าของยี่สิบคน แต่ไม่มีอะไรใช้ร่วมกัน เอเจนซีสร้างระบบ AI แบบวงจรปิดด้วยเลเยอร์ร่วมเดียวได้อย่างไร ทั้งหน่วยความจำ สกิล เวิร์กโฟลว์ และการอนุมัติ</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>บทบาท AI ในเอเจนซี: เลิกทำให้ AI เป็นงานของทุกคน</title>
+<link>https://defygroup.ai/blog/th/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>ไม่ใช่ทุกคนในเอเจนซีต้องสร้าง AI ผู้สร้าง ผู้ใช้ และผู้อนุมัติช่วยปกป้องคุณภาพ เส้นทางอาชีพ และความมั่นคงในงานอย่างไร เมื่อ AI เปลี่ยนโฉมงานเอเจนซี</description>
+<category>บุคลากรและวัฒนธรรมองค์กร</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>เอเจนซี AI-native: ความเร็วไม่ใช่ความก้าวหน้า และ 5 ระดับที่เป็นความก้าวหน้าจริง</title>
+<link>https://defygroup.ai/blog/th/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/speed-is-not-progress-ai-native-agencies/</guid>
+<description>เอเจนซี AI-native คืออะไรกันแน่ ระดับการนำ AI มาใช้ทั้งห้าขั้น และเหตุใดเอเจนซีส่วนใหญ่ควรหยุดที่ระดับที่แก้คอขวดของตนได้</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>การนำ AI มาใช้ในเอเจนซี: บันทึกเวิร์กโฟลว์จริงก่อนทำอัตโนมัติ</title>
+<link>https://defygroup.ai/blog/th/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-bad-process-document-workflows-first/</guid>
+<description>AI บนกระบวนการที่แย่ก็ได้แค่กระบวนการแย่ที่เร็วขึ้น เอเจนซีจะทำแผนผังเวิร์กโฟลว์จริง หาคอขวด แล้วค่อยตัดสินใจว่าจะทำอะไรอัตโนมัติได้อย่างไร</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI กับพฤติกรรมผู้บริโภค: ทำไมเอเจนซีต้องสร้างงานอินไซต์ใหม่</title>
+<link>https://defygroup.ai/blog/th/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI กำลังเปลี่ยนพฤติกรรมผู้บริโภคอย่างไร และเหตุใดเอเจนซีควรสร้างงานอินไซต์ใหม่: การเปลี่ยนแปลงสามด้าน กับดักข้อมูลหนึ่งข้อ และแผนปฏิบัติหกขั้นตอน</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้</title>
+<link>https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/</guid>
+<description>แก้ปัญหา cold start ในงานโฆษณา: วิธีปรับแต่งโฆษณาให้ผู้ใช้ใหม่โดยไม่ต้องพึ่งข้อมูลบุคคลที่สาม ด้วยเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>คริสต์มาส 2026: Social Listening เป็นระบบเตือนภัยล่วงหน้าสำหรับเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/christmas-2026-social-listening-early-warning/</guid>
+<description>Social Listening สำหรับช่วงขายคริสต์มาส: สัญญาณที่เอเจนซีควรจับตาตั้งแต่ตอนนี้เพื่อปกป้องงบไตรมาส 4 พร้อมตารางสัญญาณและแผน 6 ขั้นตอน</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>เครื่องมือ AI สำหรับเอเจนซี: ใช้ MCP หลุดจากวังวนเครื่องมือที่กระจัดกระจาย</title>
+<link>https://defygroup.ai/blog/th/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-tools-agencies-mcp-integration/</guid>
+<description>เครื่องมือ AI สำหรับเอเจนซีที่เชื่อมต่ออย่างเป็นระบบ: ทำไมเครื่องมือที่กระจัดกระจายจึงเสียเวลา MCP เปลี่ยนอะไร และวิธีสร้างชุดเครื่องมือ AI ที่กระชับใน 6 ขั้นตอน</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>โมเดลราคาเอเจนซีสำหรับ AI: ตั้งราคาอย่างเป็นธรรม อย่ายกอัตรากำไรทิ้ง</title>
+<link>https://defygroup.ai/blog/th/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-pricing-models-fair-ai-pricing/</guid>
+<description>โมเดลราคาของเอเจนซียุค AI: ทำไมไม่ควรยกผลประหยัดจากประสิทธิภาพให้ลูกค้าฟรี ๆ และโครงสร้างค่าบริการแบบไหนที่ปกป้องอัตรากำไรของคุณได้จริง</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>การจำกัดขอบเขตบริการของเอเจนซี: ควรหยุดอะไร และเมื่อใด</title>
+<link>https://defygroup.ai/blog/th/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/when-to-stop-an-agency-service/</guid>
+<description>การจำกัดขอบเขตบริการของเอเจนซี: สัญญาณว่าบริการหนึ่งหมดยุค วิธีการหกขั้นตอน และข้อมูลที่ควรตรวจก่อนตัดสินใจว่าจะหยุดอะไร</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>วัดเอนเกจเมนต์ข้ามแพลตฟอร์ม: ถึงเวลาปลดระวางสเปรดชีตของเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/measure-cross-platform-engagement-agencies/</guid>
+<description>วิธีวัดเอนเกจเมนต์ข้ามแพลตฟอร์มอย่างน่าเชื่อถือ: นิยามร่วมกัน ตัวชี้วัดที่ปรับให้เทียบกันได้ ตัวอย่างจากวงการกีฬา และเกณฑ์เลือกเครื่องมือ</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>Imposter Syndrome ในเอเจนซี: สร้างความมั่นใจขึ้นใหม่ในยุค AI</title>
+<link>https://defygroup.ai/blog/th/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/imposter-syndrome-agencies-ai-era/</guid>
+<description>Imposter Syndrome ในเอเจนซี: เหตุใด AI จึงเติมเชื้อความสงสัยในตัวเอง โดยเฉพาะกับจูเนียร์ และวิธีสร้างความมั่นใจที่ตั้งอยู่บนหลักฐาน ไม่ใช่ความโอ้อวด</description>
+<category>บุคลากรและวัฒนธรรมองค์กร</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>วิจัยโดยไม่มีผู้ตอบ: เพอร์โซนาสังเคราะห์คือคำสัญญาหรือภาพลวงตา</title>
+<link>https://defygroup.ai/blog/th/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/respondent-free-research-synthetic-personas/</guid>
+<description>เพอร์โซนาสังเคราะห์และงานวิจัยที่ไม่ใช้ผู้ตอบจริง คุ้มค่าแค่ไหนสำหรับอินไซต์เชิงเจเนอเรชัน ข้อจำกัดอยู่ตรงไหน และจะยึดโยงกับความจริงได้อย่างไร</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>เอเจนซีมีเดียกับ AI: ยุคใหม่หมายถึงอะไรสำหรับเอเจนซีอิสระ</title>
+<link>https://defygroup.ai/blog/th/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/media-agencies-new-ai-era-independents/</guid>
+<description>AI บีบงานลงมือทำให้เหลือน้อยลง และคุณค่าของเอเจนซีมีเดียเลื่อนขึ้นไปสู่การให้คำปรึกษา อะไรเปลี่ยนสำหรับเอเจนซีอิสระ และควรเริ่มตรงไหน</description>
+<category>ประเภทเอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>ค่าตอบแทนเอเจนซี: วิธีพิสูจน์คุณค่าด้วยข้อมูลโซเชียล</title>
+<link>https://defygroup.ai/blog/th/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-remuneration-social-data-proof-of-value/</guid>
+<description>AACC ของฝรั่งเศสต้องการให้ค่าตอบแทนเอเจนซีก้าวข้ามการคิดตามเวลาที่ใช้ ดูวิธีเปลี่ยนข้อมูลโซเชียลให้เป็นหลักฐานที่ตรวจสอบย้อนกลับได้ทีละขั้นตอน</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>ตัวชี้วัดเอนเกจเมนต์ที่ลูกค้าเห็นคุณค่า (และตัวที่เป็นแค่เปลือกนอก)</title>
+<link>https://defygroup.ai/blog/th/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/engagement-metrics-clients-value/</guid>
+<description>ลูกค้าเห็นคุณค่าตัวชี้วัดเอนเกจเมนต์แบบใดจริง ๆ แยกตัวเลขฉากหน้าออกจากผลลัพธ์ เปรียบเทียบแพลตฟอร์ม และทำรายงานที่นำไปสู่การตัดสินใจ</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>Black Friday สำหรับเอเจนซี: ทำรายงานอัตโนมัติ เพื่อมีเวลาปรับแต่งแคมเปญ</title>
+<link>https://defygroup.ai/blog/th/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/black-friday-agencies-automate-reporting/</guid>
+<description>อีกหกสัปดาห์ถึง Black Friday 2026 แผนสำหรับเอเจนซี: ทำรายงานและการแจ้งเตือนให้อัตโนมัติ เพื่อให้ทีมมีเวลาปรับแต่งแคมเปญในช่วงพีก</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>การตลาดคอนเทนต์ B2B ที่ไม่ทำให้ผู้ตัดสินใจหลับคาโต๊ะ</title>
+<link>https://defygroup.ai/blog/th/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/b2b-content-marketing-that-engages/</guid>
+<description>การตลาดคอนเทนต์ B2B ไม่จำเป็นต้องน่าเบื่อ เริ่มจากแรงกดดันที่แท้จริงของผู้ซื้อ ทดสอบแนวคิดก่อนลงสื่อ และสร้างลีดที่มีคุณภาพ</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI กับจุดจบของโมเดลโฮลดิ้งคอมพานี: บทเรียนสำหรับเอเจนซีอิสระ</title>
+<link>https://defygroup.ai/blog/th/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-holding-company-model-independent-agencies/</guid>
+<description>การลดตำแหน่งงานของ WPP และค่าธรรมเนียมเอเจนซีที่หดตัวชี้ว่า AI กำลังปรับโฉมโฮลดิ้งคอมพานี อะไรกำลังเปลี่ยน และ AI สำหรับเอเจนซีอิสระช่วยให้ได้เปรียบอย่างไร</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>การบริโภคสื่อแบบกระจัดกระจาย: เข้าใจกลุ่มเป้าหมายให้พ้นจากแดชบอร์ด</title>
+<link>https://defygroup.ai/blog/th/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/fragmented-media-consumption-audience-data/</guid>
+<description>การบริโภคสื่อที่กระจัดกระจายทำให้ข้อมูลกระจายอยู่ในทุกช่องทาง เรียนรู้วิธีรวมข้อมูลกลุ่มเป้าหมายเป็นเพอร์โซนาและความขัดแย้งในใจที่จับต้องได้ เพื่อวางแผนได้ดีขึ้น</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>การพิทช์งานเอเจนซีในบราซิล: กติกาใหม่ให้รางวัลผู้ที่นำหลักฐานมาเสนอ</title>
+<link>https://defygroup.ai/blog/th/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/brazil-agency-pitches-category-intelligence/</guid>
+<description>คู่มือการพิทช์งานเอเจนซีของ Abracom/ABA ในบราซิลเพิ่มเป็น 10 ขั้นตอน ใช้ข้อมูลพฤติกรรมผู้บริโภคและข้อมูลหมวดสินค้าชนะการพิทช์ด้วยหลักฐาน</description>
+<category>การหาลูกค้าใหม่</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>สร้างความแตกต่างให้แบรนด์ด้วย AI: วิธีไม่ให้ฟังดูเหมือนคู่แข่ง</title>
+<link>https://defygroup.ai/blog/th/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>สร้างความแตกต่างให้แบรนด์ด้วย AI: วิธีทำแผนที่สิ่งที่หมวดสินค้าพูดอยู่แล้ว หาพื้นที่ที่ยังไม่มีใครจับจอง และทดสอบไอเดียก่อนทุ่มงบสื่อ</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>ภาวะหมดไฟในเอเจนซี: งานซ้ำซากน้อยลง เวลาสร้างสรรค์มากขึ้น</title>
+<link>https://defygroup.ai/blog/th/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-burnout-automate-repetitive-work/</guid>
+<description>ภาวะหมดไฟในเอเจนซี: วิธีแยกแรงกดดันด้านความคิดสร้างสรรค์ออกจากภาระงานซ้ำซาก งานที่ควรทำให้เป็นอัตโนมัติ และแผนห้าขั้นตอนสำหรับทีม</description>
+<category>บุคลากรและวัฒนธรรมองค์กร</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>ภาษีนำเข้ากับกลยุทธ์การตลาด: วิธีปรับสมดุลทั้งข้อความและงบประมาณ</title>
+<link>https://defygroup.ai/blog/th/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>ภาษีนำเข้ากับกลยุทธ์การตลาด: อ่านผลกระทบต่อหมวดสินค้า ปรับข้อความรายตลาด และย้ายงบประมาณโดยไม่ชะงักงัน</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>Social Listening สำหรับเอเจนซี: ทำไมรายงานรายไตรมาสจึงช้าเกินไปแล้ว</title>
+<link>https://defygroup.ai/blog/th/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/continuous-social-listening-agencies/</guid>
+<description>Social Listening สำหรับเอเจนซี: เปลี่ยนจากรายงานรายไตรมาสสู่การติดตามเทรนด์ผู้บริโภคอย่างต่อเนื่อง พร้อมวิธีทำจริง 6 ขั้นตอน</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>การวิเคราะห์ข้อมูลด้วย AI ในการตลาด: ข้อสรุปที่ลูกค้าตรวจสอบได้</title>
+<link>https://defygroup.ai/blog/th/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-data-analysis-verifiable-conclusions/</guid>
+<description>แนวปฏิบัติที่ดีในการวิเคราะห์ข้อมูลการตลาดด้วย AI: ทลายไซโลข้อมูล และมอบข้อสรุปที่ลูกค้าตรวจสอบได้ ทีละขั้นตอน พร้อมเช็กลิสต์</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>AI สำหรับเอเจนซีอิสระ: ทำไมจึงรวมตัวกัน และอะไรจะเปลี่ยนไป</title>
+<link>https://defygroup.ai/blog/th/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle รวมสี่บริษัทเข้าด้วยกัน และ SAMY เข้าซื้อกิจการในสหรัฐฯ บทบาทของ AI ต่อการควบรวมเอเจนซีอิสระ และวิธีเลือกเส้นทางสู่ขนาดของตนเอง</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>โฆษณาแบบปรับแต่งโดยไม่เสียความไว้วางใจ: คู่มือสำหรับเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ad-personalisation-without-third-party-data/</guid>
+<description>คู่มือการปรับแต่งโฆษณาสำหรับกลุ่มเป้าหมายเฉพาะทาง เช่น แฟนฟุตบอลหญิง โดยไม่พึ่งข้อมูลจากบุคคลที่สามและไม่ทำลายความไว้วางใจของคอมมูนิตี</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AI วางแผนสื่อ: จากข้อมูลประชากรศาสตร์สู่ความขัดแย้งในใจผู้บริโภคที่แท้จริง</title>
+<link>https://defygroup.ai/blog/th/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/media-planning-real-personas-ai/</guid>
+<description>ใช้ AI วางแผนสื่อเพื่อก้าวจากข้อมูลประชากรศาสตร์ไปสู่ความขัดแย้งในใจที่กลุ่มเป้าหมายรู้สึกจริง พร้อมวิธีเจ็ดขั้นตอนและตารางเปรียบเทียบ</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>ข้อมูลการบริโภคสื่อในสิงคโปร์: อะไรน่าเชื่อถือเมื่อเครือข่ายเอเจนซีหดตัว</title>
+<link>https://defygroup.ai/blog/th/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/apac-agencies-market-intelligence/</guid>
+<description>แหล่งข้อมูลการบริโภคสื่อในสิงคโปร์อยู่ที่ไหน แหล่งใดเชื่อถือได้ในเรื่องอะไร และเอเจนซีอิสระจะสร้างข้อมูลเชิงลึกของตลาดได้อย่างไรโดยไม่พึ่งเครือข่ายเอเจนซี</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI กระทบเอเจนซีการตลาดแต่ละประเภทอย่างไร ตั้งแต่ครีเอทีฟถึงอินฟลูเอนเซอร์</title>
+<link>https://defygroup.ai/blog/th/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/how-ai-disrupts-each-agency-type/</guid>
+<description>AI เปลี่ยนเอเจนซีครีเอทีฟ สื่อ CRM PR และอินฟลูเอนเซอร์อย่างไร งานใดถูกแทนที่ก่อน อะไรมีค่ามากขึ้น และเครื่องมือ AI ใดที่เอเจนซีแต่ละประเภทควรทดลอง</description>
+<category>ประเภทเอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>แนวปฏิบัติสร้างคอนเทนต์ด้วย AI: กรอบคุณภาพสำหรับเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-content-quality-framework-agencies/</guid>
+<description>แนวปฏิบัติสร้างคอนเทนต์ด้วย AI สำหรับเอเจนซี กรอบ 7 ด่านที่ปกป้องน้ำเสียงแบรนด์ ให้คนตัดสินใจในจุดสำคัญ และทดสอบก่อนใช้งบสื่อ</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>กรณีศึกษาการตลาดด้วย AI ที่มีตัวเลขจริง และสิ่งที่มักไม่ถูกบอกเล่า</title>
+<link>https://defygroup.ai/blog/th/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-driven-agency-case-studies/</guid>
+<description>กรณีศึกษาการตลาดด้วย AI ที่ผ่านการพิสูจน์มีไม่มากนัก เราคัดเฉพาะกรณีที่มีตัวเลขจริง เช่น ตัวเลขคาดการณ์รายได้ที่เพิ่มขึ้น 8.5% พร้อมวิธีประเมินกรณีอื่นๆ</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>องค์กรการตลาดแบบ AI-native: สิ่งที่ลูกค้ายังซื้อจากเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death วางแผนบริหารงบก้อนใหญ่ด้วยคนสองคนและระบบ AI ที่เอเจนซีสร้างให้ องค์กรการตลาดแบบ AI-native ต้องการอะไรจากเอเจนซี</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>กลยุทธ์พิชช์งานเอเจนซี: ชนะด้วยสปรินต์อินไซต์หมวดสินค้า 48 ชั่วโมง</title>
+<link>https://defygroup.ai/blog/th/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/win-agency-pitches-ai-category-insight/</guid>
+<description>กลยุทธ์พิชช์งานเอเจนซีที่ทำได้จริง: สปรินต์ 48 ชั่วโมงเพื่อสำรวจโฆษณาคู่แข่ง ปมความขัดแย้งของกลุ่มเป้าหมาย และมุมที่ยังไม่มีใครครอง</description>
+<category>การหาลูกค้าใหม่</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>วิธีเพิ่ม ROI งบการตลาดเมื่อแคมเปญระดับโลกให้ผลไม่ถึงเป้า</title>
+<link>https://defygroup.ai/blog/th/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/global-vs-local-campaign-budget/</guid>
+<description>เพิ่ม ROI งบการตลาดด้วยการแก้ความเหมาะสมของครีเอทีฟก่อน: งานวิจัยใหม่เรื่องแคมเปญระดับโลกกับท้องถิ่น ตารางตัดสินใจรายตลาด และ 7 ขั้นตอน</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>ต้นทุนผลิตวิดีโอด้วย AI: เฟรมถูกลง แต่งบไม่ลดตาม</title>
+<link>https://defygroup.ai/blog/th/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/ai-video-production-agency-economics/</guid>
+<description>AI ลดต้นทุนของแต่ละเฟรมวิดีโอ แต่ไม่ลดงบประมาณ จุดที่ประหยัดได้จริง เหตุที่ลูกค้าขอเพิ่ม และวิธีที่เอเจนซีควรตั้งราคางานวิดีโอที่ใช้ AI ช่วย</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>วิธีเข้าถึงผู้บริโภค Gen Z: วางแผนจากชุมชน ไม่ใช่ปีเกิด</title>
+<link>https://defygroup.ai/blog/th/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/gen-z-persona-clustering/</guid>
+<description>ช่วงอายุไม่ช่วยเขียนบรีฟ เอเจนซีเข้าถึงผู้บริโภค Gen Z ได้อย่างไรด้วยการจัดกลุ่มบทสนทนาจริงเป็นเพอร์โซนา พร้อมวิธีเจ็ดขั้นตอนและตัวอย่าง</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>เครือข่ายรีเทลมีเดียกับเอเจนซี: ใครเป็นเจ้าของงบประมาณตัวจริง?</title>
+<link>https://defygroup.ai/blog/th/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/retail-media-agency-ownership/</guid>
+<description>เครือข่ายรีเทลมีเดียดึงเอเจนซีสื่อ คอมเมิร์ซ เพอร์ฟอร์แมนซ์ และครีเอเตอร์มาสู้กันในสนามเดียว ใครควรดูแลช่องทางนี้ และเอเจนซีอิสระจะชิงที่นั่งได้อย่างไร</description>
+<category>ประเภทเอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AI จะมาแทนเอเจนซีการตลาดหรือไม่ ทำไมตัวเลขจึงไม่ค่อยลงตัว</title>
+<link>https://defygroup.ai/blog/th/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/will-ai-replace-agencies/</guid>
+<description>AI จะมาแทนเอเจนซีการตลาดหรือไม่ ต้นทุนจริงของ AI บวกพนักงานในองค์กร งานเอเจนซีใดที่ AI ควรรับไป และงานใดยังต้องใช้คน</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>รวมศูนย์เอเจนซีหรือใช้โรสเตอร์? สิ่งที่ StarKist และ ServiceNow บอก</title>
+<link>https://defygroup.ai/blog/th/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-consolidation-vs-roster/</guid>
+<description>รวมศูนย์เอเจนซีหรือใช้โรสเตอร์เฉพาะทาง? การที่ StarKist ย้ายงานไปอยู่กับ Tombras และดีล ServiceNow ของ Stagwell บอกอะไรเกี่ยวกับการชนะบัญชีใหญ่</description>
+<category>การหาลูกค้าใหม่</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>เอเจนซีอิสระกับโฮลดิ้งคอมพานี: เอเจนซีอิสระแข่งขันด้านข้อมูลได้อย่างไร</title>
+<link>https://defygroup.ai/blog/th/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/independent-agencies-vs-holding-company-data/</guid>
+<description>เอเจนซีอิสระกับโฮลดิ้งคอมพานี: เครือข่ายยังนำด้านข้อมูลตรงไหน เอเจนซีอิสระตามทันได้แล้วตรงไหน พร้อมแผน 90 วันเพื่อปิดช่องว่าง</description>
+<category>ประเภทเอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>รายงานผลอินฟลูเอนเซอร์มาร์เก็ตติ้ง: ทำไมจึงเป็นสมรภูมิใหม่ของเอเจนซี</title>
+<link>https://defygroup.ai/blog/th/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/influencer-agency-reporting-automation/</guid>
+<description>วิธีทำรายงานผลอินฟลูเอนเซอร์มาร์เก็ตติ้งที่พิสูจน์ ROI ได้ แม้มีนาโนอินฟลูเอนเซอร์หลายสิบคน ทั้งตัวชี้วัด สัญญาณความไว้วางใจ และสิ่งที่ควรทำอัตโนมัติ</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>เครื่องมือวิจัยกลุ่มเป้าหมาย: งานที่นักวางแผนควรทำให้อัตโนมัติก่อน</title>
+<link>https://defygroup.ai/blog/th/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/future-of-strategy-planners-automate/</guid>
+<description>ควรใช้เครื่องมือวิจัยกลุ่มเป้าหมายแบบไหน และเริ่มทำงานอะไรให้อัตโนมัติก่อน? ลำดับงานที่ใช้ได้จริง เช็กลิสต์เลือกเครื่องมือ และสิ่งที่ต้องให้คนทำเอง</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>โฆษณา Agentic AI โดยไม่ต้องกลัวเอเจนต์หลุดการควบคุม: ให้คนยังอยู่ในวงจรการตัดสินใจ</title>
+<link>https://defygroup.ai/blog/th/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agentic-media-human-in-the-loop/</guid>
+<description>โฆษณา Agentic AI มาเร็วกว่าที่คิด ดูว่าเอเจนซีให้คนยังร่วมควบคุมอย่างไร ทั้งเกณฑ์อนุมัติ ผู้รับผิดชอบที่ระบุชื่อ และการกำกับสารด้วยมนุษย์</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>กลุ่มเป้าหมายสังเคราะห์กำลังมาแรง นี่คือวิธีที่เอเจนซีรักษาให้มันซื่อตรง</title>
+<link>https://defygroup.ai/blog/th/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/synthetic-audiences-agencies-validation/</guid>
+<description>กลุ่มเป้าหมายสังเคราะห์กำลังเข้ามาอยู่ในงานวางแผนประจำวันของเอเจนซี รู้ว่าเชื่อถือได้ตรงไหน ชวนให้เข้าใจผิดตรงไหน พร้อมหกขั้นตอนตรวจสอบทุกข้อค้นพบ</description>
+<category>อินไซต์และกลยุทธ์</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>โมเดลสปรินต์ของเอเจนซี: วิธีเคลื่อนที่เร็วโดยกลยุทธ์ไม่พัง</title>
+<link>https://defygroup.ai/blog/th/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-sprint-model-speed-strategy/</guid>
+<description>โมเดลสปรินต์ของเอเจนซีขายความเร็ว นี่คือวิธีทำสปรินต์ให้เร็วโดยกลยุทธ์ไม่พัง ด้วยแกนกลยุทธ์รายไตรมาส หลักฐานสดใหม่ และงานจุกจิกที่เป็นอัตโนมัติ</description>
+<category>ประเภทเอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>พรีเทสต์ครีเอทีฟ: วิธียุติสงครามระหว่างความคิดสร้างสรรค์กับผลลัพธ์</title>
+<link>https://defygroup.ai/blog/th/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/creativity-vs-performance-pre-testing/</guid>
+<description>พรีเทสต์ครีเอทีฟช่วยยุติศึกระหว่างความคิดสร้างสรรค์กับผลลัพธ์: ให้คะแนนคอนเซปต์ก่อนใช้งบสื่อ ปกป้องไอเดียที่กล้า และให้คนเป็นผู้ตัดสินใจสุดท้าย</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>เครื่องมือการตลาด AI สำหรับเอเจนซี: สร้างชุดเครื่องมือที่เชื่อมกัน ไม่ใช่รายการช้อปปิ้ง</title>
+<link>https://defygroup.ai/blog/th/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-ai-stack-integration/</guid>
+<description>วิธีเลือกเครื่องมือการตลาด AI สำหรับเอเจนซีที่เชื่อมต่อกับระบบเดิมได้ พร้อมเช็กลิสต์การประเมิน แผน 7 ขั้นตอน และเคล็ดลับเรื่องสัญญา</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>กลยุทธ์สร้างความแตกต่างให้แบรนด์: ค้นหามุมที่หมวดสินค้าของคุณมองข้าม</title>
+<link>https://defygroup.ai/blog/th/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegarty ชี้ว่าการตลาด “ซ้ำซาก จำเจ น่าเบื่อ” นี่คือกลยุทธ์สร้างความแตกต่างให้แบรนด์ด้วยการทำแผนที่หมวดสินค้าเพื่อหามุมที่ยังไม่มีใครครอง</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>แดชบอร์ดการตลาดล้นมือ: ทำไมเอเจนซีจึงหันมาตั้งคำถามแทนการล็อกอินเข้าระบบ</title>
+<link>https://defygroup.ai/blog/th/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-dashboard-fatigue-ai-questions/</guid>
+<description>แดชบอร์ดเยอะแต่อินไซต์น้อย? ทำไมแดชบอร์ดการตลาดจึงล้นมือ พร้อมวิธี 6 ขั้นตอนเปลี่ยนการล็อกอินหลายระบบเป็นคำถามที่เริ่มจากการตัดสินใจ</description>
+<category>การเปลี่ยนผ่านสู่ AI</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>วิธีพิสูจน์ ROI ของสื่อให้ลูกค้าเห็น: ทำไม MMM จึงกลับมา และควรนำเสนออะไร</title>
+<link>https://defygroup.ai/blog/th/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/proving-media-roi-agencies-mmm/</guid>
+<description>ROAS จากแพลตฟอร์มโน้มน้าวลูกค้าไม่ได้อีกต่อไป เอเจนซีจะพิสูจน์ ROI ของสื่อได้อย่างไรด้วย MMM การทดลอง และหลักฐานที่อธิบายว่าทำไมผลลัพธ์จึงเปลี่ยน</description>
+<category>ประสิทธิผลของงานครีเอทีฟ</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>ค่าตอบแทนเอเจนซีตามผลลัพธ์: ตัวชี้วัดที่มากกว่า ROAS และ CPA</title>
+<link>https://defygroup.ai/blog/th/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>ค่าตอบแทนเอเจนซีแบบคิดตามเวลาเหลือเพียง 17% ของทุกรูปแบบ ตัวชี้วัดใดนอกเหนือจาก ROAS และ CPA ที่ควรใช้กำหนดค่าตอบแทนตามผลลัพธ์ และจะวางระบบอย่างไร</description>
+<category>เศรษฐศาสตร์เอเจนซี</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>ผลกระทบของ AI ต่องานเอเจนซี: วิธีสร้างบันไดสายอาชีพระดับจูเนียร์ขึ้นใหม่</title>
+<link>https://defygroup.ai/blog/th/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/th/agency-entry-level-talent-ai/</guid>
+<description>เอเจนซีเริ่มหยุดรับเด็กจบใหม่อย่างเงียบ ๆ เมื่อ AI เข้ามารับงานระดับจูเนียร์ ข้อมูลบอกอะไร และจะออกแบบตำแหน่งระดับเริ่มต้นใหม่ให้ยึดวิจารณญาณได้อย่างไร</description>
+<category>บุคลากรและวัฒนธรรมองค์กร</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
