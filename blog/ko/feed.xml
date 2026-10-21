@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Defy 저널</title>
+<link>https://defygroup.ai/blog/ko/</link>
+<description>에이전시 경제학, AI 도입, 인사이트의 기술에 관한 현장 노트. 독립 에이전시와 인하우스 팀, 그리고 대형 네트워크 에이전시에 밀리는 데 지친 모든 이를 위해 씁니다.</description>
+<language>ko</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/ko/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>에이전시에서 무엇을 자동화할까: 먼저 답해야 할 세 가지 질문</title>
+<link>https://defygroup.ai/blog/ko/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/before-you-automate-three-questions-agencies/</guid>
+<description>무언가를 자동화하기 전에 결정이 얼마나 복잡한지, 잘못된 결과물이 얼마나 큰 피해를 줄 수 있는지, 어떤 측정 가능한 성과가 개선되는지 물으십시오. 에이전시를 위한 가이드입니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 준비도 진단: 가장 약한 차원이 수준을 결정합니다</title>
+<link>https://defygroup.ai/blog/ko/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-ai-readiness-four-dimensions/</guid>
+<description>콘텍스트, 사람, 프로세스, 플랫폼. 에이전시를 위한 실용적인 AI 준비도 진단과, AI 교육만으로 가장 약한 고리가 해결되지 않는 이유를 소개합니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시의 AI 저항은 사람이 아닌 기준의 문제입니다</title>
+<link>https://defygroup.ai/blog/ko/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-resistance-standards-not-people/</guid>
+<description>최고의 인재들은 AI가 아니라 형편없는 결과물에 저항합니다. 에이전시의 AI 저항이 품질 격차의 신호인 이유와, 번아웃 없이 해결하는 방법을 소개합니다.</description>
+<category>인재와 문화</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 전략: Meta와 Google이 자동화할 것은 만들지 마세요</title>
+<link>https://defygroup.ai/blog/ko/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta와 Google이 타기팅, 광고 제작, 캠페인 설정을 자동화하고 있습니다. 더 날카로운 에이전시 AI 전략은 도구는 구매하고 판단력이 곧 상품인 영역에서 경쟁하는 것입니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 지표: 클라이언트는 사용량이 아닌 결과에 비용을 지불합니다</title>
+<link>https://defygroup.ai/blog/ko/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/measure-ai-results-not-usage-agencies/</guid>
+<description>좌석 수, 에이전트 수, 생성 에셋 수는 허울뿐인 지표입니다. 클라이언트가 가치를 인정하는 에이전시 AI 지표는 산출물당 비용, 속도, 오류율, 수익입니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI ROI 측정법: 도입 전에 성공 기준을 정의하십시오</title>
+<link>https://defygroup.ai/blog/ko/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/define-success-before-deploying-ai-agency/</guid>
+<description>기준선, 목표, 테스트, 검토. 에이전시가 AI ROI를 측정하고, 검수 시간과 AI 드래그를 계산하여 자동화가 실제로 이득인지 알아보는 간단한 방법.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로</title>
+<link>https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>도구 열한 개, 담당자 스무 명, 공유되는 것은 없다면? 에이전시가 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 폐쇄 루프 AI 시스템을 구축하는 방법.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시의 AI 역할: AI를 모두의 일로 만들지 마십시오</title>
+<link>https://defygroup.ai/blog/ko/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>에이전시 구성원 모두가 AI를 만들 필요는 없습니다. AI가 에이전시 업무를 바꿔 가는 시대에 빌더, 사용자, 승인자가 품질과 커리어, 고용 안정을 지키는 방법.</description>
+<category>인재와 문화</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 네이티브 에이전시: 속도는 진전이 아니며, 진짜 진전은 5단계입니다</title>
+<link>https://defygroup.ai/blog/ko/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/speed-is-not-progress-ai-native-agencies/</guid>
+<description>AI 네이티브 에이전시란 무엇인지, AI 도입의 5단계는 무엇인지, 그리고 왜 대부분의 에이전시는 병목이 해소되는 단계에서 멈춰야 하는지 살펴봅니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 도입: 자동화 전에 실제 워크플로부터 문서화하세요</title>
+<link>https://defygroup.ai/blog/ko/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-bad-process-document-workflows-first/</guid>
+<description>엉망인 프로세스에 AI를 얹으면 빠른 엉망이 됩니다. 에이전시가 실제 워크플로를 파악하고 병목을 찾은 뒤 무엇을 자동화할지 정하는 방법.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI와 소비자 행동: 에이전시가 인사이트 업무를 재구축해야 하는 이유</title>
+<link>https://defygroup.ai/blog/ko/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI가 소비자 행동을 어떻게 바꾸고 있는지, 에이전시가 인사이트 업무를 왜 재구축해야 하는지. 세 가지 변화, 하나의 데이터 함정, 실행을 위한 여섯 단계 계획.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>콜드 스타트 문제: 사용자 데이터가 없을 때 광고를 개인화하는 방법</title>
+<link>https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/</guid>
+<description>광고의 콜드 스타트 문제 해결법: 서드파티 데이터 없이, 공개 콘텐츠로 만든 페르소나로 신규 사용자를 개인화하는 방법.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>2026 크리스마스: 에이전시를 위한 조기 경보 시스템으로서의 소셜 리스닝</title>
+<link>https://defygroup.ai/blog/ko/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/christmas-2026-social-listening-early-warning/</guid>
+<description>크리스마스 시즌 소셜 리스닝: 4분기 예산을 지키기 위해 에이전시가 지금 지켜봐야 할 신호를 신호 표와 여섯 단계 계획으로 정리했습니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법</title>
+<link>https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/</guid>
+<description>제대로 통합한 에이전시용 AI 도구: 도구 난립이 시간을 낭비하는 이유, MCP가 바꾸는 것, 간소한 AI 스택을 여섯 단계로 구축하는 방법.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 시대 에이전시 가격 모델: 공정하게 책정하고 마진은 지키세요</title>
+<link>https://defygroup.ai/blog/ko/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-pricing-models-fair-ai-pricing/</guid>
+<description>AI 시대의 에이전시 가격 모델: 효율화 성과를 고스란히 내주면 안 되는 이유, 그리고 마진을 지켜 주는 보수 구조.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 서비스 포트폴리오 좁히기: 무엇을, 언제 중단할 것인가</title>
+<link>https://defygroup.ai/blog/ko/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/when-to-stop-an-agency-service/</guid>
+<description>에이전시 서비스 포트폴리오 좁히기: 서비스의 수명이 다했다는 신호, 6단계 방법, 중단을 결정하기 전에 확인할 데이터를 정리합니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>크로스 플랫폼 인게이지먼트 측정: 에이전시 스프레드시트를 은퇴시킬 때</title>
+<link>https://defygroup.ai/blog/ko/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/measure-cross-platform-engagement-agencies/</guid>
+<description>크로스 플랫폼 인게이지먼트를 신뢰할 수 있게 측정하는 법: 공통 정의, 정규화된 지표, 스포츠 사례, 도구 선택 기준을 정리합니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시의 가면 증후군: AI 시대에 자신감을 되찾는 법</title>
+<link>https://defygroup.ai/blog/ko/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/imposter-syndrome-agencies-ai-era/</guid>
+<description>에이전시의 가면 증후군: AI가 특히 주니어의 자기 의심을 키우는 이유와, 허세가 아닌 근거 위에 자신감을 쌓는 방법을 살펴봅니다.</description>
+<category>인재와 문화</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>응답자 없는 리서치: 합성 페르소나는 가능성일까, 신기루일까?</title>
+<link>https://defygroup.ai/blog/ko/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/respondent-free-research-synthetic-personas/</guid>
+<description>합성 페르소나와 응답자 없는 리서치가 세대 인사이트에서 갖는 가치와 한계, 그리고 현실에 닻을 내리는 방법을 살펴봅니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>미디어 에이전시와 AI: 새로운 시대가 독립 에이전시에 의미하는 것</title>
+<link>https://defygroup.ai/blog/ko/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/media-agencies-new-ai-era-independents/</guid>
+<description>미디어 에이전시와 AI: 실행은 압축되고 가치는 조언으로 이동합니다. 독립 에이전시에 달라지는 점과 시작점을 짚어봅니다.</description>
+<category>에이전시 유형</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 보수: 소셜 데이터로 가치를 입증하는 방법</title>
+<link>https://defygroup.ai/blog/ko/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-remuneration-social-data-proof-of-value/</guid>
+<description>프랑스 AACC는 에이전시 보수를 투입 시간 중심에서 벗어나게 하려 합니다. 소셜 데이터를 추적 가능한 가치 증명으로 바꾸는 방법을 단계별로 소개합니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>클라이언트가 가치를 느끼는 인게이지먼트 지표(그리고 눈속임에 불과한 지표)</title>
+<link>https://defygroup.ai/blog/ko/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/engagement-metrics-clients-value/</guid>
+<description>클라이언트가 실제로 가치를 느끼는 인게이지먼트 지표는 무엇일까요? 허영 지표와 성과를 구분하고, 플랫폼을 비교하며, 의사결정으로 이어지는 리포트를 만드는 방법입니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 블랙프라이데이: 리포팅 자동화로 최적화 시간 확보</title>
+<link>https://defygroup.ai/blog/ko/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/black-friday-agencies-automate-reporting/</guid>
+<description>2026년 블랙프라이데이까지 6주. 리포팅과 알림을 자동화하고, 피크 기간에 팀이 최적화에 집중할 수 있도록 하는 에이전시용 블랙프라이데이 계획입니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>의사결정자를 졸리게 하지 않는 B2B 콘텐츠 마케팅</title>
+<link>https://defygroup.ai/blog/ko/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/b2b-content-marketing-that-engages/</guid>
+<description>B2B 콘텐츠 마케팅이 지루할 필요는 없습니다. 구매자의 진짜 긴장 요인에서 출발하고, 미디어 집행 전에 콘셉트를 테스트해 적격 리드를 만드는 방법을 소개합니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI와 홀딩컴퍼니 모델의 종말: 독립 에이전시가 얻을 교훈</title>
+<link>https://defygroup.ai/blog/ko/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-holding-company-model-independent-agencies/</guid>
+<description>WPP의 감원과 줄어드는 에이전시 수수료는 AI가 홀딩컴퍼니를 재편하고 있음을 보여 줍니다. 무엇이 바뀌고 있는지, 독립 에이전시는 AI로 어떻게 입지를 넓힐 수 있는지 살펴봅니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>파편화된 미디어 소비: 대시보드를 넘어 오디언스 이해하기</title>
+<link>https://defygroup.ai/blog/ko/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/fragmented-media-consumption-audience-data/</guid>
+<description>파편화된 미디어 소비는 데이터를 모든 채널에 흩어 놓습니다. 오디언스 데이터를 실제 페르소나와 텐션으로 통합해 더 나은 플래닝을 하는 방법을 소개합니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>브라질 에이전시 피칭: 새 규칙은 근거를 가져오는 쪽에 유리합니다</title>
+<link>https://defygroup.ai/blog/ko/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/brazil-agency-pitches-category-intelligence/</guid>
+<description>브라질 Abracom/ABA의 에이전시 피칭 가이드가 10단계로 개편되었습니다. 소비자 행동과 카테고리 데이터로 근거를 갖춰 피칭에서 이기는 방법.</description>
+<category>신규 수주</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 브랜드 차별화: 경쟁사와 똑같이 들리지 않는 방법</title>
+<link>https://defygroup.ai/blog/ko/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>AI를 활용한 브랜드 차별화: 카테고리가 이미 하는 말을 지도로 그리고, 비어 있는 영역을 찾아, 미디어 비용을 쓰기 전에 아이디어를 테스트하는 방법.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 번아웃: 반복 업무는 줄이고 창의성에 쓸 시간은 늘리기</title>
+<link>https://defygroup.ai/blog/ko/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-burnout-automate-repetitive-work/</guid>
+<description>에이전시 번아웃의 실체: 창의적 압박과 반복적 부담을 구분하고, 자동화할 업무를 가려내는 팀을 위한 5단계 실행 계획을 소개합니다.</description>
+<category>인재와 문화</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>관세와 마케팅 전략: 메시지와 예산을 다시 균형 잡는 방법</title>
+<link>https://defygroup.ai/blog/ko/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>관세와 마케팅 전략: 카테고리에 미치는 영향을 읽고, 시장별로 메시지를 다시 짜고, 멈추지 않고 예산을 옮기는 방법을 정리했습니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시를 위한 소셜 리스닝: 분기 리포트는 이미 늦다</title>
+<link>https://defygroup.ai/blog/ko/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/continuous-social-listening-agencies/</guid>
+<description>분기 리포트에서 소비자 트렌드의 지속적 추적으로 넘어가는 에이전시 소셜 리스닝, 실무에서 쓰는 6단계 방법을 소개합니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>마케팅 AI 데이터 분석: 클라이언트가 검증할 수 있는 결론</title>
+<link>https://defygroup.ai/blog/ko/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-data-analysis-verifiable-conclusions/</guid>
+<description>마케팅 AI 데이터 분석 모범 사례입니다. 사일로를 허물고 클라이언트가 검증할 수 있는 결론을 내놓는 방법을 체크리스트와 함께 단계별로 소개합니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>독립 에이전시를 위한 AI: 왜 통합하고 무엇이 달라지는가</title>
+<link>https://defygroup.ai/blog/ko/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle은 네 개 회사를 합치고 SAMY는 미국 기업을 인수합니다. 독립 에이전시 통합에서 AI가 하는 역할과 나에게 맞는 규모 확대 경로를 고르는 방법을 짚습니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>신뢰를 잃지 않는 개인화 광고: 에이전시를 위한 가이드</title>
+<link>https://defygroup.ai/blog/ko/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ad-personalisation-without-third-party-data/</guid>
+<description>여자 축구 팬 같은 니치 오디언스를 위해 서드파티 데이터에 의존하지 않고 커뮤니티의 신뢰도 해치지 않는 광고 개인화 가이드입니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 미디어 플래닝: 인구통계에서 실제 소비자 텐션으로</title>
+<link>https://defygroup.ai/blog/ko/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/media-planning-real-personas-ai/</guid>
+<description>AI 미디어 플래닝으로 인구통계에서 한 걸음 나아가 오디언스가 실제로 느끼는 텐션을 파악하는 7단계 방법과 비교표를 소개합니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>싱가포르 미디어 소비 데이터: 네트워크가 축소되는 시기에 무엇을 믿을 것인가</title>
+<link>https://defygroup.ai/blog/ko/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/apac-agencies-market-intelligence/</guid>
+<description>싱가포르 미디어 소비 데이터를 어디서 찾고, 어떤 출처를 무엇에 신뢰할지, 독립 에이전시가 네트워크 없이 마켓 인텔리전스를 구축하는 방법을 정리했습니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI가 마케팅 에이전시 유형별로 미치는 충격: 크리에이티브부터 인플루언서까지</title>
+<link>https://defygroup.ai/blog/ko/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/how-ai-disrupts-each-agency-type/</guid>
+<description>AI가 크리에이티브, 미디어, CRM, PR, 인플루언서 에이전시를 어떻게 바꾸는지, 어떤 업무가 먼저 넘어가고 무엇의 가치가 높아지며 유형별로 어떤 AI 도구를 테스트해야 하는지 정리했습니다.</description>
+<category>에이전시 유형</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 콘텐츠 제작 모범 사례: 에이전시를 위한 품질 프레임워크</title>
+<link>https://defygroup.ai/blog/ko/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-content-quality-framework-agencies/</guid>
+<description>에이전시를 위한 AI 콘텐츠 제작 모범 사례: 브랜드 보이스를 지키고, 핵심 판단은 사람이 맡고, 미디어 집행 전에 테스트하는 7단계 게이트 프레임워크입니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>실제 수치가 있는 AI 마케팅 사례 연구와 그 사례가 말하지 않는 것</title>
+<link>https://defygroup.ai/blog/ko/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-driven-agency-case-studies/</guid>
+<description>엄밀한 검증을 통과하는 AI 마케팅 사례 연구는 드뭅니다. 8.5% 예상 상승 효과를 포함해 실제 수치가 있는 사례를 살펴보고, 나머지를 판단하는 방법을 소개합니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 네이티브 마케팅 조직이 에이전시에 여전히 맡기는 일</title>
+<link>https://defygroup.ai/blog/ko/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death는 에이전시가 구축한 AI 시스템과 단 두 명의 인력으로 상당한 규모의 예산을 운용할 계획입니다. AI 네이티브 마케팅 조직이 에이전시에 요구하는 것을 살펴봅니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 피칭 전략: 48시간 카테고리 인사이트 스프린트로 수주하는 법</title>
+<link>https://defygroup.ai/blog/ko/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/win-agency-pitches-ai-category-insight/</guid>
+<description>경쟁사 광고, 오디언스의 고민, 아무도 선점하지 않은 앵글을 48시간 안에 파악하는 실전 에이전시 피칭 전략과, Publicis CEO의 직접 영업이 의미하는 바를 다룹니다.</description>
+<category>신규 수주</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>글로벌 캠페인이 기대에 못 미칠 때 마케팅 예산 ROI를 최적화하는 법</title>
+<link>https://defygroup.ai/blog/ko/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/global-vs-local-campaign-budget/</guid>
+<description>마케팅 예산 ROI를 최적화하려면 크리에이티브 적합성부터 바로잡아야 합니다. 글로벌 대 로컬에 관한 새 연구의 의미와 시장별 의사결정 표, 7단계 실행법을 소개합니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>AI 영상 제작 비용: 프레임이 저렴해져도 예산이 줄지 않는 이유</title>
+<link>https://defygroup.ai/blog/ko/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/ai-video-production-agency-economics/</guid>
+<description>AI는 영상 프레임당 비용을 낮출 뿐 예산을 줄이지는 않습니다. 실제 절감 지점은 어디인지, 왜 클라이언트는 더 많이 요구하는지, 에이전시는 AI 활용 영상에 어떻게 가격을 매겨야 하는지 살펴봅니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Z세대 소비자에게 다가가는 법: 출생연도가 아닌 커뮤니티에서 출발하라</title>
+<link>https://defygroup.ai/blog/ko/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/gen-z-persona-clustering/</guid>
+<description>연령대만으로는 브리프를 쓸 수 없습니다. 실제 대화를 페르소나로 클러스터링해 Z세대 소비자에게 다가가는 에이전시의 방법을 7단계 실행법과 사례로 소개합니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>리테일 미디어 네트워크와 에이전시, 예산의 진짜 주인은 누구인가?</title>
+<link>https://defygroup.ai/blog/ko/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/retail-media-agency-ownership/</guid>
+<description>리테일 미디어 네트워크를 두고 미디어·커머스·퍼포먼스·크리에이터 에이전시가 한 판 경쟁을 벌이고 있습니다. 이 채널은 누가 맡아야 하며, 독립 에이전시는 어떻게 그 자리를 차지할 수 있을까요?</description>
+<category>에이전시 유형</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AI가 마케팅 에이전시를 대체할까? 계산이 좀처럼 맞지 않는 이유</title>
+<link>https://defygroup.ai/blog/ko/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/will-ai-replace-agencies/</guid>
+<description>AI가 마케팅 에이전시를 대체할까요? AI와 인하우스 채용의 실제 비용, AI가 맡아야 할 에이전시 업무, 그리고 여전히 사람이 필요한 영역을 짚어 봅니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 통합인가, 로스터인가? StarKist와 ServiceNow 사례가 보여 주는 것</title>
+<link>https://defygroup.ai/blog/ko/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-consolidation-vs-roster/</guid>
+<description>에이전시를 통합할 것인가, 전문 에이전시 로스터를 유지할 것인가? StarKist의 Tombras 일원화와 Stagwell의 ServiceNow 수주로 본 대형 어카운트 수주 비결.</description>
+<category>신규 수주</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>독립 에이전시 vs 광고 지주회사: 독립 에이전시가 데이터로 경쟁하는 법</title>
+<link>https://defygroup.ai/blog/ko/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/independent-agencies-vs-holding-company-data/</guid>
+<description>독립 에이전시 vs 광고 지주회사: 네트워크가 여전히 데이터에서 앞서는 영역, 이제 독립 에이전시도 따라잡을 수 있는 영역, 그리고 격차를 좁히는 90일 계획.</description>
+<category>에이전시 유형</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>인플루언서 마케팅 리포팅: 에이전시의 새로운 격전지가 된 이유</title>
+<link>https://defygroup.ai/blog/ko/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/influencer-agency-reporting-automation/</guid>
+<description>수십 명의 나노 인플루언서를 기용하더라도 ROI를 입증하는 인플루언서 마케팅 리포팅 방법. 핵심 지표와 신뢰 신호, 자동화할 영역을 정리했습니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>오디언스 리서치 툴: 플래너가 가장 먼저 자동화해야 할 것</title>
+<link>https://defygroup.ai/blog/ko/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/future-of-strategy-planners-automate/</guid>
+<description>플래너는 어떤 오디언스 리서치 툴부터 자동화해야 할까요? 실무 업무 우선순위와 툴 선택 체크리스트, 사람이 맡아야 할 영역을 정리했습니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>‘폭주 에이전트’ 걱정 없는 에이전틱 AI 광고: 사람을 루프 안에 두는 법</title>
+<link>https://defygroup.ai/blog/ko/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agentic-media-human-in-the-loop/</guid>
+<description>에이전틱 AI 광고가 빠르게 다가오고 있습니다. 승인 기준선, 지정된 책임자, 메시지에 대한 사람의 통제권까지, 에이전시가 휴먼 인 더 루프를 유지하는 방법을 알아봅니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>합성 오디언스가 급부상하고 있습니다. 에이전시가 그 신뢰성을 지키는 방법</title>
+<link>https://defygroup.ai/blog/ko/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/synthetic-audiences-agencies-validation/</guid>
+<description>합성 오디언스가 에이전시의 일상적인 플래닝에 자리 잡고 있습니다. 어디서 믿을 만하고 어디서 오해를 낳는지, 그리고 모든 결과를 검증하는 6단계를 알아봅니다.</description>
+<category>인사이트·전략</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 스프린트 모델: 전략을 무너뜨리지 않고 빠르게 움직이는 법</title>
+<link>https://defygroup.ai/blog/ko/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-sprint-model-speed-strategy/</guid>
+<description>에이전시 스프린트 모델은 속도를 판매합니다. 분기별 전략 축, 최신 근거, 반복 업무 자동화로 전략을 무너뜨리지 않고 빠른 스프린트를 운영하는 방법을 소개합니다.</description>
+<category>에이전시 유형</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>크리에이티브 사전 테스트: 창의성과 성과의 전쟁을 끝내는 법</title>
+<link>https://defygroup.ai/blog/ko/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/creativity-vs-performance-pre-testing/</guid>
+<description>크리에이티브 사전 테스트로 창의성과 성과의 대립을 끝내십시오. 미디어 집행 전에 콘셉트를 평가하고, 과감한 아이디어를 지키며, 최종 결정은 사람에게 맡기는 방법입니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>에이전시 AI 마케팅 툴: 쇼핑 리스트가 아닌 ‘스택’을 만드는 법</title>
+<link>https://defygroup.ai/blog/ko/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-ai-stack-integration/</guid>
+<description>기존 시스템과 연동되는 에이전시용 AI 마케팅 툴을 고르는 법. 평가 체크리스트, 7단계 구축 계획, 계약 팁까지 정리했습니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>브랜드 차별화 전략: 카테고리가 외면한 앵글 찾기</title>
+<link>https://defygroup.ai/blog/ko/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegarty는 마케팅이 ‘반복적이고 진부하며 지루하다’고 말합니다. 카테고리 전체를 지도로 그려 아무도 차지하지 않은 앵글을 찾는 브랜드 차별화 전략을 소개합니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>마케팅 대시보드 과부하: 에이전시가 로그인 대신 질문을 택하는 이유</title>
+<link>https://defygroup.ai/blog/ko/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-dashboard-fatigue-ai-questions/</guid>
+<description>대시보드는 넘쳐나는데 인사이트는 부족한가요? 마케팅 대시보드 과부하가 생기는 이유와, 로그인 대신 의사결정 중심의 질문으로 전환하는 6단계 방법을 알아봅니다.</description>
+<category>AI 전환</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>클라이언트에게 미디어 ROI를 증명하는 법: MMM이 돌아온 이유와 보여 줘야 할 것</title>
+<link>https://defygroup.ai/blog/ko/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/proving-media-roi-agencies-mmm/</guid>
+<description>플랫폼 ROAS로는 더 이상 클라이언트를 설득할 수 없습니다. 마케팅 믹스 모델링, 실험, 결과가 움직인 이유에 대한 근거로 에이전시가 미디어 ROI를 증명하는 방법을 소개합니다.</description>
+<category>크리에이티브 효과</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>성과 기반 에이전시 보수: ROAS와 CPA를 넘어서는 지표</title>
+<link>https://defygroup.ai/blog/ko/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>시간 기반 에이전시 보수는 전체 모델의 17%로 줄었습니다. ROAS와 CPA를 넘어 성과 기반 보수를 이끌어야 할 지표와 그 설계 방법을 알아봅니다.</description>
+<category>에이전시 경제학</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>AI가 에이전시 일자리에 미치는 영향: 주니어 커리어 사다리를 다시 세우는 법</title>
+<link>https://defygroup.ai/blog/ko/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/ko/agency-entry-level-talent-ai/</guid>
+<description>AI가 주니어 업무를 흡수하면서 에이전시들이 조용히 신입 채용을 멈추고 있습니다. 데이터가 말하는 것과, 판단력을 중심으로 신입 직무를 재설계하는 방법을 살펴봅니다.</description>
+<category>인재와 문화</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

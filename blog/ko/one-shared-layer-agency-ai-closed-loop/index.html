@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이전시의 폐쇄 루프 AI 시스템: 하나의 공유 레이어 | Defy</title>
+<meta name="description" content="도구 열한 개, 담당자 스무 명, 공유되는 것은 없다면? 에이전시가 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 폐쇄 루프 AI 시스템을 구축하는 방법.">
+<link rel="canonical" href="https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="에이전시 폐쇄 루프 AI 시스템, 에이전시를 위한 폐쇄 루프 AI, 분절된 오디언스 데이터 해결, 에이전시 단일 진실 공급원, 에이전시 데이터 사일로, 에이전시 마테크 가치">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/">
+<meta property="og:title" content="에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로">
+<meta property="og:description" content="도구 열한 개, 담당자 스무 명, 공유되는 것은 없다면? 에이전시가 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 폐쇄 루프 AI 시스템을 구축하는 방법.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d54-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T13:18:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T13:18:00+08:00">
+<meta property="article:section" content="AI 전환">
+<meta property="article:tag" content="폐쇄 루프 AI">
+<meta property="article:tag" content="데이터 사일로">
+<meta property="article:tag" content="에이전시 테크 스택">
+<meta property="article:tag" content="오디언스 데이터">
+<meta property="article:tag" content="AI 워크플로">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로">
+<meta name="twitter:description" content="도구 열한 개, 담당자 스무 명, 공유되는 것은 없다면? 에이전시가 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 폐쇄 루프 AI 시스템을 구축하는 방법.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d54-ko.jpg">
+<meta name="twitter:image:alt" content="에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 저널" href="/blog/ko/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/#article","url":"https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/","mainEntityOfPage":"https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/","headline":"에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로","alternativeHeadline":"에이전시의 폐쇄 루프 AI 시스템: 하나의 공유 레이어","description":"도구 열한 개, 담당자 스무 명, 공유되는 것은 없다면? 에이전시가 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 폐쇄 루프 AI 시스템을 구축하는 방법.","abstract":"도구를 더 늘리지 말고, 모두가 읽어 들이는 하나의 공유 레이어를 구축하십시오. 메모리(모두가 읽는 하나의 원천), 스킬(반복 업무를 코드화한 것), 워크플로(일이 실제로 흐르는 방식), 승인(무엇이든 나가기 전에 사람이 서명)으로 이루어집니다. 그런 다음 모든 통화, 이메일, 의사결정을 AI가 볼 수 있는 곳에 기록하여 루프를 닫으십시오. 기록하지 못한 틈은 AI가 모르는 틈이 됩니다.","image":["https://defygroup.ai/assets/blog/og/d54-ko.jpg","https://defygroup.ai/assets/blog/hero/d54.jpg","https://defygroup.ai/assets/blog/diagrams/d54-diagram.jpg"],"datePublished":"2026-10-16T13:18:00+08:00","dateModified":"2026-10-16T13:18:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"Defy 편집팀","url":"https://defygroup.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AI 전환","keywords":"에이전시 폐쇄 루프 AI 시스템, 에이전시를 위한 폐쇄 루프 AI, 분절된 오디언스 데이터 해결, 에이전시 단일 진실 공급원, 에이전시 데이터 사일로, 에이전시 마테크 가치","wordCount":875,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/ko/#blog","name":"Defy — Defy 저널"},"about":[{"@type":"Thing","name":"폐쇄 루프 AI"},{"@type":"Thing","name":"데이터 사일로"},{"@type":"Thing","name":"에이전시 테크 스택"},{"@type":"Thing","name":"오디언스 데이터"},{"@type":"Thing","name":"AI 워크플로"}],"citation":[{"@type":"CreativeWork","name":"Martech value gap poses threat to agency retention, Ingenuity Pulse report finds","url":"https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb","datePublished":"2026-09-24","publisher":{"@type":"Organization","name":"Campaign UK"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"에이전시에서 폐쇄 루프 AI 시스템이란 무엇일까요?","acceptedAnswer":{"@type":"Answer","text":"첫 접촉부터 납품까지 프로세스의 모든 단계가 공유 메모리에 기록을 남기고, 다음 단계가 사람이든 AI 에이전트든 그 기록을 읽을 수 있는 구조입니다. 중요한 것이 개인 채팅이나 누군가의 머릿속에만 있지 않으므로, AI는 추측하는 대신 온전한 맥락으로 일합니다."}},{"@type":"Question","name":"공유 레이어를 만들려면 기존 도구를 모두 교체해야 할까요?","acceptedAnswer":{"@type":"Answer","text":"대개는 그렇지 않습니다. 공유 레이어의 핵심은 모든 것이 읽고 쓰는 하나의 메모리에 합의하고, 반복 업무를 코드화하며, 승인을 더하는 것입니다. 많은 에이전시가 이미 쓰고 있는 CRM이나 프로젝트 관리 도구를 중심으로 구축할 수 있습니다. 더 어려운 변화는 행동입니다. 꾸준히 기록하고, 서로 중복되는 도구를 정리하는 일입니다."}},{"@type":"Question","name":"에이전시는 WhatsApp의 클라이언트 대화를 어떻게 다뤄야 할까요?","acceptedAnswer":{"@type":"Answer","text":"기록의 일부로 다루십시오. 메신저 앱은 특히 아시아에서 클라이언트와 연락하는 흔한 채널이지만, 거기서 내려진 결정은 나머지 팀과 AI에게는 보이지 않습니다. 클라이언트와 채널별 용도를 합의하고, 개인정보 보호 의무에 맞춰 주요 결정의 요약을 공유 메모리에 기록하십시오."}},{"@type":"Question","name":"클라이언트 통화마다 무엇을 기록해야 할까요?","acceptedAnswer":{"@type":"Answer","text":"다음 단계에 필요한 모든 것입니다. 신규 비즈니스라면 보통 예산, 일정, 의사결정자, 경쟁사, 성공의 기준이 이에 해당합니다. 질문을 미리 적어 두십시오. 예산을 물은 적이 없다면 제안서를 작성할 때 팀도 AI도 예산을 알 수 없기 때문입니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"저널","item":"https://defygroup.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로","item":"https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">이 페이지의 내용</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — 메인"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="주 메뉴">
+<a href="/#main">메인</a>
+<a href="/#platform">플랫폼</a>
+<a href="/#clients">고객사</a>
+<a href="/#team">팀</a>
+<a href="/blog/ko/" class="on">저널</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">로그인</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">문의하기</a>
+<button class="menu" aria-label="메뉴" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="이동 경로"><a href="/#main">홈</a><span>/</span><a href="/blog/ko/">저널</a><span>/</span><span>AI 전환</span></nav>
+<header class="a-head">
+<div class="eyebrow">AI 전환</div>
+<h1 itemprop="headline">에이전시의 폐쇄 루프 AI: 열한 개 도구에서 하나의 공유 레이어로<span class="sq"></span></h1>
+<p class="dek" itemprop="description">분절된 도구는 에이전시의 AI가 추측하게 만듭니다. 폐쇄 루프가 채우는 메모리, 스킬, 워크플로, 승인의 단일 공유 레이어는 사람과 AI 모두에게 전체 그림을 줍니다.</p>
+<div class="a-meta">
+<span><b>Defy 편집팀</b></span>
+<span>게시일 <time datetime="2026-10-16T13:18:00+08:00" itemprop="datePublished">2026년 10월 16일</time></span>
+<span>7분 분량</span>
+<span class="langs"><details class="lsw"><summary aria-label="언어: 한국어"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>한국어</span></summary><div class="lsw-p"><div class="lsw-h">다른 언어로도 제공됩니다</div><a href="/blog/one-shared-layer-agency-ai-closed-loop/" hreflang="en" lang="en">English</a><a href="/blog/fr/one-shared-layer-agency-ai-closed-loop/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/one-shared-layer-agency-ai-closed-loop/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/one-shared-layer-agency-ai-closed-loop/" hreflang="es" lang="es">Español</a><a href="/blog/pt/one-shared-layer-agency-ai-closed-loop/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/one-shared-layer-agency-ai-closed-loop/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/one-shared-layer-agency-ai-closed-loop/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/one-shared-layer-agency-ai-closed-loop/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/one-shared-layer-agency-ai-closed-loop/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/one-shared-layer-agency-ai-closed-loop/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/one-shared-layer-agency-ai-closed-loop/" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="/blog/hi/one-shared-layer-agency-ai-closed-loop/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/one-shared-layer-agency-ai-closed-loop/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/one-shared-layer-agency-ai-closed-loop/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/one-shared-layer-agency-ai-closed-loop/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d54-768.webp 768w, /assets/blog/hero/d54-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d54.jpg" alt="흑백 사진. 긴 회의실 테이블의 빈 좌석마다 노트북, 휴대전화, 노트가 따로 쌓여 있고, 뒷모습의 한 사람이 작은 빨간 책갈피가 꽂힌 하나의 공용 장부에 메모를 옮겨 적고 있다." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="이 글의 출발점이 된 질문">
+<div class="eyebrow">이 글의 출발점이 된 질문</div>
+<p class="q">“AI 도구가 전체 그림을 볼 수 있도록 분절된 클라이언트·오디언스 데이터를 어떻게 바로잡을 수 있을까요?”</p>
+<p class="ans"><b>핵심 답변</b>도구를 더 늘리지 말고, 모두가 읽어 들이는 하나의 공유 레이어를 구축하십시오. 메모리(모두가 읽는 하나의 원천), 스킬(반복 업무를 코드화한 것), 워크플로(일이 실제로 흐르는 방식), 승인(무엇이든 나가기 전에 사람이 서명)으로 이루어집니다. 그런 다음 모든 통화, 이메일, 의사결정을 AI가 볼 수 있는 곳에 기록하여 루프를 닫으십시오. 기록하지 못한 틈은 AI가 모르는 틈이 됩니다.</p>
+</section>
+<section class="kt takeaways"><h2>핵심 요약</h2><ul><li>도구 열한 개, 담당자 스무 명, 공유되는 것은 없는 상태에서는 모든 도구가 일부만 알 뿐 AI를 포함해 누구도 전체를 보지 못합니다.</li><li>에이전시 AI의 공유 레이어는 네 부분으로 이루어집니다. 메모리(모두가 읽는 하나의 원천), 스킬(반복 업무를 코드화한 것), 워크플로(일이 실제로 흐르는 방식), 승인(나가기 전에 사람이 서명)입니다.</li><li>모든 단계가 다음 단계가 읽을 수 있는 기록을 남기면 AI 시스템은 폐쇄 루프입니다. 기록되지 않은 통화와 개인 WhatsApp에서 내린 결정은 AI가 추측으로 채우는 틈입니다.</li><li>통화에서 예산을 묻지 않았다면 AI도 예산을 모릅니다. 그래서 폐쇄 루프는 사람들이 회의에서 묻는 내용까지 바꿉니다.</li><li>Campaign이 보도한 Ingenuity Pulse 보고서에 따르면 마케터 세 명 중 한 명만이 마테크 성과에 만족하고 있어, 스택에서 눈에 보이는 가치를 내는 일이 에이전시에는 클라이언트 유지의 문제가 되고 있습니다.</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>AI 도구가 전체 그림을 볼 수 있도록 분절된 클라이언트·오디언스 데이터를 어떻게 바로잡을 수 있을까요? 도구를 더 늘리지 말고 모두가 읽어 들이는 하나의 공유 레이어를 구축하십시오. 그런 다음 루프를 닫아 모든 대화, 결정, 승인이 AI가 볼 수 있는 곳에 쌓이게 하십시오. 기록하지 못한 틈은 AI가 모르는 틈이 됩니다.</p>
+<p>이를 잘못 다루면 클라이언트가 알아챕니다. <a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Campaign</a>은 Ingenuity Pulse 보고서에서 마케터 세 명 중 한 명만이 마테크 투자 성과에 만족하며, 이런 불만이 에이전시 관계의 위험 요인이 되고 있다고 보도했습니다. 기술 스택에서 가치를 보여 주지 못하는 에이전시는 클라이언트를 잃을 위험이 더 큽니다.</p>
+<p>이번 주 싱가포르 AI 도입 세션에서 한 에이전시 창업자는 같은 문제의 내부 버전을 슬라이드 한 장으로 요약했습니다. 도구 열한 개, 담당자 스무 명, 공유되는 것은 없다는 것입니다.</p>
+<h2 id="why-do-more-ai-tools-leave-agencies-knowing-less">도구를 늘릴수록 에이전시가 아는 것은 왜 줄어들까요?</h2>
+<p>모든 도구가 일부만 알고 아무도 전체를 책임지지 않기 때문입니다. 소셜 리스닝 도구는 대화를 압니다. 광고 플랫폼은 집행 비용을 압니다. CRM은 누군가 기록해 둔 경우에 한해 연락 이력을 압니다. 챗봇은 오늘 아침 붙여 넣은 것만 압니다.</p>
+<p>직원 20명 규모의 에이전시에서는 도구마다 지지자가 생기기 마련입니다. 퍼포먼스 리드는 입찰 스크립트를, 소셜 매니저는 리스닝 대시보드를 맡습니다. 어카운트 디렉터의 진짜 클라이언트 지식은 WhatsApp에 있습니다. 각자의 스택은 자신에게는 잘 작동합니다. 그러나 에이전시에는 아무것도 작동하지 않고, AI에도 작동하지 않습니다.</p>
+<p>창업자는 이를 직접 겪었습니다. 에이전시를 AI 네이티브로 만들려고 18개월을 보냈고, 서로 연결되지 않는 도구와 스킬이 어지럽게 늘어났습니다. 그의 해법은 또 다른 도구가 아니라 그 밑에 까는 레이어였습니다.</p>
+<h2 id="what-is-a-shared-layer-for-agency-ai">에이전시 AI의 공유 레이어란 무엇일까요?</h2>
+<p>다이어그램에서 보듯, 왼쪽의 흩어진 도구들이 네 부분으로 이루어진 하나의 공유 레이어로 모입니다. 명칭은 그의 것이고, 에이전시 사례는 저희가 붙였습니다.</p>
+<div class="tw"><table>
+<thead><tr><th>레이어</th><th>의미</th><th>에이전시 사례</th></tr></thead>
+<tbody>
+<tr><td>메모리</td><td>모두가 읽는 하나의 원천</td><td>브리프, 통화 메모, 의사결정, 성과 데이터가 다섯 곳이 아니라 한 곳에 있음</td></tr>
+<tr><td>스킬</td><td>코드화된 반복 업무</td><td>경쟁사 감사, 월간 리포트, 크리에이티브 브리프를 한 번 작성해 재사용함</td></tr>
+<tr><td>워크플로</td><td>일이 실제로 흐르는 방식</td><td>SOP가 아니라 팀이 실제로 일하는 방식에 따라 맵핑한 브리프, 콘셉트, 승인, 론칭</td></tr>
+<tr><td>승인</td><td>나가기 전에 사람이 서명함</td><td>지정된 리드가 예산 변경, 클라이언트 리포트, 공개되는 모든 것을 승인함</td></tr>
+</tbody>
+</table></div>
+<p>순서가 중요합니다. 메모리 없는 스킬은 클라이언트를 모르기 때문에 평범한 결과물을 냅니다. 승인 없는 워크플로는 실수를 더 빨리 내보냅니다. 메모리가 토대이고, 나머지는 모두 그것을 읽습니다.</p>
+<figure class="diagram"><picture><source type="image/webp" srcset="/assets/blog/diagrams/d54-diagram-1536.webp"><img src="/assets/blog/diagrams/d54-diagram.jpg" alt="왼쪽의 흩어진 도구 열한 개가 오른쪽의 메모리, 스킬, 워크플로, 승인으로 이루어진 하나의 공유 레이어로 모이는 다이어그램." width="1536" height="1024" loading="lazy"></picture><figcaption>흩어진 열한 개 도구에서 메모리, 스킬, 워크플로, 승인의 단일 공유 레이어로. 2026년 10월 싱가포르 AI 도입 세션에서 공유된 프레임워크입니다.</figcaption></figure><h2 id="what-makes-an-ai-system-closed-loop">어떤 AI 시스템이 폐쇄 루프일까요?</h2>
+<p>폐쇄 루프란 프로세스의 모든 단계가 다음 단계가 읽을 수 있는 기록을 남기는 것입니다. 다음 단계가 사람이든 AI든 마찬가지입니다. 개방 루프에는 틈이 있습니다. 누군가 통화를 CRM에 기록하지 않았거나, 실제 결정이 개인 WhatsApp 대화에서 이루어진 경우입니다. 창업자는 아시아에서 흔한 일이라고 언급했습니다. 틈 하나하나가 빠진 맥락이며, AI는 빠진 맥락을 추측으로 채웁니다.</p>
+<p>그는 폐쇄 루프의 예로 자사의 신규 비즈니스 프로세스를 단계별로 설명했습니다. 모든 단계가 하나의 CRM으로 이어집니다.</p>
+<ul>
+<li><strong>프로스펙트:</strong> 첫 이메일이나 WhatsApp 메시지는 누군가의 휴대전화에 남겨 두지 않고 기록합니다.</li>
+<li><strong>영업 통화:</strong> AI 노트테이커가 대화를 기록하고, 액션 아이템이 프로젝트 관리 도구로 이어집니다.</li>
+<li><strong>감사:</strong> 에이전트 워크플로가 그 맥락을 사용해 프로스펙트 감사를 수행합니다.</li>
+<li><strong>제안서:</strong> 감사 결과로 초안을 작성한 뒤 사람이 승인합니다.</li>
+<li><strong>피치:</strong> 클라이언트가 던진 질문을 포함해 메모를 기록하고 다시 시스템에 반영합니다.</li>
+</ul>
+<p>그의 가장 날카로운 지적은 질문에 관한 것이었습니다. 통화에서 예산을 묻지 않았다면 AI도 예산을 모릅니다. 폐쇄 루프는 사람들이 회의에서 행동하는 방식을 바꿉니다. 이제 자신만이 아니라 시스템을 대신해서도 묻기 때문입니다.</p>
+<h2 id="why-does-fragmentation-keep-happening">분절 현상은 왜 계속될까요?</h2>
+<p>정보 비대칭 이론은 한쪽이 상대보다 더 많이 알 때 벌어지는 일을 설명합니다. 의사결정은 나빠지고, 신뢰는 약해지며, 더 많이 아는 쪽이 힘을 쥡니다. 경제학자들은 보통 이를 구매자와 판매자에게 적용하지만, 에이전시는 내부에서 날마다 이를 겪고 있습니다.</p>
+<p>어카운트 디렉터는 클라이언트의 실제 예산을 알지만 플래너는 모릅니다. 플래너는 오디언스 인사이트를 알지만 크리에이티브 팀은 요약의 요약을 받습니다. 그리고 AI는 가장 모릅니다. 시스템에 들어온 것만 볼 수 있기 때문입니다. 클라이언트 관계도 더 큰 규모로 같은 문제를 안고 있습니다. Campaign 보고서가 시사하듯 많은 클라이언트가 자사의 마테크가 무엇을 해 주는지 볼 수 없을 때, 의심은 에이전시가 떠안습니다.</p>
+<p>이 글의 바탕이 된 인사이트는 짧습니다. 협업이 비효율을 이긴다. 공유 레이어는 협업을 구조로 만든 것입니다. 한 사람이 아는 것과 AI를 포함한 모두가 쓸 수 있는 것 사이의 간극을 좁혀 줍니다.</p>
+<h2 id="how-do-i-build-a-closed-loop-in-my-agency">우리 에이전시에서 폐쇄 루프를 어떻게 구축할까요?</h2>
+<ol>
+<li><strong>워크플로 하나로 시작하십시오.</strong> 신규 비즈니스가 좋은 후보입니다. 가치가 높고 반복적이며 보통 새는 곳이 많습니다.</li>
+<li><strong>정보가 들어오는 모든 경로를 나열하십시오.</strong> 이메일, WhatsApp, 통화, 회의, 공유 드라이브, 플랫폼 대시보드입니다. 비공개 채널도 솔직하게 포함하십시오.</li>
+<li><strong>메모리를 하나 고르십시오.</strong> 보통 CRM이나 프로젝트 관리 도구입니다. 거기에 없으면 일어나지 않은 일로 간주한다고 합의하십시오.</li>
+<li><strong>통화마다 던질 질문을 적어 두십시오.</strong> 예산, 일정, 의사결정자, 성공의 기준입니다. 질문하지 않으면 답을 기록할 수 없습니다.</li>
+<li><strong>대화를 제대로 기록하십시오.</strong> 모두가 동의한 경우에는 AI 노트테이커를 쓰고, 대면 회의는 끝난 직후에 정리하십시오.</li>
+<li><strong>반복 업무를 스킬로 코드화하십시오.</strong> 감사, 제안서 개요, 리포트를 각각 메모리에서 읽어 오도록 만드십시오.</li>
+<li><strong>모든 승인에 담당자를 지정하십시오.</strong> 제안서, 예산 변경, 클라이언트에게 가는 결과물에는 사람의 서명을 받으십시오.</li>
+<li><strong>매달 틈을 점검하십시오.</strong> AI에 맥락이 부족했던 곳은 어디인가? 기록하지 않은 단계를 찾아 거슬러 올라가 그 단계를 고치십시오.</li>
+</ol>
+<h2 id="how-does-a-shared-layer-help-agencies-prove-value-to-clients">공유 레이어는 에이전시가 클라이언트에게 가치를 증명하는 데 어떻게 도움이 될까요?</h2>
+<p>Campaign이 설명하는 마테크 가치 격차는 일부분 가시성의 문제입니다. 에이전시 자체의 지식이 흩어져 있으면 클라이언트에게 데이터에서 의사결정, 성과로 이어지는 선명한 흐름을 보여 줄 수 없습니다.</p>
+<p>공유 레이어는 그 흐름을 눈에 보이게 만듭니다. 시장과 오디언스 인텔리전스가 팀에 전달되는 방식도 바뀝니다. 또 하나의 대시보드에서 내보내기를 하는 대신, 사람들이 이미 일하는 곳에서 바로 질문할 수 있습니다. Defy MCP가 그렇게 설계되었습니다. 팀이 Claude 안에서 클라이언트와 카테고리 데이터를 동료에게 묻듯이 질문하며, 따로 배울 대시보드가 없습니다. 데이터는 Defy Monitor의 실시간 경쟁사, 오디언스, 대화 인텔리전스에서 오며, 모든 AI 결론은 그 근거가 된 실제 게시물과 대조해 확인할 수 있습니다.</p>
+<p>모니터링, MCP, 에이전트가 어떻게 맞물리는지는 <a href="/#platform">Defy 플랫폼</a>에서 확인하실 수 있습니다. 하지만 저희가 있든 없든 원칙은 같습니다. 섬은 줄이고, 메모리는 하나로, 무엇이든 나가기 전에는 사람이 서명하는 것입니다.</p></div>
+<aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>협업이 비효율을 이깁니다.</blockquote><p>정보 비대칭 이론은 한 사람이 아는 것을 다른 사람이 모를 때 의사결정이 왜 나빠지는지 설명합니다. 에이전시에서 가장 정보가 부족한 쪽은 AI 자신인 경우가 많으며, 공유되는 폐쇄 루프 레이어가 그 간극을 좁힙니다.</p></aside>
+<section class="prop" aria-label="Defy가 돕는 방법">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy가 돕는 방법<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy는 에이전시에 사람과 AI가 모두 읽을 수 있는 시장 및 오디언스 인텔리전스의 공유 원천을 제공합니다.</p><ul><li><strong>Defy Monitor</strong>는 담당하는 모든 클라이언트와 카테고리에 걸쳐 경쟁사, 오디언스, 대화를 추적합니다.</li><li><strong>Defy MCP</strong>를 사용하면 팀이 Claude 안에서 그 데이터를 동료에게 묻듯이 질문할 수 있어, 따로 배울 대시보드가 더 늘지 않습니다.</li><li><strong>검증 가능한 답변:</strong> 모든 AI 결론은 그 근거가 된 실제 게시물과 대조해 확인할 수 있어, 승인자가 주도권을 유지합니다.</li></ul><p>새는 워크플로 하나를 맵핑하고 공유 메모리에 무엇을 담을지 정한 다음, 시장 및 오디언스 레이어에 대해 저희와 상의하십시오.</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%EC%97%90%EC%9D%B4%EC%A0%84%EC%8B%9C%EC%9D%98%20%ED%8F%90%EC%87%84%20%EB%A3%A8%ED%94%84%20AI%3A%20%EC%97%B4%ED%95%9C%20%EA%B0%9C%20%EB%8F%84%EA%B5%AC%EC%97%90%EC%84%9C%20%ED%95%98%EB%82%98%EC%9D%98%20%EA%B3%B5%EC%9C%A0%20%EB%A0%88%EC%9D%B4%EC%96%B4%EB%A1%9C" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D54'})}catch(e){}">대화 시작하기</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D54'})}catch(e){}">Defy 로그인</a></div>
+</section>
+<section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>에이전시에서 폐쇄 루프 AI 시스템이란 무엇일까요?</summary><p>첫 접촉부터 납품까지 프로세스의 모든 단계가 공유 메모리에 기록을 남기고, 다음 단계가 사람이든 AI 에이전트든 그 기록을 읽을 수 있는 구조입니다. 중요한 것이 개인 채팅이나 누군가의 머릿속에만 있지 않으므로, AI는 추측하는 대신 온전한 맥락으로 일합니다.</p></details><details><summary>공유 레이어를 만들려면 기존 도구를 모두 교체해야 할까요?</summary><p>대개는 그렇지 않습니다. 공유 레이어의 핵심은 모든 것이 읽고 쓰는 하나의 메모리에 합의하고, 반복 업무를 코드화하며, 승인을 더하는 것입니다. 많은 에이전시가 이미 쓰고 있는 CRM이나 프로젝트 관리 도구를 중심으로 구축할 수 있습니다. 더 어려운 변화는 행동입니다. 꾸준히 기록하고, 서로 중복되는 도구를 정리하는 일입니다.</p></details><details><summary>에이전시는 WhatsApp의 클라이언트 대화를 어떻게 다뤄야 할까요?</summary><p>기록의 일부로 다루십시오. 메신저 앱은 특히 아시아에서 클라이언트와 연락하는 흔한 채널이지만, 거기서 내려진 결정은 나머지 팀과 AI에게는 보이지 않습니다. 클라이언트와 채널별 용도를 합의하고, 개인정보 보호 의무에 맞춰 주요 결정의 요약을 공유 메모리에 기록하십시오.</p></details><details><summary>클라이언트 통화마다 무엇을 기록해야 할까요?</summary><p>다음 단계에 필요한 모든 것입니다. 신규 비즈니스라면 보통 예산, 일정, 의사결정자, 경쟁사, 성공의 기준이 이에 해당합니다. 질문을 미리 적어 두십시오. 예산을 물은 적이 없다면 제안서를 작성할 때 팀도 AI도 예산을 알 수 없기 때문입니다.</p></details></section>
+<section class="srcs"><h2>출처</h2><ol><li><a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Martech value gap poses threat to agency retention, Ingenuity Pulse report finds</a> — Campaign UK, 2026-09-24</li></ol></section>
+<p class="note"><b>이 글을 쓴 이유</b>분절된 오디언스·클라이언트 데이터는 에이전시 전략가들이 도움을 찾아 검색하는 가장 흔한 고민 중 하나이며, 마테크 가치 격차에 대한 Campaign의 보도가 클라이언트도 이를 인식하고 있음을 보여 주기 때문에 이 글을 썼습니다.</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="이 페이지의 내용"><h4>이 페이지의 내용</h4><a href="#why-do-more-ai-tools-leave-agencies-knowing-less">도구를 늘릴수록 에이전시가 아는 것은 왜 줄어들까요?</a><a href="#what-is-a-shared-layer-for-agency-ai">에이전시 AI의 공유 레이어란 무엇일까요?</a><a href="#what-makes-an-ai-system-closed-loop">어떤 AI 시스템이 폐쇄 루프일까요?</a><a href="#why-does-fragmentation-keep-happening">분절 현상은 왜 계속될까요?</a><a href="#how-do-i-build-a-closed-loop-in-my-agency">우리 에이전시에서 폐쇄 루프를 어떻게 구축할까요?</a><a href="#how-does-a-shared-layer-help-agencies-prove-value-to-clients">공유 레이어는 에이전시가 클라이언트에게 가치를 증명하는 데 어떻게 도움이 될까요?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>체급을 뛰어넘을 준비가 되셨습니까?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">대화 시작하기</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defy 로그인</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>저널의 다른 글<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/ko/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="뒷모습을 보이는 신호수가 작은 붉은 표지판이 달린 레버 하나에 손을 얹고, 여러 갈래로 갈라지는 철로를 바라보고 있는 흑백 사진입니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시에서 무엇을 자동화할까: 먼저 답해야 할 세 가지 질문</h3><p>에이전시가 무엇을 자동화할지는 세 가지 질문이 결정합니다. 결정의 복잡성, 잠재적 피해, 측정 가능한 성과입니다. 퀵윈부터 시작하십시오.</p><div class="meta"><span>8분 분량</span></div></div></a><a class="card" href="/blog/ko/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="콘크리트 바닥 위에서 다리 하나가 짧아 기울어진 오크 탁자의 흑백 사진입니다. 탁자 위에는 물 한 잔과 서류 더미가 놓여 있고, 짧은 다리 밑에는 작은 붉은 타일이 끼워져 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시 AI 준비도 진단: 가장 약한 차원이 수준을 결정합니다</h3><p>에이전시의 AI 준비도는 가장 강한 차원이 아니라 가장 약한 차원이 결정합니다. 네 가지 요소로 나눈 진단과, 또 하나의 AI 교육이 그 격차를 좀처럼 메우지 못하는 이유를 소개합니다.</p><div class="meta"><span>8분 분량</span></div></div></a><a class="card" href="/blog/ko/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="작은 붉은 펠트 패드 위에서 시계공의 손이 섬세한 기계식 무브먼트를 조립하고 있으며, 뒤쪽 선반에는 대량 생산된 무브먼트 상자들이 놓여 있는 흑백 사진입니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시 AI 전략: Meta와 Google이 자동화할 것은 만들지 마세요</h3><p>플랫폼이 한때 에이전시가 사람을 뽑아 하던 일을 자동화하고 있습니다. Omnicom의 AI 플랫폼 개편은 자체 개발에 드는 비용을 보여 줍니다. 대신 어디에서 경쟁해야 하는지 알아봅니다.</p><div class="meta"><span>9분 분량</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/ko/">← 저널로 돌아가기</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="문의">
+<h2>체급을 뛰어넘을 준비가 되셨습니까?</h2>
+<p>대형 네트워크 에이전시들이 꽁꽁 감춰 온 인텔리전스 스택을 직접 확인해 보십시오. 영업 권유 없이, 편하게 대화만 나눕니다.</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">대화 시작하기</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defy 로그인</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>체급 이상의 성과를 내는 에이전시를 위한 인사이트·자동화 플랫폼.</p></div>
+<div><h4>Defy</h4><a href="/#main">메인</a><a href="/#platform">플랫폼</a><a href="/#clients">고객사</a><a href="/#team">팀</a></div>
+<div class="df-langs"><h4>저널</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>문의</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">로그인</a><a href="/llms.txt">llms.txt</a><a href="/blog/ko/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. 모든 권리 보유.</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>
