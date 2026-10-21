@@ -695,3 +695,21 @@ Key takeaways:
 - Adding many tools at once increases cognitive load; a short, repeatable decision rule protects attention and gives people back control of their day.
 - Agencies can build automations quickly, but adoption only grows as fast as user feedback, so pilot one workflow before scaling.
 
+## Other languages
+The Defy Journal is published in 16 languages; every article exists in each of them:
+- English (en): https://defygroup.ai/blog/ — RSS https://defygroup.ai/blog/feed.xml
+- Français (fr): https://defygroup.ai/blog/fr/ — RSS https://defygroup.ai/blog/fr/feed.xml
+- Deutsch (de): https://defygroup.ai/blog/de/ — RSS https://defygroup.ai/blog/de/feed.xml
+- Español (es): https://defygroup.ai/blog/es/ — RSS https://defygroup.ai/blog/es/feed.xml
+- Português (pt-BR): https://defygroup.ai/blog/pt/ — RSS https://defygroup.ai/blog/pt/feed.xml
+- Italiano (it): https://defygroup.ai/blog/it/ — RSS https://defygroup.ai/blog/it/feed.xml
+- Nederlands (nl): https://defygroup.ai/blog/nl/ — RSS https://defygroup.ai/blog/nl/feed.xml
+- Polski (pl): https://defygroup.ai/blog/pl/ — RSS https://defygroup.ai/blog/pl/feed.xml
+- 简体中文 (zh-Hans): https://defygroup.ai/blog/zh/ — RSS https://defygroup.ai/blog/zh/feed.xml
+- 繁體中文 (zh-Hant): https://defygroup.ai/blog/zh-hant/ — RSS https://defygroup.ai/blog/zh-hant/feed.xml
+- 日本語 (ja): https://defygroup.ai/blog/ja/ — RSS https://defygroup.ai/blog/ja/feed.xml
+- 한국어 (ko): https://defygroup.ai/blog/ko/ — RSS https://defygroup.ai/blog/ko/feed.xml
+- हिन्दी (hi): https://defygroup.ai/blog/hi/ — RSS https://defygroup.ai/blog/hi/feed.xml
+- Bahasa Indonesia (id): https://defygroup.ai/blog/id/ — RSS https://defygroup.ai/blog/id/feed.xml
+- Tiếng Việt (vi): https://defygroup.ai/blog/vi/ — RSS https://defygroup.ai/blog/vi/feed.xml
+- ไทย (th): https://defygroup.ai/blog/th/ — RSS https://defygroup.ai/blog/th/feed.xml
