@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Defyジャーナル — 規模の壁を越えて戦うエージェンシーのためのノート | Defy</title>
+<meta name="description" content="エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。">
+<link rel="canonical" href="https://defygroup.ai/blog/ja/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ja/">
+<meta property="og:title" content="Defyジャーナル — 規模の壁を越えて戦うエージェンシーのためのノート | Defy">
+<meta property="og:description" content="エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/hub-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Defyジャーナル — 規模の壁を越えて戦うエージェンシーのためのノート | Defy">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Defyジャーナル — 規模の壁を越えて戦うエージェンシーのためのノート | Defy">
+<meta name="twitter:description" content="エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/hub-ja.jpg">
+<meta name="twitter:image:alt" content="Defyジャーナル — 規模の壁を越えて戦うエージェンシーのためのノート | Defy">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defyジャーナル" href="/blog/ja/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","@id":"https://defygroup.ai/blog/ja/#blog","url":"https://defygroup.ai/blog/ja/","name":"Defy — Defyジャーナル","description":"エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。","inLanguage":"ja","publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"blogPost":[{"@type":"BlogPosting","headline":"エージェンシーで何を自動化するか：最初に答えるべき3つの問い","url":"https://defygroup.ai/blog/ja/before-you-automate-three-questions-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのAI準備度診断：最も弱い軸が全体を決める","url":"https://defygroup.ai/blog/ja/agency-ai-readiness-four-dimensions/"},{"@type":"BlogPosting","headline":"エージェンシーのAI抵抗は、人の問題ではなく基準の問題です","url":"https://defygroup.ai/blog/ja/ai-resistance-standards-not-people/"},{"@type":"BlogPosting","headline":"エージェンシーのAI戦略：MetaやGoogleが自動化するものは作らない","url":"https://defygroup.ai/blog/ja/dont-build-what-platforms-automate-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのAI指標：クライアントが支払うのは利用ではなく成果","url":"https://defygroup.ai/blog/ja/measure-ai-results-not-usage-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのAI ROIの測り方：導入前に成功を定義する","url":"https://defygroup.ai/blog/ja/define-success-before-deploying-ai-agency/"},{"@type":"BlogPosting","headline":"エージェンシーのクローズドループAI：11のツールから1つの共有レイヤーへ","url":"https://defygroup.ai/blog/ja/one-shared-layer-agency-ai-closed-loop/"},{"@type":"BlogPosting","headline":"エージェンシーのAIの役割：AIを全員の仕事にするのをやめよう","url":"https://defygroup.ai/blog/ja/stop-making-ai-everyones-job-builders-users-approvers/"},{"@type":"BlogPosting","headline":"AIネイティブなエージェンシー：スピードは進歩ではない、進歩を示す5つのレベル","url":"https://defygroup.ai/blog/ja/speed-is-not-progress-ai-native-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのAI導入：自動化の前に実際のワークフローを文書化する","url":"https://defygroup.ai/blog/ja/ai-bad-process-document-workflows-first/"},{"@type":"BlogPosting","headline":"AIと消費者行動：エージェンシーがインサイト業務を作り直すべき理由","url":"https://defygroup.ai/blog/ja/ai-consumer-behaviour-rebuild-agency-insights/"},{"@type":"BlogPosting","headline":"コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか","url":"https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/"},{"@type":"BlogPosting","headline":"クリスマス2026：エージェンシーのための早期警戒システムとしてのソーシャルリスニング","url":"https://defygroup.ai/blog/ja/christmas-2026-social-listening-early-warning/"},{"@type":"BlogPosting","headline":"エージェンシーのAIツール：MCPでツール乱立から抜け出す方法","url":"https://defygroup.ai/blog/ja/ai-tools-agencies-mcp-integration/"},{"@type":"BlogPosting","headline":"AI時代のエージェンシー料金モデル：適正に値付けし、利益率を手放さない","url":"https://defygroup.ai/blog/ja/agency-pricing-models-fair-ai-pricing/"},{"@type":"BlogPosting","headline":"エージェンシーのサービスを絞り込む：何を、いつやめるか","url":"https://defygroup.ai/blog/ja/when-to-stop-an-agency-service/"},{"@type":"BlogPosting","headline":"クロスプラットフォームのエンゲージメント測定：エージェンシーの手作業スプレッドシートを卒業する時","url":"https://defygroup.ai/blog/ja/measure-cross-platform-engagement-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのインポスター症候群：AI時代に自信を取り戻すには","url":"https://defygroup.ai/blog/ja/imposter-syndrome-agencies-ai-era/"},{"@type":"BlogPosting","headline":"回答者なしのリサーチ：合成ペルソナは切り札か、幻か？","url":"https://defygroup.ai/blog/ja/respondent-free-research-synthetic-personas/"},{"@type":"BlogPosting","headline":"メディアエージェンシーとAI：新時代が独立系にもたらすもの","url":"https://defygroup.ai/blog/ja/media-agencies-new-ai-era-independents/"},{"@type":"BlogPosting","headline":"エージェンシーの報酬：ソーシャルデータで自らの価値を証明する方法","url":"https://defygroup.ai/blog/ja/agency-remuneration-social-data-proof-of-value/"},{"@type":"BlogPosting","headline":"クライアントが評価するエンゲージメント指標（と、見かけ倒しの指標）","url":"https://defygroup.ai/blog/ja/engagement-metrics-clients-value/"},{"@type":"BlogPosting","headline":"エージェンシーのブラックフライデー：レポートを自動化し、最適化の時間を取り戻す","url":"https://defygroup.ai/blog/ja/black-friday-agencies-automate-reporting/"},{"@type":"BlogPosting","headline":"意思決定者を眠らせないB2Bコンテンツマーケティング","url":"https://defygroup.ai/blog/ja/b2b-content-marketing-that-engages/"},{"@type":"BlogPosting","headline":"AIとホールディングカンパニー型モデルの終わり：独立系エージェンシーが学べること","url":"https://defygroup.ai/blog/ja/ai-holding-company-model-independent-agencies/"},{"@type":"BlogPosting","headline":"メディア接触の細分化：ダッシュボードの先にあるオーディエンス理解","url":"https://defygroup.ai/blog/ja/fragmented-media-consumption-audience-data/"},{"@type":"BlogPosting","headline":"ブラジルのエージェンシーピッチ：新ルールはエビデンスを持ち込む者に報いる","url":"https://defygroup.ai/blog/ja/brazil-agency-pitches-category-intelligence/"},{"@type":"BlogPosting","headline":"AIによるブランド差別化：競合と同じ声にならないために","url":"https://defygroup.ai/blog/ja/brand-differentiation-ai-without-sounding-generic/"},{"@type":"BlogPosting","headline":"エージェンシーのバーンアウト：反復作業を減らし、創造性に使う時間を増やす","url":"https://defygroup.ai/blog/ja/agency-burnout-automate-repetitive-work/"},{"@type":"BlogPosting","headline":"関税とマーケティング戦略：メッセージと予算を組み直す方法","url":"https://defygroup.ai/blog/ja/tariffs-marketing-strategy-messages-budgets/"},{"@type":"BlogPosting","headline":"エージェンシーのソーシャルリスニング：四半期レポートではもう遅い理由","url":"https://defygroup.ai/blog/ja/continuous-social-listening-agencies/"},{"@type":"BlogPosting","headline":"マーケティングのAIデータ分析：クライアントが検証できる結論を","url":"https://defygroup.ai/blog/ja/ai-data-analysis-verifiable-conclusions/"},{"@type":"BlogPosting","headline":"独立系エージェンシーのAI活用：統合が進む理由と、変わること","url":"https://defygroup.ai/blog/ja/independent-agency-consolidation-spain-ai/"},{"@type":"BlogPosting","headline":"信頼を失わないパーソナライズ広告：エージェンシー向けガイド","url":"https://defygroup.ai/blog/ja/ad-personalisation-without-third-party-data/"},{"@type":"BlogPosting","headline":"AIメディアプランニング:デモグラフィックから、消費者の本当の葛藤へ","url":"https://defygroup.ai/blog/ja/media-planning-real-personas-ai/"},{"@type":"BlogPosting","headline":"シンガポールのメディア消費データ:ネットワークが縮小するなか、何を信頼すべきか","url":"https://defygroup.ai/blog/ja/apac-agencies-market-intelligence/"},{"@type":"BlogPosting","headline":"AIはマーケティングエージェンシーの種類ごとにどう影響するか:クリエイティブからインフルエンサーまで","url":"https://defygroup.ai/blog/ja/how-ai-disrupts-each-agency-type/"},{"@type":"BlogPosting","headline":"AIコンテンツ制作のベストプラクティス:エージェンシーのための品質フレームワーク","url":"https://defygroup.ai/blog/ja/ai-content-quality-framework-agencies/"},{"@type":"BlogPosting","headline":"数字で見るAIマーケティング事例と、そこで語られていないこと","url":"https://defygroup.ai/blog/ja/ai-driven-agency-case-studies/"},{"@type":"BlogPosting","headline":"AIネイティブなマーケティング組織：クライアントがいまもエージェンシーから買うもの","url":"https://defygroup.ai/blog/ja/ai-native-marketing-organization-agencies/"},{"@type":"BlogPosting","headline":"エージェンシーのピッチ戦略：48時間のカテゴリーインサイト・スプリントで勝つ","url":"https://defygroup.ai/blog/ja/win-agency-pitches-ai-category-insight/"},{"@type":"BlogPosting","headline":"グローバルキャンペーンが期待外れのとき、マーケティング予算のROIを最適化する方法","url":"https://defygroup.ai/blog/ja/global-vs-local-campaign-budget/"},{"@type":"BlogPosting","headline":"AI動画制作のコスト：フレームが安くなっても予算が減らない理由","url":"https://defygroup.ai/blog/ja/ai-video-production-agency-economics/"},{"@type":"BlogPosting","headline":"Z世代に届く方法：生まれ年ではなくコミュニティから計画する","url":"https://defygroup.ai/blog/ja/gen-z-persona-clustering/"},{"@type":"BlogPosting","headline":"リテールメディアネットワークとエージェンシー：予算を握るのは本当は誰か","url":"https://defygroup.ai/blog/ja/retail-media-agency-ownership/"},{"@type":"BlogPosting","headline":"AIはマーケティングエージェンシーに取って代わるのか？ 試算が合わない理由","url":"https://defygroup.ai/blog/ja/will-ai-replace-agencies/"},{"@type":"BlogPosting","headline":"エージェンシー統合か、ロスター制か：StarKistとServiceNowの事例が示すもの","url":"https://defygroup.ai/blog/ja/agency-consolidation-vs-roster/"},{"@type":"BlogPosting","headline":"独立系エージェンシーとホールディングカンパニー：独立系はデータでどう戦うか","url":"https://defygroup.ai/blog/ja/independent-agencies-vs-holding-company-data/"},{"@type":"BlogPosting","headline":"インフルエンサーマーケティングのレポーティングが、エージェンシーの新たな主戦場になる理由","url":"https://defygroup.ai/blog/ja/influencer-agency-reporting-automation/"},{"@type":"BlogPosting","headline":"オーディエンスリサーチツール：プランナーがまず自動化すべきこと","url":"https://defygroup.ai/blog/ja/future-of-strategy-planners-automate/"},{"@type":"BlogPosting","headline":"暴走を恐れずに進めるエージェンティックAI広告：人間の関与を保つには","url":"https://defygroup.ai/blog/ja/agentic-media-human-in-the-loop/"},{"@type":"BlogPosting","headline":"合成オーディエンスが急速に普及。エージェンシーはその信頼性をどう保っているのか","url":"https://defygroup.ai/blog/ja/synthetic-audiences-agencies-validation/"},{"@type":"BlogPosting","headline":"エージェンシーのスプリントモデル：戦略を崩さずにスピードを上げる方法","url":"https://defygroup.ai/blog/ja/agency-sprint-model-speed-strategy/"},{"@type":"BlogPosting","headline":"クリエイティブの事前テスト：「創造性かパフォーマンスか」の争いを終わらせる方法","url":"https://defygroup.ai/blog/ja/creativity-vs-performance-pre-testing/"},{"@type":"BlogPosting","headline":"エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する","url":"https://defygroup.ai/blog/ja/agency-ai-stack-integration/"},{"@type":"BlogPosting","headline":"ブランド差別化戦略：カテゴリーが見落としている切り口を見つける","url":"https://defygroup.ai/blog/ja/escape-creative-sameness-category-intelligence/"},{"@type":"BlogPosting","headline":"マーケティングのダッシュボード過多：エージェンシーがログインをやめて問いかけを始めた理由","url":"https://defygroup.ai/blog/ja/agency-dashboard-fatigue-ai-questions/"},{"@type":"BlogPosting","headline":"クライアントにメディアROIを証明するには：MMMが再注目される理由と示すべきもの","url":"https://defygroup.ai/blog/ja/proving-media-roi-agencies-mmm/"},{"@type":"BlogPosting","headline":"成果報酬型のエージェンシー報酬：ROASとCPAを超える指標","url":"https://defygroup.ai/blog/ja/beyond-roas-cpa-outcome-based-agency-pay/"},{"@type":"BlogPosting","headline":"AIがエージェンシーの雇用に与える影響：若手のキャリアラダーをどう立て直すか","url":"https://defygroup.ai/blog/ja/agency-entry-level-talent-ai/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"ジャーナル","item":"https://defygroup.ai/blog/ja/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">このページの内容</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — メイン"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="メインナビゲーション">
+<a href="/#main">メイン</a>
+<a href="/#platform">プラットフォーム</a>
+<a href="/#clients">クライアント</a>
+<a href="/#team">チーム</a>
+<a href="/blog/ja/" class="on">ジャーナル</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">ログイン</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">ご相談はこちら</a>
+<button class="menu" aria-label="メニュー" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<section class="hub-hero"><div class="wrap">
+<div class="crumbs" style="padding:0 0 18px"><a href="/#main">ホーム</a><span>/</span><span>ジャーナル</span></div>
+<div class="eyebrow">Defyジャーナル｜全60記事</div>
+<h1>規模の壁を越えて戦うエージェンシーのためのノート<span class="sq"></span></h1>
+<p>エージェンシー経営、AI導入、インサイトづくりの技術をめぐる現場ノート。独立系エージェンシーやインハウスチーム、そして大手ネットワークの物量に圧倒されるのはもう終わりにしたいすべての方へ。</p>
+<div class="hub-tools">
+<div class="chips" role="group" aria-label="カテゴリー">
+<button class="chip on" data-cat="all">すべて</button>
+<button class="chip" data-cat="agency-economics">エージェンシー経営</button><button class="chip" data-cat="ai-transformation">AIトランスフォーメーション</button><button class="chip" data-cat="insight-strategy">インサイトと戦略</button><button class="chip" data-cat="creative-effectiveness">クリエイティブ効果</button><button class="chip" data-cat="agency-types">エージェンシーの種類</button><button class="chip" data-cat="talent-culture">人材と組織文化</button><button class="chip" data-cat="new-business">新規開拓</button>
+</div>
+<div class="langs"><details class="lsw"><summary aria-label="言語: 日本語"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>日本語</span></summary><div class="lsw-p"><div class="lsw-h">表示言語</div><a href="/blog/" hreflang="en" lang="en">English</a><a href="/blog/fr/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/" hreflang="es" lang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/blog/ko/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th" lang="th">ไทย</a></div></details></div>
+</div>
+</div></section>
+<div class="wrap">
+<section class="series" aria-label="AIネイティブへの転換、その最前線からの教訓">
+<div class="s-l"><div class="eyebrow">シリーズ：エージェンシーのAI導入</div><h2>AIネイティブへの転換、その最前線からの教訓<span class="sq"></span></h2><p>あるエージェンシー創業者が18か月にわたってAIの定着に挑み、幾度となくつまずいてきた経験から生まれた10本の現場ノート。順番にお読みください。</p></div>
+<ol><li><a href="/blog/ja/ai-bad-process-document-workflows-first/">エージェンシーのAI導入：自動化の前に実際のワークフローを文書化する</a></li><li><a href="/blog/ja/speed-is-not-progress-ai-native-agencies/">AIネイティブなエージェンシー：スピードは進歩ではない、進歩を示す5つのレベル</a></li><li><a href="/blog/ja/stop-making-ai-everyones-job-builders-users-approvers/">エージェンシーのAIの役割：AIを全員の仕事にするのをやめよう</a></li><li><a href="/blog/ja/one-shared-layer-agency-ai-closed-loop/">エージェンシーのクローズドループAI：11のツールから1つの共有レイヤーへ</a></li><li><a href="/blog/ja/define-success-before-deploying-ai-agency/">エージェンシーのAI ROIの測り方：導入前に成功を定義する</a></li><li><a href="/blog/ja/measure-ai-results-not-usage-agencies/">エージェンシーのAI指標：クライアントが支払うのは利用ではなく成果</a></li><li><a href="/blog/ja/dont-build-what-platforms-automate-agencies/">エージェンシーのAI戦略：MetaやGoogleが自動化するものは作らない</a></li><li><a href="/blog/ja/ai-resistance-standards-not-people/">エージェンシーのAI抵抗は、人の問題ではなく基準の問題です</a></li><li><a href="/blog/ja/agency-ai-readiness-four-dimensions/">エージェンシーのAI準備度診断：最も弱い軸が全体を決める</a></li><li><a href="/blog/ja/before-you-automate-three-questions-agencies/">エージェンシーで何を自動化するか：最初に答えるべき3つの問い</a></li></ol>
+</section>
+<a class="feat card-f" href="/blog/ja/before-you-automate-three-questions-agencies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp 768w, /assets/blog/hero/d60-1536.webp 1536w" sizes="(max-width:1020px) 100vw, 680px"><img src="/assets/blog/hero/d60.jpg" alt="白黒写真。後ろ姿の信号手が、小さな赤いプレートの付いた1本のレバーに手を置き、いくつもの枝に分かれていく線路を見渡している。" width="1536" height="1024" fetchpriority="high"></picture></div>
+<div class="tx"><div class="eyebrow">最新記事：AIトランスフォーメーション</div><h2>エージェンシーで何を自動化するか：最初に答えるべき3つの問い</h2><p>エージェンシーが何を自動化すべきかは、判断の複雑さ、潜在的なダメージ、測定可能な成果という3つの問いで決まります。まずはクイックウィンから始めましょう。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<div class="grid" id="cards">
+<a class="card" href="/blog/ja/agency-ai-readiness-four-dimensions/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="白黒写真。コンクリートの床の上で、脚の1本が短いために傾いているオークのテーブル。天板にはグラスの水と書類の束が置かれ、短い脚の下には小さな赤いタイルが敷かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAI準備度診断：最も弱い軸が全体を決める</h3><p>エージェンシーのAI準備度は、最も強い軸ではなく、最も弱い軸で決まります。4つの軸による診断と、AI研修をもう1つ追加してもギャップが埋まりにくい理由を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-resistance-standards-not-people/" data-cat="talent-culture">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d58-768.webp"><img src="/assets/blog/hero/d58.jpg" alt="白黒写真。夜遅く、後ろ姿のデザイナーが手で描いている。傍らには不採用になった機械印刷の下書きがたまったごみ箱があり、小さな赤いメモの貼られた、ほこり除けの布をかぶった使われていない機械も見える。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">人材と組織文化</div><h3>エージェンシーのAI抵抗は、人の問題ではなく基準の問題です</h3><p>AIに反発する人は、基準が最も高い人であることが少なくありません。彼らを標的ではなく承認者にすれば、AIの定着が燃え尽きを助長することはなくなります。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/dont-build-what-platforms-automate-agencies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="白黒写真。時計職人の手が、小さな赤いフェルトの台の上で繊細な機械式ムーブメントを組み立てている。背後の棚には、量産されたムーブメントの箱が並んでいる。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAI戦略：MetaやGoogleが自動化するものは作らない</h3><p>プラットフォームは、かつてエージェンシーが人を雇って行っていた業務を自動化しています。OmnicomのAIプラットフォーム再編は、自社開発のコストを物語っています。代わりに競うべき領域はここです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約9分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/measure-ai-results-not-usage-agencies/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d56-768.webp"><img src="/assets/blog/hero/d56.jpg" alt="手前に使い終えた矢の大きな山と満杯の矢筒があり、弓の射手が遠くの藁の的に向かって歩いていく白黒写真。的の小さな赤い中心の近くには、数本の矢しか刺さっていない。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーのAI指標：クライアントが支払うのは利用ではなく成果</h3><p>クライアントは、AIを使ったかどうかを気にしません。仕事が良いかどうかを気にします。ブランドが時間への支払いから離れつつあるなか、重要になるAI指標を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約9分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/define-success-before-deploying-ai-agency/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d55-768.webp"><img src="/assets/blog/hero/d55.jpg" alt="デスクの上の2つの砂時計の白黒写真。小さな赤い正方形の印がついた左側は砂が落ち切り、右側はまだ落ち続けている。その横には、手作業で修正されるレポートの束がある。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーのAI ROIの測り方：導入前に成功を定義する</h3><p>数分でレポートを下書きするAIでも、修正に余分な4時間かかることがあります。エージェンシーがAI導入前に成功を定義し、全コストを数える方法を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/one-shared-layer-agency-ai-closed-loop/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d54-768.webp"><img src="/assets/blog/hero/d54.jpg" alt="長い会議テーブルの白黒写真。誰もいない席ごとに、ノート、スマートフォン、ノートPCが別々の山をなしている。後ろ姿の人物が、小さな赤いしおりのついた1冊の共有台帳にメモを書き写している。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのクローズドループAI：11のツールから1つの共有レイヤーへ</h3><p>ツールが分断されていると、エージェンシーのAIは推測に頼るしかありません。メモリ、スキル、ワークフロー、承認からなる1つの共有レイヤーと、それを支えるクローズドループが、人とAIに全体像を与えます。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/stop-making-ai-everyones-job-builders-users-approvers/" data-cat="talent-culture">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d53-768.webp"><img src="/assets/blog/hero/d53.jpg" alt="レストランの厨房のパスの白黒写真。コックたちがコンロで働き、後ろ姿の料理長が皿を確かめ、ウェイターの手が小さな赤い伝票の下で出来上がった料理に伸びている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">人材と組織文化</div><h3>エージェンシーのAIの役割：AIを全員の仕事にするのをやめよう</h3><p>全従業員にコードアカウントと構築の日を与えると、エージェンシーは混乱に陥ります。ビルダー、ユーザー、承認者という3つの明確なAIの役割のほうが、人にもクライアントにも効果的です。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/speed-is-not-progress-ai-native-agencies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d52-768.webp"><img src="/assets/blog/hero/d52.jpg" alt="石造りの広い階段で休むカメと、その脇にある小さな赤い正方形のタイル。背景ではウサギが駆け去っていく白黒写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>AIネイティブなエージェンシー：スピードは進歩ではない、進歩を示す5つのレベル</h3><p>ゴールのないAIネイティブ競争は、ウサギの戦略です。AI導入の5つのレベルは、エージェンシーがどこまで上り、どこで止まるべきかを示します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-bad-process-document-workflows-first/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d51-768.webp"><img src="/assets/blog/hero/d51.jpg" alt="ロボット掃除機がインクや細断した紙をスタジオの床いっぱいに輪を描いて塗り広げ、そのごみが、小さな赤い四角のテープで示された戸口に積み上がっている様子を真上から写したモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAI導入：自動化の前に実際のワークフローを文書化する</h3><p>悪いプロセスにAIを乗せても、速い悪いプロセスができるだけです。エージェンシーが何かを自動化する前に、仕事が実際にどう流れているかを観察し、直す価値のあるボトルネックを一つ見つけましょう。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-consumer-behaviour-rebuild-agency-insights/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="雪の積もった公園を、後ろ姿の人々が踏み固められた近道を通って歩いていく様子を写したモノクロ写真。舗装された小道は誰もいないまま弧を描いて遠ざかり、雪の上には小さな赤い四角形が落ちている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>AIと消費者行動：エージェンシーがインサイト業務を作り直すべき理由</h3><p>人がチャットボットに質問し、アルゴリズムがフィードをキュレーションする時代に、従来のインサイト手法は古びていきます。ストラテジストはこれから何を変えるべきか。そして、AIには代わりにできないこと。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/cold-start-ad-personalisation-public-personas/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp"><img src="/assets/blog/hero/d49.jpg" alt="靴職人の手を写したモノクロ写真。棚に並ぶ木型の中から、小さな赤いタグの付いた木製の靴型を取り出している。戸口からは新しい客の影が差し込み、その横にかすかなチョークの足跡が見える。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか</h3><p>新規ユーザー、履歴なし、同意もわずか。エージェンシーは、購入したセグメントではなく、実際の公開された会話から作ったペルソナで、コールドスタート問題をどう解決するのか。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/christmas-2026-social-listening-early-warning/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="クリスマスの飾り付け中のデパートのショーウィンドウを写したモノクロ写真。ガラスの向こうにはオーナメントの箱と葉のないツリーがあり、手前には、針が小さな赤いしきい値マークに近づくダイヤルが写っている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>クリスマス2026：エージェンシーのための早期警戒システムとしてのソーシャルリスニング</h3><p>1月に分析しても、クリスマスはもう終わっています。エージェンシーがソーシャルリスニングで、購買ムード、価格圧力、競合のプロモーションを早期に捉える方法。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-tools-agencies-mcp-integration/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d47-768.webp"><img src="/assets/blog/hero/d47.jpg" alt="オフィスのデスクを写したモノクロ写真。片側の引き出しからは絡まった充電器やアダプターがあふれ、もう片側には、小さな赤いボタンの付いた整然としたコネクターハブが一つ置かれ、閉じたノートパソコンにつながっている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのAIツール：MCPでツール乱立から抜け出す方法</h3><p>AIのサブスクリプションが10本あるのに、何もつながっていない。ツールが多いエージェンシーほど成果が上がらないことが多いのはなぜか、そしてModel Context Protocolがチームの普段の作業場所にデータを届ける仕組みを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-pricing-models-fair-ai-pricing/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d46-768.webp"><img src="/assets/blog/hero/d46.jpg" alt="白黒写真。夜遅くまで机で作業するデザイナーの背後で、壁の電力量計が回っている。ケーブルがコンピューターのタワーへ伸び、メーターの円盤には小さな赤いタブが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>AI時代のエージェンシー料金モデル：適正に値付けし、利益率を手放さない</h3><p>AIでエージェンシーの仕事は速くなりますが、無料にはなりません。時間単価が圧力にさらされる理由、Mutabor の「M-Credit」が示すもの、そして時間ではなく価値が物を言うようにAIを値付けする方法。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/when-to-stop-an-agency-service/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d45-768.webp"><img src="/assets/blog/hero/d45.jpg" alt="白黒のクローズアップ写真。伸びすぎた盆栽を剪定ばさみで手入れする両手。テーブルには切り落とした枝が置かれ、これから切る枝には小さな赤い札が結ばれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーのサービスを絞り込む：何を、いつやめるか</h3><p>提供サービスを絞り込むエージェンシーは、より速く成長します。やめるべきサービスの見極め方と、習慣ではなくデータで決める方法。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/measure-cross-platform-engagement-agencies/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="白黒の静物写真。方眼紙のプリントアウトの束の上に、寸法の合わない計測用ストリップがいくつも積み重なり、その上に長いスチール製の定規が渡され、先端に小さな赤いタブが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>クロスプラットフォームのエンゲージメント測定：エージェンシーの手作業スプレッドシートを卒業する時</h3><p>エンゲージメントの数え方は、プラットフォームごとに違います。信頼できるクロスプラットフォーム測定のための手法、指標、ツール選定基準を紹介します。スプレッドシートの継ぎはぎは不要です。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/imposter-syndrome-agencies-ai-era/" data-cat="talent-culture">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d43-768.webp"><img src="/assets/blog/hero/d43.jpg" alt="白黒写真。誰もいない劇場の舞台で、スポットライトを浴びてひとり立つ若手社員を後ろから捉えている。足元には小さな赤いテープの目印があり、舞台袖では年上の同僚が待っている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">人材と組織文化</div><h3>エージェンシーのインポスター症候群：AI時代に自信を取り戻すには</h3><p>絶え間ない評価、完璧主義、AI時代に自分の存在意義を問う若手。エージェンシーの現場で、虚勢を根拠に置き換える方法。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約6分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/respondent-free-research-synthetic-personas/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d42-768.webp"><img src="/assets/blog/hero/d42.jpg" alt="白黒写真。マジックミラー越しに、のっぺらぼうの白いマネキンたちがフォーカスグループのテーブルを囲んで座っている。手前では、実際のストリート写真のコンタクトシートを手が持ち、1コマに小さな赤い四角のマークが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>回答者なしのリサーチ：合成ペルソナは切り札か、幻か？</h3><p>人間の回答者なしのリサーチが、エージェンシーにも広がりつつあります。探索には有用ですが、結論を出すには危険です。自分に都合のよい物語を作らずに使うには。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約6分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/media-agencies-new-ai-era-independents/" data-cat="agency-types">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d41-768.webp"><img src="/assets/blog/hero/d41.jpg" alt="夜明けの漁船の操舵室を写したモノクロ写真。舵輪はオートパイロットで勝手に動き、後ろ姿の船長が、小さな赤い四角のマークが付いた海図に針路を書き込んでいる。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシーの種類</div><h3>メディアエージェンシーとAI：新時代が独立系にもたらすもの</h3><p>AIは実行業務を圧縮し、メディアエージェンシーの価値を助言へとシフトさせています。独立系にとっての意味と、最初の一歩を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-remuneration-social-data-proof-of-value/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d40-768.webp"><img src="/assets/blog/hero/d40.jpg" alt="赤い小さな四角のマークが付いた、スマートフォンを見つめる群衆の写真を、古いタイムレコーダーの横に並ぶ空白のタイムカードのラックに滑り込ませる手のモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>エージェンシーの報酬：ソーシャルデータで自らの価値を証明する方法</h3><p>AACCは、エージェンシーを時間単位の請求から脱却させようとしています。それでも価値は証明しなければなりません。ソーシャルデータを追跡可能な証拠に変える方法をご紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/engagement-metrics-clients-value/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d39-768.webp"><img src="/assets/blog/hero/d39.jpg" alt="キラキラしたホイルの紙吹雪の山をかき分けて数枚のコインを選り分ける手のモノクロ写真。選んだコインは、小さな赤い四角い皿に集められている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>クライアントが評価するエンゲージメント指標（と、見かけ倒しの指標）</h3><p>いいねでは経費は払えません。マーケティングミックスモデリングの実例から学ぶ、エンゲージメント指標をビジネス成果につなげる方法。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約6分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/black-friday-agencies-automate-reporting/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d38-768.webp"><img src="/assets/blog/hero/d38.jpg" alt="モノクロ写真。メザニンに立つ後ろ姿の人物が、ぼやけて写るセール当日の混雑した売り場を見下ろしている。傍らには白紙のテープを吐き出し続ける機械があり、手すりには赤いタグが掛けられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシーのブラックフライデー：レポートを自動化し、最適化の時間を取り戻す</h3><p>2026年のブラックフライデーは11月27日です。チームの机からレポート作業を取り除き、ピーク時に素早く判断するための6週間計画をご紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/b2b-content-marketing-that-engages/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d37-768.webp"><img src="/assets/blog/hero/d37.jpg" alt="意思決定者のデスクを写したモノクロの静物写真。赤い四角いカードの上に懐中時計が置かれ、そばに積まれたコイン、水がいっぱいに入ったグラス、ノート、スーツのジャケットが並んでいる。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>意思決定者を眠らせないB2Bコンテンツマーケティング</h3><p>Stagwell–ServiceNowの契約は、B2Bの予算が大きいことを示しています。退屈なコンテンツがなぜ高くつくのか、そして買い手が時間をかける価値があると感じるコンテンツをどう作るかを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約6分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-holding-company-model-independent-agencies/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d36-768.webp"><img src="/assets/blog/hero/d36.jpg" alt="白黒の写真。霧の中、巨大な停泊中のクルーズ船のそばを、3人の乗組員を乗せた小さな帆船が後ろ姿で静かにすり抜けていく。マストの先端には赤い四角い旗が掲げられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>AIとホールディングカンパニー型モデルの終わり：独立系エージェンシーが学べること</h3><p>WPPはさらに1,000の職を削減する見通しで、Gartnerは2030年までにエージェンシーフィーがマーケティング予算の15%になると予測しています。ピラミッドの解体から、独立系エージェンシーが学べること。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/fragmented-media-consumption-audience-data/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d35-768.webp"><img src="/assets/blog/hero/d35.jpg" alt="白黒の写真。ライトテーブルの上で、手が、群衆やスマートフォンの写真の破れた断片を組み合わせて人のシルエットを作っている。その中心には赤い四角の断片がある。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>メディア接触の細分化：ダッシュボードの先にあるオーディエンス理解</h3><p>プラットフォームはそれぞれ独自の物差しで測っています。レポートを足し合わせてもオーディエンスが見えてこない理由と、実際の会話から作ったペルソナをもとにプランニングする方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/brazil-agency-pitches-category-intelligence/" data-cat="new-business">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d34-768.webp"><img src="/assets/blog/hero/d34.jpg" alt="白黒の写真。会議室のテーブルに、買い物客の写真、無地のパッケージ、抽象的なSNS投稿が証拠のように並べられ、プレゼンターが最後の1枚を赤い四角のマーカーの横に置いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">新規開拓</div><h3>ブラジルのエージェンシーピッチ：新ルールはエビデンスを持ち込む者に報いる</h3><p>ブラジルのAbracomとABAが、ピッチに関する推奨事項を更新しました。透明性のある基準は、主張を証明できるエージェンシーに有利です。説得力のあるカテゴリーのドシエを作る方法を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/brand-differentiation-ai-without-sounding-generic/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d33-768.webp"><img src="/assets/blog/hero/d33.jpg" alt="白黒の航空写真。浜辺の片側に同じ白いパラソルが何百本もひしめき合い、広々とした何もない砂浜には、赤い四角いタオルが1枚だけぽつんと置かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>AIによるブランド差別化：競合と同じ声にならないために</h3><p>AIは、すべてのブランドを同じに聞こえさせることも、一つのブランドを際立たせることもできます。違いを分けるのは使い道です。メッセージを書くのか、カテゴリーを可視化するのかです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-burnout-automate-repetitive-work/" data-cat="talent-culture">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d32-768.webp"><img src="/assets/blog/hero/d32.jpg" alt="白黒の俯瞰写真。手が白紙の書類の山を引き出しに払い入れ、木炭画のスケッチブックが開かれたスペースを空けている。スケッチブックには赤いメモが挟まっている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">人材と組織文化</div><h3>エージェンシーのバーンアウト：反復作業を減らし、創造性に使う時間を増やす</h3><p>エージェンシーのストレスは、すべてが同じではありません。クラフトに意味を与えるプレッシャーと、チームを疲弊させる反復的な負荷をどう見分けるか、そしてそのうち自動化できるのはどの部分かを考えます。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/tariffs-marketing-strategy-messages-budgets/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d31-768.webp"><img src="/assets/blog/hero/d31.jpg" alt="港のコンテナターミナルを見渡す窓を背景に、模型のコンテナと硬貨が載った天秤に、手が赤い四角の分銅を足しているモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>関税とマーケティング戦略：メッセージと予算を組み直す方法</h3><p>関税は、カテゴリー全体の勢力図を塗り替えます。消費者への影響をどう読み解き、市場ごとにメッセージを組み直し、麻痺に陥ることなく予算を動かすかを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/continuous-social-listening-agencies/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d30-768.webp"><img src="/assets/blog/hero/d30.jpg" alt="埃をかぶった閉じた書物の山を背景に、手が地震計のドラムへ伸びているモノクロ写真。ドラムは急激な振れを記録しており、その部分に赤い四角の印が付けられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>エージェンシーのソーシャルリスニング：四半期レポートではもう遅い理由</h3><p>消費者トレンドは、四半期レポートを待ってくれません。エージェンシーが継続的なソーシャルリスニングを整え、実際の会話を週次の意思決定に変える方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-data-analysis-verifiable-conclusions/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d29-768.webp"><img src="/assets/blog/hero/d29.jpg" alt="壁一面のファイルキャビネットの開いた引き出しから取り出した原本を、後ろ姿の人物が手にしているモノクロ写真。原本には赤いタブが付いており、その隣に要約シートがある。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>マーケティングのAIデータ分析：クライアントが検証できる結論を</h3><p>誰にも検証できないAIの結論は、意思決定には役に立ちません。エージェンシーがAIでデータを分析し、サイロを解消し、「それはどうやって分かったのか」に答えるためのベストプラクティスです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/independent-agency-consolidation-spain-ai/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d28-768.webp"><img src="/assets/blog/hero/d28.jpg" alt="製図道具、カメラ、本、サウンドミキサーが置かれた4つの机を、1つのテーブルに寄せ合っている様子を真上から撮影したモノクロ写真。天板の角が合わさる場所に、赤い四角が置かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>独立系エージェンシーのAI活用：統合が進む理由と、変わること</h3><p>Jungleが4社を統合し、SAMYが米国企業を買収しました。AIは独立系エージェンシーにとっての規模の意味を塗り替えており、合併はもはやそれを手に入れる唯一の方法ではありません。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ad-personalisation-without-third-party-data/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d27-768.webp"><img src="/assets/blog/hero/d27.jpg" alt="夕暮れの女子サッカーの試合会場で、肩を組む二人のサポーターを後ろから撮影したモノクロ写真。片方のスカーフは無地で、小さな赤い四角のパッチが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>信頼を失わないパーソナライズ広告：エージェンシー向けガイド</h3><p>パーソナライゼーションは、もはや付きまといではありません。女子サッカーファンのようなニッチなコミュニティに向けて、本当の理解に基づいて広告を調整し、費用をかける前に何が効くかをテストする方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/media-planning-real-personas-ai/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d26-768.webp"><img src="/assets/blog/hero/d26.jpg" alt="コルクボードに貼られた写真の上で、ぴんと張った糸を引く両手の白黒写真。最も張りつめた一点に赤いピンが刺さり、そばには整然と分類された索引カードの引き出しが開いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>AIメディアプランニング:デモグラフィックから、消費者の本当の葛藤へ</h3><p>デモグラフィックからわかるのは誰に向けて買うかであり、なぜ注目してもらえるかではありません。AIを使い、自らの判断を手放さずに、オーディエンスの本当の葛藤を軸にメディアを計画する方法を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/apac-agencies-market-intelligence/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d25-768.webp"><img src="/assets/blog/hero/d25.jpg" alt="窓の透明、すりガラス、リブ入りのガラスの各パネルを通して見るシンガポールのマリーナベイのスカイラインを写した白黒写真。パネルごとに街の見え方が違い、窓枠には小さな赤い四角が添えられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>シンガポールのメディア消費データ:ネットワークが縮小するなか、何を信頼すべきか</h3><p>Dentsuは海外の事業体を削減し、APACは縮小しています。信頼できるシンガポールのメディア消費データの見つけ方と、自分を欺かずに読み解く方法を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約4分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/how-ai-disrupts-each-agency-type/" data-cat="agency-types">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d24-768.webp"><img src="/assets/blog/hero/d24.jpg" alt="小さな仕立屋の工房が、ガラス張りのオフィスタワーの隣に建っている白黒のストリート風景。壁には型紙が並び、同じミシンが両方の窓に見え、仕立屋の作業台には小さな赤い針山が置かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシーの種類</div><h3>AIはマーケティングエージェンシーの種類ごとにどう影響するか:クリエイティブからインフルエンサーまで</h3><p>AIは規模に報いませんが、エージェンシーのタイプごとに影響の出方も異なります。クリエイティブ、メディア、CRM、PR、インフルエンサー、ソーシャルの各エージェンシーについて、実践的に整理しました。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約5分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-content-quality-framework-agencies/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d23-768.webp"><img src="/assets/blog/hero/d23.jpg" alt="陶芸家の両手が、赤い札のついた手びねりの鉢をひとつ吟味している白黒写真。背後の棚には、同じ形の量産品の鉢がずらりと並んでいる。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>AIコンテンツ制作のベストプラクティス:エージェンシーのための品質フレームワーク</h3><p>安上がりな洗練は、どこにでもあります。このフレームワークは、ブリーフから承認までの7つの固定ゲートに人間の判断を置くことで、AIを活用したコンテンツがボイスを保ち、媒体予算に見合う成果を出せるようにします。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約5分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-driven-agency-case-studies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d22-768.webp"><img src="/assets/blog/hero/d22.jpg" alt="棒グラフのレポートの折り返された半分を持ち上げ、隠れていた棒を見せている手のモノクロのクローズアップ。赤いタブが顔をのぞかせ、机の上には宝石商用のルーペが置かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>数字で見るAIマーケティング事例と、そこで語られていないこと</h3><p>AIマーケティング事例の多くは、成果ではなく活動量を報告しています。確認できる数字を伴う事例、その数字が実際に意味すること、そしてそれ以外を見極めるためのテストを紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約5分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-native-marketing-organization-agencies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d21-768.webp"><img src="/assets/blog/hero/d21.jpg" alt="製図台に向かう2人の後ろ姿を写したモノクロ写真。眼下のホールで無人のまま稼働する自動印刷機の配置図を描いており、片方の手の下には小さな赤い四角がある。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>AIネイティブなマーケティング組織：クライアントがいまもエージェンシーから買うもの</h3><p>Liquid Deathが社内の2人で多額のメディア予算を運用しようとしていることは、クライアント側のAIの行き先を示しています。エージェンシーが売るのをやめるもの、そして代わりに売るものを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約5分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/win-agency-pitches-ai-category-insight/" data-cat="new-business">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d20-768.webp"><img src="/assets/blog/hero/d20.jpg" alt="ピッチルームの壁に向かう3人のシルエットを写したモノクロ写真。壁には競合の広告プリントがピンで留められ、糸でつながれている。ひとつだけ空いた隙間には赤いメモが1枚貼られ、テーブルには砂時計が置かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">新規開拓</div><h3>エージェンシーのピッチ戦略：48時間のカテゴリーインサイト・スプリントで勝つ</h3><p>自社の実績ではなく、クライアントのカテゴリーから語り始めましょう。実際の広告と投稿をもとに、どの競合もまだ押さえていない切り口を見つける48時間スプリントです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/global-vs-local-campaign-budget/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d19-768.webp"><img src="/assets/blog/hero/d19.jpg" alt="似たジャケットを着た仕立て用マネキンが一列に並ぶモノクロ写真。仕立て職人がそのうちの1着をピンとチャコで体に合わせて直しており、その襟には小さな赤いタグが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>グローバルキャンペーンが期待外れのとき、マーケティング予算のROIを最適化する方法</h3><p>チャネルを削る前に、市場に合わないクリエイティブに予算が使われていないかを確認しましょう。根拠に基づいて支出を再配分するための実践的な方法です。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/ai-video-production-agency-economics/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d18-768.webp"><img src="/assets/blog/hero/d18.jpg" alt="手袋をはめた手がフィルムの一片をライトボックスにかざしているモノクロ写真。背後のラックには切り分けられた何十本ものフィルムが吊るされ、手にしたフィルムには小さな赤いタブが付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>AI動画制作のコスト：フレームが安くなっても予算が減らない理由</h3><p>AIでどのフレームも安くなるから、クライアントはより多くのフレームを求めます。動画制作の本当の削減ポイントはどこにあり、エージェンシーはどう価格をつけるべきかを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/gen-z-persona-clustering/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d17-768.webp"><img src="/assets/blog/hero/d17.jpg" alt="金網越しに撮影したスケートパークのモノクロ写真。若者たちがいくつかのグループに分かれて、スケートボードをしたり、踊ったり、スケッチをしたり、ヘッドホンを分け合ったりしている。ランプには小さな赤い四角が描かれている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>Z世代に届く方法：生まれ年ではなくコミュニティから計画する</h3><p>「Z世代」は生まれ年による区分であって、オーディエンスではありません。実際の会話をクラスタリングし、クリエイティブチームが本当にブリーフに使えるペルソナにする方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/retail-media-agency-ownership/" data-cat="agency-types">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d16-768.webp"><img src="/assets/blog/hero/d16.jpg" alt="夜の無人のスーパーマーケットで、通路が交差する地点にぽつんと置かれたショッピングカートを高い位置から捉えたモノクロ写真。通路の先には三脚に据えたスマートフォンがあり、棚には小さな赤い値札が1枚だけついている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシーの種類</div><h3>リテールメディアネットワークとエージェンシー：予算を握るのは本当は誰か</h3><p>リテールメディアはいまや、リテーラーのサイト、ソーシャルショップ、クリエイターコンテンツにまたがっています。どのタイプのエージェンシーが担うべきか、そしてなぜカテゴリーの見立てが勝敗を決めるのかを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/will-ai-replace-agencies/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d15-768.webp"><img src="/assets/blog/hero/d15.jpg" alt="誰もいない会議室のテーブルで、白紙と万年筆の横に置かれた古いそろばんをはじく人の手を背後から捉えたモノクロ写真。そろばんの枠には小さな赤い四角が付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>AIはマーケティングエージェンシーに取って代わるのか？ 試算が合わない理由</h3><p>AIのサブスクリプションと人材1名の採用は、計算してみるまではリテイナー契約より安く見えます。AIが本当にエージェンシーの仕事を代替する領域と、人がより良い仕事に専念できるようになる領域を見ていきます。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-consolidation-vs-roster/" data-cat="new-business">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d14-768.webp"><img src="/assets/blog/hero/d14.jpg" alt="川霧の中、1人乗りのスカルと4人乗りのクルーが並んで、小さな赤いマーカーが1つだけ交じるブイの列に向かって漕いでいく様子を橋の上から捉えたモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">新規開拓</div><h3>エージェンシー統合か、ロスター制か：StarKistとServiceNowの事例が示すもの</h3><p>StarKistは独立系エージェンシー1社を選び、ServiceNowはStagwellの4社チームを選びました。どちらの契約も同じものに報いています。そしてそれは、規模ではありません。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/independent-agencies-vs-holding-company-data/" data-cat="agency-types">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d13-768.webp"><img src="/assets/blog/hero/d13.jpg" alt="霧に包まれた港で、そびえ立つコンテナ船の手前を、赤いペナントを掲げた小さなヨットが横切っていくモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシーの種類</div><h3>独立系エージェンシーとホールディングカンパニー：独立系はデータでどう戦うか</h3><p>WPPはさらに1,000人の削減を進め、OmnicomはAIプラットフォームのチームを外部の請負企業に移しました。ホールディングカンパニーのデータの「堀」はいまどうなっているのか、そして独立系はどう戦うべきかを解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/influencer-agency-reporting-automation/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d12-768.webp"><img src="/assets/blog/hero/d12.jpg" alt="小さな石が仕分けられたトレーの上で、宝石職人がルーペとピンセットを使って小さな宝石をひとつ検品しているモノクロ写真。横には大きなガラス玉が山積みになっており、トレーの空いた一区画には小さな赤い四角の印がついている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>インフルエンサーマーケティングのレポーティングが、エージェンシーの新たな主戦場になる理由</h3><p>クリエイター向けの予算は増え、クリエイターエージェンシーの統合も進んでいます。勝ち残るのは、クライアントが本当に信頼できるインフルエンサーレポートを出せるエージェンシーです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/future-of-strategy-planners-automate/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d11-768.webp"><img src="/assets/blog/hero/d11.jpg" alt="封筒がぎっしり詰まった仕分け棚が壁一面に並び、仕分け用のコンベヤーが動く郵便室のモノクロ写真。その脇では、小さな赤い封蝋のついた封筒のそばで、後ろ姿の人物がランプの下で一通の手紙を読んでいる。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>オーディエンスリサーチツール：プランナーがまず自動化すべきこと</h3><p>WARCによると、AIがストラテジストに取って代わることへの懸念は今年15ポイント上昇しました。プランナーがまず自動化すべき業務と、生まれた時間こそが新しい発想の源になる理由を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agentic-media-human-in-the-loop/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d10-768.webp"><img src="/assets/blog/hero/d10.jpg" alt="高速で稼働する巨大な自動印刷機の傍らで、制御盤の小さな赤いボタンの横に手を添える技術者の後ろ姿を捉えたモノクロ写真。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>暴走を恐れずに進めるエージェンティックAI広告：人間の関与を保つには</h3><p>AIエージェントが、メディアのプランニングとバイイングを担い始めています。エージェンシーが人間の関与を保ち、不安を抱えるクライアントを安心させ、ブランドが誰の声にも聞こえなくなるのを防ぐ方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/synthetic-audiences-agencies-validation/" data-cat="insight-strategy">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d09-768.webp"><img src="/assets/blog/hero/d09.jpg" alt="マジックミラー越しに撮影したモノクロ写真。服を着た同じ姿のマネキンたちがフォーカスグループのように輪になって座り、その輪の中にある1脚の空いた椅子には本物のコートと小さな赤いカードが置かれている。その様子を、後ろ姿のリサーチャーが見つめている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>合成オーディエンスが急速に普及。エージェンシーはその信頼性をどう保っているのか</h3><p>合成オーディエンスは速く、説得力があります。だからこそ、確認が必要なのです。クライアントの前に作り話を出さずに活用するための実践ガイドです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-sprint-model-speed-strategy/" data-cat="agency-types">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d08-768.webp"><img src="/assets/blog/hero/d08.jpg" alt="誰もいない駅のホームを列車がブレながら通過していく長時間露光のモノクロ写真。レールはくっきりとまっすぐに写り、手前のレールの間には小さな赤いプレートが取り付けられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシーの種類</div><h3>エージェンシーのスプリントモデル：戦略を崩さずにスピードを上げる方法</h3><p>エージェンシーは今、リテイナー契約ではなく5日間のスプリントを販売しています。戦略を崩さずにそれほどのスピードで動く方法と、AIエージェントに任せるべき雑務を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/creativity-vs-performance-pre-testing/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d07-768.webp"><img src="/assets/blog/hero/d07.jpg" alt="紙を折って作った大胆な造形の彫刻が風洞でテストされているモノクロ写真。煙の筋がその上を流れ、片手がその前縁を調整している。前縁には小さな赤い四角の印が付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>クリエイティブの事前テスト：「創造性かパフォーマンスか」の争いを終わらせる方法</h3><p>創造性とパフォーマンスが敵同士のように感じられるのは、データの届くタイミングが遅すぎるからにすぎません。出稿前にクリエイティブを事前テストすれば、データは大胆なアイデアを潰すのではなく、守る味方になります。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-ai-stack-integration/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d06-768.webp"><img src="/assets/blog/hero/d06.jpg" alt="作業台を真上から撮影したモノクロ写真。片側には接続されていないガジェットやケーブル、工具が絡み合い、もう片側には1本のベルトでつながれた3つの噛み合う歯車があり、中央の歯車には小さな赤い四角の印が付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>エージェンシー向けAIマーケティングツール：買い物リストではなく「スタック」を構築する</h3><p>ほとんどのエージェンシーが持っているのは、AIスタックではなく、互いに連携しない気の利いたツールの山です。本当に重要な「連携」という観点から、AIマーケティングツールを見極める方法を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/escape-creative-sameness-category-intelligence/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d05-768.webp"><img src="/assets/blog/hero/d05.jpg" alt="雨に濡れた石畳の広場を真上から捉えたモノクロ写真。同じ黒い傘を差した群衆が広場の片側に密集し、残りの空間は1枚の赤い敷石を除いて空っぽになっている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>ブランド差別化戦略：カテゴリーが見落としている切り口を見つける</h3><p>多くのカテゴリーが同じように見えるのは、ブランド同士が互いを模倣しているからです。カテゴリーのインテリジェンスをレシピとしてではなく、群れの位置を示す地図として使えば、まだ誰も手をつけていない切り口が見えてきます。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-dashboard-fatigue-ai-questions/" data-cat="ai-transformation">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d04-768.webp"><img src="/assets/blog/hero/d04.jpg" alt="何も書かれていない開いたノートに、ペンと小さな赤い付箋とともに手を置いているモノクロ写真。キーリングと閉じたノートパソコンの山は、机の奥の端に押しやられている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">AIトランスフォーメーション</div><h3>マーケティングのダッシュボード過多：エージェンシーがログインをやめて問いかけを始めた理由</h3><p>自社のマーテックに満足しているマーケターは3人に1人にすぎません。解決策は、新たなダッシュボードではありません。意思決定から始め、鋭い問いを投げかけ、エビデンスを求めることです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/proving-media-roi-agencies-mmm/" data-cat="creative-effectiveness">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d03-768.webp"><img src="/assets/blog/hero/d03.jpg" alt="実験台に並んだビーカーの列で、あふれそうなガラスビーカーから半分ほど空のビーカーへ手で水を注いでいるモノクロ写真。注がれている側のビーカーの下には小さな赤い四角がある。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">クリエイティブ効果</div><h3>クライアントにメディアROIを証明するには：MMMが再注目される理由と示すべきもの</h3><p>クライアントがラストクリックを超えた証拠を求めるなか、マーケティング・ミックス・モデリングが再び注目されています。メディアROIを示すためにエージェンシーが揃えるべきエビデンスと、MMMでは補えない要素を解説します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/beyond-roas-cpa-outcome-based-agency-pay/" data-cat="agency-economics">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d02-768.webp"><img src="/assets/blog/hero/d02.jpg" alt="オフィスの机に置かれたアンティークの天秤のモノクロ写真。天秤は打刻済みのタイムカードの束から離れ、小さな赤い分銅が添えられた鉢植えの苗木の側へと傾いている。背後の窓辺には人物が立っている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">エージェンシー経営</div><h3>成果報酬型のエージェンシー報酬：ROASとCPAを超える指標</h3><p>ブランドは時間単位のエージェンシーフィーから離れつつありますが、ROASとCPAは成果報酬の土台としては不十分です。フィー交渉で通用する指標を紹介します。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約7分で読めます</span></div></div>
+</a>
+<a class="card" href="/blog/ja/agency-entry-level-talent-ai/" data-cat="talent-culture">
+<div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d01-768.webp"><img src="/assets/blog/hero/d01.jpg" alt="アーカイブ棚を背にした図書館のはしごの最下段に、年配の同僚と若い同僚が後ろ姿で淡い色の新しい木の横木を取り付けているモノクロ写真。新しい横木には小さな赤い四角が付いている。" width="1536" height="1024" loading="lazy"></picture></div>
+<div class="tx"><div class="eyebrow">人材と組織文化</div><h3>AIがエージェンシーの雇用に与える影響：若手のキャリアラダーをどう立て直すか</h3><p>GartnerとDigidayによれば、AIはエージェンシーのエントリーレベル業務を空洞化させつつあります。新卒の人材パイプラインを断つのは誤った答えです。正しい答えは、若手の役割を再設計することです。</p><div class="meta"><span>2026年10月16日</span><span>·</span><span>約8分で読めます</span></div></div>
+</a>
+</div>
+</div>
+</main>
+<section class="cta" aria-label="お問い合わせ">
+<h2>規模の壁を越えて戦う準備はできていますか？</h2>
+<p>大手エージェンシーネットワークが門外不出にしてきたインテリジェンス基盤をご覧ください。売り込みはしません。まずはお話ししましょう。</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>規模の壁を越えて戦うエージェンシーのための、インサイトと自動化のプラットフォーム。</p></div>
+<div><h4>Defy</h4><a href="/#main">メイン</a><a href="/#platform">プラットフォーム</a><a href="/#clients">クライアント</a><a href="/#team">チーム</a></div>
+<div class="df-langs"><h4>ジャーナル</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>お問い合わせ</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">ログイン</a><a href="/llms.txt">llms.txt</a><a href="/blog/ja/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited　無断転載・複製を禁じます。</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var c=b.getAttribute('data-cat');
+  document.querySelectorAll('#cards .card, .card-f').forEach(function(el){el.classList.toggle('hide', c!=='all' && el.getAttribute('data-cat')!==c); el.style.display=(c!=='all' && el.getAttribute('data-cat')!==c)?'none':'';});
+  try{gtag('event','blog_filter',{category:c})}catch(e){}
+})});
+</script>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>कोल्ड-स्टार्ट समस्या: यूज़र डेटा के बिना पर्सनलाइज़ेशन | Defy</title>
+<meta name="description" content="विज्ञापन में कोल्ड-स्टार्ट समस्या का समाधान: सार्वजनिक कंटेंट से बने पर्सोना के सहारे थर्ड-पार्टी डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे करें।">
+<link rel="canonical" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="कोल्ड-स्टार्ट समस्या पर्सनलाइज़ेशन, थर्ड-पार्टी डेटा के बिना पर्सनलाइज़ेशन, सोशल लिसनिंग से पर्सोना, नए यूज़र्स के लिए विज्ञापन पर्सनलाइज़ करना, कुकी-रहित पर्सनलाइज़ेशन, सिंथेटिक ऑडियंस">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें">
+<meta property="og:description" content="विज्ञापन में कोल्ड-स्टार्ट समस्या का समाधान: सार्वजनिक कंटेंट से बने पर्सोना के सहारे थर्ड-पार्टी डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे करें।">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-hi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="इनसाइट और रणनीति">
+<meta property="article:tag" content="पर्सनलाइज़ेशन">
+<meta property="article:tag" content="कोल्ड स्टार्ट">
+<meta property="article:tag" content="पर्सोना">
+<meta property="article:tag" content="डेटा प्राइवेसी">
+<meta property="article:tag" content="सिंथेटिक ऑडियंस">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें">
+<meta name="twitter:description" content="विज्ञापन में कोल्ड-स्टार्ट समस्या का समाधान: सार्वजनिक कंटेंट से बने पर्सोना के सहारे थर्ड-पार्टी डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे करें।">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-hi.jpg">
+<meta name="twitter:image:alt" content="कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy जर्नल" href="/blog/hi/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+Devanagari:wght@400;500;700&amp;family=Noto+Serif+Devanagari:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/","headline":"कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें","alternativeHeadline":"कोल्ड-स्टार्ट समस्या: यूज़र डेटा के बिना पर्सनलाइज़ेशन","description":"विज्ञापन में कोल्ड-स्टार्ट समस्या का समाधान: सार्वजनिक कंटेंट से बने पर्सोना के सहारे थर्ड-पार्टी डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे करें।","abstract":"शुरुआत में लोगों के नहीं, पर्सोना के स्तर पर पर्सनलाइज़ करें। अपनी कैटेगरी की सार्वजनिक बातचीत, कमेंट, रिव्यू और क्रिएटर कंटेंट का विश्लेषण करें, उसे स्पष्ट मकसद और टेंशन वाले पर्सोना में ढालें, और लैंडिंग पेज, सर्च टर्म या संदर्भ जैसे शुरुआती संकेतों से नए यूज़र्स का मिलान करें। हर इंटरैक्शन के साथ आपका अपना फ़र्स्ट-पार्टी डेटा शुरुआती अनुमानों की जगह लेता जाता है।","image":["https://defygroup.ai/assets/blog/og/d49-hi.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"hi","author":{"@type":"Organization","name":"Defy संपादकीय","url":"https://defygroup.ai/blog/hi/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"इनसाइट और रणनीति","keywords":"कोल्ड-स्टार्ट समस्या पर्सनलाइज़ेशन, थर्ड-पार्टी डेटा के बिना पर्सनलाइज़ेशन, सोशल लिसनिंग से पर्सोना, नए यूज़र्स के लिए विज्ञापन पर्सनलाइज़ करना, कुकी-रहित पर्सनलाइज़ेशन, सिंथेटिक ऑडियंस","wordCount":1230,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/hi/#blog","name":"Defy — Defy जर्नल"},"about":[{"@type":"Thing","name":"पर्सनलाइज़ेशन"},{"@type":"Thing","name":"कोल्ड स्टार्ट"},{"@type":"Thing","name":"पर्सोना"},{"@type":"Thing","name":"डेटा प्राइवेसी"},{"@type":"Thing","name":"सिंथेटिक ऑडियंस"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"hi","mainEntity":[{"@type":"Question","name":"विज्ञापन में कोल्ड स्टार्ट का क्या मतलब है?","acceptedAnswer":{"@type":"Answer","text":"कोल्ड स्टार्ट उस स्थिति को कहते हैं जिसमें सीखने वाले किसी सिस्टम के पास किसी नए यूज़र, नए प्रोडक्ट या नए बाज़ार के बारे में अभी कोई व्यवहार-संबंधी डेटा नहीं होता। तब पर्सनलाइज़ेशन सामान्य संदेशों पर लौट आता है। विज्ञापन में इसका असर मुख्यतः नए ग्राहकों, प्रोडक्ट लॉन्च और बाज़ार में प्रवेश पर पड़ता है – ठीक वही स्थितियाँ जहाँ पहली छाप मायने रखती है।"}},{"@type":"Question","name":"क्या थर्ड-पार्टी कुकीज़ के बिना पर्सनलाइज़ेशन संभव है?","acceptedAnswer":{"@type":"Answer","text":"हाँ। संदर्भ-आधारित संकेत, क्विज़ या ऑनबोर्डिंग से मिला ज़ीरो-पार्टी डेटा, आपका अपना फ़र्स्ट-पार्टी डेटा और सार्वजनिक कंटेंट से बने पर्सोना – ये सब खरीदे गए कुकी प्रोफ़ाइल के बिना पर्सनलाइज़ेशन संभव बनाते हैं। फ़र्क यह है: शुरू में आप व्यक्तियों के बजाय साझा मकसद वाले समूहों के लिए पर्सनलाइज़ करते हैं, और हर इंटरैक्शन के साथ टार्गेटिंग को बारीक करते जाते हैं।"}},{"@type":"Question","name":"सिंथेटिक ऑडियंस और सार्वजनिक कंटेंट से बने पर्सोना में क्या फ़र्क है?","acceptedAnswer":{"@type":"Answer","text":"सिंथेटिक ऑडियंस ऐसे AI मॉडल हैं जो प्रतिक्रियाओं का अनुकरण करते हैं, और आमतौर पर सर्वे, सांख्यिकीय और पैनल डेटा पर आधारित होते हैं। इसके उलट, सार्वजनिक कंटेंट से बने पर्सोना कमेंट, रिव्यू और क्रिएटर वीडियो जैसे असली बयानों का सार निकालते हैं। एक तेज़ सिमुलेशन के लिए उपयुक्त है; दूसरा मकसद और भाषा के सत्यापन-योग्य प्रमाण देता है। दोनों तरीकों को मिलाया जा सकता है।"}},{"@type":"Question","name":"शुरुआत के लिए मुझे कितने पर्सोना चाहिए?","acceptedAnswer":{"@type":"Answer","text":"शुरू करने के लिए आमतौर पर तीन से पाँच स्पष्ट रूप से अलग पर्सोना काफ़ी होते हैं। ज़्यादा पर्सोना सुनने में ज़्यादा सटीक लगते हैं, लेकिन वे बजट और क्रिएटिव मेहनत को बहुत सारे वेरिएंट में बाँट देते हैं, जबकि सीखने लायक डेटा अभी पर्याप्त नहीं होता। मायने यह रखता है कि पर्सोना मकसद और संदेश में सचमुच अलग हों – सिर्फ़ उम्र या पिन कोड में नहीं।"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"जर्नल","item":"https://defygroup.ai/blog/hi/"},{"@type":"ListItem","position":3,"name":"कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें","item":"https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">इस पेज पर</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — मुख्य"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="प्राथमिक">
+<a href="/#main">मुख्य</a>
+<a href="/#platform">प्लैटफ़ॉर्म</a>
+<a href="/#clients">क्लाइंट</a>
+<a href="/#team">टीम</a>
+<a href="/blog/hi/" class="on">जर्नल</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">लॉग इन करें</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">हमसे बात करें</a>
+<button class="menu" aria-label="मेन्यू" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="नेविगेशन पथ"><a href="/#main">होम</a><span>/</span><a href="/blog/hi/">जर्नल</a><span>/</span><span>इनसाइट और रणनीति</span></nav>
+<header class="a-head">
+<div class="eyebrow">इनसाइट और रणनीति</div>
+<h1 itemprop="headline">कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें<span class="sq"></span></h1>
+<p class="dek" itemprop="description">नए यूज़र्स, कोई इतिहास नहीं, गिनी-चुनी सहमतियाँ: एजेंसियाँ खरीदे गए सेगमेंट के बजाय असली सार्वजनिक बातचीत से बने पर्सोना के ज़रिए कोल्ड-स्टार्ट समस्या कैसे सुलझाती हैं।</p>
+<div class="a-meta">
+<span><b>Defy संपादकीय</b></span>
+<span>प्रकाशित <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 अक्टूबर 2026</time></span>
+<span>7 मिनट में पढ़ें</span>
+<span class="langs"><details class="lsw"><summary aria-label="भाषा: हिन्दी"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>हिन्दी</span></summary><div class="lsw-p"><div class="lsw-h">इन भाषाओं में भी उपलब्ध</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi" aria-current="true">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="एक मोची के हाथों की श्वेत-श्याम तस्वीर, जो लकड़ी के जूते के साँचों की अलमारी से छोटा लाल टैग लगा एक साँचा उतार रहे हैं, जबकि दरवाज़े से एक नए ग्राहक की परछाईं भीतर आ रही है और पास में चॉक से बना एक धुँधला पदचिह्न दिखता है।" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="इस लेख के पीछे का सवाल">
+<div class="eyebrow">इस लेख के पीछे का सवाल</div>
+<p class="q">“नए यूज़र्स के लिए विज्ञापनों को पर्सनलाइज़ कैसे करूँ, जब मेरे पास उनके बारे में अभी कोई डेटा नहीं है?”</p>
+<p class="ans"><b>संक्षिप्त जवाब</b>शुरुआत में लोगों के नहीं, पर्सोना के स्तर पर पर्सनलाइज़ करें। अपनी कैटेगरी की सार्वजनिक बातचीत, कमेंट, रिव्यू और क्रिएटर कंटेंट का विश्लेषण करें, उसे स्पष्ट मकसद और टेंशन वाले पर्सोना में ढालें, और लैंडिंग पेज, सर्च टर्म या संदर्भ जैसे शुरुआती संकेतों से नए यूज़र्स का मिलान करें। हर इंटरैक्शन के साथ आपका अपना फ़र्स्ट-पार्टी डेटा शुरुआती अनुमानों की जगह लेता जाता है।</p>
+</section>
+<section class="kt takeaways"><h2>मुख्य बातें</h2><ul><li>कोल्ड-स्टार्ट समस्या मात्रा से ज़्यादा समझ की है: कमी इस बात के एक भरोसेमंद शुरुआती अनुमान की है कि नए यूज़र्स क्या चाहते हैं।</li><li>सार्वजनिक कंटेंट से बने पर्सोना ये शुरुआती अनुमान समूह के स्तर पर देते हैं – व्यक्तियों के प्रोफ़ाइल के बिना और खरीदे गए थर्ड-पार्टी सेगमेंट के बिना।</li><li>Digiday के अनुसार, सिंथेटिक ऑडियंस रोज़मर्रा की प्लानिंग में जगह बना रही हैं, पर उनकी गुणवत्ता इस पर निर्भर करती है कि वे किस डेटा पर बनी हैं।</li><li>अच्छी कोल्ड-स्टार्ट रणनीतियाँ पर्सोना की परिकल्पनाओं, संदर्भ-आधारित संकेतों और सोची-समझी खोज (एक्सप्लोरेशन) को मिलाती हैं – और हर इंटरैक्शन के साथ सीखती हैं।</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>जिन लोगों के बारे में आप कुछ नहीं जानते, उनके लिए विज्ञापन कैसे पर्सनलाइज़ करें? ईमानदार जवाब: व्यक्तिगत स्तर पर, आप नहीं कर सकते। लेकिन किसी कैटेगरी में दिलचस्पी रखने वाले लोगों को आप बेशक समझ सकते हैं, और मुट्ठी भर संकेतों से नए यूज़र्स को किसी उपयुक्त पर्सोना से मिला सकते हैं। यही कारगर कोल्ड-स्टार्ट रणनीति का मूल है।</p>
+<p>इंडस्ट्री क्लासिक ऑडियंस डेटा के विकल्प कितनी शिद्दत से खोज रही है, यह <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a> की हालिया रिपोर्टिंग में दिखता है: सिंथेटिक ऑडियंस प्रयोग से निकलकर रोज़मर्रा की प्लानिंग और स्ट्रैटेजी के काम में आ रही हैं। Aveeno Body ने Vurvey की सिंथेटिक रिसर्च की मदद से स्ट्रैटेजी ब्रीफ़ के लिए ज़रूरी समय लगभग 30 दिन से घटाकर तीन दिन कर दिया। Goodway Group मीडिया प्लानिंग के लिए Arima की अमेरिका, ब्रिटेन और जर्मनी के उपभोक्ताओं की “सिंथेटिक आबादी” का इस्तेमाल करता है।</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">विज्ञापन में कोल्ड-स्टार्ट समस्या क्या है?</h2>
+<p>यह शब्द रिकमेंडर सिस्टम की दुनिया से आया है। जो सिस्टम व्यवहार से सीखता है, उसे सीखने के लिए व्यवहार चाहिए – और नए यूज़र के पास अभी कोई व्यवहार नहीं है। इसलिए सिस्टम औसत परोस देता है: बेस्टसेलर, सामान्य संदेश, वह विज्ञापन जो सब पर थोड़ा-बहुत चलता है और किसी पर ठीक से नहीं।</p>
+<p>विज्ञापन में समस्या और बढ़ जाती है। कई ब्राउज़र डिफ़ॉल्ट रूप से थर्ड-पार्टी कुकीज़ ब्लॉक करते हैं, जर्मनी में कंसेंट बैनर रोज़मर्रा की बात हैं, और हर कोई “सभी स्वीकार करें” पर क्लिक नहीं करता। इससे निकलने का पुराना रास्ता, यानी खरीदे गए सेगमेंट, डेटा संरक्षण कानून के तहत पेचीदा हो गया है और वैसे भी यह बहुत कम बताता है कि कोई खरीदता क्यों है। GDPR से आकार लेने वाले DACH क्षेत्र (जर्मनी, ऑस्ट्रिया और स्विट्ज़रलैंड) में “हम बस और डेटा खरीद लेंगे” अब कोई रणनीति नहीं रही।</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">ज़्यादा डेटा से समस्या क्यों नहीं सुलझती</h2>
+<p>डेटा क्वालिटी रिसर्च के पास इसके लिए एक सीधा-सादा फ़ॉर्मूला है: डेटा उतना ही अच्छा है जितना वह अपने उद्देश्य के लिए उपयुक्त है। अकेली सटीकता काफ़ी नहीं; डेटा प्रासंगिक, ताज़ा और विशिष्ट सवाल के अनुकूल होना चाहिए। साहित्य में इसे “फ़िटनेस फ़ॉर यूज़” कहा जाता है।</p>
+<p>“महिलाएँ, 25 से 34 वर्ष, ब्यूटी में दिलचस्पी” जैसा खरीदा हुआ सेगमेंट सटीक शब्दों में लिखा होता है। फिर भी “इस व्यक्ति को हमारा प्रोडक्ट आज़माने के लिए क्या प्रेरित करेगा?” जैसे सवाल के लिए वह लगभग बेकार है। वह गुण बताता है, मकसद नहीं। जुड़ाव समझ से पैदा होता है, आँकड़ों से नहीं।</p>
+<p>कोल्ड स्टार्ट के लिए इसका मतलब है कि निर्णायक संसाधन किसी एक यूज़र का इतिहास नहीं, बल्कि कैटेगरी के मकसदों, चिंताओं और भाषा की एक मज़बूत तस्वीर है। और वह तस्वीर सार्वजनिक रूप से उपलब्ध कंटेंट से बनाई जा सकती है।</p>
+<h2 id="how-are-personas-built-from-public-content">सार्वजनिक कंटेंट से पर्सोना कैसे बनते हैं?</h2>
+<p>लोग सार्वजनिक रूप से अपने खरीदने – या न खरीदने – के कारणों के बारे में हैरानी की हद तक काफ़ी कुछ कहते हैं: ब्रांड पोस्ट के कमेंट में, प्रोडक्ट रिव्यू में, क्रिएटर वीडियो में, फ़ोरम थ्रेड में। इस कंटेंट को इकट्ठा किया जा सकता है, विषय और टेंशन के आधार पर क्लस्टर किया जा सकता है और पर्सोना में ढाला जा सकता है – गढ़े हुए प्रोफ़ाइल की जगह असली उद्धरणों के साथ।</p>
+<p>क्लासिक वर्कशॉप पर्सोना से फ़र्क यह है: यह इस पर आधारित है कि लोग असल में क्या कहते हैं, इस पर नहीं कि कोई टीम उनके बारे में क्या मान लेती है। Digiday एक मिलता-जुलता तरीका बताता है: ब्रांड Sacheu के लिए Limitless Labs अपने क्रिएटर इकोसिस्टम के हज़ारों TikTok और Instagram वीडियो का विश्लेषण करके पर्सोना बनाता है।</p>
+<p>जर्मन बाज़ार के लिए महत्वपूर्ण: ऐसे पर्सोना पैटर्न और समूहों के स्तर पर काम करते हैं। पहला संदेश चुनने के लिए उन्हें अलग-अलग यूज़र्स के प्रोफ़ाइल की ज़रूरत नहीं होती। आपके विशिष्ट सेट-अप का कानूनी आकलन फिर भी आपके डेटा संरक्षण सलाहकार का काम है।</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">कोल्ड स्टार्ट के लिए कौन-से तरीके हैं?</h2>
+<div class="tw"><table>
+<thead><tr><th>तरीका</th><th>डेटा का आधार</th><th>ताकत</th><th>कमज़ोरी</th></tr></thead>
+<tbody>
+<tr><td>खरीदे गए थर्ड-पार्टी सेगमेंट</td><td>बाहरी प्रोफ़ाइल, कुकीज़</td><td>तुरंत उपलब्ध</td><td>मकसद की बहुत कम समझ; डेटा संरक्षण कानून के तहत पेचीदा</td></tr>
+<tr><td>संदर्भ-आधारित टार्गेटिंग</td><td>परिवेश, समय, स्थान, डिवाइस</td><td>व्यक्तिगत डेटा के बिना काम करता है</td><td>प्रेरणाओं के बारे में बहुत कम बताता है</td></tr>
+<tr><td>ज़ीरो-पार्टी डेटा</td><td>क्विज़ या ऑनबोर्डिंग के जवाब</td><td>सीधा और सहमति-आधारित</td><td>सिर्फ़ उनसे जो हिस्सा लेते हैं; फ़नल में रुकावट</td></tr>
+<tr><td>सिंथेटिक ऑडियंस</td><td>सर्वे, सांख्यिकीय और पैनल डेटा पर आधारित मॉडल</td><td>प्रतिक्रियाओं का तेज़ सिमुलेशन</td><td>औसत की ओर खिंचाव; गुणवत्ता इनपुट डेटा पर निर्भर</td></tr>
+<tr><td>सार्वजनिक कंटेंट से पर्सोना</td><td>कमेंट, रिव्यू, क्रिएटर कंटेंट, प्रतिस्पर्धियों के विज्ञापन</td><td>कैटेगरी के असली मकसद और भाषा</td><td>अलग-अलग यूज़र्स से मिलान के लिए संकेत चाहिए</td></tr>
+</tbody>
+</table></div>
+<p>कोई एक तरीका अकेले समस्या हल नहीं करता। व्यवहार में सार्वजनिक कंटेंट से बने पर्सोना परिकल्पनाएँ देते हैं, संदर्भ-आधारित संकेत मिलान और फ़र्स्ट-पार्टी डेटा पुष्टि।</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">छह चरणों में कोल्ड-स्टार्ट पर्सनलाइज़ेशन को व्यवहार में कैसे उतारें?</h2>
+<ol>
+<li><strong>कैटेगरी की बातचीत इकट्ठा करें।</strong> पिछले कुछ महीनों के कमेंट, रिव्यू, क्रिएटर कंटेंट और प्रतिस्पर्धियों के विज्ञापन – सिर्फ़ ब्रांड के बारे में नहीं, बल्कि पूरी कैटेगरी के बारे में।</li>
+<li><strong>पर्सोना और टेंशन बनाएँ।</strong> कंटेंट को मकसद और चिंता के आधार पर क्लस्टर करें। शुरू करने के लिए तीन से पाँच स्पष्ट रूप से अलग पर्सोना काफ़ी हैं।</li>
+<li><strong>हर पर्सोना के लिए एक परिकल्पना लिखें।</strong> कौन-सा संदेश, कौन-सा हुक, कौन-सा ऑफ़र फ़िट बैठता है? हर पर्सोना के लिए कम से कम एक अलग क्रिएटिव वेरिएंट तैयार करें।</li>
+<li><strong>मिलान के संकेत तय करें।</strong> लैंडिंग पेज, सर्च टर्म, संदर्भ, कैंपेन स्रोत, पहले क्लिक: तय करें कि कौन-सा संकेत किस पर्सोना की ओर इशारा करता है।</li>
+<li><strong>एक्सप्लोरेशन के साथ डिलीवर करें।</strong> डिलीवरी का एक हिस्सा उन वेरिएंट के लिए रखें जो अनुमानित पर्सोना से मेल नहीं खाते। इस तरह सिस्टम सीखता रहता है, सिर्फ़ अपनी ही धारणा की पुष्टि नहीं करता।</li>
+<li><strong>फ़र्स्ट-पार्टी डेटा को वापस फ़ीड करें।</strong> हर इंटरैक्शन मिलान को और सटीक बनाता है। पर्सोना को नियमित रूप से अपडेट करें, क्योंकि बातचीत बदलती रहती है।</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">कोल्ड स्टार्ट के लिए सिंथेटिक ऑडियंस कितनी उपयोगी हैं?</h2>
+<p>काफ़ी उपयोगी – अगर आप उनकी सीमाएँ जानते हैं। Digiday की रिपोर्टिंग में संबंधित लोग भी आशंकाएँ जताते हैं: Vurvey के CEO Chad Reynolds कहते हैं कि बड़े लैंग्वेज मॉडल घंटी-वक्र का शीर्ष देते हैं, यानी सबसे आम जवाब। TransUnion की Julie Clark खराब इनपुट डेटा पर बने पर्सोना के प्रति आगाह करती हैं। और Code &amp; Theory के Stef Hoffman इसे सटीक ढंग से कहते हैं: नतीजे विवेक को जानकारी देते हैं, उसकी जगह नहीं लेते।</p>
+<p>यहीं सार्वजनिक कंटेंट अपनी उपयोगिता साबित करता है। यह सिमुलेशन नहीं, प्रमाण है। अगर कोई पर्सोना दावा करता है कि आपकी कैटेगरी में लोगों को मुख्यतः गलत चीज़ खरीद लेने का डर रहता है, तो आपको वे पोस्ट दिखनी चाहिए जिनसे वह दावा निकला है। जिस पर्सोना को आप वापस स्रोत तक नहीं खोज सकते, वह महज़ एक दावा है।</p>
+<p>Defy Monitor यही रास्ता अपनाता है: ऑडियंस कंटेंट अपने-आप पर्सोना और टेंशन में क्लस्टर हो जाता है, और प्लानिंग डेमोग्राफ़िक्स के बजाय असली बातचीत से शुरू होती है। यह <a href="/#platform">Defy प्लेटफ़ॉर्म</a> का एक बिल्डिंग ब्लॉक है, जो स्वतंत्र एजेंसियों को वही विश्लेषण-क्षमता देता है जिसे बनाने में बड़े नेटवर्कों ने भारी निवेश किया है।</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">आपको कैसे पता चलेगा कि आपकी कोल्ड-स्टार्ट रणनीति काम कर रही है?</h2>
+<p>पर्सोना-आधारित वेरिएंट की तुलना किसी सामान्य कंट्रोल ग्रुप से करें। सबसे ज़्यादा बताने वाले मेट्रिक नए यूज़र्स के शुरुआती आँकड़े हैं: पहले विज्ञापन के साथ इंटरैक्शन, पहली विज़िट की गहराई, पहले कन्वर्ज़न तक का समय। अगर पर्सोना वेरिएंट आगे नहीं हैं, तो यह नाकामी नहीं, एक सुराग है: या तो पर्सोना सही नहीं बैठे हैं, या मिलान के संकेत बहुत कमज़ोर हैं।</p></div>
+<aside class="insight" aria-label="इनसाइट"><div class="eyebrow">इनसाइट</div><blockquote>एंगेजमेंट आंकड़ों से नहीं, समझ से पैदा होता है।</blockquote><p>डेटा क्वालिटी रिसर्च डेटा को उसके उद्देश्य के लिए उपयुक्तता से परखती है। नए यूज़र्स तक पहुँचने के लिए सार्वजनिक बातचीत से निकले असली मकसद अक्सर सटीक पर मकसद-रहित सेगमेंट डेटा से ज़्यादा उपयुक्त होते हैं।</p></aside>
+<section class="prop" aria-label="Defy कैसे मदद करता है">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy कैसे मदद करता है<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Monitor आपकी कैटेगरी के ऑडियंस कंटेंट को अपने-आप पर्सोना और टेंशन में क्लस्टर करता है। आप डेमोग्राफ़िक्स के बजाय असली बातचीत से प्लानिंग करते हैं – और आपको ठीक वही शुरुआती अनुमान मिलते हैं जो कोल्ड स्टार्ट में गायब होते हैं।</p><ul><li>मकसद, चिंताओं और भाषा वाले पर्सोना, जो सार्वजनिक रूप से प्रकाशित कंटेंट से निकाले गए हैं।</li><li>AI के हर निष्कर्ष को उसके पीछे की असली पोस्ट से जाँचा जा सकता है।</li><li>हर पर्सोना के लिए बने क्रिएटिव को मीडिया खर्च से पहले क्लिक-योग्यता के लिए स्कोर किया जा सकता है।</li><li>Defy MCP के साथ आप पर्सोना और टेंशन को सीधे Claude में क्वेरी कर सकते हैं।</li></ul><p>एक कैटेगरी से शुरू करें और अपनी मौजूदा धारणाओं की तुलना इससे करें कि आपकी ऑडियंस असल में क्या कह रही है।</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E0%A4%95%E0%A5%8B%E0%A4%B2%E0%A5%8D%E0%A4%A1-%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9F%20%E0%A4%B8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%AF%E0%A4%BE%3A%20%E0%A4%AF%E0%A5%82%E0%A4%9C%E0%A4%BC%E0%A4%B0%20%E0%A4%A1%E0%A5%87%E0%A4%9F%E0%A4%BE%20%E0%A4%A8%20%E0%A4%B9%E0%A5%8B%20%E0%A4%A4%E0%A5%8B%20%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%AA%E0%A4%A8%E0%A5%8B%E0%A4%82%20%E0%A4%95%E0%A5%8B%20%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%B8%E0%A4%A8%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9C%E0%A4%BC%20%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87%20%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">बातचीत शुरू करें</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Defy में लॉग इन करें</a></div>
+</section>
+<section class="faq" aria-label="अक्सर पूछे जाने वाले सवाल"><h2>अक्सर पूछे जाने वाले सवाल</h2><details open><summary>विज्ञापन में कोल्ड स्टार्ट का क्या मतलब है?</summary><p>कोल्ड स्टार्ट उस स्थिति को कहते हैं जिसमें सीखने वाले किसी सिस्टम के पास किसी नए यूज़र, नए प्रोडक्ट या नए बाज़ार के बारे में अभी कोई व्यवहार-संबंधी डेटा नहीं होता। तब पर्सनलाइज़ेशन सामान्य संदेशों पर लौट आता है। विज्ञापन में इसका असर मुख्यतः नए ग्राहकों, प्रोडक्ट लॉन्च और बाज़ार में प्रवेश पर पड़ता है – ठीक वही स्थितियाँ जहाँ पहली छाप मायने रखती है।</p></details><details><summary>क्या थर्ड-पार्टी कुकीज़ के बिना पर्सनलाइज़ेशन संभव है?</summary><p>हाँ। संदर्भ-आधारित संकेत, क्विज़ या ऑनबोर्डिंग से मिला ज़ीरो-पार्टी डेटा, आपका अपना फ़र्स्ट-पार्टी डेटा और सार्वजनिक कंटेंट से बने पर्सोना – ये सब खरीदे गए कुकी प्रोफ़ाइल के बिना पर्सनलाइज़ेशन संभव बनाते हैं। फ़र्क यह है: शुरू में आप व्यक्तियों के बजाय साझा मकसद वाले समूहों के लिए पर्सनलाइज़ करते हैं, और हर इंटरैक्शन के साथ टार्गेटिंग को बारीक करते जाते हैं।</p></details><details><summary>सिंथेटिक ऑडियंस और सार्वजनिक कंटेंट से बने पर्सोना में क्या फ़र्क है?</summary><p>सिंथेटिक ऑडियंस ऐसे AI मॉडल हैं जो प्रतिक्रियाओं का अनुकरण करते हैं, और आमतौर पर सर्वे, सांख्यिकीय और पैनल डेटा पर आधारित होते हैं। इसके उलट, सार्वजनिक कंटेंट से बने पर्सोना कमेंट, रिव्यू और क्रिएटर वीडियो जैसे असली बयानों का सार निकालते हैं। एक तेज़ सिमुलेशन के लिए उपयुक्त है; दूसरा मकसद और भाषा के सत्यापन-योग्य प्रमाण देता है। दोनों तरीकों को मिलाया जा सकता है।</p></details><details><summary>शुरुआत के लिए मुझे कितने पर्सोना चाहिए?</summary><p>शुरू करने के लिए आमतौर पर तीन से पाँच स्पष्ट रूप से अलग पर्सोना काफ़ी होते हैं। ज़्यादा पर्सोना सुनने में ज़्यादा सटीक लगते हैं, लेकिन वे बजट और क्रिएटिव मेहनत को बहुत सारे वेरिएंट में बाँट देते हैं, जबकि सीखने लायक डेटा अभी पर्याप्त नहीं होता। मायने यह रखता है कि पर्सोना मकसद और संदेश में सचमुच अलग हों – सिर्फ़ उम्र या पिन कोड में नहीं।</p></details></section>
+<section class="srcs"><h2>स्रोत</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>हमने यह क्यों लिखा</b>हमने यह इसलिए लिखा क्योंकि तकनीकी सोच वाली मार्केटिंग टीमों में यह सवाल बार-बार उठता है कि पर्याप्त डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे किया जाए – और प्राइवेसी के प्रति जागरूक जर्मन बाज़ार में तो सबसे ज़्यादा। सिंथेटिक ऑडियंस की मौजूदा लहर सही डेटा आधार के सवाल को और ज़रूरी बना देती है।</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="इस पेज पर"><h4>इस पेज पर</h4><a href="#what-is-the-cold-start-problem-in-advertising">विज्ञापन में कोल्ड-स्टार्ट समस्या क्या है?</a><a href="#why-more-data-doesn-t-solve-the-problem">ज़्यादा डेटा से समस्या क्यों नहीं सुलझती</a><a href="#how-are-personas-built-from-public-content">सार्वजनिक कंटेंट से पर्सोना कैसे बनते हैं?</a><a href="#what-approaches-are-there-to-the-cold-start">कोल्ड स्टार्ट के लिए कौन-से तरीके हैं?</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">छह चरणों में कोल्ड-स्टार्ट पर्सनलाइज़ेशन को व्यवहार में कैसे उतारें?</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">कोल्ड स्टार्ट के लिए सिंथेटिक ऑडियंस कितनी उपयोगी हैं?</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">आपको कैसे पता चलेगा कि आपकी कोल्ड-स्टार्ट रणनीति काम कर रही है?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>अपने कद से बड़ा कमाल दिखाने के लिए तैयार हैं?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">बातचीत शुरू करें</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defy में लॉग इन करें</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>जर्नल से और लेख<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/hi/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="बर्फ़ से ढके पार्क में पीछे से दिखते लोगों की ब्लैक-एंड-व्हाइट तस्वीर, जो रौंदी हुई पगडंडी पर चलकर शॉर्टकट ले रहे हैं, जबकि पक्का रास्ता खाली मुड़ता चला जाता है; बर्फ़ में एक छोटा-सा लाल चौकोर टुकड़ा पड़ा है।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">इनसाइट और रणनीति</div><h3>AI और उपभोक्ता व्यवहार: एजेंसियों को अपना इनसाइट का काम नए सिरे से क्यों गढ़ना चाहिए</h3><p>जब लोग चैटबॉट से पूछते हैं और एल्गोरिदम उनकी फ़ीड तय करते हैं, तब इनसाइट के पुराने तरीके बासी पड़ जाते हैं। स्ट्रैटेजिस्ट को अब क्या अलग करना चाहिए – और AI उनके लिए क्या नहीं कर सकता।</p><div class="meta"><span>7 मिनट में पढ़ें</span></div></div></a><a class="card" href="/blog/hi/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="क्रिसमस के लिए सजाई जा रही एक डिपार्टमेंट-स्टोर की खिड़की की श्वेत-श्याम तस्वीर, जिसके शीशे के पीछे सजावटी गेंदों के डिब्बे और एक सूना पेड़ दिख रहे हैं, और सामने एक डायल है जिसकी सुई एक छोटे लाल थ्रेशोल्ड निशान के पास पहुँच रही है।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">इनसाइट और रणनीति</div><h3>क्रिसमस 2026: एजेंसियों के लिए अर्ली-वॉर्निंग सिस्टम के रूप में सोशल लिसनिंग</h3><p>विश्लेषण जनवरी में करेंगे तो क्रिसमस निकल चुका होगा। एजेंसियाँ सोशल लिसनिंग से खरीदारी का मूड, कीमत का दबाव और प्रतिस्पर्धियों के प्रमोशन कैसे जल्दी पहचानती हैं।</p><div class="meta"><span>7 मिनट में पढ़ें</span></div></div></a><a class="card" href="/blog/hi/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="ग्रिड-पेपर प्रिंटआउट के ढेर पर बेमेल मापन-पट्टियों का श्वेत-श्याम स्टिल लाइफ़; सब पर एक लंबा स्टील का स्ट्रेटएज रखा है, जिसके सिरे पर एक छोटा लाल टैब लगा है।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">इनसाइट और रणनीति</div><h3>क्रॉस-प्लेटफ़ॉर्म एंगेजमेंट की माप: अब एजेंसी की स्प्रेडशीट को विदा करने का समय</h3><p>हर प्लेटफ़ॉर्म एंगेजमेंट को अपने तरीके से गिनता है। भरोसेमंद क्रॉस-प्लेटफ़ॉर्म मापन के लिए तरीका, मेट्रिक्स और टूल के मानदंड – बिना जोड़-तोड़ वाली स्प्रेडशीट के।</p><div class="meta"><span>7 मिनट में पढ़ें</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/hi/">← जर्नल पर वापस जाएँ</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="संपर्क">
+<h2>अपने कद से बड़ा कमाल दिखाने के लिए तैयार हैं?</h2>
+<p>वह इंटेलिजेंस स्टैक देखें, जिसे बड़े नेटवर्क इतनी सख़्ती से सँभालकर रखते हैं। कोई सेल्स पिच नहीं — बस एक बातचीत।</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">बातचीत शुरू करें</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defy में लॉग इन करें</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>अपने कद से बड़ा कमाल दिखाने वाली एजेंसियों के लिए इनसाइट और ऑटोमेशन प्लैटफ़ॉर्म।</p></div>
+<div><h4>Defy</h4><a href="/#main">मुख्य</a><a href="/#platform">प्लैटफ़ॉर्म</a><a href="/#clients">क्लाइंट</a><a href="/#team">टीम</a></div>
+<div class="df-langs"><h4>जर्नल</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>संपर्क</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">लॉग इन करें</a><a href="/llms.txt">llms.txt</a><a href="/blog/hi/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. सर्वाधिकार सुरक्षित।</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

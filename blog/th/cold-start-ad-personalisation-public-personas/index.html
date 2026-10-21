@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ปัญหา Cold Start: ปรับแต่งโฆษณาเมื่อไม่มีข้อมูลผู้ใช้ | Defy</title>
+<meta name="description" content="แก้ปัญหา cold start ในงานโฆษณา: วิธีปรับแต่งโฆษณาให้ผู้ใช้ใหม่โดยไม่ต้องพึ่งข้อมูลบุคคลที่สาม ด้วยเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ">
+<link rel="canonical" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="ปัญหา cold start, การปรับแต่งโฆษณาเฉพาะบุคคล, personalization โดยไม่ใช้ข้อมูลบุคคลที่สาม, เพอร์โซนาจาก social listening, ปรับแต่งโฆษณาสำหรับผู้ใช้ใหม่, personalization ยุคไร้คุกกี้, กลุ่มเป้าหมายสังเคราะห์">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้">
+<meta property="og:description" content="แก้ปัญหา cold start ในงานโฆษณา: วิธีปรับแต่งโฆษณาให้ผู้ใช้ใหม่โดยไม่ต้องพึ่งข้อมูลบุคคลที่สาม ด้วยเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-th.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="อินไซต์และกลยุทธ์">
+<meta property="article:tag" content="การปรับแต่งเฉพาะบุคคล">
+<meta property="article:tag" content="Cold start">
+<meta property="article:tag" content="เพอร์โซนา">
+<meta property="article:tag" content="ความเป็นส่วนตัวของข้อมูล">
+<meta property="article:tag" content="กลุ่มเป้าหมายสังเคราะห์">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้">
+<meta name="twitter:description" content="แก้ปัญหา cold start ในงานโฆษณา: วิธีปรับแต่งโฆษณาให้ผู้ใช้ใหม่โดยไม่ต้องพึ่งข้อมูลบุคคลที่สาม ด้วยเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-th.jpg">
+<meta name="twitter:image:alt" content="ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="วารสาร Defy" href="/blog/th/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+Thai:wght@400;500;700&amp;family=Noto+Serif+Thai:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/","headline":"ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้","alternativeHeadline":"ปัญหา Cold Start: ปรับแต่งโฆษณาเมื่อไม่มีข้อมูลผู้ใช้","description":"แก้ปัญหา cold start ในงานโฆษณา: วิธีปรับแต่งโฆษณาให้ผู้ใช้ใหม่โดยไม่ต้องพึ่งข้อมูลบุคคลที่สาม ด้วยเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ","abstract":"เริ่มต้นด้วยการปรับแต่งในระดับเพอร์โซนา ไม่ใช่ระดับบุคคล วิเคราะห์บทสนทนาสาธารณะ คอมเมนต์ รีวิว และคอนเทนต์จากครีเอเตอร์ในหมวดสินค้าของคุณ สกัดออกมาเป็นเพอร์โซนาที่มีแรงจูงใจและความขัดแย้งในใจชัดเจน แล้วจับคู่ผู้ใช้ใหม่ด้วยสัญญาณช่วงแรก เช่น แลนดิ้งเพจ คำค้นหา หรือบริบท เมื่อมีปฏิสัมพันธ์มากขึ้น ข้อมูล first-party ของคุณเองจะเข้ามาแทนที่สมมติฐานตั้งต้น","image":["https://defygroup.ai/assets/blog/og/d49-th.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"th","author":{"@type":"Organization","name":"กองบรรณาธิการ Defy","url":"https://defygroup.ai/blog/th/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"อินไซต์และกลยุทธ์","keywords":"ปัญหา cold start, การปรับแต่งโฆษณาเฉพาะบุคคล, personalization โดยไม่ใช้ข้อมูลบุคคลที่สาม, เพอร์โซนาจาก social listening, ปรับแต่งโฆษณาสำหรับผู้ใช้ใหม่, personalization ยุคไร้คุกกี้, กลุ่มเป้าหมายสังเคราะห์","wordCount":2988,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/th/#blog","name":"Defy — วารสาร Defy"},"about":[{"@type":"Thing","name":"การปรับแต่งเฉพาะบุคคล"},{"@type":"Thing","name":"Cold start"},{"@type":"Thing","name":"เพอร์โซนา"},{"@type":"Thing","name":"ความเป็นส่วนตัวของข้อมูล"},{"@type":"Thing","name":"กลุ่มเป้าหมายสังเคราะห์"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"Cold start ในงานโฆษณาหมายถึงอะไร","acceptedAnswer":{"@type":"Answer","text":"Cold start หมายถึงสถานการณ์ที่ระบบเรียนรู้ยังไม่มีข้อมูลพฤติกรรมของผู้ใช้ใหม่ สินค้าใหม่ หรือตลาดใหม่ การปรับแต่งจึงต้องถอยกลับไปใช้ข้อความทั่วไป ในงานโฆษณา ปัญหานี้ส่งผลหลัก ๆ กับลูกค้าใหม่ การเปิดตัวผลิตภัณฑ์ และการบุกตลาดใหม่ ซึ่งล้วนเป็นสถานการณ์ที่ความประทับใจแรกสำคัญที่สุด"}},{"@type":"Question","name":"ปรับแต่งโดยไม่ใช้คุกกี้บุคคลที่สามได้หรือไม่","acceptedAnswer":{"@type":"Answer","text":"ได้ สัญญาณเชิงบริบท ข้อมูล zero-party จากแบบทดสอบหรือขั้นตอนออนบอร์ดดิ้ง ข้อมูล first-party ของคุณเอง และเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ ล้วนช่วยให้ปรับแต่งได้โดยไม่ต้องซื้อโปรไฟล์จากคุกกี้ ข้อแตกต่างคือในช่วงแรกคุณจะปรับแต่งให้กลุ่มคนที่มีแรงจูงใจร่วมกัน ไม่ใช่รายบุคคล แล้วค่อยปรับการกำหนดเป้าหมายให้แม่นยำขึ้นทุกครั้งที่มีปฏิสัมพันธ์"}},{"@type":"Question","name":"กลุ่มเป้าหมายสังเคราะห์ (synthetic audience) ต่างจากเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะอย่างไร","acceptedAnswer":{"@type":"Answer","text":"กลุ่มเป้าหมายสังเคราะห์คือโมเดล AI ที่จำลองปฏิกิริยาของผู้บริโภค โดยมักอิงข้อมูลแบบสำรวจ ข้อมูลสถิติ และข้อมูลแพนเนล ส่วนเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะสกัดจากถ้อยคำจริง เช่น คอมเมนต์ รีวิว และวิดีโอของครีเอเตอร์ แบบแรกเหมาะกับการจำลองอย่างรวดเร็ว แบบหลังให้หลักฐานที่ตรวจสอบได้เกี่ยวกับแรงจูงใจและภาษาที่ผู้บริโภคใช้ และสามารถนำสองแนวทางนี้มาใช้ร่วมกันได้"}},{"@type":"Question","name":"ควรเริ่มต้นด้วยเพอร์โซนากี่แบบ","acceptedAnswer":{"@type":"Answer","text":"โดยทั่วไป เพอร์โซนาที่แตกต่างกันชัดเจน 3-5 แบบก็เพียงพอสำหรับการเริ่มต้น เพอร์โซนาที่มากขึ้นฟังดูแม่นยำกว่า แต่จะกระจายงบประมาณและแรงงานครีเอทีฟไปยังตัวแปรมากเกินไปก่อนที่จะมีข้อมูลพอให้เรียนรู้ สิ่งสำคัญคือเพอร์โซนาต้องต่างกันจริงทั้งแรงจูงใจและข้อความ ไม่ใช่ต่างกันแค่อายุหรือรหัสไปรษณีย์"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"วารสาร","item":"https://defygroup.ai/blog/th/"},{"@type":"ListItem","position":3,"name":"ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้","item":"https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">ในหน้านี้</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — หน้าหลัก"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="เมนูหลัก">
+<a href="/#main">หลัก</a>
+<a href="/#platform">แพลตฟอร์ม</a>
+<a href="/#clients">ลูกค้า</a>
+<a href="/#team">ทีมงาน</a>
+<a href="/blog/th/" class="on">วารสาร</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">เข้าสู่ระบบ</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">คุยกับเรา</a>
+<button class="menu" aria-label="เมนู" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="เส้นทางนำทาง"><a href="/#main">หน้าแรก</a><span>/</span><a href="/blog/th/">วารสาร</a><span>/</span><span>อินไซต์และกลยุทธ์</span></nav>
+<header class="a-head">
+<div class="eyebrow">อินไซต์และกลยุทธ์</div>
+<h1 itemprop="headline">ปัญหา Cold Start: จะปรับแต่งโฆษณาอย่างไรเมื่อยังไม่มีข้อมูลผู้ใช้<span class="sq"></span></h1>
+<p class="dek" itemprop="description">ผู้ใช้ใหม่ ไม่มีประวัติ ได้รับความยินยอมน้อย: เอเจนซีแก้ปัญหา cold start ด้วยเพอร์โซนาที่สร้างจากบทสนทนาสาธารณะจริง แทนการซื้อเซกเมนต์สำเร็จรูปได้อย่างไร</p>
+<div class="a-meta">
+<span><b>กองบรรณาธิการ Defy</b></span>
+<span>เผยแพร่เมื่อ <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 ตุลาคม 2569</time></span>
+<span>อ่าน 7 นาที</span>
+<span class="langs"><details class="lsw"><summary aria-label="ภาษา: ไทย"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>ไทย</span></summary><div class="lsw-p"><div class="lsw-h">มีให้อ่านในภาษา</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th" aria-current="true">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="ภาพขาวดำมือของช่างทำรองเท้ากำลังหยิบพิมพ์รองเท้าไม้ที่ติดป้ายสีแดงเล็ก ๆ ลงจากชั้นวาง ขณะที่เงาของลูกค้าใหม่ทอดผ่านประตูมาอยู่ข้างรอยเท้าชอล์กจาง ๆ" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="คำถามเบื้องหลังบทความนี้">
+<div class="eyebrow">คำถามเบื้องหลังบทความนี้</div>
+<p class="q">“จะปรับแต่งโฆษณาให้ผู้ใช้ใหม่ได้อย่างไร เมื่อเรายังไม่มีข้อมูลของพวกเขาเลย”</p>
+<p class="ans"><b>คำตอบสั้น ๆ</b>เริ่มต้นด้วยการปรับแต่งในระดับเพอร์โซนา ไม่ใช่ระดับบุคคล วิเคราะห์บทสนทนาสาธารณะ คอมเมนต์ รีวิว และคอนเทนต์จากครีเอเตอร์ในหมวดสินค้าของคุณ สกัดออกมาเป็นเพอร์โซนาที่มีแรงจูงใจและความขัดแย้งในใจชัดเจน แล้วจับคู่ผู้ใช้ใหม่ด้วยสัญญาณช่วงแรก เช่น แลนดิ้งเพจ คำค้นหา หรือบริบท เมื่อมีปฏิสัมพันธ์มากขึ้น ข้อมูล first-party ของคุณเองจะเข้ามาแทนที่สมมติฐานตั้งต้น</p>
+</section>
+<section class="kt takeaways"><h2>ประเด็นสำคัญ</h2><ul><li>ปัญหา cold start ไม่ได้อยู่ที่ปริมาณข้อมูลมากนัก แต่อยู่ที่ความเข้าใจ สิ่งที่ขาดคือสมมติฐานตั้งต้นที่สมเหตุสมผลว่าผู้ใช้ใหม่ต้องการอะไร</li><li>เพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะให้สมมติฐานตั้งต้นนั้นในระดับกลุ่ม โดยไม่ต้องมีโปรไฟล์รายบุคคลและไม่ต้องซื้อเซกเมนต์จากบุคคลที่สาม</li><li>ตามรายงานของ Digiday กลุ่มเป้าหมายสังเคราะห์กำลังเข้าสู่งานวางแผนประจำวัน แต่คุณภาพขึ้นอยู่กับข้อมูลที่ใช้สร้าง</li><li>กลยุทธ์ cold start ที่ดีผสมผสานสมมติฐานเพอร์โซนา สัญญาณเชิงบริบท และการสำรวจทดลองอย่างตั้งใจ และเรียนรู้เพิ่มขึ้นทุกครั้งที่มีปฏิสัมพันธ์</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>จะปรับแต่งโฆษณาให้คนที่เราไม่รู้จักเลยได้อย่างไร คำตอบที่ตรงไปตรงมาคือ ในระดับบุคคลทำไม่ได้ แต่เราเข้าใจคนที่สนใจหมวดสินค้านั้นได้อย่างแน่นอน และจับคู่ผู้ใช้ใหม่เข้ากับเพอร์โซนาที่เหมาะสมจากสัญญาณไม่กี่อย่างได้ นี่คือหัวใจของกลยุทธ์ cold start ที่ใช้งานได้จริง</p>
+<p>อุตสาหกรรมกำลังมองหาทางเลือกแทนข้อมูลกลุ่มเป้าหมายแบบเดิมอย่างจริงจังเพียงใด สะท้อนได้จากรายงานล่าสุดของ <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a> กลุ่มเป้าหมายสังเคราะห์กำลังก้าวจากการทดลองสู่งานวางแผนและงานกลยุทธ์ประจำวัน Aveeno Body ใช้งานวิจัยสังเคราะห์ของ Vurvey ลดเวลาจัดทำบรีฟกลยุทธ์จากราว 30 วันเหลือสามวัน ส่วน Goodway Group ใช้ “synthetic population” ของผู้บริโภคจากสหรัฐอเมริกา สหราชอาณาจักร และเยอรมนีของ Arima ในการวางแผนสื่อ</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">ปัญหา cold start ในงานโฆษณาคืออะไร</h2>
+<p>คำนี้มาจากโลกของระบบแนะนำ (recommender system) ระบบที่เรียนรู้จากพฤติกรรมต้องมีพฤติกรรมให้เรียนรู้ แต่ผู้ใช้ใหม่ยังไม่มีเลย ระบบจึงเสิร์ฟค่าเฉลี่ย ได้แก่สินค้าขายดี ข้อความทั่วไป และโฆษณาที่ได้ผลนิดหน่อยกับทุกคน แต่ไม่ได้ผลจริงจังกับใครเลย</p>
+<p>ในงานโฆษณา ปัญหายิ่งซับซ้อนขึ้น เบราว์เซอร์หลายตัวบล็อกคุกกี้บุคคลที่สามโดยค่าเริ่มต้น แบนเนอร์ขอความยินยอมกลายเป็นเรื่องปกติในชีวิตประจำวันของเยอรมนี และไม่ใช่ทุกคนที่กด “ยอมรับทั้งหมด” ทางออกแบบดั้งเดิมอย่างการซื้อเซกเมนต์สำเร็จรูปก็ยุ่งยากขึ้นภายใต้กฎหมายคุ้มครองข้อมูล และยังบอกแทบไม่ได้ว่าทำไมใครสักคนจึงซื้อ ในภูมิภาค DACH (เยอรมนี ออสเตรีย และสวิตเซอร์แลนด์) ที่อยู่ภายใต้ GDPR การพูดว่า “เดี๋ยวซื้อข้อมูลเพิ่ม” ไม่ใช่กลยุทธ์อีกต่อไป</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">ทำไมข้อมูลที่มากขึ้นจึงไม่ช่วยแก้ปัญหา</h2>
+<p>งานวิจัยด้านคุณภาพข้อมูลมีสูตรที่ตรงไปตรงมาสำหรับเรื่องนี้ คือข้อมูลดีได้เพียงเท่าที่เหมาะกับวัตถุประสงค์การใช้งาน ความถูกต้องอย่างเดียวไม่พอ ข้อมูลต้องเกี่ยวข้อง ทันสมัย และเหมาะกับคำถามเฉพาะที่ต้องการคำตอบ ในงานวิชาการเรียกแนวคิดนี้ว่า “fitness for use”</p>
+<p>เซกเมนต์สำเร็จรูปอย่าง “ผู้หญิงอายุ 25 ถึง 34 ปี ที่สนใจความงาม” ระบุไว้ชัดเจนแม่นยำ แต่สำหรับคำถามว่า “อะไรจะทำให้คนคนนี้ลองสินค้าของเรา” กลับแทบไม่มีค่าอะไรเลย เพราะอธิบายคุณลักษณะ ไม่ได้อธิบายแรงจูงใจ การมีส่วนร่วม (engagement) เกิดจากความเข้าใจ ไม่ได้เกิดจากตัวเลข</p>
+<p>สำหรับ cold start นั่นหมายความว่า ทรัพยากรสำคัญไม่ใช่ประวัติของผู้ใช้แต่ละคน แต่เป็นภาพที่แข็งแรงของแรงจูงใจ ความกังวล และภาษาที่ใช้ในหมวดสินค้านั้น และภาพนี้วาดได้จากคอนเทนต์ที่เผยแพร่เป็นสาธารณะ</p>
+<h2 id="how-are-personas-built-from-public-content">เพอร์โซนาจากคอนเทนต์สาธารณะสร้างขึ้นอย่างไร</h2>
+<p>ผู้คนพูดถึงเหตุผลที่ซื้อหรือไม่ซื้อในที่สาธารณะมากอย่างน่าประหลาดใจ ทั้งในคอมเมนต์ใต้โพสต์ของแบรนด์ รีวิวสินค้า วิดีโอของครีเอเตอร์ และกระทู้ในฟอรัม คอนเทนต์เหล่านี้รวบรวมได้ จัดกลุ่มตามธีมและความขัดแย้งในใจ แล้วสกัดเป็นเพอร์โซนา โดยใช้คำพูดจริงแทนโปรไฟล์ที่แต่งขึ้น</p>
+<p>สิ่งที่ต่างจากเพอร์โซนาแบบเวิร์กช็อปดั้งเดิมคือ เพอร์โซนานี้อิงสิ่งที่ผู้คนพูดจริง ไม่ใช่สิ่งที่ทีมสันนิษฐานเกี่ยวกับพวกเขา Digiday อธิบายแนวทางที่คล้ายกันไว้ว่า สำหรับแบรนด์ Sacheu นั้น Limitless Labs วิเคราะห์วิดีโอ TikTok และ Instagram นับพันรายการจากระบบนิเวศครีเอเตอร์ของแบรนด์เพื่อสร้างเพอร์โซนา</p>
+<p>สิ่งสำคัญสำหรับตลาดเยอรมนี: เพอร์โซนาแบบนี้ทำงานในระดับรูปแบบและกลุ่ม ไม่จำเป็นต้องมีโปรไฟล์ของผู้ใช้รายบุคคลเพื่อเลือกข้อความแรก อย่างไรก็ตาม การประเมินทางกฎหมายสำหรับการตั้งค่าเฉพาะของคุณยังควรปรึกษาที่ปรึกษาด้านการคุ้มครองข้อมูลของคุณ</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">มีแนวทางใดบ้างสำหรับแก้ cold start</h2>
+<div class="tw"><table>
+<thead><tr><th>แนวทาง</th><th>ฐานข้อมูล</th><th>จุดแข็ง</th><th>จุดอ่อน</th></tr></thead>
+<tbody>
+<tr><td>เซกเมนต์บุคคลที่สามที่ซื้อมา</td><td>โปรไฟล์และคุกกี้จากภายนอก</td><td>หาได้รวดเร็ว</td><td>เห็นแรงจูงใจน้อย ยุ่งยากภายใต้กฎหมายคุ้มครองข้อมูล</td></tr>
+<tr><td>การกำหนดเป้าหมายตามบริบท (contextual targeting)</td><td>สภาพแวดล้อม เวลา สถานที่ อุปกรณ์</td><td>ใช้งานได้โดยไม่ต้องมีข้อมูลส่วนบุคคล</td><td>บอกเรื่องแรงจูงใจได้น้อย</td></tr>
+<tr><td>ข้อมูล zero-party</td><td>คำตอบจากแบบทดสอบหรือขั้นตอนออนบอร์ดดิ้ง</td><td>ตรงไปตรงมาและอยู่บนพื้นฐานของความยินยอม</td><td>ได้เฉพาะจากผู้ที่เข้าร่วม และเพิ่มแรงเสียดทานใน funnel</td></tr>
+<tr><td>กลุ่มเป้าหมายสังเคราะห์</td><td>โมเดลที่อิงข้อมูลแบบสำรวจ ข้อมูลสถิติ และข้อมูลแพนเนล</td><td>จำลองปฏิกิริยาได้รวดเร็ว</td><td>โน้มเอียงไปทางค่าเฉลี่ย คุณภาพขึ้นอยู่กับข้อมูลนำเข้า</td></tr>
+<tr><td>เพอร์โซนาจากคอนเทนต์สาธารณะ</td><td>คอมเมนต์ รีวิว คอนเทนต์ของครีเอเตอร์ โฆษณาของคู่แข่ง</td><td>แรงจูงใจและภาษาจริงของหมวดสินค้า</td><td>ต้องอาศัยสัญญาณเพื่อจับคู่กับผู้ใช้แต่ละราย</td></tr>
+</tbody>
+</table></div>
+<p>ไม่มีแนวทางใดแก้ปัญหาได้ลำพัง ในทางปฏิบัติ เพอร์โซนาจากคอนเทนต์สาธารณะให้สมมติฐาน สัญญาณเชิงบริบทให้การจับคู่ และข้อมูล first-party ให้การยืนยัน</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">จะนำการปรับแต่งสำหรับช่วง cold start ไปใช้จริงใน 6 ขั้นตอนได้อย่างไร</h2>
+<ol>
+<li><strong>รวบรวมบทสนทนาในหมวดสินค้า</strong> คอมเมนต์ รีวิว คอนเทนต์ของครีเอเตอร์ และโฆษณาของคู่แข่งในช่วงไม่กี่เดือนที่ผ่านมา ไม่ใช่เฉพาะเรื่องแบรนด์ แต่ครอบคลุมทั้งหมวดสินค้า</li>
+<li><strong>สร้างเพอร์โซนาและความขัดแย้งในใจ</strong> จัดกลุ่มคอนเทนต์ตามแรงจูงใจและความกังวล เพอร์โซนาที่แตกต่างกันชัดเจน 3-5 แบบก็เพียงพอสำหรับการเริ่มต้น</li>
+<li><strong>เขียนสมมติฐานหนึ่งข้อต่อหนึ่งเพอร์โซนา</strong> ข้อความ จุดดึงดูด (hook) และข้อเสนอแบบไหนที่เหมาะ พัฒนาครีเอทีฟเฉพาะอย่างน้อยหนึ่งแบบสำหรับแต่ละเพอร์โซนา</li>
+<li><strong>กำหนดสัญญาณสำหรับการจับคู่</strong> แลนดิ้งเพจ คำค้นหา บริบท แหล่งที่มาของแคมเปญ การคลิกครั้งแรก: ตัดสินใจว่าสัญญาณใดชี้ไปยังเพอร์โซนาใด</li>
+<li><strong>เสิร์ฟพร้อมการสำรวจทดลอง</strong> กันการเสิร์ฟส่วนหนึ่งไว้สำหรับตัวแปรที่ไม่ตรงกับเพอร์โซนาที่สันนิษฐาน ด้วยวิธีนี้ระบบจะเรียนรู้ต่อไป แทนที่จะคอยยืนยันสมมติฐานของตัวเอง</li>
+<li><strong>ป้อนข้อมูล first-party กลับเข้าระบบ</strong> ทุกปฏิสัมพันธ์ช่วยให้การจับคู่แม่นยำขึ้น อัปเดตเพอร์โซนาอย่างสม่ำเสมอ เพราะบทสนทนาเปลี่ยนไปเรื่อย ๆ</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">กลุ่มเป้าหมายสังเคราะห์มีประโยชน์เพียงใดสำหรับ cold start</h2>
+<p>มีประโยชน์พอสมควร หากรู้ข้อจำกัดของมัน ในรายงานของ Digiday แม้แต่ผู้ที่เกี่ยวข้องเองก็ยังแสดงความกังขา Chad Reynolds ซีอีโอของ Vurvey กล่าวว่าโมเดลภาษาขนาดใหญ่ให้ผลลัพธ์ตรงยอดของกราฟระฆังคว่ำ หรือก็คือคำตอบที่พบบ่อยที่สุด Julie Clark จาก TransUnion เตือนถึงเพอร์โซนาที่สร้างจากข้อมูลนำเข้าคุณภาพต่ำ และ Stef Hoffman จาก Code &amp; Theory สรุปไว้อย่างกระชับว่า ผลลัพธ์เหล่านี้ช่วยประกอบวิจารณญาณ แต่ไม่อาจมาแทนที่วิจารณญาณได้</p>
+<p>ตรงนี้เองที่คอนเทนต์สาธารณะแสดงคุณค่า มันไม่ใช่การจำลอง แต่เป็นหลักฐาน หากเพอร์โซนาหนึ่งระบุว่าคนในหมวดสินค้าของคุณกลัวมากที่สุดว่าจะซื้อผิด คุณควรมองเห็นโพสต์ที่ข้อสรุปนั้นมาจากได้ เพอร์โซนาที่ย้อนรอยกลับไปไม่ได้ก็เป็นเพียงข้อกล่าวอ้าง</p>
+<p>Defy Monitor เดินตามแนวทางนี้: คอนเทนต์ของกลุ่มเป้าหมายถูกจัดกลุ่มเป็นเพอร์โซนาและความขัดแย้งในใจโดยอัตโนมัติ และการวางแผนเริ่มจากบทสนทนาจริงแทนข้อมูลประชากรศาสตร์ เป็นองค์ประกอบหนึ่งของ<a href="/#platform">แพลตฟอร์ม Defy</a> ซึ่งมอบความสามารถด้านการวิเคราะห์แบบเดียวกับที่เครือข่ายเอเจนซีรายใหญ่ลงทุนสร้างอย่างหนักให้แก่เอเจนซีอิสระ</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">จะรู้ได้อย่างไรว่ากลยุทธ์ cold start ได้ผล</h2>
+<p>เปรียบเทียบตัวแปรที่อิงเพอร์โซนากับกลุ่มควบคุมแบบทั่วไป ตัวชี้วัดที่บอกได้ชัดที่สุดคือตัวเลขช่วงแรกของผู้ใช้ใหม่ ได้แก่ ปฏิสัมพันธ์กับโฆษณาชิ้นแรก ความลึกของการเข้าชมครั้งแรก และเวลาจนถึงคอนเวอร์ชันแรก หากตัวแปรเพอร์โซนาไม่ได้นำ นั่นไม่ใช่ความล้มเหลว แต่เป็นเบาะแส: เพอร์โซนาอาจคลาดเคลื่อน หรือสัญญาณจับคู่อ่อนเกินไป</p></div>
+<aside class="insight" aria-label="อินไซต์"><div class="eyebrow">อินไซต์</div><blockquote>การมีส่วนร่วมเกิดจากความเข้าใจ ไม่ใช่ตัวเลข</blockquote><p>งานวิจัยด้านคุณภาพข้อมูลตัดสินข้อมูลจากความเหมาะสมต่อวัตถุประสงค์ สำหรับการเข้าถึงผู้ใช้ใหม่ แรงจูงใจจริงที่ได้จากบทสนทนาสาธารณะมักเหมาะกับวัตถุประสงค์มากกว่าข้อมูลเซกเมนต์ที่แม่นยำแต่ไร้แรงจูงใจ</p></aside>
+<section class="prop" aria-label="Defy ช่วยได้อย่างไร">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy ช่วยได้อย่างไร<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Monitor จัดกลุ่มคอนเทนต์ของกลุ่มเป้าหมายในหมวดสินค้าของคุณเป็นเพอร์โซนาและความขัดแย้งในใจโดยอัตโนมัติ คุณวางแผนจากบทสนทนาจริงแทนข้อมูลประชากรศาสตร์ และได้สมมติฐานตั้งต้นที่ขาดอยู่ในช่วง cold start พอดี</p><ul><li>เพอร์โซนาที่มีแรงจูงใจ ความกังวล และภาษา ซึ่งได้จากคอนเทนต์ที่เผยแพร่เป็นสาธารณะ</li><li>ทุกข้อสรุปจาก AI ตรวจสอบย้อนกลับไปยังโพสต์จริงที่อยู่เบื้องหลังได้</li><li>ครีเอทีฟสำหรับแต่ละเพอร์โซนาสามารถให้คะแนนโอกาสถูกคลิก (clickability) ได้ก่อนใช้งบสื่อ</li><li>ด้วย Defy MCP คุณสอบถามเพอร์โซนาและความขัดแย้งในใจได้โดยตรงใน Claude</li></ul><p>เริ่มจากหมวดสินค้าเดียว แล้วเปรียบเทียบสมมติฐานที่คุณมีอยู่กับสิ่งที่กลุ่มเป้าหมายพูดจริง ๆ</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%20Cold%20Start%3A%20%E0%B8%88%E0%B8%B0%E0%B8%9B%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%86%E0%B8%A9%E0%B8%93%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%8A%E0%B9%89" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">เริ่มพูดคุยกับเรา</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">เข้าสู่ระบบ Defy</a></div>
+</section>
+<section class="faq" aria-label="คำถามที่พบบ่อย"><h2>คำถามที่พบบ่อย</h2><details open><summary>Cold start ในงานโฆษณาหมายถึงอะไร</summary><p>Cold start หมายถึงสถานการณ์ที่ระบบเรียนรู้ยังไม่มีข้อมูลพฤติกรรมของผู้ใช้ใหม่ สินค้าใหม่ หรือตลาดใหม่ การปรับแต่งจึงต้องถอยกลับไปใช้ข้อความทั่วไป ในงานโฆษณา ปัญหานี้ส่งผลหลัก ๆ กับลูกค้าใหม่ การเปิดตัวผลิตภัณฑ์ และการบุกตลาดใหม่ ซึ่งล้วนเป็นสถานการณ์ที่ความประทับใจแรกสำคัญที่สุด</p></details><details><summary>ปรับแต่งโดยไม่ใช้คุกกี้บุคคลที่สามได้หรือไม่</summary><p>ได้ สัญญาณเชิงบริบท ข้อมูล zero-party จากแบบทดสอบหรือขั้นตอนออนบอร์ดดิ้ง ข้อมูล first-party ของคุณเอง และเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะ ล้วนช่วยให้ปรับแต่งได้โดยไม่ต้องซื้อโปรไฟล์จากคุกกี้ ข้อแตกต่างคือในช่วงแรกคุณจะปรับแต่งให้กลุ่มคนที่มีแรงจูงใจร่วมกัน ไม่ใช่รายบุคคล แล้วค่อยปรับการกำหนดเป้าหมายให้แม่นยำขึ้นทุกครั้งที่มีปฏิสัมพันธ์</p></details><details><summary>กลุ่มเป้าหมายสังเคราะห์ (synthetic audience) ต่างจากเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะอย่างไร</summary><p>กลุ่มเป้าหมายสังเคราะห์คือโมเดล AI ที่จำลองปฏิกิริยาของผู้บริโภค โดยมักอิงข้อมูลแบบสำรวจ ข้อมูลสถิติ และข้อมูลแพนเนล ส่วนเพอร์โซนาที่สร้างจากคอนเทนต์สาธารณะสกัดจากถ้อยคำจริง เช่น คอมเมนต์ รีวิว และวิดีโอของครีเอเตอร์ แบบแรกเหมาะกับการจำลองอย่างรวดเร็ว แบบหลังให้หลักฐานที่ตรวจสอบได้เกี่ยวกับแรงจูงใจและภาษาที่ผู้บริโภคใช้ และสามารถนำสองแนวทางนี้มาใช้ร่วมกันได้</p></details><details><summary>ควรเริ่มต้นด้วยเพอร์โซนากี่แบบ</summary><p>โดยทั่วไป เพอร์โซนาที่แตกต่างกันชัดเจน 3-5 แบบก็เพียงพอสำหรับการเริ่มต้น เพอร์โซนาที่มากขึ้นฟังดูแม่นยำกว่า แต่จะกระจายงบประมาณและแรงงานครีเอทีฟไปยังตัวแปรมากเกินไปก่อนที่จะมีข้อมูลพอให้เรียนรู้ สิ่งสำคัญคือเพอร์โซนาต้องต่างกันจริงทั้งแรงจูงใจและข้อความ ไม่ใช่ต่างกันแค่อายุหรือรหัสไปรษณีย์</p></details></section>
+<section class="srcs"><h2>แหล่งอ้างอิง</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>ทำไมเราจึงเขียนบทความนี้</b>เราเขียนบทความนี้เพราะคำถามว่าจะปรับแต่งให้ผู้ใช้ใหม่อย่างไรเมื่อมีข้อมูลไม่พอ เป็นคำถามที่ทีมการตลาดสายเทคนิคถามอยู่บ่อย ๆ โดยเฉพาะในตลาดเยอรมนีที่ใส่ใจความเป็นส่วนตัว กระแสกลุ่มเป้าหมายสังเคราะห์ที่พุ่งขึ้นในตอนนี้ยิ่งทำให้คำถามเรื่องฐานข้อมูลที่เหมาะสมเร่งด่วนขึ้น</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="ในหน้านี้"><h4>ในหน้านี้</h4><a href="#what-is-the-cold-start-problem-in-advertising">ปัญหา cold start ในงานโฆษณาคืออะไร</a><a href="#why-more-data-doesn-t-solve-the-problem">ทำไมข้อมูลที่มากขึ้นจึงไม่ช่วยแก้ปัญหา</a><a href="#how-are-personas-built-from-public-content">เพอร์โซนาจากคอนเทนต์สาธารณะสร้างขึ้นอย่างไร</a><a href="#what-approaches-are-there-to-the-cold-start">มีแนวทางใดบ้างสำหรับแก้ cold start</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">จะนำการปรับแต่งสำหรับช่วง cold start ไปใช้จริงใน 6 ขั้นตอนได้อย่างไร</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">กลุ่มเป้าหมายสังเคราะห์มีประโยชน์เพียงใดสำหรับ cold start</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">จะรู้ได้อย่างไรว่ากลยุทธ์ cold start ได้ผล</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>พร้อมชกข้ามรุ่นแล้วหรือยัง</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">เริ่มพูดคุยกับเรา</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">เข้าสู่ระบบ Defy</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>บทความอื่นจากวารสาร<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/th/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="ภาพขาวดำผู้คนเดินข้ามสวนสาธารณะที่ปกคลุมด้วยหิมะ มองจากด้านหลัง โดยเดินตามทางลัดที่ถูกเหยียบเป็นรอย ขณะที่ทางเดินปูพื้นโค้งออกไปอย่างว่างเปล่า มีสี่เหลี่ยมสีแดงเล็ก ๆ วางอยู่บนหิมะ" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">อินไซต์และกลยุทธ์</div><h3>AI กับพฤติกรรมผู้บริโภค: ทำไมเอเจนซีต้องสร้างงานอินไซต์ใหม่</h3><p>เมื่อผู้คนถามแชตบอตและอัลกอริทึมคัดสรรฟีดของพวกเขา วิธีหาอินไซต์แบบดั้งเดิมก็ล้าสมัย สิ่งที่นักกลยุทธ์ควรทำต่างไปในตอนนี้ และสิ่งที่ AI ทำแทนไม่ได้</p><div class="meta"><span>อ่าน 7 นาที</span></div></div></a><a class="card" href="/blog/th/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="ภาพขาวดำหน้าต่างห้างสรรพสินค้ากำลังตกแต่งสำหรับคริสต์มาส มีกล่องลูกบอลประดับและต้นไม้โล่ง ๆ อยู่หลังกระจก และด้านหน้ามีหน้าปัดที่เข็มกำลังเคลื่อนเข้าใกล้เครื่องหมายเกณฑ์สีแดงเล็ก ๆ" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">อินไซต์และกลยุทธ์</div><h3>คริสต์มาส 2026: Social Listening เป็นระบบเตือนภัยล่วงหน้าสำหรับเอเจนซี</h3><p>ถ้ามัวไปวิเคราะห์ในเดือนมกราคม คริสต์มาสก็จบไปแล้ว เอเจนซีใช้ Social Listening อย่างไรเพื่อจับอารมณ์การซื้อ แรงกดดันด้านราคา และโปรโมชันของคู่แข่งได้แต่เนิ่น ๆ</p><div class="meta"><span>อ่าน 7 นาที</span></div></div></a><a class="card" href="/blog/th/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="ภาพนิ่งขาวดำของสายวัดหลากหลายแบบที่ไม่เข้าชุดกันกองอยู่บนปึกกระดาษกริด มีไม้บรรทัดเหล็กยาวพาดอยู่ด้านบน และมีแถบสีแดงเล็กๆ อยู่ที่ปลายไม้บรรทัด" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">อินไซต์และกลยุทธ์</div><h3>วัดเอนเกจเมนต์ข้ามแพลตฟอร์ม: ถึงเวลาปลดระวางสเปรดชีตของเอเจนซี</h3><p>แต่ละแพลตฟอร์มนับเอนเกจเมนต์ด้วยวิธีของตัวเอง วิธีการ ตัวชี้วัด และเกณฑ์เลือกเครื่องมือสำหรับการวัดข้ามแพลตฟอร์มที่เชื่อถือได้ โดยไม่ต้องพึ่งสเปรดชีตที่เย็บต่อกันเอง</p><div class="meta"><span>อ่าน 7 นาที</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/th/">← กลับสู่วารสาร</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="ติดต่อเรา">
+<h2>พร้อมชกข้ามรุ่นแล้วหรือยัง</h2>
+<p>มาดูชุดเครื่องมือข้อมูลเชิงลึกที่เครือเอเจนซียักษ์ใหญ่หวงแหนนักหนา ไม่มีการเสนอขาย — แค่พูดคุยกัน</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">เริ่มพูดคุยกับเรา</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">เข้าสู่ระบบ Defy</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>แพลตฟอร์มอินไซต์และระบบอัตโนมัติสำหรับเอเจนซีที่พร้อมชกข้ามรุ่น</p></div>
+<div><h4>Defy</h4><a href="/#main">หลัก</a><a href="/#platform">แพลตฟอร์ม</a><a href="/#clients">ลูกค้า</a><a href="/#team">ทีมงาน</a></div>
+<div class="df-langs"><h4>วารสาร</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>ติดต่อเรา</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">เข้าสู่ระบบ</a><a href="/llms.txt">llms.txt</a><a href="/blog/th/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited สงวนลิขสิทธิ์</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

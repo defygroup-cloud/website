@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Tạp chí Defy</title>
+<link>https://defygroup.ai/blog/vi/</link>
+<description>Ghi chép thực tế về kinh tế agency, ứng dụng AI và nghệ thuật khai thác insight — dành cho agency độc lập, đội ngũ in-house và những ai đã chán bị các tập đoàn agency lớn lấn át.</description>
+<language>vi</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/vi/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Nên tự động hóa gì trong agency: ba câu hỏi cần trả lời trước</title>
+<link>https://defygroup.ai/blog/vi/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/before-you-automate-three-questions-agencies/</guid>
+<description>Trước khi tự động hóa bất cứ thứ gì, hãy hỏi quyết định phức tạp đến đâu, sản phẩm sai có thể gây thiệt hại thế nào và kết quả đo lường nào sẽ cải thiện. Hướng dẫn cho agency.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>Đánh giá mức sẵn sàng AI cho agency: vì sao khía cạnh yếu nhất quyết định tất cả</title>
+<link>https://defygroup.ai/blog/vi/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-ai-readiness-four-dimensions/</guid>
+<description>Bối cảnh, con người, quy trình, nền tảng: cách đánh giá mức sẵn sàng AI thực tế cho agency, và vì sao chỉ học khóa AI sẽ không vá được mắt xích yếu nhất.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>Kháng cự AI trong agency là vấn đề về tiêu chuẩn, không phải vấn đề về con người</title>
+<link>https://defygroup.ai/blog/vi/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-resistance-standards-not-people/</guid>
+<description>Người giỏi nhất của bạn không kháng cự AI, họ kháng cự sản phẩm kém. Vì sao sự kháng cự AI trong agency báo hiệu khoảng cách chất lượng và cách xử lý mà không gây kiệt sức.</description>
+<category>Nhân sự &amp; văn hóa</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>Chiến lược AI cho agency: đừng xây thứ Meta và Google sẽ tự động hóa</title>
+<link>https://defygroup.ai/blog/vi/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta và Google đang tự động hóa nhắm mục tiêu, tạo quảng cáo và thiết lập chiến dịch. Chiến lược AI sắc bén hơn cho agency: mua công cụ, cạnh tranh ở nơi óc phán đoán là sản phẩm.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>Chỉ số AI cho agency: vì sao khách hàng trả tiền cho kết quả, không phải mức sử dụng</title>
+<link>https://defygroup.ai/blog/vi/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/measure-ai-results-not-usage-agencies/</guid>
+<description>Số tài khoản, số agent hay số asset tạo ra chỉ là chỉ số phù phiếm. Chỉ số AI cho agency mà khách hàng coi trọng: chi phí mỗi sản phẩm, tốc độ, tỷ lệ lỗi và lợi nhuận.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>Cách đo ROI của AI trong agency: xác định thành công trước khi triển khai</title>
+<link>https://defygroup.ai/blog/vi/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/define-success-before-deploying-ai-agency/</guid>
+<description>Đường cơ sở, mục tiêu, thử nghiệm, rà soát: cách đơn giản để agency đo ROI của AI, tính thời gian kiểm tra và “lực cản AI”, và biết tự động hóa có đáng tiền không.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>AI vòng kín cho agency: từ mười một công cụ đến một lớp dùng chung</title>
+<link>https://defygroup.ai/blog/vi/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>Mười một công cụ, hai mươi người phụ trách, không gì dùng chung? Cách agency xây hệ thống AI vòng kín với một lớp dùng chung: bộ nhớ, kỹ năng, quy trình và phê duyệt.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>Vai trò AI ở agency: đừng biến AI thành việc của mọi người</title>
+<link>https://defygroup.ai/blog/vi/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>Không phải ai trong agency cũng cần xây AI. Cách người xây, người dùng và người duyệt bảo vệ chất lượng, sự nghiệp và việc làm khi AI định hình lại agency.</description>
+<category>Nhân sự &amp; văn hóa</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>Agency AI-native: tốc độ không phải tiến bộ, và 5 cấp độ mới là tiến bộ</title>
+<link>https://defygroup.ai/blog/vi/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/speed-is-not-progress-ai-native-agencies/</guid>
+<description>Agency AI-native thực sự là gì, năm cấp độ ứng dụng AI, và vì sao đa số agency nên dừng ở cấp độ gỡ được điểm nghẽn của mình.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>Ứng dụng AI ở agency: ghi lại quy trình thực tế trước khi tự động hóa</title>
+<link>https://defygroup.ai/blog/vi/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-bad-process-document-workflows-first/</guid>
+<description>AI chạy trên quy trình tồi chỉ cho bạn một quy trình tồi nhanh hơn. Cách agency vẽ lại quy trình thực tế, tìm điểm nghẽn rồi mới quyết định tự động hóa gì.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI và hành vi người tiêu dùng: vì sao agency cần xây lại công việc insight</title>
+<link>https://defygroup.ai/blog/vi/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI đang thay đổi hành vi người tiêu dùng ra sao và vì sao agency nên xây lại công việc insight: ba chuyển dịch, một cái bẫy dữ liệu, kế hoạch sáu bước.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>Vấn đề cold-start: cá nhân hóa quảng cáo thế nào khi bạn không có dữ liệu người dùng</title>
+<link>https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/</guid>
+<description>Giải quyết vấn đề cold-start trong quảng cáo: cách cá nhân hóa cho người dùng mới mà không cần dữ liệu bên thứ ba, bằng persona xây từ nội dung công khai.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>Giáng sinh 2026: social listening như một hệ thống cảnh báo sớm cho agency</title>
+<link>https://defygroup.ai/blog/vi/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/christmas-2026-social-listening-early-warning/</guid>
+<description>Social listening cho mùa mua sắm Giáng sinh: những tín hiệu agency cần theo dõi ngay để bảo vệ ngân sách Q4 – kèm bảng tín hiệu và kế hoạch sáu bước.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>Công cụ AI cho agency: dùng MCP để thoát khỏi tình trạng công cụ tràn lan</title>
+<link>https://defygroup.ai/blog/vi/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-tools-agencies-mcp-integration/</guid>
+<description>Công cụ AI cho agency, tích hợp đúng cách: vì sao công cụ tràn lan phí thời gian, MCP thay đổi gì và cách xây bộ AI gọn nhẹ qua sáu bước.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>Mô hình tính phí agency cho AI: định giá công bằng, đừng đánh mất biên lợi nhuận</title>
+<link>https://defygroup.ai/blog/vi/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-pricing-models-fair-ai-pricing/</guid>
+<description>Mô hình tính phí agency thời AI: vì sao không nên nhường toàn bộ hiệu suất tăng thêm, và cơ cấu phí nào thực sự bảo vệ biên lợi nhuận của bạn.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>Thu hẹp dịch vụ của agency: nên dừng gì, và khi nào</title>
+<link>https://defygroup.ai/blog/vi/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/when-to-stop-an-agency-service/</guid>
+<description>Thu hẹp dịch vụ của agency: dấu hiệu một dịch vụ đã hết thời, phương pháp sáu bước và dữ liệu cần kiểm tra trước khi quyết định dừng.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>Đo lường tương tác đa nền tảng: đã đến lúc cho bảng tính của agency nghỉ hưu</title>
+<link>https://defygroup.ai/blog/vi/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/measure-cross-platform-engagement-agencies/</guid>
+<description>Cách đo lường tương tác đa nền tảng đáng tin cậy: định nghĩa chung, chỉ số chuẩn hóa, ví dụ ngành thể thao và tiêu chí chọn công cụ.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>Hội chứng kẻ giả mạo ở agency: lấy lại sự tự tin trong kỷ nguyên AI</title>
+<link>https://defygroup.ai/blog/vi/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/imposter-syndrome-agencies-ai-era/</guid>
+<description>Hội chứng kẻ giả mạo ở agency: vì sao AI nuôi dưỡng sự tự nghi ngờ, nhất là ở nhân sự trẻ, và cách xây dựng sự tự tin dựa trên bằng chứng.</description>
+<category>Nhân sự &amp; văn hóa</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>Nghiên cứu không cần người tham gia: persona tổng hợp là lời hứa hay ảo ảnh?</title>
+<link>https://defygroup.ai/blog/vi/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/respondent-free-research-synthetic-personas/</guid>
+<description>Persona tổng hợp và nghiên cứu không cần người tham gia: giá trị với insight thế hệ, điểm yếu và cách neo vào thực tế.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>Media agency và AI: kỷ nguyên mới nghĩa là gì với agency độc lập</title>
+<link>https://defygroup.ai/blog/vi/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/media-agencies-new-ai-era-independents/</guid>
+<description>Media agency và AI: khâu thực thi bị nén lại, giá trị dịch chuyển lên tư vấn. Agency độc lập cần thay đổi gì và nên bắt đầu từ đâu.</description>
+<category>Loại hình agency</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>Thù lao agency: cách chứng minh giá trị bằng dữ liệu mạng xã hội</title>
+<link>https://defygroup.ai/blog/vi/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-remuneration-social-data-proof-of-value/</guid>
+<description>AACC của Pháp muốn đưa thù lao agency vượt khỏi thời gian làm việc. Cách biến dữ liệu mạng xã hội thành bằng chứng giá trị có thể truy vết, từng bước.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>Chỉ số tương tác khách hàng coi trọng (và những chỉ số chỉ để làm cảnh)</title>
+<link>https://defygroup.ai/blog/vi/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/engagement-metrics-clients-value/</guid>
+<description>Khách hàng thực sự coi trọng chỉ số tương tác nào? Cách tách chỉ số ảo khỏi kết quả, so sánh các nền tảng và lập báo cáo dẫn đến quyết định.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>Black Friday cho agency: tự động hóa báo cáo, dành thời gian để tối ưu</title>
+<link>https://defygroup.ai/blog/vi/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/black-friday-agencies-automate-reporting/</guid>
+<description>Còn sáu tuần đến Black Friday 2026. Kế hoạch Black Friday cho agency: tự động hóa báo cáo và cảnh báo, giải phóng đội ngũ để tối ưu trong cao điểm.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>Content marketing B2B không khiến người ra quyết định buồn ngủ</title>
+<link>https://defygroup.ai/blog/vi/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/b2b-content-marketing-that-engages/</guid>
+<description>Content B2B không cần nhàm chán. Cách xuất phát từ điểm căng thật của người mua, thử concept trước khi chi media và tạo lead chất lượng.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI và sự kết thúc của mô hình holding company: bài học cho agency độc lập</title>
+<link>https://defygroup.ai/blog/vi/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-holding-company-model-independent-agencies/</guid>
+<description>WPP cắt giảm nhân sự, phí agency thu hẹp: AI đang định hình lại các holding company. Điều gì thay đổi và agency độc lập tận dụng AI ra sao.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>Tiêu thụ truyền thông phân mảnh: hiểu đối tượng vượt ra ngoài dashboard</title>
+<link>https://defygroup.ai/blog/vi/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/fragmented-media-consumption-audience-data/</guid>
+<description>Tiêu thụ truyền thông phân mảnh khiến dữ liệu tản mát khắp các kênh. Cách hợp nhất dữ liệu đối tượng thành persona và mâu thuẫn thực để lên kế hoạch tốt hơn.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>Pitch agency tại Brazil: quy tắc mới thưởng cho người mang đến bằng chứng</title>
+<link>https://defygroup.ai/blog/vi/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/brazil-agency-pitches-category-intelligence/</guid>
+<description>Hướng dẫn pitch agency của Abracom/ABA tại Brazil nay có 10 bước. Cách dùng dữ liệu hành vi người tiêu dùng và ngành hàng để thắng pitch nhờ dẫn chứng.</description>
+<category>Tìm kiếm khách hàng mới</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>Khác biệt hóa thương hiệu bằng AI: làm sao để không giống đối thủ</title>
+<link>https://defygroup.ai/blog/vi/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>Khác biệt hóa thương hiệu bằng AI: cách lập bản đồ những gì cả ngành hàng đã nói, tìm vùng chưa ai chiếm và thử ý tưởng trước khi chi ngân sách media.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>Kiệt sức ở agency: bớt việc lặp lại, thêm thời gian cho sáng tạo</title>
+<link>https://defygroup.ai/blog/vi/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-burnout-automate-repetitive-work/</guid>
+<description>Kiệt sức ở agency: cách tách áp lực sáng tạo khỏi gánh nặng việc lặp lại, tác vụ nào nên tự động hóa và kế hoạch năm bước cho đội ngũ của bạn.</description>
+<category>Nhân sự &amp; văn hóa</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>Thuế quan và chiến lược marketing: cách cân bằng lại thông điệp và ngân sách</title>
+<link>https://defygroup.ai/blog/vi/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>Thuế quan và chiến lược marketing: đọc tác động lên ngành hàng, viết lại thông điệp theo từng thị trường và chuyển ngân sách mà không tê liệt.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>Social listening cho agency: vì sao báo cáo hằng quý đã quá muộn</title>
+<link>https://defygroup.ai/blog/vi/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/continuous-social-listening-agencies/</guid>
+<description>Social listening cho agency: cách chuyển từ báo cáo hằng quý sang theo dõi liên tục xu hướng người tiêu dùng, với phương pháp sáu bước thực tế.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>Phân tích dữ liệu marketing bằng AI: những kết luận khách hàng có thể kiểm chứng</title>
+<link>https://defygroup.ai/blog/vi/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-data-analysis-verifiable-conclusions/</guid>
+<description>Thực hành tốt khi phân tích dữ liệu marketing bằng AI: cách phá vỡ các silo và đưa cho khách hàng những kết luận kiểm chứng được, từng bước, kèm checklist.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>AI cho agency độc lập: vì sao họ hợp nhất và điều gì thay đổi</title>
+<link>https://defygroup.ai/blog/vi/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle hợp nhất bốn công ty và SAMY mua lại một agency Mỹ. Vai trò của AI trong làn sóng hợp nhất agency độc lập và cách chọn con đường riêng để mở rộng quy mô.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>Quảng cáo cá nhân hóa mà không mất niềm tin: hướng dẫn dành cho agency</title>
+<link>https://defygroup.ai/blog/vi/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ad-personalisation-without-third-party-data/</guid>
+<description>Hướng dẫn cá nhân hóa quảng cáo cho khán giả ngách như người hâm mộ bóng đá nữ, không cần dữ liệu bên thứ ba và không phá vỡ niềm tin của cộng đồng.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>Lập kế hoạch media bằng AI: từ nhân khẩu học đến những mâu thuẫn thật của người tiêu dùng</title>
+<link>https://defygroup.ai/blog/vi/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/media-planning-real-personas-ai/</guid>
+<description>Dùng AI để lập kế hoạch media: chuyển từ nhân khẩu học sang những mâu thuẫn thật của khán giả, với quy trình bảy bước và bảng so sánh song song.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>Dữ liệu tiêu dùng truyền thông tại Singapore: nên tin gì khi các mạng lưới thu hẹp</title>
+<link>https://defygroup.ai/blog/vi/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/apac-agencies-market-intelligence/</guid>
+<description>Tìm dữ liệu tiêu dùng truyền thông tại Singapore ở đâu, nguồn nào đáng tin cho việc gì, và cách agency độc lập tự xây thông tin thị trường.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI tác động ra sao đến từng loại agency marketing: từ sáng tạo đến influencer</title>
+<link>https://defygroup.ai/blog/vi/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/how-ai-disrupts-each-agency-type/</guid>
+<description>AI thay đổi agency sáng tạo, media, CRM, PR và influencer ra sao: tác vụ nào mất trước, điều gì tăng giá trị, và mỗi loại agency nên thử công cụ AI nào.</description>
+<category>Loại hình agency</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>Thực hành tốt nhất tạo nội dung AI: khung chất lượng cho agency</title>
+<link>https://defygroup.ai/blog/vi/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-content-quality-framework-agencies/</guid>
+<description>Thực hành tạo nội dung AI cho agency: khung bảy cổng kiểm soát giúp giữ giọng thương hiệu, giữ con người ở quyết định then chốt và thử nghiệm trước khi chi media.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>Case study AI marketing với số liệu thật, và những gì chúng bỏ sót</title>
+<link>https://defygroup.ai/blog/vi/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-driven-agency-case-studies/</guid>
+<description>Rất ít case study AI marketing đứng vững khi bị soi kỹ. Xem những case có số liệu thật, gồm mức tăng dự kiến 8,5%, và cách đánh giá phần còn lại.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>Tổ chức marketing AI-native: khách hàng vẫn mua gì từ agency</title>
+<link>https://defygroup.ai/blog/vi/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death định vận hành ngân sách lớn chỉ với hai người và hệ thống AI do agency xây dựng. Tổ chức marketing AI-native cần gì từ agency?</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>Chiến lược pitch của agency: thắng bằng sprint insight ngành 48 giờ</title>
+<link>https://defygroup.ai/blog/vi/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/win-agency-pitches-ai-category-insight/</guid>
+<description>Chiến lược pitch agency thực tế: sprint 48 giờ lập bản đồ quảng cáo đối thủ, mâu thuẫn khán giả và góc chưa ai chiếm, cùng ý nghĩa việc CEO Publicis bán hàng.</description>
+<category>Tìm kiếm khách hàng mới</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>Cách tối ưu ROI ngân sách marketing khi chiến dịch toàn cầu kém hiệu quả</title>
+<link>https://defygroup.ai/blog/vi/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/global-vs-local-campaign-budget/</guid>
+<description>Tối ưu ROI ngân sách marketing bằng cách xử lý độ phù hợp của sáng tạo trước: nghiên cứu mới về toàn cầu so với địa phương, bảng quyết định và bảy bước.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>Chi phí sản xuất video AI: vì sao khung hình rẻ hơn không làm ngân sách nhỏ đi</title>
+<link>https://defygroup.ai/blog/vi/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/ai-video-production-agency-economics/</guid>
+<description>AI giảm chi phí từng khung hình, không giảm ngân sách. Tiết kiệm thực sự nằm ở đâu, vì sao khách hàng đòi thêm, và agency nên định giá video AI thế nào.</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Cách tiếp cận người tiêu dùng Gen Z: lên kế hoạch từ cộng đồng, không phải năm sinh</title>
+<link>https://defygroup.ai/blog/vi/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/gen-z-persona-clustering/</guid>
+<description>Nhóm tuổi không giúp ai viết brief. Cách agency tiếp cận Gen Z bằng việc gom các cuộc trò chuyện thật thành persona, với quy trình bảy bước và ví dụ.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>Retail media network và agency: ai thực sự nắm ngân sách?</title>
+<link>https://defygroup.ai/blog/vi/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/retail-media-agency-ownership/</guid>
+<description>Retail media network kéo agency media, thương mại, hiệu suất và creator vào một cuộc đua. Ai nên nắm kênh này, và agency độc lập giành chỗ ngồi ra sao.</description>
+<category>Loại hình agency</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>AI có thay thế agency marketing? Vì sao phép tính hiếm khi hợp lý</title>
+<link>https://defygroup.ai/blog/vi/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/will-ai-replace-agencies/</guid>
+<description>AI có thay thế agency marketing? Chi phí thực của AI cộng một nhân sự nội bộ, việc nào của agency nên giao cho AI và việc gì vẫn cần con người.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>Hợp nhất hay giữ nhiều agency? Bài học từ StarKist và ServiceNow</title>
+<link>https://defygroup.ai/blog/vi/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-consolidation-vs-roster/</guid>
+<description>Hợp nhất về một agency hay giữ đội agency chuyên biệt? StarKist chọn Tombras và Stagwell thắng ServiceNow cho thấy cách agency giành khách hàng lớn.</description>
+<category>Tìm kiếm khách hàng mới</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>Agency độc lập và tập đoàn holding: cách agency độc lập cạnh tranh về dữ liệu</title>
+<link>https://defygroup.ai/blog/vi/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/independent-agencies-vs-holding-company-data/</guid>
+<description>Agency độc lập và tập đoàn holding: network vẫn dẫn đầu về dữ liệu ở đâu, agency độc lập đã bắt kịp ở đâu và kế hoạch 90 ngày để thu hẹp khoảng cách.</description>
+<category>Loại hình agency</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>Báo cáo influencer marketing: vì sao đây là chiến trường mới của agency</title>
+<link>https://defygroup.ai/blog/vi/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/influencer-agency-reporting-automation/</guid>
+<description>Cách lập báo cáo influencer marketing chứng minh được ROI, kể cả với hàng chục nano-influencer: chỉ số, tín hiệu niềm tin và việc nên tự động hóa.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>Công cụ nghiên cứu đối tượng mục tiêu: planner nên tự động hóa gì trước</title>
+<link>https://defygroup.ai/blog/vi/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/future-of-strategy-planners-automate/</guid>
+<description>Planner nên tự động hóa việc gì trước? Thứ tự ưu tiên thực tế, checklist chọn công cụ nghiên cứu đối tượng và những việc vẫn cần con người.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>Quảng cáo với agentic AI mà không lo agent “nổi loạn”: giữ con người trong vòng lặp</title>
+<link>https://defygroup.ai/blog/vi/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agentic-media-human-in-the-loop/</guid>
+<description>Agentic AI đang tràn vào quảng cáo. Cách agency giữ con người trong vòng lặp: ngưỡng phê duyệt, người phụ trách rõ ràng, con người làm chủ thông điệp.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>Khán giả tổng hợp đang bùng nổ. Đây là cách agency giữ chúng trung thực</title>
+<link>https://defygroup.ai/blog/vi/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/synthetic-audiences-agencies-validation/</guid>
+<description>Khán giả tổng hợp đang đi vào quy trình lập kế hoạch của agency. Khi nào đáng tin, khi nào gây hiểu lầm, và 6 bước kiểm chứng mọi phát hiện.</description>
+<category>Insight &amp; chiến lược</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>Mô hình sprint cho agency: cách tiến nhanh mà không phá vỡ chiến lược</title>
+<link>https://defygroup.ai/blog/vi/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-sprint-model-speed-strategy/</guid>
+<description>Mô hình sprint giúp agency bán tốc độ. Cách chạy sprint nhanh mà không phá vỡ chiến lược: trục chiến lược theo quý, bằng chứng mới, tự động hóa việc vặt.</description>
+<category>Loại hình agency</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>Pre-test sáng tạo: cách chấm dứt cuộc chiến giữa sáng tạo và hiệu quả</title>
+<link>https://defygroup.ai/blog/vi/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/creativity-vs-performance-pre-testing/</guid>
+<description>Pre-test sáng tạo chấm dứt cuộc chiến sáng tạo và hiệu quả: chấm điểm concept trước khi chi tiền media, bảo vệ ý tưởng táo bạo, để con người quyết định.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>Công cụ AI marketing cho agency: hãy xây dựng một hệ thống, đừng chỉ lập danh sách mua sắm</title>
+<link>https://defygroup.ai/blog/vi/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-ai-stack-integration/</guid>
+<description>Cách chọn công cụ AI marketing cho agency tích hợp được với hệ thống sẵn có: checklist đánh giá, kế hoạch 7 bước và lưu ý khi ký hợp đồng.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>Chiến lược khác biệt hóa thương hiệu: tìm ra góc tiếp cận mà ngành hàng của bạn bỏ qua</title>
+<link>https://defygroup.ai/blog/vi/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegarty gọi marketing là “lặp lại, sáo rỗng, nhàm chán”. Chiến lược khác biệt hóa: lập bản đồ ngành hàng để tìm góc chưa ai sở hữu.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>Quá tải dashboard marketing: vì sao các agency đang thay việc đăng nhập bằng việc đặt câu hỏi</title>
+<link>https://defygroup.ai/blog/vi/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-dashboard-fatigue-ai-questions/</guid>
+<description>Quá nhiều dashboard, quá ít insight? Vì sao quá tải dashboard marketing xảy ra, và 6 bước thay các lần đăng nhập bằng câu hỏi gắn với quyết định.</description>
+<category>Chuyển đổi AI</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>Cách chứng minh ROI media cho khách hàng: vì sao MMM trở lại và cần trình bày những gì</title>
+<link>https://defygroup.ai/blog/vi/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/proving-media-roi-agencies-mmm/</guid>
+<description>ROAS của nền tảng không còn thuyết phục khách hàng. Cách agency chứng minh ROI media bằng MMM, thử nghiệm và bằng chứng giải thích vì sao kết quả thay đổi.</description>
+<category>Hiệu quả sáng tạo</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>Thù lao agency theo kết quả: những chỉ số vượt ra ngoài ROAS và CPA</title>
+<link>https://defygroup.ai/blog/vi/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>Trả phí agency theo thời gian chỉ còn chiếm 17% số mô hình. Ngoài ROAS và CPA, chỉ số nào nên quyết định thù lao theo kết quả và triển khai ra sao?</description>
+<category>Kinh tế agency</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>Tác động của AI đến việc làm ở agency: cách xây lại nấc thang sự nghiệp cho nhân sự junior</title>
+<link>https://defygroup.ai/blog/vi/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/vi/agency-entry-level-talent-ai/</guid>
+<description>Agency đang lặng lẽ ngừng tuyển sinh viên mới ra trường khi AI gánh việc junior. Dữ liệu nói gì và cách thiết kế lại vị trí đầu vào quanh óc phán đoán.</description>
+<category>Nhân sự &amp; văn hóa</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이전시를 위한 AI 도구: 난립이 아닌 통합 | Defy</title>
+<meta name="description" content="제대로 통합한 에이전시용 AI 도구: 도구 난립이 시간을 낭비하는 이유, MCP가 바꾸는 것, 간소한 AI 스택을 여섯 단계로 구축하는 방법.">
+<link rel="canonical" href="https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="에이전시 AI 도구, 마케팅 에이전시 AI 도구, 에이전시 AI 도입, MCP 마케팅 활용, 모델 컨텍스트 프로토콜, 에이전시 AI 스택, 에이전시용 Claude">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/ki-tools-agentur-integration-mcp/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/ai-tools-agencies-mcp-integration/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/">
+<meta property="og:title" content="에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법">
+<meta property="og:description" content="제대로 통합한 에이전시용 AI 도구: 도구 난립이 시간을 낭비하는 이유, MCP가 바꾸는 것, 간소한 AI 스택을 여섯 단계로 구축하는 방법.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d47-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:29:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:29:00+08:00">
+<meta property="article:section" content="AI 전환">
+<meta property="article:tag" content="AI 도구">
+<meta property="article:tag" content="MCP">
+<meta property="article:tag" content="에이전시 워크플로">
+<meta property="article:tag" content="기술 스택">
+<meta property="article:tag" content="AI 거버넌스">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법">
+<meta name="twitter:description" content="제대로 통합한 에이전시용 AI 도구: 도구 난립이 시간을 낭비하는 이유, MCP가 바꾸는 것, 간소한 AI 스택을 여섯 단계로 구축하는 방법.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d47-ko.jpg">
+<meta name="twitter:image:alt" content="에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 저널" href="/blog/ko/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+KR:wght@400;500;700&amp;family=Noto+Serif+KR:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/#article","url":"https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/","mainEntityOfPage":"https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/","headline":"에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법","alternativeHeadline":"에이전시를 위한 AI 도구: 난립이 아닌 통합","description":"제대로 통합한 에이전시용 AI 도구: 도구 난립이 시간을 낭비하는 이유, MCP가 바꾸는 것, 간소한 AI 스택을 여섯 단계로 구축하는 방법.","abstract":"도구가 아니라 시간을 가장 많이 잡아먹는 워크플로에서 시작해야 합니다. Claude 같은 AI 어시스턴트를 중심 워크스페이스로 정하고, 작업마다 새 대시보드를 추가하는 대신 Model Context Protocol(MCP) 같은 개방형 인터페이스로 데이터를 연결합니다. 중요한 것은 통합, 추적 가능성, 명확한 승인 규칙입니다.","image":["https://defygroup.ai/assets/blog/og/d47-ko.jpg","https://defygroup.ai/assets/blog/hero/d47.jpg"],"datePublished":"2026-10-16T12:29:00+08:00","dateModified":"2026-10-16T12:29:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"Defy 편집팀","url":"https://defygroup.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AI 전환","keywords":"에이전시 AI 도구, 마케팅 에이전시 AI 도구, 에이전시 AI 도입, MCP 마케팅 활용, 모델 컨텍스트 프로토콜, 에이전시 AI 스택, 에이전시용 Claude","wordCount":792,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/ko/#blog","name":"Defy — Defy 저널"},"about":[{"@type":"Thing","name":"AI 도구"},{"@type":"Thing","name":"MCP"},{"@type":"Thing","name":"에이전시 워크플로"},{"@type":"Thing","name":"기술 스택"},{"@type":"Thing","name":"AI 거버넌스"}],"citation":[{"@type":"CreativeWork","name":"As agencies push agentic media future, execs work to ward off client rogue fears","url":"https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/","datePublished":"2026-10-08","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/ai-tools-agencies-mcp-integration/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"Model Context Protocol(MCP)이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"MCP는 Claude 같은 AI 어시스턴트가 외부 데이터 소스와 도구에 접근할 수 있게 해 주는 개방형 표준입니다. 데이터를 내보내 채팅창에 붙여 넣는 대신 어시스턴트가 소스를 직접 조회합니다. 에이전시에는 대시보드가 줄고, 복사·붙여넣기가 줄고, 최신 데이터에 기반한 답을 얻는다는 뜻입니다."}},{"@type":"Question","name":"에이전시에는 AI 툴이 몇 개나 필요할까요?","acceptedAnswer":{"@type":"Answer","text":"정해진 숫자는 없지만 경험칙은 있습니다. 가능한 한 적게, 필요한 만큼 깊게 통합하는 것입니다. 하나의 중앙 워크스페이스, 경쟁사·오디언스·성과를 위한 연결된 데이터 소스, 반복 납품 업무를 위한 자동화면 대부분의 수요를 충족합니다. 도구를 하나 더할 때마다 기능만 늘리는 것이 아니라 워크플로를 측정 가능하게 개선해야 합니다."}},{"@type":"Question","name":"에이전시 내 섀도 AI를 어떻게 막을까요?","acceptedAnswer":{"@type":"Answer","text":"금지만으로는 효과가 크지 않습니다. 공식 도구가 부족하면 직원들이 개인 도구로 옮겨 가기 때문입니다. 실제로 도움이 되는 승인된 인터페이스를 제공하고, 고객 데이터에 대한 명확한 규칙을 세우고, 어떤 도구를 쓰고 있는지 정기적으로 물어보는 편이 낫습니다. 좋은 도구를 제공하면 우회 수단은 필요 없어집니다."}},{"@type":"Question","name":"AI 에이전트가 미디어 플래너와 전략가를 대체할까요?","acceptedAnswer":{"@type":"Answer","text":"현재까지의 근거로는 그렇지 않습니다. Digiday에 따르면 플래닝과 바잉용 에이전트를 개발하는 대형 에이전시 그룹들도 사람의 감독과 승인 기준을 강조합니다. 에이전트는 리포팅이나 모니터링 같은 반복 가능한 업무를 맡고, 판단, 우선순위 설정, 고객사에 대한 책임은 팀에 남습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"저널","item":"https://defygroup.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법","item":"https://defygroup.ai/blog/ko/ai-tools-agencies-mcp-integration/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">이 페이지의 내용</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — 메인"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="주 메뉴">
+<a href="/#main">메인</a>
+<a href="/#platform">플랫폼</a>
+<a href="/#clients">고객사</a>
+<a href="/#team">팀</a>
+<a href="/blog/ko/" class="on">저널</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">로그인</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">문의하기</a>
+<button class="menu" aria-label="메뉴" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="이동 경로"><a href="/#main">홈</a><span>/</span><a href="/blog/ko/">저널</a><span>/</span><span>AI 전환</span></nav>
+<header class="a-head">
+<div class="eyebrow">AI 전환</div>
+<h1 itemprop="headline">에이전시 AI 도구: MCP로 도구 난립에서 벗어나는 방법<span class="sq"></span></h1>
+<p class="dek" itemprop="description">구독 중인 AI 도구는 열 개인데 연결된 것은 하나도 없습니다. 도구가 많은 에이전시가 오히려 성과가 낮은 경우가 많은 이유와, Model Context Protocol이 팀이 이미 일하는 곳으로 데이터를 가져오는 방법.</p>
+<div class="a-meta">
+<span><b>Defy 편집팀</b></span>
+<span>게시일 <time datetime="2026-10-16T12:29:00+08:00" itemprop="datePublished">2026년 10월 16일</time></span>
+<span>7분 분량</span>
+<span class="langs"><details class="lsw"><summary aria-label="언어: 한국어"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>한국어</span></summary><div class="lsw-p"><div class="lsw-h">다른 언어로도 제공됩니다</div><a href="/blog/ai-tools-agencies-mcp-integration/" hreflang="en" lang="en">English</a><a href="/blog/fr/ai-tools-agencies-mcp-integration/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/ki-tools-agentur-integration-mcp/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/ai-tools-agencies-mcp-integration/" hreflang="es" lang="es">Español</a><a href="/blog/pt/ai-tools-agencies-mcp-integration/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/ai-tools-agencies-mcp-integration/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/ai-tools-agencies-mcp-integration/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/ai-tools-agencies-mcp-integration/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/ai-tools-agencies-mcp-integration/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/ai-tools-agencies-mcp-integration/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/ai-tools-agencies-mcp-integration/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/ai-tools-agencies-mcp-integration/" hreflang="ko" lang="ko" aria-current="true">한국어</a><a href="/blog/hi/ai-tools-agencies-mcp-integration/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/ai-tools-agencies-mcp-integration/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/ai-tools-agencies-mcp-integration/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/ai-tools-agencies-mcp-integration/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d47-768.webp 768w, /assets/blog/hero/d47-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d47.jpg" alt="흑백 사진. 한쪽에는 엉킨 충전기와 어댑터가 넘쳐 나는 서랍이, 다른 쪽에는 작은 빨간 버튼이 달린 깔끔한 커넥터 허브 하나가 덮어 둔 노트북에 연결된 사무실 책상이 보입니다." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="이 글의 출발점이 된 질문">
+<div class="eyebrow">이 글의 출발점이 된 질문</div>
+<p class="q">“우리 에이전시는 어떤 AI 도구를 써야 할까요? 그리고 도구 난맥상에 빠지지 않으려면 어떻게 통합해야 할까요?”</p>
+<p class="ans"><b>핵심 답변</b>도구가 아니라 시간을 가장 많이 잡아먹는 워크플로에서 시작해야 합니다. Claude 같은 AI 어시스턴트를 중심 워크스페이스로 정하고, 작업마다 새 대시보드를 추가하는 대신 Model Context Protocol(MCP) 같은 개방형 인터페이스로 데이터를 연결합니다. 중요한 것은 통합, 추적 가능성, 명확한 승인 규칙입니다.</p>
+</section>
+<section class="kt takeaways"><h2>핵심 요약</h2><ul><li>AI 도구가 많다고 성과가 늘지는 않습니다. 통합이 없으면 데이터 사일로, 중복 작업, 특정 개인에게만 머무는 지식이 생깁니다.</li><li>Model Context Protocol(MCP)은 AI 어시스턴트가 새 대시보드 없이 데이터 소스와 도구에 직접 접근할 수 있게 해 주는 개방형 표준입니다.</li><li>대형 에이전시 그룹은 AI 에이전트를 거버넌스와 사람의 책임을 앞세워 팔고 있습니다. 독립 에이전시도 통제 방식을 그만큼 분명하게 밝혀야 합니다.</li><li>올바른 순서는 워크플로, 데이터 소스, 인터페이스, 규칙이며, 도구는 그다음입니다.</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>에이전시에는 어떤 AI 도구가 필요할까요? 대부분이 생각하는 것보다 적게, 그러나 더 잘 연결해서 필요합니다. 병목은 도구가 없어서가 아니라 통합이 없어서인 경우가 대부분입니다. 데이터는 다섯 개 시스템에 흩어져 있고, 팀마다 즐겨 쓰는 챗봇이 따로 있고, 결국 누군가 스크린샷을 덱에 붙여 넣고 있습니다.</p>
+<p>한편 대형 에이전시 그룹은 다양성보다 연결에 베팅하고 있습니다. <a href="https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/" rel="noopener" target="_blank">Digiday</a>에 따르면 Dentsu의 미디어 에이전시 Carat은 NBCUniversal, FreeWheel, AI 기업 Newton과 함께 업프론트에서의 플래닝, 바잉, 최적화를 위한 에이전트를 개발하고 있습니다. Tinuiti는 자사 측정 솔루션 Bliss Point용 MCP 서버를 출시해 측정 레이어를 AI 에이전트에 개방하고, 오디언스·크리에이티브·미디어·측정 데이터를 한곳에 모았습니다. WPP Media는 “거버넌스와 사람의 책임이 에이전틱 미디어 바잉의 핵심”이라고 강조합니다.</p>
+<h2 id="why-do-more-ai-tools-often-deliver-less">AI 도구가 많을수록 성과가 오히려 낮아지는 경우가 많은 이유는 무엇일까요?</h2>
+<p>새 도구가 생길 때마다 새로운 섬이 하나씩 생기기 때문입니다. 소셜 리스닝 도구는 대화는 알지만 미디어 데이터는 모릅니다. 챗봇은 글은 훌륭하게 쓰지만 고객사에 대해서는 아무것도 모릅니다. 리포팅 도구에는 숫자는 있지만 맥락이 없습니다. 이 모든 것을 잇는 것은 사람이고, 방법은 복사·붙여넣기입니다.</p>
+<p>거기에 숨은 비용이 붙습니다. 겹치는 라이선스. 대시보드마다 필요한 온보딩. 섀도 AI, 즉 아무도 승인하지 않은 채 고객 데이터가 오가는 개인 계정. 그리고 어떤 도구에서 어떤 프롬프트가 통하는지 아는 단 한 사람에게 의존하는 지식.</p>
+<p>고객사가 데이터 보호와 데이터 주권을 엄격하게 따지는 독일의 에이전시에게 이런 난립은 비효율에 그치지 않습니다. 다음 피치 때 받게 될 질의서에서 드러날 리스크입니다.</p>
+<h2 id="why-the-whole-is-more-than-the-sum-of-the-tools">전체가 도구의 합보다 큰 이유</h2>
+<p>시스템 이론은 간단한 설명을 내놓습니다. 시스템은 부분의 합보다 큰데, 성능이 부분들 사이의 관계에서 나오기 때문입니다. 공통 악보 없이 모인 뛰어난 솔로 연주자들의 오케스트라는 교향곡이 아니라 조율하는 소리처럼 들립니다.</p>
+<p>에이전시의 기술 스택에 적용하면, 개별 AI 도구의 품질은 전체의 성능에 대해 말해 주는 바가 적다는 뜻입니다. 중요한 것은 데이터, 도구, 사람이 서로 소통하는지입니다. 도구만으로는 걸작을 작곡할 수 없습니다. 하모니는 그들이 한목소리를 낼 때 태어납니다.</p>
+<p>그래서 문제는 대개 기술이 아니라 아키텍처에 있습니다. 악기는 사면서 악보를 잊는 것입니다.</p>
+<h2 id="what-is-mcp-and-why-does-it-matter-to-agencies">MCP란 무엇이며 에이전시에 왜 중요할까요?</h2>
+<p>MCP는 Model Context Protocol의 약자입니다. Claude 같은 AI 어시스턴트가 외부 데이터 소스와 도구에 접근할 수 있게 해 주는 개방형 표준입니다. 범용 콘센트라고 생각하면 됩니다. 데이터 소스마다 별도 연동이나 대시보드를 만드는 대신, 어시스턴트가 하나의 인터페이스로 모든 소스와 대화합니다.</p>
+<p>에이전시에는 논리 자체가 바뀝니다. 지금까지 통합이란 데이터를 내보내 도구에 올리고 결과를 다시 복사해 내는 일이었습니다. MCP에서는 데이터가 제자리에 그대로 있고, 팀은 이미 일하고 있는 곳에서 질문합니다. “경쟁사가 10월 초부터 어떤 메시지를 집행해 왔는가?”가 인사이트 팀에 보내는 티켓이 아니라 채팅창의 질문이 됩니다.</p>
+<p>Defy MCP가 바로 그렇게 작동합니다. 팀은 새로운 대시보드를 배울 필요 없이, 동료에게 묻듯 Claude에서 경쟁사, 오디언스, 대화 데이터를 바로 조회합니다. Tinuiti가 측정 데이터를 같은 방식으로 AI 에이전트에 개방하는 것도 나아가는 방향을 보여 줍니다. 데이터는 더 이상 대시보드에 갇혀 있지 않고 조회할 수 있게 열립니다.</p>
+<h2 id="tool-sprawl-or-integrated-stack-the-comparison">도구 난립과 통합 스택 비교</h2>
+<div class="tw"><table>
+<thead><tr><th>항목</th><th>도구 난립</th><th>MCP 기반 통합 스택</th></tr></thead>
+<tbody>
+<tr><td>데이터 접근</td><td>내보내기, 복사·붙여넣기, 스크린샷</td><td>어시스턴트가 소스를 직접 조회</td></tr>
+<tr><td>학습 곡선</td><td>도구마다 대시보드 하나씩</td><td>하나의 인터페이스, 자연어 질문</td></tr>
+<tr><td>추적 가능성</td><td>출처를 알 수 없는 결과</td><td>답변을 출처까지 추적 가능</td></tr>
+<tr><td>거버넌스</td><td>개인 계정, 불분명한 승인 체계</td><td>중앙 권한 관리와 명확한 승인 규칙</td></tr>
+<tr><td>팀 지식</td><td>개인에게 귀속</td><td>재사용 가능한 프롬프트와 워크플로</td></tr>
+<tr><td>비용</td><td>중복되는 라이선스</td><td>더 적은 도구를 더 깊이 활용</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-do-you-integrate-ai-tools-in-six-steps">AI 도구를 여섯 단계로 통합하려면?</h2>
+<ol>
+<li><strong>현황을 조사합니다.</strong> 누가 어떤 AI 도구를 무슨 용도로, 어떤 데이터로 쓰고 있습니까? 개인 계정에 대해서도 명시적으로 묻되, 질책하지 않아야 솔직한 답을 들을 수 있습니다.</li>
+<li><strong>시간을 잡아먹는 업무 세 가지를 고릅니다.</strong> 대표적인 후보는 경쟁사 감사, 월간 리포트, 피치 리서치입니다. 현재 소요 시간을 기록해 둡니다.</li>
+<li><strong>인터페이스를 하나로 정합니다.</strong> 팀이 AI와 일하는 곳을 결정합니다. 인터페이스를 하나 더 추가하려면 충분한 이유가 있어야 합니다.</li>
+<li><strong>데이터는 복사하지 말고 연결합니다.</strong> 어떤 데이터 소스를 MCP나 다른 인터페이스로 직접 조회할 수 있는지 확인합니다. 내보내기로만 가능한 것은 나중을 위한 목록에 올립니다.</li>
+<li><strong>도입 전에 규칙을 정합니다.</strong> 고객사에 전달하기 전에 사람이 검토할 결과물, 지출을 승인하는 사람, 어떤 고객 데이터를 어떤 시스템에 넣을 수 있는지를 정합니다. 데이터 보호 책임자도 이 자리에 함께해야 합니다.</li>
+<li><strong>시범 운영하고, 측정하고, 정리합니다.</strong> 한 고객사로 6주간 테스트하고, 2단계에서 기록한 시간과 비교한 뒤, 아무도 아쉬워하지 않는 도구는 해지합니다.</li>
+</ol>
+<h2 id="what-can-independent-agencies-learn-from-the-holding-compani">독립 에이전시는 홀딩 컴퍼니에서 무엇을 배울 수 있을까요?</h2>
+<p>Digiday 보도에서 눈에 띄는 것은 기술보다 어조입니다. 에이전시 그룹들은 에이전트를 통제력을 내세워 팔고 있습니다. Digiday에 따르면 WPP Media는 재무 및 집행 결정에 명시적 통제, 승인 기준, 책임 있는 사람의 감독을 요구합니다. Dentsu는 모든 것에 여전히 사람의 감독이 필요하다는 입장입니다.</p>
+<p>독립 에이전시에는 하나의 교훈입니다. 고객사가 주저하는 것은 기술 때문이라기보다 통제력을 잃을까 걱정해서입니다. 누가 어떤 결과물을 검토하는지, 주장의 근거가 어디서 나오는지, 데이터가 어디에 있는지 설명할 수 있다면 규모와 관계없이 신뢰를 얻습니다.</p>
+<p>차이는 홀딩 컴퍼니가 대규모 개발 예산으로 스택을 구축한다는 점입니다. 독립 에이전시는 더 영리하게 조합해야 합니다. 데이터, 질의, 자동화를 한데 모은 플랫폼, 예컨대 <a href="/#platform">Defy 플랫폼</a>은 사내 데이터 사이언스 팀 없이도 비슷한 수준에 도달하는 한 가지 방법입니다.</p>
+<h2 id="what-should-you-ask-every-ai-vendor">모든 AI 벤더에게 무엇을 물어야 할까요?</h2>
+<ul>
+<li>데이터를 MCP나 다른 개방형 인터페이스로 조회할 수 있습니까, 아니면 자사 대시보드에서만 가능합니까?</li>
+<li>시스템이 내놓는 모든 주장을 출처까지 추적할 수 있습니까?</li>
+<li>데이터는 어디에 저장되고, 누가 접근하며, 우리가 입력한 프롬프트는 어떻게 처리됩니까?</li>
+<li>이 도구는 실제로 어떤 워크플로를 대체하며, 그 결과 기존 도구 중 무엇을 해지할 수 있습니까?</li>
+</ul>
+<p>마지막 질문에 답을 듣지 못한다면, 도구를 사는 것이 아니라 악보 없는 악기를 하나 더 사는 것일 뿐입니다.</p></div>
+<aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>도구만으로는 걸작을 만들 수 없습니다. 조화는 도구들이 하나로 어우러질 때 탄생합니다.</blockquote><p>시스템 이론에 따르면 시스템의 성능은 부분들 사이의 관계에서 나옵니다. 에이전시에 이것은 가장 뛰어난 개별 도구보다 데이터, 도구, 사람이 얼마나 잘 연결되어 있는가가 더 중요하다는 뜻입니다.</p></aside>
+<section class="prop" aria-label="Defy가 돕는 방법">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy가 돕는 방법<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy MCP는 Defy Monitor의 데이터, 즉 고객사 카테고리의 경쟁사, 오디언스, 대화를 Claude로 바로 가져옵니다. 팀은 또 하나의 대시보드를 배우는 대신 동료에게 묻듯 질의합니다.</p><ul><li>열 개 대신 하나의 인터페이스: 팀이 이미 AI로 일하는 곳에서 자연어로 질문합니다.</li><li>추적 가능: 모든 AI 결론을 그 뒤에 있는 실제 게시물과 대조해 확인할 수 있습니다.</li><li>확장 가능: Defy Agents가 리포팅과 모니터링 같은 반복 납품 업무를 맡습니다.</li></ul><p>지금 팀의 시간을 가장 많이 쓰는 워크플로에서 시작해, 채팅창의 질문 하나로 그중 얼마나 처리할 수 있는지 확인해 보십시오.</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%EC%97%90%EC%9D%B4%EC%A0%84%EC%8B%9C%20AI%20%EB%8F%84%EA%B5%AC%3A%20MCP%EB%A1%9C%20%EB%8F%84%EA%B5%AC%20%EB%82%9C%EB%A6%BD%EC%97%90%EC%84%9C%20%EB%B2%97%EC%96%B4%EB%82%98%EB%8A%94%20%EB%B0%A9%EB%B2%95" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D47'})}catch(e){}">대화 시작하기</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D47'})}catch(e){}">Defy 로그인</a></div>
+</section>
+<section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>Model Context Protocol(MCP)이란 무엇인가요?</summary><p>MCP는 Claude 같은 AI 어시스턴트가 외부 데이터 소스와 도구에 접근할 수 있게 해 주는 개방형 표준입니다. 데이터를 내보내 채팅창에 붙여 넣는 대신 어시스턴트가 소스를 직접 조회합니다. 에이전시에는 대시보드가 줄고, 복사·붙여넣기가 줄고, 최신 데이터에 기반한 답을 얻는다는 뜻입니다.</p></details><details><summary>에이전시에는 AI 툴이 몇 개나 필요할까요?</summary><p>정해진 숫자는 없지만 경험칙은 있습니다. 가능한 한 적게, 필요한 만큼 깊게 통합하는 것입니다. 하나의 중앙 워크스페이스, 경쟁사·오디언스·성과를 위한 연결된 데이터 소스, 반복 납품 업무를 위한 자동화면 대부분의 수요를 충족합니다. 도구를 하나 더할 때마다 기능만 늘리는 것이 아니라 워크플로를 측정 가능하게 개선해야 합니다.</p></details><details><summary>에이전시 내 섀도 AI를 어떻게 막을까요?</summary><p>금지만으로는 효과가 크지 않습니다. 공식 도구가 부족하면 직원들이 개인 도구로 옮겨 가기 때문입니다. 실제로 도움이 되는 승인된 인터페이스를 제공하고, 고객 데이터에 대한 명확한 규칙을 세우고, 어떤 도구를 쓰고 있는지 정기적으로 물어보는 편이 낫습니다. 좋은 도구를 제공하면 우회 수단은 필요 없어집니다.</p></details><details><summary>AI 에이전트가 미디어 플래너와 전략가를 대체할까요?</summary><p>현재까지의 근거로는 그렇지 않습니다. Digiday에 따르면 플래닝과 바잉용 에이전트를 개발하는 대형 에이전시 그룹들도 사람의 감독과 승인 기준을 강조합니다. 에이전트는 리포팅이나 모니터링 같은 반복 가능한 업무를 맡고, 판단, 우선순위 설정, 고객사에 대한 책임은 팀에 남습니다.</p></details></section>
+<section class="srcs"><h2>출처</h2><ol><li><a href="https://digiday.com/media-buying/as-agencies-push-agentic-media-future-execs-work-to-ward-off-client-rogue-fears/" rel="noopener" target="_blank">As agencies push agentic media future, execs work to ward off client rogue fears</a> — Digiday, 2026-10-08</li></ol></section>
+<p class="note"><b>이 글을 쓴 이유</b>이 글을 쓴 이유는 많은 에이전시에서 적합한 AI 도구를 찾는 일이 해결책보다 문제의 일부가 되어 버렸기 때문입니다. 대형 에이전시 그룹의 최근 에이전트 발표는 도구의 수보다 통합과 통제가 더 중요해지기 시작했음을 보여 줍니다.</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="이 페이지의 내용"><h4>이 페이지의 내용</h4><a href="#why-do-more-ai-tools-often-deliver-less">AI 도구가 많을수록 성과가 오히려 낮아지는 경우가 많은 이유는 무엇일까요?</a><a href="#why-the-whole-is-more-than-the-sum-of-the-tools">전체가 도구의 합보다 큰 이유</a><a href="#what-is-mcp-and-why-does-it-matter-to-agencies">MCP란 무엇이며 에이전시에 왜 중요할까요?</a><a href="#tool-sprawl-or-integrated-stack-the-comparison">도구 난립과 통합 스택 비교</a><a href="#how-do-you-integrate-ai-tools-in-six-steps">AI 도구를 여섯 단계로 통합하려면?</a><a href="#what-can-independent-agencies-learn-from-the-holding-compani">독립 에이전시는 홀딩 컴퍼니에서 무엇을 배울 수 있을까요?</a><a href="#what-should-you-ask-every-ai-vendor">모든 AI 벤더에게 무엇을 물어야 할까요?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>체급을 뛰어넘을 준비가 되셨습니까?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">대화 시작하기</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defy 로그인</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>저널의 다른 글<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/ko/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="뒷모습을 보이는 신호수가 작은 붉은 표지판이 달린 레버 하나에 손을 얹고, 여러 갈래로 갈라지는 철로를 바라보고 있는 흑백 사진입니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시에서 무엇을 자동화할까: 먼저 답해야 할 세 가지 질문</h3><p>에이전시가 무엇을 자동화할지는 세 가지 질문이 결정합니다. 결정의 복잡성, 잠재적 피해, 측정 가능한 성과입니다. 퀵윈부터 시작하십시오.</p><div class="meta"><span>8분 분량</span></div></div></a><a class="card" href="/blog/ko/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="콘크리트 바닥 위에서 다리 하나가 짧아 기울어진 오크 탁자의 흑백 사진입니다. 탁자 위에는 물 한 잔과 서류 더미가 놓여 있고, 짧은 다리 밑에는 작은 붉은 타일이 끼워져 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시 AI 준비도 진단: 가장 약한 차원이 수준을 결정합니다</h3><p>에이전시의 AI 준비도는 가장 강한 차원이 아니라 가장 약한 차원이 결정합니다. 네 가지 요소로 나눈 진단과, 또 하나의 AI 교육이 그 격차를 좀처럼 메우지 못하는 이유를 소개합니다.</p><div class="meta"><span>8분 분량</span></div></div></a><a class="card" href="/blog/ko/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="작은 붉은 펠트 패드 위에서 시계공의 손이 섬세한 기계식 무브먼트를 조립하고 있으며, 뒤쪽 선반에는 대량 생산된 무브먼트 상자들이 놓여 있는 흑백 사진입니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 전환</div><h3>에이전시 AI 전략: Meta와 Google이 자동화할 것은 만들지 마세요</h3><p>플랫폼이 한때 에이전시가 사람을 뽑아 하던 일을 자동화하고 있습니다. Omnicom의 AI 플랫폼 개편은 자체 개발에 드는 비용을 보여 줍니다. 대신 어디에서 경쟁해야 하는지 알아봅니다.</p><div class="meta"><span>9분 분량</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/ko/">← 저널로 돌아가기</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="문의">
+<h2>체급을 뛰어넘을 준비가 되셨습니까?</h2>
+<p>대형 네트워크 에이전시들이 꽁꽁 감춰 온 인텔리전스 스택을 직접 확인해 보십시오. 영업 권유 없이, 편하게 대화만 나눕니다.</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">대화 시작하기</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defy 로그인</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>체급 이상의 성과를 내는 에이전시를 위한 인사이트·자동화 플랫폼.</p></div>
+<div><h4>Defy</h4><a href="/#main">메인</a><a href="/#platform">플랫폼</a><a href="/#clients">고객사</a><a href="/#team">팀</a></div>
+<div class="df-langs"><h4>저널</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>문의</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">로그인</a><a href="/llms.txt">llms.txt</a><a href="/blog/ko/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. 모든 권리 보유.</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

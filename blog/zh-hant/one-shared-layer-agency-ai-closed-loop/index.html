@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>代理商閉環AI系統：搭建一個共享層 | Defy</title>
+<meta name="description" content="十一個工具、二十個負責人、沒有任何共享？本文講解代理商如何用記憶、技能、工作流和審批四個部分，搭建真正的閉環 AI 系統。">
+<link rel="canonical" href="https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="代理商閉環 AI 系統, 受眾資料碎片化, 代理商單一資料來源, 代理商資料孤島, AI 上下文缺失, 營銷技術投資回報">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/one-shared-layer-agency-ai-closed-loop/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/">
+<meta property="og:title" content="代理商閉環 AI：從十一個工具到一個共享層">
+<meta property="og:description" content="十一個工具、二十個負責人、沒有任何共享？本文講解代理商如何用記憶、技能、工作流和審批四個部分，搭建真正的閉環 AI 系統。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d54-zh-hant.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="代理商閉環 AI：從十一個工具到一個共享層">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T13:18:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T13:18:00+08:00">
+<meta property="article:section" content="AI 轉型">
+<meta property="article:tag" content="閉環 AI">
+<meta property="article:tag" content="資料孤島">
+<meta property="article:tag" content="代理商技術棧">
+<meta property="article:tag" content="受眾資料">
+<meta property="article:tag" content="AI 工作流">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="代理商閉環 AI：從十一個工具到一個共享層">
+<meta name="twitter:description" content="十一個工具、二十個負責人、沒有任何共享？本文講解代理商如何用記憶、技能、工作流和審批四個部分，搭建真正的閉環 AI 系統。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d54-zh-hant.jpg">
+<meta name="twitter:image:alt" content="代理商閉環 AI：從十一個工具到一個共享層">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy 洞察" href="/blog/zh-hant/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+TC:wght@400;500;700&amp;family=Noto+Serif+TC:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/#article","url":"https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/","mainEntityOfPage":"https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/","headline":"代理商閉環 AI：從十一個工具到一個共享層","alternativeHeadline":"代理商閉環AI系統：搭建一個共享層","description":"十一個工具、二十個負責人、沒有任何共享？本文講解代理商如何用記憶、技能、工作流和審批四個部分，搭建真正的閉環 AI 系統。","abstract":"別再加工具，而是搭建一個所有工具都從中讀取的共享層：記憶（唯一的資訊源）、技能（編碼好的重複性工作）、工作流（工作實際如何流轉）和審批（交付前必須有人簽字）。然後把環閉合起來，讓每通電話、每封郵件、每個決定都記錄在 AI 看得到的地方。你記錄的缺口，就是 AI 認知的缺口。","image":["https://defygroup.ai/assets/blog/og/d54-zh-hant.jpg","https://defygroup.ai/assets/blog/hero/d54.jpg","https://defygroup.ai/assets/blog/diagrams/d54-diagram.jpg"],"datePublished":"2026-10-16T13:18:00+08:00","dateModified":"2026-10-16T13:18:00+08:00","inLanguage":"zh-Hant","author":{"@type":"Organization","name":"Defy 編輯部","url":"https://defygroup.ai/blog/zh-hant/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"AI 轉型","keywords":"代理商閉環 AI 系統, 受眾資料碎片化, 代理商單一資料來源, 代理商資料孤島, AI 上下文缺失, 營銷技術投資回報","wordCount":1930,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/zh-hant/#blog","name":"Defy — Defy 洞察"},"about":[{"@type":"Thing","name":"閉環 AI"},{"@type":"Thing","name":"資料孤島"},{"@type":"Thing","name":"代理商技術棧"},{"@type":"Thing","name":"受眾資料"},{"@type":"Thing","name":"AI 工作流"}],"citation":[{"@type":"CreativeWork","name":"Martech value gap poses threat to agency retention, Ingenuity Pulse report finds","url":"https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb","datePublished":"2026-09-24","publisher":{"@type":"Organization","name":"Campaign UK"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/one-shared-layer-agency-ai-closed-loop/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"代理公司的閉環 AI 系統是什麼？","acceptedAnswer":{"@type":"Answer","text":"它是這樣一種機制：從首次接觸到最終交付，流程中的每一步都在共享記憶裡留下記錄，下一步無論是人還是 AI 智慧體都能讀取。重要資訊不會只存在於私聊或某個人的腦子裡，因此 AI 是在完整的上下文中工作，而不是靠猜。"}},{"@type":"Question","name":"搭建共享層，必須替換現有工具嗎？","acceptedAnswer":{"@type":"Answer","text":"通常不必。共享層的關鍵是約定一個所有東西都從中讀取、向其寫入的記憶，把重複性工作編碼下來，並加上審批。很多代理商可以圍繞已經在用的 CRM 或專案管理工具來搭建。更難的是行為改變：堅持記錄，並淘汰彼此重複的工具。"}},{"@type":"Question","name":"代理商應該如何處理 WhatsApp 上的客戶溝通？","acceptedAnswer":{"@type":"Answer","text":"把它當作記錄的一部分。即時通訊應用是常見的客戶溝通渠道，在亞洲尤其如此，但在那裡做出的決定，團隊其他人和 AI 都看不到。與客戶約定不同渠道的用途，並按照資料保護義務，把關鍵決定的摘要記錄到共享記憶中。"}},{"@type":"Question","name":"每次客戶通話應該記錄什麼？","acceptedAnswer":{"@type":"Answer","text":"記錄下一步需要用到的一切。對新業務來說，通常包括預算、時間節點、決策人、競爭對手以及成功的標準。提前把問題寫好，因為如果從來沒問過預算，等到起草提案時，你的團隊和 AI 都不會知道。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"洞察","item":"https://defygroup.ai/blog/zh-hant/"},{"@type":"ListItem","position":3,"name":"代理商閉環 AI：從十一個工具到一個共享層","item":"https://defygroup.ai/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">本頁目錄</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — 首頁"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="Primary">
+<a href="/#main">首頁</a>
+<a href="/#platform">平臺</a>
+<a href="/#clients">客戶</a>
+<a href="/#team">團隊</a>
+<a href="/blog/zh-hant/" class="on">洞察</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">登入</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">聯絡我們</a>
+<button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/#main">首頁</a><span>/</span><a href="/blog/zh-hant/">洞察</a><span>/</span><span>AI 轉型</span></nav>
+<header class="a-head">
+<div class="eyebrow">AI 轉型</div>
+<h1 itemprop="headline">代理商閉環 AI：從十一個工具到一個共享層<span class="sq"></span></h1>
+<p class="dek" itemprop="description">工具碎片化讓代理商的 AI 只能靠猜。由記憶、技能、工作流和審批組成的共享層，加上閉環記錄，才能讓人和 AI 看到全貌。</p>
+<div class="a-meta">
+<span><b>Defy 編輯部</b></span>
+<span>釋出於 <time datetime="2026-10-16T13:18:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+<span>6 分鐘閱讀</span>
+<span class="langs"><details class="lsw"><summary aria-label="語言: 繁體中文"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>繁體中文</span></summary><div class="lsw-p"><div class="lsw-h">其他語言版本</div><a href="/blog/one-shared-layer-agency-ai-closed-loop/" hreflang="en" lang="en">English</a><a href="/blog/fr/one-shared-layer-agency-ai-closed-loop/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/one-shared-layer-agency-ai-closed-loop/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/one-shared-layer-agency-ai-closed-loop/" hreflang="es" lang="es">Español</a><a href="/blog/pt/one-shared-layer-agency-ai-closed-loop/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/one-shared-layer-agency-ai-closed-loop/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/one-shared-layer-agency-ai-closed-loop/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/one-shared-layer-agency-ai-closed-loop/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/one-shared-layer-agency-ai-closed-loop/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/one-shared-layer-agency-ai-closed-loop/" hreflang="zh-Hant" lang="zh-Hant" aria-current="true">繁體中文</a><a href="/blog/ja/one-shared-layer-agency-ai-closed-loop/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/one-shared-layer-agency-ai-closed-loop/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/one-shared-layer-agency-ai-closed-loop/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/one-shared-layer-agency-ai-closed-loop/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/one-shared-layer-agency-ai-closed-loop/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/one-shared-layer-agency-ai-closed-loop/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d54-768.webp 768w, /assets/blog/hero/d54-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d54.jpg" alt="黑白照片：長會議桌的每個空座位前各放著一堆筆記本、手機和電腦，一個人背對鏡頭把筆記抄進一本共用的大帳簿，帳簿上有一個紅色小書籤。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="這篇文章回答的問題">
+<div class="eyebrow">這篇文章回答的問題</div>
+<p class="q">“客戶資料和受眾資料太分散，怎樣整合才能讓我們的 AI 工具看到全貌？”</p>
+<p class="ans"><b>簡短回答</b>別再加工具，而是搭建一個所有工具都從中讀取的共享層：記憶（唯一的資訊源）、技能（編碼好的重複性工作）、工作流（工作實際如何流轉）和審批（交付前必須有人簽字）。然後把環閉合起來，讓每通電話、每封郵件、每個決定都記錄在 AI 看得到的地方。你記錄的缺口，就是 AI 認知的缺口。</p>
+</section>
+<section class="kt takeaways"><h2>要點速覽</h2><ul><li>十一個工具、二十個負責人、沒有任何共享，結果是每個工具只知道一小塊，沒有人（包括 AI）能看到全域性。</li><li>代理商 AI 的共享層由四部分組成：記憶（唯一的資訊源）、技能（編碼好的重複性工作）、工作流（工作實際如何流轉）和審批（交付前有人簽字）。</li><li>當每一步都留下下一步可讀取的記錄，AI 系統才算閉環；沒錄入的通話和 WhatsApp 私聊裡的決定，都是 AI 只能靠猜來填補的缺口。</li><li>如果你在通話裡沒問預算，AI 就不知道預算，所以閉環會改變人們在會議上提出的問題。</li><li>據 Campaign 報道，Ingenuity Pulse 報告發現只有三分之一的營銷人對營銷技術投資效果滿意，讓技術棧的可見價值成為代理商留住客戶的關鍵。</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>客戶資料和受眾資料太分散，怎樣整合才能讓 AI 工具看到全貌？別再加工具，而是搭建一個所有工具都從中讀取的共享層。然後把環閉合起來，讓每一次對話、每一個決定、每一次審批都落在 AI 能看到的地方。你記錄的缺口，就是 AI 認知的缺口。</p>
+<p>代理商在這件事上出錯，客戶是看得到的。據英國行業媒體 <a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Campaign</a> 報道，Ingenuity Pulse 報告發現，只有三分之一的營銷人對自己的營銷技術（martech）投資效果感到滿意，而這種不滿正在成為代理商客戶關係的風險。無法證明技術棧價值的代理商，更容易丟掉客戶。</p>
+<p>本週在新加坡一場 AI 落地分享會上，一位代理公司創始人用一頁幻燈片概括了同一個問題在公司內部的版本：十一個工具，二十個負責人，沒有任何共享。</p>
+<h2 id="s1">為什麼 AI 工具越多，代理商知道的反而越少？</h2>
+<p>因為每個工具只知道一小塊，沒有人掌握全域性。社交聆聽工具知道對話，廣告平臺知道花費，CRM 知道聯絡記錄——前提是有人記得錄入，聊天機器人則只知道今天早上被貼上進去的東西。</p>
+<p>在一家 20 人的代理公司裡，每個工具往往都有一個"主人"。效果營銷負責人掌管競價指令碼，社媒經理掌管聆聽儀表盤，客戶總監真正的客戶認知則躺在 WhatsApp 私聊裡。每個人的工具組合都對自己有用，但對公司沒用，對 AI 也沒用。</p>
+<p>這位創始人親身經歷過：18 個月試圖把公司變成 AI 原生，結果是一堆互不相通的工具和技能。他的解法不是再加一個工具，而是在所有工具下面加一層。</p>
+<h2 id="s2">什麼是代理商 AI 的共享層？</h2>
+<p>如圖所示，左邊散落的工具匯入右邊的一個共享層，共享層由四部分組成。標籤來自他的演講，代理商案例是我們補充的。</p>
+<div class="tw"><table>
+<thead><tr><th>層</th><th>含義</th><th>代理商案例</th></tr></thead>
+<tbody>
+<tr><td>記憶（Memory）</td><td>所有東西都從中讀取的唯一資訊源</td><td>brief、通話記錄、決策和投放資料集中在一處，而不是分散在五處</td></tr>
+<tr><td>技能（Skills）</td><td>把可重複的工作編碼下來</td><td>競品審計、月報和創意 brief，寫一次，反覆用</td></tr>
+<tr><td>工作流（Workflow）</td><td>工作實際如何流轉</td><td>從 brief 到創意、審批再到上線，按團隊真實的做法而不是 SOP 來梳理</td></tr>
+<tr><td>審批（Approvals）</td><td>交付前必須有人簽字</td><td>指定負責人籤批預算調整、客戶報告以及任何公開內容</td></tr>
+</tbody>
+</table></div>
+<p>順序很重要。沒有記憶的技能只能產出泛泛之作，因為它不瞭解客戶；沒有審批的工作流只會更快地把錯誤交出去。記憶是地基，其他一切都從它讀取。</p>
+<figure class="diagram"><picture><source type="image/webp" srcset="/assets/blog/diagrams/d54-diagram-1536.webp"><img src="/assets/blog/diagrams/d54-diagram.jpg" alt="示意圖：左側十一個散落的工具匯入右側一個共享層，共享層由 Memory（記憶）、Skills（技能）、Workflow（工作流）和 Approvals（審批）組成。" width="1536" height="1024" loading="lazy"></picture><figcaption>從十一個散落的工具，到由記憶、技能、工作流和審批組成的共享層。框架分享自 2026 年 10 月新加坡的一場 AI 落地分享會。</figcaption></figure><h2 id="s3">什麼樣的 AI 系統才算閉環？</h2>
+<p>閉環意味著流程中的每一步都會留下記錄，下一步——無論是人還是 AI——都能讀取。開環則處處是缺口：有人沒把通話錄進 CRM，或者真正的決定是在 WhatsApp 私聊裡做出的，這位創始人指出，這在亞洲非常普遍。每個缺口都是缺失的上下文，而 AI 會用猜測來填補缺失的上下文。</p>
+<p>他以自己的新業務流程為例，展示了一個閉環：每個階段都匯入同一個 CRM。</p>
+<ul>
+<li><strong>潛在客戶：</strong>第一封郵件或第一條 WhatsApp 訊息被記錄下來，而不是留在某人的手機裡。</li>
+<li><strong>銷售通話：</strong>AI 會議記錄工具記下對話，待辦事項流入專案管理工具。</li>
+<li><strong>審計：</strong>智慧體工作流利用這些上下文完成潛在客戶審計。</li>
+<li><strong>提案：</strong>根據審計結果起草，再由人簽字確認。</li>
+<li><strong>比稿：</strong>記錄筆記，包括客戶提出的問題，並回填到系統裡。</li>
+</ul>
+<p>他最犀利的一點是關於提問的：如果你在通話裡沒問預算，AI 就不知道預算。閉環會改變人們在會議中的行為，因為他們不只是在為自己提問，也是在為系統提問。</p>
+<h2 id="s4">為什麼碎片化總是反覆出現？</h2>
+<p>資訊不對稱理論描述的是一方比另一方知道得更多時會發生什麼：決策變差，信任流失，資訊更多的一方掌握主動。經濟學家通常用它來分析買賣雙方，而代理公司內部每天都在經歷它。</p>
+<p>客戶總監知道客戶真實的預算，策劃不知道；策劃知道受眾洞察，創意團隊拿到的只是摘要的摘要。而 AI 知道得最少，因為它只能看到進入系統的那部分。客戶關係也存在同樣的問題，只是規模更大。正如 Campaign 的報道所顯示的，當許多客戶看不到自己的營銷技術到底帶來了什麼，代理商就要揹負這份懷疑。</p>
+<p>本文背後的洞察很簡短：協作戰勝低效。共享層就是把協作變成結構，它縮小了一個人知道的東西與所有人（包括 AI）能用的東西之間的差距。</p>
+<h2 id="s5">怎樣在代理公司裡搭建閉環？</h2>
+<ol>
+<li><strong>從一個工作流開始。</strong>新業務是很好的候選：價值高、可重複，而且通常漏洞很多。</li>
+<li><strong>列出資訊進入的每一個入口。</strong>郵件、WhatsApp、電話、會議、共享盤、平臺儀表盤。對私聊渠道要誠實。</li>
+<li><strong>選定唯一的記憶。</strong>通常是 CRM 或專案管理工具。約定：不在系統裡，就等於沒發生。</li>
+<li><strong>為每次通話寫好問題清單。</strong>預算、時間節點、決策人、成功的標準。不問，就沒有答案可記錄。</li>
+<li><strong>規範地記錄對話。</strong>在各方都同意的情況下使用 AI 會議記錄工具，線下會議結束後立即整理紀要。</li>
+<li><strong>把可重複的工作編碼成技能。</strong>審計、提案大綱和報告，都設計成從記憶中讀取。</li>
+<li><strong>每個審批都指定一個人。</strong>提案、預算調整和對客產出，都要有人簽字。</li>
+<li><strong>每月覆盤缺口。</strong>AI 在哪裡缺了上下文？追溯到沒有記錄的那一步，然後修好它。</li>
+</ol>
+<h2 id="s6">共享層如何幫助代理商向客戶證明價值？</h2>
+<p>Campaign 報道的營銷技術價值落差，部分是一個可見性問題。如果代理商自己的知識都是零散的，就無法向客戶展示一條從資料到決策再到結果的清晰鏈條。</p>
+<p>共享層讓這條鏈條變得可見，也改變了市場和受眾洞察到達團隊的方式。人們不必再從又一個儀表盤裡匯出資料，而是在自己本來就在用的地方直接提問。Defy MCP 正是這樣設計的：團隊在 Claude 裡直接追問客戶和品類資料，像和同事對話一樣，無需學習儀表盤。資料來自 Defy Monitor 的實時競品、受眾與社交對話洞察，而且每個 AI 結論都能追溯到背後的真實帖子。</p>
+<p>你可以在 <a href="/#platform">Defy 平臺</a>上看到監測、MCP 和智慧體如何組合在一起。但無論用不用我們，原則都成立：更少的孤島，唯一的記憶，交付前有人簽字。</p></div>
+<aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>協作戰勝低效。</blockquote><p>資訊不對稱理論解釋了為什麼一個人知道、另一個人不知道時決策會變差。在代理公司裡，資訊最少的一方往往是 AI 本身；一個閉環的共享層能縮小這道鴻溝。</p></aside>
+<section class="prop" aria-label="Defy 如何幫助您">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Defy 如何幫助您<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy 為代理商提供一個人和 AI 都能讀取的共享市場與受眾洞察來源。</p><ul><li><strong>Defy Monitor</strong> 追蹤你服務的每個客戶和品類中的競品、受眾和社交對話。</li><li><strong>Defy MCP</strong> 讓團隊在 Claude 裡直接追問這些資料，像和同事對話一樣，無需再學一個儀表盤。</li><li><strong>答案可核查：</strong>每個 AI 結論都能追溯到背後的真實帖子，讓審批者牢牢掌握主動。</li></ul><p>先梳理一個漏洞百出的工作流，決定哪些內容應進入共享記憶，再來和我們聊聊市場與受眾這一層。</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E4%BB%A3%E7%90%86%E5%95%86%E9%97%AD%E7%8E%AF%20AI%EF%BC%9A%E4%BB%8E%E5%8D%81%E4%B8%80%E4%B8%AA%E5%B7%A5%E5%85%B7%E5%88%B0%E4%B8%80%E4%B8%AA%E5%85%B1%E4%BA%AB%E5%B1%82" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D54'})}catch(e){}">開始對話</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D54'})}catch(e){}">登入 Defy</a></div>
+</section>
+<section class="faq" aria-label="常見問題"><h2>常見問題</h2><details open><summary>代理公司的閉環 AI 系統是什麼？</summary><p>它是這樣一種機制：從首次接觸到最終交付，流程中的每一步都在共享記憶裡留下記錄，下一步無論是人還是 AI 智慧體都能讀取。重要資訊不會只存在於私聊或某個人的腦子裡，因此 AI 是在完整的上下文中工作，而不是靠猜。</p></details><details><summary>搭建共享層，必須替換現有工具嗎？</summary><p>通常不必。共享層的關鍵是約定一個所有東西都從中讀取、向其寫入的記憶，把重複性工作編碼下來，並加上審批。很多代理商可以圍繞已經在用的 CRM 或專案管理工具來搭建。更難的是行為改變：堅持記錄，並淘汰彼此重複的工具。</p></details><details><summary>代理商應該如何處理 WhatsApp 上的客戶溝通？</summary><p>把它當作記錄的一部分。即時通訊應用是常見的客戶溝通渠道，在亞洲尤其如此，但在那裡做出的決定，團隊其他人和 AI 都看不到。與客戶約定不同渠道的用途，並按照資料保護義務，把關鍵決定的摘要記錄到共享記憶中。</p></details><details><summary>每次客戶通話應該記錄什麼？</summary><p>記錄下一步需要用到的一切。對新業務來說，通常包括預算、時間節點、決策人、競爭對手以及成功的標準。提前把問題寫好，因為如果從來沒問過預算，等到起草提案時，你的團隊和 AI 都不會知道。</p></details></section>
+<section class="srcs"><h2>參考來源</h2><ol><li><a href="https://www.campaignlive.co.uk/article/martech-value-gap-poses-threat-to-agency-retention-ingenuity-pulse-report-finds/4mt1wdw292ab3wx7ngbtgq7cwb" rel="noopener" target="_blank">Martech value gap poses threat to agency retention, Ingenuity Pulse report finds</a> — Campaign UK, 2026-09-24</li></ol></section>
+<p class="note"><b>我們為什麼寫這篇</b>我們寫這篇文章，是因為受眾和客戶資料碎片化，是代理商策略人員最常搜尋解決辦法的難題之一，而 Campaign 關於營銷技術價值落差的報道表明，客戶也注意到了。</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="本頁目錄"><h4>本頁目錄</h4><a href="#s1">為什麼 AI 工具越多，代理商知道的反而越少？</a><a href="#s2">什麼是代理商 AI 的共享層？</a><a href="#s3">什麼樣的 AI 系統才算閉環？</a><a href="#s4">為什麼碎片化總是反覆出現？</a><a href="#s5">怎樣在代理公司裡搭建閉環？</a><a href="#s6">共享層如何幫助代理商向客戶證明價值？</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>準備好以小博大了嗎？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">開始對話</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">登入 Defy</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>更多洞察<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/zh-hant/before-you-automate-three-questions-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d60-768.webp"><img src="/assets/blog/hero/d60.jpg" alt="黑白照片：訊號員背對鏡頭，手搭在一根帶紅色小牌的拉桿上，望向窗外分成數條岔道的鐵軌。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 轉型</div><h3>代理商該自動化什麼？動手前先回答三個問題</h3><p>決定代理商該自動化什麼的，是三個問題：決策複雜度、潛在損害和可衡量的結果。從速贏專案開始。</p><div class="meta"><span>7 分鐘閱讀</span></div></div></a><a class="card" href="/blog/zh-hant/agency-ai-readiness-four-dimensions/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d59-768.webp"><img src="/assets/blog/hero/d59.jpg" alt="黑白照片：一張橡木桌因一條桌腿較短而傾斜地立在水泥地上，桌上放著一杯水和一疊紙，短腿下方有一塊紅色小方磚。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 轉型</div><h3>AI 就緒度評估：代理商最弱的一環決定成敗</h3><p>代理商的 AI 就緒程度由最弱的維度決定，而不是最強的。一套四維度評估法，以及為什麼再上一門 AI 課也很難補上短板。</p><div class="meta"><span>7 分鐘閱讀</span></div></div></a><a class="card" href="/blog/zh-hant/dont-build-what-platforms-automate-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d57-768.webp"><img src="/assets/blog/hero/d57.jpg" alt="黑白照片：鐘錶匠的雙手在一塊紅色小氈墊上組裝精密的機械機芯，身後的架子上擺滿一盒盒批次生產的機芯。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">AI 轉型</div><h3>代理商 AI 戰略：平臺會自動化的，別自己造</h3><p>平臺正在自動化代理商過去招人來做的工作。Omnicom 的 AI 平臺變動說明了自建的代價，代理商該把精力放在哪裡？</p><div class="meta"><span>8 分鐘閱讀</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/zh-hant/">← 返回洞察首頁</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contact">
+<h2>準備好以小博大了嗎？</h2>
+<p>來看看大型廣告集團秘而不宣的智慧體系。不推銷——只聊聊。</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">開始對話</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">登入 Defy</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>The insight &amp; automation platform for agencies that punch above their weight.</p></div>
+<div><h4>Defy</h4><a href="/#main">首頁</a><a href="/#platform">平臺</a><a href="/#clients">客戶</a><a href="/#team">團隊</a></div>
+<div class="df-langs"><h4>洞察</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>聯絡</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">登入</a><a href="/llms.txt">llms.txt</a><a href="/blog/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. 保留所有權利。</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

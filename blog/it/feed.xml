@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Il Defy Journal</title>
+<link>https://defygroup.ai/blog/it/</link>
+<description>Appunti dal campo sull'economia delle agenzie, sull'adozione dell'AI e sull'arte dell'insight, scritti per le agenzie indipendenti, i team in-house e chiunque sia stanco di essere surclassato dai grandi network.</description>
+<language>it</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/it/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Cosa automatizzare in agenzia: tre domande a cui rispondere prima</title>
+<link>https://defygroup.ai/blog/it/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/before-you-automate-three-questions-agencies/</guid>
+<description>Prima di automatizzare, chiediti quanto è complessa la decisione, quanto danno può fare un output sbagliato e quale risultato misurabile migliora. Una guida per agenzie.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>Valutazione della maturità AI per agenzie: perché decide la dimensione più debole</title>
+<link>https://defygroup.ai/blog/it/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-ai-readiness-four-dimensions/</guid>
+<description>Contesto, persone, processi, piattaforma: una valutazione pratica della maturità AI per agenzie, e perché i corsi di AI da soli non risolvono l'anello più debole.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>La resistenza all'AI nelle agenzie è un problema di standard, non di persone</title>
+<link>https://defygroup.ai/blog/it/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-resistance-standards-not-people/</guid>
+<description>I tuoi migliori non resistono all'AI, ma all'output scadente. Perché la resistenza all'AI segnala un gap di qualità e come colmarlo senza burnout.</description>
+<category>Talenti e cultura</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategia AI per agenzie: non costruire ciò che Meta e Google automatizzeranno</title>
+<link>https://defygroup.ai/blog/it/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta e Google automatizzano targeting, creazione degli annunci e setup delle campagne. Una strategia AI più lucida: compra gli strumenti, competi dove il giudizio è il prodotto.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>Metriche AI per le agenzie: perché i clienti pagano per i risultati, non per l'uso</title>
+<link>https://defygroup.ai/blog/it/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/measure-ai-results-not-usage-agencies/</guid>
+<description>Licenze, agenti e asset generati sono vanity metric. Le metriche AI che i clienti apprezzano: costo per output, velocità, tasso di errore e profitto.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>Come misurare il ROI dell'AI in un'agenzia: definisci il successo prima di implementarla</title>
+<link>https://defygroup.ai/blog/it/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/define-success-before-deploying-ai-agency/</guid>
+<description>Baseline, obiettivo, test, verifica: come misurare il ROI dell'AI in agenzia, contando i tempi di controllo e l'AI drag, e capire se l'automazione paga.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>AI a ciclo chiuso per agenzie: da undici strumenti a un unico livello condiviso</title>
+<link>https://defygroup.ai/blog/it/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>Undici strumenti, venti responsabili, niente in comune? Come costruire un sistema AI a ciclo chiuso: memoria, skill, workflow e approvazioni.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>Ruoli AI in agenzia: smetti di fare dell'AI il lavoro di tutti</title>
+<link>https://defygroup.ai/blog/it/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>Non tutti in agenzia devono costruire l'AI. Come builder, user e approver proteggono qualità, carriere e lavoro mentre l'AI ridisegna le agenzie.</description>
+<category>Talenti e cultura</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>Agenzia AI-native: perché la velocità non è progresso, e i 5 livelli che lo sono</title>
+<link>https://defygroup.ai/blog/it/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/speed-is-not-progress-ai-native-agencies/</guid>
+<description>Cos'è davvero un'agenzia AI-native, i cinque livelli di adozione dell'AI e perché conviene fermarsi a quello che risolve il tuo collo di bottiglia.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>Adozione dell'AI in agenzia: documenta il workflow reale prima di automatizzare</title>
+<link>https://defygroup.ai/blog/it/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-bad-process-document-workflows-first/</guid>
+<description>AI su un processo sbagliato: errori più veloci. Mappa il workflow reale, trova il collo di bottiglia e solo dopo decidi cosa automatizzare.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI e comportamento dei consumatori: perché le agenzie devono ripensare il proprio lavoro di insight</title>
+<link>https://defygroup.ai/blog/it/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>Come l'AI cambia il comportamento dei consumatori e perché le agenzie devono ripensare l'insight: tre cambiamenti, una trappola dei dati, sei passi.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>Il problema del cold start: come personalizzare gli annunci senza dati sugli utenti</title>
+<link>https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/</guid>
+<description>Il cold start nella pubblicità: come personalizzare per i nuovi utenti senza dati di terze parti, grazie a persona costruite su contenuti pubblici.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>Natale 2026: il social listening come sistema di allerta precoce per le agenzie</title>
+<link>https://defygroup.ai/blog/it/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/christmas-2026-social-listening-early-warning/</guid>
+<description>Social listening per il Natale: i segnali da monitorare ora per proteggere i budget del Q4 – con tabella dei segnali e piano in sei passi.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>Strumenti AI per agenzie: come MCP ti porta fuori dalla giungla dei tool</title>
+<link>https://defygroup.ai/blog/it/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-tools-agencies-mcp-integration/</guid>
+<description>Strumenti AI per agenzie: perché troppi tool fanno perdere tempo, che cosa cambia con MCP e come costruire uno stack AI snello in sei passi.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>Modelli di pricing per agenzie e AI: prezza il giusto, non regalare il margine</title>
+<link>https://defygroup.ai/blog/it/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-pricing-models-fair-ai-pricing/</guid>
+<description>Modelli di pricing per agenzie nell'era dell'AI: perché non regalare i guadagni di efficienza e quali strutture di fee proteggono davvero il margine.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>Restringere l'offerta di servizi dell'agenzia: cosa smettere di fare, e quando</title>
+<link>https://defygroup.ai/blog/it/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/when-to-stop-an-agency-service/</guid>
+<description>Restringere l'offerta dell'agenzia: i segnali che un servizio è al capolinea, un metodo in sei passi e i dati da controllare prima di decidere.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>Misurare l'engagement cross-platform: è ora di pensionare il foglio di calcolo delle agenzie</title>
+<link>https://defygroup.ai/blog/it/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/measure-cross-platform-engagement-agencies/</guid>
+<description>Misurare l'engagement cross-platform in modo affidabile: definizioni condivise, metriche normalizzate, un caso sportivo e criteri per scegliere gli strumenti.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>Sindrome dell'impostore in agenzia: ricostruire la fiducia nell'era dell'AI</title>
+<link>https://defygroup.ai/blog/it/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/imposter-syndrome-agencies-ai-era/</guid>
+<description>Sindrome dell'impostore in agenzia: perché l'AI alimenta i dubbi, soprattutto tra i junior, e come costruire una fiducia basata sulle prove, non sulla spavalderia.</description>
+<category>Talenti e cultura</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>Ricerca senza rispondenti: le personas sintetiche sono una promessa o un miraggio?</title>
+<link>https://defygroup.ai/blog/it/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/respondent-free-research-synthetic-personas/</guid>
+<description>Personas sintetiche e ricerca senza rispondenti: quanto valgono per gli insight generazionali, dove falliscono e come ancorarle alla realtà.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>Agenzie media e AI: cosa significa la nuova era per le indipendenti</title>
+<link>https://defygroup.ai/blog/it/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/media-agencies-new-ai-era-independents/</guid>
+<description>Agenzie media e AI: l'esecuzione si comprime e il valore sale verso la consulenza. Cosa cambia per le indipendenti e da dove cominciare.</description>
+<category>Tipi di agenzia</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>Remunerazione delle agenzie: come dimostrare il valore con i dati social</title>
+<link>https://defygroup.ai/blog/it/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-remuneration-social-data-proof-of-value/</guid>
+<description>L'AACC francese vuole superare la remunerazione a tempo. Come trasformare i dati social in prove tracciabili del tuo valore, passo dopo passo.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>Metriche di engagement che contano per i clienti (e quelle di sola facciata)</title>
+<link>https://defygroup.ai/blog/it/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/engagement-metrics-clients-value/</guid>
+<description>Quali metriche di engagement contano davvero per i clienti? Separa vanity metric e risultati, confronta le piattaforme e crea report utili a decidere.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>Black Friday per agenzie: automatizza i report, recupera tempo per ottimizzare</title>
+<link>https://defygroup.ai/blog/it/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/black-friday-agencies-automate-reporting/</guid>
+<description>Sei settimane al Black Friday 2026. Un piano Black Friday per agenzie: automatizza report e alert e libera il team per ottimizzare durante il picco.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>Content marketing B2B che non fa addormentare chi decide</title>
+<link>https://defygroup.ai/blog/it/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/b2b-content-marketing-that-engages/</guid>
+<description>Il content marketing B2B non deve essere noioso. Parti dalle tensioni reali dei buyer, testa i concept prima del media e genera lead qualificati.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI e fine del modello holding: lezioni per le agenzie indipendenti</title>
+<link>https://defygroup.ai/blog/it/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-holding-company-model-independent-agencies/</guid>
+<description>I tagli di WPP e il calo dei fee mostrano l'AI che rimodella le holding. Cosa cambia e come l'AI per agenzie indipendenti le aiuta a guadagnare terreno.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>Consumo dei media frammentato: capire il pubblico oltre le dashboard</title>
+<link>https://defygroup.ai/blog/it/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/fragmented-media-consumption-audience-data/</guid>
+<description>Il consumo dei media frammentato disperde i dati su ogni canale. Scopri come unificarli in personas e tensioni reali e pianificare meglio.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>Pitch d'agenzia in Brasile: le nuove regole premiano chi porta le prove</title>
+<link>https://defygroup.ai/blog/it/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/brazil-agency-pitches-category-intelligence/</guid>
+<description>La guida Abracom/ABA sui pitch in Brasile ora ha 10 passi. Come usare comportamento dei consumatori e dati di categoria per vincere con le prove.</description>
+<category>New business</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>Differenziare il brand con l'AI: come non suonare come i competitor</title>
+<link>https://defygroup.ai/blog/it/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>Differenziare il brand con l'AI: come mappare ciò che la tua categoria già dice, trovare territori liberi e testare le idee prima di investire in media.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>Burnout in agenzia: meno attività ripetitive, più tempo per la creatività</title>
+<link>https://defygroup.ai/blog/it/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-burnout-automate-repetitive-work/</guid>
+<description>Burnout in agenzia: distingui pressione creativa e carico ripetitivo, scopri cosa automatizzare e segui un piano in cinque passi per il tuo team.</description>
+<category>Talenti e cultura</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>Dazi e strategia di marketing: come riequilibrare messaggi e budget</title>
+<link>https://defygroup.ai/blog/it/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>Dazi e strategia di marketing: come leggere l’impatto sulla tua categoria, rivedere i messaggi mercato per mercato e spostare il budget senza bloccarti.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>Social listening per agenzie: perché il report trimestrale arriva già in ritardo</title>
+<link>https://defygroup.ai/blog/it/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/continuous-social-listening-agencies/</guid>
+<description>Social listening per agenzie: come passare dal report trimestrale al monitoraggio continuo dei trend di consumo, con un metodo pratico in sei passi.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>Analisi dei dati con l'AI nel marketing: conclusioni che i tuoi clienti possono verificare</title>
+<link>https://defygroup.ai/blog/it/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-data-analysis-verifiable-conclusions/</guid>
+<description>Analisi dei dati con l'AI nel marketing: come abbattere i silos e dare ai clienti conclusioni verificabili, passo dopo passo e con checklist.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>AI per le agenzie indipendenti: perché si consolidano e cosa cambia</title>
+<link>https://defygroup.ai/blog/it/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle unisce quattro società e SAMY compra negli USA. Che ruolo ha l'AI nel consolidamento delle indipendenti e come scegliere la tua via verso la scala.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>Pubblicità personalizzata senza perdere la fiducia: una guida per le agenzie</title>
+<link>https://defygroup.ai/blog/it/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ad-personalisation-without-third-party-data/</guid>
+<description>Come personalizzare gli annunci per pubblici di nicchia come il calcio femminile, senza dati di terze parti e senza tradire la fiducia della community.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>Media planning con l'AI: dai dati demografici alle vere tensioni dei consumatori</title>
+<link>https://defygroup.ai/blog/it/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/media-planning-real-personas-ai/</guid>
+<description>Con l'AI nel media planning passi dai dati demografici alle vere tensioni del tuo pubblico: un metodo in sette passi e una tabella di confronto.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>Dati sui consumi media a Singapore: di cosa fidarsi mentre i network si ridimensionano</title>
+<link>https://defygroup.ai/blog/it/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/apac-agencies-market-intelligence/</guid>
+<description>Dove trovare dati sui consumi media a Singapore, quali fonti usare per cosa e come costruire market intelligence in autonomia, senza un network.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>Come l'AI cambia ogni tipo di agenzia di marketing: dalle creative a quelle di influencer</title>
+<link>https://defygroup.ai/blog/it/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/how-ai-disrupts-each-agency-type/</guid>
+<description>Come l'AI cambia agenzie creative, media, CRM, PR e influencer: quali attività spariscono prima, cosa acquista valore e quali strumenti AI testare.</description>
+<category>Tipi di agenzia</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>Best practice per creare contenuti con l'AI: un framework di qualità per le agenzie</title>
+<link>https://defygroup.ai/blog/it/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-content-quality-framework-agencies/</guid>
+<description>Best practice per i contenuti AI in agenzia: sette punti di controllo che tutelano il tono di voce, lasciano alle persone le scelte chiave e testano prima dei media.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>Case study di AI marketing con numeri reali, e cosa tralasciano</title>
+<link>https://defygroup.ai/blog/it/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-driven-agency-case-studies/</guid>
+<description>Pochi case study di AI marketing reggono a un esame attento. Ecco quelli con numeri reali, tra cui un aumento previsto dell'8,5%, e come valutare gli altri.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>Organizzazioni di marketing AI-native: cosa comprano ancora i clienti dalle agenzie</title>
+<link>https://defygroup.ai/blog/it/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death gestirà un budget consistente con due persone e un sistema AI creato dall'agenzia. Cosa chiede alle agenzie un marketing AI-native.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategia di pitch per agenzie: vinci con uno sprint di insight sulla categoria in 48 ore</title>
+<link>https://defygroup.ai/blog/it/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/win-agency-pitches-ai-category-insight/</guid>
+<description>Strategia di pitch per agenzie: in 48 ore mappa annunci dei concorrenti, tensioni dell'audience e l'angolo libero. E cosa insegna il caso Publicis.</description>
+<category>New business</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>Come ottimizzare il ROI del budget marketing quando le campagne globali rendono meno del previsto</title>
+<link>https://defygroup.ai/blog/it/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/global-vs-local-campaign-budget/</guid>
+<description>Ottimizza il ROI del budget marketing partendo dalla creatività giusta: la nuova ricerca globale vs locale, una tabella per mercato e sette passi.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>Costi della produzione video con l'AI: perché frame più economici non riducono il budget</title>
+<link>https://defygroup.ai/blog/it/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/ai-video-production-agency-economics/</guid>
+<description>L'AI abbassa il costo di ogni frame, non il budget. Dove sono i veri risparmi, perché i clienti chiedono di più e come prezzare il video con l'AI.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Come raggiungere la Gen Z: pianifica partendo dalle community, non dagli anni di nascita</title>
+<link>https://defygroup.ai/blog/it/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/gen-z-persona-clustering/</guid>
+<description>Le fasce d'età non bastano per un brief. Come raggiungere la Gen Z raggruppando conversazioni reali in personas: metodo in sette passi ed esempio.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>Retail media network e agenzie: chi gestisce davvero il budget?</title>
+<link>https://defygroup.ai/blog/it/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/retail-media-agency-ownership/</guid>
+<description>Le retail media network mettono in competizione agenzie media, commerce, performance e creator. A chi spetta il canale e come vincono le indipendenti.</description>
+<category>Tipi di agenzia</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>L'AI sostituirà le agenzie di marketing? Perché i conti raramente tornano</title>
+<link>https://defygroup.ai/blog/it/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/will-ai-replace-agencies/</guid>
+<description>L'AI sostituirà le agenzie di marketing? Il costo reale di AI più un'assunzione interna, quali attività affidare all'AI e cosa resta alle persone.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>Consolidamento o roster di agenzie? Cosa rivelano StarKist e ServiceNow</title>
+<link>https://defygroup.ai/blog/it/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-consolidation-vs-roster/</guid>
+<description>Consolidamento o roster di specialisti? Cosa insegnano StarKist con Tombras e Stagwell con ServiceNow su come si vincono i grandi clienti.</description>
+<category>New business</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>Agenzia indipendente o holding: come competono gli indipendenti sui dati</title>
+<link>https://defygroup.ai/blog/it/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/independent-agencies-vs-holding-company-data/</guid>
+<description>Agenzia indipendente o holding: dove i network guidano ancora sui dati, dove gli indipendenti li raggiungono e un piano di 90 giorni per colmare il gap.</description>
+<category>Tipi di agenzia</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>Report di influencer marketing: perché è il nuovo campo di battaglia delle agenzie</title>
+<link>https://defygroup.ai/blog/it/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/influencer-agency-reporting-automation/</guid>
+<description>Come fare un report di influencer marketing che dimostri il ROI, anche con decine di nano-influencer: metriche, segnali di fiducia e cosa automatizzare.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>Strumenti di ricerca sull'audience: cosa automatizzare per primo nel planning</title>
+<link>https://defygroup.ai/blog/it/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/future-of-strategy-planners-automate/</guid>
+<description>Quali strumenti di ricerca sull'audience automatizzare per primi? Un ordine pratico delle attività, una checklist per sceglierli e cosa resta umano.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>Pubblicità con AI agentica senza la paura degli agenti fuori controllo: tieni l'umano nel loop</title>
+<link>https://defygroup.ai/blog/it/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agentic-media-human-in-the-loop/</guid>
+<description>L'AI agentica arriva in pubblicità. Come le agenzie tengono l'umano nel loop: soglie di approvazione, responsabili designati e messaggio in mani umane.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>Le audience sintetiche sono in piena ascesa. Ecco come le agenzie le mantengono oneste</title>
+<link>https://defygroup.ai/blog/it/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/synthetic-audiences-agencies-validation/</guid>
+<description>Le audience sintetiche entrano nella pianificazione quotidiana delle agenzie. Dove sono affidabili, dove ingannano e sei passi per validare ogni risultato.</description>
+<category>Insight e strategia</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>Il modello a sprint per agenzie: come andare veloci senza rompere la strategia</title>
+<link>https://defygroup.ai/blog/it/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-sprint-model-speed-strategy/</guid>
+<description>Il modello a sprint vende velocità. Come correre senza rompere la strategia: spina dorsale trimestrale, evidenze fresche, incombenze automatizzate.</description>
+<category>Tipi di agenzia</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>Pre-test creativo: come mettere fine alla guerra tra creatività e performance</title>
+<link>https://defygroup.ai/blog/it/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/creativity-vs-performance-pre-testing/</guid>
+<description>Il pre-test creativo chiude lo scontro creatività-performance: concept valutati prima della spesa media, idee audaci tutelate, decisione finale umana.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>Strumenti di marketing AI per agenzie: costruisci uno stack, non una lista della spesa</title>
+<link>https://defygroup.ai/blog/it/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-ai-stack-integration/</guid>
+<description>Come scegliere strumenti AI per agenzie che si integrino con i sistemi esistenti: checklist di valutazione, piano in sette passi e consigli sui contratti.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>Strategia di differenziazione del brand: trovare l'angolo che la tua categoria ignora</title>
+<link>https://defygroup.ai/blog/it/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/escape-creative-sameness-category-intelligence/</guid>
+<description>Per Sir John Hegarty il marketing è «ripetitivo, scontato, noioso». Differenziare il brand: mappa la categoria e trova l'angolo che nessuno presidia.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>Sovraccarico di dashboard nel marketing: perché le agenzie sostituiscono i login con le domande</title>
+<link>https://defygroup.ai/blog/it/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-dashboard-fatigue-ai-questions/</guid>
+<description>Troppe dashboard, pochi insight? Perché nasce il sovraccarico di dashboard nel marketing e sei passi per passare dai login alle domande decisive.</description>
+<category>Trasformazione AI</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>Come dimostrare il ROI media ai clienti: perché l'MMM è tornato e cosa mostrare</title>
+<link>https://defygroup.ai/blog/it/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/proving-media-roi-agencies-mmm/</guid>
+<description>Il ROAS delle piattaforme non convince più i clienti. Come dimostrare il ROI media con marketing mix modeling, esperimenti e il perché dei risultati.</description>
+<category>Efficacia creativa</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>Remunerazione delle agenzie a risultato: le metriche oltre ROAS e CPA</title>
+<link>https://defygroup.ai/blog/it/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>Il compenso a ore delle agenzie è sceso al 17% dei modelli. Quali metriche, oltre a ROAS e CPA, usare per la remunerazione a risultato e come impostarla.</description>
+<category>Economia delle agenzie</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>Impatto dell'AI sul lavoro in agenzia: come ricostruire la scala di carriera dei junior</title>
+<link>https://defygroup.ai/blog/it/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/it/agency-entry-level-talent-ai/</guid>
+<description>Le agenzie smettono in silenzio di assumere neolaureati mentre l'AI assorbe il lavoro junior. Cosa dicono i dati e come ripensare i ruoli sul giudizio.</description>
+<category>Talenti e cultura</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>

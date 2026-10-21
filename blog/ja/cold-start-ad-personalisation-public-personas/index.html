@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>コールドスタート問題：ユーザーデータなしのパーソナライズ | Defy</title>
+<meta name="description" content="広告のコールドスタート問題の解き方：サードパーティデータを使わず、公開コンテンツから作ったペルソナで新規ユーザーにパーソナライズする方法。">
+<link rel="canonical" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="コールドスタート問題 パーソナライズ, サードパーティデータなし パーソナライズ, ソーシャルリスニング ペルソナ, 新規ユーザー 広告 パーソナライズ, クッキーレス パーソナライゼーション, 合成オーディエンス">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか">
+<meta property="og:description" content="広告のコールドスタート問題の解き方：サードパーティデータを使わず、公開コンテンツから作ったペルソナで新規ユーザーにパーソナライズする方法。">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="インサイトと戦略">
+<meta property="article:tag" content="パーソナライゼーション">
+<meta property="article:tag" content="コールドスタート">
+<meta property="article:tag" content="ペルソナ">
+<meta property="article:tag" content="データプライバシー">
+<meta property="article:tag" content="合成オーディエンス">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか">
+<meta name="twitter:description" content="広告のコールドスタート問題の解き方：サードパーティデータを使わず、公開コンテンツから作ったペルソナで新規ユーザーにパーソナライズする方法。">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-ja.jpg">
+<meta name="twitter:image:alt" content="コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defyジャーナル" href="/blog/ja/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap&amp;family=Noto+Sans+JP:wght@400;500;700&amp;family=Noto+Serif+JP:wght@700;900" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/","headline":"コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか","alternativeHeadline":"コールドスタート問題：ユーザーデータなしのパーソナライズ","description":"広告のコールドスタート問題の解き方：サードパーティデータを使わず、公開コンテンツから作ったペルソナで新規ユーザーにパーソナライズする方法。","abstract":"まずは個人ではなく、ペルソナ単位でパーソナライズしましょう。カテゴリーの公開された会話、コメント、レビュー、クリエイターコンテンツを分析し、明確な動機と葛藤を持つペルソナに集約します。そして、ランディングページ、検索語、コンテキストといった初期シグナルを使って、新規ユーザーをペルソナにマッチングします。接点が積み重なるごとに、自社のファーストパーティデータが当初の仮定に取って代わっていきます。","image":["https://defygroup.ai/assets/blog/og/d49-ja.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"Defy編集部","url":"https://defygroup.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"インサイトと戦略","keywords":"コールドスタート問題 パーソナライズ, サードパーティデータなし パーソナライズ, ソーシャルリスニング ペルソナ, 新規ユーザー 広告 パーソナライズ, クッキーレス パーソナライゼーション, 合成オーディエンス","wordCount":1698,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/ja/#blog","name":"Defy — Defyジャーナル"},"about":[{"@type":"Thing","name":"パーソナライゼーション"},{"@type":"Thing","name":"コールドスタート"},{"@type":"Thing","name":"ペルソナ"},{"@type":"Thing","name":"データプライバシー"},{"@type":"Thing","name":"合成オーディエンス"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"広告におけるコールドスタートとは？","acceptedAnswer":{"@type":"Answer","text":"コールドスタートとは、学習システムが新規ユーザー、新商品、新市場について、まだ行動データを持っていない状況を指します。その場合、パーソナライゼーションは汎用的なメッセージに頼ることになります。広告では、新規顧客、商品の発売、市場参入で特に問題になります。まさに第一印象が重要になる場面です。"}},{"@type":"Question","name":"サードパーティCookieなしでパーソナライズできる？","acceptedAnswer":{"@type":"Answer","text":"できます。コンテキストシグナル、クイズやオンボーディングで得るゼロパーティデータ、自社のファーストパーティデータ、公開コンテンツから作ったペルソナを使えば、購入したCookieプロファイルに頼らずにパーソナライズできます。違いは、最初は個人ではなく、動機を共有するグループに向けてパーソナライズし、接点ごとにターゲティングを磨いていく点です。"}},{"@type":"Question","name":"合成オーディエンスと、公開コンテンツから作るペルソナは何が違う？","acceptedAnswer":{"@type":"Answer","text":"合成オーディエンスは、反応をシミュレートするAIモデルで、多くはアンケート、統計、パネルのデータに基づいています。一方、公開コンテンツから作るペルソナは、コメント、レビュー、クリエイター動画といった実際の発言を集約したものです。前者は迅速なシミュレーションに向き、後者は動機や言葉づかいについて検証可能な根拠を提供します。二つのアプローチは組み合わせることもできます。"}},{"@type":"Question","name":"最初に何人のペルソナが必要？","acceptedAnswer":{"@type":"Answer","text":"始めるには、明確に異なるペルソナが3〜5人あれば、通常は十分です。ペルソナが多いほど精緻に聞こえますが、学習できるだけのデータが集まる前に、予算とクリエイティブの工数を多くのバリエーションに分散させてしまいます。大切なのは、年齢や郵便番号だけでなく、動機とメッセージが本当に異なるペルソナにすることです。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"ジャーナル","item":"https://defygroup.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか","item":"https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">このページの内容</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — メイン"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="メインナビゲーション">
+<a href="/#main">メイン</a>
+<a href="/#platform">プラットフォーム</a>
+<a href="/#clients">クライアント</a>
+<a href="/#team">チーム</a>
+<a href="/blog/ja/" class="on">ジャーナル</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">ログイン</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">ご相談はこちら</a>
+<button class="menu" aria-label="メニュー" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="パンくずリスト"><a href="/#main">ホーム</a><span>/</span><a href="/blog/ja/">ジャーナル</a><span>/</span><span>インサイトと戦略</span></nav>
+<header class="a-head">
+<div class="eyebrow">インサイトと戦略</div>
+<h1 itemprop="headline">コールドスタート問題：ユーザーデータがないとき、広告をどうパーソナライズするか<span class="sq"></span></h1>
+<p class="dek" itemprop="description">新規ユーザー、履歴なし、同意もわずか。エージェンシーは、購入したセグメントではなく、実際の公開された会話から作ったペルソナで、コールドスタート問題をどう解決するのか。</p>
+<div class="a-meta">
+<span><b>Defy編集部</b></span>
+<span>公開日 <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">2026年10月16日</time></span>
+<span>約7分で読めます</span>
+<span class="langs"><details class="lsw"><summary aria-label="言語: 日本語"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>日本語</span></summary><div class="lsw-p"><div class="lsw-h">他の言語で読む</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja" aria-current="true">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="靴職人の手を写したモノクロ写真。棚に並ぶ木型の中から、小さな赤いタグの付いた木製の靴型を取り出している。戸口からは新しい客の影が差し込み、その横にかすかなチョークの足跡が見える。" width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="この記事が答える問い">
+<div class="eyebrow">この記事が答える問い</div>
+<p class="q">「まだデータがない新規ユーザーに、広告をどうパーソナライズすればよいか」</p>
+<p class="ans"><b>結論</b>まずは個人ではなく、ペルソナ単位でパーソナライズしましょう。カテゴリーの公開された会話、コメント、レビュー、クリエイターコンテンツを分析し、明確な動機と葛藤を持つペルソナに集約します。そして、ランディングページ、検索語、コンテキストといった初期シグナルを使って、新規ユーザーをペルソナにマッチングします。接点が積み重なるごとに、自社のファーストパーティデータが当初の仮定に取って代わっていきます。</p>
+</section>
+<section class="kt takeaways"><h2>この記事のポイント</h2><ul><li>コールドスタート問題は、量の問題というより理解の問題です。足りないのは、新規ユーザーが何を求めているかについての、もっともらしい出発点の仮定です。</li><li>公開コンテンツから作るペルソナは、その出発点の仮定をグループ単位で提供します。個人のプロファイルも、購入したサードパーティのセグメントも不要です。</li><li>Digidayによると、合成オーディエンスは日常のプランニングに浸透しつつありますが、その品質は、基にしているデータに左右されます。</li><li>優れたコールドスタート戦略は、ペルソナの仮説、コンテキストシグナル、意図的な探索を組み合わせ、接点ごとに学習していきます。</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>何も知らない相手に、広告をどうパーソナライズするか。正直な答えは、個人レベルではできない、です。しかし、あるカテゴリーに関心を持つ人々を理解することは十分にでき、ごくわずかなシグナルから、新規ユーザーを適切なペルソナにマッチングできます。これが、実践的なコールドスタート戦略の核心です。</p>
+<p>従来型のオーディエンスデータに代わるものを、業界がどれほど必死に探しているかは、<a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a>の最近の報道に表れています。合成オーディエンスは、実験段階から日常のプランニングや戦略立案へと移りつつあります。Aveeno Bodyは、Vurveyの合成リサーチを使って、ストラテジーブリーフに要する期間を約30日から3日に短縮しました。Goodway Groupは、Arimaが提供する米国、英国、ドイツの消費者の「合成母集団」をメディアプランニングに活用しています。</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">広告におけるコールドスタート問題とは？</h2>
+<p>この用語は、レコメンドシステムの世界に由来します。行動から学習するシステムには、学習の元となる行動が必要ですが、新規ユーザーにはまだそれがありません。そこでシステムは平均を出します。ベストセラー、汎用的なメッセージ、誰にでも少しは効くけれど、誰にも本当には刺さらない広告です。</p>
+<p>広告では、問題はさらに深刻になります。複数のブラウザがサードパーティCookieをデフォルトでブロックし、ドイツでは同意バナーが日常の一部になっていて、全員が「すべて受け入れる」をクリックするわけではありません。従来の解決策だった購入セグメントは、データ保護法の下で扱いが難しくなり、そもそも人が買う理由についてはほとんど何も語りません。GDPRの影響が強いDACH地域（ドイツ、オーストリア、スイス）では、「データをもっと買い足せばいい」はもはや戦略ではありません。</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">データを増やしても問題が解決しない理由</h2>
+<p>データ品質の研究には、これについて冷静な定式があります。データの良さは、目的への適合性で決まる、というものです。正確さだけでは足りません。データは、関連性があり、新しく、個別の問いに合っていなければならないのです。文献では、これを「fitness for use」（使用目的への適合性）と呼んでいます。</p>
+<p>「25〜34歳の女性、美容に関心あり」といった購入セグメントは、表現としては正確です。それでも「この人は何があれば自社の商品を試してみたくなるか」という問いに対しては、ほとんど役に立ちません。属性は描いていても、動機は描いていないからです。エンゲージメントは、数字ではなく理解から生まれます。</p>
+<p>コールドスタートにおいて、決定的に重要な資源は、個々のユーザーの履歴ではありません。カテゴリーにおける動機、不安、言葉づかいの確かな全体像です。そして、その全体像は、一般に公開されているコンテンツから描くことができます。</p>
+<h2 id="how-are-personas-built-from-public-content">公開コンテンツからペルソナをどう作るのか？</h2>
+<p>人は、なぜ買うのか、あるいは買わないのかについて、公の場で驚くほど多くを語っています。ブランド投稿へのコメント、商品レビュー、クリエイター動画、フォーラムのスレッドなどです。こうしたコンテンツを収集し、テーマと葛藤でクラスター化し、ペルソナに集約できます。作り込んだプロファイルではなく、実際の引用を使って。</p>
+<p>従来のワークショップ型ペルソナとの違いは、チームが相手について想定していることではなく、人々が実際に語っていることに基づいている点です。Digidayは、関連するアプローチを紹介しています。ブランドのSacheuのために、Limitless Labsは、同社のクリエイターエコシステムから集めた数千本のTikTokとInstagramの動画を分析して、ペルソナを構築しています。</p>
+<p>ドイツ市場で重要なのは、こうしたペルソナがパターンとグループのレベルで機能するという点です。最初のメッセージを選ぶために、個々のユーザーのプロファイルは必要ありません。ご自身の具体的な設計に対する法的な評価は、引き続きデータ保護の顧問にご確認ください。</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">コールドスタートには、どんなアプローチがある？</h2>
+<div class="tw"><table>
+<thead><tr><th>手法</th><th>データの基盤</th><th>強み</th><th>弱点</th></tr></thead>
+<tbody>
+<tr><td>購入したサードパーティセグメント</td><td>外部プロファイル、Cookie</td><td>すぐに利用できる</td><td>動機への洞察が乏しく、データ保護法上の扱いが難しい</td></tr>
+<tr><td>コンテキストターゲティング</td><td>環境、時間、場所、デバイス</td><td>個人データなしで機能する</td><td>動機についてはほとんど語らない</td></tr>
+<tr><td>ゼロパーティデータ</td><td>クイズやオンボーディングでの回答</td><td>直接得られ、同意に基づく</td><td>参加した人からしか得られず、ファネルに摩擦が生じる</td></tr>
+<tr><td>合成オーディエンス</td><td>アンケート、統計、パネルのデータに基づくモデル</td><td>反応を素早くシミュレーションできる</td><td>平均に引き寄せられ、品質は入力データに左右される</td></tr>
+<tr><td>公開コンテンツから作るペルソナ</td><td>コメント、レビュー、クリエイターコンテンツ、競合の広告</td><td>カテゴリーの実際の動機と言葉づかい</td><td>個々のユーザーとのマッチングにシグナルが必要</td></tr>
+</tbody>
+</table></div>
+<p>単独でこの問題を解決できるアプローチはありません。実際には、公開コンテンツから作るペルソナが仮説を、コンテキストシグナルがマッチングを、ファーストパーティデータが裏づけを担います。</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">コールドスタートのパーソナライゼーションを6ステップで実践するには？</h2>
+<ol>
+<li><strong>カテゴリーの会話を集める。</strong>ここ数か月のコメント、レビュー、クリエイターコンテンツ、競合の広告を、ブランドだけでなくカテゴリー全体から集めます。</li>
+<li><strong>ペルソナと葛藤を作る。</strong>コンテンツを動機と不安でクラスター化します。始めるには、明確に異なるペルソナが3〜5人あれば十分です。</li>
+<li><strong>ペルソナごとに仮説を一つ立てる。</strong>どのメッセージ、どのフック、どのオファーが合うか。ペルソナごとに、専用のクリエイティブのバリエーションを少なくとも一つ作ります。</li>
+<li><strong>マッチングのシグナルを定義する。</strong>ランディングページ、検索語、コンテキスト、キャンペーンの流入元、最初のクリック。どのシグナルがどのペルソナを指すかを決めます。</li>
+<li><strong>探索を組み込んで配信する。</strong>配信の一部を、想定したペルソナに当てはまらないバリエーションのために確保します。そうすれば、システムは自らの仮定を追認するだけでなく、学習を続けられます。</li>
+<li><strong>ファーストパーティデータを還元する。</strong>接点ごとに、マッチングの精度が高まります。会話は変化するので、ペルソナも定期的に更新しましょう。</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">合成オーディエンスは、コールドスタートにどれだけ役立つ？</h2>
+<p>限界を理解していれば、かなり役立ちます。Digidayの報道では、当事者自身も留保を表明しています。VurveyのCEOであるChad Reynoldsは、大規模言語モデルが返すのは釣り鐘型の分布の頂点、つまり最も一般的な答えだと述べています。TransUnionのJulie Clarkは、質の低い入力データで作られたペルソナに警鐘を鳴らしています。そしてCode &amp; TheoryのStef Hoffmanは、結果は判断に情報を与えるが、判断に取って代わるものではない、と見事に言い表しています。</p>
+<p>まさにここで、公開コンテンツの真価が発揮されます。それはシミュレーションではなく、エビデンスです。あるペルソナについて、このカテゴリーの人々は何より間違った買い物をすることを恐れている、と主張するなら、その主張の根拠となった投稿を見られるはずです。たどれないペルソナは、単なる主張にすぎません。</p>
+<p>Defy Monitorはこの道を取っています。オーディエンスコンテンツをペルソナと葛藤に自動でクラスター化し、プランニングを人口統計ではなく実際の会話から始められます。これは<a href="/#platform">Defyプラットフォーム</a>の構成要素の一つであり、大手ネットワークが巨額を投じて築いてきたのと同等の分析能力を、独立系エージェンシーに提供します。</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">コールドスタート戦略が機能しているかどうかは、どうすればわかる？</h2>
+<p>ペルソナ別のバリエーションを、汎用のコントロールグループと比較します。最も示唆に富む指標は、新規ユーザーの初期の数字です。最初の広告への反応、初回訪問の深さ、初回コンバージョンまでの時間。ペルソナ別バリエーションが上回らなくても、それは失敗ではなく手がかりです。ペルソナがずれているか、マッチングのシグナルが弱すぎるかのどちらかです。</p></div>
+<aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>エンゲージメントは、数字ではなく理解から生まれる。</blockquote><p>データ品質の研究では、データを目的への適合性で評価します。新規ユーザーにリーチするうえでは、公開された会話から得られる実際の動機のほうが、精密でも動機を欠いたセグメントデータより、目的に適っていることがよくあります。</p></aside>
+<section class="prop" aria-label="Defyができること">
+<div class="ph"><div class="eyebrow">Defy Monitor・Defy MCP・Defy Agents</div><h2>Defyができること<span class="sq"></span></h2></div>
+<div class="pb prose"><p>Defy Monitorは、カテゴリーのオーディエンスコンテンツをペルソナと葛藤に自動でクラスター化します。人口統計ではなく実際の会話からプランニングでき、コールドスタートで欠けている出発点の仮定がまさに手に入ります。</p><ul><li>公開されているコンテンツから導き出した、動機、不安、言葉づかいを備えたペルソナ。</li><li>AIが導いたすべての結論は、その根拠となる実際の投稿と照らし合わせて検証できます。</li><li>ペルソナごとのクリエイティブを、メディア費用を投じる前にクリックされやすさでスコア化できます。</li><li>Defy MCPなら、ペルソナと葛藤をClaudeの中で直接問い合わせられます。</li></ul><p>まずは一つのカテゴリーから始めて、これまでの想定と、オーディエンスが実際に語っていることを比べてみてください。</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=%E3%82%B3%E3%83%BC%E3%83%AB%E3%83%89%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E5%95%8F%E9%A1%8C%EF%BC%9A%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%87%E3%83%BC%E3%82%BF%E3%81%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%8D%E3%80%81%E5%BA%83%E5%91%8A%E3%82%92%E3%81%A9%E3%81%86%E3%83%91%E3%83%BC%E3%82%BD%E3%83%8A%E3%83%A9%E3%82%A4%E3%82%BA%E3%81%99%E3%82%8B%E3%81%8B" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">相談してみる</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>広告におけるコールドスタートとは？</summary><p>コールドスタートとは、学習システムが新規ユーザー、新商品、新市場について、まだ行動データを持っていない状況を指します。その場合、パーソナライゼーションは汎用的なメッセージに頼ることになります。広告では、新規顧客、商品の発売、市場参入で特に問題になります。まさに第一印象が重要になる場面です。</p></details><details><summary>サードパーティCookieなしでパーソナライズできる？</summary><p>できます。コンテキストシグナル、クイズやオンボーディングで得るゼロパーティデータ、自社のファーストパーティデータ、公開コンテンツから作ったペルソナを使えば、購入したCookieプロファイルに頼らずにパーソナライズできます。違いは、最初は個人ではなく、動機を共有するグループに向けてパーソナライズし、接点ごとにターゲティングを磨いていく点です。</p></details><details><summary>合成オーディエンスと、公開コンテンツから作るペルソナは何が違う？</summary><p>合成オーディエンスは、反応をシミュレートするAIモデルで、多くはアンケート、統計、パネルのデータに基づいています。一方、公開コンテンツから作るペルソナは、コメント、レビュー、クリエイター動画といった実際の発言を集約したものです。前者は迅速なシミュレーションに向き、後者は動機や言葉づかいについて検証可能な根拠を提供します。二つのアプローチは組み合わせることもできます。</p></details><details><summary>最初に何人のペルソナが必要？</summary><p>始めるには、明確に異なるペルソナが3〜5人あれば、通常は十分です。ペルソナが多いほど精緻に聞こえますが、学習できるだけのデータが集まる前に、予算とクリエイティブの工数を多くのバリエーションに分散させてしまいます。大切なのは、年齢や郵便番号だけでなく、動機とメッセージが本当に異なるペルソナにすることです。</p></details></section>
+<section class="srcs"><h2>出典</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>この記事を書いた理由</b>本記事を書いたのは、十分なデータがないまま新規ユーザーにパーソナライズするにはどうすればよいかという問いが、技術志向のマーケティングチームで繰り返し挙がるからです。プライバシー意識の高いドイツ市場では、とりわけそうです。合成オーディエンスが急速に広がっている今、適切なデータ基盤の問題はいっそう切実になっています。</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#what-is-the-cold-start-problem-in-advertising">広告におけるコールドスタート問題とは？</a><a href="#why-more-data-doesn-t-solve-the-problem">データを増やしても問題が解決しない理由</a><a href="#how-are-personas-built-from-public-content">公開コンテンツからペルソナをどう作るのか？</a><a href="#what-approaches-are-there-to-the-cold-start">コールドスタートには、どんなアプローチがある？</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">コールドスタートのパーソナライゼーションを6ステップで実践するには？</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">合成オーディエンスは、コールドスタートにどれだけ役立つ？</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">コールドスタート戦略が機能しているかどうかは、どうすればわかる？</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>規模の壁を越えて戦う準備はできていますか？</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Defyにログイン</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>ジャーナルの他の記事<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/ja/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="雪の積もった公園を、後ろ姿の人々が踏み固められた近道を通って歩いていく様子を写したモノクロ写真。舗装された小道は誰もいないまま弧を描いて遠ざかり、雪の上には小さな赤い四角形が落ちている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>AIと消費者行動：エージェンシーがインサイト業務を作り直すべき理由</h3><p>人がチャットボットに質問し、アルゴリズムがフィードをキュレーションする時代に、従来のインサイト手法は古びていきます。ストラテジストはこれから何を変えるべきか。そして、AIには代わりにできないこと。</p><div class="meta"><span>約7分で読めます</span></div></div></a><a class="card" href="/blog/ja/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="クリスマスの飾り付け中のデパートのショーウィンドウを写したモノクロ写真。ガラスの向こうにはオーナメントの箱と葉のないツリーがあり、手前には、針が小さな赤いしきい値マークに近づくダイヤルが写っている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>クリスマス2026：エージェンシーのための早期警戒システムとしてのソーシャルリスニング</h3><p>1月に分析しても、クリスマスはもう終わっています。エージェンシーがソーシャルリスニングで、購買ムード、価格圧力、競合のプロモーションを早期に捉える方法。</p><div class="meta"><span>約7分で読めます</span></div></div></a><a class="card" href="/blog/ja/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="白黒の静物写真。方眼紙のプリントアウトの束の上に、寸法の合わない計測用ストリップがいくつも積み重なり、その上に長いスチール製の定規が渡され、先端に小さな赤いタブが付いている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">インサイトと戦略</div><h3>クロスプラットフォームのエンゲージメント測定：エージェンシーの手作業スプレッドシートを卒業する時</h3><p>エンゲージメントの数え方は、プラットフォームごとに違います。信頼できるクロスプラットフォーム測定のための手法、指標、ツール選定基準を紹介します。スプレッドシートの継ぎはぎは不要です。</p><div class="meta"><span>約7分で読めます</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/ja/">← ジャーナル一覧に戻る</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="お問い合わせ">
+<h2>規模の壁を越えて戦う準備はできていますか？</h2>
+<p>大手エージェンシーネットワークが門外不出にしてきたインテリジェンス基盤をご覧ください。売り込みはしません。まずはお話ししましょう。</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">相談してみる</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Defyにログイン</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>規模の壁を越えて戦うエージェンシーのための、インサイトと自動化のプラットフォーム。</p></div>
+<div><h4>Defy</h4><a href="/#main">メイン</a><a href="/#platform">プラットフォーム</a><a href="/#clients">クライアント</a><a href="/#team">チーム</a></div>
+<div class="df-langs"><h4>ジャーナル</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>お問い合わせ</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">ログイン</a><a href="/llms.txt">llms.txt</a><a href="/blog/ja/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited　無断転載・複製を禁じます。</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

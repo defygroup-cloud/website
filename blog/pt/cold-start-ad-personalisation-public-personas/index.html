@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Problema de cold start: personalização sem dados do usuário | Defy</title>
+<meta name="description" content="Cold start na publicidade: como personalizar para novos usuários sem dados de terceiros, com personas criadas a partir de conteúdo público.">
+<link rel="canonical" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Defy Group Limited">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="keywords" content="problema de cold start personalização, personalização sem dados de terceiros, personas a partir de social listening, personalizar anúncios para novos usuários, personalização sem cookies, públicos sintéticos">
+<link rel="alternate" hreflang="en" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="fr" href="https://defygroup.ai/blog/fr/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="de" href="https://defygroup.ai/blog/de/cold-start-personalisierung-personas/">
+<link rel="alternate" hreflang="es" href="https://defygroup.ai/blog/es/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pt-BR" href="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="it" href="https://defygroup.ai/blog/it/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="nl" href="https://defygroup.ai/blog/nl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="pl" href="https://defygroup.ai/blog/pl/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hans" href="https://defygroup.ai/blog/zh/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="zh-Hant" href="https://defygroup.ai/blog/zh-hant/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ja" href="https://defygroup.ai/blog/ja/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="ko" href="https://defygroup.ai/blog/ko/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="hi" href="https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="id" href="https://defygroup.ai/blog/id/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="vi" href="https://defygroup.ai/blog/vi/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="th" href="https://defygroup.ai/blog/th/cold-start-ad-personalisation-public-personas/">
+<link rel="alternate" hreflang="x-default" href="https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Defy">
+<meta property="og:url" content="https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/">
+<meta property="og:title" content="O problema de cold start: como personalizar anúncios quando você não tem dados do usuário">
+<meta property="og:description" content="Cold start na publicidade: como personalizar para novos usuários sem dados de terceiros, com personas criadas a partir de conteúdo público.">
+<meta property="og:image" content="https://defygroup.ai/assets/blog/og/d49-pt.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="O problema de cold start: como personalizar anúncios quando você não tem dados do usuário">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T12:43:00+08:00">
+<meta property="article:section" content="Insight e estratégia">
+<meta property="article:tag" content="Personalização">
+<meta property="article:tag" content="Cold start">
+<meta property="article:tag" content="Personas">
+<meta property="article:tag" content="Privacidade de dados">
+<meta property="article:tag" content="Públicos sintéticos">
+<meta property="article:publisher" content="https://defygroup.ai/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O problema de cold start: como personalizar anúncios quando você não tem dados do usuário">
+<meta name="twitter:description" content="Cold start na publicidade: como personalizar para novos usuários sem dados de terceiros, com personas criadas a partir de conteúdo público.">
+<meta name="twitter:image" content="https://defygroup.ai/assets/blog/og/d49-pt.jpg">
+<meta name="twitter:image:alt" content="O problema de cold start: como personalizar anúncios quando você não tem dados do usuário">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Defy Journal" href="/blog/pt/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LPDJLDH8ZT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LPDJLDH8ZT');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,900&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/defy-blog.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/#article","url":"https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/","mainEntityOfPage":"https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/","headline":"O problema de cold start: como personalizar anúncios quando você não tem dados do usuário","alternativeHeadline":"Problema de cold start: personalização sem dados do usuário","description":"Cold start na publicidade: como personalizar para novos usuários sem dados de terceiros, com personas criadas a partir de conteúdo público.","abstract":"Para começar, personalize no nível de personas, não de pessoas. Analise as conversas públicas, os comentários, as avaliações e o conteúdo de creators da sua categoria, destile-os em personas com motivações e tensões claras e associe novos usuários por meio de sinais iniciais, como a página de destino, o termo de busca ou o contexto. A cada interação, seus próprios dados first-party substituem as premissas iniciais.","image":["https://defygroup.ai/assets/blog/og/d49-pt.jpg","https://defygroup.ai/assets/blog/hero/d49.jpg"],"datePublished":"2026-10-16T12:43:00+08:00","dateModified":"2026-10-16T12:43:00+08:00","inLanguage":"pt-BR","author":{"@type":"Organization","name":"Equipe editorial da Defy","url":"https://defygroup.ai/blog/pt/"},"publisher":{"@type":"Organization","@id":"https://defygroup.ai/#org","name":"Defy","legalName":"Defy Group Limited","url":"https://defygroup.ai/","logo":{"@type":"ImageObject","url":"https://defygroup.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Insight e estratégia","keywords":"problema de cold start personalização, personalização sem dados de terceiros, personas a partir de social listening, personalizar anúncios para novos usuários, personalização sem cookies, públicos sintéticos","wordCount":1174,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://defygroup.ai/blog/pt/#blog","name":"Defy — Defy Journal"},"about":[{"@type":"Thing","name":"Personalização"},{"@type":"Thing","name":"Cold start"},{"@type":"Thing","name":"Personas"},{"@type":"Thing","name":"Privacidade de dados"},{"@type":"Thing","name":"Públicos sintéticos"}],"citation":[{"@type":"CreativeWork","name":"Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off","url":"https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/","datePublished":"2026-10-12","publisher":{"@type":"Organization","name":"Digiday"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@id":"https://defygroup.ai/blog/cold-start-ad-personalisation-public-personas/#article"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"pt-BR","mainEntity":[{"@type":"Question","name":"O que significa cold start na publicidade?","acceptedAnswer":{"@type":"Answer","text":"Cold start descreve a situação em que um sistema de aprendizado ainda não tem dados de comportamento sobre um novo usuário, um novo produto ou um novo mercado. A personalização recorre então a mensagens genéricas. Na publicidade, isso afeta principalmente novos clientes, lançamentos de produtos e entradas em novos mercados – justamente as situações em que a primeira impressão conta."}},{"@type":"Question","name":"Dá para personalizar sem cookies de terceiros?","acceptedAnswer":{"@type":"Answer","text":"Sim. Sinais contextuais, dados zero-party de quizzes ou onboarding, seus próprios dados first-party e personas criadas a partir de conteúdo público permitem personalizar sem perfis de cookies comprados. A diferença: no início você personaliza para grupos com motivações em comum, e não para indivíduos, e refina a segmentação a cada interação."}},{"@type":"Question","name":"Qual a diferença entre públicos sintéticos e personas criadas a partir de conteúdo público?","acceptedAnswer":{"@type":"Answer","text":"Públicos sintéticos são modelos de IA que simulam reações, em geral com base em dados de pesquisas, estatísticos e de painéis. Já as personas criadas a partir de conteúdo público destilam declarações reais, como comentários, avaliações e vídeos de creators. Um serve para simulação rápida; o outro fornece evidências verificáveis de motivações e linguagem. As duas abordagens podem ser combinadas."}},{"@type":"Question","name":"Com quantas personas preciso começar?","acceptedAnswer":{"@type":"Answer","text":"Três a cinco personas bem distintas costumam bastar para começar. Mais personas soam mais precisas, mas diluem orçamento e esforço criativo em variantes demais antes de haver dados suficientes para aprender. O importante é que as personas realmente se diferenciem em motivações e mensagens – e não apenas em idade ou CEP."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Defy","item":"https://defygroup.ai/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://defygroup.ai/blog/pt/"},{"@type":"ListItem","position":3,"name":"O problema de cold start: como personalizar anúncios quando você não tem dados do usuário","item":"https://defygroup.ai/blog/pt/cold-start-ad-personalisation-public-personas/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Nesta página</a>
+<header class="dh">
+<div class="wrap dh-in">
+<a class="dh-logo" href="/#main" aria-label="Defy — Início"><img src="/assets/img/defy-logo-black.svg" alt="Defy" width="86" height="37"></a>
+<nav class="dh-nav" aria-label="Principal">
+<a href="/#main">Início</a>
+<a href="/#platform">Plataforma</a>
+<a href="/#clients">Clientes</a>
+<a href="/#team">Equipe</a>
+<a href="/blog/pt/" class="on">Blog</a>
+</nav>
+<div class="dh-r">
+<a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_header'})}catch(e){}">Entrar</a>
+<a class="btn btn-r" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_header'})}catch(e){}">Fale conosco</a>
+<button class="menu" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.dh-nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)">☰</button>
+</div>
+</div>
+</header>
+<main id="main">
+<article class="wrap" itemscope itemtype="https://schema.org/BlogPosting">
+<nav class="crumbs" aria-label="Trilha de navegação"><a href="/#main">Início</a><span>/</span><a href="/blog/pt/">Blog</a><span>/</span><span>Insight e estratégia</span></nav>
+<header class="a-head">
+<div class="eyebrow">Insight e estratégia</div>
+<h1 itemprop="headline">O problema de cold start: como personalizar anúncios quando você não tem dados do usuário<span class="sq"></span></h1>
+<p class="dek" itemprop="description">Usuários novos, sem histórico, com poucos consentimentos: como as agências resolvem o problema de cold start com personas criadas a partir de conversas públicas reais – em vez de segmentos comprados.</p>
+<div class="a-meta">
+<span><b>Equipe editorial da Defy</b></span>
+<span>Publicado em <time datetime="2026-10-16T12:43:00+08:00" itemprop="datePublished">16 de outubro de 2026</time></span>
+<span>7 min de leitura</span>
+<span class="langs"><details class="lsw"><summary aria-label="Idioma: Português"><svg class="lsw-g" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Português</span></summary><div class="lsw-p"><div class="lsw-h">Também disponível em</div><a href="/blog/cold-start-ad-personalisation-public-personas/" hreflang="en" lang="en">English</a><a href="/blog/fr/cold-start-ad-personalisation-public-personas/" hreflang="fr" lang="fr">Français</a><a href="/blog/de/cold-start-personalisierung-personas/" hreflang="de" lang="de">Deutsch</a><a href="/blog/es/cold-start-ad-personalisation-public-personas/" hreflang="es" lang="es">Español</a><a href="/blog/pt/cold-start-ad-personalisation-public-personas/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português</a><a href="/blog/it/cold-start-ad-personalisation-public-personas/" hreflang="it" lang="it">Italiano</a><a href="/blog/nl/cold-start-ad-personalisation-public-personas/" hreflang="nl" lang="nl">Nederlands</a><a href="/blog/pl/cold-start-ad-personalisation-public-personas/" hreflang="pl" lang="pl">Polski</a><a href="/blog/zh/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a><a href="/blog/zh-hant/cold-start-ad-personalisation-public-personas/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a><a href="/blog/ja/cold-start-ad-personalisation-public-personas/" hreflang="ja" lang="ja">日本語</a><a href="/blog/ko/cold-start-ad-personalisation-public-personas/" hreflang="ko" lang="ko">한국어</a><a href="/blog/hi/cold-start-ad-personalisation-public-personas/" hreflang="hi" lang="hi">हिन्दी</a><a href="/blog/id/cold-start-ad-personalisation-public-personas/" hreflang="id" lang="id">Bahasa Indonesia</a><a href="/blog/vi/cold-start-ad-personalisation-public-personas/" hreflang="vi" lang="vi">Tiếng Việt</a><a href="/blog/th/cold-start-ad-personalisation-public-personas/" hreflang="th" lang="th">ไทย</a></div></details></span>
+</div>
+</header>
+<figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/d49-768.webp 768w, /assets/blog/hero/d49-1536.webp 1536w" sizes="(max-width:1300px) 100vw, 1176px"><img src="/assets/blog/hero/d49.jpg" alt="Foto em preto e branco das mãos de um sapateiro tirando de uma prateleira de fôrmas uma fôrma de sapato de madeira com uma pequena etiqueta vermelha, enquanto a sombra de um novo cliente cai pela porta ao lado de uma pegada discreta feita a giz." width="1536" height="1024" fetchpriority="high" itemprop="image"></picture></figure>
+<div class="layout">
+<div class="col">
+<section class="qbox answer-box" aria-label="A pergunta por trás deste artigo">
+<div class="eyebrow">A pergunta por trás deste artigo</div>
+<p class="q">“Como personalizar anúncios para novos usuários quando ainda não tenho nenhum dado sobre eles?”</p>
+<p class="ans"><b>Resposta curta</b>Para começar, personalize no nível de personas, não de pessoas. Analise as conversas públicas, os comentários, as avaliações e o conteúdo de creators da sua categoria, destile-os em personas com motivações e tensões claras e associe novos usuários por meio de sinais iniciais, como a página de destino, o termo de busca ou o contexto. A cada interação, seus próprios dados first-party substituem as premissas iniciais.</p>
+</section>
+<section class="kt takeaways"><h2>Pontos-chave</h2><ul><li>O problema de cold start tem menos a ver com volume do que com compreensão: o que falta é uma premissa inicial plausível sobre o que os novos usuários querem.</li><li>Personas criadas a partir de conteúdo público fornecem essas premissas iniciais no nível de grupo – sem perfis de indivíduos e sem segmentos de terceiros comprados.</li><li>Segundo o Digiday, os públicos sintéticos estão entrando no planejamento do dia a dia, mas sua qualidade depende dos dados em que são construídos.</li><li>Boas estratégias de cold start combinam hipóteses de personas, sinais contextuais e exploração deliberada – e aprendem a cada interação.</li></ul></section>
+<div class="prose" itemprop="articleBody"><p>Como personalizar anúncios para pessoas sobre as quais você não sabe nada? A resposta honesta: no nível individual, não dá. Mas você pode perfeitamente entender as pessoas que se interessam por uma categoria e associar novos usuários a uma persona adequada a partir de poucos sinais. Esse é o cerne de uma estratégia de cold start viável.</p>
+<p>O quanto o setor busca alternativas aos dados clássicos de público aparece em reportagens recentes do <a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Digiday</a>: os públicos sintéticos estão saindo do experimento e entrando no dia a dia do planejamento e do trabalho de estratégia. A Aveeno Body usou a pesquisa sintética da Vurvey para reduzir o tempo de um briefing de estratégia de cerca de 30 dias para três. A Goodway Group usa a “população sintética” de consumidores dos EUA, do Reino Unido e da Alemanha da Arima para planejamento de mídia.</p>
+<h2 id="what-is-the-cold-start-problem-in-advertising">O que é o problema de cold start na publicidade?</h2>
+<p>O termo vem do mundo dos sistemas de recomendação. Um sistema que aprende com o comportamento precisa de comportamento para aprender – e um novo usuário ainda não tem nenhum. Então o sistema serve a média: os mais vendidos, mensagens genéricas, o anúncio que funciona um pouco para todo mundo e de verdade para ninguém.</p>
+<p>Na publicidade, o problema se agrava. Vários navegadores bloqueiam cookies de terceiros por padrão, banners de consentimento fazem parte do dia a dia na Alemanha e nem todo mundo clica em “Aceitar tudo”. A saída clássica, os segmentos comprados, ficou mais espinhosa do ponto de vista da lei de proteção de dados e, de qualquer forma, revela pouco sobre por que alguém compra. Na região DACH (Alemanha, Áustria e Suíça), moldada pelo GDPR, “vamos simplesmente comprar mais dados” deixou de ser estratégia.</p>
+<h2 id="why-more-data-doesn-t-solve-the-problem">Por que mais dados não resolvem o problema</h2>
+<p>A pesquisa sobre qualidade de dados tem uma fórmula sóbria para isso: dados só são tão bons quanto sua adequação ao propósito. Precisão por si só não basta; os dados precisam ser relevantes, atuais e adequados à pergunta específica. Na literatura, isso se chama “fitness for use”.</p>
+<p>Um segmento comprado como “mulheres, de 25 a 34 anos, interessadas em beleza” é formulado com precisão. Para a pergunta “O que faria essa pessoa experimentar nosso produto?”, porém, é quase inútil. Ele descreve atributos, não motivações. O engajamento nasce da compreensão, não de números.</p>
+<p>Para o cold start, isso significa que o recurso decisivo não é o histórico do usuário individual, mas um retrato sólido das motivações, preocupações e da linguagem da categoria. E esse retrato pode ser traçado a partir de conteúdo publicamente disponível.</p>
+<h2 id="how-are-personas-built-from-public-content">Como são criadas personas a partir de conteúdo público?</h2>
+<p>As pessoas dizem muita coisa em público sobre por que compram – ou não: em comentários sob posts de marcas, em avaliações de produtos, em vídeos de creators, em threads de fóruns. Esse conteúdo pode ser coletado, agrupado por tema e tensão e destilado em personas – com citações reais em vez de perfis inventados.</p>
+<p>A diferença em relação à persona clássica de workshop: ela se baseia no que as pessoas realmente dizem, não no que uma equipe supõe sobre elas. O Digiday descreve uma abordagem parecida: para a marca Sacheu, a Limitless Labs analisa milhares de vídeos do TikTok e do Instagram do seu ecossistema de creators para construir personas.</p>
+<p>Importante para o mercado alemão: personas como essas funcionam no nível de padrões e grupos. Elas não precisam de um perfil de usuários individuais para escolher uma primeira mensagem. A avaliação jurídica da sua estrutura específica continua sendo assunto para o seu consultor de proteção de dados.</p>
+<h2 id="what-approaches-are-there-to-the-cold-start">Que abordagens existem para o cold start?</h2>
+<div class="tw"><table>
+<thead><tr><th>Abordagem</th><th>Base de dados</th><th>Ponto forte</th><th>Fraqueza</th></tr></thead>
+<tbody>
+<tr><td>Segmentos de terceiros comprados</td><td>Perfis externos, cookies</td><td>Disponíveis rapidamente</td><td>Pouca visão das motivações; espinhoso do ponto de vista da proteção de dados</td></tr>
+<tr><td>Segmentação contextual</td><td>Ambiente, horário, localização, dispositivo</td><td>Funciona sem dados pessoais</td><td>Diz pouco sobre as motivações</td></tr>
+<tr><td>Dados zero-party</td><td>Respostas de quizzes ou do onboarding</td><td>Diretos e baseados em consentimento</td><td>Só de quem participa; atrito no funil</td></tr>
+<tr><td>Públicos sintéticos</td><td>Modelos baseados em dados de pesquisas, estatísticos e de painéis</td><td>Simulação rápida de reações</td><td>Tendência à média; a qualidade depende dos dados de entrada</td></tr>
+<tr><td>Personas a partir de conteúdo público</td><td>Comentários, avaliações, conteúdo de creators, anúncios de concorrentes</td><td>As motivações e a linguagem reais da categoria</td><td>Precisa de sinais para associar usuários individuais</td></tr>
+</tbody>
+</table></div>
+<p>Nenhuma abordagem resolve o problema sozinha. Na prática, as personas de conteúdo público fornecem as hipóteses, os sinais contextuais fazem a associação e os dados first-party dão a confirmação.</p>
+<h2 id="how-do-you-put-cold-start-personalisation-into-practice-in-s">Como colocar a personalização de cold start em prática em seis passos?</h2>
+<ol>
+<li><strong>Reúna as conversas da categoria.</strong> Comentários, avaliações, conteúdo de creators e anúncios de concorrentes dos últimos meses – não só sobre a marca, mas sobre a categoria inteira.</li>
+<li><strong>Construa personas e tensões.</strong> Agrupe o conteúdo por motivação e preocupação. Três a cinco personas bem distintas bastam para começar.</li>
+<li><strong>Escreva uma hipótese por persona.</strong> Qual mensagem, qual gancho, qual oferta se encaixa? Desenvolva pelo menos uma variante criativa própria para cada persona.</li>
+<li><strong>Defina os sinais de associação.</strong> Página de destino, termo de busca, contexto, origem da campanha, primeiros cliques: decida qual sinal aponta para qual persona.</li>
+<li><strong>Veicule com exploração.</strong> Reserve parte da entrega para variantes que não correspondem à persona presumida. Assim o sistema continua aprendendo em vez de apenas confirmar a própria premissa.</li>
+<li><strong>Realimente com dados first-party.</strong> Cada interação refina a associação. Atualize as personas regularmente, porque as conversas mudam.</li>
+</ol>
+<h2 id="how-useful-are-synthetic-audiences-for-the-cold-start">Qual a utilidade dos públicos sintéticos para o cold start?</h2>
+<p>Bastante útil – se você conhece seus limites. Na reportagem do Digiday, até os envolvidos manifestam ressalvas: Chad Reynolds, CEO da Vurvey, diz que os grandes modelos de linguagem entregam o topo da curva de sino, ou seja, a resposta mais comum. Julie Clark, da TransUnion, alerta para personas construídas sobre dados de entrada ruins. E Stef Hoffman, da Code &amp; Theory, resume bem: os resultados informam o julgamento, mas não o substituem.</p>
+<p>É exatamente aqui que o conteúdo público mostra seu valor. Ele não é uma simulação; é evidência. Se uma persona afirma que as pessoas da sua categoria temem principalmente comprar a coisa errada, você deve conseguir ver os posts de onde essa afirmação vem. Uma persona que você não consegue rastrear é só uma afirmação.</p>
+<p>O Defy Monitor segue esse caminho: o conteúdo do público é agrupado automaticamente em personas e tensões, e o planejamento parte de conversas reais, e não de dados demográficos. É um dos blocos da <a href="/#platform">plataforma Defy</a>, que dá às agências independentes a mesma capacidade analítica que as grandes redes gastaram muito para construir.</p>
+<h2 id="how-do-you-know-your-cold-start-strategy-is-working">Como saber se a sua estratégia de cold start está funcionando?</h2>
+<p>Compare as variantes baseadas em personas com um grupo de controle genérico. As métricas mais reveladoras são os números iniciais dos novos usuários: interação com o primeiro anúncio, profundidade da primeira visita, tempo até a primeira conversão. Se as variantes de persona não estiverem na frente, isso não é fracasso, mas uma pista: ou as personas estão erradas, ou os sinais de associação são fracos demais.</p></div>
+<aside class="insight" aria-label="O insight"><div class="eyebrow">O insight</div><blockquote>O engajamento nasce da compreensão, não dos números.</blockquote><p>A pesquisa sobre qualidade de dados avalia os dados pela adequação ao propósito. Para alcançar novos usuários, motivações reais extraídas de conversas públicas costumam ser mais adequadas ao propósito do que dados de segmento precisos, mas sem motivações.</p></aside>
+<section class="prop" aria-label="Como a Defy ajuda">
+<div class="ph"><div class="eyebrow">Defy Monitor · Defy MCP · Defy Agents</div><h2>Como a Defy ajuda<span class="sq"></span></h2></div>
+<div class="pb prose"><p>O Defy Monitor agrupa automaticamente o conteúdo do público da sua categoria em personas e tensões. Você planeja a partir de conversas reais, e não de dados demográficos – e obtém exatamente as premissas iniciais que faltam no cold start.</p><ul><li>Personas com motivações, preocupações e linguagem, derivadas de conteúdo publicado publicamente.</li><li>Toda conclusão da IA pode ser conferida nos posts reais que a embasam.</li><li>A clicabilidade do criativo de cada persona pode ser avaliada antes do investimento em mídia.</li><li>Com o Defy MCP, você consulta personas e tensões diretamente no Claude.</li></ul><p>Comece por uma categoria e compare suas premissas atuais com o que o seu público realmente está dizendo.</p></div>
+<div class="pa"><a class="btn btn-r" href="mailto:talktous@defygroup.ai?subject=O%20problema%20de%20cold%20start%3A%20como%20personalizar%20an%C3%BAncios%20quando%20voc%C3%AA%20n%C3%A3o%20tem%20dados%20do%20usu%C3%A1rio" onclick="try{gtag('event','contact_click',{location:'article_prop',article:'D49'})}catch(e){}">Comece uma conversa</a><a class="btn btn-o" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_prop',article:'D49'})}catch(e){}">Entrar na Defy</a></div>
+</section>
+<section class="faq" aria-label="Perguntas frequentes"><h2>Perguntas frequentes</h2><details open><summary>O que significa cold start na publicidade?</summary><p>Cold start descreve a situação em que um sistema de aprendizado ainda não tem dados de comportamento sobre um novo usuário, um novo produto ou um novo mercado. A personalização recorre então a mensagens genéricas. Na publicidade, isso afeta principalmente novos clientes, lançamentos de produtos e entradas em novos mercados – justamente as situações em que a primeira impressão conta.</p></details><details><summary>Dá para personalizar sem cookies de terceiros?</summary><p>Sim. Sinais contextuais, dados zero-party de quizzes ou onboarding, seus próprios dados first-party e personas criadas a partir de conteúdo público permitem personalizar sem perfis de cookies comprados. A diferença: no início você personaliza para grupos com motivações em comum, e não para indivíduos, e refina a segmentação a cada interação.</p></details><details><summary>Qual a diferença entre públicos sintéticos e personas criadas a partir de conteúdo público?</summary><p>Públicos sintéticos são modelos de IA que simulam reações, em geral com base em dados de pesquisas, estatísticos e de painéis. Já as personas criadas a partir de conteúdo público destilam declarações reais, como comentários, avaliações e vídeos de creators. Um serve para simulação rápida; o outro fornece evidências verificáveis de motivações e linguagem. As duas abordagens podem ser combinadas.</p></details><details><summary>Com quantas personas preciso começar?</summary><p>Três a cinco personas bem distintas costumam bastar para começar. Mais personas soam mais precisas, mas diluem orçamento e esforço criativo em variantes demais antes de haver dados suficientes para aprender. O importante é que as personas realmente se diferenciem em motivações e mensagens – e não apenas em idade ou CEP.</p></details></section>
+<section class="srcs"><h2>Fontes</h2><ol><li><a href="https://digiday.com/media-buying/media-buying-briefing-synthetic-audience-adoption-by-agencies-and-clients-takes-off/" rel="noopener" target="_blank">Media Buying Briefing: Synthetic audience adoption by agencies and clients takes off</a> — Digiday, 2026-10-12</li></ol></section>
+<p class="note"><b>Por que escrevemos isto</b>Escrevemos isto porque a pergunta de como personalizar para novos usuários sem dados suficientes não para de surgir em times de marketing com perfil técnico – e em nenhum lugar mais do que no mercado alemão, tão atento à privacidade. A atual onda de públicos sintéticos torna ainda mais urgente a questão da base de dados correta.</p>
+</div>
+<aside class="side"><div class="side-in">
+<nav class="toc" aria-label="Nesta página"><h4>Nesta página</h4><a href="#what-is-the-cold-start-problem-in-advertising">O que é o problema de cold start na publicidade?</a><a href="#why-more-data-doesn-t-solve-the-problem">Por que mais dados não resolvem o problema</a><a href="#how-are-personas-built-from-public-content">Como são criadas personas a partir de conteúdo público?</a><a href="#what-approaches-are-there-to-the-cold-start">Que abordagens existem para o cold start?</a><a href="#how-do-you-put-cold-start-personalisation-into-practice-in-s">Como colocar a personalização de cold start em prática em seis passos?</a><a href="#how-useful-are-synthetic-audiences-for-the-cold-start">Qual a utilidade dos públicos sintéticos para o cold start?</a><a href="#how-do-you-know-your-cold-start-strategy-is-working">Como saber se a sua estratégia de cold start está funcionando?</a></nav>
+<div class="side-cta"><h4>Defy</h4><p>Pronto para lutar acima do seu peso?</p><a class="btn btn-r" href="mailto:talktous@defygroup.ai">Comece uma conversa</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener">Entrar na Defy</a></div>
+</div></aside>
+</div>
+</article>
+<section class="related"><div class="wrap"><h2>Mais do jornal<span class="sq"></span></h2>
+<div class="grid"><a class="card" href="/blog/pt/ai-consumer-behaviour-rebuild-agency-insights/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d50-768.webp"><img src="/assets/blog/hero/d50.jpg" alt="Foto em preto e branco de pessoas vistas de costas atravessando um parque coberto de neve por um atalho já pisado, enquanto o caminho pavimentado faz uma curva vazio, com um pequeno quadrado vermelho caído na neve." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight e estratégia</div><h3>IA e comportamento do consumidor: por que as agências precisam reconstruir seu trabalho de insight</h3><p>Quando as pessoas perguntam a chatbots e algoritmos curam seus feeds, os métodos clássicos de insight ficam obsoletos. O que os estrategistas devem fazer diferente agora – e o que a IA não consegue fazer por eles.</p><div class="meta"><span>7 min de leitura</span></div></div></a><a class="card" href="/blog/pt/christmas-2026-social-listening-early-warning/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d48-768.webp"><img src="/assets/blog/hero/d48.jpg" alt="Foto em preto e branco da vitrine de uma loja de departamentos sendo decorada para o Natal, com caixas de bolas natalinas e uma árvore nua atrás do vidro e, em primeiro plano, um mostrador cujo ponteiro se aproxima de uma pequena marca vermelha de limite." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight e estratégia</div><h3>Natal 2026: social listening como sistema de alerta precoce para agências</h3><p>Analise em janeiro e o Natal já terá acabado. Como as agências usam o social listening para detectar cedo o humor de compra, a pressão de preços e as promoções dos concorrentes.</p><div class="meta"><span>7 min de leitura</span></div></div></a><a class="card" href="/blog/pt/measure-cross-platform-engagement-agencies/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/d44-768.webp"><img src="/assets/blog/hero/d44.jpg" alt="Natureza-morta em preto e branco de fitas métricas descombinadas empilhadas sobre impressões em papel quadriculado, com uma longa régua de aço atravessada sobre elas e uma pequena etiqueta vermelha na ponta." width="1536" height="1024" loading="lazy"></picture></div><div class="tx"><div class="eyebrow">Insight e estratégia</div><h3>Medir engajamento entre plataformas: hora de aposentar a planilha da agência</h3><p>Cada plataforma conta o engajamento do seu jeito. O método, as métricas e os critérios de ferramenta para uma medição multiplataforma confiável – sem precisar de planilha remendada.</p><div class="meta"><span>7 min de leitura</span></div></div></a></div>
+<a class="btn btn-o" href="/blog/pt/">← Voltar ao jornal</a><div style="height:60px"></div>
+</div></section>
+</main>
+<section class="cta" aria-label="Contato">
+<h2>Pronto para lutar acima do seu peso?</h2>
+<p>Conheça a stack de inteligência que as grandes redes guardam a sete chaves. Sem pitch — só uma conversa.</p>
+<div class="row"><a class="btn btn-w" href="mailto:talktous@defygroup.ai" onclick="try{gtag('event','contact_click',{location:'blog_cta'})}catch(e){}">Comece uma conversa</a><a class="btn btn-ow" href="https://cloud.defygroup.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_cta'})}catch(e){}">Entrar na Defy</a></div>
+</section>
+<footer class="df">
+<div class="wrap">
+<div class="df-grid">
+<div><img src="/assets/img/defy-logo-white.svg" alt="Defy" width="104" height="45"><p>A plataforma de insight e automação para agências que lutam acima do seu peso.</p></div>
+<div><h4>Defy</h4><a href="/#main">Início</a><a href="/#platform">Plataforma</a><a href="/#clients">Clientes</a><a href="/#team">Equipe</a></div>
+<div class="df-langs"><h4>Blog</h4><a href="/blog/" hreflang="en">English</a><a href="/blog/fr/" hreflang="fr">Français</a><a href="/blog/de/" hreflang="de">Deutsch</a><a href="/blog/es/" hreflang="es">Español</a><a href="/blog/pt/" hreflang="pt-BR">Português</a><a href="/blog/it/" hreflang="it">Italiano</a><a href="/blog/nl/" hreflang="nl">Nederlands</a><a href="/blog/pl/" hreflang="pl">Polski</a><a href="/blog/zh/" hreflang="zh-Hans">简体中文</a><a href="/blog/zh-hant/" hreflang="zh-Hant">繁體中文</a><a href="/blog/ja/" hreflang="ja">日本語</a><a href="/blog/ko/" hreflang="ko">한국어</a><a href="/blog/hi/" hreflang="hi">हिन्दी</a><a href="/blog/id/" hreflang="id">Bahasa Indonesia</a><a href="/blog/vi/" hreflang="vi">Tiếng Việt</a><a href="/blog/th/" hreflang="th">ไทย</a></div>
+<div><h4>Contato</h4><a href="mailto:talktous@defygroup.ai">talktous@defygroup.ai</a><a href="https://cloud.defygroup.ai" rel="noopener">Entrar</a><a href="/llms.txt">llms.txt</a><a href="/blog/pt/feed.xml">RSS</a></div>
+</div>
+<div class="df-bot"><span>© 2026 Defy Group Limited. Todos os direitos reservados.</span><span>defygroup.ai</span></div>
+</div>
+</footer>
+<script id="lsw-js">document.addEventListener("click",function(e){document.querySelectorAll("details.lsw[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});document.addEventListener("keydown",function(e){if(e.key==="Escape")document.querySelectorAll("details.lsw[open]").forEach(function(d){d.removeAttribute("open");d.querySelector("summary").focus()})});</script>
+</body>
+</html>

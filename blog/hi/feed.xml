@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Defy — Defy जर्नल</title>
+<link>https://defygroup.ai/blog/hi/</link>
+<description>एजेंसी के अर्थशास्त्र, AI को अपनाने और इनसाइट की कला पर ज़मीनी नोट्स — स्वतंत्र एजेंसियों, इन-हाउस टीमों और बड़े नेटवर्कों से पिछड़कर थक चुके सभी के लिए।</description>
+<language>hi</language>
+<lastBuildDate>Tue, 20 Oct 2026 12:00:00 +0800</lastBuildDate>
+<atom:link href="https://defygroup.ai/blog/hi/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>एजेंसी में क्या ऑटोमेट करें: पहले इन तीन सवालों के जवाब दें</title>
+<link>https://defygroup.ai/blog/hi/before-you-automate-three-questions-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/before-you-automate-three-questions-agencies/</guid>
+<description>कुछ भी ऑटोमेट करने से पहले पूछें कि फ़ैसला कितना जटिल है, खराब आउटपुट कितना नुकसान कर सकता है और कौन-सा मापने योग्य नतीजा बेहतर होगा। एजेंसियों के लिए गाइड।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए AI रेडीनेस असेसमेंट: सबसे कमज़ोर आयाम ही क्यों तय करता है</title>
+<link>https://defygroup.ai/blog/hi/agency-ai-readiness-four-dimensions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-ai-readiness-four-dimensions/</guid>
+<description>कॉन्टेक्स्ट, लोग, प्रोसेस, प्लेटफ़ॉर्म: एजेंसियों के लिए व्यावहारिक AI रेडीनेस असेसमेंट, और यह कि अकेले AI कोर्स आपकी सबसे कमज़ोर कड़ी क्यों नहीं सुधारते।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों में AI का विरोध मानकों की समस्या है, लोगों की नहीं</title>
+<link>https://defygroup.ai/blog/hi/ai-resistance-standards-not-people/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-resistance-standards-not-people/</guid>
+<description>आपके सबसे अच्छे लोग AI का नहीं, खराब आउटपुट का विरोध कर रहे हैं। एजेंसियों में AI विरोध गुणवत्ता की खाई का संकेत क्यों है, और बर्नआउट के बिना इसे कैसे ठीक करें।</description>
+<category>टैलेंट और कल्चर</category>
+<pubDate>Fri, 16 Oct 2026 13:46:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी AI रणनीति: वह न बनाएं जिसे Meta और Google ऑटोमेट कर देंगे</title>
+<link>https://defygroup.ai/blog/hi/dont-build-what-platforms-automate-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/dont-build-what-platforms-automate-agencies/</guid>
+<description>Meta और Google अब टार्गेटिंग, विज्ञापन निर्माण और कैंपेन सेटअप ऑटोमेट कर रहे हैं। एजेंसी की ज़्यादा धारदार AI रणनीति: टूल खरीदें, और वहां मुकाबला करें जहां विवेक ही उत्पाद है।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 13:39:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए AI मेट्रिक्स: क्लाइंट उपयोग नहीं, नतीजों के लिए भुगतान क्यों करते हैं</title>
+<link>https://defygroup.ai/blog/hi/measure-ai-results-not-usage-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/measure-ai-results-not-usage-agencies/</guid>
+<description>सीट, एजेंट और बनाए गए एसेट सिर्फ दिखावटी आंकड़े हैं। क्लाइंट जिन AI मेट्रिक्स की कद्र करते हैं: प्रति आउटपुट लागत, गति, त्रुटि दर और मुनाफ़ा।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 13:32:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी में AI ROI कैसे मापें: तैनाती से पहले सफलता तय करें</title>
+<link>https://defygroup.ai/blog/hi/define-success-before-deploying-ai-agency/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/define-success-before-deploying-ai-agency/</guid>
+<description>बेसलाइन, टारगेट, टेस्ट, रिव्यू: एजेंसियों के लिए AI ROI मापने का सरल तरीक़ा। जाँच का समय और AI ड्रैग गिनें, और जानें कि ऑटोमेशन सचमुच फ़ायदा देता है या नहीं।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 13:25:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए क्लोज़्ड-लूप AI: ग्यारह टूल से एक साझा लेयर तक</title>
+<link>https://defygroup.ai/blog/hi/one-shared-layer-agency-ai-closed-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/one-shared-layer-agency-ai-closed-loop/</guid>
+<description>ग्यारह टूल, बीस मालिक, और साझा कुछ नहीं? जानिए एजेंसियाँ मेमोरी, स्किल्स, वर्कफ़्लो और अप्रूवल की एक साझा लेयर से क्लोज़्ड-लूप AI सिस्टम कैसे बनाती हैं।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 13:18:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों में AI की भूमिकाएँ: AI को सबका काम बनाना बंद करें</title>
+<link>https://defygroup.ai/blog/hi/stop-making-ai-everyones-job-builders-users-approvers/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/stop-making-ai-everyones-job-builders-users-approvers/</guid>
+<description>आपकी एजेंसी में हर किसी को AI बनाने की ज़रूरत नहीं। जानिए AI के दौर में बिल्डर, यूज़र और अप्रूवर कैसे क्वालिटी, करियर और नौकरी की सुरक्षा बचाते हैं।</description>
+<category>टैलेंट और कल्चर</category>
+<pubDate>Fri, 16 Oct 2026 13:11:00 +0800</pubDate>
+</item>
+<item>
+<title>AI-नेटिव एजेंसी: रफ़्तार प्रगति क्यों नहीं है, और वे 5 स्तर जो प्रगति हैं</title>
+<link>https://defygroup.ai/blog/hi/speed-is-not-progress-ai-native-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/speed-is-not-progress-ai-native-agencies/</guid>
+<description>AI-नेटिव एजेंसी असल में क्या है, AI अपनाने के पाँच स्तर कौन-से हैं, और ज़्यादातर एजेंसियों को उसी स्तर पर क्यों रुक जाना चाहिए जो उनका बॉटलनेक हटा दे।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 13:04:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों में AI अपनाना: ऑटोमेट करने से पहले असली वर्कफ़्लो दर्ज करें</title>
+<link>https://defygroup.ai/blog/hi/ai-bad-process-document-workflows-first/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-bad-process-document-workflows-first/</guid>
+<description>खराब प्रक्रिया पर AI से बस तेज़ रफ़्तार की खराब प्रक्रिया मिलती है। एजेंसियाँ असली वर्कफ़्लो कैसे मैप करें, बॉटलनेक कैसे खोजें और उसके बाद ही ऑटोमेशन तय करें।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
+</item>
+<item>
+<title>AI और उपभोक्ता व्यवहार: एजेंसियों को अपना इनसाइट का काम नए सिरे से क्यों गढ़ना चाहिए</title>
+<link>https://defygroup.ai/blog/hi/ai-consumer-behaviour-rebuild-agency-insights/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-consumer-behaviour-rebuild-agency-insights/</guid>
+<description>AI उपभोक्ता व्यवहार को कैसे बदल रहा है और एजेंसियों को इनसाइट का काम क्यों नए सिरे से गढ़ना चाहिए: तीन बदलाव, एक डेटा-जाल और अमल के लिए छह कदम।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
+</item>
+<item>
+<title>कोल्ड-स्टार्ट समस्या: यूज़र डेटा न हो तो विज्ञापनों को पर्सनलाइज़ कैसे करें</title>
+<link>https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/cold-start-ad-personalisation-public-personas/</guid>
+<description>विज्ञापन में कोल्ड-स्टार्ट समस्या का समाधान: सार्वजनिक कंटेंट से बने पर्सोना के सहारे थर्ड-पार्टी डेटा के बिना नए यूज़र्स के लिए पर्सनलाइज़ेशन कैसे करें।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
+</item>
+<item>
+<title>क्रिसमस 2026: एजेंसियों के लिए अर्ली-वॉर्निंग सिस्टम के रूप में सोशल लिसनिंग</title>
+<link>https://defygroup.ai/blog/hi/christmas-2026-social-listening-early-warning/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/christmas-2026-social-listening-early-warning/</guid>
+<description>क्रिसमस ट्रेडिंग के लिए सोशल लिसनिंग: Q4 बजट बचाने के लिए एजेंसियों को अभी कौन-से संकेत देखने चाहिए – सिग्नल टेबल और छह-चरणीय योजना के साथ।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए AI टूल्स: MCP कैसे आपको टूल की भरमार से बाहर निकालता है</title>
+<link>https://defygroup.ai/blog/hi/ai-tools-agencies-mcp-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-tools-agencies-mcp-integration/</guid>
+<description>एजेंसियों के लिए AI टूल्स का सही इंटीग्रेशन: टूल की भरमार समय क्यों बर्बाद करती है, MCP क्या बदलता है और छह चरणों में लीन AI स्टैक कैसे बनाएं।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
+</item>
+<item>
+<title>AI के लिए एजेंसी प्राइसिंग मॉडल: उचित दाम लें, मार्जिन मुफ़्त में न दें</title>
+<link>https://defygroup.ai/blog/hi/agency-pricing-models-fair-ai-pricing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-pricing-models-fair-ai-pricing/</guid>
+<description>AI के दौर में एजेंसी प्राइसिंग मॉडल: अपनी एफ़िशिएंसी का लाभ क्यों न सौंपें, और कौन-सी फ़ीस संरचनाएँ आपके मार्जिन की सचमुच रक्षा करती हैं।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
+</item>
+<item>
+<title>अपनी एजेंसी की सेवाएँ सीमित करना: क्या बंद करें और कब</title>
+<link>https://defygroup.ai/blog/hi/when-to-stop-an-agency-service/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/when-to-stop-an-agency-service/</guid>
+<description>अपनी एजेंसी की सेवाएँ सीमित करना: किसी सेवा का समय पूरा होने के संकेत, छह चरणों वाला तरीका और फ़ैसले से पहले जाँचने योग्य डेटा।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
+</item>
+<item>
+<title>क्रॉस-प्लेटफ़ॉर्म एंगेजमेंट की माप: अब एजेंसी की स्प्रेडशीट को विदा करने का समय</title>
+<link>https://defygroup.ai/blog/hi/measure-cross-platform-engagement-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/measure-cross-platform-engagement-agencies/</guid>
+<description>क्रॉस-प्लेटफ़ॉर्म एंगेजमेंट को भरोसेमंद ढंग से कैसे मापें: साझा परिभाषाएँ, सामान्यीकृत मेट्रिक्स, खेल का उदाहरण और टूल चुनने के मानदंड।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों में इम्पोस्टर सिंड्रोम: AI के दौर में आत्मविश्वास दोबारा कैसे बनाएं</title>
+<link>https://defygroup.ai/blog/hi/imposter-syndrome-agencies-ai-era/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/imposter-syndrome-agencies-ai-era/</guid>
+<description>एजेंसियों में इम्पोस्टर सिंड्रोम: AI खासकर जूनियर्स में आत्म-संदेह को क्यों बढ़ाता है, और दिखावे के बजाय सबूतों पर टिका आत्मविश्वास कैसे बनाएं।</description>
+<category>टैलेंट और कल्चर</category>
+<pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
+</item>
+<item>
+<title>बिना उत्तरदाताओं की रिसर्च: सिंथेटिक पर्सोना वादा हैं या मृगतृष्णा?</title>
+<link>https://defygroup.ai/blog/hi/respondent-free-research-synthetic-personas/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/respondent-free-research-synthetic-personas/</guid>
+<description>सिंथेटिक पर्सोना और बिना उत्तरदाताओं की रिसर्च: पीढ़ीगत इनसाइट के लिए उनकी क्या कीमत है, वे कहां चूकते हैं और उन्हें हक़ीक़त से कैसे जोड़ें।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
+</item>
+<item>
+<title>मीडिया एजेंसियां और AI: नए दौर का स्वतंत्र एजेंसियों के लिए क्या मतलब है</title>
+<link>https://defygroup.ai/blog/hi/media-agencies-new-ai-era-independents/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/media-agencies-new-ai-era-independents/</guid>
+<description>मीडिया एजेंसियां और AI: एक्ज़ीक्यूशन सिकुड़ रहा है और मूल्य सलाह की ओर बढ़ रहा है। स्वतंत्र एजेंसियों के लिए क्या बदलता है और शुरुआत कहां से करें।</description>
+<category>एजेंसी के प्रकार</category>
+<pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी पारिश्रमिक: सोशल डेटा से अपनी वैल्यू कैसे साबित करें</title>
+<link>https://defygroup.ai/blog/hi/agency-remuneration-social-data-proof-of-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-remuneration-social-data-proof-of-value/</guid>
+<description>फ़्रांस का AACC एजेंसी पारिश्रमिक को खर्च किए समय से आगे ले जाना चाहता है। सोशल डेटा को चरण-दर-चरण ट्रेस करने योग्य सबूत में कैसे बदलें।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>क्लाइंट जिन एंगेजमेंट मेट्रिक्स को अहमियत देते हैं (और जो सिर्फ़ दिखावा हैं)</title>
+<link>https://defygroup.ai/blog/hi/engagement-metrics-clients-value/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/engagement-metrics-clients-value/</guid>
+<description>क्लाइंट किन एंगेजमेंट मेट्रिक्स को सचमुच अहमियत देते हैं? वैनिटी और नतीजों में फ़र्क़ करें और फ़ैसलों तक ले जाने वाली रिपोर्ट बनाएं।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए ब्लैक फ्राइडे: रिपोर्टिंग ऑटोमेट करें, ऑप्टिमाइज़ करने का समय वापस पाएं</title>
+<link>https://defygroup.ai/blog/hi/black-friday-agencies-automate-reporting/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/black-friday-agencies-automate-reporting/</guid>
+<description>ब्लैक फ्राइडे 2026 में छह हफ़्ते बचे हैं। एजेंसियों के लिए योजना: रिपोर्टिंग और अलर्ट ऑटोमेट करें, ताकि पीक में टीम ऑप्टिमाइज़ेशन पर लगे।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
+</item>
+<item>
+<title>B2B कंटेंट मार्केटिंग जो फ़ैसला लेने वालों को सुला न दे</title>
+<link>https://defygroup.ai/blog/hi/b2b-content-marketing-that-engages/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/b2b-content-marketing-that-engages/</guid>
+<description>B2B कंटेंट मार्केटिंग का उबाऊ होना ज़रूरी नहीं। खरीदारों के असली टेंशन से शुरू करें, मीडिया खर्च से पहले कॉन्सेप्ट टेस्ट करें और क्वालिफ़ाइड लीड पाएँ।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
+</item>
+<item>
+<title>AI और होल्डिंग कंपनी मॉडल का अंत: इंडिपेंडेंट एजेंसियों के लिए सबक</title>
+<link>https://defygroup.ai/blog/hi/ai-holding-company-model-independent-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-holding-company-model-independent-agencies/</guid>
+<description>WPP में छँटनी और घटती एजेंसी फ़ीस दिखाती हैं कि AI होल्डिंग कंपनियों को नया रूप दे रहा है। क्या बदल रहा है, और AI इंडिपेंडेंट एजेंसियों को कैसे बढ़त देता है।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
+</item>
+<item>
+<title>बिखरी मीडिया खपत: डैशबोर्ड से आगे अपनी ऑडियंस को समझना</title>
+<link>https://defygroup.ai/blog/hi/fragmented-media-consumption-audience-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/fragmented-media-consumption-audience-data/</guid>
+<description>बिखरी मीडिया खपत से डेटा हर चैनल में बँट जाता है। जानें कि ऑडियंस डेटा को असली पर्सोना और टेंशन में कैसे जोड़ें और बेहतर प्लानिंग करें।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
+</item>
+<item>
+<title>ब्राज़ील में एजेंसी पिच: नए नियम सबूत लाने वालों को इनाम देते हैं</title>
+<link>https://defygroup.ai/blog/hi/brazil-agency-pitches-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/brazil-agency-pitches-category-intelligence/</guid>
+<description>ब्राज़ील की Abracom/ABA एजेंसी पिच गाइड में अब 10 क़दम हैं। उपभोक्ता व्यवहार और कैटेगरी डेटा के साथ सबूतों के दम पर पिच कैसे जीतें।</description>
+<category>न्यू बिज़नेस</category>
+<pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
+</item>
+<item>
+<title>AI से ब्रांड डिफ़रेंशिएशन: प्रतिस्पर्धियों जैसा सुनाई देने से कैसे बचें</title>
+<link>https://defygroup.ai/blog/hi/brand-differentiation-ai-without-sounding-generic/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/brand-differentiation-ai-without-sounding-generic/</guid>
+<description>AI से ब्रांड को अलग पहचान: जानें आपकी कैटेगरी पहले से क्या कह रही है, अछूता इलाक़ा कैसे खोजें और मीडिया ख़र्च से पहले आइडिया कैसे परखें।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी बर्नआउट: कम दोहराव वाला काम, रचनात्मकता के लिए ज़्यादा समय</title>
+<link>https://defygroup.ai/blog/hi/agency-burnout-automate-repetitive-work/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-burnout-automate-repetitive-work/</guid>
+<description>एजेंसी बर्नआउट को समझें: रचनात्मक दबाव और दोहराव के बोझ में फ़र्क़ कैसे करें, कौन-से काम ऑटोमेट करें, और आपकी टीम के लिए पाँच क़दमों की योजना।</description>
+<category>टैलेंट और कल्चर</category>
+<pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
+</item>
+<item>
+<title>टैरिफ़ और मार्केटिंग रणनीति: संदेश और बजट को कैसे संतुलित करें</title>
+<link>https://defygroup.ai/blog/hi/tariffs-marketing-strategy-messages-budgets/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/tariffs-marketing-strategy-messages-budgets/</guid>
+<description>टैरिफ़ और मार्केटिंग रणनीति: अपनी कैटेगरी पर असर कैसे पढ़ें, बाज़ार-दर-बाज़ार संदेश कैसे बदलें और बजट को बिना ठिठके कैसे फिर से बाँटें।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए सोशल लिसनिंग: तिमाही रिपोर्ट आने तक देर हो चुकी होती है</title>
+<link>https://defygroup.ai/blog/hi/continuous-social-listening-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/continuous-social-listening-agencies/</guid>
+<description>एजेंसियों के लिए सोशल लिसनिंग: तिमाही रिपोर्ट से उपभोक्ता ट्रेंड्स की निरंतर ट्रैकिंग तक कैसे पहुँचें, छह चरणों की व्यावहारिक पद्धति के साथ।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
+</item>
+<item>
+<title>मार्केटिंग में AI डेटा विश्लेषण: ऐसे निष्कर्ष जिन्हें आपके क्लाइंट जाँच सकें</title>
+<link>https://defygroup.ai/blog/hi/ai-data-analysis-verifiable-conclusions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-data-analysis-verifiable-conclusions/</guid>
+<description>मार्केटिंग में AI डेटा विश्लेषण की बेस्ट प्रैक्टिस: डेटा साइलो कैसे तोड़ें और क्लाइंट को ऐसे निष्कर्ष कैसे दें जिन्हें वे जाँच सकें, चरण-दर-चरण, चेकलिस्ट के साथ।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
+</item>
+<item>
+<title>स्वतंत्र एजेंसियों के लिए AI: वे एकजुट क्यों हो रही हैं और क्या बदल रहा है</title>
+<link>https://defygroup.ai/blog/hi/independent-agency-consolidation-spain-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/independent-agency-consolidation-spain-ai/</guid>
+<description>Jungle चार फ़र्मों को जोड़ रही है और SAMY अमेरिका में खरीदारी कर रही है। स्वतंत्र एजेंसियों के एकीकरण में AI की भूमिका, और स्केल तक अपना रास्ता कैसे चुनें।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
+</item>
+<item>
+<title>भरोसा खोए बिना पर्सनलाइज़्ड विज्ञापन: एजेंसियों के लिए गाइड</title>
+<link>https://defygroup.ai/blog/hi/ad-personalisation-without-third-party-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ad-personalisation-without-third-party-data/</guid>
+<description>थर्ड-पार्टी डेटा पर निर्भर हुए बिना और समुदाय का भरोसा तोड़े बिना, महिला फ़ुटबॉल के प्रशंसकों जैसी नीश ऑडियंस के लिए विज्ञापन पर्सनलाइज़ेशन की गाइड।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
+</item>
+<item>
+<title>AI मीडिया प्लानिंग: डेमोग्राफिक्स से असली उपभोक्ता टेंशन तक</title>
+<link>https://defygroup.ai/blog/hi/media-planning-real-personas-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/media-planning-real-personas-ai/</guid>
+<description>AI मीडिया प्लानिंग से डेमोग्राफिक्स के आगे बढ़कर अपनी ऑडियंस के असली टेंशन तक पहुंचें: सात चरणों की विधि और तुलना तालिका।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
+</item>
+<item>
+<title>सिंगापुर में मीडिया खपत का डेटा: नेटवर्क सिकुड़ रहे हैं, तो किस पर भरोसा करें</title>
+<link>https://defygroup.ai/blog/hi/apac-agencies-market-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/apac-agencies-market-intelligence/</guid>
+<description>सिंगापुर में मीडिया खपत का डेटा कहाँ मिलेगा, किस काम के लिए किस स्रोत पर भरोसा करें, और स्वतंत्र एजेंसियाँ नेटवर्क के बिना मार्केट इंटेलिजेंस कैसे बनाएँ।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
+</item>
+<item>
+<title>AI हर तरह की मार्केटिंग एजेंसी पर कैसे असर डालता है: क्रिएटिव से इन्फ्लुएंसर तक</title>
+<link>https://defygroup.ai/blog/hi/how-ai-disrupts-each-agency-type/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/how-ai-disrupts-each-agency-type/</guid>
+<description>AI क्रिएटिव, मीडिया, CRM, PR और इन्फ्लुएंसर एजेंसियों को कैसे बदलता है: कौन-से काम पहले जाते हैं, क्या मूल्यवान बनता है, और हर एजेंसी को कौन-से AI टूल आज़माने चाहिए।</description>
+<category>एजेंसी के प्रकार</category>
+<pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
+</item>
+<item>
+<title>AI कंटेंट निर्माण की सर्वश्रेष्ठ प्रथाएँ: एजेंसियों के लिए गुणवत्ता फ्रेमवर्क</title>
+<link>https://defygroup.ai/blog/hi/ai-content-quality-framework-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-content-quality-framework-agencies/</guid>
+<description>एजेंसियों के लिए AI कंटेंट निर्माण की सर्वश्रेष्ठ प्रथाएँ: सात गेट का फ्रेमवर्क, जो ब्रांड वॉइस बचाए, अहम फ़ैसले इंसानों के पास रखे और मीडिया खर्च से पहले टेस्ट करे।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
+</item>
+<item>
+<title>असली आँकड़ों वाले AI मार्केटिंग केस स्टडी, और वे क्या छोड़ देते हैं</title>
+<link>https://defygroup.ai/blog/hi/ai-driven-agency-case-studies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-driven-agency-case-studies/</guid>
+<description>बहुत कम AI मार्केटिंग केस स्टडी जाँच में टिकते हैं। हम 8.5% की अनुमानित बढ़ोतरी जैसे असली आँकड़ों वाले मामले देखते हैं और बाकियों को परखना सिखाते हैं।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 09:34:00 +0800</pubDate>
+</item>
+<item>
+<title>AI-नेटिव मार्केटिंग संगठन: क्लाइंट अब भी एजेंसियों से क्या खरीदते हैं</title>
+<link>https://defygroup.ai/blog/hi/ai-native-marketing-organization-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-native-marketing-organization-agencies/</guid>
+<description>Liquid Death दो लोगों और एजेंसी के बनाए AI सिस्टम से बड़ा बजट चलाने की योजना बना रहा है। AI-नेटिव मार्केटिंग संगठन को एजेंसियों से क्या चाहिए।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 09:27:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी पिच रणनीति: 48 घंटे के कैटेगरी इनसाइट स्प्रिंट से जीतें</title>
+<link>https://defygroup.ai/blog/hi/win-agency-pitches-ai-category-insight/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/win-agency-pitches-ai-category-insight/</guid>
+<description>48 घंटे के स्प्रिंट से एजेंसी पिच की रणनीति: प्रतिस्पर्धियों के विज्ञापन, ऑडियंस के टेंशन और अनछुआ एंगल, और Publicis के CEO की सेलिंग का मतलब।</description>
+<category>न्यू बिज़नेस</category>
+<pubDate>Fri, 16 Oct 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>ग्लोबल कैंपेन उम्मीद से कम दें तो मार्केटिंग बजट ROI कैसे बढ़ाएँ</title>
+<link>https://defygroup.ai/blog/hi/global-vs-local-campaign-budget/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/global-vs-local-campaign-budget/</guid>
+<description>मार्केटिंग बजट ROI बढ़ाने की शुरुआत क्रिएटिव के मेल से करें: ग्लोबल बनाम लोकल पर नए शोध का मतलब, बाज़ार-दर-बाज़ार निर्णय तालिका और सात चरण।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 09:13:00 +0800</pubDate>
+</item>
+<item>
+<title>AI वीडियो प्रोडक्शन लागत: सस्ते फ़्रेम से भी बजट क्यों नहीं घटता</title>
+<link>https://defygroup.ai/blog/hi/ai-video-production-agency-economics/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/ai-video-production-agency-economics/</guid>
+<description>AI वीडियो के हर फ़्रेम की लागत घटाता है, बजट की नहीं। जानिए बचत असल में कहाँ है, क्लाइंट ज़्यादा क्यों माँगते हैं और एजेंसियाँ AI-सहायित वीडियो की क़ीमत कैसे तय करें।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 09:06:00 +0800</pubDate>
+</item>
+<item>
+<title>Gen Z उपभोक्ताओं तक कैसे पहुँचें: जन्म वर्ष से नहीं, कम्युनिटी से बनाएँ योजना</title>
+<link>https://defygroup.ai/blog/hi/gen-z-persona-clustering/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/gen-z-persona-clustering/</guid>
+<description>उम्र के दायरे से कोई ब्रीफ नहीं बनता। जानिए एजेंसियाँ असली बातचीत को पर्सोना में बाँटकर Gen Z तक कैसे पहुँचती हैं: सात चरणों की विधि और उदाहरण।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 08:59:00 +0800</pubDate>
+</item>
+<item>
+<title>रिटेल मीडिया नेटवर्क और एजेंसियां: बजट असल में किसका?</title>
+<link>https://defygroup.ai/blog/hi/retail-media-agency-ownership/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/retail-media-agency-ownership/</guid>
+<description>रिटेल मीडिया नेटवर्क मीडिया, कॉमर्स, परफ़ॉर्मेंस और क्रिएटर एजेंसियों को एक ही लड़ाई में खींच लाए हैं। चैनल किसका हो, और इंडिपेंडेंट कैसे सीट जीतें।</description>
+<category>एजेंसी के प्रकार</category>
+<pubDate>Fri, 16 Oct 2026 08:52:00 +0800</pubDate>
+</item>
+<item>
+<title>क्या AI एजेंसियों की जगह लेगा? हिसाब अक्सर नहीं बैठता</title>
+<link>https://defygroup.ai/blog/hi/will-ai-replace-agencies/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/will-ai-replace-agencies/</guid>
+<description>क्या AI मार्केटिंग एजेंसियों की जगह ले लेगा? AI और इन-हाउस हायर की असली लागत, AI को एजेंसी के कौन-से काम संभालने चाहिए और कहां लोग ज़रूरी हैं।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 08:45:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी कंसोलिडेशन या रोस्टर? StarKist और ServiceNow से सीख</title>
+<link>https://defygroup.ai/blog/hi/agency-consolidation-vs-roster/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-consolidation-vs-roster/</guid>
+<description>एजेंसी कंसोलिडेशन या विशेषज्ञ रोस्टर? StarKist का Tombras के पास जाना और Stagwell की ServiceNow जीत बताती है कि एजेंसियां बड़े अकाउंट कैसे जीतती हैं।</description>
+<category>न्यू बिज़नेस</category>
+<pubDate>Fri, 16 Oct 2026 08:38:00 +0800</pubDate>
+</item>
+<item>
+<title>इंडिपेंडेंट एजेंसी बनाम होल्डिंग कंपनी: डेटा पर इंडिपेंडेंट कैसे मुक़ाबला करें</title>
+<link>https://defygroup.ai/blog/hi/independent-agencies-vs-holding-company-data/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/independent-agencies-vs-holding-company-data/</guid>
+<description>इंडिपेंडेंट एजेंसी बनाम होल्डिंग कंपनी: नेटवर्क डेटा में कहाँ आगे हैं, इंडिपेंडेंट कहाँ बराबरी कर सकती हैं, और फ़ासला पाटने की 90-दिन की योजना।</description>
+<category>एजेंसी के प्रकार</category>
+<pubDate>Fri, 16 Oct 2026 08:31:00 +0800</pubDate>
+</item>
+<item>
+<title>इन्फ्लुएंसर मार्केटिंग रिपोर्टिंग: एजेंसियों की नई जंग क्यों बन गई</title>
+<link>https://defygroup.ai/blog/hi/influencer-agency-reporting-automation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/influencer-agency-reporting-automation/</guid>
+<description>दर्जनों नैनो-इन्फ्लुएंसर के बावजूद ROI साबित करने वाली इन्फ्लुएंसर मार्केटिंग रिपोर्टिंग कैसे करें: मेट्रिक्स, भरोसे के संकेत और क्या ऑटोमेट करें।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 08:24:00 +0800</pubDate>
+</item>
+<item>
+<title>ऑडियंस रिसर्च टूल्स: प्लानर्स को सबसे पहले क्या ऑटोमेट करना चाहिए</title>
+<link>https://defygroup.ai/blog/hi/future-of-strategy-planners-automate/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/future-of-strategy-planners-automate/</guid>
+<description>प्लानर्स को कौन-से ऑडियंस रिसर्च टूल्स सबसे पहले ऑटोमेट करने चाहिए? कामों का व्यावहारिक क्रम, टूल चुनने की चेकलिस्ट और वह जो इंसानों के पास ही रहे।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 08:17:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंटिक AI विज्ञापन, बेकाबू एजेंटों के डर के बिना: इंसानों को लूप में रखें</title>
+<link>https://defygroup.ai/blog/hi/agentic-media-human-in-the-loop/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agentic-media-human-in-the-loop/</guid>
+<description>एजेंटिक AI विज्ञापन तेज़ी से आ रहा है। जानें, एजेंसियाँ इंसानी नियंत्रण कैसे रखती हैं: मंज़ूरी की सीमाएँ, नामित ज़िम्मेदार और संदेश पर इंसानी पकड़।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 08:10:00 +0800</pubDate>
+</item>
+<item>
+<title>सिंथेटिक ऑडियंस का चलन तेज़ी से बढ़ रहा है। एजेंसियाँ उन्हें भरोसेमंद ऐसे बनाए रखती हैं</title>
+<link>https://defygroup.ai/blog/hi/synthetic-audiences-agencies-validation/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/synthetic-audiences-agencies-validation/</guid>
+<description>सिंथेटिक ऑडियंस अब एजेंसियों की रोज़ की प्लानिंग में आ रही हैं। जानिए वे कहाँ भरोसेमंद हैं, कहाँ भटकाती हैं, और हर नतीजा परखने के छह क़दम।</description>
+<category>इनसाइट और रणनीति</category>
+<pubDate>Fri, 16 Oct 2026 08:03:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी स्प्रिंट मॉडल: रणनीति बिगाड़े बिना तेज़ी से कैसे काम करें</title>
+<link>https://defygroup.ai/blog/hi/agency-sprint-model-speed-strategy/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-sprint-model-speed-strategy/</guid>
+<description>एजेंसी स्प्रिंट मॉडल रफ़्तार बेचता है। रणनीति बिगाड़े बिना तेज़ स्प्रिंट ऐसे चलाएँ: तिमाही भर की रणनीतिक रीढ़, ताज़ा प्रमाण और ऑटोमेटेड रूटीन काम।</description>
+<category>एजेंसी के प्रकार</category>
+<pubDate>Fri, 16 Oct 2026 07:56:00 +0800</pubDate>
+</item>
+<item>
+<title>क्रिएटिव प्री-टेस्टिंग: रचनात्मकता बनाम परफ़ॉर्मेंस की जंग कैसे ख़त्म करें</title>
+<link>https://defygroup.ai/blog/hi/creativity-vs-performance-pre-testing/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/creativity-vs-performance-pre-testing/</guid>
+<description>क्रिएटिव प्री-टेस्टिंग से रचनात्मकता बनाम परफ़ॉर्मेंस की जंग ख़त्म करें: खर्च से पहले कॉन्सेप्ट स्कोर करें, साहसिक आइडिया बचाएँ, फ़ैसला इंसानों पर छोड़ें।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 07:49:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसियों के लिए AI मार्केटिंग टूल्स: खरीदारी की सूची नहीं, एक स्टैक बनाएं</title>
+<link>https://defygroup.ai/blog/hi/agency-ai-stack-integration/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-ai-stack-integration/</guid>
+<description>एजेंसी के लिए ऐसे AI मार्केटिंग टूल्स कैसे चुनें जो मौजूदा सिस्टम से जुड़ सकें: मूल्यांकन चेकलिस्ट, सात चरणों का प्लान और कॉन्ट्रैक्ट टिप्स।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 07:42:00 +0800</pubDate>
+</item>
+<item>
+<title>ब्रांड डिफ़रेंशिएशन रणनीति: वह एंगल खोजना जिसे आपकी कैटेगरी नज़रअंदाज़ करती है</title>
+<link>https://defygroup.ai/blog/hi/escape-creative-sameness-category-intelligence/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/escape-creative-sameness-category-intelligence/</guid>
+<description>Sir John Hegarty मार्केटिंग को “दोहराव भरी, घिसी-पिटी, उबाऊ” कहते हैं। कैटेगरी का नक्शा बनाकर वह एंगल खोजें जिस पर किसी का दावा नहीं।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 07:35:00 +0800</pubDate>
+</item>
+<item>
+<title>मार्केटिंग डैशबोर्ड की भरमार: एजेंसियां लॉगिन छोड़कर सवालों की ओर क्यों बढ़ रही हैं</title>
+<link>https://defygroup.ai/blog/hi/agency-dashboard-fatigue-ai-questions/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-dashboard-fatigue-ai-questions/</guid>
+<description>डैशबोर्ड बहुत, इनसाइट कम? जानिए डैशबोर्ड की भरमार क्यों होती है, और लॉगिन की जगह फ़ैसलों से जुड़े सवाल पूछने का छह-चरणों वाला तरीका।</description>
+<category>AI ट्रांसफ़ॉर्मेशन</category>
+<pubDate>Fri, 16 Oct 2026 07:28:00 +0800</pubDate>
+</item>
+<item>
+<title>क्लाइंट्स को मीडिया ROI कैसे साबित करें: MMM की वापसी क्यों हुई और क्या दिखाएँ</title>
+<link>https://defygroup.ai/blog/hi/proving-media-roi-agencies-mmm/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/proving-media-roi-agencies-mmm/</guid>
+<description>प्लेटफ़ॉर्म ROAS से अब क्लाइंट क़ायल नहीं होते। एजेंसियाँ मार्केटिंग मिक्स मॉडलिंग, एक्सपेरिमेंट और नतीजों की वजहों के सबूत से मीडिया ROI कैसे साबित करें।</description>
+<category>क्रिएटिव प्रभावशीलता</category>
+<pubDate>Fri, 16 Oct 2026 07:21:00 +0800</pubDate>
+</item>
+<item>
+<title>परिणाम-आधारित एजेंसी पारिश्रमिक: ROAS और CPA से आगे के मेट्रिक्स</title>
+<link>https://defygroup.ai/blog/hi/beyond-roas-cpa-outcome-based-agency-pay/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/beyond-roas-cpa-outcome-based-agency-pay/</guid>
+<description>एजेंसी भुगतान में समय-आधारित मॉडल घटकर 17% रह गए हैं। परिणाम-आधारित पारिश्रमिक के लिए ROAS और CPA से आगे कौन-से मेट्रिक्स चुनें और इसे कैसे लागू करें।</description>
+<category>एजेंसी का अर्थशास्त्र</category>
+<pubDate>Fri, 16 Oct 2026 07:14:00 +0800</pubDate>
+</item>
+<item>
+<title>एजेंसी नौकरियों पर AI का असर: जूनियर करियर की सीढ़ी फिर से कैसे बनाएँ</title>
+<link>https://defygroup.ai/blog/hi/agency-entry-level-talent-ai/</link>
+<guid isPermaLink="true">https://defygroup.ai/blog/hi/agency-entry-level-talent-ai/</guid>
+<description>AI जूनियर काम संभाल रहा है और एजेंसियाँ चुपचाप ग्रेजुएट भर्ती रोक रही हैं। डेटा क्या कहता है, और एंट्री-लेवल भूमिकाओं को विवेक पर कैसे टिकाएँ।</description>
+<category>टैलेंट और कल्चर</category>
+<pubDate>Fri, 16 Oct 2026 07:07:00 +0800</pubDate>
+</item>
+</channel>
+</rss>
