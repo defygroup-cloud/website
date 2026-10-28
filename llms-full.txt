@@ -15,7 +15,6 @@ Defy (Defy Group Limited) is the insight & automation platform for agencies that
 
 ## Clients
 - SharkNinja (internal strategy team): Defy Monitor to understand LATAM markets and build test-and-learn strategies.
-- SAMY (global influencer agency): Defy Agents cut performance reporting from three days to one.
 - Enchant (UK CRM agency): Defy Monitor to automate CRM insight and campaign deployment.
 
 ## Founders
@@ -33,7 +32,7 @@ Independent agencies — creative, media, CRM, influencer, PR and social shops �
 Building and maintaining an analytics and AI stack takes engineers, data pipelines and constant upkeep. Defy gives you a ready-made stack you can run for every client and category, with insight that traces back to the real published content behind it — without the development cost or the maintenance burden.
 
 ### Which brands and agencies use Defy?
-SharkNinja's internal strategy team uses Defy Monitor to understand LATAM markets and build test-and-learn strategies. Global influencer agency SAMY uses Defy Agents to streamline performance reporting, cutting three days of work to one. UK CRM agency Enchant uses Defy Monitor to automate CRM insight and campaign deployment for all its clients.
+SharkNinja's internal strategy team uses Defy Monitor to understand LATAM markets and build test-and-learn strategies. UK CRM agency Enchant uses Defy Monitor to automate CRM insight and campaign deployment for all its clients.
 
 ### Who founded Defy?
 Defy was founded by Ian Cassidy (CEO), who spent 20 years in creative agencies, built and scaled SHARE Creative and led a nine-figure private-equity exit to Bridgepoint, and Alek Farseev (CTO), an AI professor based in Singapore who leads all of Defy's technical development.
@@ -171,7 +170,6 @@ Key takeaways:
 - Nano-influencer ROI only makes sense with fully loaded costs, tier-specific KPIs and a paid social benchmark.
 - Saves, shares and purchase questions in the comments are stronger trust signals than likes or an average engagement rate.
 - Automate data capture, comment classification and cost normalisation, but keep the recommendations and the 'so what' human.
-- SAMY, a Defy client, used Defy Agents to cut performance reporting from three days of work to one.
 
 ### Independent agency vs holding company: how independents compete on data
 URL: https://defygroup.ai/blog/independent-agencies-vs-holding-company-data/
@@ -275,12 +273,12 @@ Key takeaways:
 ### AI marketing case studies with real numbers, and what they leave out
 URL: https://defygroup.ai/blog/ai-driven-agency-case-studies/
 Question: Where can I find AI marketing case studies with real results, so I can learn what works before I commit?
-Answer: Credible AI marketing case studies are rarer than the hype suggests. The useful ones name a specific inefficiency, give a baseline, explain the method and say whether results are projected or realised. Recent examples include TRKKN's Meridian modelling for Faces, which projected an 8.5% revenue uplift, and SAMY cutting performance reporting from three days to one.
+Answer: Credible AI marketing case studies are rarer than the hype suggests. The useful ones name a specific inefficiency, give a baseline, explain the method and say whether results are projected or realised. Recent examples include TRKKN's Meridian modelling for Faces, which projected an 8.5% revenue uplift.
 Key takeaways:
 - TRKKN used Google's open-source Meridian model on three years of Faces data across 11 channels and projected an 8.5% incremental revenue lift from reallocating existing budget.
 - That uplift is a modelled projection, not a realised result, and a credible case study says so plainly.
 - The AI case studies worth copying fix a specific market inefficiency, such as last-click measurement or manual reporting, and report a number with a method behind it.
-- Efficiency gains matter when freed time goes into better work: SAMY cut performance reporting from three days to one with Defy Agents.
+- Efficiency gains matter when freed time goes into better work.
 - Be most sceptical of case studies that count outputs, such as assets produced, instead of business outcomes.
 
 ### AI content creation best practices: a quality framework for agencies
@@ -335,7 +333,6 @@ Key takeaways:
 - The personalisation that works today adapts to the audience’s community and moment, not to each person’s browsing history.
 - Personalisation is an exchange of attention and data for relevance; if the audience feels the deal is unfair, trust breaks for the campaigns that follow as well.
 - In niches such as women’s football, a single age bracket can hide very different tensions that call for different messages, tones and channels.
-- SAMY’s acquisition of Get Engaged, reported by El Publicista, confirms that the market is betting on connecting through creators and culture.
 - Testing creative variants before media spend turns the results conversation with the client into a conversation about evidence.
 
 ### AI for independent agencies: why they’re consolidating and what changes
@@ -456,7 +453,6 @@ Key takeaways:
 - A study by Publicis London, System1 and Effie, reported by Campaign, indicates that global campaigns deliver fewer commercial outcomes than local ones.
 - Making decisions on yesterday's report is an information failure, and at peak it costs media budget.
 - Automate collection, consolidation, alerts and resizing; keep people on budget reallocation and changes to the offer.
-- SAMY cut its performance reporting from three days to one with Defy Agents.
 
 ### Engagement metrics clients value (and the ones that are window dressing)
 URL: https://defygroup.ai/blog/engagement-metrics-clients-value/
